@@ -16,3 +16,6 @@ This is an alpha version! The changes listed here are not final.
 
 ### Changed
 - Publish to a mirror repo rather than the `gh-pages` branch.
+
+### Fixed
+- GH only allows pages to be in `/` or `/docs`, so build to `/docs`.
