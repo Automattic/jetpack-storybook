@@ -16,6 +16,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Changed
 - Publish to a mirror repo rather than the `gh-pages` branch.
+- Tests: update PHPUnit polyfills dependency (yoast/phpunit-polyfills).
 - Updated package dependencies
 - Update webpack version to match other monorepo packages
 
