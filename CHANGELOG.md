@@ -39,5 +39,8 @@ This is an alpha version! The changes listed here are not final.
 - Update webpack version to match other monorepo packages
 - Use Node 16.7.0 in tooling. This shouldn't change the behavior of the code itself.
 
+### Removed
+- removed knobs dependency
+
 ### Fixed
 - GH only allows pages to be in `/` or `/docs`, so build to `/docs`.
