@@ -13,6 +13,7 @@ This is an alpha version! The changes listed here are not final.
 - Added addons-essentials to the dependencies
 - Added storybook package for generating component previews
 - Add Gutenberg components tree to the storybook
+- Add jetpack-connection package to Storybook config.
 - Add support for base-style stories
 
 ### Changed
@@ -32,6 +33,7 @@ This is an alpha version! The changes listed here are not final.
 - Updated package dependencies
 - Updated package dependencies
 - Updated package dependencies
+- Updated package dependencies.
 - Updated package dependencies.
 - Updated package dependencies.
 - Updated package dependencies.
