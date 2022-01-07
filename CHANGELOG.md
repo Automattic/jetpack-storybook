@@ -93,6 +93,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Removed
 - removed knobs dependency
+- Remove use of deprecated `~` in sass-loader imports.
 
 ### Fixed
 - GH only allows pages to be in `/` or `/docs`, so build to `/docs`.
