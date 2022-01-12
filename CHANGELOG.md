@@ -16,6 +16,7 @@ This is an alpha version! The changes listed here are not final.
 - Add jetpack-connection package to Storybook config.
 - Add support for base-style stories
 - Add support for the IDC package stories.
+- Storybook: Expose my-jetpack components
 
 ### Changed
 - Allow Node ^14.17.6 to be used in this project. This shouldn't change the behavior of the code itself.
