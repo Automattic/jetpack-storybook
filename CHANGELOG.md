@@ -105,4 +105,5 @@ This is an alpha version! The changes listed here are not final.
 - Remove use of deprecated `~` in sass-loader imports.
 
 ### Fixed
+- fixed babel/preset-react dependency
 - GH only allows pages to be in `/` or `/docs`, so build to `/docs`.
