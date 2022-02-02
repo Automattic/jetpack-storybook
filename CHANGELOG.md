@@ -12,6 +12,9 @@ This is an alpha version! The changes listed here are not final.
 ### Added
 - Add 'Jetpack Dashboard' background color
 
+### Changed
+- Updated package dependencies
+
 ## 0.1.0 - 2022-02-01
 ### Added
 - Added addons-essentials to the dependencies
