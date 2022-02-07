@@ -16,7 +16,6 @@
 	"scripts": {
 		"build-development": "pnpm run storybook:build"
 	},
-	"repositories": [],
 	"minimum-stability": "dev",
 	"prefer-stable": true,
 	"extra": {
