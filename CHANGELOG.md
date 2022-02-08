@@ -15,6 +15,9 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Updated package dependencies
 
+### Removed
+- Disable generation of sourcemaps.
+
 ## 0.1.0 - 2022-02-01
 ### Added
 - Added addons-essentials to the dependencies
