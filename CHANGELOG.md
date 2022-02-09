@@ -11,6 +11,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Added
 - Add 'Jetpack Dashboard' background color
+- Declare cross-project build dependencies to ensure that the storybook is rebuilt when those are changed.
 
 ### Changed
 - Updated package dependencies
