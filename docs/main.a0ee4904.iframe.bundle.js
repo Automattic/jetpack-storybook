@@ -1058,7 +1058,7 @@ import React from 'react';
 import IDCScreenVisual from '../visual';
 
 export default {
-	title: 'Identity Crisis/Admin Screen',
+	title: 'JS Packages/Identity Crisis/Admin Screen',
 	component: IDCScreenVisual,
 	parameters: {
 		layout: 'centered',
@@ -1101,7 +1101,7 @@ NonAdmin.args = {
 	...DefaultArgs,
 	isAdmin: false,
 };
-`,To={_default:{startLoc:{col:17,line:25},endLoc:{col:56,line:25},startBody:{col:17,line:25},endBody:{col:56,line:25}},Migrated:{startLoc:{col:17,line:25},endLoc:{col:56,line:25},startBody:{col:17,line:25},endBody:{col:56,line:25}},NonAdmin:{startLoc:{col:17,line:25},endLoc:{col:56,line:25},startBody:{col:17,line:25},endBody:{col:56,line:25}}};const yo={title:"Identity Crisis/Admin Screen",component:_o,parameters:{storySource:{source:`/**
+`,To={_default:{startLoc:{col:17,line:25},endLoc:{col:56,line:25},startBody:{col:17,line:25},endBody:{col:56,line:25}},Migrated:{startLoc:{col:17,line:25},endLoc:{col:56,line:25},startBody:{col:17,line:25},endBody:{col:56,line:25}},NonAdmin:{startLoc:{col:17,line:25},endLoc:{col:56,line:25},startBody:{col:17,line:25},endBody:{col:56,line:25}}};const yo={title:"JS Packages/Identity Crisis/Admin Screen",component:_o,parameters:{storySource:{source:`/**
  * External dependencies
  */
 import React from 'react';
@@ -1112,7 +1112,7 @@ import React from 'react';
 import IDCScreenVisual from '../visual';
 
 export default {
-	title: 'Identity Crisis/Admin Screen',
+	title: 'JS Packages/Identity Crisis/Admin Screen',
 	component: IDCScreenVisual,
 	parameters: {
 		layout: 'centered',
