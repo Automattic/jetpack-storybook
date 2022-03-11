@@ -15,6 +15,7 @@ This is an alpha version! The changes listed here are not final.
 - Try using `storybook-addon-turbo-build` to speed up the build.
 
 ### Changed
+- Storybook: Remove base-styles in favor of ThemeProvider
 - Updated package dependencies
 - Updated package dependencies
 
