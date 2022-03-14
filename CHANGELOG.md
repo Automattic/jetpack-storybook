@@ -21,6 +21,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Removed
 - Disable generation of sourcemaps.
+- Remove unneeded dependencies.
 
 ## 0.1.0 - 2022-02-01
 ### Added
