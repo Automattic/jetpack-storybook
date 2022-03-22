@@ -18,6 +18,7 @@ This is an alpha version! The changes listed here are not final.
 - Storybook: Remove base-styles in favor of ThemeProvider
 - Updated package dependencies
 - Updated package dependencies
+- Updated package dependencies
 
 ### Removed
 - Disable generation of sourcemaps.
