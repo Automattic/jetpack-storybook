@@ -13,6 +13,7 @@ This is an alpha version! The changes listed here are not final.
 - Add 'Jetpack Dashboard' background color
 - Add missing JS peer dependencies.
 - Declare cross-project build dependencies to ensure that the storybook is rebuilt when those are changed.
+- Storybook: Add protect into storybook projects list
 - Try using `storybook-addon-turbo-build` to speed up the build.
 
 ### Changed
