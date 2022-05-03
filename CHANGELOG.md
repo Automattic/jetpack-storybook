@@ -16,6 +16,7 @@ This is an alpha version! The changes listed here are not final.
 - Add missing JS peer dependencies.
 - Declare cross-project build dependencies to ensure that the storybook is rebuilt when those are changed.
 - Storybook: Add protect into storybook projects list
+- Test that projects in `storybook/projects.js` are listed as extra build dependencies in composer.json.
 - Try using `storybook-addon-turbo-build` to speed up the build.
 
 ### Changed

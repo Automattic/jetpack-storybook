@@ -14,18 +14,20 @@
 		]
 	},
 	"scripts": {
-		"build-development": "pnpm run storybook:build"
+		"build-development": "pnpm run storybook:build",
+		"test-js": "pnpm run test",
+		"test-coverage": "pnpm run test-coverage"
 	},
 	"minimum-stability": "dev",
 	"prefer-stable": true,
 	"extra": {
 		"dependencies": {
 			"build": [
-				"js-packages/base-styles",
 				"js-packages/components",
 				"js-packages/connection",
 				"js-packages/idc",
-				"packages/my-jetpack"
+				"packages/my-jetpack",
+				"plugins/protect"
 			]
 		},
 		"mirror-repo": "Automattic/jetpack-storybook"
