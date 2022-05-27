@@ -28,6 +28,9 @@ This is an alpha version! The changes listed here are not final.
 - Disable generation of sourcemaps.
 - Remove unneeded dependencies.
 
+### Fixed
+- Fix styles defined by the ThemeProvider in the storybook stories
+
 ## 0.1.0 - 2022-02-01
 ### Added
 - Added addons-essentials to the dependencies
