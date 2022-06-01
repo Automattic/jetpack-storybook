@@ -20,6 +20,7 @@ This is an alpha version! The changes listed here are not final.
 - Try using `storybook-addon-turbo-build` to speed up the build.
 
 ### Changed
+- Reorder JS imports for `import/order` eslint rule.
 - Storybook: Remove base-styles in favor of ThemeProvider
 - Update package.json metadata.
 
