@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 This is an alpha version! The changes listed here are not final.
 
+### Added
+- Add VideoPress package folder to projects
+
 ## 0.2.0 - 2022-07-06
 ### Added
 - Add 'Jetpack Dashboard' background color. [#22597]
