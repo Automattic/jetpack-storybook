@@ -4899,6 +4899,7 @@ _default.args = {
 	value:
 		"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make ",
 	onCopy: action( 'onCopy' ),
+	resetTime: 3000,
 };
 `,R={_default:{startLoc:{col:64,line:22},endLoc:{col:1,line:24},startBody:{col:64,line:22},endBody:{col:1,line:24}}};const j={title:"Packages/VideoPress/Clipboard Button Input",component:s.Z,parameters:{storySource:{source:`/**
  * Internal dependencies
@@ -4931,8 +4932,9 @@ _default.args = {
 	value:
 		"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make ",
 	onCopy: action( 'onCopy' ),
+	resetTime: 3000,
 };
-`,locationsMap:{default:{startLoc:{col:64,line:22},endLoc:{col:1,line:24},startBody:{col:64,line:22},endBody:{col:1,line:24}}}},docs:{page:C.default}}};var r=function(S){return(0,d.jsx)(s.Z,Object.assign({},S))};r.displayName="Template";var p=r.bind({});p.args={text:"Lorem Ipsum...",value:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make ",onCopy:(0,t.action)("onCopy")}},"../../packages/videopress/src/client/admin/components/video-details-card/stories/index.tsx":(D,n,e)=>{"use strict";e.r(n),e.d(n,{_default:()=>r,default:()=>m});var i=e("../../../node_modules/.pnpm/core-js@3.23.5/node_modules/core-js/modules/es.object.assign.js"),k=e("../../../node_modules/.pnpm/core-js@3.23.5/node_modules/core-js/modules/es.function.bind.js"),a=e("../../packages/videopress/src/client/admin/components/video-details-card/index.tsx"),c=e("../../packages/videopress/src/client/admin/components/video-details-card/stories/VideoDetailsCard.mdx");const t=e.p+"static/media/video-thumbnail.14ae4ea1.png";var s=e("../../../node_modules/.pnpm/react@17.0.2/node_modules/react/jsx-runtime.js"),C=`/**
+`,locationsMap:{default:{startLoc:{col:64,line:22},endLoc:{col:1,line:24},startBody:{col:64,line:22},endBody:{col:1,line:24}}}},docs:{page:C.default}}};var r=function(S){return(0,d.jsx)(s.Z,Object.assign({},S))};r.displayName="Template";var p=r.bind({});p.args={text:"Lorem Ipsum...",value:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make ",onCopy:(0,t.action)("onCopy"),resetTime:3e3}},"../../packages/videopress/src/client/admin/components/video-details-card/stories/index.tsx":(D,n,e)=>{"use strict";e.r(n),e.d(n,{_default:()=>r,default:()=>m});var i=e("../../../node_modules/.pnpm/core-js@3.23.5/node_modules/core-js/modules/es.object.assign.js"),k=e("../../../node_modules/.pnpm/core-js@3.23.5/node_modules/core-js/modules/es.function.bind.js"),a=e("../../packages/videopress/src/client/admin/components/video-details-card/index.tsx"),c=e("../../packages/videopress/src/client/admin/components/video-details-card/stories/VideoDetailsCard.mdx");const t=e.p+"static/media/video-thumbnail.14ae4ea1.png";var s=e("../../../node_modules/.pnpm/react@17.0.2/node_modules/react/jsx-runtime.js"),C=`/**
  * Internal dependencies
  */
 import VideoDetailsCard from '..';
