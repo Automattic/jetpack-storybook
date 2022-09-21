@@ -11,6 +11,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Added
 - Add VideoPress package folder to projects
+- VideoPress: Support selecting poster by frame
 
 ## 0.2.0 - 2022-07-06
 ### Added
