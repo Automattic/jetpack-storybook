@@ -27,6 +27,7 @@
 				"js-packages/connection",
 				"js-packages/idc",
 				"packages/my-jetpack",
+				"packages/search",
 				"plugins/protect",
 				"packages/videopress"
 			]
