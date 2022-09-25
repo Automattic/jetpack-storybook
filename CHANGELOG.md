@@ -14,6 +14,9 @@ This is an alpha version! The changes listed here are not final.
 - Add VideoPress package folder to projects
 - VideoPress: Support selecting poster by frame
 
+### Fixed
+- StoryBook: fix unexistent pkg bug
+
 ## 0.2.0 - 2022-07-06
 ### Added
 - Add 'Jetpack Dashboard' background color. [#22597]
