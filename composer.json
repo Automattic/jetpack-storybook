@@ -6,7 +6,7 @@
 	"require": {},
 	"require-dev": {
 		"yoast/phpunit-polyfills": "1.0.4",
-		"automattic/jetpack-changelogger": "^3.3.1"
+		"automattic/jetpack-changelogger": "^3.3.2-alpha"
 	},
 	"autoload": {
 		"classmap": [
@@ -15,8 +15,7 @@
 	},
 	"scripts": {
 		"build-development": "pnpm run storybook:build",
-		"test-js": "pnpm run test",
-		"test-coverage": "pnpm run test-coverage"
+		"test-js": "pnpm run test"
 	},
 	"minimum-stability": "dev",
 	"prefer-stable": true,
