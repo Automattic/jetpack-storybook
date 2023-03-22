@@ -2444,20 +2444,11 @@ Default.args = {
 };
 
 export const BreakpointMatch = () => {
-	const [
-		isSm,
-		isGtSm,
-		isMd,
-		isLtOrMd,
-		isLtMd,
-		isGtOrMd,
-		isGtMd,
-		isLessThanLg,
-		isLg,
-	] = useBreakpointMatch(
-		[ 'sm', 'sm', 'md', 'md', 'md', 'md', 'md', 'lg', 'lg' ],
-		[ null, '>', null, '<=', '<', '>=', '>', '<', null ]
-	);
+	const [ isSm, isGtSm, isMd, isLtOrMd, isLtMd, isGtOrMd, isGtMd, isLessThanLg, isLg ] =
+		useBreakpointMatch(
+			[ 'sm', 'sm', 'md', 'md', 'md', 'md', 'md', 'lg', 'lg' ],
+			[ null, '>', null, '<=', '<', '>=', '>', '<', null ]
+		);
 
 	return (
 		<Container>
@@ -2508,7 +2499,7 @@ export const BreakpointMatch = () => {
 		</Container>
 	);
 };
-`,z={Default:{startLoc:{col:17,line:49},endLoc:{col:47,line:49},startBody:{col:17,line:49},endBody:{col:47,line:49}},BreakpointMatch:{startLoc:{col:31,line:89},endLoc:{col:1,line:153},startBody:{col:31,line:89},endBody:{col:1,line:153}}},R=function(j){var w=j.items,K=j.fluid,J=j.horizontalGap,F=j.horizontalSpacing;return(0,d.jsxs)(S.Z,{className:f.container,horizontalSpacing:F,fluid:K,horizontalGap:J,children:[w.map(function(Z,O){var X=Z.sm,G=Z.lg,ee=Z.md,te=Number.isInteger(X==null?void 0:X.start)?JSON.stringify(X):X,se=Number.isInteger(ee==null?void 0:ee.start)?JSON.stringify(ee):ee,ae=Number.isInteger(G==null?void 0:G.start)?JSON.stringify(G):G;return(0,d.jsxs)(N.Z,{sm:X,md:ee,lg:G,className:f.col,children:[X?"sm="+te+" ":"",ee?"md="+se+" ":"",G?"lg="+ae+" ":""]},""+te+se+ae+O)}),(0,d.jsx)(N.Z,{children:(0,d.jsxs)(S.Z,{fluid:!0,horizontalSpacing:0,horizontalGap:1,children:[(0,d.jsx)(N.Z,{className:f.col,children:"Composition Example"}),(0,d.jsx)(N.Z,{className:f.col,children:"Composition Example"})]})})]})};R.displayName="Layout";const L={parameters:{storySource:{source:`import Text from '../../text';
+`,z={Default:{startLoc:{col:17,line:49},endLoc:{col:47,line:49},startBody:{col:17,line:49},endBody:{col:47,line:49}},BreakpointMatch:{startLoc:{col:31,line:89},endLoc:{col:1,line:144},startBody:{col:31,line:89},endBody:{col:1,line:144}}},R=function(j){var w=j.items,K=j.fluid,J=j.horizontalGap,F=j.horizontalSpacing;return(0,d.jsxs)(S.Z,{className:f.container,horizontalSpacing:F,fluid:K,horizontalGap:J,children:[w.map(function(Z,O){var X=Z.sm,G=Z.lg,ee=Z.md,te=Number.isInteger(X==null?void 0:X.start)?JSON.stringify(X):X,se=Number.isInteger(ee==null?void 0:ee.start)?JSON.stringify(ee):ee,ae=Number.isInteger(G==null?void 0:G.start)?JSON.stringify(G):G;return(0,d.jsxs)(N.Z,{sm:X,md:ee,lg:G,className:f.col,children:[X?"sm="+te+" ":"",ee?"md="+se+" ":"",G?"lg="+ae+" ":""]},""+te+se+ae+O)}),(0,d.jsx)(N.Z,{children:(0,d.jsxs)(S.Z,{fluid:!0,horizontalSpacing:0,horizontalGap:1,children:[(0,d.jsx)(N.Z,{className:f.col,children:"Composition Example"}),(0,d.jsx)(N.Z,{className:f.col,children:"Composition Example"})]})})]})};R.displayName="Layout";const L={parameters:{storySource:{source:`import Text from '../../text';
 import Col from '../col';
 import Container from '../container';
 import useBreakpointMatch from '../use-breakpoint-match';
@@ -2597,20 +2588,11 @@ Default.args = {
 };
 
 export const BreakpointMatch = () => {
-	const [
-		isSm,
-		isGtSm,
-		isMd,
-		isLtOrMd,
-		isLtMd,
-		isGtOrMd,
-		isGtMd,
-		isLessThanLg,
-		isLg,
-	] = useBreakpointMatch(
-		[ 'sm', 'sm', 'md', 'md', 'md', 'md', 'md', 'lg', 'lg' ],
-		[ null, '>', null, '<=', '<', '>=', '>', '<', null ]
-	);
+	const [ isSm, isGtSm, isMd, isLtOrMd, isLtMd, isGtOrMd, isGtMd, isLessThanLg, isLg ] =
+		useBreakpointMatch(
+			[ 'sm', 'sm', 'md', 'md', 'md', 'md', 'md', 'lg', 'lg' ],
+			[ null, '>', null, '<=', '<', '>=', '>', '<', null ]
+		);
 
 	return (
 		<Container>
@@ -2661,7 +2643,7 @@ export const BreakpointMatch = () => {
 		</Container>
 	);
 };
-`,locationsMap:{default:{startLoc:{col:17,line:49},endLoc:{col:47,line:49},startBody:{col:17,line:49},endBody:{col:47,line:49}},"breakpoint-match":{startLoc:{col:31,line:89},endLoc:{col:1,line:153},startBody:{col:31,line:89},endBody:{col:1,line:153}}}}},title:"JS Packages/Components/Layout",component:R};var H=function(j){return(0,d.jsx)(R,Object.assign({},j))};H.displayName="Template";var M=H.bind({});M.args={fluid:!1,horizontalSpacing:10,horizontalGap:5,items:[{sm:2,md:5,lg:4},{sm:2,md:3,lg:{start:6,end:12}},{sm:2,md:3,lg:6},{sm:2,md:5,lg:{start:9,end:12}},{sm:2,md:5,lg:4},{sm:2,md:3,lg:8}]};var h=function(){var j=(0,y.Z)(["sm","sm","md","md","md","md","md","lg","lg"],[null,">",null,"<=","<",">=",">","<",null]),w=Q(j,9),K=w[0],J=w[1],F=w[2],Z=w[3],O=w[4],X=w[5],G=w[6],ee=w[7],te=w[8];return(0,d.jsxs)(S.Z,{children:[(0,d.jsx)(C.ZP,{variant:"headline-small",children:"Small"}),(0,d.jsxs)(N.Z,{children:[(0,d.jsx)(C.ZP,{variant:"title-small",children:"Is Small"}),(0,d.jsx)(C.ZP,{className:K?f.yes:f.no,children:K?"Yes":"False"})]}),(0,d.jsxs)(N.Z,{children:[(0,d.jsx)(C.ZP,{variant:"title-small",children:"Is greater than Small"}),(0,d.jsx)(C.ZP,{className:J?f.yes:f.no,children:J?"Yes":"False"})]}),(0,d.jsx)(C.ZP,{variant:"headline-small",children:"Medium"}),(0,d.jsxs)(N.Z,{children:[(0,d.jsx)(C.ZP,{variant:"title-small",children:"Is Medium"}),(0,d.jsx)(C.ZP,{className:F?f.yes:f.no,children:F?"Yes":"False"})]}),(0,d.jsxs)(N.Z,{children:[(0,d.jsx)(C.ZP,{variant:"title-small",children:"Is less then Medium"}),(0,d.jsx)(C.ZP,{className:O?f.yes:f.no,children:O?"Yes":"False"})]}),(0,d.jsxs)(N.Z,{children:[(0,d.jsx)(C.ZP,{variant:"title-small",children:"Is less then OR Medium"}),(0,d.jsx)(C.ZP,{className:Z?f.yes:f.no,children:Z?"Yes":"False"})]}),(0,d.jsxs)(N.Z,{children:[(0,d.jsx)(C.ZP,{variant:"title-small",children:"Is greater then Medium"}),(0,d.jsx)(C.ZP,{className:G?f.yes:f.no,children:G?"Yes":"False"})]}),(0,d.jsxs)(N.Z,{children:[(0,d.jsx)(C.ZP,{variant:"title-small",children:"Is greater then OR Medium"}),(0,d.jsx)(C.ZP,{className:X?f.yes:f.no,children:X?"Yes":"False"})]}),(0,d.jsx)(C.ZP,{variant:"headline-small",children:"Large"}),(0,d.jsxs)(N.Z,{children:[(0,d.jsx)(C.ZP,{variant:"title-small",children:"Is Large"}),(0,d.jsx)(C.ZP,{className:te?f.yes:f.no,children:te?"Yes":"False"})]}),(0,d.jsxs)(N.Z,{children:[(0,d.jsx)(C.ZP,{variant:"title-small",children:"Is less than Large"}),(0,d.jsx)(C.ZP,{className:ee?f.yes:f.no,children:ee?"Yes":"False"})]})]})};h.displayName="BreakpointMatch"},"../components/components/loading-placeholder/stories/index.tsx":(U,n,e)=>{"use strict";e.r(n),e.d(n,{Fixed:()=>o,Fluid:()=>A,default:()=>T});var l=e("../../../node_modules/.pnpm/core-js@3.23.5/node_modules/core-js/modules/es.object.assign.js"),b=e.n(l),s=e("../../../node_modules/.pnpm/core-js@3.23.5/node_modules/core-js/modules/es.function.bind.js"),p=e.n(s),t=e("../components/components/loading-placeholder/index.tsx"),m=e("../../../node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime.js"),B=`/**
+`,locationsMap:{default:{startLoc:{col:17,line:49},endLoc:{col:47,line:49},startBody:{col:17,line:49},endBody:{col:47,line:49}},"breakpoint-match":{startLoc:{col:31,line:89},endLoc:{col:1,line:144},startBody:{col:31,line:89},endBody:{col:1,line:144}}}}},title:"JS Packages/Components/Layout",component:R};var H=function(j){return(0,d.jsx)(R,Object.assign({},j))};H.displayName="Template";var M=H.bind({});M.args={fluid:!1,horizontalSpacing:10,horizontalGap:5,items:[{sm:2,md:5,lg:4},{sm:2,md:3,lg:{start:6,end:12}},{sm:2,md:3,lg:6},{sm:2,md:5,lg:{start:9,end:12}},{sm:2,md:5,lg:4},{sm:2,md:3,lg:8}]};var h=function(){var j=(0,y.Z)(["sm","sm","md","md","md","md","md","lg","lg"],[null,">",null,"<=","<",">=",">","<",null]),w=Q(j,9),K=w[0],J=w[1],F=w[2],Z=w[3],O=w[4],X=w[5],G=w[6],ee=w[7],te=w[8];return(0,d.jsxs)(S.Z,{children:[(0,d.jsx)(C.ZP,{variant:"headline-small",children:"Small"}),(0,d.jsxs)(N.Z,{children:[(0,d.jsx)(C.ZP,{variant:"title-small",children:"Is Small"}),(0,d.jsx)(C.ZP,{className:K?f.yes:f.no,children:K?"Yes":"False"})]}),(0,d.jsxs)(N.Z,{children:[(0,d.jsx)(C.ZP,{variant:"title-small",children:"Is greater than Small"}),(0,d.jsx)(C.ZP,{className:J?f.yes:f.no,children:J?"Yes":"False"})]}),(0,d.jsx)(C.ZP,{variant:"headline-small",children:"Medium"}),(0,d.jsxs)(N.Z,{children:[(0,d.jsx)(C.ZP,{variant:"title-small",children:"Is Medium"}),(0,d.jsx)(C.ZP,{className:F?f.yes:f.no,children:F?"Yes":"False"})]}),(0,d.jsxs)(N.Z,{children:[(0,d.jsx)(C.ZP,{variant:"title-small",children:"Is less then Medium"}),(0,d.jsx)(C.ZP,{className:O?f.yes:f.no,children:O?"Yes":"False"})]}),(0,d.jsxs)(N.Z,{children:[(0,d.jsx)(C.ZP,{variant:"title-small",children:"Is less then OR Medium"}),(0,d.jsx)(C.ZP,{className:Z?f.yes:f.no,children:Z?"Yes":"False"})]}),(0,d.jsxs)(N.Z,{children:[(0,d.jsx)(C.ZP,{variant:"title-small",children:"Is greater then Medium"}),(0,d.jsx)(C.ZP,{className:G?f.yes:f.no,children:G?"Yes":"False"})]}),(0,d.jsxs)(N.Z,{children:[(0,d.jsx)(C.ZP,{variant:"title-small",children:"Is greater then OR Medium"}),(0,d.jsx)(C.ZP,{className:X?f.yes:f.no,children:X?"Yes":"False"})]}),(0,d.jsx)(C.ZP,{variant:"headline-small",children:"Large"}),(0,d.jsxs)(N.Z,{children:[(0,d.jsx)(C.ZP,{variant:"title-small",children:"Is Large"}),(0,d.jsx)(C.ZP,{className:te?f.yes:f.no,children:te?"Yes":"False"})]}),(0,d.jsxs)(N.Z,{children:[(0,d.jsx)(C.ZP,{variant:"title-small",children:"Is less than Large"}),(0,d.jsx)(C.ZP,{className:ee?f.yes:f.no,children:ee?"Yes":"False"})]})]})};h.displayName="BreakpointMatch"},"../components/components/loading-placeholder/stories/index.tsx":(U,n,e)=>{"use strict";e.r(n),e.d(n,{Fixed:()=>o,Fluid:()=>A,default:()=>T});var l=e("../../../node_modules/.pnpm/core-js@3.23.5/node_modules/core-js/modules/es.object.assign.js"),b=e.n(l),s=e("../../../node_modules/.pnpm/core-js@3.23.5/node_modules/core-js/modules/es.function.bind.js"),p=e.n(s),t=e("../components/components/loading-placeholder/index.tsx"),m=e("../../../node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime.js"),B=`/**
  * Internal dependencies
  */
 import LoadingPlaceholder from '..';
@@ -3015,8 +2997,7 @@ const Template: ComponentStory< typeof PricingCard > = args => <PricingCard { ..
 
 const DefaultArgs = {
 	title: 'Jetpack Backup',
-	icon:
-		"data:image/svg+xml,%3Csvg width='32' height='32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='m21.092 15.164.019-1.703v-.039c0-1.975-1.803-3.866-4.4-3.866-2.17 0-3.828 1.351-4.274 2.943l-.426 1.524-1.581-.065a2.92 2.92 0 0 0-.12-.002c-1.586 0-2.977 1.344-2.977 3.133 0 1.787 1.388 3.13 2.973 3.133H22.399c1.194 0 2.267-1.016 2.267-2.4 0-1.235-.865-2.19-1.897-2.368l-1.677-.29Zm-10.58-3.204a4.944 4.944 0 0 0-.201-.004c-2.75 0-4.978 2.298-4.978 5.133s2.229 5.133 4.978 5.133h12.088c2.357 0 4.267-1.97 4.267-4.4 0-2.18-1.538-3.99-3.556-4.339v-.06c0-3.24-2.865-5.867-6.4-5.867-2.983 0-5.49 1.871-6.199 4.404Z' fill='%23000'/%3E%3C/svg%3E",
+	icon: "data:image/svg+xml,%3Csvg width='32' height='32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='m21.092 15.164.019-1.703v-.039c0-1.975-1.803-3.866-4.4-3.866-2.17 0-3.828 1.351-4.274 2.943l-.426 1.524-1.581-.065a2.92 2.92 0 0 0-.12-.002c-1.586 0-2.977 1.344-2.977 3.133 0 1.787 1.388 3.13 2.973 3.133H22.399c1.194 0 2.267-1.016 2.267-2.4 0-1.235-.865-2.19-1.897-2.368l-1.677-.29Zm-10.58-3.204a4.944 4.944 0 0 0-.201-.004c-2.75 0-4.978 2.298-4.978 5.133s2.229 5.133 4.978 5.133h12.088c2.357 0 4.267-1.97 4.267-4.4 0-2.18-1.538-3.99-3.556-4.339v-.06c0-3.24-2.865-5.867-6.4-5.867-2.983 0-5.49 1.871-6.199 4.404Z' fill='%23000'/%3E%3C/svg%3E",
 	priceBefore: 9,
 	priceAfter: 4.5,
 	ctaText: 'Get Jetpack Backup',
@@ -3053,7 +3034,7 @@ export const WithChildren = TemplateWithChildren.bind( {} );
 WithChildren.args = {
 	...DefaultArgs,
 };
-`,T={_default:{startLoc:{col:55,line:15},endLoc:{col:90,line:15},startBody:{col:55,line:15},endBody:{col:90,line:15}},Minimal:{startLoc:{col:55,line:15},endLoc:{col:90,line:15},startBody:{col:55,line:15},endBody:{col:90,line:15}},WithChildren:{startLoc:{col:29,line:42},endLoc:{col:1,line:52},startBody:{col:29,line:42},endBody:{col:1,line:52}}};const D={parameters:{storySource:{source:`import { action } from '@storybook/addon-actions';
+`,T={_default:{startLoc:{col:55,line:15},endLoc:{col:90,line:15},startBody:{col:55,line:15},endBody:{col:90,line:15}},Minimal:{startLoc:{col:55,line:15},endLoc:{col:90,line:15},startBody:{col:55,line:15},endBody:{col:90,line:15}},WithChildren:{startLoc:{col:29,line:41},endLoc:{col:1,line:51},startBody:{col:29,line:41},endBody:{col:1,line:51}}};const D={parameters:{storySource:{source:`import { action } from '@storybook/addon-actions';
 import PricingCard from '../index';
 import type { ComponentStory, ComponentMeta } from '@storybook/react';
 
@@ -3071,8 +3052,7 @@ const Template: ComponentStory< typeof PricingCard > = args => <PricingCard { ..
 
 const DefaultArgs = {
 	title: 'Jetpack Backup',
-	icon:
-		"data:image/svg+xml,%3Csvg width='32' height='32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='m21.092 15.164.019-1.703v-.039c0-1.975-1.803-3.866-4.4-3.866-2.17 0-3.828 1.351-4.274 2.943l-.426 1.524-1.581-.065a2.92 2.92 0 0 0-.12-.002c-1.586 0-2.977 1.344-2.977 3.133 0 1.787 1.388 3.13 2.973 3.133H22.399c1.194 0 2.267-1.016 2.267-2.4 0-1.235-.865-2.19-1.897-2.368l-1.677-.29Zm-10.58-3.204a4.944 4.944 0 0 0-.201-.004c-2.75 0-4.978 2.298-4.978 5.133s2.229 5.133 4.978 5.133h12.088c2.357 0 4.267-1.97 4.267-4.4 0-2.18-1.538-3.99-3.556-4.339v-.06c0-3.24-2.865-5.867-6.4-5.867-2.983 0-5.49 1.871-6.199 4.404Z' fill='%23000'/%3E%3C/svg%3E",
+	icon: "data:image/svg+xml,%3Csvg width='32' height='32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='m21.092 15.164.019-1.703v-.039c0-1.975-1.803-3.866-4.4-3.866-2.17 0-3.828 1.351-4.274 2.943l-.426 1.524-1.581-.065a2.92 2.92 0 0 0-.12-.002c-1.586 0-2.977 1.344-2.977 3.133 0 1.787 1.388 3.13 2.973 3.133H22.399c1.194 0 2.267-1.016 2.267-2.4 0-1.235-.865-2.19-1.897-2.368l-1.677-.29Zm-10.58-3.204a4.944 4.944 0 0 0-.201-.004c-2.75 0-4.978 2.298-4.978 5.133s2.229 5.133 4.978 5.133h12.088c2.357 0 4.267-1.97 4.267-4.4 0-2.18-1.538-3.99-3.556-4.339v-.06c0-3.24-2.865-5.867-6.4-5.867-2.983 0-5.49 1.871-6.199 4.404Z' fill='%23000'/%3E%3C/svg%3E",
 	priceBefore: 9,
 	priceAfter: 4.5,
 	ctaText: 'Get Jetpack Backup',
@@ -3109,7 +3089,7 @@ export const WithChildren = TemplateWithChildren.bind( {} );
 WithChildren.args = {
 	...DefaultArgs,
 };
-`,locationsMap:{default:{startLoc:{col:55,line:15},endLoc:{col:90,line:15},startBody:{col:55,line:15},endBody:{col:90,line:15}},minimal:{startLoc:{col:55,line:15},endLoc:{col:90,line:15},startBody:{col:55,line:15},endBody:{col:90,line:15}},"with-children":{startLoc:{col:29,line:42},endLoc:{col:1,line:52},startBody:{col:29,line:42},endBody:{col:1,line:52}}}}},title:"JS Packages/Components/Pricing Card",component:m.Z,argTypes:{onCtaClick:{action:"clicked"}}};var A=function(N){return(0,B.jsx)(m.Z,Object.assign({},N))};A.displayName="Template";var o={title:"Jetpack Backup",icon:"data:image/svg+xml,%3Csvg width='32' height='32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='m21.092 15.164.019-1.703v-.039c0-1.975-1.803-3.866-4.4-3.866-2.17 0-3.828 1.351-4.274 2.943l-.426 1.524-1.581-.065a2.92 2.92 0 0 0-.12-.002c-1.586 0-2.977 1.344-2.977 3.133 0 1.787 1.388 3.13 2.973 3.133H22.399c1.194 0 2.267-1.016 2.267-2.4 0-1.235-.865-2.19-1.897-2.368l-1.677-.29Zm-10.58-3.204a4.944 4.944 0 0 0-.201-.004c-2.75 0-4.978 2.298-4.978 5.133s2.229 5.133 4.978 5.133h12.088c2.357 0 4.267-1.97 4.267-4.4 0-2.18-1.538-3.99-3.556-4.339v-.06c0-3.24-2.865-5.867-6.4-5.867-2.983 0-5.49 1.871-6.199 4.404Z' fill='%23000'/%3E%3C/svg%3E",priceBefore:9,priceAfter:4.5,ctaText:"Get Jetpack Backup",infoText:"Special introductory pricing, all renewals are at full price. 14 day money back guarantee.",onCtaClick:(0,t.action)("onCtaClick")},u=A.bind({});u.args=o;var i=A.bind({});i.args=Object.assign({},o,{icon:null,ctaText:null,onCtaClick:null,infoText:null});var W=function(N){return(0,B.jsx)(m.Z,Object.assign({},N,{children:(0,B.jsxs)("ul",{children:[(0,B.jsx)("li",{children:"Automated real-time backups"}),(0,B.jsx)("li",{children:"Easy one-click restores"}),(0,B.jsx)("li",{children:"Complete list of all site changes"}),(0,B.jsx)("li",{children:"Global server infrastructure"}),(0,B.jsx)("li",{children:"Best-in-class support"})]})}))};W.displayName="TemplateWithChildren";var I=W.bind({});I.args=Object.assign({},o)},"../components/components/pricing-table/stories/index.tsx":(U,n,e)=>{"use strict";e.r(n),e.d(n,{_default:()=>i,default:()=>A});var l=e("../../../node_modules/.pnpm/core-js@3.23.5/node_modules/core-js/modules/es.object.assign.js"),b=e.n(l),s=e("../../../node_modules/.pnpm/core-js@3.23.5/node_modules/core-js/modules/es.function.bind.js"),p=e.n(s),t=e("../components/components/button/index.tsx"),m=e("../components/components/product-price/index.tsx"),B=e("../components/components/pricing-table/index.tsx"),v=e("../../../node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime.js"),T=`import Button from '../../button';
+`,locationsMap:{default:{startLoc:{col:55,line:15},endLoc:{col:90,line:15},startBody:{col:55,line:15},endBody:{col:90,line:15}},minimal:{startLoc:{col:55,line:15},endLoc:{col:90,line:15},startBody:{col:55,line:15},endBody:{col:90,line:15}},"with-children":{startLoc:{col:29,line:41},endLoc:{col:1,line:51},startBody:{col:29,line:41},endBody:{col:1,line:51}}}}},title:"JS Packages/Components/Pricing Card",component:m.Z,argTypes:{onCtaClick:{action:"clicked"}}};var A=function(N){return(0,B.jsx)(m.Z,Object.assign({},N))};A.displayName="Template";var o={title:"Jetpack Backup",icon:"data:image/svg+xml,%3Csvg width='32' height='32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='m21.092 15.164.019-1.703v-.039c0-1.975-1.803-3.866-4.4-3.866-2.17 0-3.828 1.351-4.274 2.943l-.426 1.524-1.581-.065a2.92 2.92 0 0 0-.12-.002c-1.586 0-2.977 1.344-2.977 3.133 0 1.787 1.388 3.13 2.973 3.133H22.399c1.194 0 2.267-1.016 2.267-2.4 0-1.235-.865-2.19-1.897-2.368l-1.677-.29Zm-10.58-3.204a4.944 4.944 0 0 0-.201-.004c-2.75 0-4.978 2.298-4.978 5.133s2.229 5.133 4.978 5.133h12.088c2.357 0 4.267-1.97 4.267-4.4 0-2.18-1.538-3.99-3.556-4.339v-.06c0-3.24-2.865-5.867-6.4-5.867-2.983 0-5.49 1.871-6.199 4.404Z' fill='%23000'/%3E%3C/svg%3E",priceBefore:9,priceAfter:4.5,ctaText:"Get Jetpack Backup",infoText:"Special introductory pricing, all renewals are at full price. 14 day money back guarantee.",onCtaClick:(0,t.action)("onCtaClick")},u=A.bind({});u.args=o;var i=A.bind({});i.args=Object.assign({},o,{icon:null,ctaText:null,onCtaClick:null,infoText:null});var W=function(N){return(0,B.jsx)(m.Z,Object.assign({},N,{children:(0,B.jsxs)("ul",{children:[(0,B.jsx)("li",{children:"Automated real-time backups"}),(0,B.jsx)("li",{children:"Easy one-click restores"}),(0,B.jsx)("li",{children:"Complete list of all site changes"}),(0,B.jsx)("li",{children:"Global server infrastructure"}),(0,B.jsx)("li",{children:"Best-in-class support"})]})}))};W.displayName="TemplateWithChildren";var I=W.bind({});I.args=Object.assign({},o)},"../components/components/pricing-table/stories/index.tsx":(U,n,e)=>{"use strict";e.r(n),e.d(n,{_default:()=>i,default:()=>A});var l=e("../../../node_modules/.pnpm/core-js@3.23.5/node_modules/core-js/modules/es.object.assign.js"),b=e.n(l),s=e("../../../node_modules/.pnpm/core-js@3.23.5/node_modules/core-js/modules/es.function.bind.js"),p=e.n(s),t=e("../components/components/button/index.tsx"),m=e("../components/components/product-price/index.tsx"),B=e("../components/components/pricing-table/index.tsx"),v=e("../../../node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime.js"),T=`import Button from '../../button';
 import ProductPrice from '../../product-price';
 import PricingTable, { PricingTableColumn, PricingTableHeader, PricingTableItem } from '../index';
 import type { ComponentStory, ComponentMeta } from '@storybook/react';
@@ -7083,14 +7063,13 @@ filterButton.args = {
 	onClick: action( 'onClick' ),
 };
 
-const CheckboxCheckmarkButtonTemplate: ComponentStory<
-	typeof CheckboxCheckmark
-> = CheckboxCheckmark;
+const CheckboxCheckmarkButtonTemplate: ComponentStory< typeof CheckboxCheckmark > =
+	CheckboxCheckmark;
 export const checkboxCheckmark = CheckboxCheckmarkButtonTemplate.bind( {} );
 checkboxCheckmark.args = {
 	label: 'Is it checked?',
 };
-`,m={filterSection:{startLoc:{col:75,line:22},endLoc:{col:88,line:22},startBody:{col:75,line:22},endBody:{col:88,line:22}},filterButton:{startLoc:{col:73,line:26},endLoc:{col:85,line:26},startBody:{col:73,line:26},endBody:{col:85,line:26}},checkboxCheckmark:{startLoc:{col:4,line:35},endLoc:{col:21,line:35},startBody:{col:4,line:35},endBody:{col:21,line:35}}};const B={title:"Packages/VideoPress/Video Filter",component:p.Lb,parameters:{storySource:{source:`/**
+`,m={filterSection:{startLoc:{col:75,line:22},endLoc:{col:88,line:22},startBody:{col:75,line:22},endBody:{col:88,line:22}},filterButton:{startLoc:{col:73,line:26},endLoc:{col:85,line:26},startBody:{col:73,line:26},endBody:{col:85,line:26}},checkboxCheckmark:{startLoc:{col:1,line:34},endLoc:{col:18,line:34},startBody:{col:1,line:34},endBody:{col:18,line:34}}};const B={title:"Packages/VideoPress/Video Filter",component:p.Lb,parameters:{storySource:{source:`/**
  * External dependencies
  */
 import { action } from '@storybook/addon-actions';
@@ -7122,14 +7101,13 @@ filterButton.args = {
 	onClick: action( 'onClick' ),
 };
 
-const CheckboxCheckmarkButtonTemplate: ComponentStory<
-	typeof CheckboxCheckmark
-> = CheckboxCheckmark;
+const CheckboxCheckmarkButtonTemplate: ComponentStory< typeof CheckboxCheckmark > =
+	CheckboxCheckmark;
 export const checkboxCheckmark = CheckboxCheckmarkButtonTemplate.bind( {} );
 checkboxCheckmark.args = {
 	label: 'Is it checked?',
 };
-`,locationsMap:{"filter-section":{startLoc:{col:75,line:22},endLoc:{col:88,line:22},startBody:{col:75,line:22},endBody:{col:88,line:22}},"filter-button":{startLoc:{col:73,line:26},endLoc:{col:85,line:26},startBody:{col:73,line:26},endBody:{col:85,line:26}},"checkbox-checkmark":{startLoc:{col:4,line:35},endLoc:{col:21,line:35},startBody:{col:4,line:35},endBody:{col:21,line:35}}}},layout:"centered"}};var v=p.Oy,T=v.bind({});T.args={};var D=p.Lb,A=D.bind({});A.args={isActive:!1,onClick:(0,s.action)("onClick")};var o=p.JC,u=o.bind({});u.args={label:"Is it checked?"}},"../../packages/videopress/src/client/admin/components/video-grid/stories/index.tsx":(U,n,e)=>{"use strict";e.r(n),e.d(n,{_default:()=>i,default:()=>o});var l=e("../../../node_modules/.pnpm/core-js@3.23.5/node_modules/core-js/modules/es.function.bind.js"),b=e.n(l),s=e("../../../node_modules/.pnpm/core-js@3.23.5/node_modules/core-js/modules/es.array.map.js"),p=e.n(s),t=e("../../../node_modules/.pnpm/core-js@3.23.5/node_modules/core-js/modules/es.object.assign.js"),m=e.n(t),B=e("../../packages/videopress/src/client/admin/components/video-grid/index.tsx"),v=e("../../packages/videopress/src/client/admin/mock/index.ts"),T=e("../../packages/videopress/src/client/admin/components/video-grid/stories/VideoGrid.mdx"),D=`/**
+`,locationsMap:{"filter-section":{startLoc:{col:75,line:22},endLoc:{col:88,line:22},startBody:{col:75,line:22},endBody:{col:88,line:22}},"filter-button":{startLoc:{col:73,line:26},endLoc:{col:85,line:26},startBody:{col:73,line:26},endBody:{col:85,line:26}},"checkbox-checkmark":{startLoc:{col:1,line:34},endLoc:{col:18,line:34},startBody:{col:1,line:34},endBody:{col:18,line:34}}}},layout:"centered"}};var v=p.Oy,T=v.bind({});T.args={};var D=p.Lb,A=D.bind({});A.args={isActive:!1,onClick:(0,s.action)("onClick")};var o=p.JC,u=o.bind({});u.args={label:"Is it checked?"}},"../../packages/videopress/src/client/admin/components/video-grid/stories/index.tsx":(U,n,e)=>{"use strict";e.r(n),e.d(n,{_default:()=>i,default:()=>o});var l=e("../../../node_modules/.pnpm/core-js@3.23.5/node_modules/core-js/modules/es.function.bind.js"),b=e.n(l),s=e("../../../node_modules/.pnpm/core-js@3.23.5/node_modules/core-js/modules/es.array.map.js"),p=e.n(s),t=e("../../../node_modules/.pnpm/core-js@3.23.5/node_modules/core-js/modules/es.object.assign.js"),m=e.n(t),B=e("../../packages/videopress/src/client/admin/components/video-grid/index.tsx"),v=e("../../packages/videopress/src/client/admin/mock/index.ts"),T=e("../../packages/videopress/src/client/admin/components/video-grid/stories/VideoGrid.mdx"),D=`/**
  * Internal dependencies
  */
 import VideoGrid from '..';
@@ -7724,9 +7702,8 @@ Placeholder.args = {
 	thumbnail: 'none',
 };
 
-const VideoThumbnailDropdownTemplate: ComponentStory<
-	typeof VideoThumbnailDropdown
-> = VideoThumbnailDropdown;
+const VideoThumbnailDropdownTemplate: ComponentStory< typeof VideoThumbnailDropdown > =
+	VideoThumbnailDropdown;
 
 export const VideoDropdown = VideoThumbnailDropdownTemplate.bind( {} );
 VideoDropdown.args = {
@@ -7734,7 +7711,7 @@ VideoDropdown.args = {
 	onSelectFromVideo: action( 'onSelectFromVideo' ),
 	onUploadImage: action( 'onUploadImage' ),
 };
-`,q={Default:{startLoc:{col:72,line:36},endLoc:{col:1,line:42},startBody:{col:72,line:36},endBody:{col:1,line:42}},Placeholder:{startLoc:{col:72,line:36},endLoc:{col:1,line:42},startBody:{col:72,line:36},endBody:{col:1,line:42}},VideoDropdown:{startLoc:{col:4,line:65},endLoc:{col:26,line:65},startBody:{col:4,line:65},endBody:{col:26,line:65}}};const Y={title:"Packages/VideoPress/Video Thumbnail",component:I.ZP,parameters:{storySource:{source:`/**
+`,q={Default:{startLoc:{col:72,line:36},endLoc:{col:1,line:42},startBody:{col:72,line:36},endBody:{col:1,line:42}},Placeholder:{startLoc:{col:72,line:36},endLoc:{col:1,line:42},startBody:{col:72,line:36},endBody:{col:1,line:42}},VideoDropdown:{startLoc:{col:1,line:64},endLoc:{col:23,line:64},startBody:{col:1,line:64},endBody:{col:23,line:64}}};const Y={title:"Packages/VideoPress/Video Thumbnail",component:I.ZP,parameters:{storySource:{source:`/**
  * External dependencies
  */
 import { action } from '@storybook/addon-actions';
@@ -7796,9 +7773,8 @@ Placeholder.args = {
 	thumbnail: 'none',
 };
 
-const VideoThumbnailDropdownTemplate: ComponentStory<
-	typeof VideoThumbnailDropdown
-> = VideoThumbnailDropdown;
+const VideoThumbnailDropdownTemplate: ComponentStory< typeof VideoThumbnailDropdown > =
+	VideoThumbnailDropdown;
 
 export const VideoDropdown = VideoThumbnailDropdownTemplate.bind( {} );
 VideoDropdown.args = {
@@ -7806,7 +7782,7 @@ VideoDropdown.args = {
 	onSelectFromVideo: action( 'onSelectFromVideo' ),
 	onUploadImage: action( 'onUploadImage' ),
 };
-`,locationsMap:{default:{startLoc:{col:72,line:36},endLoc:{col:1,line:42},startBody:{col:72,line:36},endBody:{col:1,line:42}},placeholder:{startLoc:{col:72,line:36},endLoc:{col:1,line:42},startBody:{col:72,line:36},endBody:{col:1,line:42}},"video-dropdown":{startLoc:{col:4,line:65},endLoc:{col:26,line:65},startBody:{col:4,line:65},endBody:{col:26,line:65}}}},layout:"centered"},argTypes:{thumbnail:{control:{type:"select",options:[].concat(_(C.Pe),["none"])}}},decorators:[function(M){return(0,c.jsx)("div",{className:r.decorator,children:(0,c.jsx)(M,{})})}]};var E=function(h){return h.thumbnail==="none"&&(h.thumbnail=null),(0,c.jsx)(I.ZP,Object.assign({},h))};E.displayName="VideoThumbnailTemplate";var z=E.bind({});z.args={thumbnail:(0,C.u8)(),onUseDefaultThumbnail:(0,W.action)("onUseDefaultThumbnail"),onSelectFromVideo:(0,W.action)("onSelectFromVideo"),onUploadImage:(0,W.action)("onUploadImage"),editable:!0,loading:!1,uploading:!1,processing:!1,uploadProgress:.5};var R=E.bind({});R.args=Object.assign({},z.args,{thumbnail:"none"});var L=I.VJ,H=L.bind({});H.args={onUseDefaultThumbnail:(0,W.action)("onUseDefaultThumbnail"),onSelectFromVideo:(0,W.action)("onSelectFromVideo"),onUploadImage:(0,W.action)("onUploadImage")}},"../../packages/videopress/src/client/admin/components/video-upload-area/stories/index.tsx":(U,n,e)=>{"use strict";e.r(n),e.d(n,{_default:()=>u,default:()=>D});var l=e("../../../node_modules/.pnpm/core-js@3.23.5/node_modules/core-js/modules/es.object.assign.js"),b=e.n(l),s=e("../../../node_modules/.pnpm/core-js@3.23.5/node_modules/core-js/modules/es.function.bind.js"),p=e.n(s),t=e("../../packages/videopress/src/client/admin/components/video-upload-area/index.tsx"),m=e("../../packages/videopress/src/client/admin/components/video-upload-area/stories/VideoUploadArea.mdx"),B=e("../../../node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime.js"),v=`import VideoUploadArea from '..';
+`,locationsMap:{default:{startLoc:{col:72,line:36},endLoc:{col:1,line:42},startBody:{col:72,line:36},endBody:{col:1,line:42}},placeholder:{startLoc:{col:72,line:36},endLoc:{col:1,line:42},startBody:{col:72,line:36},endBody:{col:1,line:42}},"video-dropdown":{startLoc:{col:1,line:64},endLoc:{col:23,line:64},startBody:{col:1,line:64},endBody:{col:23,line:64}}}},layout:"centered"},argTypes:{thumbnail:{control:{type:"select",options:[].concat(_(C.Pe),["none"])}}},decorators:[function(M){return(0,c.jsx)("div",{className:r.decorator,children:(0,c.jsx)(M,{})})}]};var E=function(h){return h.thumbnail==="none"&&(h.thumbnail=null),(0,c.jsx)(I.ZP,Object.assign({},h))};E.displayName="VideoThumbnailTemplate";var z=E.bind({});z.args={thumbnail:(0,C.u8)(),onUseDefaultThumbnail:(0,W.action)("onUseDefaultThumbnail"),onSelectFromVideo:(0,W.action)("onSelectFromVideo"),onUploadImage:(0,W.action)("onUploadImage"),editable:!0,loading:!1,uploading:!1,processing:!1,uploadProgress:.5};var R=E.bind({});R.args=Object.assign({},z.args,{thumbnail:"none"});var L=I.VJ,H=L.bind({});H.args={onUseDefaultThumbnail:(0,W.action)("onUseDefaultThumbnail"),onSelectFromVideo:(0,W.action)("onSelectFromVideo"),onUploadImage:(0,W.action)("onUploadImage")}},"../../packages/videopress/src/client/admin/components/video-upload-area/stories/index.tsx":(U,n,e)=>{"use strict";e.r(n),e.d(n,{_default:()=>u,default:()=>D});var l=e("../../../node_modules/.pnpm/core-js@3.23.5/node_modules/core-js/modules/es.object.assign.js"),b=e.n(l),s=e("../../../node_modules/.pnpm/core-js@3.23.5/node_modules/core-js/modules/es.function.bind.js"),p=e.n(s),t=e("../../packages/videopress/src/client/admin/components/video-upload-area/index.tsx"),m=e("../../packages/videopress/src/client/admin/components/video-upload-area/stories/VideoUploadArea.mdx"),B=e("../../../node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime.js"),v=`import VideoUploadArea from '..';
 import Doc from './VideoUploadArea.mdx';
 import type { ComponentStory, ComponentMeta } from '@storybook/react';
 
