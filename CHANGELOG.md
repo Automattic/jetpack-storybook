@@ -15,6 +15,9 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Updated package dependencies.
 
+### Fixed
+- Update config to work around some bugs so `NODE_PATH` is no longer needed when running storybook.
+
 ## 0.3.2 - 2023-04-07
 ### Added
 - Include VideoPress block editor folder to the stories
