@@ -12,6 +12,9 @@ This is an alpha version! The changes listed here are not final.
 ### Added
 - Add AI Client icon components
 
+### Changed
+- Boost: Updated storybook configuration to allow scss imports in boost stories.
+
 ## 0.4.0 - 2023-07-06
 ### Added
 - Import root styles from js-packages to load root variables used by components [#30037]

@@ -1,4 +1,4 @@
-(()=>{(self.webpackChunk_automattic_jetpack_storybook=self.webpackChunk_automattic_jetpack_storybook||[]).push([[6430],{"../../../node_modules/.pnpm/@wordpress+compose@6.15.0_react@18.2.0/node_modules/@wordpress/compose/build-module/utils/debounce/index.js":(g,f,r)=>{"use strict";r.d(f,{D:()=>c});const c=(m,p,s)=>{let n,i,e=0,l,_,o,d=0,x=!1,b=!1,v=!0;s&&(x=!!s.leading,b="maxWait"in s,s.maxWait!==void 0&&(e=Math.max(s.maxWait,p)),v="trailing"in s?!!s.trailing:v);function k(t){const a=n,u=i;return n=void 0,i=void 0,d=t,l=m.apply(u,a),l}function h(t,a){_=setTimeout(t,a)}function A(){_!==void 0&&clearTimeout(_)}function C(t){return d=t,h(S,p),x?k(t):l}function D(t){return t-(o||0)}function w(t){const a=D(t),u=t-d,L=p-a;return b?Math.min(L,e-u):L}function R(t){const a=D(t),u=t-d;return o===void 0||a>=p||a<0||b&&u>=e}function S(){const t=Date.now();if(R(t))return E(t);h(S,w(t))}function B(){_=void 0}function E(t){return B(),v&&n?k(t):(n=i=void 0,l)}function M(){A(),d=0,B(),n=o=i=void 0}function W(){return y()?E(Date.now()):l}function y(){return _!==void 0}function T(...t){const a=Date.now(),u=R(a);if(n=t,i=this,o=a,u){if(!y())return C(o);if(b)return h(S,p),k(o)}return y()||h(S,p),l}return T.cancel=M,T.flush=W,T.pending=y,T}},"../components/components/boost-score-graph/stories/index.stories.tsx":(g,f,r)=>{var x,b,v;"use strict";r.r(f),r.d(f,{__namedExportsOrder:()=>d,_default:()=>o,default:()=>l});var c=r("../components/components/boost-score-graph/index.tsx"),m=r("../../../node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime.js"),p=`import { BoostScoreGraph } from '..';
+(()=>{(self.webpackChunk_automattic_jetpack_storybook=self.webpackChunk_automattic_jetpack_storybook||[]).push([[6430],{"../../../node_modules/.pnpm/@wordpress+compose@6.15.0_react@18.2.0/node_modules/@wordpress/compose/build-module/utils/debounce/index.js":(h,f,r)=>{"use strict";r.d(f,{D:()=>c});const c=(m,p,s)=>{let n,i,e=0,l,_,o,d=0,x=!1,b=!1,v=!0;s&&(x=!!s.leading,b="maxWait"in s,s.maxWait!==void 0&&(e=Math.max(s.maxWait,p)),v="trailing"in s?!!s.trailing:v);function k(t){const a=n,u=i;return n=void 0,i=void 0,d=t,l=m.apply(u,a),l}function g(t,a){_=setTimeout(t,a)}function A(){_!==void 0&&clearTimeout(_)}function C(t){return d=t,g(S,p),x?k(t):l}function D(t){return t-(o||0)}function w(t){const a=D(t),u=t-d,P=p-a;return b?Math.min(P,e-u):P}function R(t){const a=D(t),u=t-d;return o===void 0||a>=p||a<0||b&&u>=e}function S(){const t=Date.now();if(R(t))return E(t);g(S,w(t))}function B(){_=void 0}function E(t){return B(),v&&n?k(t):(n=i=void 0,l)}function L(){A(),d=0,B(),n=o=i=void 0}function M(){return y()?E(Date.now()):l}function y(){return _!==void 0}function T(...t){const a=Date.now(),u=R(a);if(n=t,i=this,o=a,u){if(!y())return C(o);if(b)return g(S,p),k(o)}return y()||g(S,p),l}return T.cancel=L,T.flush=M,T.pending=y,T}},"../components/components/boost-score-graph/stories/index.stories.tsx":(h,f,r)=>{var x,b,v;"use strict";r.r(f),r.d(f,{__namedExportsOrder:()=>d,_default:()=>o,default:()=>l});var c=r("../components/components/boost-score-graph/index.tsx"),m=r("../../../node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime.js"),p=`import { BoostScoreGraph } from '..';
 import type { Meta } from '@storybook/react';
 
 const exampleRawResponse = {
@@ -162,7 +162,7 @@ const meta: Meta< typeof BoostScoreGraph > = {
 		startDate: { control: 'date' },
 		endDate: { control: 'date' },
 		title: { control: 'string', defaultValue: 'Title' },
-		isLoading: { control: 'boolean', defaultValue: false },
+		isPlaceholder: { control: 'boolean', defaultValue: false },
 	},
 	decorators: [
 		Story => (
@@ -177,7 +177,7 @@ const defaultValues = {
 	startDate: exampleRawResponse.data._meta.start,
 	endDate: exampleRawResponse.data._meta.end,
 	periods: exampleRawResponse.data.periods,
-	isLoading: false,
+	isPlaceholder: false,
 };
 
 export default meta;
@@ -342,7 +342,7 @@ const meta: Meta<typeof BoostScoreGraph> = {
       control: 'string',
       defaultValue: 'Title'
     },
-    isLoading: {
+    isPlaceholder: {
       control: 'boolean',
       defaultValue: false
     }
@@ -360,7 +360,7 @@ const defaultValues = {
   startDate: exampleRawResponse.data._meta.start,
   endDate: exampleRawResponse.data._meta.end,
   periods: exampleRawResponse.data.periods,
-  isLoading: false
+  isPlaceholder: false
 };
 export default meta;
 const Template = args => <BoostScoreGraph {...args} />;
@@ -375,8 +375,8 @@ _default.parameters = {
       ..._default.parameters?.docs?.source
     }
   }
-};`,locationsMap:{default:{startLoc:{col:17,line:179},endLoc:{col:54,line:179},startBody:{col:17,line:179},endBody:{col:54,line:179}}}}},title:"JS Packages/Components/Boost Score Graph",component:c.i,argTypes:{startDate:{control:"date"},endDate:{control:"date"},title:{control:"string",defaultValue:"Title"},isLoading:{control:"boolean",defaultValue:!1}},decorators:[k=>(0,m.jsx)("div",{style:{width:"80%",maxWidth:"1320px",margin:"200px auto",fontSize:"16px"},children:(0,m.jsx)(k,{})})]},e={startDate:n.data._meta.start,endDate:n.data._meta.end,periods:n.data.periods,isLoading:!1},l=i,_=k=>(0,m.jsx)(c.i,{...k});_.displayName="Template";const o=_.bind({});o.args=e,o.parameters={...o.parameters,docs:{...(x=o.parameters)==null?void 0:x.docs,source:{originalSource:"args => <BoostScoreGraph {...args} />",...(v=(b=o.parameters)==null?void 0:b.docs)==null?void 0:v.source}}};const d=["_default"]},"../../../node_modules/.pnpm/classnames@2.3.2/node_modules/classnames/index.js":(g,f)=>{var r,c;/*!
+};`,locationsMap:{default:{startLoc:{col:17,line:179},endLoc:{col:54,line:179},startBody:{col:17,line:179},endBody:{col:54,line:179}}}}},title:"JS Packages/Components/Boost Score Graph",component:c.i,argTypes:{startDate:{control:"date"},endDate:{control:"date"},title:{control:"string",defaultValue:"Title"},isPlaceholder:{control:"boolean",defaultValue:!1}},decorators:[k=>(0,m.jsx)("div",{style:{width:"80%",maxWidth:"1320px",margin:"200px auto",fontSize:"16px"},children:(0,m.jsx)(k,{})})]},e={startDate:n.data._meta.start,endDate:n.data._meta.end,periods:n.data.periods,isPlaceholder:!1},l=i,_=k=>(0,m.jsx)(c.i,{...k});_.displayName="Template";const o=_.bind({});o.args=e,o.parameters={...o.parameters,docs:{...(x=o.parameters)==null?void 0:x.docs,source:{originalSource:"args => <BoostScoreGraph {...args} />",...(v=(b=o.parameters)==null?void 0:b.docs)==null?void 0:v.source}}};const d=["_default"]},"../../../node_modules/.pnpm/classnames@2.3.2/node_modules/classnames/index.js":(h,f)=>{var r,c;/*!
 	Copyright (c) 2018 Jed Watson.
 	Licensed under the MIT License (MIT), see
 	http://jedwatson.github.io/classnames
-*/(function(){"use strict";var m={}.hasOwnProperty,p="[native code]";function s(){for(var n=[],i=0;i<arguments.length;i++){var e=arguments[i];if(e){var l=typeof e;if(l==="string"||l==="number")n.push(e);else if(Array.isArray(e)){if(e.length){var _=s.apply(null,e);_&&n.push(_)}}else if(l==="object"){if(e.toString!==Object.prototype.toString&&!e.toString.toString().includes("[native code]")){n.push(e.toString());continue}for(var o in e)m.call(e,o)&&e[o]&&n.push(o)}}}return n.join(" ")}g.exports?(s.default=s,g.exports=s):(r=[],c=function(){return s}.apply(f,r),c!==void 0&&(g.exports=c))})()}}]);})();
+*/(function(){"use strict";var m={}.hasOwnProperty,p="[native code]";function s(){for(var n=[],i=0;i<arguments.length;i++){var e=arguments[i];if(e){var l=typeof e;if(l==="string"||l==="number")n.push(e);else if(Array.isArray(e)){if(e.length){var _=s.apply(null,e);_&&n.push(_)}}else if(l==="object"){if(e.toString!==Object.prototype.toString&&!e.toString.toString().includes("[native code]")){n.push(e.toString());continue}for(var o in e)m.call(e,o)&&e[o]&&n.push(o)}}}return n.join(" ")}h.exports?(s.default=s,h.exports=s):(r=[],c=function(){return s}.apply(f,r),c!==void 0&&(h.exports=c))})()}}]);})();
