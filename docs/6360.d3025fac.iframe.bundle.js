@@ -1,4 +1,4 @@
-"use strict";(()=>{(self.webpackChunk_automattic_jetpack_storybook=self.webpackChunk_automattic_jetpack_storybook||[]).push([[8983],{"../../packages/videopress/src/client/admin/components/video-upload-area/stories/index.stories.tsx":(O,i,e)=>{var x,d,r;e.r(i),e.d(i,{__namedExportsOrder:()=>V,_default:()=>a,default:()=>o});var t=e("../../packages/videopress/src/client/admin/components/video-upload-area/index.tsx"),c=e("../../../node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime.js"),g=`import VideoUploadArea from '..';
+"use strict";(()=>{(self.webpackChunk_automattic_jetpack_storybook=self.webpackChunk_automattic_jetpack_storybook||[]).push([[6360],{"../../packages/videopress/src/client/admin/components/video-upload-area/stories/index.stories.tsx":(O,i,e)=>{var x,d,r;e.r(i),e.d(i,{__namedExportsOrder:()=>V,_default:()=>a,default:()=>o});var t=e("../../packages/videopress/src/client/admin/components/video-upload-area/index.tsx"),c=e("../../../node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime.js"),g=`import VideoUploadArea from '..';
 import type { ComponentStory, ComponentMeta } from '@storybook/react';
 
 export default {
