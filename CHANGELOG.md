@@ -11,9 +11,13 @@ This is an alpha version! The changes listed here are not final.
 
 ### Added
 - Add AI Client icon components
+- Storybook: register ./extensions folder of the Jetpack plugin project
 
 ### Changed
 - Boost: Updated storybook configuration to allow scss imports in boost stories.
+
+### Fixed
+- Storybook: remove Jetpack plugin from deps to fix builds in trunk
 
 ## 0.4.0 - 2023-07-06
 ### Added
