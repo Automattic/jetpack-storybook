@@ -15,6 +15,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Changed
 - Boost: Updated storybook configuration to allow scss imports in boost stories.
+- Jetpack Boost: Remove Jetpack Boost stories while in the React refactor
 
 ### Fixed
 - Storybook: remove Jetpack plugin from deps to fix builds in trunk
