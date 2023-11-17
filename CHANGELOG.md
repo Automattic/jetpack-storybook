@@ -11,6 +11,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Added
 - Add AI Client icon components
+- Added boost back to storybook
 - Storybook: register ./extensions folder of the Jetpack plugin project
 
 ### Changed
