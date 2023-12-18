@@ -62,7 +62,7 @@ VideoHoverPreviewControlStory.args = {
 };
 
 VideoHoverPreviewControlStory.storyName = 'VideoHoverPreviewControl';
-`,j={_default:{startLoc:{col:24,line:8},endLoc:{col:1,line:21},startBody:{col:24,line:8},endBody:{col:1,line:21}},VideoHoverPreviewControlStory:{startLoc:{col:41,line:28},endLoc:{col:1,line:40},startBody:{col:41,line:28},endBody:{col:1,line:40}}};const Z={parameters:{storySource:{source:`import React, { useState } from 'react';
+`,j={_default:{startLoc:{col:24,line:8},endLoc:{col:1,line:21},startBody:{col:24,line:8},endBody:{col:1,line:21}},VideoHoverPreviewControlStory:{startLoc:{col:41,line:28},endLoc:{col:1,line:39},startBody:{col:41,line:28},endBody:{col:1,line:39}}};const Z={parameters:{storySource:{source:`import React, { useState } from 'react';
 import PosterPanel, { VideoHoverPreviewControl } from '..';
 export default {
   title: 'Packages/VideoPress/Block Editor/Poster Panel',
@@ -99,7 +99,6 @@ const VideoHoverPreviewControlTemplate = args => {
       newPreviewAt
     }); 
   };
-
   return <VideoHoverPreviewControl {...args} previewOnHover={previewOnHover} onPreviewAtTimeChange={setPreviewAtHandler} onLoopDurationChange={setLoopDuraton} onPreviewOnHoverChange={setPreviewOnHover} />;
 };
 export const VideoHoverPreviewControlStory = VideoHoverPreviewControlTemplate.bind({});
@@ -108,7 +107,6 @@ VideoHoverPreviewControlStory.args = {
   loopDuration: 2300,
   videoDuration: 80000 // 80 seconds
 };
-
 VideoHoverPreviewControlStory.storyName = 'VideoHoverPreviewControl';
 _default.parameters = {
   ..._default.parameters,
@@ -125,11 +123,11 @@ VideoHoverPreviewControlStory.parameters = {
   docs: {
     ...VideoHoverPreviewControlStory.parameters?.docs,
     source: {
-      originalSource: "args => {\\n  const [previewOnHover, setPreviewOnHover] = useState(true);\\n  const [, setPreviewAt] = useState(args.previewAtTime);\\n  const [, setLoopDuraton] = useState(args.loopDuration);\\n  const setPreviewAtHandler = newPreviewAt => {\\n    setPreviewAt(newPreviewAt);\\n    console.log({\\n      newPreviewAt\\n    }); // eslint-disable-line no-console\\n  };\\n\\n  return <VideoHoverPreviewControl {...args} previewOnHover={previewOnHover} onPreviewAtTimeChange={setPreviewAtHandler} onLoopDurationChange={setLoopDuraton} onPreviewOnHoverChange={setPreviewOnHover} />;\\n}",
+      originalSource: "args => {\\n  const [previewOnHover, setPreviewOnHover] = useState(true);\\n  const [, setPreviewAt] = useState(args.previewAtTime);\\n  const [, setLoopDuraton] = useState(args.loopDuration);\\n  const setPreviewAtHandler = newPreviewAt => {\\n    setPreviewAt(newPreviewAt);\\n    console.log({\\n      newPreviewAt\\n    }); // eslint-disable-line no-console\\n  };\\n  return <VideoHoverPreviewControl {...args} previewOnHover={previewOnHover} onPreviewAtTimeChange={setPreviewAtHandler} onLoopDurationChange={setLoopDuraton} onPreviewOnHoverChange={setPreviewOnHover} />;\\n}",
       ...VideoHoverPreviewControlStory.parameters?.docs?.source
     }
   }
-};`,locationsMap:{default:{startLoc:{col:24,line:8},endLoc:{col:1,line:21},startBody:{col:24,line:8},endBody:{col:1,line:21}},"video-hover-preview-control-story":{startLoc:{col:41,line:28},endLoc:{col:1,line:40},startBody:{col:41,line:28},endBody:{col:1,line:40}}}}},title:"Packages/VideoPress/Block Editor/Poster Panel",component:E.ZP,argTypes:{}},Y=S=>{const[I,O]=h.useState({poster:S.poster,videoRatio:S.videoRatio,guid:S.guid}),K=X=>{O({...I,...X})};return(0,R.jsx)(E.ZP,{attributes:I,setAttributes:K,isGeneratingPoster:!1})};Y.displayName="DefaultTemplate";const G=Y.bind({});G.args={poster:"https://jetpackme.files.wordpress.com/2018/04/cropped-jetpack-favicon-2018.png",videoRatio:60,guid:"ezoR6kzb"};const oe=S=>{const[I,O]=(0,h.useState)(!0),[,K]=(0,h.useState)(S.previewAtTime),[,X]=(0,h.useState)(S.loopDuration),pe=te=>{K(te),console.log({newPreviewAt:te})};return(0,R.jsx)(E.wj,{...S,previewOnHover:I,onPreviewAtTimeChange:pe,onLoopDurationChange:X,onPreviewOnHoverChange:O})};oe.displayName="VideoHoverPreviewControlTemplate";const W=oe.bind({});W.args={previewAtTime:0,loopDuration:2300,videoDuration:8e4},W.storyName="VideoHoverPreviewControl",G.parameters={...G.parameters,docs:{...(l=G.parameters)==null?void 0:l.docs,source:{originalSource:`args => {
+};`,locationsMap:{default:{startLoc:{col:24,line:8},endLoc:{col:1,line:21},startBody:{col:24,line:8},endBody:{col:1,line:21}},"video-hover-preview-control-story":{startLoc:{col:41,line:28},endLoc:{col:1,line:39},startBody:{col:41,line:28},endBody:{col:1,line:39}}}}},title:"Packages/VideoPress/Block Editor/Poster Panel",component:E.ZP,argTypes:{}},Y=S=>{const[I,O]=h.useState({poster:S.poster,videoRatio:S.videoRatio,guid:S.guid}),K=X=>{O({...I,...X})};return(0,R.jsx)(E.ZP,{attributes:I,setAttributes:K,isGeneratingPoster:!1})};Y.displayName="DefaultTemplate";const G=Y.bind({});G.args={poster:"https://jetpackme.files.wordpress.com/2018/04/cropped-jetpack-favicon-2018.png",videoRatio:60,guid:"ezoR6kzb"};const oe=S=>{const[I,O]=(0,h.useState)(!0),[,K]=(0,h.useState)(S.previewAtTime),[,X]=(0,h.useState)(S.loopDuration),pe=te=>{K(te),console.log({newPreviewAt:te})};return(0,R.jsx)(E.wj,{...S,previewOnHover:I,onPreviewAtTimeChange:pe,onLoopDurationChange:X,onPreviewOnHoverChange:O})};oe.displayName="VideoHoverPreviewControlTemplate";const W=oe.bind({});W.args={previewAtTime:0,loopDuration:2300,videoDuration:8e4},W.storyName="VideoHoverPreviewControl",G.parameters={...G.parameters,docs:{...(l=G.parameters)==null?void 0:l.docs,source:{originalSource:`args => {
   const [attributes, setAttributes] = React.useState({
     poster: args.poster,
     videoRatio: args.videoRatio,
@@ -152,7 +150,6 @@ VideoHoverPreviewControlStory.parameters = {
       newPreviewAt
     }); // eslint-disable-line no-console
   };
-
   return <VideoHoverPreviewControl {...args} previewOnHover={previewOnHover} onPreviewAtTimeChange={setPreviewAtHandler} onLoopDurationChange={setLoopDuraton} onPreviewOnHoverChange={setPreviewOnHover} />;
 }`,...(p=(f=W.parameters)==null?void 0:f.docs)==null?void 0:p.source}}};const m=["_default","VideoHoverPreviewControlStory"]},"../../packages/videopress/src/client/block-editor/blocks/video/components/poster-panel/index.tsx":(ee,L,e)=>{var Ie;e.d(L,{wj:()=>ye,ZP:()=>Re});var h=e("../../../node_modules/.pnpm/@wordpress+block-editor@12.15.0_@types+react@18.2.33_react-dom@18.2.0_react@18.2.0/node_modules/@wordpress/block-editor/build-module/index.js"),E=e("../../../node_modules/.pnpm/@wordpress+components@25.13.0_@types+react@18.2.33_react-dom@18.2.0_react@18.2.0/node_modules/@wordpress/components/build-module/dropdown/index.js"),R=e("../../../node_modules/.pnpm/@wordpress+components@25.13.0_@types+react@18.2.33_react-dom@18.2.0_react@18.2.0/node_modules/@wordpress/components/build-module/button/index.js"),H=e("../../../node_modules/.pnpm/@wordpress+components@25.13.0_@types+react@18.2.33_react-dom@18.2.0_react@18.2.0/node_modules/@wordpress/components/build-module/navigable-container/menu.js"),j=e("../../../node_modules/.pnpm/@wordpress+components@25.13.0_@types+react@18.2.33_react-dom@18.2.0_react@18.2.0/node_modules/@wordpress/components/build-module/menu-item/index.js"),Z=e("../../../node_modules/.pnpm/@wordpress+components@25.13.0_@types+react@18.2.33_react-dom@18.2.0_react@18.2.0/node_modules/@wordpress/components/build-module/spinner/index.js"),Y=e("../../../node_modules/.pnpm/@wordpress+components@25.13.0_@types+react@18.2.33_react-dom@18.2.0_react@18.2.0/node_modules/@wordpress/components/build-module/sandbox/index.js"),G=e("../../../node_modules/.pnpm/@wordpress+components@25.13.0_@types+react@18.2.33_react-dom@18.2.0_react@18.2.0/node_modules/@wordpress/components/build-module/notice/index.js"),oe=e("../../../node_modules/.pnpm/@wordpress+components@25.13.0_@types+react@18.2.33_react-dom@18.2.0_react@18.2.0/node_modules/@wordpress/components/build-module/toggle-control/index.js"),W=e("../../../node_modules/.pnpm/@wordpress+components@25.13.0_@types+react@18.2.33_react-dom@18.2.0_react@18.2.0/node_modules/@wordpress/components/build-module/panel/body.js"),m=e("../../../node_modules/.pnpm/react@18.2.0/node_modules/react/index.js"),l=e("../../../node_modules/.pnpm/@wordpress+element@5.24.0/node_modules/@wordpress/element/build-module/create-interpolate-element.js"),u=e("../../../node_modules/.pnpm/@wordpress+i18n@4.47.0/node_modules/@wordpress/i18n/build-module/index.js"),C=e("../../../node_modules/.pnpm/@wordpress+icons@9.38.0_react@18.2.0/node_modules/@wordpress/icons/build-module/library/image.js"),z=e("../../../node_modules/.pnpm/@wordpress+icons@9.38.0_react@18.2.0/node_modules/@wordpress/icons/build-module/library/link-off.js"),f=e("../../../node_modules/.pnpm/classnames@2.3.2/node_modules/classnames/index.js"),p=e.n(f),S=e("../../packages/videopress/src/client/components/timestamp-control/index.tsx"),I=e("../../packages/videopress/src/client/lib/url/index.ts");function O(o){const s=Math.floor(o/36e5);let d=o-s*36e5;const r=Math.floor(d/6e4);d=d-r*6e4;const a=Math.floor(d/1e3);return[s,r,a].map(n=>n<10?`0${n}`:n).join(":")}const K="videopress-chapters-auto-generated";function X(o,s=3599999e3){const d=extractVideoChapters(o);if(d.length===0)return null;let r=`WEBVTT
 `;r+=`
