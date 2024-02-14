@@ -1,12 +1,12 @@
-(()=>{(self.webpackChunk_automattic_jetpack_storybook=self.webpackChunk_automattic_jetpack_storybook||[]).push([[9869,2471],{"../ai-client/src/components/ai-status-indicator/stories/index.stories.tsx":(u,s,t)=>{var S,y,x,f,T,I,A,R,D,O,h,P,b,v,L,B,z,M;"use strict";t.r(s),t.d(s,{Done:()=>E,Error:()=>_,Init:()=>i,Requesting:()=>o,Suggesting:()=>e,__namedExportsOrder:()=>j,_default:()=>c,default:()=>l});var p=t("../../../node_modules/.pnpm/react@18.2.0/node_modules/react/index.js"),n=t("../ai-client/src/components/ai-status-indicator/index.tsx"),d=t("../ai-client/src/types.ts"),m=t("../../../node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime.js"),a=`/*
+(()=>{(self.webpackChunk_automattic_jetpack_storybook=self.webpackChunk_automattic_jetpack_storybook||[]).push([[9869,2471],{"../ai-client/src/components/ai-status-indicator/stories/index.stories.tsx":(u,s,t)=>{var S,y,x,f,T,I,A,R,D,O,h,P,b,v,L,B,z,M;"use strict";t.r(s),t.d(s,{Done:()=>E,Error:()=>_,Init:()=>i,Requesting:()=>o,Suggesting:()=>e,__namedExportsOrder:()=>j,_default:()=>c,default:()=>l});var p=t("../../../node_modules/.pnpm/react@18.2.0/node_modules/react/index.js"),n=t("../ai-client/src/types.ts"),d=t("../ai-client/src/components/ai-status-indicator/index.tsx"),m=t("../../../node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime.js"),a=`/*
  * External Dependencies
  */
 import React from 'react';
 /*
  * Internal Dependencies
  */
-import AiStatusIndicator, { AiStatusIndicatorProps } from '..';
-import { REQUESTING_STATES } from '../../../types';
+import { REQUESTING_STATES } from '../../../types.js';
+import AiStatusIndicator, { AiStatusIndicatorProps } from '../index.js';
 
 type AiStatusIndicatoryStoryProps = AiStatusIndicatorProps & {
 	icon: string;
@@ -89,8 +89,8 @@ import React from 'react';
 /*
  * Internal Dependencies
  */
-import AiStatusIndicator, { AiStatusIndicatorProps } from '..';
-import { REQUESTING_STATES } from '../../../types';
+import { REQUESTING_STATES } from '../../../types.js';
+import AiStatusIndicator, { AiStatusIndicatorProps } from '../index.js';
 
 type AiStatusIndicatoryStoryProps = AiStatusIndicatorProps & {
 	icon: string;
@@ -166,7 +166,7 @@ Done.args = {
 	state: 'done',
 	size: 48,
 };
-`,locationsMap:{default:{startLoc:{col:24,line:41},endLoc:{col:1,line:48},startBody:{col:24,line:41},endBody:{col:1,line:48}},init:{startLoc:{col:24,line:41},endLoc:{col:1,line:48},startBody:{col:24,line:41},endBody:{col:1,line:48}},requesting:{startLoc:{col:24,line:41},endLoc:{col:1,line:48},startBody:{col:24,line:41},endBody:{col:1,line:48}},suggesting:{startLoc:{col:24,line:41},endLoc:{col:1,line:48},startBody:{col:24,line:41},endBody:{col:1,line:48}},error:{startLoc:{col:24,line:41},endLoc:{col:1,line:48},startBody:{col:24,line:41},endBody:{col:1,line:48}},done:{startLoc:{col:24,line:41},endLoc:{col:1,line:48},startBody:{col:24,line:41},endBody:{col:1,line:48}}}}},title:"JS Packages/AI Client/AiStatusIndicator",component:n.Z,argTypes:{state:{control:{type:"select"},options:d.mw},size:{control:{type:"select"},options:[24,32,48,64]},action:{table:{disable:!0}}}},r=C=>{const U={state:C.state,size:C.size};return(0,m.jsx)(n.Z,{...U})};r.displayName="DefaultTemplate";const c=r.bind({});c.args={state:"init",size:24};const i=r.bind({});i.args={state:"init",size:48};const o=r.bind({});o.args={state:"requesting",size:48};const e=r.bind({});e.args={state:"suggesting",size:48};const _=r.bind({});_.args={state:"error",size:48};const E=r.bind({});E.args={state:"done",size:48},c.parameters={...c.parameters,docs:{...(S=c.parameters)==null?void 0:S.docs,source:{originalSource:`(args: AiStatusIndicatoryStoryProps) => {
+`,locationsMap:{default:{startLoc:{col:24,line:41},endLoc:{col:1,line:48},startBody:{col:24,line:41},endBody:{col:1,line:48}},init:{startLoc:{col:24,line:41},endLoc:{col:1,line:48},startBody:{col:24,line:41},endBody:{col:1,line:48}},requesting:{startLoc:{col:24,line:41},endLoc:{col:1,line:48},startBody:{col:24,line:41},endBody:{col:1,line:48}},suggesting:{startLoc:{col:24,line:41},endLoc:{col:1,line:48},startBody:{col:24,line:41},endBody:{col:1,line:48}},error:{startLoc:{col:24,line:41},endLoc:{col:1,line:48},startBody:{col:24,line:41},endBody:{col:1,line:48}},done:{startLoc:{col:24,line:41},endLoc:{col:1,line:48},startBody:{col:24,line:41},endBody:{col:1,line:48}}}}},title:"JS Packages/AI Client/AiStatusIndicator",component:d.Z,argTypes:{state:{control:{type:"select"},options:n.mw},size:{control:{type:"select"},options:[24,32,48,64]},action:{table:{disable:!0}}}},r=C=>{const U={state:C.state,size:C.size};return(0,m.jsx)(d.Z,{...U})};r.displayName="DefaultTemplate";const c=r.bind({});c.args={state:"init",size:24};const i=r.bind({});i.args={state:"init",size:48};const o=r.bind({});o.args={state:"requesting",size:48};const e=r.bind({});e.args={state:"suggesting",size:48};const _=r.bind({});_.args={state:"error",size:48};const E=r.bind({});E.args={state:"done",size:48},c.parameters={...c.parameters,docs:{...(S=c.parameters)==null?void 0:S.docs,source:{originalSource:`(args: AiStatusIndicatoryStoryProps) => {
   const props: AiStatusIndicatorProps = {
     state: args.state,
     size: args.size
