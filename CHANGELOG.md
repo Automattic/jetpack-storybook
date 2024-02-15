@@ -13,6 +13,9 @@ This is an alpha version! The changes listed here are not final.
 - Add webpack resolve.extensionAlias for tsc compat.
 - Updated package dependencies.
 
+### Removed
+- Remove unused JS deps on `autoprefixer`, `postcss-custom-properties`.
+
 ## 0.4.1 - 2024-02-07
 ### Added
 - Add AI Client icon components [#32079]
