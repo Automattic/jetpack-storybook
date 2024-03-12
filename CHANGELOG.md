@@ -11,7 +11,10 @@ This is an alpha version! The changes listed here are not final.
 
 ### Changed
 - Add webpack resolve.extensionAlias for tsc compat.
+- Don't minify in dev builds.
+- Try adding support for `@storybook/test-runner`.
 - Updated package dependencies.
+- Use `jetpack:src` condition when building, so all deps don't have to be built first.
 
 ### Removed
 - Remove unused JS deps on `autoprefixer`, `postcss-custom-properties`.
