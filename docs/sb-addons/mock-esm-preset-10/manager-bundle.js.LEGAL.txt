@@ -1,9 +1,5 @@
 Bundled license information:
 
-store2/dist/store2.js:
-  /*! store2 - v2.14.3 - 2024-02-14
-  * Copyright (c) 2024 Nathan Bubna; Licensed MIT */
-
 telejson/dist/index.mjs:
   /*!
    * isobject <https://github.com/jonschlinkert/isobject>
