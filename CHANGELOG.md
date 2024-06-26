@@ -11,6 +11,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Added
 - Add jetpack as project
+- add social logos
 
 ### Changed
 - Add webpack resolve.extensionAlias for tsc compat.
