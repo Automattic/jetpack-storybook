@@ -23,6 +23,9 @@ This is an alpha version! The changes listed here are not final.
 ### Removed
 - Remove unused JS deps on `autoprefixer`, `postcss-custom-properties`.
 
+### Fixed
+- Lossless image optimization for images (should improve performance with no visible changes).
+
 ## 0.4.1 - 2024-02-07
 ### Added
 - Add AI Client icon components [#32079]
