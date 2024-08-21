@@ -5,8 +5,8 @@
 	"license": "GPL-2.0-or-later",
 	"require": {},
 	"require-dev": {
-		"yoast/phpunit-polyfills": "1.1.0",
-		"automattic/jetpack-changelogger": "^4.2.5"
+		"yoast/phpunit-polyfills": "^1.1.1",
+		"automattic/jetpack-changelogger": "^4.2.6-alpha"
 	},
 	"autoload": {
 		"classmap": [
