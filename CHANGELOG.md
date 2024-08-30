@@ -5,26 +5,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## 0.5.0-alpha - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## 0.5.0 - 2024-08-29
 ### Added
-- Add jetpack as project
-- add social logos
+- Add jetpack as project [#37216]
+- add social logos [#38036]
 
 ### Changed
-- Add webpack resolve.extensionAlias for tsc compat.
-- Don't minify in dev builds.
-- Try adding support for `@storybook/test-runner`.
+- Add webpack resolve.extensionAlias for tsc compat. [#35453]
+- Don't minify in dev builds. [#35919]
+- Try adding support for `@storybook/test-runner`. [#35919]
 - Updated package dependencies.
-- Use `jetpack:src` condition when building, so all deps don't have to be built first.
+- Use `jetpack:src` condition when building, so all deps don't have to be built first. [#35919]
 
 ### Removed
-- Remove unused JS deps on `autoprefixer`, `postcss-custom-properties`.
+- Remove unused JS deps on `autoprefixer`, `postcss-custom-properties`. [#35695]
 
 ### Fixed
-- Lossless image optimization for images (should improve performance with no visible changes).
+- Lossless image optimization for images (should improve performance with no visible changes). [#38750]
 
 ## 0.4.1 - 2024-02-07
 ### Added
