@@ -12,6 +12,9 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Updated package dependencies.
 
+### Fixed
+- Update Storybook FAQ reference.
+
 ## 0.5.0 - 2024-08-29
 ### Added
 - Add jetpack as project [#37216]
