@@ -12,6 +12,9 @@ This is an alpha version! The changes listed here are not final.
 ### Added
 - Charts: adds Barchart functionality and storybook item
 
+### Changed
+- Updated package dependencies.
+
 ## 0.5.1 - 2024-12-04
 ### Changed
 - Updated package dependencies. [#39176] [#39302] [#39594] [#39669] [#39707] [#39910] [#39999] [#40060] [#40288] [#40363]
