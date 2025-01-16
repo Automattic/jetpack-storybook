@@ -11,6 +11,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Added
 - Charts: adds Barchart functionality and storybook item
+- Storybook: Improve launch instructions
 
 ### Changed
 - Updated package dependencies.
