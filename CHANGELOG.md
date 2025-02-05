@@ -14,6 +14,7 @@ This is an alpha version! The changes listed here are not final.
 - Storybook: Improve launch instructions
 
 ### Changed
+- Storybook: Change target to esnext
 - Updated package dependencies.
 
 ## 0.5.1 - 2024-12-04
