@@ -5,17 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## 0.6.0-alpha - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## 0.6.0 - 2025-02-05
 ### Added
-- Charts: adds Barchart functionality and storybook item
-- Storybook: Improve launch instructions
+- Charts: adds Barchart functionality and storybook item [#40353]
+- Storybook: Improve launch instructions [#41115]
 
 ### Changed
-- Storybook: Change target to esnext
-- Updated package dependencies.
+- Storybook: Change target to esnext [#41078]
+- Updated package dependencies. [#40564] [#40693] [#40797] [#40841] [#41099] [#41286] [#41491]
 
 ## 0.5.1 - 2024-12-04
 ### Changed
