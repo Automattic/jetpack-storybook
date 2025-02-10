@@ -1,0 +1,48 @@
+"use strict";(self.webpackChunk_automattic_jetpack_storybook=self.webpackChunk_automattic_jetpack_storybook||[]).push([[812],{"../components/components/alert/stories/index.stories.jsx":(i,l,e)=>{e.r(l),e.d(l,{__namedExportsOrder:()=>p,_default:()=>_,default:()=>a});var n=e("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js"),s=e("../components/components/alert/index.tsx"),c=e("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js"),o=`import React from 'react';
+import Alert from '../index';
+
+export default {
+	title: 'JS Packages/Components/Alert',
+	component: Alert,
+	argTypes: {
+		level: {
+			control: {
+				type: 'select',
+			},
+			options: [ 'info', 'success', 'warning', 'error' ],
+		},
+	},
+};
+
+const Template = args => <Alert { ...args } />;
+
+export const _default = Template.bind( {} );
+_default.args = {
+	level: 'info',
+	children: "Don't forget to check your email for the latest news.",
+	showIcon: true,
+};
+`,r={_default:{startLoc:{col:17,line:16},endLoc:{col:2,line:18},startBody:{col:17,line:16},endBody:{col:2,line:18}}};const a={parameters:{storySource:{source:`import React from 'react';
+import Alert from '../index';
+import { jsx as _jsx } from "react/jsx-runtime";
+export default {
+  title: 'JS Packages/Components/Alert',
+  component: Alert,
+  argTypes: {
+    level: {
+      control: {
+        type: 'select'
+      },
+      options: ['info', 'success', 'warning', 'error']
+    }
+  }
+};
+const Template = args => /*#__PURE__*/_jsx(Alert, {
+  ...args
+});
+export const _default = Template.bind({});
+_default.args = {
+  level: 'info',
+  children: "Don't forget to check your email for the latest news.",
+  showIcon: true
+};`,locationsMap:{default:{startLoc:{col:17,line:16},endLoc:{col:2,line:18},startBody:{col:17,line:16},endBody:{col:2,line:18}}}}},title:"JS Packages/Components/Alert",component:s.A,argTypes:{level:{control:{type:"select"},options:["info","success","warning","error"]}}},_=(m=>(0,c.jsx)(s.A,{...m})).bind({});_.args={level:"info",children:"Don't forget to check your email for the latest news.",showIcon:!0};const p=["_default"];_.parameters={..._.parameters,docs:{..._.parameters?.docs,source:{originalSource:"args => <Alert {...args} />",..._.parameters?.docs?.source}}}},"../../../node_modules/.pnpm/@wordpress+icons@10.17.0_react@18.3.1/node_modules/@wordpress/icons/build-module/icon/index.js":(i,l,e)=>{e.d(l,{A:()=>c});var n=e("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js");function s({icon:o,size:r=24,...a},d){return(0,n.cloneElement)(o,{width:r,height:r,...a,ref:d})}const c=(0,n.forwardRef)(s)},"../../../node_modules/.pnpm/@wordpress+icons@10.17.0_react@18.3.1/node_modules/@wordpress/icons/build-module/library/caution-filled.js":(i,l,e)=>{e.d(l,{A:()=>o});var n=e("../../../node_modules/.pnpm/@wordpress+primitives@4.17.0_react@18.3.1/node_modules/@wordpress/primitives/build-module/svg/index.js"),s=e("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js");const o=(0,s.jsx)(n.t4,{xmlns:"http://www.w3.org/2000/svg",viewBox:"0 0 24 24",children:(0,s.jsx)(n.wA,{d:"M12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4ZM12.75 8V13H11.25V8H12.75ZM12.75 14.5V16H11.25V14.5H12.75Z"})})},"../../../node_modules/.pnpm/@wordpress+icons@10.17.0_react@18.3.1/node_modules/@wordpress/icons/build-module/library/check.js":(i,l,e)=>{e.d(l,{A:()=>o});var n=e("../../../node_modules/.pnpm/@wordpress+primitives@4.17.0_react@18.3.1/node_modules/@wordpress/primitives/build-module/svg/index.js"),s=e("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js");const o=(0,s.jsx)(n.t4,{xmlns:"http://www.w3.org/2000/svg",viewBox:"0 0 24 24",children:(0,s.jsx)(n.wA,{d:"M16.7 7.1l-6.3 8.5-3.3-2.5-.9 1.2 4.5 3.4L17.9 8z"})})},"../../../node_modules/.pnpm/@wordpress+icons@10.17.0_react@18.3.1/node_modules/@wordpress/icons/build-module/library/info.js":(i,l,e)=>{e.d(l,{A:()=>o});var n=e("../../../node_modules/.pnpm/@wordpress+primitives@4.17.0_react@18.3.1/node_modules/@wordpress/primitives/build-module/svg/index.js"),s=e("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js");const o=(0,s.jsx)(n.t4,{viewBox:"0 0 24 24",xmlns:"http://www.w3.org/2000/svg",children:(0,s.jsx)(n.wA,{fillRule:"evenodd",clipRule:"evenodd",d:"M5.5 12a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0ZM12 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16Zm.75 4v1.5h-1.5V8h1.5Zm0 8v-5h-1.5v5h1.5Z"})})},"../../../node_modules/.pnpm/@wordpress+primitives@4.17.0_react@18.3.1/node_modules/@wordpress/primitives/build-module/svg/index.js":(i,l,e)=>{e.d(l,{Ey:()=>w,G:()=>r,N1:()=>a,VG:()=>E,W4:()=>u,jl:()=>o,lA:()=>m,rw:()=>p,t4:()=>v,tS:()=>_,wA:()=>d});var n=e("../../../node_modules/.pnpm/clsx@2.1.1/node_modules/clsx/dist/clsx.mjs"),s=e("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js"),c=e("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js");const o=t=>(0,s.createElement)("circle",t),r=t=>(0,s.createElement)("g",t),a=t=>(0,s.createElement)("line",t),d=t=>(0,s.createElement)("path",t),_=t=>(0,s.createElement)("polygon",t),p=t=>(0,s.createElement)("rect",t),m=t=>(0,s.createElement)("defs",t),w=t=>(0,s.createElement)("radialGradient",t),u=t=>(0,s.createElement)("linearGradient",t),E=t=>(0,s.createElement)("stop",t),v=(0,s.forwardRef)(({className:t,isPressed:x,...j},A)=>{const f={...j,className:(0,n.A)(t,{"is-pressed":x})||void 0,"aria-hidden":!0,focusable:!1};return(0,c.jsx)("svg",{...f,ref:A})});v.displayName="SVG"},"../components/components/alert/index.tsx":(i,l,e)=>{e.d(l,{A:()=>x});var n=e("../../../node_modules/.pnpm/@wordpress+icons@10.17.0_react@18.3.1/node_modules/@wordpress/icons/build-module/library/caution-filled.js"),s=e("../../../node_modules/.pnpm/@wordpress+icons@10.17.0_react@18.3.1/node_modules/@wordpress/icons/build-module/library/info.js"),c=e("../../../node_modules/.pnpm/@wordpress+icons@10.17.0_react@18.3.1/node_modules/@wordpress/icons/build-module/library/check.js"),o=e("../../../node_modules/.pnpm/@wordpress+icons@10.17.0_react@18.3.1/node_modules/@wordpress/icons/build-module/icon/index.js"),r=e("../../../node_modules/.pnpm/clsx@2.1.1/node_modules/clsx/dist/clsx.mjs"),a=e("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js"),d=e("../../../node_modules/.pnpm/style-loader@2.0.0_webpack@5.94.0/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js"),_=e.n(d),p=e("../../../node_modules/.pnpm/css-loader@6.5.1_webpack@5.94.0/node_modules/css-loader/dist/cjs.js!../../../node_modules/.pnpm/postcss-loader@6.2.0_postcss@8.4.47_webpack@5.94.0/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[15].use[2]!../../../node_modules/.pnpm/sass-loader@12.4.0_sass@1.64.1_webpack@5.94.0/node_modules/sass-loader/dist/cjs.js!../components/components/alert/style.module.scss"),m={};m.insert="head",m.singleton=!1;var w=_()(p.A,m);const u=p.A.locals||{};var E=e("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js");const v=j=>{switch(j){case"error":return n.A;case"warning":return n.A;case"info":return s.A;case"success":return c.A;default:return n.A}},x=({level:j="warning",children:A,showIcon:f=!0,className:g})=>{const h=(0,r.A)(u.container,u[`is-${j}`],g);return(0,E.jsxs)("div",{className:h,children:[f&&(0,E.jsx)("div",{className:u["icon-wrapper"],children:(0,E.jsx)(o.A,{icon:v(j),className:u.icon})}),(0,E.jsx)("div",{children:A})]})}},"../../../node_modules/.pnpm/clsx@2.1.1/node_modules/clsx/dist/clsx.mjs":(i,l,e)=>{e.d(l,{A:()=>c});function n(o){var r,a,d="";if(typeof o=="string"||typeof o=="number")d+=o;else if(typeof o=="object")if(Array.isArray(o)){var _=o.length;for(r=0;r<_;r++)o[r]&&(a=n(o[r]))&&(d&&(d+=" "),d+=a)}else for(a in o)o[a]&&(d&&(d+=" "),d+=a);return d}function s(){for(var o,r,a=0,d="",_=arguments.length;a<_;a++)(o=arguments[a])&&(r=n(o))&&(d&&(d+=" "),d+=r);return d}const c=s},"../../../node_modules/.pnpm/css-loader@6.5.1_webpack@5.94.0/node_modules/css-loader/dist/cjs.js!../../../node_modules/.pnpm/postcss-loader@6.2.0_postcss@8.4.47_webpack@5.94.0/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[15].use[2]!../../../node_modules/.pnpm/sass-loader@12.4.0_sass@1.64.1_webpack@5.94.0/node_modules/sass-loader/dist/cjs.js!../components/components/alert/style.module.scss":(i,l,e)=>{e.d(l,{A:()=>a});var n=e("../../../node_modules/.pnpm/css-loader@6.5.1_webpack@5.94.0/node_modules/css-loader/dist/runtime/noSourceMaps.js"),s=e.n(n),c=e("../../../node_modules/.pnpm/css-loader@6.5.1_webpack@5.94.0/node_modules/css-loader/dist/runtime/api.js"),o=e.n(c),r=o()(s());r.push([i.id,".Dr0cuxITW73j59FHThKT{display:flex;font-size:var(--font-body);line-height:calc(var(--spacing-base)*3);min-height:calc(var(--spacing-base)*3);align-items:center;margin:calc(var(--spacing-base)*2) 0}.MvLl9qD45yS7rUIyU2b9{margin-right:calc(var(--spacing-base)/2);width:calc(var(--spacing-base)*3);height:calc(var(--spacing-base)*3);align-self:flex-start}.ohoU9eXsknJB46U8_yUC{color:var(--jp-red)}.ohoU9eXsknJB46U8_yUC .ANCBGRVQXZHwMJxaTEgq{fill:var(--jp-red)}.xcWqXBF4JgwHVsWxcq7h{color:var(--jp-yellow-40)}.xcWqXBF4JgwHVsWxcq7h .ANCBGRVQXZHwMJxaTEgq{fill:var(--jp-yellow-40)}.uZCUo9QKwj0rhAqpnax_{color:var(--jp-blue-40)}.uZCUo9QKwj0rhAqpnax_ .ANCBGRVQXZHwMJxaTEgq{fill:var(--jp-blue-40)}._77DMIzaNHFlGFVGYEe5{color:var(--jp-green)}._77DMIzaNHFlGFVGYEe5 .ANCBGRVQXZHwMJxaTEgq{fill:var(--jp-green)}",""]),r.locals={container:"Dr0cuxITW73j59FHThKT","icon-wrapper":"MvLl9qD45yS7rUIyU2b9","is-error":"ohoU9eXsknJB46U8_yUC",icon:"ANCBGRVQXZHwMJxaTEgq","is-warning":"xcWqXBF4JgwHVsWxcq7h","is-info":"uZCUo9QKwj0rhAqpnax_","is-success":"_77DMIzaNHFlGFVGYEe5"};const a=r}}]);
