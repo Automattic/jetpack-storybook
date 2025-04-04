@@ -12,6 +12,9 @@ This is an alpha version! The changes listed here are not final.
 ### Added
 - Add Scan package to storybook.
 
+### Changed
+- Code: First pass of style coding standards.
+
 ## 0.6.1 - 2025-04-02
 ### Added
 - Publicize Components: Add Storybook support [#42167]
