@@ -138,7 +138,7 @@ export const _All = () => {
 		box-sizing: border-box;
 	}
 
-	.handle:before {
+	.handle::before {
 		position: absolute;
 		content: "";
 		height: 12px;
@@ -154,7 +154,7 @@ export const _All = () => {
 		border-color: #3AA662;
 	}
 
-	input:checked + .handle:before {
+	input:checked + .handle::before {
 		background: #3AA662;
 		transform: translateX(20px);
 	}
