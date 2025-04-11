@@ -16,6 +16,9 @@ This is an alpha version! The changes listed here are not final.
 - Code: First pass of style coding standards.
 - Remove extensionAliases from webpack config after enabling TypeScript's `rewriteRelativeImportExtensions` option.
 
+### Fixed
+- Linting: Format SCSS imports consistently.
+
 ## 0.6.1 - 2025-04-02
 ### Added
 - Publicize Components: Add Storybook support [#42167]
