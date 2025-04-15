@@ -15,6 +15,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Code: First pass of style coding standards.
 - Remove extensionAliases from webpack config after enabling TypeScript's `rewriteRelativeImportExtensions` option.
+- Update package dependencies.
 
 ### Fixed
 - Linting: Format SCSS imports consistently.
