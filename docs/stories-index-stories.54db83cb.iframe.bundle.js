@@ -57,7 +57,7 @@ export const _All = () => {
 		font-size: 24pt;
 	}
 
-	[type=checkbox] {
+	[type="checkbox"] {
 		margin: 0;
 	}
 
