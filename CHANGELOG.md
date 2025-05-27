@@ -15,6 +15,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Code: First pass of style coding standards.
 - Remove extensionAliases from webpack config after enabling TypeScript's `rewriteRelativeImportExtensions` option.
+- sass: `@use` rather than `@import` for `@wordpress/base-styles` where possible.
 - Update package dependencies.
 
 ### Fixed
