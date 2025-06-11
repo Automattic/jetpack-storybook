@@ -1,4 +1,4 @@
-"use strict";(self.webpackChunk_automattic_jetpack_storybook=self.webpackChunk_automattic_jetpack_storybook||[]).push([[1830],{"../charts/src/components/pie-chart/stories/donut.stories.tsx":(v,h,n)=>{n.r(h),n.d(h,{CustomTheme:()=>a,Default:()=>e,ErrorStates:()=>i,Thin:()=>s,WithVerticalLegend:()=>r,WithoutCenter:()=>o,__namedExportsOrder:()=>g,default:()=>x});var p=n("../../../node_modules/.pnpm/@visx+group@3.12.0_react@18.3.1/node_modules/@visx/group/esm/Group.js"),l=n("../../../node_modules/.pnpm/@visx+text@3.12.0_react@18.3.1/node_modules/@visx/text/esm/Text.js"),m=n("../charts/src/providers/theme/theme-provider.tsx"),c=n("../charts/src/providers/theme/themes.ts"),d=n("../charts/src/components/pie-chart/pie-chart.tsx"),t=n("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js"),T=`import { Group } from '@visx/group';
+"use strict";(self.webpackChunk_automattic_jetpack_storybook=self.webpackChunk_automattic_jetpack_storybook||[]).push([[1830],{"../charts/src/components/pie-chart/stories/donut.stories.tsx":(v,m,n)=>{n.r(m),n.d(m,{CustomTheme:()=>a,Default:()=>e,ErrorStates:()=>i,Thin:()=>s,WithVerticalLegend:()=>r,WithoutCenter:()=>o,__namedExportsOrder:()=>g,default:()=>x});var h=n("../../../node_modules/.pnpm/@visx+group@3.12.0_react@18.3.1/node_modules/@visx/group/esm/Group.js"),l=n("../../../node_modules/.pnpm/@visx+text@3.12.0_react@18.3.1/node_modules/@visx/text/esm/Text.js"),p=n("../charts/src/providers/theme/theme-provider.tsx"),c=n("../charts/src/providers/theme/themes.ts"),d=n("../charts/src/components/pie-chart/pie-chart.tsx"),t=n("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js"),T=`import { Group } from '@visx/group';
 import { Text } from '@visx/text';
 import { ThemeProvider, jetpackTheme, wooTheme } from '../../../providers/theme';
 import { PieChart } from '../../pie-chart';
@@ -89,6 +89,27 @@ const meta = {
 			},
 			defaultValue: undefined,
 		},
+		maxWidth: {
+			control: {
+				type: 'number',
+				min: 100,
+				max: 1200,
+			},
+		},
+		aspectRatio: {
+			control: {
+				type: 'number',
+				min: 0,
+				max: 1,
+			},
+		},
+		resizeDebounceTime: {
+			control: {
+				type: 'number',
+				min: 0,
+				max: 10000,
+			},
+		},
 	},
 } satisfies Meta< typeof PieChart >;
 
@@ -176,7 +197,7 @@ export const Thin: Story = {
 		),
 	},
 };
-`,f={Default:{startLoc:{col:23,line:88},endLoc:{col:1,line:115},startBody:{col:23,line:88},endBody:{col:1,line:115}},WithVerticalLegend:{startLoc:{col:34,line:116},endLoc:{col:1,line:121},startBody:{col:34,line:116},endBody:{col:1,line:121}},WithoutCenter:{startLoc:{col:29,line:122},endLoc:{col:1,line:127},startBody:{col:29,line:122},endBody:{col:1,line:127}},CustomTheme:{startLoc:{col:27,line:128},endLoc:{col:1,line:133},startBody:{col:27,line:128},endBody:{col:1,line:133}},ErrorStates:{startLoc:{col:27,line:134},endLoc:{col:1,line:163},startBody:{col:27,line:134},endBody:{col:1,line:163}},Thin:{startLoc:{col:20,line:164},endLoc:{col:1,line:185},startBody:{col:20,line:164},endBody:{col:1,line:185}}};const u=[{label:"Active Users",value:65e3,valueDisplay:"65K",percentage:65},{label:"Inactive Users",value:35e3,valueDisplay:"35K",percentage:35}],x={title:"JS Packages/Charts/Types/Donut Chart",component:d.A,parameters:{storySource:{source:`import { Group } from '@visx/group';
+`,f={Default:{startLoc:{col:23,line:109},endLoc:{col:1,line:136},startBody:{col:23,line:109},endBody:{col:1,line:136}},WithVerticalLegend:{startLoc:{col:34,line:137},endLoc:{col:1,line:142},startBody:{col:34,line:137},endBody:{col:1,line:142}},WithoutCenter:{startLoc:{col:29,line:143},endLoc:{col:1,line:148},startBody:{col:29,line:143},endBody:{col:1,line:148}},CustomTheme:{startLoc:{col:27,line:149},endLoc:{col:1,line:154},startBody:{col:27,line:149},endBody:{col:1,line:154}},ErrorStates:{startLoc:{col:27,line:155},endLoc:{col:1,line:184},startBody:{col:27,line:155},endBody:{col:1,line:184}},Thin:{startLoc:{col:20,line:185},endLoc:{col:1,line:206},startBody:{col:20,line:185},endBody:{col:1,line:206}}};const u=[{label:"Active Users",value:65e3,valueDisplay:"65K",percentage:65},{label:"Inactive Users",value:35e3,valueDisplay:"35K",percentage:35}],x={title:"JS Packages/Charts/Types/Donut Chart",component:d.A,parameters:{storySource:{source:`import { Group } from '@visx/group';
 import { Text } from '@visx/text';
 import { ThemeProvider, jetpackTheme, wooTheme } from '../../../providers/theme';
 import { PieChart } from '../../pie-chart';
@@ -259,6 +280,27 @@ const meta = {
         woo: wooTheme
       },
       defaultValue: undefined
+    },
+    maxWidth: {
+      control: {
+        type: 'number',
+        min: 100,
+        max: 1200
+      }
+    },
+    aspectRatio: {
+      control: {
+        type: 'number',
+        min: 0,
+        max: 1
+      }
+    },
+    resizeDebounceTime: {
+      control: {
+        type: 'number',
+        min: 0,
+        max: 10000
+      }
     }
   }
 };
@@ -360,7 +402,7 @@ export const Thin = {
       })]
     })
   }
-};`,locationsMap:{default:{startLoc:{col:23,line:88},endLoc:{col:1,line:115},startBody:{col:23,line:88},endBody:{col:1,line:115}},"with-vertical-legend":{startLoc:{col:34,line:116},endLoc:{col:1,line:121},startBody:{col:34,line:116},endBody:{col:1,line:121}},"without-center":{startLoc:{col:29,line:122},endLoc:{col:1,line:127},startBody:{col:29,line:122},endBody:{col:1,line:127}},"custom-theme":{startLoc:{col:27,line:128},endLoc:{col:1,line:133},startBody:{col:27,line:128},endBody:{col:1,line:133}},"error-states":{startLoc:{col:27,line:134},endLoc:{col:1,line:163},startBody:{col:27,line:134},endBody:{col:1,line:163}},thin:{startLoc:{col:20,line:164},endLoc:{col:1,line:185},startBody:{col:20,line:164},endBody:{col:1,line:185}}}},layout:"centered"},decorators:[(_,{args:y})=>(0,t.jsx)(m.NP,{theme:y.theme,children:(0,t.jsx)("div",{style:{resize:"both",overflow:"auto",padding:"2rem",width:"800px",aspectRatio:"1/1",minWidth:"400px",maxWidth:"1200px",height:"800px",border:"1px dashed #ccc"},children:(0,t.jsx)(_,{})})})],argTypes:{size:{control:{type:"range",min:100,max:800,step:10,default:400}},thickness:{control:{type:"range",min:0,max:1,step:.01}},gapScale:{control:{type:"range",min:0,max:1,step:.01}},cornerScale:{control:{type:"range",min:0,max:1,step:.01}},theme:{control:"select",options:{default:void 0,jetpack:c.QI,woo:c.pk},defaultValue:void 0}}},e={args:{thickness:.4,gapScale:.03,padding:20,cornerScale:.03,withTooltips:!0,data:u,theme:"default",showLegend:!0,legendOrientation:"horizontal",children:(0,t.jsxs)(p.A,{children:[(0,t.jsx)(l.A,{textAnchor:"middle",verticalAnchor:"middle",fontSize:24,y:-16,children:"User Activity"}),(0,t.jsx)(l.A,{textAnchor:"middle",verticalAnchor:"middle",fontSize:18,y:16,children:"Total: 100K Users"})]})}},r={args:{...e.args,legendOrientation:"vertical"}},o={args:{...e.args,children:void 0}},a={args:{...e.args,theme:c.pk}},i={render:()=>(0,t.jsxs)("div",{style:{display:"grid",gap:"2rem",gridTemplateColumns:"repeat(2, 1fr)"},children:[(0,t.jsxs)("div",{children:[(0,t.jsx)("h3",{children:"Empty Data"}),(0,t.jsx)(d.A,{size:300,thickness:.6,data:[]})]}),(0,t.jsxs)("div",{children:[(0,t.jsx)("h3",{children:"Single Value"}),(0,t.jsx)(d.A,{size:300,thickness:.6,data:[{label:"Single",value:100,percentage:100}]})]})]})},s={args:{...e.args,thickness:.2,gapScale:.01,children:(0,t.jsxs)(p.A,{children:[(0,t.jsx)(l.A,{textAnchor:"middle",verticalAnchor:"middle",fontSize:24,y:-16,children:"Thin Donut"}),(0,t.jsx)(l.A,{textAnchor:"middle",verticalAnchor:"middle",fontSize:18,y:16,children:"Thickness: 20%"})]})}},g=["Default","WithVerticalLegend","WithoutCenter","CustomTheme","ErrorStates","Thin"];e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
+};`,locationsMap:{default:{startLoc:{col:23,line:109},endLoc:{col:1,line:136},startBody:{col:23,line:109},endBody:{col:1,line:136}},"with-vertical-legend":{startLoc:{col:34,line:137},endLoc:{col:1,line:142},startBody:{col:34,line:137},endBody:{col:1,line:142}},"without-center":{startLoc:{col:29,line:143},endLoc:{col:1,line:148},startBody:{col:29,line:143},endBody:{col:1,line:148}},"custom-theme":{startLoc:{col:27,line:149},endLoc:{col:1,line:154},startBody:{col:27,line:149},endBody:{col:1,line:154}},"error-states":{startLoc:{col:27,line:155},endLoc:{col:1,line:184},startBody:{col:27,line:155},endBody:{col:1,line:184}},thin:{startLoc:{col:20,line:185},endLoc:{col:1,line:206},startBody:{col:20,line:185},endBody:{col:1,line:206}}}},layout:"centered"},decorators:[(_,{args:y})=>(0,t.jsx)(p.NP,{theme:y.theme,children:(0,t.jsx)("div",{style:{resize:"both",overflow:"auto",padding:"2rem",width:"800px",aspectRatio:"1/1",minWidth:"400px",maxWidth:"1200px",height:"800px",border:"1px dashed #ccc"},children:(0,t.jsx)(_,{})})})],argTypes:{size:{control:{type:"range",min:100,max:800,step:10,default:400}},thickness:{control:{type:"range",min:0,max:1,step:.01}},gapScale:{control:{type:"range",min:0,max:1,step:.01}},cornerScale:{control:{type:"range",min:0,max:1,step:.01}},theme:{control:"select",options:{default:void 0,jetpack:c.QI,woo:c.pk},defaultValue:void 0},maxWidth:{control:{type:"number",min:100,max:1200}},aspectRatio:{control:{type:"number",min:0,max:1}},resizeDebounceTime:{control:{type:"number",min:0,max:1e4}}}},e={args:{thickness:.4,gapScale:.03,padding:20,cornerScale:.03,withTooltips:!0,data:u,theme:"default",showLegend:!0,legendOrientation:"horizontal",children:(0,t.jsxs)(h.A,{children:[(0,t.jsx)(l.A,{textAnchor:"middle",verticalAnchor:"middle",fontSize:24,y:-16,children:"User Activity"}),(0,t.jsx)(l.A,{textAnchor:"middle",verticalAnchor:"middle",fontSize:18,y:16,children:"Total: 100K Users"})]})}},r={args:{...e.args,legendOrientation:"vertical"}},o={args:{...e.args,children:void 0}},a={args:{...e.args,theme:c.pk}},i={render:()=>(0,t.jsxs)("div",{style:{display:"grid",gap:"2rem",gridTemplateColumns:"repeat(2, 1fr)"},children:[(0,t.jsxs)("div",{children:[(0,t.jsx)("h3",{children:"Empty Data"}),(0,t.jsx)(d.A,{size:300,thickness:.6,data:[]})]}),(0,t.jsxs)("div",{children:[(0,t.jsx)("h3",{children:"Single Value"}),(0,t.jsx)(d.A,{size:300,thickness:.6,data:[{label:"Single",value:100,percentage:100}]})]})]})},s={args:{...e.args,thickness:.2,gapScale:.01,children:(0,t.jsxs)(h.A,{children:[(0,t.jsx)(l.A,{textAnchor:"middle",verticalAnchor:"middle",fontSize:24,y:-16,children:"Thin Donut"}),(0,t.jsx)(l.A,{textAnchor:"middle",verticalAnchor:"middle",fontSize:18,y:16,children:"Thickness: 20%"})]})}},g=["Default","WithVerticalLegend","WithoutCenter","CustomTheme","ErrorStates","Thin"];e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
   args: {
     thickness: 0.4,
     gapScale: 0.03,

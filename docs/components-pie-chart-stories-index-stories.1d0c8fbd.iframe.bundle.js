@@ -1,4 +1,4 @@
-"use strict";(self.webpackChunk_automattic_jetpack_storybook=self.webpackChunk_automattic_jetpack_storybook||[]).push([[2586],{"../charts/src/components/pie-chart/stories/index.stories.tsx":(P,p,n)=>{n.r(p),n.d(p,{Default:()=>e,Doughnut:()=>s,ErrorStates:()=>d,Responsiveness:()=>c,WithHorizontalLegend:()=>o,WithTooltips:()=>i,WithTooltipsDoughnut:()=>l,WithVerticalLegend:()=>a,__namedExportsOrder:()=>y,default:()=>_});var m=n("../../../node_modules/.pnpm/@visx+group@3.12.0_react@18.3.1/node_modules/@visx/group/esm/Group.js"),h=n("../../../node_modules/.pnpm/@visx+text@3.12.0_react@18.3.1/node_modules/@visx/text/esm/Text.js"),v=n("../charts/src/providers/theme/theme-provider.tsx"),g=n("../charts/src/providers/theme/themes.ts"),r=n("../charts/src/components/pie-chart/pie-chart.tsx"),t=n("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js"),T=`import { Group } from '@visx/group';
+"use strict";(self.webpackChunk_automattic_jetpack_storybook=self.webpackChunk_automattic_jetpack_storybook||[]).push([[2586],{"../charts/src/components/pie-chart/stories/index.stories.tsx":(T,p,e)=>{e.r(p),e.d(p,{Default:()=>n,Doughnut:()=>s,ErrorStates:()=>d,Responsiveness:()=>c,WithHorizontalLegend:()=>o,WithTooltips:()=>i,WithTooltipsDoughnut:()=>l,WithVerticalLegend:()=>a,__namedExportsOrder:()=>y,default:()=>_});var m=e("../../../node_modules/.pnpm/@visx+group@3.12.0_react@18.3.1/node_modules/@visx/group/esm/Group.js"),h=e("../../../node_modules/.pnpm/@visx+text@3.12.0_react@18.3.1/node_modules/@visx/text/esm/Text.js"),v=e("../charts/src/providers/theme/theme-provider.tsx"),g=e("../charts/src/providers/theme/themes.ts"),r=e("../charts/src/components/pie-chart/pie-chart.tsx"),t=e("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js"),P=`import { Group } from '@visx/group';
 import { Text } from '@visx/text';
 import { ThemeProvider, jetpackTheme, wooTheme } from '../../../providers/theme';
 import { PieChart } from '../index';
@@ -106,6 +106,27 @@ const meta = {
 				woo: wooTheme,
 			},
 			defaultValue: undefined,
+		},
+		maxWidth: {
+			control: {
+				type: 'number',
+				min: 100,
+				max: 1200,
+			},
+		},
+		aspectRatio: {
+			control: {
+				type: 'number',
+				min: 0,
+				max: 1,
+			},
+		},
+		resizeDebounceTime: {
+			control: {
+				type: 'number',
+				min: 0,
+				max: 10000,
+			},
 		},
 	},
 } satisfies Meta< typeof PieChart >;
@@ -255,7 +276,7 @@ export const ErrorStates: Story = {
 		},
 	},
 };
-`,S={Default:{startLoc:{col:23,line:105},endLoc:{col:1,line:117},startBody:{col:23,line:105},endBody:{col:1,line:117}},WithHorizontalLegend:{startLoc:{col:36,line:118},endLoc:{col:1,line:125},startBody:{col:36,line:118},endBody:{col:1,line:125}},WithVerticalLegend:{startLoc:{col:34,line:126},endLoc:{col:1,line:133},startBody:{col:34,line:126},endBody:{col:1,line:133}},Doughnut:{startLoc:{col:24,line:134},endLoc:{col:1,line:165},startBody:{col:24,line:134},endBody:{col:1,line:165}},WithTooltips:{startLoc:{col:28,line:166},endLoc:{col:1,line:178},startBody:{col:28,line:166},endBody:{col:1,line:178}},WithTooltipsDoughnut:{startLoc:{col:36,line:179},endLoc:{col:1,line:192},startBody:{col:36,line:179},endBody:{col:1,line:192}},Responsiveness:{startLoc:{col:30,line:197},endLoc:{col:1,line:206},startBody:{col:30,line:197},endBody:{col:1,line:206}},ErrorStates:{startLoc:{col:27,line:207},endLoc:{col:1,line:271},startBody:{col:27,line:207},endBody:{col:1,line:271}}};const x=[{label:"MacOS",value:3e4,valueDisplay:"30K",percentage:23},{label:"Linux",value:22e3,valueDisplay:"22K",percentage:17},{label:"Windows",value:8e4,valueDisplay:"80K",percentage:60}],_={title:"JS Packages/Charts/Types/Pie Chart",component:r.A,parameters:{storySource:{source:`import { Group } from '@visx/group';
+`,S={Default:{startLoc:{col:23,line:126},endLoc:{col:1,line:138},startBody:{col:23,line:126},endBody:{col:1,line:138}},WithHorizontalLegend:{startLoc:{col:36,line:139},endLoc:{col:1,line:146},startBody:{col:36,line:139},endBody:{col:1,line:146}},WithVerticalLegend:{startLoc:{col:34,line:147},endLoc:{col:1,line:154},startBody:{col:34,line:147},endBody:{col:1,line:154}},Doughnut:{startLoc:{col:24,line:155},endLoc:{col:1,line:186},startBody:{col:24,line:155},endBody:{col:1,line:186}},WithTooltips:{startLoc:{col:28,line:187},endLoc:{col:1,line:199},startBody:{col:28,line:187},endBody:{col:1,line:199}},WithTooltipsDoughnut:{startLoc:{col:36,line:200},endLoc:{col:1,line:213},startBody:{col:36,line:200},endBody:{col:1,line:213}},Responsiveness:{startLoc:{col:30,line:218},endLoc:{col:1,line:227},startBody:{col:30,line:218},endBody:{col:1,line:227}},ErrorStates:{startLoc:{col:27,line:228},endLoc:{col:1,line:292},startBody:{col:27,line:228},endBody:{col:1,line:292}}};const x=[{label:"MacOS",value:3e4,valueDisplay:"30K",percentage:23},{label:"Linux",value:22e3,valueDisplay:"22K",percentage:17},{label:"Windows",value:8e4,valueDisplay:"80K",percentage:60}],_={title:"JS Packages/Charts/Types/Pie Chart",component:r.A,parameters:{storySource:{source:`import { Group } from '@visx/group';
 import { Text } from '@visx/text';
 import { ThemeProvider, jetpackTheme, wooTheme } from '../../../providers/theme';
 import { PieChart } from '../index';
@@ -355,6 +376,27 @@ const meta = {
         woo: wooTheme
       },
       defaultValue: undefined
+    },
+    maxWidth: {
+      control: {
+        type: 'number',
+        min: 100,
+        max: 1200
+      }
+    },
+    aspectRatio: {
+      control: {
+        type: 'number',
+        min: 0,
+        max: 1
+      }
+    },
+    resizeDebounceTime: {
+      control: {
+        type: 'number',
+        min: 0,
+        max: 10000
+      }
     }
   }
 };
@@ -525,7 +567,7 @@ export const ErrorStates = {
       }
     }
   }
-};`,locationsMap:{default:{startLoc:{col:23,line:105},endLoc:{col:1,line:117},startBody:{col:23,line:105},endBody:{col:1,line:117}},"with-horizontal-legend":{startLoc:{col:36,line:118},endLoc:{col:1,line:125},startBody:{col:36,line:118},endBody:{col:1,line:125}},"with-vertical-legend":{startLoc:{col:34,line:126},endLoc:{col:1,line:133},startBody:{col:34,line:126},endBody:{col:1,line:133}},doughnut:{startLoc:{col:24,line:134},endLoc:{col:1,line:165},startBody:{col:24,line:134},endBody:{col:1,line:165}},"with-tooltips":{startLoc:{col:28,line:166},endLoc:{col:1,line:178},startBody:{col:28,line:166},endBody:{col:1,line:178}},"with-tooltips-doughnut":{startLoc:{col:36,line:179},endLoc:{col:1,line:192},startBody:{col:36,line:179},endBody:{col:1,line:192}},responsiveness:{startLoc:{col:30,line:197},endLoc:{col:1,line:206},startBody:{col:30,line:197},endBody:{col:1,line:206}},"error-states":{startLoc:{col:27,line:207},endLoc:{col:1,line:271},startBody:{col:27,line:207},endBody:{col:1,line:271}}}},layout:"centered"},decorators:[(f,{args:D})=>(0,t.jsx)(v.NP,{theme:D.theme,children:(0,t.jsx)("div",{style:{resize:"both",overflow:"auto",padding:"2rem",width:"800px",aspectRatio:"1/1",minWidth:"400px",maxWidth:"1200px",height:"800px",border:"1px dashed #ccc"},children:(0,t.jsx)(f,{})})})],argTypes:{size:{control:{type:"range",min:100,max:800,step:10,default:400}},thickness:{control:{type:"range",min:0,max:1,step:.01}},padding:{control:{type:"range",min:0,max:100,step:1}},gapScale:{control:{type:"range",min:0,max:1,step:.01}},cornerScale:{control:{type:"range",min:0,max:1,step:.01}},legendOrientation:{control:"radio",options:["horizontal","vertical"]},theme:{control:"select",options:{default:void 0,jetpack:g.QI,woo:g.pk},defaultValue:void 0}}},e={args:{thickness:1,gapScale:0,padding:20,cornerScale:0,withTooltips:!1,data:x,theme:"default",showLegend:!1,legendOrientation:"horizontal"}},o={args:{...e.args,showLegend:!0,size:600,legendOrientation:"horizontal"}},a={args:{...e.args,showLegend:!0,size:600,legendOrientation:"vertical"}},s={args:{...e.args,thickness:.5,padding:0,gapScale:.03,cornerScale:.03,children:(0,t.jsxs)(m.A,{children:[(0,t.jsx)(h.A,{textAnchor:"middle",verticalAnchor:"middle",fontSize:24,y:-16,children:"\u{1F369} Doughnut"}),(0,t.jsx)(h.A,{textAnchor:"middle",verticalAnchor:"middle",fill:"#008A20",fontSize:18,y:16,children:"Three donuts for the price of one!"})]})},parameters:{docs:{description:{story:"Doughnut chart variant with the thickness set to 0.5 (50%)."}}}},i={args:{...e.args,withTooltips:!0},parameters:{docs:{description:{story:"Pie chart with interactive tooltips that appear on hover."}}}},l={args:{...e.args,thickness:.5,withTooltips:!0},parameters:{docs:{description:{story:"Doughnut chart with interactive tooltips that appear on hover."}}}},u={...e.args};delete u.size;const c={args:u,parameters:{docs:{description:{story:"Pie chart with responsive behavior. Uses size prop instead of width/height."}}}},d={render:()=>(0,t.jsxs)("div",{style:{display:"grid",gap:"2rem",gridTemplateColumns:"repeat(2, 1fr)"},children:[(0,t.jsxs)("div",{children:[(0,t.jsx)("h3",{children:"Empty Data"}),(0,t.jsx)(r.A,{size:300,data:[]})]}),(0,t.jsxs)("div",{children:[(0,t.jsx)("h3",{children:"Invalid Percentage Total"}),(0,t.jsx)(r.A,{size:300,data:[{label:"A",value:30,percentage:30},{label:"B",value:40,percentage:40}]})]}),(0,t.jsxs)("div",{children:[(0,t.jsx)("h3",{children:"Negative Values"}),(0,t.jsx)(r.A,{size:300,data:[{label:"A",value:-30,percentage:-30},{label:"B",value:130,percentage:130}]})]}),(0,t.jsxs)("div",{children:[(0,t.jsx)("h3",{children:"Single Data Point"}),(0,t.jsx)(r.A,{size:300,data:[{label:"A",value:100,percentage:100}]})]})]}),parameters:{docs:{description:{story:"Examples of how the pie chart handles various error states and edge cases."}}}},y=["Default","WithHorizontalLegend","WithVerticalLegend","Doughnut","WithTooltips","WithTooltipsDoughnut","Responsiveness","ErrorStates"];e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
+};`,locationsMap:{default:{startLoc:{col:23,line:126},endLoc:{col:1,line:138},startBody:{col:23,line:126},endBody:{col:1,line:138}},"with-horizontal-legend":{startLoc:{col:36,line:139},endLoc:{col:1,line:146},startBody:{col:36,line:139},endBody:{col:1,line:146}},"with-vertical-legend":{startLoc:{col:34,line:147},endLoc:{col:1,line:154},startBody:{col:34,line:147},endBody:{col:1,line:154}},doughnut:{startLoc:{col:24,line:155},endLoc:{col:1,line:186},startBody:{col:24,line:155},endBody:{col:1,line:186}},"with-tooltips":{startLoc:{col:28,line:187},endLoc:{col:1,line:199},startBody:{col:28,line:187},endBody:{col:1,line:199}},"with-tooltips-doughnut":{startLoc:{col:36,line:200},endLoc:{col:1,line:213},startBody:{col:36,line:200},endBody:{col:1,line:213}},responsiveness:{startLoc:{col:30,line:218},endLoc:{col:1,line:227},startBody:{col:30,line:218},endBody:{col:1,line:227}},"error-states":{startLoc:{col:27,line:228},endLoc:{col:1,line:292},startBody:{col:27,line:228},endBody:{col:1,line:292}}}},layout:"centered"},decorators:[(f,{args:D})=>(0,t.jsx)(v.NP,{theme:D.theme,children:(0,t.jsx)("div",{style:{resize:"both",overflow:"auto",padding:"2rem",width:"800px",aspectRatio:"1/1",minWidth:"400px",maxWidth:"1200px",height:"800px",border:"1px dashed #ccc"},children:(0,t.jsx)(f,{})})})],argTypes:{size:{control:{type:"range",min:100,max:800,step:10,default:400}},thickness:{control:{type:"range",min:0,max:1,step:.01}},padding:{control:{type:"range",min:0,max:100,step:1}},gapScale:{control:{type:"range",min:0,max:1,step:.01}},cornerScale:{control:{type:"range",min:0,max:1,step:.01}},legendOrientation:{control:"radio",options:["horizontal","vertical"]},theme:{control:"select",options:{default:void 0,jetpack:g.QI,woo:g.pk},defaultValue:void 0},maxWidth:{control:{type:"number",min:100,max:1200}},aspectRatio:{control:{type:"number",min:0,max:1}},resizeDebounceTime:{control:{type:"number",min:0,max:1e4}}}},n={args:{thickness:1,gapScale:0,padding:20,cornerScale:0,withTooltips:!1,data:x,theme:"default",showLegend:!1,legendOrientation:"horizontal"}},o={args:{...n.args,showLegend:!0,size:600,legendOrientation:"horizontal"}},a={args:{...n.args,showLegend:!0,size:600,legendOrientation:"vertical"}},s={args:{...n.args,thickness:.5,padding:0,gapScale:.03,cornerScale:.03,children:(0,t.jsxs)(m.A,{children:[(0,t.jsx)(h.A,{textAnchor:"middle",verticalAnchor:"middle",fontSize:24,y:-16,children:"\u{1F369} Doughnut"}),(0,t.jsx)(h.A,{textAnchor:"middle",verticalAnchor:"middle",fill:"#008A20",fontSize:18,y:16,children:"Three donuts for the price of one!"})]})},parameters:{docs:{description:{story:"Doughnut chart variant with the thickness set to 0.5 (50%)."}}}},i={args:{...n.args,withTooltips:!0},parameters:{docs:{description:{story:"Pie chart with interactive tooltips that appear on hover."}}}},l={args:{...n.args,thickness:.5,withTooltips:!0},parameters:{docs:{description:{story:"Doughnut chart with interactive tooltips that appear on hover."}}}},u={...n.args};delete u.size;const c={args:u,parameters:{docs:{description:{story:"Pie chart with responsive behavior. Uses size prop instead of width/height."}}}},d={render:()=>(0,t.jsxs)("div",{style:{display:"grid",gap:"2rem",gridTemplateColumns:"repeat(2, 1fr)"},children:[(0,t.jsxs)("div",{children:[(0,t.jsx)("h3",{children:"Empty Data"}),(0,t.jsx)(r.A,{size:300,data:[]})]}),(0,t.jsxs)("div",{children:[(0,t.jsx)("h3",{children:"Invalid Percentage Total"}),(0,t.jsx)(r.A,{size:300,data:[{label:"A",value:30,percentage:30},{label:"B",value:40,percentage:40}]})]}),(0,t.jsxs)("div",{children:[(0,t.jsx)("h3",{children:"Negative Values"}),(0,t.jsx)(r.A,{size:300,data:[{label:"A",value:-30,percentage:-30},{label:"B",value:130,percentage:130}]})]}),(0,t.jsxs)("div",{children:[(0,t.jsx)("h3",{children:"Single Data Point"}),(0,t.jsx)(r.A,{size:300,data:[{label:"A",value:100,percentage:100}]})]})]}),parameters:{docs:{description:{story:"Examples of how the pie chart handles various error states and edge cases."}}}},y=["Default","WithHorizontalLegend","WithVerticalLegend","Doughnut","WithTooltips","WithTooltipsDoughnut","Responsiveness","ErrorStates"];n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
   args: {
     thickness: 1,
     gapScale: 0,
@@ -537,7 +579,7 @@ export const ErrorStates = {
     showLegend: false,
     legendOrientation: 'horizontal'
   }
-}`,...e.parameters?.docs?.source}}},o.parameters={...o.parameters,docs:{...o.parameters?.docs,source:{originalSource:`{
+}`,...n.parameters?.docs?.source}}},o.parameters={...o.parameters,docs:{...o.parameters?.docs,source:{originalSource:`{
   args: {
     ...Default.args,
     showLegend: true,
