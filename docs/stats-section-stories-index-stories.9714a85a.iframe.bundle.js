@@ -15,7 +15,7 @@
 @param {number} props.headingLevel   - Heading level between 1 and 6.
 
 @return {object} StatsCards React component.`,methods:[],displayName:"StatsCards"};var oe=`import React from 'react';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router';
 import StatsCards from '../cards.jsx';
 
 export default {
@@ -50,7 +50,7 @@ export const Default = Template.bind( {} );
 Default.parameters = {};
 Default.args = DefaultArgs;
 `,re={Default:{startLoc:{col:17,line:23},endLoc:{col:2,line:32},startBody:{col:17,line:23},endBody:{col:2,line:32}}};const $={parameters:{storySource:{source:`import React from 'react';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router';
 import StatsCards from '../cards.jsx';
 import { jsx as _jsx } from "react/jsx-runtime";
 export default {

@@ -1,6 +1,6 @@
 "use strict";(self.webpackChunk_automattic_jetpack_storybook=self.webpackChunk_automattic_jetpack_storybook||[]).push([[7340],{"../../packages/my-jetpack/_inc/components/product-interstitial-modal/stories/index.stories.jsx":(y,l,e)=>{e.r(l),e.d(l,{Default:()=>n,WithAdditionalColumn:()=>a,WithCustomTrigger:()=>i,WithVideo:()=>s,__namedExportsOrder:()=>C,default:()=>f});var d=e("../components/components/product-price/index.tsx"),u=e("../components/components/jetpack-logo/index.tsx"),j=e("../../../node_modules/.pnpm/@wordpress+i18n@5.24.0/node_modules/@wordpress/i18n/build-module/index.js"),o=e("../../../node_modules/.pnpm/react-router@7.6.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/react-router/dist/development/chunk-NL6KNZEE.mjs"),m=e("../../packages/my-jetpack/_inc/components/product-interstitial-modal/product-interstifial-feature-list.tsx"),p=e("../../packages/my-jetpack/_inc/components/product-interstitial-modal/product-interstitial-modal.tsx");const g=e.p+"static/media/boost.9e9a227e.png";var t=e("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js"),h=`import { ProductPrice, JetpackLogo } from '@automattic/jetpack-components';
 import { __ } from '@wordpress/i18n';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router';
 import ProductInterstitialFeatureList from '../product-interstifial-feature-list';
 import ProductInterstitialModal from '../product-interstitial-modal';
 import boostImage from './boost.png';
@@ -97,7 +97,7 @@ Default.args = DefaultArgs;
 `,x={Default:{startLoc:{col:17,line:42},endLoc:{col:2,line:51},startBody:{col:17,line:42},endBody:{col:2,line:51}},WithAdditionalColumn:{startLoc:{col:17,line:42},endLoc:{col:2,line:51},startBody:{col:17,line:42},endBody:{col:2,line:51}},WithVideo:{startLoc:{col:17,line:42},endLoc:{col:2,line:51},startBody:{col:17,line:42},endBody:{col:2,line:51}},WithCustomTrigger:{startLoc:{col:17,line:42},endLoc:{col:2,line:51},startBody:{col:17,line:42},endBody:{col:2,line:51}}};const _=j.__,f={parameters:{storySource:{source:`import { ProductPrice, JetpackLogo } from '@automattic/jetpack-components';
 import { __ as alias__ } from '@wordpress/i18n';
 const __ = alias__;
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router';
 import ProductInterstitialFeatureList from '../product-interstifial-feature-list';
 import ProductInterstitialModal from '../product-interstitial-modal';
 import boostImage from './boost.png';

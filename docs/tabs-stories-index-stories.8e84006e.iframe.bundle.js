@@ -1,5 +1,5 @@
 "use strict";(self.webpackChunk_automattic_jetpack_storybook=self.webpackChunk_automattic_jetpack_storybook||[]).push([[6984],{"../../plugins/protect/src/js/components/tabs/stories/index.stories.jsx":(p,l,s)=>{s.r(l),s.d(l,{Default:()=>a,__namedExportsOrder:()=>x,default:()=>T});var u=s("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js"),r=s("../../../node_modules/.pnpm/react-router@7.6.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/react-router/dist/development/chunk-NL6KNZEE.mjs"),_=s("../../../node_modules/.pnpm/style-loader@2.0.0_webpack@5.94.0/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js"),c=s.n(_),e=s("../../../node_modules/.pnpm/css-loader@6.11.0_webpack@5.94.0/node_modules/css-loader/dist/cjs.js!../../../node_modules/.pnpm/postcss-loader@8.1.1_postcss@8.4.47_typescript@5.8.3_webpack@5.94.0/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[15].use[2]!../../../node_modules/.pnpm/sass-loader@16.0.5_sass-embedded@1.87.0_webpack@5.94.0/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[15].use[3]!../../plugins/protect/src/js/components/tabs/styles.module.scss"),t={};t.insert="head",t.singleton=!1;var E=c()(e.A,t);const d=e.A.locals||{};var o=s("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js");const b=({children:n,className:i=""})=>(0,o.jsx)("nav",{className:`${d.tabs} ${i}`,children:n}),m=({label:n,link:i})=>(0,o.jsx)(r.k2,{to:i,className:({isActive:f})=>f?`${d.tab} ${d["tab--active"]}`:d.tab,children:n}),j=b;m.__docgenInfo={description:"",methods:[],displayName:"Tab"},b.__docgenInfo={description:"",methods:[],displayName:"Tabs",props:{className:{defaultValue:{value:"''",computed:!1},required:!1}}};var h=`import React from 'react';
-import { HashRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router';
 import Tabs, { Tab } from '..';
 
 export default {
@@ -16,7 +16,7 @@ export const Default = args => (
 	</HashRouter>
 );
 `,g={Default:{startLoc:{col:23,line:9},endLoc:{col:2,line:20},startBody:{col:23,line:9},endBody:{col:2,line:20}}};const T={parameters:{storySource:{source:`import React from 'react';
-import { HashRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router';
 import Tabs, { Tab } from '..';
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 export default {

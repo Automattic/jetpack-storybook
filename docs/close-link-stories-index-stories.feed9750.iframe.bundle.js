@@ -1,5 +1,5 @@
 "use strict";(self.webpackChunk_automattic_jetpack_storybook=self.webpackChunk_automattic_jetpack_storybook||[]).push([[2493],{"../../packages/my-jetpack/_inc/components/close-link/stories/index.stories.jsx":(i,a,e)=>{e.r(a),e.d(a,{__namedExportsOrder:()=>v,_default:()=>u,default:()=>f});var r=e("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js"),s=e("../../../node_modules/.pnpm/react-router@7.6.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/react-router/dist/development/chunk-NL6KNZEE.mjs"),_=e("../../../node_modules/.pnpm/@wordpress+icons@10.24.0_react@18.3.1/node_modules/@wordpress/icons/build-module/icon/index.js"),o=e("../../../node_modules/.pnpm/@wordpress+icons@10.24.0_react@18.3.1/node_modules/@wordpress/icons/build-module/library/close.js"),t=e("../../../node_modules/.pnpm/clsx@2.1.1/node_modules/clsx/dist/clsx.mjs"),l=e("../../../node_modules/.pnpm/style-loader@2.0.0_webpack@5.94.0/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js"),d=e.n(l),c=e("../../../node_modules/.pnpm/css-loader@6.11.0_webpack@5.94.0/node_modules/css-loader/dist/cjs.js!../../../node_modules/.pnpm/postcss-loader@8.1.1_postcss@8.4.47_typescript@5.8.3_webpack@5.94.0/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[15].use[2]!../../../node_modules/.pnpm/sass-loader@16.0.5_sass-embedded@1.87.0_webpack@5.94.0/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[15].use[3]!../../packages/my-jetpack/_inc/components/close-link/styles.module.scss"),p={};p.insert="head",p.singleton=!1;var g=d()(c.A,p);const E=c.A.locals||{};var m=e("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js");const x=({className:R,accessibleName:L})=>(0,m.jsx)(s.N_,{to:"/",className:(0,t.A)(E.link,R),"aria-label":L||null,children:(0,m.jsx)(_.A,{icon:o.A,className:E.icon})}),j=x;x.__docgenInfo={description:"",methods:[],displayName:"CloseLink"};var n=`import React from 'react';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router';
 import CloseLink from '..';
 
 export default {
@@ -21,7 +21,7 @@ export const _default = Template.bind( {} );
 _default.parameters = {};
 _default.args = DefaultArgs;
 `,A={_default:{startLoc:{col:17,line:10},endLoc:{col:2,line:19},startBody:{col:17,line:10},endBody:{col:2,line:19}}};const f={parameters:{storySource:{source:`import React from 'react';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router';
 import CloseLink from '..';
 import { jsx as _jsx } from "react/jsx-runtime";
 export default {

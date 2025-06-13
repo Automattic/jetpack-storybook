@@ -4,7 +4,7 @@
 @param {Function} props.onClick - A callback to execute on click
 @param {boolean}  props.reload  - Whether to reload the page after going back
 @return {object}                 GoBackLink component.`,methods:[],displayName:"GoBackLink",props:{onClick:{defaultValue:{value:"() => {}",computed:!1},required:!1}}};var A=`import React from 'react';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router';
 import GoBackLink from '..';
 
 export default {
@@ -26,7 +26,7 @@ export const _default = Template.bind( {} );
 _default.parameters = {};
 _default.args = DefaultArgs;
 `,h={_default:{startLoc:{col:17,line:10},endLoc:{col:2,line:19},startBody:{col:17,line:10},endBody:{col:2,line:19}}};const E={parameters:{storySource:{source:`import React from 'react';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router';
 import GoBackLink from '..';
 import { jsx as _jsx } from "react/jsx-runtime";
 export default {
