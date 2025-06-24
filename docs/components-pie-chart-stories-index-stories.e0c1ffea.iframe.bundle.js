@@ -1,4 +1,4 @@
-"use strict";(self.webpackChunk_automattic_jetpack_storybook=self.webpackChunk_automattic_jetpack_storybook||[]).push([[2586],{"../charts/src/components/pie-chart/stories/index.stories.tsx":(T,p,e)=>{e.r(p),e.d(p,{Default:()=>n,Doughnut:()=>s,ErrorStates:()=>d,Responsiveness:()=>c,WithHorizontalLegend:()=>o,WithTooltips:()=>i,WithTooltipsDoughnut:()=>l,WithVerticalLegend:()=>a,__namedExportsOrder:()=>y,default:()=>_});var m=e("../../../node_modules/.pnpm/@visx+group@3.12.0_react@18.3.1/node_modules/@visx/group/esm/Group.js"),h=e("../../../node_modules/.pnpm/@visx+text@3.12.0_react@18.3.1/node_modules/@visx/text/esm/Text.js"),v=e("../charts/src/providers/theme/theme-provider.tsx"),g=e("../charts/src/providers/theme/themes.ts"),r=e("../charts/src/components/pie-chart/pie-chart.tsx"),t=e("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js"),P=`import { Group } from '@visx/group';
+"use strict";(self.webpackChunk_automattic_jetpack_storybook=self.webpackChunk_automattic_jetpack_storybook||[]).push([[2586],{"../charts/src/components/pie-chart/stories/index.stories.tsx":(f,c,e)=>{e.r(c),e.d(c,{Default:()=>n,Doughnut:()=>a,ErrorStates:()=>l,Responsiveness:()=>i,WithTooltips:()=>o,WithTooltipsDoughnut:()=>s,__namedExportsOrder:()=>x,default:()=>v});var m=e("../../../node_modules/.pnpm/@visx+group@3.12.0_react@18.3.1/node_modules/@visx/group/esm/Group.js"),d=e("../../../node_modules/.pnpm/@visx+text@3.12.0_react@18.3.1/node_modules/@visx/text/esm/Text.js"),u=e("../charts/src/providers/theme/theme-provider.tsx"),p=e("../charts/src/providers/theme/themes.ts"),r=e("../charts/src/components/pie-chart/pie-chart.tsx"),t=e("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js"),T=`import { Group } from '@visx/group';
 import { Text } from '@visx/text';
 import { ThemeProvider, jetpackTheme, wooTheme } from '../../../providers/theme';
 import { PieChart } from '../index';
@@ -94,10 +94,6 @@ const meta = {
 				step: 0.01,
 			},
 		},
-		legendOrientation: {
-			control: 'radio',
-			options: [ 'horizontal', 'vertical' ],
-		},
 		theme: {
 			control: 'select',
 			options: {
@@ -143,26 +139,6 @@ export const Default: Story = {
 		withTooltips: false,
 		data,
 		theme: 'default',
-		showLegend: false,
-		legendOrientation: 'horizontal',
-	},
-};
-
-export const WithHorizontalLegend: Story = {
-	args: {
-		...Default.args,
-		showLegend: true,
-		size: 600,
-		legendOrientation: 'horizontal',
-	},
-};
-
-export const WithVerticalLegend: Story = {
-	args: {
-		...Default.args,
-		showLegend: true,
-		size: 600,
-		legendOrientation: 'vertical',
 	},
 };
 
@@ -276,7 +252,7 @@ export const ErrorStates: Story = {
 		},
 	},
 };
-`,S={Default:{startLoc:{col:23,line:126},endLoc:{col:1,line:138},startBody:{col:23,line:126},endBody:{col:1,line:138}},WithHorizontalLegend:{startLoc:{col:36,line:139},endLoc:{col:1,line:146},startBody:{col:36,line:139},endBody:{col:1,line:146}},WithVerticalLegend:{startLoc:{col:34,line:147},endLoc:{col:1,line:154},startBody:{col:34,line:147},endBody:{col:1,line:154}},Doughnut:{startLoc:{col:24,line:155},endLoc:{col:1,line:186},startBody:{col:24,line:155},endBody:{col:1,line:186}},WithTooltips:{startLoc:{col:28,line:187},endLoc:{col:1,line:199},startBody:{col:28,line:187},endBody:{col:1,line:199}},WithTooltipsDoughnut:{startLoc:{col:36,line:200},endLoc:{col:1,line:213},startBody:{col:36,line:200},endBody:{col:1,line:213}},Responsiveness:{startLoc:{col:30,line:218},endLoc:{col:1,line:227},startBody:{col:30,line:218},endBody:{col:1,line:227}},ErrorStates:{startLoc:{col:27,line:228},endLoc:{col:1,line:292},startBody:{col:27,line:228},endBody:{col:1,line:292}}};const x=[{label:"MacOS",value:3e4,valueDisplay:"30K",percentage:23},{label:"Linux",value:22e3,valueDisplay:"22K",percentage:17},{label:"Windows",value:8e4,valueDisplay:"80K",percentage:60}],_={title:"JS Packages/Charts/Types/Pie Chart",component:r.A,parameters:{storySource:{source:`import { Group } from '@visx/group';
+`,D={Default:{startLoc:{col:23,line:122},endLoc:{col:1,line:132},startBody:{col:23,line:122},endBody:{col:1,line:132}},Doughnut:{startLoc:{col:24,line:133},endLoc:{col:1,line:164},startBody:{col:24,line:133},endBody:{col:1,line:164}},WithTooltips:{startLoc:{col:28,line:165},endLoc:{col:1,line:177},startBody:{col:28,line:165},endBody:{col:1,line:177}},WithTooltipsDoughnut:{startLoc:{col:36,line:178},endLoc:{col:1,line:191},startBody:{col:36,line:178},endBody:{col:1,line:191}},Responsiveness:{startLoc:{col:30,line:196},endLoc:{col:1,line:205},startBody:{col:30,line:196},endBody:{col:1,line:205}},ErrorStates:{startLoc:{col:27,line:206},endLoc:{col:1,line:270},startBody:{col:27,line:206},endBody:{col:1,line:270}}};const g=[{label:"MacOS",value:3e4,valueDisplay:"30K",percentage:23},{label:"Linux",value:22e3,valueDisplay:"22K",percentage:17},{label:"Windows",value:8e4,valueDisplay:"80K",percentage:60}],v={title:"JS Packages/Charts/Types/Pie Chart",component:r.A,parameters:{storySource:{source:`import { Group } from '@visx/group';
 import { Text } from '@visx/text';
 import { ThemeProvider, jetpackTheme, wooTheme } from '../../../providers/theme';
 import { PieChart } from '../index';
@@ -364,10 +340,6 @@ const meta = {
         step: 0.01
       }
     },
-    legendOrientation: {
-      control: 'radio',
-      options: ['horizontal', 'vertical']
-    },
     theme: {
       control: 'select',
       options: {
@@ -409,25 +381,7 @@ export const Default = {
     cornerScale: 0,
     withTooltips: false,
     data,
-    theme: 'default',
-    showLegend: false,
-    legendOrientation: 'horizontal'
-  }
-};
-export const WithHorizontalLegend = {
-  args: {
-    ...Default.args,
-    showLegend: true,
-    size: 600,
-    legendOrientation: 'horizontal'
-  }
-};
-export const WithVerticalLegend = {
-  args: {
-    ...Default.args,
-    showLegend: true,
-    size: 600,
-    legendOrientation: 'vertical'
+    theme: 'default'
   }
 };
 export const Doughnut = {
@@ -567,7 +521,7 @@ export const ErrorStates = {
       }
     }
   }
-};`,locationsMap:{default:{startLoc:{col:23,line:126},endLoc:{col:1,line:138},startBody:{col:23,line:126},endBody:{col:1,line:138}},"with-horizontal-legend":{startLoc:{col:36,line:139},endLoc:{col:1,line:146},startBody:{col:36,line:139},endBody:{col:1,line:146}},"with-vertical-legend":{startLoc:{col:34,line:147},endLoc:{col:1,line:154},startBody:{col:34,line:147},endBody:{col:1,line:154}},doughnut:{startLoc:{col:24,line:155},endLoc:{col:1,line:186},startBody:{col:24,line:155},endBody:{col:1,line:186}},"with-tooltips":{startLoc:{col:28,line:187},endLoc:{col:1,line:199},startBody:{col:28,line:187},endBody:{col:1,line:199}},"with-tooltips-doughnut":{startLoc:{col:36,line:200},endLoc:{col:1,line:213},startBody:{col:36,line:200},endBody:{col:1,line:213}},responsiveness:{startLoc:{col:30,line:218},endLoc:{col:1,line:227},startBody:{col:30,line:218},endBody:{col:1,line:227}},"error-states":{startLoc:{col:27,line:228},endLoc:{col:1,line:292},startBody:{col:27,line:228},endBody:{col:1,line:292}}}},layout:"centered"},decorators:[(f,{args:D})=>(0,t.jsx)(v.NP,{theme:D.theme,children:(0,t.jsx)("div",{style:{resize:"both",overflow:"auto",padding:"2rem",width:"800px",aspectRatio:"1/1",minWidth:"400px",maxWidth:"1200px",height:"800px",border:"1px dashed #ccc"},children:(0,t.jsx)(f,{})})})],argTypes:{size:{control:{type:"range",min:100,max:800,step:10,default:400}},thickness:{control:{type:"range",min:0,max:1,step:.01}},padding:{control:{type:"range",min:0,max:100,step:1}},gapScale:{control:{type:"range",min:0,max:1,step:.01}},cornerScale:{control:{type:"range",min:0,max:1,step:.01}},legendOrientation:{control:"radio",options:["horizontal","vertical"]},theme:{control:"select",options:{default:void 0,jetpack:g.QI,woo:g.pk},defaultValue:void 0},maxWidth:{control:{type:"number",min:100,max:1200}},aspectRatio:{control:{type:"number",min:0,max:1}},resizeDebounceTime:{control:{type:"number",min:0,max:1e4}}}},n={args:{thickness:1,gapScale:0,padding:20,cornerScale:0,withTooltips:!1,data:x,theme:"default",showLegend:!1,legendOrientation:"horizontal"}},o={args:{...n.args,showLegend:!0,size:600,legendOrientation:"horizontal"}},a={args:{...n.args,showLegend:!0,size:600,legendOrientation:"vertical"}},s={args:{...n.args,thickness:.5,padding:0,gapScale:.03,cornerScale:.03,children:(0,t.jsxs)(m.A,{children:[(0,t.jsx)(h.A,{textAnchor:"middle",verticalAnchor:"middle",fontSize:24,y:-16,children:"\u{1F369} Doughnut"}),(0,t.jsx)(h.A,{textAnchor:"middle",verticalAnchor:"middle",fill:"#008A20",fontSize:18,y:16,children:"Three donuts for the price of one!"})]})},parameters:{docs:{description:{story:"Doughnut chart variant with the thickness set to 0.5 (50%)."}}}},i={args:{...n.args,withTooltips:!0},parameters:{docs:{description:{story:"Pie chart with interactive tooltips that appear on hover."}}}},l={args:{...n.args,thickness:.5,withTooltips:!0},parameters:{docs:{description:{story:"Doughnut chart with interactive tooltips that appear on hover."}}}},u={...n.args};delete u.size;const c={args:u,parameters:{docs:{description:{story:"Pie chart with responsive behavior. Uses size prop instead of width/height."}}}},d={render:()=>(0,t.jsxs)("div",{style:{display:"grid",gap:"2rem",gridTemplateColumns:"repeat(2, 1fr)"},children:[(0,t.jsxs)("div",{children:[(0,t.jsx)("h3",{children:"Empty Data"}),(0,t.jsx)(r.A,{size:300,data:[]})]}),(0,t.jsxs)("div",{children:[(0,t.jsx)("h3",{children:"Invalid Percentage Total"}),(0,t.jsx)(r.A,{size:300,data:[{label:"A",value:30,percentage:30},{label:"B",value:40,percentage:40}]})]}),(0,t.jsxs)("div",{children:[(0,t.jsx)("h3",{children:"Negative Values"}),(0,t.jsx)(r.A,{size:300,data:[{label:"A",value:-30,percentage:-30},{label:"B",value:130,percentage:130}]})]}),(0,t.jsxs)("div",{children:[(0,t.jsx)("h3",{children:"Single Data Point"}),(0,t.jsx)(r.A,{size:300,data:[{label:"A",value:100,percentage:100}]})]})]}),parameters:{docs:{description:{story:"Examples of how the pie chart handles various error states and edge cases."}}}},y=["Default","WithHorizontalLegend","WithVerticalLegend","Doughnut","WithTooltips","WithTooltipsDoughnut","Responsiveness","ErrorStates"];n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
+};`,locationsMap:{default:{startLoc:{col:23,line:122},endLoc:{col:1,line:132},startBody:{col:23,line:122},endBody:{col:1,line:132}},doughnut:{startLoc:{col:24,line:133},endLoc:{col:1,line:164},startBody:{col:24,line:133},endBody:{col:1,line:164}},"with-tooltips":{startLoc:{col:28,line:165},endLoc:{col:1,line:177},startBody:{col:28,line:165},endBody:{col:1,line:177}},"with-tooltips-doughnut":{startLoc:{col:36,line:178},endLoc:{col:1,line:191},startBody:{col:36,line:178},endBody:{col:1,line:191}},responsiveness:{startLoc:{col:30,line:196},endLoc:{col:1,line:205},startBody:{col:30,line:196},endBody:{col:1,line:205}},"error-states":{startLoc:{col:27,line:206},endLoc:{col:1,line:270},startBody:{col:27,line:206},endBody:{col:1,line:270}}}},layout:"centered"},decorators:[(_,{args:y})=>(0,t.jsx)(u.NP,{theme:y.theme,children:(0,t.jsx)("div",{style:{resize:"both",overflow:"auto",padding:"2rem",width:"800px",aspectRatio:"1/1",minWidth:"400px",maxWidth:"1200px",height:"800px",border:"1px dashed #ccc"},children:(0,t.jsx)(_,{})})})],argTypes:{size:{control:{type:"range",min:100,max:800,step:10,default:400}},thickness:{control:{type:"range",min:0,max:1,step:.01}},padding:{control:{type:"range",min:0,max:100,step:1}},gapScale:{control:{type:"range",min:0,max:1,step:.01}},cornerScale:{control:{type:"range",min:0,max:1,step:.01}},theme:{control:"select",options:{default:void 0,jetpack:p.QI,woo:p.pk},defaultValue:void 0},maxWidth:{control:{type:"number",min:100,max:1200}},aspectRatio:{control:{type:"number",min:0,max:1}},resizeDebounceTime:{control:{type:"number",min:0,max:1e4}}}},n={args:{thickness:1,gapScale:0,padding:20,cornerScale:0,withTooltips:!1,data:g,theme:"default"}},a={args:{...n.args,thickness:.5,padding:0,gapScale:.03,cornerScale:.03,children:(0,t.jsxs)(m.A,{children:[(0,t.jsx)(d.A,{textAnchor:"middle",verticalAnchor:"middle",fontSize:24,y:-16,children:"\u{1F369} Doughnut"}),(0,t.jsx)(d.A,{textAnchor:"middle",verticalAnchor:"middle",fill:"#008A20",fontSize:18,y:16,children:"Three donuts for the price of one!"})]})},parameters:{docs:{description:{story:"Doughnut chart variant with the thickness set to 0.5 (50%)."}}}},o={args:{...n.args,withTooltips:!0},parameters:{docs:{description:{story:"Pie chart with interactive tooltips that appear on hover."}}}},s={args:{...n.args,thickness:.5,withTooltips:!0},parameters:{docs:{description:{story:"Doughnut chart with interactive tooltips that appear on hover."}}}},h={...n.args};delete h.size;const i={args:h,parameters:{docs:{description:{story:"Pie chart with responsive behavior. Uses size prop instead of width/height."}}}},l={render:()=>(0,t.jsxs)("div",{style:{display:"grid",gap:"2rem",gridTemplateColumns:"repeat(2, 1fr)"},children:[(0,t.jsxs)("div",{children:[(0,t.jsx)("h3",{children:"Empty Data"}),(0,t.jsx)(r.A,{size:300,data:[]})]}),(0,t.jsxs)("div",{children:[(0,t.jsx)("h3",{children:"Invalid Percentage Total"}),(0,t.jsx)(r.A,{size:300,data:[{label:"A",value:30,percentage:30},{label:"B",value:40,percentage:40}]})]}),(0,t.jsxs)("div",{children:[(0,t.jsx)("h3",{children:"Negative Values"}),(0,t.jsx)(r.A,{size:300,data:[{label:"A",value:-30,percentage:-30},{label:"B",value:130,percentage:130}]})]}),(0,t.jsxs)("div",{children:[(0,t.jsx)("h3",{children:"Single Data Point"}),(0,t.jsx)(r.A,{size:300,data:[{label:"A",value:100,percentage:100}]})]})]}),parameters:{docs:{description:{story:"Examples of how the pie chart handles various error states and edge cases."}}}},x=["Default","Doughnut","WithTooltips","WithTooltipsDoughnut","Responsiveness","ErrorStates"];n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
   args: {
     thickness: 1,
     gapScale: 0,
@@ -575,25 +529,9 @@ export const ErrorStates = {
     cornerScale: 0,
     withTooltips: false,
     data,
-    theme: 'default',
-    showLegend: false,
-    legendOrientation: 'horizontal'
+    theme: 'default'
   }
-}`,...n.parameters?.docs?.source}}},o.parameters={...o.parameters,docs:{...o.parameters?.docs,source:{originalSource:`{
-  args: {
-    ...Default.args,
-    showLegend: true,
-    size: 600,
-    legendOrientation: 'horizontal'
-  }
-}`,...o.parameters?.docs?.source}}},a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:`{
-  args: {
-    ...Default.args,
-    showLegend: true,
-    size: 600,
-    legendOrientation: 'vertical'
-  }
-}`,...a.parameters?.docs?.source}}},s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
+}`,...n.parameters?.docs?.source}}},a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:`{
   args: {
     ...Default.args,
     thickness: 0.5,
@@ -616,7 +554,7 @@ export const ErrorStates = {
       }
     }
   }
-}`,...s.parameters?.docs?.source}}},i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:`{
+}`,...a.parameters?.docs?.source}}},o.parameters={...o.parameters,docs:{...o.parameters?.docs,source:{originalSource:`{
   args: {
     ...Default.args,
     withTooltips: true
@@ -628,7 +566,7 @@ export const ErrorStates = {
       }
     }
   }
-}`,...i.parameters?.docs?.source}}},l.parameters={...l.parameters,docs:{...l.parameters?.docs,source:{originalSource:`{
+}`,...o.parameters?.docs?.source}}},s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
   args: {
     ...Default.args,
     thickness: 0.5,
@@ -641,7 +579,7 @@ export const ErrorStates = {
       }
     }
   }
-}`,...l.parameters?.docs?.source}}},c.parameters={...c.parameters,docs:{...c.parameters?.docs,source:{originalSource:`{
+}`,...s.parameters?.docs?.source}}},i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:`{
   args: responsiveArgs,
   parameters: {
     docs: {
@@ -650,7 +588,7 @@ export const ErrorStates = {
       }
     }
   }
-}`,...c.parameters?.docs?.source}}},d.parameters={...d.parameters,docs:{...d.parameters?.docs,source:{originalSource:`{
+}`,...i.parameters?.docs?.source}}},l.parameters={...l.parameters,docs:{...l.parameters?.docs,source:{originalSource:`{
   render: () => <div style={{
     display: 'grid',
     gap: '2rem',
@@ -701,4 +639,4 @@ export const ErrorStates = {
       }
     }
   }
-}`,...d.parameters?.docs?.source}}}}}]);
+}`,...l.parameters?.docs?.source}}}}}]);

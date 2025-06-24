@@ -29,7 +29,6 @@ Start.args = {
 export const Custom: StoryObj< typeof LineChart > = Template.bind( {} );
 Custom.args = {
 	...glyphStoryArgs,
-	showLegend: true,
 	withLegendGlyph: true,
 	renderGlyph: ( { color, size, x, y } ) => {
 		return <GlyphStar top={ y } left={ x } size={ size * size } fill={ color } />;
@@ -68,7 +67,6 @@ const CustomStarGlyph = ( { color, size, x, y } ) => {
 export const CustomSvg: StoryObj< typeof LineChart > = Template.bind( {} );
 CustomSvg.args = {
 	...glyphStoryArgs,
-	showLegend: true,
 	withLegendGlyph: true,
 	renderGlyph: ( { color, size, x, y } ) => (
 		<CustomStarGlyph color={ color } size={ size } x={ x } y={ y } />
@@ -141,7 +139,7 @@ CustomPerDataPoint.args = {
 		radius: 8,
 	},
 };
-`,w={Start:{startLoc:{col:17,line:14},endLoc:{col:2,line:16},startBody:{col:17,line:14},endBody:{col:2,line:16}},Custom:{startLoc:{col:17,line:14},endLoc:{col:2,line:16},startBody:{col:17,line:14},endBody:{col:2,line:16}},CustomSvg:{startLoc:{col:17,line:14},endLoc:{col:2,line:16},startBody:{col:17,line:14},endBody:{col:2,line:16}},InTooltip:{startLoc:{col:17,line:14},endLoc:{col:2,line:16},startBody:{col:17,line:14},endBody:{col:2,line:16}},CustomPerDataPoint:{startLoc:{col:17,line:14},endLoc:{col:2,line:16},startBody:{col:17,line:14},endBody:{col:2,line:16}}};const S={parameters:{storySource:{source:`/* wp:polyfill */
+`,G={Start:{startLoc:{col:17,line:14},endLoc:{col:2,line:16},startBody:{col:17,line:14},endBody:{col:2,line:16}},Custom:{startLoc:{col:17,line:14},endLoc:{col:2,line:16},startBody:{col:17,line:14},endBody:{col:2,line:16}},CustomSvg:{startLoc:{col:17,line:14},endLoc:{col:2,line:16},startBody:{col:17,line:14},endBody:{col:2,line:16}},InTooltip:{startLoc:{col:17,line:14},endLoc:{col:2,line:16},startBody:{col:17,line:14},endBody:{col:2,line:16}},CustomPerDataPoint:{startLoc:{col:17,line:14},endLoc:{col:2,line:16},startBody:{col:17,line:14},endBody:{col:2,line:16}}};const S={parameters:{storySource:{source:`/* wp:polyfill */
 /* wp:polyfill esnext.iterator.map */
 import { GlyphStar } from '@visx/glyph';
 import React from 'react';
@@ -168,7 +166,6 @@ Start.args = {
 export const Custom = Template.bind({});
 Custom.args = {
   ...glyphStoryArgs,
-  showLegend: true,
   withLegendGlyph: true,
   renderGlyph: ({
     color,
@@ -223,7 +220,6 @@ const CustomStarGlyph = ({
 export const CustomSvg = Template.bind({});
 CustomSvg.args = {
   ...glyphStoryArgs,
-  showLegend: true,
   withLegendGlyph: true,
   renderGlyph: ({
     color,
@@ -313,4 +309,4 @@ CustomPerDataPoint.args = {
   glyphStyle: {
     radius: 8
   }
-};`,locationsMap:{start:{startLoc:{col:17,line:14},endLoc:{col:2,line:16},startBody:{col:17,line:14},endBody:{col:2,line:16}},custom:{startLoc:{col:17,line:14},endLoc:{col:2,line:16},startBody:{col:17,line:14},endBody:{col:2,line:16}},"custom-svg":{startLoc:{col:17,line:14},endLoc:{col:2,line:16},startBody:{col:17,line:14},endBody:{col:2,line:16}},"in-tooltip":{startLoc:{col:17,line:14},endLoc:{col:2,line:16},startBody:{col:17,line:14},endBody:{col:2,line:16}},"custom-per-data-point":{startLoc:{col:17,line:14},endLoc:{col:2,line:16},startBody:{col:17,line:14},endBody:{col:2,line:16}}}}},...u.N,title:"JS Packages/Charts/Types/Line Chart/Glyphs"},h=n=>(0,t.jsx)(f.A,{...n}),d={...u.p,withStartGlyphs:!0},a=h.bind({});a.args={...d};const l=h.bind({});l.args={...d,showLegend:!0,withLegendGlyph:!0,renderGlyph:({color:n,size:e,x:r,y:o})=>(0,t.jsx)(y.A,{top:o,left:r,size:e*e,fill:n}),glyphStyle:{radius:10}};const v=({color:n,size:e,x:r,y:o})=>{const m=typeof r=="number"&&typeof o=="number"&&(r!==0||o!==0)?{transform:`translate(${r}, ${o})`}:{};return(0,t.jsx)("g",{...m,children:(0,t.jsx)("svg",{xmlns:"http://www.w3.org/2000/svg",width:e*2,height:e*2,viewBox:"0 0 24 24",style:{overflow:"visible",pointerEvents:"none"},children:(0,t.jsx)("path",{d:"M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z",fill:n,stroke:n,strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round",transform:"translate(-12, -12)"})})})},i=h.bind({});i.args={...d,showLegend:!0,withLegendGlyph:!0,renderGlyph:({color:n,size:e,x:r,y:o})=>(0,t.jsx)(v,{color:n,size:e,x:r,y:o}),glyphStyle:{radius:8}};const L=({tooltipData:n})=>{const e=(0,x.RW)();return(0,t.jsxs)("div",{children:[(0,t.jsx)("div",{style:{marginBottom:"0.5rem"},children:n?.nearestDatum?.datum?.date?.toLocaleDateString()}),(0,t.jsx)("div",{children:Object.entries(n?.datumByKey||{}).map(([r,o],_)=>{const{datum:m}=o;return(0,t.jsx)("div",{children:(0,t.jsxs)("div",{style:{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.2rem"},children:[(0,t.jsx)("svg",{width:20,height:20,children:(0,t.jsx)(y.A,{size:10*10,top:10,left:10,fill:"#fff",stroke:e.colors[_%e.colors.length]})}),r,": ",m.value]})},r)})})]})},p=h.bind({});p.args={...d,renderGlyph:({color:n,size:e,x:r,y:o})=>(0,t.jsx)(y.A,{top:o,left:r,size:e*e,fill:"#fff",stroke:n}),glyphStyle:{radius:10},renderTooltip:L};const c=h.bind({});c.args={...d,showLegend:!0,withStartGlyphs:!0,withLegendGlyph:!0,themeName:"customStorybook",glyphStyle:{radius:8}};const C=["Start","Custom","CustomSvg","InTooltip","CustomPerDataPoint"];a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:"args => <LineChart {...args} />",...a.parameters?.docs?.source}}},l.parameters={...l.parameters,docs:{...l.parameters?.docs,source:{originalSource:"args => <LineChart {...args} />",...l.parameters?.docs?.source}}},i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:"args => <LineChart {...args} />",...i.parameters?.docs?.source}}},p.parameters={...p.parameters,docs:{...p.parameters?.docs,source:{originalSource:"args => <LineChart {...args} />",...p.parameters?.docs?.source}}},c.parameters={...c.parameters,docs:{...c.parameters?.docs,source:{originalSource:"args => <LineChart {...args} />",...c.parameters?.docs?.source}}}}}]);
+};`,locationsMap:{start:{startLoc:{col:17,line:14},endLoc:{col:2,line:16},startBody:{col:17,line:14},endBody:{col:2,line:16}},custom:{startLoc:{col:17,line:14},endLoc:{col:2,line:16},startBody:{col:17,line:14},endBody:{col:2,line:16}},"custom-svg":{startLoc:{col:17,line:14},endLoc:{col:2,line:16},startBody:{col:17,line:14},endBody:{col:2,line:16}},"in-tooltip":{startLoc:{col:17,line:14},endLoc:{col:2,line:16},startBody:{col:17,line:14},endBody:{col:2,line:16}},"custom-per-data-point":{startLoc:{col:17,line:14},endLoc:{col:2,line:16},startBody:{col:17,line:14},endBody:{col:2,line:16}}}}},...u.N,title:"JS Packages/Charts/Types/Line Chart/Glyphs"},h=n=>(0,t.jsx)(f.A,{...n}),d={...u.p,withStartGlyphs:!0},a=h.bind({});a.args={...d};const l=h.bind({});l.args={...d,withLegendGlyph:!0,renderGlyph:({color:n,size:e,x:r,y:o})=>(0,t.jsx)(y.A,{top:o,left:r,size:e*e,fill:n}),glyphStyle:{radius:10}};const v=({color:n,size:e,x:r,y:o})=>{const m=typeof r=="number"&&typeof o=="number"&&(r!==0||o!==0)?{transform:`translate(${r}, ${o})`}:{};return(0,t.jsx)("g",{...m,children:(0,t.jsx)("svg",{xmlns:"http://www.w3.org/2000/svg",width:e*2,height:e*2,viewBox:"0 0 24 24",style:{overflow:"visible",pointerEvents:"none"},children:(0,t.jsx)("path",{d:"M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z",fill:n,stroke:n,strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round",transform:"translate(-12, -12)"})})})},i=h.bind({});i.args={...d,withLegendGlyph:!0,renderGlyph:({color:n,size:e,x:r,y:o})=>(0,t.jsx)(v,{color:n,size:e,x:r,y:o}),glyphStyle:{radius:8}};const L=({tooltipData:n})=>{const e=(0,x.RW)();return(0,t.jsxs)("div",{children:[(0,t.jsx)("div",{style:{marginBottom:"0.5rem"},children:n?.nearestDatum?.datum?.date?.toLocaleDateString()}),(0,t.jsx)("div",{children:Object.entries(n?.datumByKey||{}).map(([r,o],_)=>{const{datum:m}=o;return(0,t.jsx)("div",{children:(0,t.jsxs)("div",{style:{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.2rem"},children:[(0,t.jsx)("svg",{width:20,height:20,children:(0,t.jsx)(y.A,{size:10*10,top:10,left:10,fill:"#fff",stroke:e.colors[_%e.colors.length]})}),r,": ",m.value]})},r)})})]})},p=h.bind({});p.args={...d,renderGlyph:({color:n,size:e,x:r,y:o})=>(0,t.jsx)(y.A,{top:o,left:r,size:e*e,fill:"#fff",stroke:n}),glyphStyle:{radius:10},renderTooltip:L};const c=h.bind({});c.args={...d,showLegend:!0,withStartGlyphs:!0,withLegendGlyph:!0,themeName:"customStorybook",glyphStyle:{radius:8}};const C=["Start","Custom","CustomSvg","InTooltip","CustomPerDataPoint"];a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:"args => <LineChart {...args} />",...a.parameters?.docs?.source}}},l.parameters={...l.parameters,docs:{...l.parameters?.docs,source:{originalSource:"args => <LineChart {...args} />",...l.parameters?.docs?.source}}},i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:"args => <LineChart {...args} />",...i.parameters?.docs?.source}}},p.parameters={...p.parameters,docs:{...p.parameters?.docs,source:{originalSource:"args => <LineChart {...args} />",...p.parameters?.docs?.source}}},c.parameters={...c.parameters,docs:{...c.parameters?.docs,source:{originalSource:"args => <LineChart {...args} />",...c.parameters?.docs?.source}}}}}]);
