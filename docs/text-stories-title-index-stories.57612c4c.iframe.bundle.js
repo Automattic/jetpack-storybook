@@ -1,0 +1,7 @@
+"use strict";(self.webpackChunk_automattic_jetpack_storybook=self.webpackChunk_automattic_jetpack_storybook||[]).push([[4116],{"../components/components/text/stories/title.index.stories.tsx":(d,n,t)=>{t.r(n),t.d(n,{Default:()=>e,__namedExportsOrder:()=>l,default:()=>i});var o=t("../components/components/text/index.tsx"),c=t("../components/components/text/stories/style.module.scss"),s=t("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js");const r=["medium","small"],i={title:"JS Packages/Components/Text/Title",component:o.hE,argTypes:{children:{control:{type:"text"}},size:{control:{type:"select"},options:r}}},e=(a=>(0,s.jsxs)("div",{className:c.A.instance,children:[(0,s.jsx)("span",{children:"Text above to the the component..."}),(0,s.jsx)(o.hE,{...a,children:a?.children||"Title Medium - Secure, grow, and increase your site speed"}),(0,s.jsx)("span",{children:"Text below to the the component..."})]})).bind({});e.args={size:"medium"};const l=["Default"];e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`args => <div className={styles.instance}>
+        <span>Text above to the the component...</span>
+        <Title {...args}>
+            {args?.children || 'Title Medium - Secure, grow, and increase your site speed'}
+        </Title>
+        <span>Text below to the the component...</span>
+    </div>`,...e.parameters?.docs?.source}}}}}]);
