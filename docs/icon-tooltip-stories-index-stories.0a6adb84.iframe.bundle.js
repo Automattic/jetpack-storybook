@@ -1,0 +1,54 @@
+"use strict";(self.webpackChunk_automattic_jetpack_storybook=self.webpackChunk_automattic_jetpack_storybook||[]).push([[1945],{"../components/components/icon-tooltip/stories/index.stories.tsx":(_,d,e)=>{e.r(d),e.d(d,{HasContent:()=>c,HoverShow:()=>u,Wide:()=>m,WrapperAnchor:()=>h,__namedExportsOrder:()=>g,_default:()=>p,default:()=>j});var r=e("../components/components/icon-tooltip/index.tsx"),n=e("../../../node_modules/.pnpm/style-loader@2.0.0_webpack@5.94.0/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js"),l=e.n(n),o=e("../../../node_modules/.pnpm/css-loader@6.11.0_webpack@5.94.0/node_modules/css-loader/dist/cjs.js!../../../node_modules/.pnpm/postcss-loader@8.1.1_postcss@8.4.47_typescript@5.8.3_webpack@5.94.0/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[14].use[2]!../../../node_modules/.pnpm/sass-loader@16.0.5_sass-embedded@1.87.0_webpack@5.94.0/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[14].use[3]!../components/components/icon-tooltip/stories/style.scss"),s={};s.insert="head",s.singleton=!1;var a=l()(o.A,s);const i=o.A.locals||{};var t=e("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js");const f=["top","top-start","top-end","bottom","bottom-start","bottom-end"],j={title:"JS Packages/Components/IconTooltip",component:r.A,argTypes:{className:{control:{type:"text"}},iconClassName:{control:{type:"text"}},placement:{control:{type:"select"},options:f},animate:{control:{type:"boolean"}},iconCode:{control:{type:"text"}},iconSize:{control:{type:"number"}},offset:{control:{type:"number"}},title:{control:{type:"text"}},children:{control:{type:null}},wide:{control:{type:"boolean"}},hoverShow:{control:{type:"boolean"}}}},v=x=>(0,t.jsx)("div",{style:{position:"absolute",height:"1000px",left:"300px",top:"200px"},children:(0,t.jsx)(r.A,{...x})}),w=x=>(0,t.jsx)("div",{style:{position:"absolute",height:"1000px",left:"300px",top:"300px"},children:(0,t.jsx)("div",{className:"tooltip-wrapper",children:(0,t.jsx)("div",{className:"tooltip-wrapper-anchor",children:(0,t.jsx)(r.A,{...x,children:(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)("div",{children:"Thank you for upgrading! Now your visitors can search up to 500 records."}),(0,t.jsx)("div",{className:"tooltip-actions",children:(0,t.jsx)("span",{children:"1 of 2"})})]})})})})}),p=v.bind({}),c=v.bind({});c.args={title:"This is title!",children:(0,t.jsxs)("div",{children:["This is children block!",(0,t.jsx)("br",{}),(0,t.jsx)("br",{}),"Break Line!",(0,t.jsx)("br",{}),(0,t.jsxs)("ul",{children:[(0,t.jsx)("li",{children:"Item 1"}),(0,t.jsx)("li",{children:"Item 2"})]})]})};const h=w.bind({});h.args={popoverAnchorStyle:"wrapper",title:"Site records increased",placement:"top",forceShow:!0};const m=v.bind({});m.args={title:"This is title!",children:(0,t.jsx)("div",{children:"This is a wide tooltip!"}),wide:!0,placement:"bottom-start"};const u=v.bind({});u.args={title:"This is title!",children:(0,t.jsx)("div",{children:"This is a hover tooltip!"}),placement:"bottom-start",hoverShow:!0};const g=["_default","HasContent","WrapperAnchor","Wide","HoverShow"];p.parameters={...p.parameters,docs:{...p.parameters?.docs,source:{originalSource:`args => <div style={{
+  position: 'absolute',
+  height: '1000px',
+  left: '300px',
+  top: '200px'
+}}>
+        <IconTooltip {...args} />
+    </div>`,...p.parameters?.docs?.source}}},c.parameters={...c.parameters,docs:{...c.parameters?.docs,source:{originalSource:`args => <div style={{
+  position: 'absolute',
+  height: '1000px',
+  left: '300px',
+  top: '200px'
+}}>
+        <IconTooltip {...args} />
+    </div>`,...c.parameters?.docs?.source}}},h.parameters={...h.parameters,docs:{...h.parameters?.docs,source:{originalSource:`args => <div style={{
+  position: 'absolute',
+  height: '1000px',
+  left: '300px',
+  top: '300px'
+}}>
+        <div className="tooltip-wrapper">
+            <div className="tooltip-wrapper-anchor">
+                <IconTooltip {...args}>
+                    <>
+                        <div>Thank you for upgrading! Now your visitors can search up to 500 records.</div>
+                        <div className="tooltip-actions">
+                            <span>1 of 2</span>
+                        </div>
+                    </>
+                </IconTooltip>
+            </div>
+        </div>
+    </div>`,...h.parameters?.docs?.source}}},m.parameters={...m.parameters,docs:{...m.parameters?.docs,source:{originalSource:`args => <div style={{
+  position: 'absolute',
+  height: '1000px',
+  left: '300px',
+  top: '200px'
+}}>
+        <IconTooltip {...args} />
+    </div>`,...m.parameters?.docs?.source}}},u.parameters={...u.parameters,docs:{...u.parameters?.docs,source:{originalSource:`args => <div style={{
+  position: 'absolute',
+  height: '1000px',
+  left: '300px',
+  top: '200px'
+}}>
+        <IconTooltip {...args} />
+    </div>`,...u.parameters?.docs?.source}}}},"../../../node_modules/.pnpm/@wordpress+components@29.12.0_@types+react@18.3.23_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/@wordpress/components/build-module/spinner/index.js":(_,d,e)=>{e.d(d,{Ay:()=>m});var r=e("../../../node_modules/.pnpm/clsx@2.1.1/node_modules/clsx/dist/clsx.mjs"),n=e("../../../node_modules/.pnpm/@emotion+styled@11.14.0_@emotion+react@11.14.0_@types+react@18.3.23_react@18.3.1__@types+react@18.3.23_react@18.3.1/node_modules/@emotion/styled/base/dist/emotion-styled-base.browser.esm.js"),l=e("../../../node_modules/.pnpm/@emotion+react@11.14.0_@types+react@18.3.23_react@18.3.1/node_modules/@emotion/react/dist/emotion-react.browser.esm.js"),o=e("../../../node_modules/.pnpm/@wordpress+components@29.12.0_@types+react@18.3.23_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/@wordpress/components/build-module/utils/config-values.js"),s=e("../../../node_modules/.pnpm/@wordpress+components@29.12.0_@types+react@18.3.23_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/@wordpress/components/build-module/utils/colors-values.js");function a(){return"You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."}const i=(0,l.i7)`
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+ `,t=(0,n.A)("svg",{target:"ea4tfvq2"})("width:",o.A.spinnerSize,"px;height:",o.A.spinnerSize,"px;display:inline-block;margin:5px 11px 0;position:relative;color:",s.l.theme.accent,";overflow:visible;opacity:1;background-color:transparent;"),f={name:"9s4963",styles:"fill:transparent;stroke-width:1.5px"},j=(0,n.A)("circle",{target:"ea4tfvq1"})(f,";stroke:",s.l.gray[300],";"),v=(0,n.A)("path",{target:"ea4tfvq0"})(f,";stroke:currentColor;stroke-linecap:round;transform-origin:50% 50%;animation:1.4s linear infinite both ",i,";");var w=e("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js"),p=e("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js");function c({className:u,...g},x){return(0,p.jsxs)(t,{className:(0,r.A)("components-spinner",u),viewBox:"0 0 100 100",width:"16",height:"16",xmlns:"http://www.w3.org/2000/svg",role:"presentation",focusable:"false",...g,ref:x,children:[(0,p.jsx)(j,{cx:"50",cy:"50",r:"50",vectorEffect:"non-scaling-stroke"}),(0,p.jsx)(v,{d:"m 50 0 a 50 50 0 0 1 50 50",vectorEffect:"non-scaling-stroke"})]})}const m=(0,w.forwardRef)(c)},"../../../node_modules/.pnpm/@wordpress+icons@10.26.0_react@18.3.1/node_modules/@wordpress/icons/build-module/icon/index.js":(_,d,e)=>{e.d(d,{A:()=>l});var r=e("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js");function n({icon:o,size:s=24,...a},i){return(0,r.cloneElement)(o,{width:s,height:s,...a,ref:i})}const l=(0,r.forwardRef)(n)},"../../../node_modules/.pnpm/@wordpress+icons@10.26.0_react@18.3.1/node_modules/@wordpress/icons/build-module/library/external.js":(_,d,e)=>{e.d(d,{A:()=>o});var r=e("../../../node_modules/.pnpm/@wordpress+primitives@4.26.0_react@18.3.1/node_modules/@wordpress/primitives/build-module/svg/index.js"),n=e("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js");const o=(0,n.jsx)(r.t4,{xmlns:"http://www.w3.org/2000/svg",viewBox:"0 0 24 24",children:(0,n.jsx)(r.wA,{d:"M19.5 4.5h-7V6h4.44l-5.97 5.97 1.06 1.06L18 7.06v4.44h1.5v-7Zm-13 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-3H17v3a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h3V5.5h-3Z"})})},"../../../node_modules/.pnpm/@wordpress+is-shallow-equal@5.26.0/node_modules/@wordpress/is-shallow-equal/build-module/index.js":(_,d,e)=>{e.d(d,{Ay:()=>l});var r=e("../../../node_modules/.pnpm/@wordpress+is-shallow-equal@5.26.0/node_modules/@wordpress/is-shallow-equal/build-module/objects.js");function n(o,s){if(o===s)return!0;if(o.length!==s.length)return!1;for(let a=0,i=o.length;a<i;a++)if(o[a]!==s[a])return!1;return!0}function l(o,s){if(o&&s){if(o.constructor===Object&&s.constructor===Object)return(0,r.A)(o,s);if(Array.isArray(o)&&Array.isArray(s))return n(o,s)}return o===s}},"../../../node_modules/.pnpm/@wordpress+is-shallow-equal@5.26.0/node_modules/@wordpress/is-shallow-equal/build-module/objects.js":(_,d,e)=>{e.d(d,{A:()=>r});function r(n,l){if(n===l)return!0;const o=Object.keys(n),s=Object.keys(l);if(o.length!==s.length)return!1;let a=0;for(;a<o.length;){const i=o[a],t=n[i];if(t===void 0&&!l.hasOwnProperty(i)||t!==l[i])return!1;a++}return!0}},"../../../node_modules/.pnpm/css-loader@6.11.0_webpack@5.94.0/node_modules/css-loader/dist/cjs.js!../../../node_modules/.pnpm/postcss-loader@8.1.1_postcss@8.4.47_typescript@5.8.3_webpack@5.94.0/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[14].use[2]!../../../node_modules/.pnpm/sass-loader@16.0.5_sass-embedded@1.87.0_webpack@5.94.0/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[14].use[3]!../components/components/icon-tooltip/stories/style.scss":(_,d,e)=>{e.d(d,{A:()=>a});var r=e("../../../node_modules/.pnpm/css-loader@6.11.0_webpack@5.94.0/node_modules/css-loader/dist/runtime/noSourceMaps.js"),n=e.n(r),l=e("../../../node_modules/.pnpm/css-loader@6.11.0_webpack@5.94.0/node_modules/css-loader/dist/runtime/api.js"),o=e.n(l),s=o()(n());s.push([_.id,".tooltip-wrapper-anchor{position:absolute;top:0;left:0;width:64px;height:64px}.tooltip-wrapper-anchor .icon-tooltip-wrapper{width:100%;height:100%}.tooltip-wrapper-anchor .icon-tooltip-wrapper .icon-tooltip-title{font-size:var(--font-title-small);font-weight:500;margin-bottom:16px}.tooltip-wrapper-anchor .icon-tooltip-helper{width:100%;height:100%}.tooltip-wrapper-anchor .icon-tooltip-content{font-size:var(--font-body)}.tooltip-wrapper-anchor .tooltip-actions{display:flex;align-items:center;justify-content:space-between;color:var(--jp-gray-60);margin-top:24px}",""]);const a=s}}]);
