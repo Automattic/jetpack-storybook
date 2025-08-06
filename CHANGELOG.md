@@ -5,15 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## 1.1.0-alpha - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## 1.1.0 - 2025-08-06
 ### Added
-- Storybook ordering: Add custom ordering for Charts
+- Charts: Add custom ordering. [#44427]
 
 ### Changed
-- Update package dependencies.
+- Update package dependencies. [#43766] [#44020] [#44148] [#44151] [#44217] [#44218] [#44219] [#44356]
 
 ## 1.0.0 - 2025-06-03
 ### Added
