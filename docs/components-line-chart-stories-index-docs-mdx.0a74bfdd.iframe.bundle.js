@@ -1,7 +1,7 @@
-(self.webpackChunk_automattic_jetpack_storybook=self.webpackChunk_automattic_jetpack_storybook||[]).push([[6936],{"../../../node_modules/.pnpm/@mdx-js+react@3.1.0_@types+react@18.3.23_react@18.3.1/node_modules/@mdx-js/react/lib/index.js":(j,i,r)=>{"use strict";r.d(i,{R:()=>t,x:()=>d});var o=r("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js");const e={},p=o.createContext(e);function t(a){const s=o.useContext(p);return o.useMemo(function(){return typeof a=="function"?a(s):{...s,...a}},[s,a])}function d(a){let s;return a.disableParentContext?s=typeof a.components=="function"?a.components(e):a.components||e:s=t(a.components),o.createElement(p.Provider,{value:s},a.children)}},"../charts/src/components/line-chart/stories/index.docs.mdx":(j,i,r)=>{"use strict";r.r(i),r.d(i,{default:()=>C});var o=r("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js"),e=r("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js"),p=r("../../../node_modules/.pnpm/@mdx-js+react@3.1.0_@types+react@18.3.23_react@18.3.1/node_modules/@mdx-js/react/lib/index.js"),t=r("../../../node_modules/.pnpm/@storybook+addon-docs@9.0.15_@types+react@18.3.23_storybook@9.0.15_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist/blocks.mjs"),d=r("../charts/src/components/line-chart/stories/index.stories.tsx"),a=r("../charts/src/components/line-chart/stories/glyph.stories.tsx");function s(u){const n={a:"a",code:"code",h1:"h1",h2:"h2",h3:"h3",li:"li",p:"p",pre:"pre",strong:"strong",table:"table",tbody:"tbody",td:"td",th:"th",thead:"thead",tr:"tr",ul:"ul",...(0,p.R)(),...u.components};return(0,e.jsxs)(e.Fragment,{children:[(0,e.jsx)(t.W8,{title:"JS Packages/Charts/Types/Line Chart",of:d}),`
+(self.webpackChunk_automattic_jetpack_storybook=self.webpackChunk_automattic_jetpack_storybook||[]).push([[6936],{"../../../node_modules/.pnpm/@mdx-js+react@3.1.0_@types+react@18.3.23_react@18.3.1/node_modules/@mdx-js/react/lib/index.js":(j,i,r)=>{"use strict";r.d(i,{R:()=>t,x:()=>o});var d=r("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js");const e={},m=d.createContext(e);function t(a){const s=d.useContext(m);return d.useMemo(function(){return typeof a=="function"?a(s):{...s,...a}},[s,a])}function o(a){let s;return a.disableParentContext?s=typeof a.components=="function"?a.components(e):a.components||e:s=t(a.components),d.createElement(m.Provider,{value:s},a.children)}},"../charts/src/components/line-chart/stories/index.docs.mdx":(j,i,r)=>{"use strict";r.r(i),r.d(i,{default:()=>C});var d=r("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js"),e=r("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js"),m=r("../../../node_modules/.pnpm/@mdx-js+react@3.1.0_@types+react@18.3.23_react@18.3.1/node_modules/@mdx-js/react/lib/index.js"),t=r("../../../node_modules/.pnpm/@storybook+addon-docs@9.0.15_@types+react@18.3.23_storybook@9.0.15_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist/blocks.mjs"),o=r("../charts/src/components/line-chart/stories/index.stories.tsx"),a=r("../charts/src/components/line-chart/stories/glyph.stories.tsx");function s(p){const n={a:"a",code:"code",h1:"h1",h2:"h2",h3:"h3",li:"li",p:"p",pre:"pre",strong:"strong",table:"table",tbody:"tbody",td:"td",th:"th",thead:"thead",tr:"tr",ul:"ul",...(0,m.R)(),...p.components};return(0,e.jsxs)(e.Fragment,{children:[(0,e.jsx)(t.W8,{title:"JS Packages/Charts/Types/Line Chart",of:o}),`
 `,(0,e.jsx)(n.h1,{id:"line-chart",children:"Line Chart"}),`
 `,(0,e.jsx)(n.p,{children:"Line Charts visualize data trends over time or other continuous variables, connecting data points with smooth or linear lines. They excel at showing patterns, trends, and relationships in time-series data."}),`
-`,(0,e.jsx)(t.Hl,{of:d.Default}),`
+`,(0,e.jsx)(t.Hl,{of:o.Default}),`
 `,(0,e.jsx)(n.h2,{id:"overview",children:"Overview"}),`
 `,(0,e.jsxs)(n.p,{children:["The Line Chart component provides a flexible, accessible, and highly customizable solution for displaying temporal data. Built on ",(0,e.jsx)(n.code,{children:"@visx/xychart"}),", it supports multiple data series, various curve types, interactive tooltips, legends, and compound components for advanced features like annotations:"]}),`
 `,(0,e.jsx)(t.kL,{language:"jsx",code:`import { LineChart } from '@automattic/charts';
@@ -18,7 +18,7 @@
 `,(0,e.jsx)(n.h2,{id:"basic-usage",children:"Basic Usage"}),`
 `,(0,e.jsx)(n.h3,{id:"simple-line-chart",children:"Simple Line Chart"}),`
 `,(0,e.jsxs)(n.p,{children:["The simplest line chart requires only a ",(0,e.jsx)(n.code,{children:"data"})," prop with time-series data:"]}),`
-`,(0,e.jsx)(t.Hl,{of:d.SingleSeries}),`
+`,(0,e.jsx)(t.Hl,{of:o.SingleSeries}),`
 `,(0,e.jsx)(t.kL,{language:"jsx",code:`<LineChart
 	data={[
 		{
@@ -81,7 +81,7 @@
 `,(0,e.jsx)(n.h2,{id:"curve-types",children:"Curve Types"}),`
 `,(0,e.jsx)(n.h3,{id:"linear-curves",children:"Linear Curves"}),`
 `,(0,e.jsx)(n.p,{children:"Connect data points with straight lines for precise, unsmoothed visualization:"}),`
-`,(0,e.jsx)(t.Hl,{of:d.CurveTypes}),`
+`,(0,e.jsx)(t.Hl,{of:o.CurveTypes}),`
 `,(0,e.jsx)(n.h3,{id:"smooth-curves-catmull-rom",children:"Smooth Curves (Catmull-Rom)"}),`
 `,(0,e.jsx)(n.p,{children:"Create flowing curves that pass through all data points using Catmull-Rom spline interpolation:"}),`
 `,(0,e.jsx)(t.kL,{language:"jsx",code:`<LineChart
@@ -103,7 +103,7 @@
 `,(0,e.jsx)(n.h2,{id:"multiple-series",children:"Multiple Series"}),`
 `,(0,e.jsx)(n.h3,{id:"multi-series-charts",children:"Multi-Series Charts"}),`
 `,(0,e.jsx)(n.p,{children:"Display multiple data series with automatic color differentiation:"}),`
-`,(0,e.jsx)(t.Hl,{of:d.Default}),`
+`,(0,e.jsx)(t.Hl,{of:o.Default}),`
 `,(0,e.jsx)(t.kL,{language:"jsx",code:`<LineChart
 	data={[
 		{
@@ -120,7 +120,7 @@
 />`}),`
 `,(0,e.jsx)(n.h3,{id:"custom-series-styling",children:"Custom Series Styling"}),`
 `,(0,e.jsxs)(n.p,{children:["Override individual series appearance with the ",(0,e.jsx)(n.code,{children:"options"})," prop:"]}),`
-`,(0,e.jsx)(t.Hl,{of:d.BrokenLine}),`
+`,(0,e.jsx)(t.Hl,{of:o.BrokenLine}),`
 `,(0,e.jsx)(t.kL,{language:"jsx",code:`<LineChart
 	data={[
 		{
@@ -142,7 +142,7 @@
 `,(0,e.jsx)(n.p,{children:"Use semantic line types to distinguish between different data categories with automatic styling."}),`
 `,(0,e.jsx)(n.h3,{id:"comparison-type",children:"Comparison type"}),`
 `,(0,e.jsxs)(n.p,{children:["The ",(0,e.jsx)(n.code,{children:"comparison"})," type can be used to differentiate comparison data from primary data series:"]}),`
-`,(0,e.jsx)(t.Hl,{of:d.Comparison}),`
+`,(0,e.jsx)(t.Hl,{of:o.Comparison}),`
 `,(0,e.jsx)(t.kL,{language:"jsx",code:`<LineChart
 	data={[
 		{
@@ -176,7 +176,7 @@ const customTheme = {
 `,(0,e.jsx)(n.h2,{id:"visual-features",children:"Visual Features"}),`
 `,(0,e.jsx)(n.h3,{id:"gradient-fill",children:"Gradient Fill"}),`
 `,(0,e.jsx)(n.p,{children:"Add visual depth with gradient fills under line series:"}),`
-`,(0,e.jsx)(t.Hl,{of:d.GradientFilled}),`
+`,(0,e.jsx)(t.Hl,{of:o.GradientFilled}),`
 `,(0,e.jsx)(t.kL,{language:"jsx",code:`<LineChart
 	data={data}
 	withGradientFill={true}
@@ -216,7 +216,7 @@ const customTheme = {
 />`}),`
 `,(0,e.jsx)(n.h3,{id:"pointer-events",children:"Pointer Events"}),`
 `,(0,e.jsx)(n.p,{children:"Handle user interactions with custom event handlers:"}),`
-`,(0,e.jsx)(t.Hl,{of:d.WithPointerEvents}),`
+`,(0,e.jsx)(t.Hl,{of:o.WithPointerEvents}),`
 `,(0,e.jsx)(t.kL,{language:"jsx",code:`<LineChart
 	data={data}
 	onPointerDown={({ datum }) => console.log('Clicked:', datum)}
@@ -227,7 +227,7 @@ const customTheme = {
 `,(0,e.jsx)(n.h2,{id:"legends",children:"Legends"}),`
 `,(0,e.jsx)(n.h3,{id:"basic-legend",children:"Basic Legend"}),`
 `,(0,e.jsx)(n.p,{children:"Display series information with automatic color matching:"}),`
-`,(0,e.jsx)(t.Hl,{of:d.CustomLegendPositioning}),`
+`,(0,e.jsx)(t.Hl,{of:o.CustomLegendPositioning}),`
 `,(0,e.jsx)(t.kL,{language:"jsx",code:`<LineChart
 	data={data}
 	showLegend={true}
@@ -248,7 +248,7 @@ const customTheme = {
 `,(0,e.jsx)(n.h2,{id:"advanced-customization",children:"Advanced Customization"}),`
 `,(0,e.jsx)(n.h3,{id:"axis-configuration",children:"Axis Configuration"}),`
 `,(0,e.jsx)(n.p,{children:"Customize axes with formatting, orientation, and tick options:"}),`
-`,(0,e.jsx)(t.Hl,{of:d.SmartFormatting}),`
+`,(0,e.jsx)(t.Hl,{of:o.SmartFormatting}),`
 `,(0,e.jsx)(t.kL,{language:"jsx",code:`<LineChart
 	data={data}
 	options={{
@@ -273,7 +273,7 @@ const customTheme = {
 />`}),`
 `,(0,e.jsx)(n.h3,{id:"responsive-behavior",children:"Responsive Behavior"}),`
 `,(0,e.jsx)(n.p,{children:"Charts automatically resize based on container size:"}),`
-`,(0,e.jsx)(t.Hl,{of:d.FixedDimensions}),`
+`,(0,e.jsx)(t.Hl,{of:o.FixedDimensions}),`
 `,(0,e.jsx)(t.kL,{language:"jsx",code:`// Responsive (default)
 <LineChart data={data} />
 
@@ -309,7 +309,7 @@ const customTheme = {
 `,(0,e.jsx)(n.h2,{id:"data-formats",children:"Data Formats"}),`
 `,(0,e.jsx)(n.h3,{id:"date-handling",children:"Date Handling"}),`
 `,(0,e.jsx)(n.p,{children:"The chart supports multiple date formats and automatically converts to local timezone:"}),`
-`,(0,e.jsx)(t.Hl,{of:d.DateStringFormats}),`
+`,(0,e.jsx)(t.Hl,{of:o.DateStringFormats}),`
 `,(0,e.jsx)(t.kL,{language:"jsx",code:`// Date objects
 { date: new Date('2024-01-01'), value: 10 }
 
@@ -319,7 +319,7 @@ const customTheme = {
 { dateString: '2024-01-01T14:30:00Z', value: 20 }`}),`
 `,(0,e.jsx)(n.h3,{id:"large-values",children:"Large Values"}),`
 `,(0,e.jsx)(n.p,{children:"Automatic formatting handles large numbers with smart abbreviations:"}),`
-`,(0,e.jsx)(t.Hl,{of:d.SmartFormatting}),`
+`,(0,e.jsx)(t.Hl,{of:o.SmartFormatting}),`
 `,(0,e.jsx)(n.p,{children:"Values are automatically formatted as:"}),`
 `,(0,e.jsxs)(n.ul,{children:[`
 `,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"1B and above"}),': "1.23B"']}),`
@@ -329,7 +329,7 @@ const customTheme = {
 `]}),`
 `,(0,e.jsx)(n.h2,{id:"error-handling",children:"Error Handling"}),`
 `,(0,e.jsx)(n.p,{children:"The chart gracefully handles various error states and edge cases:"}),`
-`,(0,e.jsx)(t.Hl,{of:d.ErrorStates}),`
+`,(0,e.jsx)(t.Hl,{of:o.ErrorStates}),`
 `,(0,e.jsx)(n.p,{children:(0,e.jsx)(n.strong,{children:"Supported scenarios:"})}),`
 `,(0,e.jsxs)(n.ul,{children:[`
 `,(0,e.jsx)(n.li,{children:"Empty data arrays"}),`
@@ -469,4 +469,4 @@ const customTheme = {
 `,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"Jetpack"}),": Jetpack brand colors and styling"]}),`
 `,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"Woo"}),": WooCommerce brand colors and styling"]}),`
 `,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"Custom"}),": Define your own theme object"]}),`
-`]})]})}function C(u={}){const{wrapper:n}={...(0,p.R)(),...u.components};return n?(0,e.jsx)(n,{...u,children:(0,e.jsx)(s,{...u})}):s(u)}},"../../../node_modules/.pnpm/@storybook+addon-docs@9.0.15_@types+react@18.3.23_storybook@9.0.15_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist sync recursive":j=>{function i(r){var o=new Error("Cannot find module '"+r+"'");throw o.code="MODULE_NOT_FOUND",o}i.keys=()=>[],i.resolve=i,i.id="../../../node_modules/.pnpm/@storybook+addon-docs@9.0.15_@types+react@18.3.23_storybook@9.0.15_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist sync recursive",j.exports=i},"../charts/src/components/line-chart/stories/glyph.stories.tsx":(j,i,r)=>{"use strict";r.r(i),r.d(i,{Custom:()=>g,CustomPerDataPoint:()=>f,CustomSvg:()=>y,InTooltip:()=>v,Start:()=>m,__namedExportsOrder:()=>P,default:()=>n});var o=r("../../../node_modules/.pnpm/@visx+glyph@3.12.0_react@18.3.1/node_modules/@visx/glyph/esm/glyphs/GlyphStar.js"),e=r("../charts/src/providers/chart-context/hooks/use-global-charts-theme.ts"),p=r("../charts/src/providers/chart-context/global-charts-provider.tsx"),t=r("../charts/src/stories/theme-config.tsx"),d=r("../charts/src/components/line-chart/line-chart.tsx"),a=r("../charts/src/components/line-chart/stories/config.tsx"),s=r("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js");const C={...t.yI,glyph:a.Em},n={...a.Nc,title:"JS Packages/Charts/Types/Line Chart/Glyphs",decorators:[(l,{args:c})=>{const h=C[c.themeName||"default"];return(0,s.jsx)(p.S,{theme:h,children:(0,s.jsx)("div",{style:{resize:"both",overflow:"auto",padding:"2rem",width:"800px",maxWidth:"1200px",border:"1px dashed #ccc",display:"inline-block"},children:(0,s.jsx)(l,{})})})}],argTypes:{...a.Nc.argTypes,themeName:{...t.jW.themeName,options:["default","jetpack","woo","custom","glyph"]}}},b=l=>(0,s.jsx)(d.A,{...l}),_={...a.pn,withStartGlyphs:!0},m=b.bind({});m.args={..._};const g=b.bind({});g.args={..._,withLegendGlyph:!0,renderGlyph:({color:l,size:c,x:h,y:x})=>(0,s.jsx)(o.A,{top:x,left:h,size:c*c,fill:l}),glyphStyle:{radius:10}};const S=({color:l,size:c,x:h,y:x})=>{const L=typeof h=="number"&&typeof x=="number"&&(h!==0||x!==0)?{transform:`translate(${h}, ${x})`}:{};return(0,s.jsx)("g",{...L,children:(0,s.jsx)("svg",{xmlns:"http://www.w3.org/2000/svg",width:c*2,height:c*2,viewBox:"0 0 24 24",style:{overflow:"visible",pointerEvents:"none"},children:(0,s.jsx)("path",{d:"M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z",fill:l,stroke:l,strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round",transform:"translate(-12, -12)"})})})},y=b.bind({});y.args={..._,withLegendGlyph:!0,renderGlyph:({color:l,size:c,x:h,y:x})=>(0,s.jsx)(S,{color:l,size:c,x:h,y:x}),glyphStyle:{radius:8}};const k=({tooltipData:l})=>{const c=(0,e.p)();return(0,s.jsxs)("div",{children:[(0,s.jsx)("div",{style:{marginBottom:"0.5rem"},children:l?.nearestDatum?.datum?.date?.toLocaleDateString()}),(0,s.jsx)("div",{children:Object.entries(l?.datumByKey||{}).map(([h,x],w)=>{const{datum:L}=x;return(0,s.jsx)("div",{children:(0,s.jsxs)("div",{style:{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.2rem"},children:[(0,s.jsx)("svg",{width:20,height:20,children:(0,s.jsx)(o.A,{size:100,top:10,left:10,fill:"#fff",stroke:c.colors[w%c.colors.length]})}),h,": ",L.value]})},h)})})]})},v=b.bind({});v.args={..._,renderGlyph:({color:l,size:c,x:h,y:x})=>(0,s.jsx)(o.A,{top:x,left:h,size:c*c,fill:"#fff",stroke:l}),glyphStyle:{radius:10},renderTooltip:k};const f=b.bind({});f.args={..._,showLegend:!0,withStartGlyphs:!0,withLegendGlyph:!0,themeName:"glyph",glyphStyle:{radius:8}};const P=["Start","Custom","CustomSvg","InTooltip","CustomPerDataPoint"];m.parameters={...m.parameters,docs:{...m.parameters?.docs,source:{originalSource:"args => <LineChart {...args} />",...m.parameters?.docs?.source}}},g.parameters={...g.parameters,docs:{...g.parameters?.docs,source:{originalSource:"args => <LineChart {...args} />",...g.parameters?.docs?.source}}},y.parameters={...y.parameters,docs:{...y.parameters?.docs,source:{originalSource:"args => <LineChart {...args} />",...y.parameters?.docs?.source}}},v.parameters={...v.parameters,docs:{...v.parameters?.docs,source:{originalSource:"args => <LineChart {...args} />",...v.parameters?.docs?.source}}},f.parameters={...f.parameters,docs:{...f.parameters?.docs,source:{originalSource:"args => <LineChart {...args} />",...f.parameters?.docs?.source}}}},"../../../node_modules/.pnpm/storybook@9.0.15_@testing-library+dom@10.4.0/node_modules/storybook/dist/components sync recursive":j=>{function i(r){var o=new Error("Cannot find module '"+r+"'");throw o.code="MODULE_NOT_FOUND",o}i.keys=()=>[],i.resolve=i,i.id="../../../node_modules/.pnpm/storybook@9.0.15_@testing-library+dom@10.4.0/node_modules/storybook/dist/components sync recursive",j.exports=i},"../../../node_modules/.pnpm/storybook@9.0.15_@testing-library+dom@10.4.0/node_modules/storybook/dist/theming sync recursive":j=>{function i(r){var o=new Error("Cannot find module '"+r+"'");throw o.code="MODULE_NOT_FOUND",o}i.keys=()=>[],i.resolve=i,i.id="../../../node_modules/.pnpm/storybook@9.0.15_@testing-library+dom@10.4.0/node_modules/storybook/dist/theming sync recursive",j.exports=i}}]);
+`]})]})}function C(p={}){const{wrapper:n}={...(0,m.R)(),...p.components};return n?(0,e.jsx)(n,{...p,children:(0,e.jsx)(s,{...p})}):s(p)}},"../../../node_modules/.pnpm/@storybook+addon-docs@9.0.15_@types+react@18.3.23_storybook@9.0.15_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist sync recursive":j=>{function i(r){var d=new Error("Cannot find module '"+r+"'");throw d.code="MODULE_NOT_FOUND",d}i.keys=()=>[],i.resolve=i,i.id="../../../node_modules/.pnpm/@storybook+addon-docs@9.0.15_@types+react@18.3.23_storybook@9.0.15_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist sync recursive",j.exports=i},"../charts/src/components/line-chart/stories/glyph.stories.tsx":(j,i,r)=>{"use strict";r.r(i),r.d(i,{Custom:()=>g,CustomPerDataPoint:()=>f,CustomSvg:()=>y,InTooltip:()=>v,Start:()=>u,__namedExportsOrder:()=>D,default:()=>S});var d=r("../../../node_modules/.pnpm/@visx+glyph@3.12.0_react@18.3.1/node_modules/@visx/glyph/esm/glyphs/GlyphStar.js"),e=r("../charts/src/providers/chart-context/hooks/use-global-charts-theme.ts"),m=r("../charts/src/providers/chart-context/global-charts-provider.tsx"),t=r("../charts/src/stories/theme-config.tsx"),o=r("../charts/src/components/line-chart/line-chart.tsx"),a=r("../charts/src/components/line-chart/stories/config.tsx"),s=r("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js");const C={...t.yI,glyph:a.Em},p=(l,{args:c})=>{const h=c.themeName,x=C[h||"default"];return(0,s.jsx)(m.S,{theme:x,children:(0,s.jsx)("div",{style:{resize:"both",overflow:"auto",padding:"2rem",width:"800px",maxWidth:"1200px",border:"1px dashed #ccc",display:"inline-block"},children:(0,s.jsx)(l,{})})})},S={...a.Nc,title:"JS Packages/Charts/Types/Line Chart/Glyphs",decorators:[p],argTypes:{...a.Nc.argTypes,themeName:{...t.jW.themeName,options:["default","jetpack","woo","custom","glyph"]}}},b=l=>(0,s.jsx)(o.A,{...l}),_={...a.pn,withStartGlyphs:!0},u=b.bind({});u.args={..._};const g=b.bind({});g.args={..._,withLegendGlyph:!0,renderGlyph:({color:l,size:c,x:h,y:x})=>(0,s.jsx)(d.A,{top:x,left:h,size:c*c,fill:l}),glyphStyle:{radius:10}};const k=({color:l,size:c,x:h,y:x})=>{const L=typeof h=="number"&&typeof x=="number"&&(h!==0||x!==0)?{transform:`translate(${h}, ${x})`}:{};return(0,s.jsx)("g",{...L,children:(0,s.jsx)("svg",{xmlns:"http://www.w3.org/2000/svg",width:c*2,height:c*2,viewBox:"0 0 24 24",style:{overflow:"visible",pointerEvents:"none"},children:(0,s.jsx)("path",{d:"M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z",fill:l,stroke:l,strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round",transform:"translate(-12, -12)"})})})},y=b.bind({});y.args={..._,withLegendGlyph:!0,renderGlyph:({color:l,size:c,x:h,y:x})=>(0,s.jsx)(k,{color:l,size:c,x:h,y:x}),glyphStyle:{radius:8}};const P=({tooltipData:l})=>{const c=(0,e.p)();return(0,s.jsxs)("div",{children:[(0,s.jsx)("div",{style:{marginBottom:"0.5rem"},children:l?.nearestDatum?.datum?.date?.toLocaleDateString()}),(0,s.jsx)("div",{children:Object.entries(l?.datumByKey||{}).map(([h,x],w)=>{const{datum:L}=x;return(0,s.jsx)("div",{children:(0,s.jsxs)("div",{style:{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.2rem"},children:[(0,s.jsx)("svg",{width:20,height:20,children:(0,s.jsx)(d.A,{size:100,top:10,left:10,fill:"#fff",stroke:c.colors[w%c.colors.length]})}),h,": ",L.value]})},h)})})]})},v=b.bind({});v.args={..._,renderGlyph:({color:l,size:c,x:h,y:x})=>(0,s.jsx)(d.A,{top:x,left:h,size:c*c,fill:"#fff",stroke:l}),glyphStyle:{radius:10},renderTooltip:P};const f=b.bind({});f.args={..._,showLegend:!0,withStartGlyphs:!0,withLegendGlyph:!0,themeName:"glyph",glyphStyle:{radius:8}};const D=["Start","Custom","CustomSvg","InTooltip","CustomPerDataPoint"];u.parameters={...u.parameters,docs:{...u.parameters?.docs,source:{originalSource:"args => <LineChart {...args} />",...u.parameters?.docs?.source}}},g.parameters={...g.parameters,docs:{...g.parameters?.docs,source:{originalSource:"args => <LineChart {...args} />",...g.parameters?.docs?.source}}},y.parameters={...y.parameters,docs:{...y.parameters?.docs,source:{originalSource:"args => <LineChart {...args} />",...y.parameters?.docs?.source}}},v.parameters={...v.parameters,docs:{...v.parameters?.docs,source:{originalSource:"args => <LineChart {...args} />",...v.parameters?.docs?.source}}},f.parameters={...f.parameters,docs:{...f.parameters?.docs,source:{originalSource:"args => <LineChart {...args} />",...f.parameters?.docs?.source}}}},"../../../node_modules/.pnpm/storybook@9.0.15_@testing-library+dom@10.4.0/node_modules/storybook/dist/components sync recursive":j=>{function i(r){var d=new Error("Cannot find module '"+r+"'");throw d.code="MODULE_NOT_FOUND",d}i.keys=()=>[],i.resolve=i,i.id="../../../node_modules/.pnpm/storybook@9.0.15_@testing-library+dom@10.4.0/node_modules/storybook/dist/components sync recursive",j.exports=i},"../../../node_modules/.pnpm/storybook@9.0.15_@testing-library+dom@10.4.0/node_modules/storybook/dist/theming sync recursive":j=>{function i(r){var d=new Error("Cannot find module '"+r+"'");throw d.code="MODULE_NOT_FOUND",d}i.keys=()=>[],i.resolve=i,i.id="../../../node_modules/.pnpm/storybook@9.0.15_@testing-library+dom@10.4.0/node_modules/storybook/dist/theming sync recursive",j.exports=i}}]);

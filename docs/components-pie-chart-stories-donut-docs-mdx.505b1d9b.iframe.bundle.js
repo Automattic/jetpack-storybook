@@ -1,12 +1,12 @@
-(self.webpackChunk_automattic_jetpack_storybook=self.webpackChunk_automattic_jetpack_storybook||[]).push([[1972,1830],{"../../../node_modules/.pnpm/@mdx-js+react@3.1.0_@types+react@18.3.23_react@18.3.1/node_modules/@mdx-js/react/lib/index.js":(h,i,s)=>{"use strict";s.d(i,{R:()=>r,x:()=>o});var d=s("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js");const e={},a=d.createContext(e);function r(c){const t=d.useContext(a);return d.useMemo(function(){return typeof c=="function"?c(t):{...t,...c}},[t,c])}function o(c){let t;return c.disableParentContext?t=typeof c.components=="function"?c.components(e):c.components||e:t=r(c.components),d.createElement(a.Provider,{value:t},c.children)}},"../charts/src/components/pie-chart/stories/donut.docs.mdx":(h,i,s)=>{"use strict";s.r(i),s.d(i,{default:()=>t});var d=s("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js"),e=s("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js"),a=s("../../../node_modules/.pnpm/@mdx-js+react@3.1.0_@types+react@18.3.23_react@18.3.1/node_modules/@mdx-js/react/lib/index.js"),r=s("../../../node_modules/.pnpm/@storybook+addon-docs@9.0.15_@types+react@18.3.23_storybook@9.0.15_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist/blocks.mjs"),o=s("../charts/src/components/pie-chart/stories/donut.stories.tsx");function c(x){const n={a:"a",code:"code",h1:"h1",h2:"h2",h3:"h3",li:"li",p:"p",pre:"pre",strong:"strong",table:"table",tbody:"tbody",td:"td",th:"th",thead:"thead",tr:"tr",ul:"ul",...(0,a.R)(),...x.components};return(0,e.jsxs)(e.Fragment,{children:[(0,e.jsx)(r.W8,{title:"JS Packages/Charts/Types/Donut Chart",of:o}),`
+(self.webpackChunk_automattic_jetpack_storybook=self.webpackChunk_automattic_jetpack_storybook||[]).push([[1972,1830],{"../../../node_modules/.pnpm/@mdx-js+react@3.1.0_@types+react@18.3.23_react@18.3.1/node_modules/@mdx-js/react/lib/index.js":(h,i,s)=>{"use strict";s.d(i,{R:()=>r,x:()=>d});var o=s("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js");const e={},x=o.createContext(e);function r(c){const t=o.useContext(x);return o.useMemo(function(){return typeof c=="function"?c(t):{...t,...c}},[t,c])}function d(c){let t;return c.disableParentContext?t=typeof c.components=="function"?c.components(e):c.components||e:t=r(c.components),o.createElement(x.Provider,{value:t},c.children)}},"../charts/src/components/pie-chart/stories/donut.docs.mdx":(h,i,s)=>{"use strict";s.r(i),s.d(i,{default:()=>t});var o=s("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js"),e=s("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js"),x=s("../../../node_modules/.pnpm/@mdx-js+react@3.1.0_@types+react@18.3.23_react@18.3.1/node_modules/@mdx-js/react/lib/index.js"),r=s("../../../node_modules/.pnpm/@storybook+addon-docs@9.0.15_@types+react@18.3.23_storybook@9.0.15_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist/blocks.mjs"),d=s("../charts/src/components/pie-chart/stories/donut.stories.tsx");function c(l){const n={a:"a",code:"code",h1:"h1",h2:"h2",h3:"h3",li:"li",p:"p",pre:"pre",strong:"strong",table:"table",tbody:"tbody",td:"td",th:"th",thead:"thead",tr:"tr",ul:"ul",...(0,x.R)(),...l.components};return(0,e.jsxs)(e.Fragment,{children:[(0,e.jsx)(r.W8,{title:"JS Packages/Charts/Types/Donut Chart",of:d}),`
 `,(0,e.jsx)(n.h1,{id:"donut-chart",children:"Donut Chart"}),`
 `,(0,e.jsxs)(n.p,{children:["Donut Charts are circular charts with a hollow center, perfect for displaying proportional data while providing space for additional content or summary information. They are created using the ",(0,e.jsx)(n.a,{href:"./?path=/docs/js-packages-charts-types-pie-chart--docs",children:"PieChart"})," component with a ",(0,e.jsx)(n.code,{children:"thickness"})," value less than 1."]}),`
 `,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:"Important:"})," There is no separate DonutChart component. Donuts are created by configuring the PieChart component with ",(0,e.jsx)(n.code,{children:"thickness < 1"}),". This means all PieChart props, features, and styling options are available for donut charts."]}),`
-`,(0,e.jsx)(r.Hl,{of:o.Doughnut}),`
+`,(0,e.jsx)(r.Hl,{of:d.Doughnut}),`
 `,(0,e.jsx)(n.h2,{id:"basic-usage",children:"Basic Usage"}),`
 `,(0,e.jsx)(n.h3,{id:"simple-donut-chart",children:"Simple Donut Chart"}),`
 `,(0,e.jsxs)(n.p,{children:["Create a donut chart by setting the ",(0,e.jsx)(n.code,{children:"thickness"})," prop to a value between 0 and 1:"]}),`
-`,(0,e.jsx)(r.Hl,{of:o.Default}),`
+`,(0,e.jsx)(r.Hl,{of:d.Default}),`
 `,(0,e.jsx)(r.kL,{language:"jsx",code:`<PieChart
 	size={ 400 }
 	thickness={ 0.4 }
@@ -55,7 +55,7 @@
 `,(0,e.jsx)(n.h2,{id:"donut-variations",children:"Donut Variations"}),`
 `,(0,e.jsx)(n.h3,{id:"thin-ring-donut",children:"Thin Ring Donut"}),`
 `,(0,e.jsx)(n.p,{children:"Create a thin ring by using a low thickness value:"}),`
-`,(0,e.jsx)(r.Hl,{of:o.Thin}),`
+`,(0,e.jsx)(r.Hl,{of:d.Thin}),`
 `,(0,e.jsx)(r.kL,{language:"jsx",code:`<PieChart
 	thickness={ 0.2 }
 	data={ data }
@@ -71,7 +71,7 @@
 </PieChart>`}),`
 `,(0,e.jsx)(n.h3,{id:"thick-donut",children:"Thick Donut"}),`
 `,(0,e.jsx)(n.p,{children:"Use a higher thickness value for more substantial donut rings:"}),`
-`,(0,e.jsx)(r.Hl,{of:o.Default}),`
+`,(0,e.jsx)(r.Hl,{of:d.Default}),`
 `,(0,e.jsx)(r.kL,{language:"jsx",code:`<PieChart
 	thickness={ 0.8 }
 	data={ data }
@@ -84,7 +84,7 @@
 </PieChart>`}),`
 `,(0,e.jsx)(n.h3,{id:"styled-donut-with-gaps",children:"Styled Donut with Gaps"}),`
 `,(0,e.jsx)(n.p,{children:"Combine thickness with gaps and rounded corners for modern appearance:"}),`
-`,(0,e.jsx)(r.Hl,{of:o.Doughnut}),`
+`,(0,e.jsx)(r.Hl,{of:d.Doughnut}),`
 `,(0,e.jsx)(r.kL,{language:"jsx",code:`<PieChart
 	size={ 400 }
 	thickness={ 0.6 }
@@ -104,7 +104,7 @@
 `,(0,e.jsx)(n.h2,{id:"interactive-features",children:"Interactive Features"}),`
 `,(0,e.jsx)(n.h3,{id:"donut-with-tooltips",children:"Donut with Tooltips"}),`
 `,(0,e.jsx)(n.p,{children:"Tooltips work seamlessly with donut charts:"}),`
-`,(0,e.jsx)(r.Hl,{of:o.WithTooltipsDoughnut}),`
+`,(0,e.jsx)(r.Hl,{of:d.WithTooltipsDoughnut}),`
 `,(0,e.jsx)(r.kL,{language:"jsx",code:`<PieChart
 	thickness={ 0.5 }
 	withTooltips={ true }
@@ -118,7 +118,7 @@
 </PieChart>`}),`
 `,(0,e.jsx)(n.h3,{id:"donut-with-legend",children:"Donut with Legend"}),`
 `,(0,e.jsx)(n.p,{children:"Combine legends with donut charts for comprehensive data presentation:"}),`
-`,(0,e.jsx)(r.Hl,{of:o.CustomLegendPositioning}),`
+`,(0,e.jsx)(r.Hl,{of:d.CustomLegendPositioning}),`
 `,(0,e.jsx)(r.kL,{language:"jsx",code:`<PieChart
 	thickness={ 0.4 }
 	showLegend={ true }
@@ -302,7 +302,7 @@ const invalidData = [
 	bottom?: number;
 	left?: number;
 };
-`})})]})}function t(x={}){const{wrapper:n}={...(0,a.R)(),...x.components};return n?(0,e.jsx)(n,{...x,children:(0,e.jsx)(c,{...x})}):c(x)}},"../../../node_modules/.pnpm/@storybook+addon-docs@9.0.15_@types+react@18.3.23_storybook@9.0.15_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist sync recursive":h=>{function i(s){var d=new Error("Cannot find module '"+s+"'");throw d.code="MODULE_NOT_FOUND",d}i.keys=()=>[],i.resolve=i,i.id="../../../node_modules/.pnpm/@storybook+addon-docs@9.0.15_@types+react@18.3.23_storybook@9.0.15_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist sync recursive",h.exports=i},"../charts/src/components/pie-chart/stories/donut.stories.tsx":(h,i,s)=>{"use strict";s.r(i),s.d(i,{CustomLegendPositioning:()=>v,CustomTheme:()=>u,Default:()=>l,Doughnut:()=>j,ErrorStates:()=>m,Thin:()=>g,WithCompositionLegend:()=>_,WithLegend:()=>y,WithTooltipsDoughnut:()=>f,WithoutCenter:()=>p,__namedExportsOrder:()=>T,default:()=>A});var d=s("../charts/src/providers/theme/themes.ts"),e=s("../charts/src/stories/decorator-config.tsx"),a=s("../charts/src/stories/legend-config.tsx"),r=s("../../../node_modules/.pnpm/@visx+group@3.12.0_react@18.3.1/node_modules/@visx/group/esm/Group.js"),o=s("../../../node_modules/.pnpm/@visx+text@3.12.0_react@18.3.1/node_modules/@visx/text/esm/Text.js"),c=s("../charts/src/components/pie-chart/pie-chart.tsx"),t=s("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js");const x=[{label:"Active Users",value:65e3,valueDisplay:"65K",percentage:65},{label:"Inactive Users",value:35e3,valueDisplay:"35K",percentage:35}],A={title:"JS Packages/Charts/Types/Donut Chart",component:c.A,parameters:{layout:"centered"},decorators:e.p,argTypes:{...a.r,size:{control:{type:"range",min:100,max:800,step:10,default:400}},thickness:{control:{type:"range",min:0,max:1,step:.01}},gapScale:{control:{type:"range",min:0,max:1,step:.01}},cornerScale:{control:{type:"range",min:0,max:1,step:.01}},theme:{control:{type:"select"},options:["default","jetpack","woo"],mapping:{default:void 0,jetpack:d.QI,woo:d.pk},defaultValue:"default"},maxWidth:{control:{type:"number",min:100,max:1200}},aspectRatio:{control:{type:"number",min:0,max:1}},resizeDebounceTime:{control:{type:"number",min:0,max:1e4}}}},l={args:{size:400,containerWidth:"432px",containerHeight:"432px",resize:"none",thickness:.5,gapScale:.03,padding:20,cornerScale:.03,withTooltips:!0,data:x,theme:"default",children:(0,t.jsxs)(r.A,{children:[(0,t.jsx)(o.A,{textAnchor:"middle",verticalAnchor:"middle",fontSize:24,y:-16,children:"User Activity"}),(0,t.jsx)(o.A,{textAnchor:"middle",verticalAnchor:"middle",fontSize:18,y:16,children:"Total: 100K Users"})]})}},p={args:{...l.args,children:void 0}},u={args:{...l.args,theme:d.pk}},m={render:()=>(0,t.jsxs)("div",{style:{display:"grid",gap:"2rem",gridTemplateColumns:"repeat(2, 1fr)"},children:[(0,t.jsxs)("div",{children:[(0,t.jsx)("h3",{children:"Empty Data"}),(0,t.jsx)(c.A,{size:300,thickness:.6,data:[]})]}),(0,t.jsxs)("div",{children:[(0,t.jsx)("h3",{children:"Single Value"}),(0,t.jsx)(c.A,{size:300,thickness:.6,data:[{label:"Single",value:100,percentage:100}]})]})]})},g={args:{...l.args,thickness:.2,gapScale:.01,size:700,containerWidth:"732px",containerHeight:"732px",children:(0,t.jsxs)(r.A,{children:[(0,t.jsx)(o.A,{textAnchor:"middle",verticalAnchor:"middle",fontSize:24,y:-16,children:"Thin Donut"}),(0,t.jsx)(o.A,{textAnchor:"middle",verticalAnchor:"middle",fontSize:18,y:16,children:"Thickness: 20%"})]})}},j={args:{...l.args,thickness:.5,gapScale:.03,cornerScale:.03,size:600,containerWidth:"632px",containerHeight:"632px",children:(0,t.jsxs)(r.A,{children:[(0,t.jsx)(o.A,{textAnchor:"middle",verticalAnchor:"middle",fontSize:24,y:-16,children:"\u{1F369} Doughnut"}),(0,t.jsx)(o.A,{textAnchor:"middle",verticalAnchor:"middle",fill:"#008A20",fontSize:18,y:16,children:"Three donuts for the price of one!"})]})},parameters:{docs:{description:{story:"Doughnut chart variant with the thickness set to 0.5 (50%)."}}}},f={args:{...l.args,thickness:.5,withTooltips:!0},parameters:{docs:{description:{story:"Doughnut chart with interactive tooltips that appear on hover."}}}},y={args:{...l.args,showLegend:!0}},_={render:()=>(0,t.jsxs)("div",{style:{display:"grid",gap:"2rem",gridTemplateColumns:"repeat(2, 1fr)",alignItems:"center"},children:[(0,t.jsxs)("div",{children:[(0,t.jsx)("h3",{children:"Traditional Props-based"}),(0,t.jsx)(c.A,{size:300,data:x,thickness:.5,showLegend:!0,legendPosition:"bottom",legendOrientation:"horizontal",children:(0,t.jsxs)(r.A,{children:[(0,t.jsx)(o.A,{textAnchor:"middle",verticalAnchor:"middle",fontSize:16,y:-8,children:"User Stats"}),(0,t.jsx)(o.A,{textAnchor:"middle",verticalAnchor:"middle",fontSize:14,y:12,fill:"#666",children:"100K Total"})]})})]}),(0,t.jsxs)("div",{children:[(0,t.jsx)("h3",{children:"Composition API"}),(0,t.jsxs)(c.A,{size:300,data:x,thickness:.5,children:[(0,t.jsxs)(r.A,{children:[(0,t.jsx)(o.A,{textAnchor:"middle",verticalAnchor:"middle",fontSize:16,y:-8,children:"User Stats"}),(0,t.jsx)(o.A,{textAnchor:"middle",verticalAnchor:"middle",fontSize:14,y:12,fill:"#666",children:"100K Total"})]}),(0,t.jsx)(c.A.Legend,{position:"bottom",orientation:"horizontal",alignment:"center"})]})]})]}),parameters:{docs:{description:{story:"Demonstrates the donut chart composition API, allowing flexible combination of chart elements and legends."}}}},v={args:{...l.args,thickness:.4,showLegend:!0,legendOrientation:"vertical",legendAlignment:"start",legendPosition:"top",data:[{label:"Desktop",value:45e3,valueDisplay:"45K",percentage:45},{label:"Mobile",value:35e3,valueDisplay:"35K",percentage:35},{label:"Tablet",value:2e4,valueDisplay:"20K",percentage:20}],children:(0,t.jsx)(r.A,{children:(0,t.jsx)(o.A,{textAnchor:"middle",verticalAnchor:"middle",fontSize:18,y:-8,children:"Distribution"})})},parameters:{docs:{description:{story:"Donut chart with vertical legend positioned at the top left."}}}},T=["Default","WithoutCenter","CustomTheme","ErrorStates","Thin","Doughnut","WithTooltipsDoughnut","WithLegend","WithCompositionLegend","CustomLegendPositioning"];l.parameters={...l.parameters,docs:{...l.parameters?.docs,source:{originalSource:`{
+`})})]})}function t(l={}){const{wrapper:n}={...(0,x.R)(),...l.components};return n?(0,e.jsx)(n,{...l,children:(0,e.jsx)(c,{...l})}):c(l)}},"../../../node_modules/.pnpm/@storybook+addon-docs@9.0.15_@types+react@18.3.23_storybook@9.0.15_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist sync recursive":h=>{function i(s){var o=new Error("Cannot find module '"+s+"'");throw o.code="MODULE_NOT_FOUND",o}i.keys=()=>[],i.resolve=i,i.id="../../../node_modules/.pnpm/@storybook+addon-docs@9.0.15_@types+react@18.3.23_storybook@9.0.15_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist sync recursive",h.exports=i},"../charts/src/components/pie-chart/stories/donut.stories.tsx":(h,i,s)=>{"use strict";s.r(i),s.d(i,{CustomLegendPositioning:()=>v,Default:()=>a,Doughnut:()=>g,ErrorStates:()=>u,Thin:()=>j,WithCompositionLegend:()=>y,WithLegend:()=>f,WithTooltipsDoughnut:()=>m,WithoutCenter:()=>p,__namedExportsOrder:()=>A,default:()=>_});var o=s("../charts/src/stories/chart-decorator.tsx"),e=s("../charts/src/stories/theme-config.tsx"),x=s("../charts/src/stories/legend-config.tsx"),r=s("../../../node_modules/.pnpm/@visx+group@3.12.0_react@18.3.1/node_modules/@visx/group/esm/Group.js"),d=s("../../../node_modules/.pnpm/@visx+text@3.12.0_react@18.3.1/node_modules/@visx/text/esm/Text.js"),c=s("../charts/src/components/pie-chart/pie-chart.tsx"),t=s("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js");const l=[{label:"Active Users",value:65e3,valueDisplay:"65K",percentage:65},{label:"Inactive Users",value:35e3,valueDisplay:"35K",percentage:35}],_={title:"JS Packages/Charts/Types/Donut Chart",component:c.A,parameters:{layout:"centered"},decorators:[o.OI],argTypes:{...o.xo,...e.jW,...x.r,size:{control:{type:"range",min:100,max:800,step:10,default:400}},thickness:{control:{type:"range",min:0,max:1,step:.01}},gapScale:{control:{type:"range",min:0,max:1,step:.01}},cornerScale:{control:{type:"range",min:0,max:1,step:.01}}}},a={args:{size:400,containerWidth:"432px",containerHeight:"432px",resize:"none",thickness:.5,gapScale:.03,padding:20,cornerScale:.03,withTooltips:!0,data:l,children:(0,t.jsxs)(r.A,{children:[(0,t.jsx)(d.A,{textAnchor:"middle",verticalAnchor:"middle",fontSize:24,y:-16,children:"User Activity"}),(0,t.jsx)(d.A,{textAnchor:"middle",verticalAnchor:"middle",fontSize:18,y:16,children:"Total: 100K Users"})]})}},p={args:{...a.args,children:void 0}},u={render:()=>(0,t.jsxs)("div",{style:{display:"grid",gap:"2rem",gridTemplateColumns:"repeat(2, 1fr)"},children:[(0,t.jsxs)("div",{children:[(0,t.jsx)("h3",{children:"Empty Data"}),(0,t.jsx)(c.A,{size:300,thickness:.6,data:[]})]}),(0,t.jsxs)("div",{children:[(0,t.jsx)("h3",{children:"Single Value"}),(0,t.jsx)(c.A,{size:300,thickness:.6,data:[{label:"Single",value:100,percentage:100}]})]})]})},j={args:{...a.args,thickness:.2,gapScale:.01,size:700,containerWidth:"732px",containerHeight:"732px",children:(0,t.jsxs)(r.A,{children:[(0,t.jsx)(d.A,{textAnchor:"middle",verticalAnchor:"middle",fontSize:24,y:-16,children:"Thin Donut"}),(0,t.jsx)(d.A,{textAnchor:"middle",verticalAnchor:"middle",fontSize:18,y:16,children:"Thickness: 20%"})]})}},g={args:{...a.args,thickness:.5,gapScale:.03,cornerScale:.03,size:600,containerWidth:"632px",containerHeight:"632px",children:(0,t.jsxs)(r.A,{children:[(0,t.jsx)(d.A,{textAnchor:"middle",verticalAnchor:"middle",fontSize:24,y:-16,children:"\u{1F369} Doughnut"}),(0,t.jsx)(d.A,{textAnchor:"middle",verticalAnchor:"middle",fill:"#008A20",fontSize:18,y:16,children:"Three donuts for the price of one!"})]})},parameters:{docs:{description:{story:"Doughnut chart variant with the thickness set to 0.5 (50%)."}}}},m={args:{...a.args,thickness:.5,withTooltips:!0},parameters:{docs:{description:{story:"Doughnut chart with interactive tooltips that appear on hover."}}}},f={args:{...a.args,showLegend:!0}},y={render:()=>(0,t.jsxs)("div",{style:{display:"grid",gap:"2rem",gridTemplateColumns:"repeat(2, 1fr)",alignItems:"center"},children:[(0,t.jsxs)("div",{children:[(0,t.jsx)("h3",{children:"Traditional Props-based"}),(0,t.jsx)(c.A,{size:300,data:l,thickness:.5,showLegend:!0,legendPosition:"bottom",legendOrientation:"horizontal",children:(0,t.jsxs)(r.A,{children:[(0,t.jsx)(d.A,{textAnchor:"middle",verticalAnchor:"middle",fontSize:16,y:-8,children:"User Stats"}),(0,t.jsx)(d.A,{textAnchor:"middle",verticalAnchor:"middle",fontSize:14,y:12,fill:"#666",children:"100K Total"})]})})]}),(0,t.jsxs)("div",{children:[(0,t.jsx)("h3",{children:"Composition API"}),(0,t.jsxs)(c.A,{size:300,data:l,thickness:.5,children:[(0,t.jsxs)(r.A,{children:[(0,t.jsx)(d.A,{textAnchor:"middle",verticalAnchor:"middle",fontSize:16,y:-8,children:"User Stats"}),(0,t.jsx)(d.A,{textAnchor:"middle",verticalAnchor:"middle",fontSize:14,y:12,fill:"#666",children:"100K Total"})]}),(0,t.jsx)(c.A.Legend,{position:"bottom",orientation:"horizontal",alignment:"center"})]})]})]}),parameters:{docs:{description:{story:"Demonstrates the donut chart composition API, allowing flexible combination of chart elements and legends."}}}},v={args:{...a.args,thickness:.4,showLegend:!0,legendOrientation:"vertical",legendAlignment:"start",legendPosition:"top",data:[{label:"Desktop",value:45e3,valueDisplay:"45K",percentage:45},{label:"Mobile",value:35e3,valueDisplay:"35K",percentage:35},{label:"Tablet",value:2e4,valueDisplay:"20K",percentage:20}],children:(0,t.jsx)(r.A,{children:(0,t.jsx)(d.A,{textAnchor:"middle",verticalAnchor:"middle",fontSize:18,y:-8,children:"Distribution"})})},parameters:{docs:{description:{story:"Donut chart with vertical legend positioned at the top left."}}}},A=["Default","WithoutCenter","ErrorStates","Thin","Doughnut","WithTooltipsDoughnut","WithLegend","WithCompositionLegend","CustomLegendPositioning"];a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:`{
   args: {
     size: 400,
     containerWidth: '432px',
@@ -314,7 +314,6 @@ const invalidData = [
     cornerScale: 0.03,
     withTooltips: true,
     data,
-    theme: 'default',
     children: <Group>
                 <Text textAnchor="middle" verticalAnchor="middle" fontSize={24} y={-16}>
                     User Activity
@@ -324,17 +323,12 @@ const invalidData = [
                 </Text>
             </Group>
   }
-}`,...l.parameters?.docs?.source}}},p.parameters={...p.parameters,docs:{...p.parameters?.docs,source:{originalSource:`{
+}`,...a.parameters?.docs?.source}}},p.parameters={...p.parameters,docs:{...p.parameters?.docs,source:{originalSource:`{
   args: {
     ...Default.args,
     children: undefined
   }
 }`,...p.parameters?.docs?.source}}},u.parameters={...u.parameters,docs:{...u.parameters?.docs,source:{originalSource:`{
-  args: {
-    ...Default.args,
-    theme: wooTheme
-  }
-}`,...u.parameters?.docs?.source}}},m.parameters={...m.parameters,docs:{...m.parameters?.docs,source:{originalSource:`{
   render: () => <div style={{
     display: 'grid',
     gap: '2rem',
@@ -353,7 +347,7 @@ const invalidData = [
       }]} />
             </div>
         </div>
-}`,...m.parameters?.docs?.source}}},g.parameters={...g.parameters,docs:{...g.parameters?.docs,source:{originalSource:`{
+}`,...u.parameters?.docs?.source}}},j.parameters={...j.parameters,docs:{...j.parameters?.docs,source:{originalSource:`{
   args: {
     ...Default.args,
     thickness: 0.2,
@@ -370,7 +364,7 @@ const invalidData = [
                 </Text>
             </Group>
   }
-}`,...g.parameters?.docs?.source}}},j.parameters={...j.parameters,docs:{...j.parameters?.docs,source:{originalSource:`{
+}`,...j.parameters?.docs?.source}}},g.parameters={...g.parameters,docs:{...g.parameters?.docs,source:{originalSource:`{
   args: {
     ...Default.args,
     thickness: 0.5,
@@ -395,7 +389,7 @@ const invalidData = [
       }
     }
   }
-}`,...j.parameters?.docs?.source}}},f.parameters={...f.parameters,docs:{...f.parameters?.docs,source:{originalSource:`{
+}`,...g.parameters?.docs?.source}}},m.parameters={...m.parameters,docs:{...m.parameters?.docs,source:{originalSource:`{
   args: {
     ...Default.args,
     thickness: 0.5,
@@ -408,12 +402,12 @@ const invalidData = [
       }
     }
   }
-}`,...f.parameters?.docs?.source}}},y.parameters={...y.parameters,docs:{...y.parameters?.docs,source:{originalSource:`{
+}`,...m.parameters?.docs?.source}}},f.parameters={...f.parameters,docs:{...f.parameters?.docs,source:{originalSource:`{
   args: {
     ...Default.args,
     showLegend: true
   }
-}`,...y.parameters?.docs?.source}}},_.parameters={..._.parameters,docs:{..._.parameters?.docs,source:{originalSource:`{
+}`,...f.parameters?.docs?.source}}},y.parameters={...y.parameters,docs:{...y.parameters?.docs,source:{originalSource:`{
   render: () => <div style={{
     display: 'grid',
     gap: '2rem',
@@ -455,7 +449,7 @@ const invalidData = [
       }
     }
   }
-}`,..._.parameters?.docs?.source}}},v.parameters={...v.parameters,docs:{...v.parameters?.docs,source:{originalSource:`{
+}`,...y.parameters?.docs?.source}}},v.parameters={...v.parameters,docs:{...v.parameters?.docs,source:{originalSource:`{
   args: {
     ...Default.args,
     thickness: 0.4,
@@ -492,5 +486,5 @@ const invalidData = [
       }
     }
   }
-}`,...v.parameters?.docs?.source}}}},"../charts/src/stories/decorator-config.tsx":(h,i,s)=>{"use strict";s.d(i,{p:()=>a});var d=s("../charts/src/providers/theme/theme-provider.tsx"),e=s("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js");const a=[(r,{args:o})=>(0,e.jsx)(d.N,{theme:o.theme,children:(0,e.jsx)("div",{style:{resize:o.resize??"both",overflow:"auto",padding:"1rem",width:o.containerWidth??"800px",height:o.containerHeight??"600px",minWidth:"400px",maxWidth:"1200px",border:"1px dashed #ccc"},children:(0,e.jsx)(r,{})})})];try{a.displayName="sharedDecorator",a.__docgenInfo={description:"Shared decorator for legend stories with theme support and resizable container",displayName:"sharedDecorator",props:{}},typeof STORYBOOK_REACT_CLASSES<"u"&&(STORYBOOK_REACT_CLASSES["../charts/src/stories/decorator-config.tsx#sharedDecorator"]={docgenInfo:a.__docgenInfo,name:"sharedDecorator",path:"../charts/src/stories/decorator-config.tsx#sharedDecorator"})}catch{}},"../charts/src/stories/legend-config.tsx":(h,i,s)=>{"use strict";s.d(i,{r:()=>d});const d={showLegend:{control:{type:"boolean"},table:{category:"Legend"}},legendPosition:{control:{type:"select"},options:["top","bottom"],table:{category:"Legend"}},legendAlignment:{control:{type:"select"},options:["start","center","end"],table:{category:"Legend"}},legendOrientation:{control:{type:"select"},options:["horizontal","vertical"],table:{category:"Legend"}},legendShape:{control:{type:"select"},options:["circle","rect"],table:{category:"Legend"}},withLegendGlyph:{control:{type:"boolean"},table:{category:"Legend"},description:"Show glyphs in legend (Line charts only)"}};try{d.displayName="legendArgTypes",d.__docgenInfo={description:`Shared legend configuration for chart stories
-Provides consistent argTypes and decorators across all chart legend stories`,displayName:"legendArgTypes",props:{}},typeof STORYBOOK_REACT_CLASSES<"u"&&(STORYBOOK_REACT_CLASSES["../charts/src/stories/legend-config.tsx#legendArgTypes"]={docgenInfo:d.__docgenInfo,name:"legendArgTypes",path:"../charts/src/stories/legend-config.tsx#legendArgTypes"})}catch{}},"../../../node_modules/.pnpm/storybook@9.0.15_@testing-library+dom@10.4.0/node_modules/storybook/dist/components sync recursive":h=>{function i(s){var d=new Error("Cannot find module '"+s+"'");throw d.code="MODULE_NOT_FOUND",d}i.keys=()=>[],i.resolve=i,i.id="../../../node_modules/.pnpm/storybook@9.0.15_@testing-library+dom@10.4.0/node_modules/storybook/dist/components sync recursive",h.exports=i},"../../../node_modules/.pnpm/storybook@9.0.15_@testing-library+dom@10.4.0/node_modules/storybook/dist/theming sync recursive":h=>{function i(s){var d=new Error("Cannot find module '"+s+"'");throw d.code="MODULE_NOT_FOUND",d}i.keys=()=>[],i.resolve=i,i.id="../../../node_modules/.pnpm/storybook@9.0.15_@testing-library+dom@10.4.0/node_modules/storybook/dist/theming sync recursive",h.exports=i}}]);
+}`,...v.parameters?.docs?.source}}}},"../charts/src/stories/legend-config.tsx":(h,i,s)=>{"use strict";s.d(i,{r:()=>o});const o={showLegend:{control:{type:"boolean"},table:{category:"Legend"}},legendPosition:{control:{type:"select"},options:["top","bottom"],table:{category:"Legend"}},legendAlignment:{control:{type:"select"},options:["start","center","end"],table:{category:"Legend"}},legendOrientation:{control:{type:"select"},options:["horizontal","vertical"],table:{category:"Legend"}},legendShape:{control:{type:"select"},options:["circle","rect"],table:{category:"Legend"}},withLegendGlyph:{control:{type:"boolean"},table:{category:"Legend"},description:"Show glyphs in legend (Line charts only)"}};try{o.displayName="legendArgTypes",o.__docgenInfo={description:`Shared legend configuration for chart stories
+Provides consistent argTypes and decorators across all chart legend stories`,displayName:"legendArgTypes",props:{}},typeof STORYBOOK_REACT_CLASSES<"u"&&(STORYBOOK_REACT_CLASSES["../charts/src/stories/legend-config.tsx#legendArgTypes"]={docgenInfo:o.__docgenInfo,name:"legendArgTypes",path:"../charts/src/stories/legend-config.tsx#legendArgTypes"})}catch{}},"../../../node_modules/.pnpm/storybook@9.0.15_@testing-library+dom@10.4.0/node_modules/storybook/dist/components sync recursive":h=>{function i(s){var o=new Error("Cannot find module '"+s+"'");throw o.code="MODULE_NOT_FOUND",o}i.keys=()=>[],i.resolve=i,i.id="../../../node_modules/.pnpm/storybook@9.0.15_@testing-library+dom@10.4.0/node_modules/storybook/dist/components sync recursive",h.exports=i},"../../../node_modules/.pnpm/storybook@9.0.15_@testing-library+dom@10.4.0/node_modules/storybook/dist/theming sync recursive":h=>{function i(s){var o=new Error("Cannot find module '"+s+"'");throw o.code="MODULE_NOT_FOUND",o}i.keys=()=>[],i.resolve=i,i.id="../../../node_modules/.pnpm/storybook@9.0.15_@testing-library+dom@10.4.0/node_modules/storybook/dist/theming sync recursive",h.exports=i}}]);
