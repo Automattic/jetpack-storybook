@@ -1,4 +1,4 @@
-(self.webpackChunk_automattic_jetpack_storybook=self.webpackChunk_automattic_jetpack_storybook||[]).push([[6936],{"../../../node_modules/.pnpm/@mdx-js+react@3.1.1_@types+react@18.3.23_react@18.3.1/node_modules/@mdx-js/react/lib/index.js":((j,i,r)=>{"use strict";r.d(i,{R:()=>t,x:()=>o});var d=r("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js");const e={},u=d.createContext(e);function t(a){const s=d.useContext(u);return d.useMemo(function(){return typeof a=="function"?a(s):{...s,...a}},[s,a])}function o(a){let s;return a.disableParentContext?s=typeof a.components=="function"?a.components(e):a.components||e:s=t(a.components),d.createElement(u.Provider,{value:s},a.children)}}),"../../../node_modules/.pnpm/@storybook+addon-docs@9.0.15_@types+react@18.3.23_storybook@9.0.15_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist sync recursive":(j=>{function i(r){var d=new Error("Cannot find module '"+r+"'");throw d.code="MODULE_NOT_FOUND",d}i.keys=()=>[],i.resolve=i,i.id="../../../node_modules/.pnpm/@storybook+addon-docs@9.0.15_@types+react@18.3.23_storybook@9.0.15_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist sync recursive",j.exports=i}),"../../../node_modules/.pnpm/storybook@9.0.15_@testing-library+dom@10.4.0/node_modules/storybook/dist/components sync recursive":(j=>{function i(r){var d=new Error("Cannot find module '"+r+"'");throw d.code="MODULE_NOT_FOUND",d}i.keys=()=>[],i.resolve=i,i.id="../../../node_modules/.pnpm/storybook@9.0.15_@testing-library+dom@10.4.0/node_modules/storybook/dist/components sync recursive",j.exports=i}),"../../../node_modules/.pnpm/storybook@9.0.15_@testing-library+dom@10.4.0/node_modules/storybook/dist/theming sync recursive":(j=>{function i(r){var d=new Error("Cannot find module '"+r+"'");throw d.code="MODULE_NOT_FOUND",d}i.keys=()=>[],i.resolve=i,i.id="../../../node_modules/.pnpm/storybook@9.0.15_@testing-library+dom@10.4.0/node_modules/storybook/dist/theming sync recursive",j.exports=i}),"../charts/src/components/line-chart/stories/glyph.stories.tsx":((j,i,r)=>{"use strict";r.r(i),r.d(i,{Custom:()=>g,CustomPerDataPoint:()=>f,CustomSvg:()=>y,InTooltip:()=>v,Start:()=>m,__namedExportsOrder:()=>D,default:()=>S});var d=r("../../../node_modules/.pnpm/@visx+glyph@3.12.0_react@18.3.1/node_modules/@visx/glyph/esm/glyphs/GlyphStar.js"),e=r("../charts/src/providers/chart-context/global-charts-provider.tsx"),u=r("../charts/src/providers/chart-context/hooks/use-global-charts-theme.ts"),t=r("../charts/src/stories/theme-config.tsx"),o=r("../charts/src/components/line-chart/line-chart.tsx"),a=r("../charts/src/components/line-chart/stories/config.tsx"),s=r("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js");const C={...t.yI,glyph:a.Em},p=(l,{args:c})=>{const h=c.themeName,x=C[h||"default"];return(0,s.jsx)(e.S,{theme:x,children:(0,s.jsx)("div",{style:{resize:"both",overflow:"auto",padding:"2rem",width:"800px",maxWidth:"1200px",border:"1px dashed #ccc",display:"inline-block"},children:(0,s.jsx)(l,{})})})},S={...a.Nc,title:"JS Packages/Charts/Types/Line Chart/Glyphs",decorators:[p],argTypes:{...a.Nc.argTypes,themeName:{...t.jW.themeName,options:["default","jetpack","woo","custom","glyph"]}}},b=l=>(0,s.jsx)(o.A,{...l}),_={...a.pn,withStartGlyphs:!0},m=b.bind({});m.args={..._};const g=b.bind({});g.args={..._,withLegendGlyph:!0,renderGlyph:({color:l,size:c,x:h,y:x})=>(0,s.jsx)(d.A,{top:x,left:h,size:c*c,fill:l}),glyphStyle:{radius:10}};const k=({color:l,size:c,x:h,y:x})=>{const L=typeof h=="number"&&typeof x=="number"&&(h!==0||x!==0)?{transform:`translate(${h}, ${x})`}:{};return(0,s.jsx)("g",{...L,children:(0,s.jsx)("svg",{xmlns:"http://www.w3.org/2000/svg",width:c*2,height:c*2,viewBox:"0 0 24 24",style:{overflow:"visible",pointerEvents:"none"},children:(0,s.jsx)("path",{d:"M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z",fill:l,stroke:l,strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round",transform:"translate(-12, -12)"})})})},y=b.bind({});y.args={..._,withLegendGlyph:!0,renderGlyph:({color:l,size:c,x:h,y:x})=>(0,s.jsx)(k,{color:l,size:c,x:h,y:x}),glyphStyle:{radius:8}};const P=({tooltipData:l})=>{const c=(0,u.p)();return(0,s.jsxs)("div",{children:[(0,s.jsx)("div",{style:{marginBottom:"0.5rem"},children:l?.nearestDatum?.datum?.date?.toLocaleDateString()}),(0,s.jsx)("div",{children:Object.entries(l?.datumByKey||{}).map(([h,x],w)=>{const{datum:L}=x;return(0,s.jsx)("div",{children:(0,s.jsxs)("div",{style:{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.2rem"},children:[(0,s.jsx)("svg",{width:20,height:20,children:(0,s.jsx)(d.A,{size:100,top:10,left:10,fill:"#fff",stroke:c.colors[w%c.colors.length]})}),h,": ",L.value]})},h)})})]})},v=b.bind({});v.args={..._,renderGlyph:({color:l,size:c,x:h,y:x})=>(0,s.jsx)(d.A,{top:x,left:h,size:c*c,fill:"#fff",stroke:l}),glyphStyle:{radius:10},renderTooltip:P};const f=b.bind({});f.args={..._,showLegend:!0,withStartGlyphs:!0,withLegendGlyph:!0,themeName:"glyph",glyphStyle:{radius:8}};const D=["Start","Custom","CustomSvg","InTooltip","CustomPerDataPoint"];m.parameters={...m.parameters,docs:{...m.parameters?.docs,source:{originalSource:"args => <LineChart {...args} />",...m.parameters?.docs?.source}}},g.parameters={...g.parameters,docs:{...g.parameters?.docs,source:{originalSource:"args => <LineChart {...args} />",...g.parameters?.docs?.source}}},y.parameters={...y.parameters,docs:{...y.parameters?.docs,source:{originalSource:"args => <LineChart {...args} />",...y.parameters?.docs?.source}}},v.parameters={...v.parameters,docs:{...v.parameters?.docs,source:{originalSource:"args => <LineChart {...args} />",...v.parameters?.docs?.source}}},f.parameters={...f.parameters,docs:{...f.parameters?.docs,source:{originalSource:"args => <LineChart {...args} />",...f.parameters?.docs?.source}}}}),"../charts/src/components/line-chart/stories/index.docs.mdx":((j,i,r)=>{"use strict";r.r(i),r.d(i,{default:()=>C});var d=r("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js"),e=r("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js"),u=r("../../../node_modules/.pnpm/@mdx-js+react@3.1.1_@types+react@18.3.23_react@18.3.1/node_modules/@mdx-js/react/lib/index.js"),t=r("../../../node_modules/.pnpm/@storybook+addon-docs@9.0.15_@types+react@18.3.23_storybook@9.0.15_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist/blocks.mjs"),o=r("../charts/src/components/line-chart/stories/index.stories.tsx"),a=r("../charts/src/components/line-chart/stories/glyph.stories.tsx");function s(p){const n={a:"a",code:"code",h1:"h1",h2:"h2",h3:"h3",li:"li",p:"p",pre:"pre",strong:"strong",table:"table",tbody:"tbody",td:"td",th:"th",thead:"thead",tr:"tr",ul:"ul",...(0,u.R)(),...p.components};return(0,e.jsxs)(e.Fragment,{children:[(0,e.jsx)(t.W8,{title:"JS Packages/Charts/Types/Line Chart",of:o}),`
+(self.webpackChunk_automattic_jetpack_storybook=self.webpackChunk_automattic_jetpack_storybook||[]).push([[6936],{"../../../node_modules/.pnpm/@mdx-js+react@3.1.1_@types+react@18.3.23_react@18.3.1/node_modules/@mdx-js/react/lib/index.js":((j,i,r)=>{"use strict";r.d(i,{R:()=>t,x:()=>o});var d=r("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js");const e={},u=d.createContext(e);function t(a){const s=d.useContext(u);return d.useMemo(function(){return typeof a=="function"?a(s):{...s,...a}},[s,a])}function o(a){let s;return a.disableParentContext?s=typeof a.components=="function"?a.components(e):a.components||e:s=t(a.components),d.createElement(u.Provider,{value:s},a.children)}}),"../../../node_modules/.pnpm/@storybook+addon-docs@9.0.15_@types+react@18.3.23_storybook@9.0.15_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist sync recursive":(j=>{function i(r){var d=new Error("Cannot find module '"+r+"'");throw d.code="MODULE_NOT_FOUND",d}i.keys=()=>[],i.resolve=i,i.id="../../../node_modules/.pnpm/@storybook+addon-docs@9.0.15_@types+react@18.3.23_storybook@9.0.15_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist sync recursive",j.exports=i}),"../../../node_modules/.pnpm/storybook@9.0.15_@testing-library+dom@10.4.0/node_modules/storybook/dist/components sync recursive":(j=>{function i(r){var d=new Error("Cannot find module '"+r+"'");throw d.code="MODULE_NOT_FOUND",d}i.keys=()=>[],i.resolve=i,i.id="../../../node_modules/.pnpm/storybook@9.0.15_@testing-library+dom@10.4.0/node_modules/storybook/dist/components sync recursive",j.exports=i}),"../../../node_modules/.pnpm/storybook@9.0.15_@testing-library+dom@10.4.0/node_modules/storybook/dist/theming sync recursive":(j=>{function i(r){var d=new Error("Cannot find module '"+r+"'");throw d.code="MODULE_NOT_FOUND",d}i.keys=()=>[],i.resolve=i,i.id="../../../node_modules/.pnpm/storybook@9.0.15_@testing-library+dom@10.4.0/node_modules/storybook/dist/theming sync recursive",j.exports=i}),"../charts/src/components/line-chart/stories/glyph.stories.tsx":((j,i,r)=>{"use strict";r.r(i),r.d(i,{Custom:()=>v,CustomPerDataPoint:()=>_,CustomSvg:()=>b,End:()=>f,InTooltip:()=>C,Start:()=>y,__namedExportsOrder:()=>E,default:()=>k});var d=r("../../../node_modules/.pnpm/@visx+glyph@3.12.0_react@18.3.1/node_modules/@visx/glyph/esm/glyphs/GlyphStar.js"),e=r("../charts/src/providers/chart-context/global-charts-provider.tsx"),u=r("../charts/src/providers/chart-context/hooks/use-global-charts-theme.ts"),t=r("../charts/src/stories/theme-config.tsx"),o=r("../charts/src/components/line-chart/line-chart.tsx"),a=r("../charts/src/components/line-chart/stories/config.tsx"),s=r("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js");const L={...t.yI,glyph:a.Em},p=(l,{args:c})=>{const h=c.themeName,x=L[h||"default"];return(0,s.jsx)(e.S,{theme:x,children:(0,s.jsx)("div",{style:{resize:"both",overflow:"auto",padding:"2rem",width:"800px",maxWidth:"1200px",border:"1px dashed #ccc",display:"inline-block"},children:(0,s.jsx)(l,{})})})},k={...a.Nc,title:"JS Packages/Charts/Types/Line Chart/Glyphs",decorators:[p],argTypes:{...a.Nc.argTypes,themeName:{...t.jW.themeName,options:["default","jetpack","woo","custom","glyph"]}}},m=l=>(0,s.jsx)(o.A,{...l}),g={...a.pn,withStartGlyphs:!0},y=m.bind({});y.args={...g};const f=m.bind({});f.args={...g,withStartGlyphs:!1,withEndGlyphs:!0};const v=m.bind({});v.args={...g,withLegendGlyph:!0,renderGlyph:({color:l,size:c,x:h,y:x})=>(0,s.jsx)(d.A,{top:x,left:h,size:c*c,fill:l}),glyphStyle:{radius:10}};const D=({color:l,size:c,x:h,y:x})=>{const w=typeof h=="number"&&typeof x=="number"&&(h!==0||x!==0)?{transform:`translate(${h}, ${x})`}:{};return(0,s.jsx)("g",{...w,children:(0,s.jsx)("svg",{xmlns:"http://www.w3.org/2000/svg",width:c*2,height:c*2,viewBox:"0 0 24 24",style:{overflow:"visible",pointerEvents:"none"},children:(0,s.jsx)("path",{d:"M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z",fill:l,stroke:l,strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round",transform:"translate(-12, -12)"})})})},b=m.bind({});b.args={...g,withLegendGlyph:!0,renderGlyph:({color:l,size:c,x:h,y:x})=>(0,s.jsx)(D,{color:l,size:c,x:h,y:x}),glyphStyle:{radius:8}};const P=({tooltipData:l})=>{const c=(0,u.p)();return(0,s.jsxs)("div",{children:[(0,s.jsx)("div",{style:{marginBottom:"0.5rem"},children:l?.nearestDatum?.datum?.date?.toLocaleDateString()}),(0,s.jsx)("div",{children:Object.entries(l?.datumByKey||{}).map(([h,x],S)=>{const{datum:w}=x;return(0,s.jsx)("div",{children:(0,s.jsxs)("div",{style:{display:"flex",alignItems:"center",gap:"0.5rem",marginBottom:"0.2rem"},children:[(0,s.jsx)("svg",{width:20,height:20,children:(0,s.jsx)(d.A,{size:100,top:10,left:10,fill:"#fff",stroke:c.colors[S%c.colors.length]})}),h,": ",w.value]})},h)})})]})},C=m.bind({});C.args={...g,renderGlyph:({color:l,size:c,x:h,y:x})=>(0,s.jsx)(d.A,{top:x,left:h,size:c*c,fill:"#fff",stroke:l}),glyphStyle:{radius:10},renderTooltip:P};const _=m.bind({});_.args={...g,showLegend:!0,withStartGlyphs:!0,withLegendGlyph:!0,themeName:"glyph",glyphStyle:{radius:8}};const E=["Start","End","Custom","CustomSvg","InTooltip","CustomPerDataPoint"];y.parameters={...y.parameters,docs:{...y.parameters?.docs,source:{originalSource:"args => <LineChart {...args} />",...y.parameters?.docs?.source}}},f.parameters={...f.parameters,docs:{...f.parameters?.docs,source:{originalSource:"args => <LineChart {...args} />",...f.parameters?.docs?.source}}},v.parameters={...v.parameters,docs:{...v.parameters?.docs,source:{originalSource:"args => <LineChart {...args} />",...v.parameters?.docs?.source}}},b.parameters={...b.parameters,docs:{...b.parameters?.docs,source:{originalSource:"args => <LineChart {...args} />",...b.parameters?.docs?.source}}},C.parameters={...C.parameters,docs:{...C.parameters?.docs,source:{originalSource:"args => <LineChart {...args} />",...C.parameters?.docs?.source}}},_.parameters={..._.parameters,docs:{..._.parameters?.docs,source:{originalSource:"args => <LineChart {...args} />",..._.parameters?.docs?.source}}}}),"../charts/src/components/line-chart/stories/index.docs.mdx":((j,i,r)=>{"use strict";r.r(i),r.d(i,{default:()=>L});var d=r("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js"),e=r("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js"),u=r("../../../node_modules/.pnpm/@mdx-js+react@3.1.1_@types+react@18.3.23_react@18.3.1/node_modules/@mdx-js/react/lib/index.js"),t=r("../../../node_modules/.pnpm/@storybook+addon-docs@9.0.15_@types+react@18.3.23_storybook@9.0.15_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist/blocks.mjs"),o=r("../charts/src/components/line-chart/stories/index.stories.tsx"),a=r("../charts/src/components/line-chart/stories/glyph.stories.tsx");function s(p){const n={a:"a",code:"code",h1:"h1",h2:"h2",h3:"h3",h4:"h4",li:"li",p:"p",pre:"pre",strong:"strong",table:"table",tbody:"tbody",td:"td",th:"th",thead:"thead",tr:"tr",ul:"ul",...(0,u.R)(),...p.components};return(0,e.jsxs)(e.Fragment,{children:[(0,e.jsx)(t.W8,{title:"JS Packages/Charts/Types/Line Chart",of:o}),`
 `,(0,e.jsx)(n.h1,{id:"line-chart",children:"Line Chart"}),`
 `,(0,e.jsx)(n.p,{children:"Line Charts visualize data trends over time or other continuous variables, connecting data points with smooth or linear lines. They excel at showing patterns, trends, and relationships in time-series data."}),`
 `,(0,e.jsx)(t.Hl,{of:o.Default}),`
@@ -175,12 +175,88 @@ const customTheme = {
 };`}),`
 `,(0,e.jsx)(n.h2,{id:"visual-features",children:"Visual Features"}),`
 `,(0,e.jsx)(n.h3,{id:"gradient-fill",children:"Gradient Fill"}),`
-`,(0,e.jsx)(n.p,{children:"Add visual depth with gradient fills under line series:"}),`
+`,(0,e.jsx)(n.p,{children:"Add visual depth with gradient fills under line series. The gradient system supports both simple fills and complex multi-stop gradients for sophisticated visual effects."}),`
+`,(0,e.jsx)(n.h4,{id:"basic-gradient-fill",children:"Basic Gradient Fill"}),`
+`,(0,e.jsxs)(n.p,{children:["Enable gradient fills for all series with the ",(0,e.jsx)(n.code,{children:"withGradientFill"})," prop:"]}),`
 `,(0,e.jsx)(t.Hl,{of:o.GradientFilled}),`
 `,(0,e.jsx)(t.kL,{language:"jsx",code:`<LineChart
 	data={data}
 	withGradientFill={true}
 />`}),`
+`,(0,e.jsx)(n.h4,{id:"custom-gradient-colors",children:"Custom Gradient Colors"}),`
+`,(0,e.jsxs)(n.p,{children:["Customize gradient colors per series using the ",(0,e.jsx)(n.code,{children:"gradient"})," option in series data:"]}),`
+`,(0,e.jsx)(t.Hl,{of:o.GradientCustomColors}),`
+`,(0,e.jsx)(t.kL,{language:"jsx",code:`const data = [
+	{
+		label: 'Revenue',
+		data: chartData,
+		options: {
+			gradient: {
+				from: '#4CAF50',
+				to: '#81C784',
+				fromOpacity: 0.8,
+				toOpacity: 0.1,
+			},
+		},
+	},
+	{
+		label: 'Expenses',
+		data: expenseData,
+		options: {
+			gradient: {
+				from: '#F44336',
+				to: '#EF5350',
+				fromOpacity: 0.6,
+				toOpacity: 0.0,
+			},
+		},
+	},
+];
+
+<LineChart
+	data={data}
+	withGradientFill={true}
+/>`}),`
+`,(0,e.jsx)(n.h4,{id:"gradient-with-sections",children:"Gradient with sections"}),`
+`,(0,e.jsx)(n.p,{children:"Create gradients that fade to transparent at specific points using stops, useful for highlighting data ranges. When no color is specified, the gradient uses the line color automatically:"}),`
+`,(0,e.jsx)(t.Hl,{of:o.GradientTransparent}),`
+`,(0,e.jsx)(t.kL,{language:"jsx",code:`const data = [
+	{
+		label: 'Temperature',
+		data: temperatureData,
+		options: {
+			gradient: {
+				stops: [
+					{ offset: '0%', opacity: 0.7 }, // Uses line color
+					{ offset: '20%', opacity: 0 },  // Fades to transparent
+					{ offset: '100%', opacity: 0 },
+				],
+			},
+		},
+	},
+];
+
+<LineChart
+	data={data}
+	withGradientFill={true}
+/>`}),`
+`,(0,e.jsx)(n.h4,{id:"gradient-options",children:"Gradient Options"}),`
+`,(0,e.jsxs)(n.p,{children:["The ",(0,e.jsx)(n.code,{children:"gradient"})," option in series data supports the following properties:"]}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:(0,e.jsx)(n.code,{children:"from"})}),": Start color (hex, rgb, CSS variable)"]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:(0,e.jsx)(n.code,{children:"to"})}),": End color (used when no stops are defined)"]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:(0,e.jsx)(n.code,{children:"fromOpacity"})}),": Start opacity (0-1, default: 0.4)"]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:(0,e.jsx)(n.code,{children:"toOpacity"})}),": End opacity (0-1, default: 0.1)"]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:(0,e.jsx)(n.code,{children:"stops"})}),": Array of gradient stops for complex gradients"]}),`
+`]}),`
+`,(0,e.jsx)(n.h4,{id:"gradient-stop-properties",children:"Gradient Stop Properties"}),`
+`,(0,e.jsxs)(n.p,{children:["Each stop in the ",(0,e.jsx)(n.code,{children:"stops"})," array accepts:"]}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:(0,e.jsx)(n.code,{children:"offset"})}),": Position along gradient (percentage string, e.g., '25%')"]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:(0,e.jsx)(n.code,{children:"color"})}),": Color at this stop (hex, rgb, CSS variable) - defaults to line color if omitted"]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:(0,e.jsx)(n.code,{children:"opacity"})}),": Opacity at this stop (0-1, default: 1)"]}),`
+`]}),`
+`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:"Note"}),": When using ",(0,e.jsx)(n.code,{children:"stops"}),", the ",(0,e.jsx)(n.code,{children:"from"}),", ",(0,e.jsx)(n.code,{children:"to"}),", ",(0,e.jsx)(n.code,{children:"fromOpacity"}),", and ",(0,e.jsx)(n.code,{children:"toOpacity"})," properties are ignored."]}),`
 `,(0,e.jsx)(n.h3,{id:"glyphs-and-markers",children:"Glyphs and Markers"}),`
 `,(0,e.jsx)(n.p,{children:"Add visual markers at data points using the glyph system:"}),`
 `,(0,e.jsx)(t.Hl,{of:a.Start}),`
@@ -397,10 +473,15 @@ const customTheme = {
 	data: DataPointDate[];
 	options?: {
 		gradient?: {
-			from: string;
-			to: string;
+			from?: string;
+			to?: string;
 			fromOpacity?: number;
 			toOpacity?: number;
+			stops?: Array<{
+				offset: string;
+				color?: string;
+				opacity?: number;
+			}>;
 		};
 		stroke?: string;
 		seriesLineStyle?: LineStyles;
@@ -409,6 +490,26 @@ const customTheme = {
 	};
 };
 `})}),`
+`,(0,e.jsx)(n.h4,{id:"gradient-options-1",children:"Gradient Options"}),`
+`,(0,e.jsxs)(n.p,{children:["The ",(0,e.jsx)(n.code,{children:"gradient"})," option in ",(0,e.jsx)(n.code,{children:"SeriesData.options"})," accepts the following configuration:"]}),`
+`,(0,e.jsx)(n.p,{children:(0,e.jsx)(n.strong,{children:"Basic Gradient (Two-Color):"})}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.code,{children:"from"}),": Start color (hex, rgb, CSS variable) - defaults to series color"]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.code,{children:"to"}),": End color (hex, rgb, CSS variable) - defaults to transparent background"]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.code,{children:"fromOpacity"}),": Start opacity (0-1, default: 0.4)"]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.code,{children:"toOpacity"}),": End opacity (0-1, default: 0.1)"]}),`
+`]}),`
+`,(0,e.jsx)(n.p,{children:(0,e.jsx)(n.strong,{children:"Advanced Gradient (Multi-Stop):"})}),`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.code,{children:"stops"}),": Array of gradient stops for complex gradients",`
+`,(0,e.jsxs)(n.ul,{children:[`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.code,{children:"offset"}),": Position along gradient (percentage string, e.g., '25%')"]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.code,{children:"color"}),": Color at this stop (hex, rgb, CSS variable) - defaults to line color if omitted"]}),`
+`,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.code,{children:"opacity"}),": Opacity at this stop (0-1, default: 1)"]}),`
+`]}),`
+`]}),`
+`]}),`
+`,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:"Note"}),": When using ",(0,e.jsx)(n.code,{children:"stops"}),", the ",(0,e.jsx)(n.code,{children:"from"}),", ",(0,e.jsx)(n.code,{children:"to"}),", ",(0,e.jsx)(n.code,{children:"fromOpacity"}),", and ",(0,e.jsx)(n.code,{children:"toOpacity"})," properties are ignored."]}),`
 `,(0,e.jsx)(n.h3,{id:"datapointdate-type",children:"DataPointDate Type"}),`
 `,(0,e.jsx)(n.pre,{children:(0,e.jsx)(n.code,{className:"language-typescript",children:`type DataPointDate = {
 	date?: Date;
@@ -469,4 +570,4 @@ const customTheme = {
 `,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"Jetpack"}),": Jetpack brand colors and styling"]}),`
 `,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"Woo"}),": WooCommerce brand colors and styling"]}),`
 `,(0,e.jsxs)(n.li,{children:[(0,e.jsx)(n.strong,{children:"Custom"}),": Define your own theme object"]}),`
-`]})]})}function C(p={}){const{wrapper:n}={...(0,u.R)(),...p.components};return n?(0,e.jsx)(n,{...p,children:(0,e.jsx)(s,{...p})}):s(p)}})}]);
+`]})]})}function L(p={}){const{wrapper:n}={...(0,u.R)(),...p.components};return n?(0,e.jsx)(n,{...p,children:(0,e.jsx)(s,{...p})}):s(p)}})}]);
