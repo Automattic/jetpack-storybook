@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 1.1.3-alpha - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Changed
+- Update story path for publicize components.
+
 ## 1.1.2 - 2026-01-12
 ### Changed
 - Update package dependencies. [#45652] [#45737] [#45915] [#45958] [#46022] [#46143] [#46362] [#46363] [#46375] [#46456]
