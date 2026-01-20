@@ -6,7 +6,7 @@
   return <UpgradeMessage requestsRemaining={args.requestsRemaining} severity={args.severity} onUpgradeClick={action('onUpgradeClick')} />;
 }`,...t.parameters?.docs?.source}}},n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`args => {
   return <ErrorMessage error={args.error} code={args.code} onTryAgainClick={action('onTryAgainClick')} onUpgradeClick={action('onUpgradeClick')} />;
-}`,...n.parameters?.docs?.source}}};try{stories.displayName="stories",stories.__docgenInfo={description:"React component to render a block message.",displayName:"stories",props:{icon:{defaultValue:{value:"null"},description:"",name:"icon",required:!1,type:{name:"ReactNode"}},severity:{defaultValue:{value:"info"},description:"",name:"severity",required:!1,type:{name:"enum",value:[{value:'"success"'},{value:'"info"'},{value:'"warning"'},{value:'"error"'}]}},aiFeedbackThumbsOptions:{defaultValue:{value:`{
+}`,...n.parameters?.docs?.source}}};try{stories.displayName="stories",stories.__docgenInfo={description:"React component to render a block message.",displayName:"stories",props:{icon:{defaultValue:{value:"null"},description:"",name:"icon",required:!1,type:{name:"ReactNode"}},severity:{defaultValue:{value:"info"},description:"",name:"severity",required:!1,type:{name:"enum",value:[{value:'"error"'},{value:'"warning"'},{value:'"success"'},{value:'"info"'}]}},aiFeedbackThumbsOptions:{defaultValue:{value:`{
 		showAIFeedbackThumbs: false,
 		ratedItem: '',
 		prompt: '',
