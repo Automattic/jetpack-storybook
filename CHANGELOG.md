@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 This is an alpha version! The changes listed here are not final.
 
+### Added
+- Add @wordpress/theme 0.6.0 design tokens for charts library Storybook previews.
+
 ### Changed
 - Update package dependencies.
 - Update story path for publicize components.
