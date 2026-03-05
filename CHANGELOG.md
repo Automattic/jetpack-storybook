@@ -13,6 +13,7 @@ This is an alpha version! The changes listed here are not final.
 - Add @wordpress/theme 0.6.0 design tokens for charts library Storybook previews.
 
 ### Changed
+- Switch to Native TypeScript compiler based on Go.
 - Update package dependencies.
 - Update story path for publicize components.
 
