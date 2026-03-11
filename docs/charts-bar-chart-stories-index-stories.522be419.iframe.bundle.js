@@ -1,0 +1,314 @@
+"use strict";(self.webpackChunk_automattic_jetpack_storybook=self.webpackChunk_automattic_jetpack_storybook||[]).push([[7460],{"../charts/src/charts/bar-chart/stories/index.stories.tsx"(E,S,h){h.r(S),h.d(S,{Animation:()=>d,AspectRatio:()=>p,CustomLegendPositioning:()=>s,Default:()=>l,ErrorStates:()=>t,FixedDimensions:()=>g,HorizontalBarChart:()=>D,LabelOverflowEllipsis:()=>T,SingleSeries:()=>v,SmartFormatting:()=>a,TimeSeries:()=>x,WithCompositionLegend:()=>c,WithInteractiveLegend:()=>n,WithPatterns:()=>u,ZeroValueComparison:()=>C,__namedExportsOrder:()=>B,default:()=>y});var m=h("../charts/src/stories/chart-decorator.tsx"),b=h("../charts/src/stories/theme-config.tsx"),f=h("../charts/src/stories/legend-config.tsx"),r=h("../charts/src/stories/sample-data/index.ts"),i=h("../charts/src/charts/bar-chart/bar-chart.tsx"),e=h("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js");const y={title:"JS Packages/Charts Library/Charts/Bar Chart",component:i.A,parameters:{layout:"centered"},decorators:[m.OI],argTypes:{...m.xo,...b.jW,...f.r,orientation:{control:{type:"radio"},options:["vertical","horizontal"],description:"Bar orientation",table:{category:"Visual Style"}},gridVisibility:{control:{type:"radio"},options:["none","x","y","both"],description:"Grid line visibility",table:{category:"Visual Style"}},seriesCount:{control:{type:"radio"},options:["single","multiple","many"],description:"Number of data series",table:{category:"Data"}},withPatterns:{control:"boolean",description:"Use patterns for bars",table:{category:"Visual Style"}}},render:w=>{const{seriesCount:_,...A}=w,V=(0,f.D)(w);let O=A.data;return _==="single"?O=[r._E[0]]:_==="multiple"?O=[r._E[0],r._E[1],r._E[2]]:_==="many"&&(O=r._E),(0,e.jsx)(i.A,{...A,legend:V,data:O})}},l={args:{...b.In,withTooltips:!0,data:[r._E[0],r._E[1],r._E[2]],gridVisibility:"x",maxWidth:1200,resizeDebounceTime:300}},g={args:{...l.args,width:600,height:300}},p={args:{...l.args,aspectRatio:.3}},v={args:{...l.args,data:[r._E[0]]},parameters:{docs:{description:{story:"Bar chart with a single data series."}}}},x={args:{...l.args,data:[{...r.Sb[0],label:"Data with dateString and date",data:[...r.Sb[0].data,{dateString:"2024-01-31",value:2230},{dateString:"2024-02-01",value:2580},{date:new Date("2024-02-02 00:00:00"),value:3500},{dateString:"2024-02-03 00:00:00",value:1500},{dateString:"2024-02-04",value:2500},{dateString:"2024-02-05 00:00",value:3e3}]}],options:{axis:{x:{tickFormat:w=>new Date(w).toLocaleDateString("en-US",{dateStyle:"short"})}}}},parameters:{docs:{description:{story:"Bar chart with a time series."}}}},u={args:{...l.args,withPatterns:!0,data:l.args.data.map(w=>({...w,data:w.data.filter(_=>parseInt(_.label)>=2016)}))}},d={args:{...l.args,animation:!0}},t={render:()=>(0,e.jsxs)("div",{style:{display:"grid",gap:"20px"},children:[(0,e.jsxs)("div",{children:[(0,e.jsx)("h3",{children:"Empty Data"}),(0,e.jsx)("div",{style:{width:"400px",height:"300px"},children:(0,e.jsx)(i.A,{data:[]})})]}),(0,e.jsxs)("div",{children:[(0,e.jsx)("h3",{children:"Invalid Data"}),(0,e.jsx)("div",{style:{width:"400px",height:"300px"},children:(0,e.jsx)(i.A,{data:[{label:"Invalid Series",data:[{date:new Date("invalid"),value:10,label:"Invalid Date"},{date:new Date("2024-01-02"),value:null,label:"Null Value"}],options:{}}]})})]})]})};t.parameters={docs:{description:{story:"Examples of how the bar chart handles various error states including empty data and invalid data."}}};const a={args:{withTooltips:!0,data:r.Gv,gridVisibility:"x"}};a.parameters={docs:{description:{story:'Demonstrates the Smart Formatting feature (formatYTick) that automatically formats Y-axis tick labels based on the data range. Values \u22651B are formatted as "1.23B", \u22651M as "1.2M", \u22651K as "1k", and smaller values as "1,234". This example shows revenue in billions and users in millions.'}}};const n={args:{...l.args,showLegend:!0,legendInteractive:!0,chartId:"bar-chart-with-interactive-legend"},parameters:{docs:{description:{story:"Bar chart with interactive legend. Click on legend items to toggle series visibility. When all series are hidden, a message will be displayed prompting you to click legend items to show data again."}}}},c={render:w=>{const _=(0,f.D)(w);return(0,e.jsx)(i.A,{data:w.data||[r._E[0],r._E[1],r._E[2]],withTooltips:!0,gridVisibility:"x",chartId:"composition-bar-chart",children:(0,e.jsx)(i.A.Legend,{..._})})},parameters:{docs:{description:{story:"Demonstrates using the composition API with `<BarChart.Legend />` as a child component. This provides the same functionality as the `showLegend` prop but allows for more flexible composition patterns."}}}},s={args:{withTooltips:!0,data:r._E.slice(0,3),gridVisibility:"x",maxWidth:1200,resizeDebounceTime:300,containerHeight:"400px",showLegend:!0,legendOrientation:"vertical",legendAlignment:"start",legendPosition:"top"},parameters:{docs:{description:{story:"Bar chart with top-left positioned vertical legend. This demonstrates non-default legend positioning to showcase different legend placement possibilities."}}}},D={args:{...l.args,data:[r._E[0],r._E[1],r._E[2]],orientation:"horizontal",gridVisibility:"none"}},j=[{group:"United States",label:"United States",data:[{label:"1896",value:0},{label:"1900",value:0},{label:"1904",value:2},{label:"1908",value:1},{label:"1912",value:3}]},{group:"Great Britain",label:"Great Britain",data:[{label:"1896",value:1},{label:"1900",value:0},{label:"1904",value:1},{label:"1908",value:10},{label:"1912",value:9}]},{group:"Japan",label:"Japan",data:[{label:"1896",value:2},{label:"1900",value:1},{label:"1904",value:2},{label:"1908",value:1},{label:"1912",value:2}]}],C={render:()=>(0,e.jsxs)("div",{style:{display:"grid",gap:"40px"},children:[(0,e.jsxs)("div",{children:[(0,e.jsx)("h3",{children:"Zero Value Display: Disabled (Default)"}),(0,e.jsx)("p",{style:{marginBottom:"20px",color:"#666"},children:"Zero values are not visually displayed. Bars with zero values have no height."}),(0,e.jsx)("div",{style:{width:"600px",height:"300px"},children:(0,e.jsx)(i.A,{data:j,showZeroValues:!1,withTooltips:!0,gridVisibility:"x"})})]}),(0,e.jsxs)("div",{children:[(0,e.jsx)("h3",{children:"Zero Value Display: Enabled"}),(0,e.jsx)("p",{style:{marginBottom:"20px",color:"#666"},children:"Zero values are visually displayed with minimum height bars. The tooltip still shows the actual value of 0, while the bar has a small visual height for better UX."}),(0,e.jsx)("div",{style:{width:"600px",height:"300px"},children:(0,e.jsx)(i.A,{data:j,showZeroValues:!0,withTooltips:!0,gridVisibility:"x"})})]}),(0,e.jsxs)("div",{children:[(0,e.jsx)("h3",{children:"Small Chart Height (100px)"}),(0,e.jsx)("p",{style:{marginBottom:"20px",color:"#666"},children:"Zero-value bars remain visible even in small charts. The minimum pixel height ensures bars are at least 2 pixels tall regardless of chart dimensions."}),(0,e.jsx)("div",{style:{width:"600px",height:"100px",border:"1px solid #e0e0e0"},children:(0,e.jsx)(i.A,{data:j,showZeroValues:!0,withTooltips:!0,gridVisibility:"x"})})]})]}),args:{containerHeight:"1600px"},parameters:{docs:{description:{story:"Comparison showing the difference between disabled and enabled zero value display modes. The feature preserves data integrity by keeping the original value for tooltips while providing visual feedback through minimum bar heights. Zero-value bars remain visible even in small chart heights."}}}},L=[{group:"sales",label:"Sales by Channel",data:[{label:"Organic Search Traffic",value:12500},{label:"Paid Advertising Campaign",value:8750},{label:"Social Media Marketing",value:6250},{label:"Email Newsletter Subscribers",value:4375},{label:"Direct Website Visitors",value:3125},{label:"Affiliate Partner Referrals",value:2500}]}],T={render:()=>(0,e.jsxs)("div",{style:{display:"grid",gap:"40px"},children:[(0,e.jsxs)("div",{children:[(0,e.jsx)("h3",{children:"Without labelOverflow (Default - Labels Overlap)"}),(0,e.jsx)("p",{style:{marginBottom:"20px",color:"#666"},children:"Default behavior: long labels overlap and become unreadable at narrow widths."}),(0,e.jsx)("div",{style:{width:"350px",height:"250px",border:"1px solid #e0e0e0"},children:(0,e.jsx)(i.A,{data:L,withTooltips:!0,gridVisibility:"x"})})]}),(0,e.jsxs)("div",{children:[(0,e.jsx)("h3",{children:"With labelOverflow: 'ellipsis' (Labels Truncated)"}),(0,e.jsxs)("p",{style:{marginBottom:"20px",color:"#666"},children:["With ",(0,e.jsx)("code",{children:"labelOverflow: 'ellipsis'"}),", labels are truncated to fit the available bandwidth. ",(0,e.jsx)("strong",{children:"Hover over a label to see the full text."})]}),(0,e.jsx)("div",{style:{width:"350px",height:"250px",border:"1px solid #e0e0e0"},children:(0,e.jsx)(i.A,{data:L,withTooltips:!0,gridVisibility:"x",options:{axis:{x:{labelOverflow:"ellipsis"}}}})})]})]}),parameters:{docs:{description:{story:"Demonstrates the `labelOverflow: 'ellipsis'` option that truncates long axis labels to fit the available bandwidth. The full label text is shown on hover via a native tooltip. This is useful for narrow widget contexts where space is limited."}}}},B=["Default","FixedDimensions","AspectRatio","SingleSeries","TimeSeries","WithPatterns","Animation","ErrorStates","SmartFormatting","WithInteractiveLegend","WithCompositionLegend","CustomLegendPositioning","HorizontalBarChart","ZeroValueComparison","LabelOverflowEllipsis"];l.parameters={...l.parameters,docs:{...l.parameters?.docs,source:{originalSource:`{
+  args: {
+    ...sharedThemeArgs,
+    withTooltips: true,
+    data: [medalCountsData[0], medalCountsData[1], medalCountsData[2]],
+    // limit to 3 series for better readability
+    gridVisibility: 'x',
+    maxWidth: 1200,
+    resizeDebounceTime: 300
+  }
+}`,...l.parameters?.docs?.source}}},g.parameters={...g.parameters,docs:{...g.parameters?.docs,source:{originalSource:`{
+  args: {
+    ...Default.args,
+    width: 600,
+    height: 300
+  }
+}`,...g.parameters?.docs?.source}}},p.parameters={...p.parameters,docs:{...p.parameters?.docs,source:{originalSource:`{
+  args: {
+    ...Default.args,
+    aspectRatio: 0.3
+  }
+}`,...p.parameters?.docs?.source}}},v.parameters={...v.parameters,docs:{...v.parameters?.docs,source:{originalSource:`{
+  args: {
+    ...Default.args,
+    data: [medalCountsData[0]]
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Bar chart with a single data series.'
+      }
+    }
+  }
+}`,...v.parameters?.docs?.source}}},x.parameters={...x.parameters,docs:{...x.parameters?.docs,source:{originalSource:`{
+  args: {
+    ...Default.args,
+    data: [{
+      ...trafficData[0],
+      label: 'Data with dateString and date',
+      data: [...trafficData[0].data, {
+        dateString: '2024-01-31',
+        value: 2230
+      }, {
+        dateString: '2024-02-01',
+        value: 2580
+      }, {
+        date: new Date('2024-02-02 00:00:00'),
+        value: 3500
+      }, {
+        dateString: '2024-02-03 00:00:00',
+        value: 1500
+      }, {
+        dateString: '2024-02-04',
+        value: 2500
+      }, {
+        dateString: '2024-02-05 00:00',
+        value: 3000
+      }]
+    }],
+    options: {
+      axis: {
+        x: {
+          tickFormat: (timestamp: number) => {
+            const date = new Date(timestamp);
+            return date.toLocaleDateString('en-US', {
+              dateStyle: 'short'
+            });
+          }
+        }
+      }
+    }
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Bar chart with a time series.'
+      }
+    }
+  }
+}`,...x.parameters?.docs?.source}}},u.parameters={...u.parameters,docs:{...u.parameters?.docs,source:{originalSource:`{
+  args: {
+    ...Default.args,
+    withPatterns: true,
+    data: Default.args.data.map(country => {
+      return {
+        ...country,
+        data: country.data.filter(d => parseInt(d.label) >= 2016)
+      };
+    })
+  }
+}`,...u.parameters?.docs?.source}}},d.parameters={...d.parameters,docs:{...d.parameters?.docs,source:{originalSource:`{
+  args: {
+    ...Default.args,
+    animation: true
+  }
+}`,...d.parameters?.docs?.source}}},t.parameters={...t.parameters,docs:{...t.parameters?.docs,source:{originalSource:`{
+  render: () => <div style={{
+    display: 'grid',
+    gap: '20px'
+  }}>
+            <div>
+                <h3>Empty Data</h3>
+                <div style={{
+        width: '400px',
+        height: '300px'
+      }}>
+                    <BarChart data={[]} />
+                </div>
+            </div>
+
+            <div>
+                <h3>Invalid Data</h3>
+                <div style={{
+        width: '400px',
+        height: '300px'
+      }}>
+                    <BarChart data={[{
+          label: 'Invalid Series',
+          data: [{
+            date: new Date('invalid'),
+            value: 10,
+            label: 'Invalid Date'
+          }, {
+            date: new Date('2024-01-02'),
+            value: null,
+            label: 'Null Value'
+          }],
+          options: {}
+        }]} />
+                </div>
+            </div>
+        </div>
+}`,...t.parameters?.docs?.source}}},a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:`{
+  args: {
+    withTooltips: true,
+    data: largeValuesData,
+    gridVisibility: 'x'
+  }
+}`,...a.parameters?.docs?.source}}},n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
+  args: {
+    ...Default.args,
+    showLegend: true,
+    legendInteractive: true,
+    chartId: 'bar-chart-with-interactive-legend'
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Bar chart with interactive legend. Click on legend items to toggle series visibility. When all series are hidden, a message will be displayed prompting you to click legend items to show data again.'
+      }
+    }
+  }
+}`,...n.parameters?.docs?.source}}},c.parameters={...c.parameters,docs:{...c.parameters?.docs,source:{originalSource:`{
+  render: args => {
+    const legend = extractLegendConfig(args);
+    return <BarChart data={args.data || [medalCountsData[0], medalCountsData[1], medalCountsData[2]]} withTooltips={true} gridVisibility="x" chartId="composition-bar-chart">
+                <BarChart.Legend {...legend} />
+            </BarChart>;
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Demonstrates using the composition API with \`<BarChart.Legend />\` as a child component. This provides the same functionality as the \`showLegend\` prop but allows for more flexible composition patterns.'
+      }
+    }
+  }
+}`,...c.parameters?.docs?.source}}},s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
+  args: {
+    withTooltips: true,
+    data: medalCountsData.slice(0, 3),
+    // Use first 3 series for cleaner legend
+    gridVisibility: 'x',
+    maxWidth: 1200,
+    resizeDebounceTime: 300,
+    containerHeight: '400px',
+    // showLegend defaults to false, explicitly enabling for demonstration
+    showLegend: true,
+    legendOrientation: 'vertical',
+    legendAlignment: 'start',
+    legendPosition: 'top'
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Bar chart with top-left positioned vertical legend. This demonstrates non-default legend positioning to showcase different legend placement possibilities.'
+      }
+    }
+  }
+}`,...s.parameters?.docs?.source}}},D.parameters={...D.parameters,docs:{...D.parameters?.docs,source:{originalSource:`{
+  args: {
+    ...Default.args,
+    data: [medalCountsData[0], medalCountsData[1], medalCountsData[2]],
+    orientation: 'horizontal',
+    gridVisibility: 'none'
+  }
+}`,...D.parameters?.docs?.source}}},C.parameters={...C.parameters,docs:{...C.parameters?.docs,source:{originalSource:`{
+  render: () => <div style={{
+    display: 'grid',
+    gap: '40px'
+  }}>
+            <div>
+                <h3>Zero Value Display: Disabled (Default)</h3>
+                <p style={{
+        marginBottom: '20px',
+        color: '#666'
+      }}>
+                    Zero values are not visually displayed. Bars with zero values have no height.
+                </p>
+                <div style={{
+        width: '600px',
+        height: '300px'
+      }}>
+                    <BarChart data={dataWithZeroValues} showZeroValues={false} withTooltips={true} gridVisibility="x" />
+                </div>
+            </div>
+
+            <div>
+                <h3>Zero Value Display: Enabled</h3>
+                <p style={{
+        marginBottom: '20px',
+        color: '#666'
+      }}>
+                    Zero values are visually displayed with minimum height bars. The tooltip still shows the
+                    actual value of 0, while the bar has a small visual height for better UX.
+                </p>
+                <div style={{
+        width: '600px',
+        height: '300px'
+      }}>
+                    <BarChart data={dataWithZeroValues} showZeroValues={true} withTooltips={true} gridVisibility="x" />
+                </div>
+            </div>
+
+            <div>
+                <h3>Small Chart Height (100px)</h3>
+                <p style={{
+        marginBottom: '20px',
+        color: '#666'
+      }}>
+                    Zero-value bars remain visible even in small charts. The minimum pixel height ensures bars
+                    are at least 2 pixels tall regardless of chart dimensions.
+                </p>
+                <div style={{
+        width: '600px',
+        height: '100px',
+        border: '1px solid #e0e0e0'
+      }}>
+                    <BarChart data={dataWithZeroValues} showZeroValues={true} withTooltips={true} gridVisibility="x" />
+                </div>
+            </div>
+        </div>,
+  args: {
+    containerHeight: '1600px' // Extra height to demonstrate zero-value bars in small chart height scenario
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Comparison showing the difference between disabled and enabled zero value display modes. The feature preserves data integrity by keeping the original value for tooltips while providing visual feedback through minimum bar heights. Zero-value bars remain visible even in small chart heights.'
+      }
+    }
+  }
+}`,...C.parameters?.docs?.source}}},T.parameters={...T.parameters,docs:{...T.parameters?.docs,source:{originalSource:`{
+  render: () => <div style={{
+    display: 'grid',
+    gap: '40px'
+  }}>
+            <div>
+                <h3>Without labelOverflow (Default - Labels Overlap)</h3>
+                <p style={{
+        marginBottom: '20px',
+        color: '#666'
+      }}>
+                    Default behavior: long labels overlap and become unreadable at narrow widths.
+                </p>
+                <div style={{
+        width: '350px',
+        height: '250px',
+        border: '1px solid #e0e0e0'
+      }}>
+                    <BarChart data={longLabelData} withTooltips={true} gridVisibility="x" />
+                </div>
+            </div>
+            <div>
+                <h3>With labelOverflow: &apos;ellipsis&apos; (Labels Truncated)</h3>
+                <p style={{
+        marginBottom: '20px',
+        color: '#666'
+      }}>
+                    With <code>labelOverflow: &apos;ellipsis&apos;</code>, labels are truncated to fit the
+                    available bandwidth. <strong>Hover over a label to see the full text.</strong>
+                </p>
+                <div style={{
+        width: '350px',
+        height: '250px',
+        border: '1px solid #e0e0e0'
+      }}>
+                    <BarChart data={longLabelData} withTooltips={true} gridVisibility="x" options={{
+          axis: {
+            x: {
+              labelOverflow: 'ellipsis'
+            }
+          }
+        }} />
+                </div>
+            </div>
+        </div>,
+  parameters: {
+    docs: {
+      description: {
+        story: "Demonstrates the \`labelOverflow: 'ellipsis'\` option that truncates long axis labels to fit the available bandwidth. The full label text is shown on hover via a native tooltip. This is useful for narrow widget contexts where space is limited."
+      }
+    }
+  }
+}`,...T.parameters?.docs?.source}}}},"../charts/src/stories/legend-config.tsx"(E,S,h){h.d(S,{D:()=>b,r:()=>m});const m={showLegend:{control:{type:"boolean"},description:"Show or hide the legend",table:{category:"Legend"}},legendPosition:{control:{type:"select"},options:["top","bottom"],description:"Position of the legend relative to the chart",table:{category:"Legend"}},legendAlignment:{control:{type:"select"},options:["start","center","end"],description:"Horizontal alignment of the legend within its position",table:{category:"Legend"}},legendOrientation:{control:{type:"select"},options:["horizontal","vertical"],description:"Layout direction of legend items",table:{category:"Legend"}},legendShape:{control:{type:"select"},options:["circle","rect"],description:"Shape of the legend marker icon",table:{category:"Legend"}},withLegendGlyph:{control:{type:"boolean"},table:{category:"Legend"},description:"Show glyphs in legend (Line charts only)"},legendMaxWidth:{control:{type:"text"},table:{category:"Legend"},description:'Maximum width for legend items as CSS value (e.g. "200px", "50%", "10rem"). When set, text overflow behavior is controlled by legendTextOverflow.'},legendTextOverflow:{control:{type:"select"},options:["wrap","ellipsis"],table:{category:"Legend"},description:'Controls how text behaves when it exceeds legendMaxWidth. "ellipsis" truncates with ... (ideal for widgets), "wrap" allows text to wrap to multiple lines.'},legendItemClassName:{control:{type:"text"},table:{category:"Legend"},description:"Additional CSS class name for individual legend items. This allows consumers to customize legend item styling."},legendInteractive:{control:{type:"boolean"},table:{category:"Legend"},description:"Enable interactive legend items that can toggle series visibility. Requires GlobalChartsProvider and chartId to be set."},legendShapeStyles:{control:{type:"object"},table:{category:"Legend",type:{summary:"{ width?: number; height?: number; margin?: string | number }"}},description:"Styles for legend shapes (width, height, margin)."},legendItemStyles:{control:{type:"object"},table:{category:"Legend",type:{summary:'{ margin?: string | number; flexDirection?: "row" | "row-reverse" | "column" | "column-reverse" }'}},description:"Styles for each legend item (margin, flexDirection)."}};function b(f){const{legendPosition:r,legendAlignment:i,legendOrientation:e,legendShape:o,legendInteractive:y,legendItemClassName:l,legendMaxWidth:g,legendTextOverflow:p,legendShapeStyles:v,legendItemStyles:x}=f;if(!(r!==void 0||i!==void 0||e!==void 0||o!==void 0||y!==void 0||l!==void 0||g!==void 0||p!==void 0||v!==void 0||x!==void 0))return;const d={};return e!==void 0&&(d.orientation=e),r!==void 0&&(d.position=r),i!==void 0&&(d.alignment=i),o!==void 0&&(d.shape=o),y!==void 0&&(d.interactive=y),l!==void 0&&(d.itemClassName=l),(g!==void 0||p!==void 0)&&(d.labelStyles={},g!==void 0&&(d.labelStyles.maxWidth=g),p!==void 0&&(d.labelStyles.textOverflow=p)),v!==void 0&&(d.shapeStyles=v),x!==void 0&&(d.itemStyles=x),d}try{b.displayName="extractLegendConfig",b.__docgenInfo={description:"Extracts flat legend story args into a `ChartLegendConfig` object.\nUse in story render functions to bridge flat Storybook controls to the nested `legend` prop.",displayName:"extractLegendConfig",props:{}},typeof STORYBOOK_REACT_CLASSES<"u"&&(STORYBOOK_REACT_CLASSES["../charts/src/stories/legend-config.tsx#extractLegendConfig"]={docgenInfo:b.__docgenInfo,name:"extractLegendConfig",path:"../charts/src/stories/legend-config.tsx#extractLegendConfig"})}catch{}try{m.displayName="legendArgTypes",m.__docgenInfo={description:"Shared legend configuration for chart stories.\nProvides consistent argTypes and decorators across all chart legend stories.\n\nThese use flat keys for reliable Storybook controls. Use `extractLegendConfig`\nin render functions to map them to the nested `legend` prop.",displayName:"legendArgTypes",props:{}},typeof STORYBOOK_REACT_CLASSES<"u"&&(STORYBOOK_REACT_CLASSES["../charts/src/stories/legend-config.tsx#legendArgTypes"]={docgenInfo:m.__docgenInfo,name:"legendArgTypes",path:"../charts/src/stories/legend-config.tsx#legendArgTypes"})}catch{}},"../../../node_modules/.pnpm/clsx@2.1.1/node_modules/clsx/dist/clsx.mjs"(E,S,h){h.d(S,{A:()=>f});function m(r){var i,e,o="";if(typeof r=="string"||typeof r=="number")o+=r;else if(typeof r=="object")if(Array.isArray(r)){var y=r.length;for(i=0;i<y;i++)r[i]&&(e=m(r[i]))&&(o&&(o+=" "),o+=e)}else for(e in r)r[e]&&(o&&(o+=" "),o+=e);return o}function b(){for(var r,i,e=0,o="",y=arguments.length;e<y;e++)(r=arguments[e])&&(i=m(r))&&(o&&(o+=" "),o+=i);return o}const f=b},"../../../node_modules/.pnpm/deepmerge@4.3.1/node_modules/deepmerge/dist/cjs.js"(E){var S=function(a){return h(a)&&!m(a)};function h(t){return!!t&&typeof t=="object"}function m(t){var a=Object.prototype.toString.call(t);return a==="[object RegExp]"||a==="[object Date]"||r(t)}var b=typeof Symbol=="function"&&Symbol.for,f=b?Symbol.for("react.element"):60103;function r(t){return t.$$typeof===f}function i(t){return Array.isArray(t)?[]:{}}function e(t,a){return a.clone!==!1&&a.isMergeableObject(t)?u(i(t),t,a):t}function o(t,a,n){return t.concat(a).map(function(c){return e(c,n)})}function y(t,a){if(!a.customMerge)return u;var n=a.customMerge(t);return typeof n=="function"?n:u}function l(t){return Object.getOwnPropertySymbols?Object.getOwnPropertySymbols(t).filter(function(a){return Object.propertyIsEnumerable.call(t,a)}):[]}function g(t){return Object.keys(t).concat(l(t))}function p(t,a){try{return a in t}catch{return!1}}function v(t,a){return p(t,a)&&!(Object.hasOwnProperty.call(t,a)&&Object.propertyIsEnumerable.call(t,a))}function x(t,a,n){var c={};return n.isMergeableObject(t)&&g(t).forEach(function(s){c[s]=e(t[s],n)}),g(a).forEach(function(s){v(t,s)||(p(t,s)&&n.isMergeableObject(a[s])?c[s]=y(s,n)(t[s],a[s],n):c[s]=e(a[s],n))}),c}function u(t,a,n){n=n||{},n.arrayMerge=n.arrayMerge||o,n.isMergeableObject=n.isMergeableObject||S,n.cloneUnlessOtherwiseSpecified=e;var c=Array.isArray(a),s=Array.isArray(t),D=c===s;return D?c?n.arrayMerge(t,a,n):x(t,a,n):e(a,n)}u.all=function(a,n){if(!Array.isArray(a))throw new Error("first argument should be an array");return a.reduce(function(c,s){return u(c,s,n)},{})};var d=u;E.exports=d}}]);
