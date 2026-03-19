@@ -5,6 +5,7 @@
 `,(0,e.jsx)(n.h2,{id:"overview",children:"Overview"}),`
 `,(0,e.jsxs)(n.p,{children:["The Line Chart component provides a flexible, accessible, and highly customizable solution for displaying temporal data. Built on ",(0,e.jsx)(n.code,{children:"@visx/xychart"}),", it supports multiple data series, various curve types, interactive tooltips, legends, and compound components for advanced features like annotations:"]}),`
 `,(0,e.jsx)(t.kL,{language:"jsx",code:`import { LineChart } from '@automattic/charts';
+import '@automattic/charts/style.css';
 
 <LineChart data={ data }>
 	{/* Optional child components for advanced features */}

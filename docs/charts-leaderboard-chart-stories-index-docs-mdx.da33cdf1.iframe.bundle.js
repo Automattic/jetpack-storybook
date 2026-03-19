@@ -5,6 +5,7 @@
 `,(0,e.jsx)(a.h2,{id:"overview",children:"Overview"}),`
 `,(0,e.jsx)(a.p,{children:"The Leaderboard Chart component provides a clean, responsive visualization for displaying ranked data with optional comparison values. Built with WordPress components, it supports customizable colors, flexible formatting, and accessibility-friendly defaults."}),`
 `,(0,e.jsx)(r.kL,{language:"tsx",code:`import { LeaderboardChart } from '@automattic/charts';
+import '@automattic/charts/style.css';
 
 <LeaderboardChart
 	data={data}

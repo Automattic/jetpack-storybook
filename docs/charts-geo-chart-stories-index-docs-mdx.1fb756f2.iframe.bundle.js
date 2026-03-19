@@ -5,6 +5,7 @@
 `,(0,e.jsx)(s.h2,{id:"overview",children:"Overview"}),`
 `,(0,e.jsx)(s.p,{children:"The Geo Chart component provides a clean, accessible solution for displaying country-level data on a world map. Built on Google Charts GeoChart, it supports interactive tooltips, automatic color scaling, and integration with the chart theme system:"}),`
 `,(0,e.jsx)(o.kL,{language:"tsx",code:`import { GeoChart } from '@automattic/charts';
+import '@automattic/charts/style.css';
 
 <GeoChart
 	data={ ordersByCountry }

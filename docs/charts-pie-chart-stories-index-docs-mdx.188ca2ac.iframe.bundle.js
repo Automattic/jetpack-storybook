@@ -5,6 +5,7 @@
 `,(0,e.jsx)(n.h2,{id:"overview",children:"Overview"}),`
 `,(0,e.jsxs)(n.p,{children:["The Pie Chart component provides a flexible, accessible, and highly customizable solution for displaying proportional data. Built on ",(0,e.jsx)(n.code,{children:"@visx/shape"}),", it supports both pie and donut chart variations, interactive tooltips, legends, and customizable styling with gap control, corner rounding, and thickness adjustment:"]}),`
 `,(0,e.jsx)(s.kL,{language:"jsx",code:`import { PieChart } from '@automattic/charts';
+import '@automattic/charts/style.css';
 
   <PieChart
   	data={ data }

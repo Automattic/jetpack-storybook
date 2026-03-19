@@ -60,7 +60,7 @@
 `})}),`
 `,(0,e.jsxs)(n.p,{children:["The default export is the ",(0,e.jsx)(n.strong,{children:"responsive variant"})," that automatically adjusts to container width."]}),`
 `,(0,e.jsx)(n.h3,{id:"named-exports",children:"Named Exports"}),`
-`,(0,e.jsx)(n.pre,{children:(0,e.jsx)(n.code,{className:"language-typescript",children:`import { SparklineUnresponsive } from '@automattic/charts/sparkline';
+`,(0,e.jsx)(n.pre,{children:(0,e.jsx)(n.code,{className:"language-typescript",children:`import { SparklineUnresponsive } from '@automattic/charts';
 `})}),`
 `,(0,e.jsxs)(n.p,{children:[(0,e.jsx)(n.strong,{children:"SparklineUnresponsive"}),": Fixed-size variant without responsive behavior. Use this when you want explicit width/height control without automatic resizing."]}),`
 `,(0,e.jsx)(n.h2,{id:"css-classes",children:"CSS Classes"}),`
@@ -119,7 +119,7 @@
 	SparklineProps,
 	GradientConfig,
 	SparklineDataPoint
-} from '@automattic/charts/sparkline';
+} from '@automattic/charts';
 
 const config: GradientConfig = {
 	from: '#4CAF50',

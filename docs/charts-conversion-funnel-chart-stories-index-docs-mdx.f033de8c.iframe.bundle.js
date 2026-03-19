@@ -15,6 +15,7 @@
 `,(0,e.jsx)(n.li,{children:"Integration with global charts theme system"}),`
 `]}),`
 `,(0,e.jsx)(s.kL,{language:"tsx",code:`import { ConversionFunnelChart } from '@automattic/charts';
+import '@automattic/charts/style.css';
 
 const funnelData = [
 	{ id: 'sessions', label: 'Sessions', rate: 100, count: 10000 },

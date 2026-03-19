@@ -1,10 +1,11 @@
-"use strict";(self.webpackChunk_automattic_jetpack_storybook=self.webpackChunk_automattic_jetpack_storybook||[]).push([[1954],{"../charts/src/charts/bar-chart/stories/index.docs.mdx"(c,r,t){t.r(r),t.d(r,{default:()=>d});var h=t("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js"),e=t("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js"),l=t("../../../node_modules/.pnpm/@mdx-js+react@3.1.1_@types+react@18.3.28_react@18.3.1/node_modules/@mdx-js/react/lib/index.js"),n=t("../../../node_modules/.pnpm/@storybook+addon-docs@10.2.11_@types+react@18.3.28_esbuild@0.25.9_storybook@10.2.11_@te_623b11407ff81c3407704a8a948465b9/node_modules/@storybook/addon-docs/dist/blocks.js"),a=t("../charts/src/charts/bar-chart/stories/index.stories.tsx");function o(s){const i={a:"a",code:"code",h1:"h1",h2:"h2",h3:"h3",li:"li",p:"p",strong:"strong",ul:"ul",...(0,l.R)(),...s.components};return(0,e.jsxs)(e.Fragment,{children:[(0,e.jsx)(n.W8,{title:"JS Packages/Charts Library/Charts/Bar Chart",of:a}),`
+"use strict";(self.webpackChunk_automattic_jetpack_storybook=self.webpackChunk_automattic_jetpack_storybook||[]).push([[1954],{"../charts/src/charts/bar-chart/stories/index.docs.mdx"(c,r,t){t.r(r),t.d(r,{default:()=>d});var h=t("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js"),e=t("../../../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js"),o=t("../../../node_modules/.pnpm/@mdx-js+react@3.1.1_@types+react@18.3.28_react@18.3.1/node_modules/@mdx-js/react/lib/index.js"),n=t("../../../node_modules/.pnpm/@storybook+addon-docs@10.2.11_@types+react@18.3.28_esbuild@0.25.9_storybook@10.2.11_@te_623b11407ff81c3407704a8a948465b9/node_modules/@storybook/addon-docs/dist/blocks.js"),a=t("../charts/src/charts/bar-chart/stories/index.stories.tsx");function l(s){const i={a:"a",code:"code",h1:"h1",h2:"h2",h3:"h3",li:"li",p:"p",strong:"strong",ul:"ul",...(0,o.R)(),...s.components};return(0,e.jsxs)(e.Fragment,{children:[(0,e.jsx)(n.W8,{title:"JS Packages/Charts Library/Charts/Bar Chart",of:a}),`
 `,(0,e.jsx)(i.h1,{id:"bar-chart",children:"Bar Chart"}),`
 `,(0,e.jsx)(i.p,{children:"Bar Charts visualize categorical data using rectangular bars with heights or lengths proportional to the values they represent. They excel at comparing values across categories, showing distributions, and highlighting differences in data sets."}),`
 `,(0,e.jsx)(n.Hl,{of:a.Default}),`
 `,(0,e.jsx)(i.h2,{id:"overview",children:"Overview"}),`
 `,(0,e.jsxs)(i.p,{children:["The Bar Chart component provides a flexible, accessible, and highly customizable solution for displaying categorical data. Built on ",(0,e.jsx)(i.code,{children:"@visx/xychart"}),", it supports multiple data series, both vertical and horizontal orientations, interactive tooltips, legends, and advanced visual features like pattern fills:"]}),`
 `,(0,e.jsx)(n.kL,{language:"jsx",code:`import { BarChart } from '@automattic/charts';
+import '@automattic/charts/style.css';
 
 <BarChart
 	data={ data }
@@ -333,4 +334,4 @@ const customTheme: ChartTheme = {
 `,(0,e.jsx)(i.li,{children:"Clear visual focus indicators on chart and individual bars"}),`
 `,(0,e.jsx)(i.li,{children:"Logical tab order through interactive elements"}),`
 `,(0,e.jsx)(i.li,{children:"Focus restoration after modal interactions"}),`
-`]})]})}function d(s={}){const{wrapper:i}={...(0,l.R)(),...s.components};return i?(0,e.jsx)(i,{...s,children:(0,e.jsx)(o,{...s})}):o(s)}}}]);
+`]})]})}function d(s={}){const{wrapper:i}={...(0,o.R)(),...s.components};return i?(0,e.jsx)(i,{...s,children:(0,e.jsx)(l,{...s})}):l(s)}}}]);

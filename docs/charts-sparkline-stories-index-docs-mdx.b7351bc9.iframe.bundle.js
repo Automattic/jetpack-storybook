@@ -13,7 +13,7 @@
 `]}),`
 `,(0,e.jsxs)(t.p,{children:["For full control over axes, tooltips, and other features, use LineChart directly with ",(0,e.jsx)(t.code,{children:'gridVisibility="none"'})," and ",(0,e.jsx)(t.code,{children:"options={{ axis: { x: { display: false }, y: { display: false } } }}"}),"."]}),`
 `,(0,e.jsx)(r.kL,{language:"jsx",code:`import { Sparkline } from '@automattic/charts';
-import '@automattic/charts/sparkline/style.css';
+import '@automattic/charts/style.css';
 
 <Sparkline
 	data={ [10, 15, 12, 18, 22, 25, 23, 28] }

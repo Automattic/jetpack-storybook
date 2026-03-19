@@ -5,6 +5,7 @@
 `,(0,e.jsx)(i.h2,{id:"overview",children:"Overview"}),`
 `,(0,e.jsx)(i.p,{children:"The PieSemiCircleChart component renders data as segments in a semi-circular arc (180 degrees), making it ideal for displaying percentages, categories, or proportional breakdowns in a visually compact format. This chart type is particularly effective in dashboards where vertical space is limited."}),`
 `,(0,e.jsx)(t.kL,{language:"jsx",code:`import { PieSemiCircleChart } from '@automattic/charts';
+import '@automattic/charts/style.css';
 
 const data = [
 	{
