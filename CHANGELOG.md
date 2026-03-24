@@ -18,6 +18,9 @@ This is an alpha version! The changes listed here are not final.
 - Update package dependencies.
 - Update story path for publicize components.
 
+### Fixed
+- Fix storybook build failure caused by postcss-import not resolving package.json exports for @wordpress/theme/design-tokens.css
+
 ## 1.1.2 - 2026-01-12
 ### Changed
 - Update package dependencies. [#45652] [#45737] [#45915] [#45958] [#46022] [#46143] [#46362] [#46363] [#46375] [#46456]
