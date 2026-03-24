@@ -576,13 +576,17 @@
 <header>
   <div class="wrap">
     <h1>Manifest Debugger</h1>
-    <div class="summary"><a class="filter-pill all" data-k="all" href="#filter-all">All</a><a class="filter-pill err" data-k="errors" href="#filter-errors">135/135 prop type errors</a><a class="filter-pill info" data-k="infos" href="#filter-infos">135/135 infos</a><a class="filter-pill err" data-k="story-errors" href="#filter-story-errors">12/426 story errors</a><a class="filter-pill ok" data-k="docs" href="#filter-docs">42 docs ok</a></div>
+    <div class="summary"><a class="filter-pill all" data-k="all" href="#filter-all">All</a><a class="filter-pill err" data-k="errors" href="#filter-errors">134/134 prop type errors</a><a class="filter-pill info" data-k="infos" href="#filter-infos">134/134 infos</a><a class="filter-pill err" data-k="story-errors" href="#filter-story-errors">12/425 story errors</a><a class="filter-pill ok" data-k="docs" href="#filter-docs">42 docs ok</a></div>
   </div>
 </header>
 <main>
   <div class="wrap">
-    <div class="note ok" style="margin-bottom: 16px;">
-              Using <code>react-docgen-typescript</code>. Generation took <strong>5.4s</strong>.
+    <div class="note err" style="margin-bottom: 16px;">
+              <strong>Performance warning:</strong> <code>react-docgen-typescript</code> took <strong>7.6s</strong> to generate the manifest. This delay applies every time the manifest is used by an agent. Consider switching to the faster <code>react-docgen</code> in your <code>main.ts</code>:
+              <pre><code>typescript: {
+  reactDocgen: 'react-docgen',
+}</code></pre>
+              <a href="https://storybook.js.org/docs/api/main-config/main-config-typescript#reactdocgen" target="_blank">Learn more</a>
             </div>
     <h2 class="section-title">Components</h2>
     <div class="grid" role="list">
@@ -34437,177 +34441,14 @@ export const NoLabel = args =&gt; {
   no-story-error
   no-doc-error"
   role="listitem"
-  aria-label="TabbedModal">
-  <div class="head">
-    <div class="title">
-      <h2><span class="status-dot dot-err"></span> TabbedModal</h2>
-      <div class="badges">
-        <label for="c-109-packages-publicize-tabbed-modal-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-109-packages-publicize-tabbed-modal-info" class="badge info as-toggle">1 info</label>
-        <label for="c-109-packages-publicize-tabbed-modal-stories" class="badge ok as-toggle">1 story</label>
-        
-      </div>
-    </div>
-    <div class="meta" title="../../packages/publicize/_inc/components/tabbed-modal/stories/index.stories.tsx">packages-publicize-tabbed-modal · ../../packages/publicize/_inc/components/tabbed-modal/stories/index.stories.tsx</div>
-    
-    
-    
-  </div>
-
-  <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-109-packages-publicize-tabbed-modal-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-109-packages-publicize-tabbed-modal-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-109-packages-publicize-tabbed-modal-stories" class="tg tg-stories" type="checkbox" hidden />
-  
-  
-
-  <div class="panels">
-    
-        <div class="panel panel-err">
-          
-    <div class="note err">
-      <div class="note-title">Prop type error</div>
-      <div class="note-body"><pre><code>No component file found for the &quot;TabbedModal&quot; component.
-  4 | import type { StoryFn, Meta } from &#39;@storybook/react&#39;;
-  5 |
-&gt; 6 | export default {
-    | ^
-  7 | 	title: &#39;Packages/Publicize/Tabbed Modal&#39;,
-  8 | 	component: TabbedModal,
-  9 | 	parameters: {
-
-../../packages/publicize/_inc/components/tabbed-modal/stories/index.stories.tsx:
-import { Button } from &#39;@wordpress/components&#39;;
-import { useCallback, useState } from &#39;@wordpress/element&#39;;
-import TabbedModal, { ModalTab, TabbedModalProps } from &#39;../index&#39;;
-import type { StoryFn, Meta } from &#39;@storybook/react&#39;;
-
-export default {
-	title: &#39;Packages/Publicize/Tabbed Modal&#39;,
-	component: TabbedModal,
-	parameters: {
-		layout: &#39;centered&#39;,
-	},
-} satisfies Meta&lt; typeof TabbedModal &gt;;
-
-// Create interactive template with open/close functionality
-const Template: StoryFn&lt; typeof TabbedModal &gt; = args =&gt; {
-	const [ isOpen, setIsOpen ] = useState( false );
-
-	const openModal = useCallback( () =&gt; setIsOpen( true ), [] );
-	const closeModal = useCallback( () =&gt; setIsOpen( false ), [] );
-
-	return (
-		&lt;&gt;
-			&lt;Button variant=&quot;primary&quot; onClick={ openModal }&gt;
-				Open Modal
-			&lt;/Button&gt;
-			&lt;TabbedModal { ...args } isOpen={ isOpen } onClose={ closeModal } /&gt;
-		&lt;/&gt;
-	);
-};
-
-const sampleTabs: ModalTab[] = [
-	{
-		name: &#39;tab1&#39;,
-		title: &#39;New Share&#39;,
-		content: (
-			&lt;div&gt;
-				&lt;h4&gt;First Tab Content&lt;/h4&gt;
-				&lt;p&gt;This is the content of the first tab. You can put any React components here.&lt;/p&gt;
-			&lt;/div&gt;
-		),
-	},
-	{
-		name: &#39;tab2&#39;,
-		title: &#39;Scheduled&#39;,
-		content: (
-			&lt;div&gt;
-				&lt;h4&gt;Second Tab Content&lt;/h4&gt;
-				&lt;p&gt;This is the content of the second tab with different components.&lt;/p&gt;
-				&lt;Button variant=&quot;secondary&quot;&gt;Example Button&lt;/Button&gt;
-			&lt;/div&gt;
-		),
-	},
-];
-
-const DefaultArgs: TabbedModalProps = {
-	isOpen: false,
-	onClose: () =&gt; {},
-	title: &#39;Share Post&#39;,
-	tabs: sampleTabs,
-};
-
-// Export Default story
-export const Default = Template.bind( {} );
-Default.args = DefaultArgs;
-</code></pre></div>
-    </div>
-        </div>
-    
-        <div class="panel panel-info">
-          
-    <div class="note info">
-      <div class="note-title">Info</div>
-      <div class="note-body">No description found. Write a jsdoc comment such as /** Component description */.</div>
-    </div>
-        </div>
-    
-    
-        <div class="panel panel-stories">
-          
-          
-          
-          <div class="note ok">
-                <div class="row">
-                  <span class="ex-name">Imports</span>
-                </div>
-                <pre><code>import { Button } from "@wordpress/components";
-import { TabbedModal } from "@automattic/jetpack-publicize";</code></pre>
-              </div>
-          
-          
-            <div class="note ok">
-              <div class="row">
-                <span class="ex-name">Default</span>
-                <span class="badge ok">story ok</span>
-              </div>
-              
-              
-              <pre><code>const Default = () =&gt; {
-    const [ isOpen, setIsOpen ] = useState( false );
-
-    const openModal = useCallback( () =&gt; setIsOpen( true ), [] );
-    const closeModal = useCallback( () =&gt; setIsOpen( false ), [] );
-
-    return (
-        &lt;&gt;
-            &lt;Button variant=&quot;primary&quot; onClick={ openModal }&gt;Open Modal
-                            &lt;/Button&gt;
-            &lt;TabbedModal isOpen={ isOpen } onClose={ closeModal } /&gt;
-        &lt;/&gt;
-    );
-};</code></pre>
-            </div>
-        </div>
-    
-  </div>
-</article>
-<article
-  class="card 
-  has-error 
-  has-info 
-  no-story-error
-  no-doc-error"
-  role="listitem"
   aria-label="Tabs">
   <div class="head">
     <div class="title">
       <h2><span class="status-dot dot-err"></span> Tabs</h2>
       <div class="badges">
-        <label for="c-110-plugins-protect-tabs-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-110-plugins-protect-tabs-info" class="badge info as-toggle">1 info</label>
-        <label for="c-110-plugins-protect-tabs-stories" class="badge ok as-toggle">1 story</label>
+        <label for="c-109-plugins-protect-tabs-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-109-plugins-protect-tabs-info" class="badge info as-toggle">1 info</label>
+        <label for="c-109-plugins-protect-tabs-stories" class="badge ok as-toggle">1 story</label>
         
       </div>
     </div>
@@ -34618,9 +34459,9 @@ import { TabbedModal } from "@automattic/jetpack-publicize";</code></pre>
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-110-plugins-protect-tabs-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-110-plugins-protect-tabs-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-110-plugins-protect-tabs-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-109-plugins-protect-tabs-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-109-plugins-protect-tabs-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-109-plugins-protect-tabs-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
@@ -34712,10 +34553,10 @@ import Tabs, { Tab } from "..";</code></pre>
     <div class="title">
       <h2><span class="status-dot dot-err"></span> Text</h2>
       <div class="badges">
-        <label for="c-111-js-packages-components-text-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-111-js-packages-components-text-info" class="badge info as-toggle">1 info</label>
-        <label for="c-111-js-packages-components-text-stories" class="badge ok as-toggle">4 stories</label>
-        <label for="c-111-js-packages-components-text-docs" class="badge ok as-toggle">1 doc</label>
+        <label for="c-110-js-packages-components-text-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-110-js-packages-components-text-info" class="badge info as-toggle">1 info</label>
+        <label for="c-110-js-packages-components-text-stories" class="badge ok as-toggle">4 stories</label>
+        <label for="c-110-js-packages-components-text-docs" class="badge ok as-toggle">1 doc</label>
       </div>
     </div>
     <div class="meta" title="../components/components/text/stories/index.stories.tsx">js-packages-components-text · ../components/components/text/stories/index.stories.tsx</div>
@@ -34725,10 +34566,10 @@ import Tabs, { Tab } from "..";</code></pre>
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-111-js-packages-components-text-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-111-js-packages-components-text-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-111-js-packages-components-text-stories" class="tg tg-stories" type="checkbox" hidden />
-  <input id="c-111-js-packages-components-text-docs" class="tg tg-docs" type="checkbox" hidden />
+  <input id="c-110-js-packages-components-text-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-110-js-packages-components-text-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-110-js-packages-components-text-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-110-js-packages-components-text-docs" class="tg tg-docs" type="checkbox" hidden />
   
 
   <div class="panels">
@@ -35109,9 +34950,9 @@ Text shorthand to render a `body` text, applying proper spacing.
     <div class="title">
       <h2><span class="status-dot dot-err"></span> Textarea</h2>
       <div class="badges">
-        <label for="c-112-plugins-protect-textarea-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-112-plugins-protect-textarea-info" class="badge info as-toggle">1 info</label>
-        <label for="c-112-plugins-protect-textarea-stories" class="badge ok as-toggle">2 stories</label>
+        <label for="c-111-plugins-protect-textarea-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-111-plugins-protect-textarea-info" class="badge info as-toggle">1 info</label>
+        <label for="c-111-plugins-protect-textarea-stories" class="badge ok as-toggle">2 stories</label>
         
       </div>
     </div>
@@ -35122,9 +34963,9 @@ Text shorthand to render a `body` text, applying proper spacing.
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-112-plugins-protect-textarea-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-112-plugins-protect-textarea-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-112-plugins-protect-textarea-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-111-plugins-protect-textarea-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-111-plugins-protect-textarea-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-111-plugins-protect-textarea-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
@@ -35223,9 +35064,9 @@ Disabled.args = {
     <div class="title">
       <h2><span class="status-dot dot-err"></span> ThemeProvider</h2>
       <div class="badges">
-        <label for="c-113-js-packages-components-theme-provider-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-113-js-packages-components-theme-provider-info" class="badge info as-toggle">1 info</label>
-        <label for="c-113-js-packages-components-theme-provider-stories" class="badge ok as-toggle">4 stories</label>
+        <label for="c-112-js-packages-components-theme-provider-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-112-js-packages-components-theme-provider-info" class="badge info as-toggle">1 info</label>
+        <label for="c-112-js-packages-components-theme-provider-stories" class="badge ok as-toggle">4 stories</label>
         
       </div>
     </div>
@@ -35236,9 +35077,9 @@ Disabled.args = {
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-113-js-packages-components-theme-provider-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-113-js-packages-components-theme-provider-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-113-js-packages-components-theme-provider-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-112-js-packages-components-theme-provider-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-112-js-packages-components-theme-provider-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-112-js-packages-components-theme-provider-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
@@ -35565,9 +35406,9 @@ import { Col, Container, ThemeProvider } from "@automattic/jetpack-components";<
     <div class="title">
       <h2><span class="status-dot dot-err"></span> ThreatFixerButton</h2>
       <div class="badges">
-        <label for="c-114-js-packages-scan-threat-fixer-button-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-114-js-packages-scan-threat-fixer-button-info" class="badge info as-toggle">1 info</label>
-        <label for="c-114-js-packages-scan-threat-fixer-button-stories" class="badge ok as-toggle">13 stories</label>
+        <label for="c-113-js-packages-scan-threat-fixer-button-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-113-js-packages-scan-threat-fixer-button-info" class="badge info as-toggle">1 info</label>
+        <label for="c-113-js-packages-scan-threat-fixer-button-stories" class="badge ok as-toggle">13 stories</label>
         
       </div>
     </div>
@@ -35578,9 +35419,9 @@ import { Col, Container, ThemeProvider } from "@automattic/jetpack-components";<
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-114-js-packages-scan-threat-fixer-button-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-114-js-packages-scan-threat-fixer-button-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-114-js-packages-scan-threat-fixer-button-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-113-js-packages-scan-threat-fixer-button-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-113-js-packages-scan-threat-fixer-button-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-113-js-packages-scan-threat-fixer-button-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
@@ -35912,9 +35753,9 @@ ErrorFixer.args = {
     <div class="title">
       <h2><span class="status-dot dot-err"></span> ThreatModal</h2>
       <div class="badges">
-        <label for="c-115-js-packages-scan-threat-modal-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-115-js-packages-scan-threat-modal-info" class="badge info as-toggle">1 info</label>
-        <label for="c-115-js-packages-scan-threat-modal-stories" class="badge ok as-toggle">8 stories</label>
+        <label for="c-114-js-packages-scan-threat-modal-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-114-js-packages-scan-threat-modal-info" class="badge info as-toggle">1 info</label>
+        <label for="c-114-js-packages-scan-threat-modal-stories" class="badge ok as-toggle">8 stories</label>
         
       </div>
     </div>
@@ -35925,9 +35766,9 @@ ErrorFixer.args = {
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-115-js-packages-scan-threat-modal-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-115-js-packages-scan-threat-modal-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-115-js-packages-scan-threat-modal-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-114-js-packages-scan-threat-modal-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-114-js-packages-scan-threat-modal-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-114-js-packages-scan-threat-modal-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
@@ -36406,9 +36247,9 @@ import { ThreatModal } from "@automattic/jetpack-scan";</code></pre>
     <div class="title">
       <h2><span class="status-dot dot-err"></span> ThreatsDataViews</h2>
       <div class="badges">
-        <label for="c-116-js-packages-scan-threats-data-views-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-116-js-packages-scan-threats-data-views-info" class="badge info as-toggle">1 info</label>
-        <label for="c-116-js-packages-scan-threats-data-views-stories" class="badge ok as-toggle">3 stories</label>
+        <label for="c-115-js-packages-scan-threats-data-views-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-115-js-packages-scan-threats-data-views-info" class="badge info as-toggle">1 info</label>
+        <label for="c-115-js-packages-scan-threats-data-views-stories" class="badge ok as-toggle">3 stories</label>
         
       </div>
     </div>
@@ -36419,9 +36260,9 @@ import { ThreatModal } from "@automattic/jetpack-scan";</code></pre>
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-116-js-packages-scan-threats-data-views-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-116-js-packages-scan-threats-data-views-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-116-js-packages-scan-threats-data-views-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-115-js-packages-scan-threats-data-views-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-115-js-packages-scan-threats-data-views-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-115-js-packages-scan-threats-data-views-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
@@ -37128,9 +36969,9 @@ FreeResults.args = {
     <div class="title">
       <h2><span class="status-dot dot-err"></span> ThreatSeverityBadge</h2>
       <div class="badges">
-        <label for="c-117-js-packages-scan-threat-severity-badge-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-117-js-packages-scan-threat-severity-badge-info" class="badge info as-toggle">1 info</label>
-        <label for="c-117-js-packages-scan-threat-severity-badge-stories" class="badge ok as-toggle">3 stories</label>
+        <label for="c-116-js-packages-scan-threat-severity-badge-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-116-js-packages-scan-threat-severity-badge-info" class="badge info as-toggle">1 info</label>
+        <label for="c-116-js-packages-scan-threat-severity-badge-stories" class="badge ok as-toggle">3 stories</label>
         
       </div>
     </div>
@@ -37141,9 +36982,9 @@ FreeResults.args = {
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-117-js-packages-scan-threat-severity-badge-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-117-js-packages-scan-threat-severity-badge-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-117-js-packages-scan-threat-severity-badge-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-116-js-packages-scan-threat-severity-badge-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-116-js-packages-scan-threat-severity-badge-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-116-js-packages-scan-threat-severity-badge-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
@@ -37244,10 +37085,10 @@ Critical.args = { severity: 5 };
     <div class="title">
       <h2><span class="status-dot dot-err"></span> TimestampControl</h2>
       <div class="badges">
-        <label for="c-118-packages-videopress-timestamp-control-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-118-packages-videopress-timestamp-control-info" class="badge info as-toggle">1 info</label>
-        <label for="c-118-packages-videopress-timestamp-control-stories" class="badge ok as-toggle">7 stories</label>
-        <label for="c-118-packages-videopress-timestamp-control-docs" class="badge ok as-toggle">1 doc</label>
+        <label for="c-117-packages-videopress-timestamp-control-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-117-packages-videopress-timestamp-control-info" class="badge info as-toggle">1 info</label>
+        <label for="c-117-packages-videopress-timestamp-control-stories" class="badge ok as-toggle">7 stories</label>
+        <label for="c-117-packages-videopress-timestamp-control-docs" class="badge ok as-toggle">1 doc</label>
       </div>
     </div>
     <div class="meta" title="../../packages/videopress/src/client/components/timestamp-control/stories/index.stories.tsx">packages-videopress-timestamp-control · ../../packages/videopress/src/client/components/timestamp-control/stories/index.stories.tsx</div>
@@ -37257,10 +37098,10 @@ Critical.args = { severity: 5 };
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-118-packages-videopress-timestamp-control-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-118-packages-videopress-timestamp-control-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-118-packages-videopress-timestamp-control-stories" class="tg tg-stories" type="checkbox" hidden />
-  <input id="c-118-packages-videopress-timestamp-control-docs" class="tg tg-docs" type="checkbox" hidden />
+  <input id="c-117-packages-videopress-timestamp-control-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-117-packages-videopress-timestamp-control-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-117-packages-videopress-timestamp-control-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-117-packages-videopress-timestamp-control-docs" class="tg tg-docs" type="checkbox" hidden />
   
 
   <div class="panels">
@@ -37712,9 +37553,9 @@ but also it&#39;s doable by using the additional range control.
     <div class="title">
       <h2><span class="status-dot dot-err"></span> Title</h2>
       <div class="badges">
-        <label for="c-119-js-packages-components-text-title-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-119-js-packages-components-text-title-info" class="badge info as-toggle">1 info</label>
-        <label for="c-119-js-packages-components-text-title-stories" class="badge ok as-toggle">1 story</label>
+        <label for="c-118-js-packages-components-text-title-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-118-js-packages-components-text-title-info" class="badge info as-toggle">1 info</label>
+        <label for="c-118-js-packages-components-text-title-stories" class="badge ok as-toggle">1 story</label>
         
       </div>
     </div>
@@ -37725,9 +37566,9 @@ but also it&#39;s doable by using the additional range control.
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-119-js-packages-components-text-title-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-119-js-packages-components-text-title-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-119-js-packages-components-text-title-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-118-js-packages-components-text-title-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-118-js-packages-components-text-title-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-118-js-packages-components-text-title-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
@@ -37837,9 +37678,9 @@ Default.args = {
     <div class="title">
       <h2><span class="status-dot dot-err"></span> ToggleControl</h2>
       <div class="badges">
-        <label for="c-120-js-packages-components-toggle-control-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-120-js-packages-components-toggle-control-info" class="badge info as-toggle">1 info</label>
-        <label for="c-120-js-packages-components-toggle-control-stories" class="badge ok as-toggle">5 stories</label>
+        <label for="c-119-js-packages-components-toggle-control-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-119-js-packages-components-toggle-control-info" class="badge info as-toggle">1 info</label>
+        <label for="c-119-js-packages-components-toggle-control-stories" class="badge ok as-toggle">5 stories</label>
         
       </div>
     </div>
@@ -37850,9 +37691,9 @@ Default.args = {
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-120-js-packages-components-toggle-control-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-120-js-packages-components-toggle-control-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-120-js-packages-components-toggle-control-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-119-js-packages-components-toggle-control-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-119-js-packages-components-toggle-control-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-119-js-packages-components-toggle-control-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
@@ -38139,9 +37980,9 @@ export const HelpText = args =&gt; {
     <div class="title">
       <h2><span class="status-dot dot-err"></span> Tooltip</h2>
       <div class="badges">
-        <label for="c-121-js-packages-components-boost-score-tooltip-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-121-js-packages-components-boost-score-tooltip-info" class="badge info as-toggle">1 info</label>
-        <label for="c-121-js-packages-components-boost-score-tooltip-stories" class="badge ok as-toggle">1 story</label>
+        <label for="c-120-js-packages-components-boost-score-tooltip-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-120-js-packages-components-boost-score-tooltip-info" class="badge info as-toggle">1 info</label>
+        <label for="c-120-js-packages-components-boost-score-tooltip-stories" class="badge ok as-toggle">1 story</label>
         
       </div>
     </div>
@@ -38152,9 +37993,9 @@ export const HelpText = args =&gt; {
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-121-js-packages-components-boost-score-tooltip-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-121-js-packages-components-boost-score-tooltip-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-121-js-packages-components-boost-score-tooltip-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-120-js-packages-components-boost-score-tooltip-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-120-js-packages-components-boost-score-tooltip-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-120-js-packages-components-boost-score-tooltip-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
@@ -38282,9 +38123,9 @@ _default.args = {
     <div class="title">
       <h2><span class="status-dot dot-err"></span> Tooltips</h2>
       <div class="badges">
-        <label for="c-122-js-packages-charts-library-charts-geo-chart-tooltips-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-122-js-packages-charts-library-charts-geo-chart-tooltips-info" class="badge info as-toggle">2 infos</label>
-        <label for="c-122-js-packages-charts-library-charts-geo-chart-tooltips-stories" class="badge err as-toggle">4/4 story errors</label>
+        <label for="c-121-js-packages-charts-library-charts-geo-chart-tooltips-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-121-js-packages-charts-library-charts-geo-chart-tooltips-info" class="badge info as-toggle">2 infos</label>
+        <label for="c-121-js-packages-charts-library-charts-geo-chart-tooltips-stories" class="badge err as-toggle">4/4 story errors</label>
         
       </div>
     </div>
@@ -38295,9 +38136,9 @@ _default.args = {
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-122-js-packages-charts-library-charts-geo-chart-tooltips-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-122-js-packages-charts-library-charts-geo-chart-tooltips-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-122-js-packages-charts-library-charts-geo-chart-tooltips-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-121-js-packages-charts-library-charts-geo-chart-tooltips-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-121-js-packages-charts-library-charts-geo-chart-tooltips-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-121-js-packages-charts-library-charts-geo-chart-tooltips-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
@@ -38485,9 +38326,9 @@ export const Complex: Story = {
     <div class="title">
       <h2><span class="status-dot dot-err"></span> Tooltips</h2>
       <div class="badges">
-        <label for="c-123-js-packages-charts-library-charts-line-chart-tooltips-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-123-js-packages-charts-library-charts-line-chart-tooltips-info" class="badge info as-toggle">1 info</label>
-        <label for="c-123-js-packages-charts-library-charts-line-chart-tooltips-stories" class="badge ok as-toggle">6 stories</label>
+        <label for="c-122-js-packages-charts-library-charts-line-chart-tooltips-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-122-js-packages-charts-library-charts-line-chart-tooltips-info" class="badge info as-toggle">1 info</label>
+        <label for="c-122-js-packages-charts-library-charts-line-chart-tooltips-stories" class="badge ok as-toggle">6 stories</label>
         
       </div>
     </div>
@@ -38498,9 +38339,9 @@ export const Complex: Story = {
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-123-js-packages-charts-library-charts-line-chart-tooltips-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-123-js-packages-charts-library-charts-line-chart-tooltips-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-123-js-packages-charts-library-charts-line-chart-tooltips-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-122-js-packages-charts-library-charts-line-chart-tooltips-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-122-js-packages-charts-library-charts-line-chart-tooltips-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-122-js-packages-charts-library-charts-line-chart-tooltips-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
@@ -38743,10 +38584,10 @@ Custom.args = {
     <div class="title">
       <h2><span class="status-dot dot-err"></span> TrendIndicator</h2>
       <div class="badges">
-        <label for="c-124-js-packages-charts-library-components-trend-indicator-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-124-js-packages-charts-library-components-trend-indicator-info" class="badge info as-toggle">1 info</label>
-        <label for="c-124-js-packages-charts-library-components-trend-indicator-stories" class="badge ok as-toggle">4 stories</label>
-        <label for="c-124-js-packages-charts-library-components-trend-indicator-docs" class="badge ok as-toggle">1 doc</label>
+        <label for="c-123-js-packages-charts-library-components-trend-indicator-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-123-js-packages-charts-library-components-trend-indicator-info" class="badge info as-toggle">1 info</label>
+        <label for="c-123-js-packages-charts-library-components-trend-indicator-stories" class="badge ok as-toggle">4 stories</label>
+        <label for="c-123-js-packages-charts-library-components-trend-indicator-docs" class="badge ok as-toggle">1 doc</label>
       </div>
     </div>
     <div class="meta" title="../charts/src/components/trend-indicator/stories/index.stories.tsx">js-packages-charts-library-components-trend-indicator · ../charts/src/components/trend-indicator/stories/index.stories.tsx</div>
@@ -38756,10 +38597,10 @@ Custom.args = {
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-124-js-packages-charts-library-components-trend-indicator-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-124-js-packages-charts-library-components-trend-indicator-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-124-js-packages-charts-library-components-trend-indicator-stories" class="tg tg-stories" type="checkbox" hidden />
-  <input id="c-124-js-packages-charts-library-components-trend-indicator-docs" class="tg tg-docs" type="checkbox" hidden />
+  <input id="c-123-js-packages-charts-library-components-trend-indicator-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-123-js-packages-charts-library-components-trend-indicator-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-123-js-packages-charts-library-components-trend-indicator-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-123-js-packages-charts-library-components-trend-indicator-docs" class="tg tg-docs" type="checkbox" hidden />
   
 
   <div class="panels">
@@ -39127,9 +38968,9 @@ The TrendIndicator component includes built-in accessibility features:
     <div class="title">
       <h2><span class="status-dot dot-err"></span> UpsellBanner</h2>
       <div class="badges">
-        <label for="c-125-js-packages-components-upsell-banner-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-125-js-packages-components-upsell-banner-info" class="badge info as-toggle">1 info</label>
-        <label for="c-125-js-packages-components-upsell-banner-stories" class="badge ok as-toggle">4 stories</label>
+        <label for="c-124-js-packages-components-upsell-banner-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-124-js-packages-components-upsell-banner-info" class="badge info as-toggle">1 info</label>
+        <label for="c-124-js-packages-components-upsell-banner-stories" class="badge ok as-toggle">4 stories</label>
         
       </div>
     </div>
@@ -39140,9 +38981,9 @@ The TrendIndicator component includes built-in accessibility features:
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-125-js-packages-components-upsell-banner-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-125-js-packages-components-upsell-banner-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-125-js-packages-components-upsell-banner-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-124-js-packages-components-upsell-banner-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-124-js-packages-components-upsell-banner-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-124-js-packages-components-upsell-banner-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
@@ -39341,9 +39182,9 @@ export const WithoutSecondaryBtn = args =&gt; {
     <div class="title">
       <h2><span class="status-dot dot-err"></span> UsagePanel</h2>
       <div class="badges">
-        <label for="c-126-plugins-jetpack-extensions-usagepanel-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-126-plugins-jetpack-extensions-usagepanel-info" class="badge info as-toggle">1 info</label>
-        <label for="c-126-plugins-jetpack-extensions-usagepanel-stories" class="badge ok as-toggle">1 story</label>
+        <label for="c-125-plugins-jetpack-extensions-usagepanel-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-125-plugins-jetpack-extensions-usagepanel-info" class="badge info as-toggle">1 info</label>
+        <label for="c-125-plugins-jetpack-extensions-usagepanel-stories" class="badge ok as-toggle">1 story</label>
         
       </div>
     </div>
@@ -39354,9 +39195,9 @@ export const WithoutSecondaryBtn = args =&gt; {
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-126-plugins-jetpack-extensions-usagepanel-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-126-plugins-jetpack-extensions-usagepanel-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-126-plugins-jetpack-extensions-usagepanel-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-125-plugins-jetpack-extensions-usagepanel-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-125-plugins-jetpack-extensions-usagepanel-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-125-plugins-jetpack-extensions-usagepanel-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
@@ -39463,9 +39304,9 @@ defaultView.args = {
     <div class="title">
       <h2><span class="status-dot dot-err"></span> VanillaPopOut</h2>
       <div class="badges">
-        <label for="c-127-plugins-boost-features-speed-score-vanilla-popout-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-127-plugins-boost-features-speed-score-vanilla-popout-info" class="badge info as-toggle">1 info</label>
-        <label for="c-127-plugins-boost-features-speed-score-vanilla-popout-stories" class="badge ok as-toggle">1 story</label>
+        <label for="c-126-plugins-boost-features-speed-score-vanilla-popout-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-126-plugins-boost-features-speed-score-vanilla-popout-info" class="badge info as-toggle">1 info</label>
+        <label for="c-126-plugins-boost-features-speed-score-vanilla-popout-stories" class="badge ok as-toggle">1 story</label>
         
       </div>
     </div>
@@ -39476,9 +39317,9 @@ defaultView.args = {
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-127-plugins-boost-features-speed-score-vanilla-popout-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-127-plugins-boost-features-speed-score-vanilla-popout-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-127-plugins-boost-features-speed-score-vanilla-popout-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-126-plugins-boost-features-speed-score-vanilla-popout-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-126-plugins-boost-features-speed-score-vanilla-popout-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-126-plugins-boost-features-speed-score-vanilla-popout-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
@@ -39604,9 +39445,9 @@ _default.args = defaultValues;
     <div class="title">
       <h2><span class="status-dot dot-err"></span> VideoDetails</h2>
       <div class="badges">
-        <label for="c-128-packages-videopress-video-details-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-128-packages-videopress-video-details-info" class="badge info as-toggle">1 info</label>
-        <label for="c-128-packages-videopress-video-details-stories" class="badge err as-toggle">1/1 story errors</label>
+        <label for="c-127-packages-videopress-video-details-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-127-packages-videopress-video-details-info" class="badge info as-toggle">1 info</label>
+        <label for="c-127-packages-videopress-video-details-stories" class="badge err as-toggle">1/1 story errors</label>
         
       </div>
     </div>
@@ -39617,9 +39458,9 @@ _default.args = defaultValues;
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-128-packages-videopress-video-details-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-128-packages-videopress-video-details-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-128-packages-videopress-video-details-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-127-packages-videopress-video-details-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-127-packages-videopress-video-details-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-127-packages-videopress-video-details-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
@@ -39720,9 +39561,9 @@ Default.args = {
     <div class="title">
       <h2><span class="status-dot dot-err"></span> VideoFrameSelector</h2>
       <div class="badges">
-        <label for="c-129-packages-videopress-video-frame-selector-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-129-packages-videopress-video-frame-selector-info" class="badge info as-toggle">1 info</label>
-        <label for="c-129-packages-videopress-video-frame-selector-stories" class="badge ok as-toggle">2 stories</label>
+        <label for="c-128-packages-videopress-video-frame-selector-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-128-packages-videopress-video-frame-selector-info" class="badge info as-toggle">1 info</label>
+        <label for="c-128-packages-videopress-video-frame-selector-stories" class="badge ok as-toggle">2 stories</label>
         
       </div>
     </div>
@@ -39733,9 +39574,9 @@ Default.args = {
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-129-packages-videopress-video-frame-selector-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-129-packages-videopress-video-frame-selector-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-129-packages-videopress-video-frame-selector-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-128-packages-videopress-video-frame-selector-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-128-packages-videopress-video-frame-selector-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-128-packages-videopress-video-frame-selector-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
@@ -39846,9 +39687,9 @@ VideoPlayer.args = {
     <div class="title">
       <h2><span class="status-dot dot-err"></span> VideoQuickActions</h2>
       <div class="badges">
-        <label for="c-130-packages-videopress-video-quick-actions-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-130-packages-videopress-video-quick-actions-info" class="badge info as-toggle">1 info</label>
-        <label for="c-130-packages-videopress-video-quick-actions-stories" class="badge ok as-toggle">1 story</label>
+        <label for="c-129-packages-videopress-video-quick-actions-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-129-packages-videopress-video-quick-actions-info" class="badge info as-toggle">1 info</label>
+        <label for="c-129-packages-videopress-video-quick-actions-stories" class="badge ok as-toggle">1 story</label>
         
       </div>
     </div>
@@ -39859,9 +39700,9 @@ VideoPlayer.args = {
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-130-packages-videopress-video-quick-actions-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-130-packages-videopress-video-quick-actions-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-130-packages-videopress-video-quick-actions-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-129-packages-videopress-video-quick-actions-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-129-packages-videopress-video-quick-actions-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-129-packages-videopress-video-quick-actions-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
@@ -39960,10 +39801,10 @@ _default.args = {
     <div class="title">
       <h2><span class="status-dot dot-err"></span> VideoStatsGroup</h2>
       <div class="badges">
-        <label for="c-131-packages-videopress-video-stats-group-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-131-packages-videopress-video-stats-group-info" class="badge info as-toggle">1 info</label>
-        <label for="c-131-packages-videopress-video-stats-group-stories" class="badge ok as-toggle">1 story</label>
-        <label for="c-131-packages-videopress-video-stats-group-docs" class="badge ok as-toggle">1 doc</label>
+        <label for="c-130-packages-videopress-video-stats-group-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-130-packages-videopress-video-stats-group-info" class="badge info as-toggle">1 info</label>
+        <label for="c-130-packages-videopress-video-stats-group-stories" class="badge ok as-toggle">1 story</label>
+        <label for="c-130-packages-videopress-video-stats-group-docs" class="badge ok as-toggle">1 doc</label>
       </div>
     </div>
     <div class="meta" title="../../packages/videopress/src/client/admin/components/video-stats-group/stories/index.stories.tsx">packages-videopress-video-stats-group · ../../packages/videopress/src/client/admin/components/video-stats-group/stories/index.stories.tsx</div>
@@ -39973,10 +39814,10 @@ _default.args = {
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-131-packages-videopress-video-stats-group-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-131-packages-videopress-video-stats-group-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-131-packages-videopress-video-stats-group-stories" class="tg tg-stories" type="checkbox" hidden />
-  <input id="c-131-packages-videopress-video-stats-group-docs" class="tg tg-docs" type="checkbox" hidden />
+  <input id="c-130-packages-videopress-video-stats-group-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-130-packages-videopress-video-stats-group-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-130-packages-videopress-video-stats-group-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-130-packages-videopress-video-stats-group-docs" class="tg tg-docs" type="checkbox" hidden />
   
 
   <div class="panels">
@@ -40106,10 +39947,10 @@ The total number of video plays of the current day.
     <div class="title">
       <h2><span class="status-dot dot-err"></span> VideoStorageMeter</h2>
       <div class="badges">
-        <label for="c-132-packages-videopress-video-storage-meter-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-132-packages-videopress-video-storage-meter-info" class="badge info as-toggle">1 info</label>
-        <label for="c-132-packages-videopress-video-storage-meter-stories" class="badge ok as-toggle">1 story</label>
-        <label for="c-132-packages-videopress-video-storage-meter-docs" class="badge ok as-toggle">1 doc</label>
+        <label for="c-131-packages-videopress-video-storage-meter-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-131-packages-videopress-video-storage-meter-info" class="badge info as-toggle">1 info</label>
+        <label for="c-131-packages-videopress-video-storage-meter-stories" class="badge ok as-toggle">1 story</label>
+        <label for="c-131-packages-videopress-video-storage-meter-docs" class="badge ok as-toggle">1 doc</label>
       </div>
     </div>
     <div class="meta" title="../../packages/videopress/src/client/admin/components/video-storage-meter/stories/index.stories.tsx">packages-videopress-video-storage-meter · ../../packages/videopress/src/client/admin/components/video-storage-meter/stories/index.stories.tsx</div>
@@ -40119,10 +39960,10 @@ The total number of video plays of the current day.
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-132-packages-videopress-video-storage-meter-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-132-packages-videopress-video-storage-meter-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-132-packages-videopress-video-storage-meter-stories" class="tg tg-stories" type="checkbox" hidden />
-  <input id="c-132-packages-videopress-video-storage-meter-docs" class="tg tg-docs" type="checkbox" hidden />
+  <input id="c-131-packages-videopress-video-storage-meter-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-131-packages-videopress-video-storage-meter-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-131-packages-videopress-video-storage-meter-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-131-packages-videopress-video-storage-meter-docs" class="tg tg-docs" type="checkbox" hidden />
   
 
   <div class="panels">
@@ -40259,9 +40100,9 @@ Optional classname to apply to the root element.
     <div class="title">
       <h2><span class="status-dot dot-err"></span> VideoThumbnail</h2>
       <div class="badges">
-        <label for="c-133-packages-videopress-video-thumbnail-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-133-packages-videopress-video-thumbnail-info" class="badge info as-toggle">1 info</label>
-        <label for="c-133-packages-videopress-video-thumbnail-stories" class="badge err as-toggle">1/3 story errors</label>
+        <label for="c-132-packages-videopress-video-thumbnail-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-132-packages-videopress-video-thumbnail-info" class="badge info as-toggle">1 info</label>
+        <label for="c-132-packages-videopress-video-thumbnail-stories" class="badge err as-toggle">1/3 story errors</label>
         
       </div>
     </div>
@@ -40272,9 +40113,9 @@ Optional classname to apply to the root element.
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-133-packages-videopress-video-thumbnail-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-133-packages-videopress-video-thumbnail-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-133-packages-videopress-video-thumbnail-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-132-packages-videopress-video-thumbnail-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-132-packages-videopress-video-thumbnail-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-132-packages-videopress-video-thumbnail-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
@@ -40465,9 +40306,9 @@ VideoDropdown.args = {
     <div class="title">
       <h2><span class="status-dot dot-err"></span> ZendeskChat</h2>
       <div class="badges">
-        <label for="c-134-js-packages-components-zendesk-chat-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-134-js-packages-components-zendesk-chat-info" class="badge info as-toggle">1 info</label>
-        <label for="c-134-js-packages-components-zendesk-chat-stories" class="badge ok as-toggle">1 story</label>
+        <label for="c-133-js-packages-components-zendesk-chat-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-133-js-packages-components-zendesk-chat-info" class="badge info as-toggle">1 info</label>
+        <label for="c-133-js-packages-components-zendesk-chat-stories" class="badge ok as-toggle">1 story</label>
         
       </div>
     </div>
@@ -40478,9 +40319,9 @@ VideoDropdown.args = {
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-134-js-packages-components-zendesk-chat-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-134-js-packages-components-zendesk-chat-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-134-js-packages-components-zendesk-chat-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-133-js-packages-components-zendesk-chat-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-133-js-packages-components-zendesk-chat-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-133-js-packages-components-zendesk-chat-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
@@ -40555,7 +40396,7 @@ export const _default = Template.bind( {} );
           <label for="no-component-import-found-toggle" class="group-header">
             <span class="caret">▸</span>
             <span class="group-title">No component import found</span>
-            <span class="group-count">124</span>
+            <span class="group-count">123</span>
           </label>
           <div class="group-cards">
 <article
@@ -69015,177 +68856,14 @@ export const NoLabel = args =&gt; {
   no-story-error
   no-doc-error"
   role="listitem"
-  aria-label="TabbedModal">
-  <div class="head">
-    <div class="title">
-      <h2><span class="status-dot dot-err"></span> TabbedModal</h2>
-      <div class="badges">
-        <label for="c-error-101-packages-publicize-tabbed-modal-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-error-101-packages-publicize-tabbed-modal-info" class="badge info as-toggle">1 info</label>
-        <label for="c-error-101-packages-publicize-tabbed-modal-stories" class="badge ok as-toggle">1 story</label>
-        
-      </div>
-    </div>
-    <div class="meta" title="../../packages/publicize/_inc/components/tabbed-modal/stories/index.stories.tsx">packages-publicize-tabbed-modal · ../../packages/publicize/_inc/components/tabbed-modal/stories/index.stories.tsx</div>
-    
-    
-    
-  </div>
-
-  <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-error-101-packages-publicize-tabbed-modal-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-error-101-packages-publicize-tabbed-modal-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-error-101-packages-publicize-tabbed-modal-stories" class="tg tg-stories" type="checkbox" hidden />
-  
-  
-
-  <div class="panels">
-    
-        <div class="panel panel-err">
-          
-    <div class="note err">
-      <div class="note-title">Prop type error</div>
-      <div class="note-body"><pre><code>No component file found for the &quot;TabbedModal&quot; component.
-  4 | import type { StoryFn, Meta } from &#39;@storybook/react&#39;;
-  5 |
-&gt; 6 | export default {
-    | ^
-  7 | 	title: &#39;Packages/Publicize/Tabbed Modal&#39;,
-  8 | 	component: TabbedModal,
-  9 | 	parameters: {
-
-../../packages/publicize/_inc/components/tabbed-modal/stories/index.stories.tsx:
-import { Button } from &#39;@wordpress/components&#39;;
-import { useCallback, useState } from &#39;@wordpress/element&#39;;
-import TabbedModal, { ModalTab, TabbedModalProps } from &#39;../index&#39;;
-import type { StoryFn, Meta } from &#39;@storybook/react&#39;;
-
-export default {
-	title: &#39;Packages/Publicize/Tabbed Modal&#39;,
-	component: TabbedModal,
-	parameters: {
-		layout: &#39;centered&#39;,
-	},
-} satisfies Meta&lt; typeof TabbedModal &gt;;
-
-// Create interactive template with open/close functionality
-const Template: StoryFn&lt; typeof TabbedModal &gt; = args =&gt; {
-	const [ isOpen, setIsOpen ] = useState( false );
-
-	const openModal = useCallback( () =&gt; setIsOpen( true ), [] );
-	const closeModal = useCallback( () =&gt; setIsOpen( false ), [] );
-
-	return (
-		&lt;&gt;
-			&lt;Button variant=&quot;primary&quot; onClick={ openModal }&gt;
-				Open Modal
-			&lt;/Button&gt;
-			&lt;TabbedModal { ...args } isOpen={ isOpen } onClose={ closeModal } /&gt;
-		&lt;/&gt;
-	);
-};
-
-const sampleTabs: ModalTab[] = [
-	{
-		name: &#39;tab1&#39;,
-		title: &#39;New Share&#39;,
-		content: (
-			&lt;div&gt;
-				&lt;h4&gt;First Tab Content&lt;/h4&gt;
-				&lt;p&gt;This is the content of the first tab. You can put any React components here.&lt;/p&gt;
-			&lt;/div&gt;
-		),
-	},
-	{
-		name: &#39;tab2&#39;,
-		title: &#39;Scheduled&#39;,
-		content: (
-			&lt;div&gt;
-				&lt;h4&gt;Second Tab Content&lt;/h4&gt;
-				&lt;p&gt;This is the content of the second tab with different components.&lt;/p&gt;
-				&lt;Button variant=&quot;secondary&quot;&gt;Example Button&lt;/Button&gt;
-			&lt;/div&gt;
-		),
-	},
-];
-
-const DefaultArgs: TabbedModalProps = {
-	isOpen: false,
-	onClose: () =&gt; {},
-	title: &#39;Share Post&#39;,
-	tabs: sampleTabs,
-};
-
-// Export Default story
-export const Default = Template.bind( {} );
-Default.args = DefaultArgs;
-</code></pre></div>
-    </div>
-        </div>
-    
-        <div class="panel panel-info">
-          
-    <div class="note info">
-      <div class="note-title">Info</div>
-      <div class="note-body">No description found. Write a jsdoc comment such as /** Component description */.</div>
-    </div>
-        </div>
-    
-    
-        <div class="panel panel-stories">
-          
-          
-          
-          <div class="note ok">
-                <div class="row">
-                  <span class="ex-name">Imports</span>
-                </div>
-                <pre><code>import { Button } from "@wordpress/components";
-import { TabbedModal } from "@automattic/jetpack-publicize";</code></pre>
-              </div>
-          
-          
-            <div class="note ok">
-              <div class="row">
-                <span class="ex-name">Default</span>
-                <span class="badge ok">story ok</span>
-              </div>
-              
-              
-              <pre><code>const Default = () =&gt; {
-    const [ isOpen, setIsOpen ] = useState( false );
-
-    const openModal = useCallback( () =&gt; setIsOpen( true ), [] );
-    const closeModal = useCallback( () =&gt; setIsOpen( false ), [] );
-
-    return (
-        &lt;&gt;
-            &lt;Button variant=&quot;primary&quot; onClick={ openModal }&gt;Open Modal
-                            &lt;/Button&gt;
-            &lt;TabbedModal isOpen={ isOpen } onClose={ closeModal } /&gt;
-        &lt;/&gt;
-    );
-};</code></pre>
-            </div>
-        </div>
-    
-  </div>
-</article>
-<article
-  class="card 
-  has-error 
-  has-info 
-  no-story-error
-  no-doc-error"
-  role="listitem"
   aria-label="Tabs">
   <div class="head">
     <div class="title">
       <h2><span class="status-dot dot-err"></span> Tabs</h2>
       <div class="badges">
-        <label for="c-error-102-plugins-protect-tabs-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-error-102-plugins-protect-tabs-info" class="badge info as-toggle">1 info</label>
-        <label for="c-error-102-plugins-protect-tabs-stories" class="badge ok as-toggle">1 story</label>
+        <label for="c-error-101-plugins-protect-tabs-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-error-101-plugins-protect-tabs-info" class="badge info as-toggle">1 info</label>
+        <label for="c-error-101-plugins-protect-tabs-stories" class="badge ok as-toggle">1 story</label>
         
       </div>
     </div>
@@ -69196,9 +68874,9 @@ import { TabbedModal } from "@automattic/jetpack-publicize";</code></pre>
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-error-102-plugins-protect-tabs-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-error-102-plugins-protect-tabs-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-error-102-plugins-protect-tabs-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-error-101-plugins-protect-tabs-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-error-101-plugins-protect-tabs-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-error-101-plugins-protect-tabs-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
@@ -69290,10 +68968,10 @@ import Tabs, { Tab } from "..";</code></pre>
     <div class="title">
       <h2><span class="status-dot dot-err"></span> Text</h2>
       <div class="badges">
-        <label for="c-error-103-js-packages-components-text-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-error-103-js-packages-components-text-info" class="badge info as-toggle">1 info</label>
-        <label for="c-error-103-js-packages-components-text-stories" class="badge ok as-toggle">4 stories</label>
-        <label for="c-error-103-js-packages-components-text-docs" class="badge ok as-toggle">1 doc</label>
+        <label for="c-error-102-js-packages-components-text-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-error-102-js-packages-components-text-info" class="badge info as-toggle">1 info</label>
+        <label for="c-error-102-js-packages-components-text-stories" class="badge ok as-toggle">4 stories</label>
+        <label for="c-error-102-js-packages-components-text-docs" class="badge ok as-toggle">1 doc</label>
       </div>
     </div>
     <div class="meta" title="../components/components/text/stories/index.stories.tsx">js-packages-components-text · ../components/components/text/stories/index.stories.tsx</div>
@@ -69303,10 +68981,10 @@ import Tabs, { Tab } from "..";</code></pre>
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-error-103-js-packages-components-text-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-error-103-js-packages-components-text-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-error-103-js-packages-components-text-stories" class="tg tg-stories" type="checkbox" hidden />
-  <input id="c-error-103-js-packages-components-text-docs" class="tg tg-docs" type="checkbox" hidden />
+  <input id="c-error-102-js-packages-components-text-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-error-102-js-packages-components-text-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-error-102-js-packages-components-text-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-error-102-js-packages-components-text-docs" class="tg tg-docs" type="checkbox" hidden />
   
 
   <div class="panels">
@@ -69687,9 +69365,9 @@ Text shorthand to render a `body` text, applying proper spacing.
     <div class="title">
       <h2><span class="status-dot dot-err"></span> Textarea</h2>
       <div class="badges">
-        <label for="c-error-104-plugins-protect-textarea-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-error-104-plugins-protect-textarea-info" class="badge info as-toggle">1 info</label>
-        <label for="c-error-104-plugins-protect-textarea-stories" class="badge ok as-toggle">2 stories</label>
+        <label for="c-error-103-plugins-protect-textarea-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-error-103-plugins-protect-textarea-info" class="badge info as-toggle">1 info</label>
+        <label for="c-error-103-plugins-protect-textarea-stories" class="badge ok as-toggle">2 stories</label>
         
       </div>
     </div>
@@ -69700,9 +69378,9 @@ Text shorthand to render a `body` text, applying proper spacing.
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-error-104-plugins-protect-textarea-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-error-104-plugins-protect-textarea-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-error-104-plugins-protect-textarea-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-error-103-plugins-protect-textarea-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-error-103-plugins-protect-textarea-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-error-103-plugins-protect-textarea-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
@@ -69801,9 +69479,9 @@ Disabled.args = {
     <div class="title">
       <h2><span class="status-dot dot-err"></span> ThreatFixerButton</h2>
       <div class="badges">
-        <label for="c-error-105-js-packages-scan-threat-fixer-button-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-error-105-js-packages-scan-threat-fixer-button-info" class="badge info as-toggle">1 info</label>
-        <label for="c-error-105-js-packages-scan-threat-fixer-button-stories" class="badge ok as-toggle">13 stories</label>
+        <label for="c-error-104-js-packages-scan-threat-fixer-button-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-error-104-js-packages-scan-threat-fixer-button-info" class="badge info as-toggle">1 info</label>
+        <label for="c-error-104-js-packages-scan-threat-fixer-button-stories" class="badge ok as-toggle">13 stories</label>
         
       </div>
     </div>
@@ -69814,9 +69492,9 @@ Disabled.args = {
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-error-105-js-packages-scan-threat-fixer-button-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-error-105-js-packages-scan-threat-fixer-button-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-error-105-js-packages-scan-threat-fixer-button-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-error-104-js-packages-scan-threat-fixer-button-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-error-104-js-packages-scan-threat-fixer-button-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-error-104-js-packages-scan-threat-fixer-button-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
@@ -70148,9 +69826,9 @@ ErrorFixer.args = {
     <div class="title">
       <h2><span class="status-dot dot-err"></span> ThreatModal</h2>
       <div class="badges">
-        <label for="c-error-106-js-packages-scan-threat-modal-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-error-106-js-packages-scan-threat-modal-info" class="badge info as-toggle">1 info</label>
-        <label for="c-error-106-js-packages-scan-threat-modal-stories" class="badge ok as-toggle">8 stories</label>
+        <label for="c-error-105-js-packages-scan-threat-modal-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-error-105-js-packages-scan-threat-modal-info" class="badge info as-toggle">1 info</label>
+        <label for="c-error-105-js-packages-scan-threat-modal-stories" class="badge ok as-toggle">8 stories</label>
         
       </div>
     </div>
@@ -70161,9 +69839,9 @@ ErrorFixer.args = {
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-error-106-js-packages-scan-threat-modal-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-error-106-js-packages-scan-threat-modal-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-error-106-js-packages-scan-threat-modal-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-error-105-js-packages-scan-threat-modal-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-error-105-js-packages-scan-threat-modal-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-error-105-js-packages-scan-threat-modal-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
@@ -70642,9 +70320,9 @@ import { ThreatModal } from "@automattic/jetpack-scan";</code></pre>
     <div class="title">
       <h2><span class="status-dot dot-err"></span> ThreatsDataViews</h2>
       <div class="badges">
-        <label for="c-error-107-js-packages-scan-threats-data-views-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-error-107-js-packages-scan-threats-data-views-info" class="badge info as-toggle">1 info</label>
-        <label for="c-error-107-js-packages-scan-threats-data-views-stories" class="badge ok as-toggle">3 stories</label>
+        <label for="c-error-106-js-packages-scan-threats-data-views-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-error-106-js-packages-scan-threats-data-views-info" class="badge info as-toggle">1 info</label>
+        <label for="c-error-106-js-packages-scan-threats-data-views-stories" class="badge ok as-toggle">3 stories</label>
         
       </div>
     </div>
@@ -70655,9 +70333,9 @@ import { ThreatModal } from "@automattic/jetpack-scan";</code></pre>
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-error-107-js-packages-scan-threats-data-views-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-error-107-js-packages-scan-threats-data-views-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-error-107-js-packages-scan-threats-data-views-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-error-106-js-packages-scan-threats-data-views-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-error-106-js-packages-scan-threats-data-views-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-error-106-js-packages-scan-threats-data-views-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
@@ -71364,9 +71042,9 @@ FreeResults.args = {
     <div class="title">
       <h2><span class="status-dot dot-err"></span> ThreatSeverityBadge</h2>
       <div class="badges">
-        <label for="c-error-108-js-packages-scan-threat-severity-badge-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-error-108-js-packages-scan-threat-severity-badge-info" class="badge info as-toggle">1 info</label>
-        <label for="c-error-108-js-packages-scan-threat-severity-badge-stories" class="badge ok as-toggle">3 stories</label>
+        <label for="c-error-107-js-packages-scan-threat-severity-badge-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-error-107-js-packages-scan-threat-severity-badge-info" class="badge info as-toggle">1 info</label>
+        <label for="c-error-107-js-packages-scan-threat-severity-badge-stories" class="badge ok as-toggle">3 stories</label>
         
       </div>
     </div>
@@ -71377,9 +71055,9 @@ FreeResults.args = {
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-error-108-js-packages-scan-threat-severity-badge-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-error-108-js-packages-scan-threat-severity-badge-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-error-108-js-packages-scan-threat-severity-badge-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-error-107-js-packages-scan-threat-severity-badge-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-error-107-js-packages-scan-threat-severity-badge-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-error-107-js-packages-scan-threat-severity-badge-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
@@ -71480,10 +71158,10 @@ Critical.args = { severity: 5 };
     <div class="title">
       <h2><span class="status-dot dot-err"></span> TimestampControl</h2>
       <div class="badges">
-        <label for="c-error-109-packages-videopress-timestamp-control-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-error-109-packages-videopress-timestamp-control-info" class="badge info as-toggle">1 info</label>
-        <label for="c-error-109-packages-videopress-timestamp-control-stories" class="badge ok as-toggle">7 stories</label>
-        <label for="c-error-109-packages-videopress-timestamp-control-docs" class="badge ok as-toggle">1 doc</label>
+        <label for="c-error-108-packages-videopress-timestamp-control-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-error-108-packages-videopress-timestamp-control-info" class="badge info as-toggle">1 info</label>
+        <label for="c-error-108-packages-videopress-timestamp-control-stories" class="badge ok as-toggle">7 stories</label>
+        <label for="c-error-108-packages-videopress-timestamp-control-docs" class="badge ok as-toggle">1 doc</label>
       </div>
     </div>
     <div class="meta" title="../../packages/videopress/src/client/components/timestamp-control/stories/index.stories.tsx">packages-videopress-timestamp-control · ../../packages/videopress/src/client/components/timestamp-control/stories/index.stories.tsx</div>
@@ -71493,10 +71171,10 @@ Critical.args = { severity: 5 };
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-error-109-packages-videopress-timestamp-control-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-error-109-packages-videopress-timestamp-control-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-error-109-packages-videopress-timestamp-control-stories" class="tg tg-stories" type="checkbox" hidden />
-  <input id="c-error-109-packages-videopress-timestamp-control-docs" class="tg tg-docs" type="checkbox" hidden />
+  <input id="c-error-108-packages-videopress-timestamp-control-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-error-108-packages-videopress-timestamp-control-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-error-108-packages-videopress-timestamp-control-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-error-108-packages-videopress-timestamp-control-docs" class="tg tg-docs" type="checkbox" hidden />
   
 
   <div class="panels">
@@ -71948,9 +71626,9 @@ but also it&#39;s doable by using the additional range control.
     <div class="title">
       <h2><span class="status-dot dot-err"></span> Title</h2>
       <div class="badges">
-        <label for="c-error-110-js-packages-components-text-title-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-error-110-js-packages-components-text-title-info" class="badge info as-toggle">1 info</label>
-        <label for="c-error-110-js-packages-components-text-title-stories" class="badge ok as-toggle">1 story</label>
+        <label for="c-error-109-js-packages-components-text-title-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-error-109-js-packages-components-text-title-info" class="badge info as-toggle">1 info</label>
+        <label for="c-error-109-js-packages-components-text-title-stories" class="badge ok as-toggle">1 story</label>
         
       </div>
     </div>
@@ -71961,9 +71639,9 @@ but also it&#39;s doable by using the additional range control.
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-error-110-js-packages-components-text-title-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-error-110-js-packages-components-text-title-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-error-110-js-packages-components-text-title-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-error-109-js-packages-components-text-title-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-error-109-js-packages-components-text-title-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-error-109-js-packages-components-text-title-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
@@ -72073,9 +71751,9 @@ Default.args = {
     <div class="title">
       <h2><span class="status-dot dot-err"></span> ToggleControl</h2>
       <div class="badges">
-        <label for="c-error-111-js-packages-components-toggle-control-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-error-111-js-packages-components-toggle-control-info" class="badge info as-toggle">1 info</label>
-        <label for="c-error-111-js-packages-components-toggle-control-stories" class="badge ok as-toggle">5 stories</label>
+        <label for="c-error-110-js-packages-components-toggle-control-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-error-110-js-packages-components-toggle-control-info" class="badge info as-toggle">1 info</label>
+        <label for="c-error-110-js-packages-components-toggle-control-stories" class="badge ok as-toggle">5 stories</label>
         
       </div>
     </div>
@@ -72086,9 +71764,9 @@ Default.args = {
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-error-111-js-packages-components-toggle-control-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-error-111-js-packages-components-toggle-control-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-error-111-js-packages-components-toggle-control-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-error-110-js-packages-components-toggle-control-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-error-110-js-packages-components-toggle-control-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-error-110-js-packages-components-toggle-control-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
@@ -72375,9 +72053,9 @@ export const HelpText = args =&gt; {
     <div class="title">
       <h2><span class="status-dot dot-err"></span> Tooltip</h2>
       <div class="badges">
-        <label for="c-error-112-js-packages-components-boost-score-tooltip-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-error-112-js-packages-components-boost-score-tooltip-info" class="badge info as-toggle">1 info</label>
-        <label for="c-error-112-js-packages-components-boost-score-tooltip-stories" class="badge ok as-toggle">1 story</label>
+        <label for="c-error-111-js-packages-components-boost-score-tooltip-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-error-111-js-packages-components-boost-score-tooltip-info" class="badge info as-toggle">1 info</label>
+        <label for="c-error-111-js-packages-components-boost-score-tooltip-stories" class="badge ok as-toggle">1 story</label>
         
       </div>
     </div>
@@ -72388,9 +72066,9 @@ export const HelpText = args =&gt; {
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-error-112-js-packages-components-boost-score-tooltip-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-error-112-js-packages-components-boost-score-tooltip-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-error-112-js-packages-components-boost-score-tooltip-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-error-111-js-packages-components-boost-score-tooltip-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-error-111-js-packages-components-boost-score-tooltip-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-error-111-js-packages-components-boost-score-tooltip-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
@@ -72518,10 +72196,10 @@ _default.args = {
     <div class="title">
       <h2><span class="status-dot dot-err"></span> TrendIndicator</h2>
       <div class="badges">
-        <label for="c-error-113-js-packages-charts-library-components-trend-indicator-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-error-113-js-packages-charts-library-components-trend-indicator-info" class="badge info as-toggle">1 info</label>
-        <label for="c-error-113-js-packages-charts-library-components-trend-indicator-stories" class="badge ok as-toggle">4 stories</label>
-        <label for="c-error-113-js-packages-charts-library-components-trend-indicator-docs" class="badge ok as-toggle">1 doc</label>
+        <label for="c-error-112-js-packages-charts-library-components-trend-indicator-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-error-112-js-packages-charts-library-components-trend-indicator-info" class="badge info as-toggle">1 info</label>
+        <label for="c-error-112-js-packages-charts-library-components-trend-indicator-stories" class="badge ok as-toggle">4 stories</label>
+        <label for="c-error-112-js-packages-charts-library-components-trend-indicator-docs" class="badge ok as-toggle">1 doc</label>
       </div>
     </div>
     <div class="meta" title="../charts/src/components/trend-indicator/stories/index.stories.tsx">js-packages-charts-library-components-trend-indicator · ../charts/src/components/trend-indicator/stories/index.stories.tsx</div>
@@ -72531,10 +72209,10 @@ _default.args = {
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-error-113-js-packages-charts-library-components-trend-indicator-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-error-113-js-packages-charts-library-components-trend-indicator-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-error-113-js-packages-charts-library-components-trend-indicator-stories" class="tg tg-stories" type="checkbox" hidden />
-  <input id="c-error-113-js-packages-charts-library-components-trend-indicator-docs" class="tg tg-docs" type="checkbox" hidden />
+  <input id="c-error-112-js-packages-charts-library-components-trend-indicator-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-error-112-js-packages-charts-library-components-trend-indicator-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-error-112-js-packages-charts-library-components-trend-indicator-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-error-112-js-packages-charts-library-components-trend-indicator-docs" class="tg tg-docs" type="checkbox" hidden />
   
 
   <div class="panels">
@@ -72902,9 +72580,9 @@ The TrendIndicator component includes built-in accessibility features:
     <div class="title">
       <h2><span class="status-dot dot-err"></span> UpsellBanner</h2>
       <div class="badges">
-        <label for="c-error-114-js-packages-components-upsell-banner-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-error-114-js-packages-components-upsell-banner-info" class="badge info as-toggle">1 info</label>
-        <label for="c-error-114-js-packages-components-upsell-banner-stories" class="badge ok as-toggle">4 stories</label>
+        <label for="c-error-113-js-packages-components-upsell-banner-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-error-113-js-packages-components-upsell-banner-info" class="badge info as-toggle">1 info</label>
+        <label for="c-error-113-js-packages-components-upsell-banner-stories" class="badge ok as-toggle">4 stories</label>
         
       </div>
     </div>
@@ -72915,9 +72593,9 @@ The TrendIndicator component includes built-in accessibility features:
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-error-114-js-packages-components-upsell-banner-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-error-114-js-packages-components-upsell-banner-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-error-114-js-packages-components-upsell-banner-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-error-113-js-packages-components-upsell-banner-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-error-113-js-packages-components-upsell-banner-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-error-113-js-packages-components-upsell-banner-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
@@ -73116,9 +72794,9 @@ export const WithoutSecondaryBtn = args =&gt; {
     <div class="title">
       <h2><span class="status-dot dot-err"></span> UsagePanel</h2>
       <div class="badges">
-        <label for="c-error-115-plugins-jetpack-extensions-usagepanel-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-error-115-plugins-jetpack-extensions-usagepanel-info" class="badge info as-toggle">1 info</label>
-        <label for="c-error-115-plugins-jetpack-extensions-usagepanel-stories" class="badge ok as-toggle">1 story</label>
+        <label for="c-error-114-plugins-jetpack-extensions-usagepanel-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-error-114-plugins-jetpack-extensions-usagepanel-info" class="badge info as-toggle">1 info</label>
+        <label for="c-error-114-plugins-jetpack-extensions-usagepanel-stories" class="badge ok as-toggle">1 story</label>
         
       </div>
     </div>
@@ -73129,9 +72807,9 @@ export const WithoutSecondaryBtn = args =&gt; {
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-error-115-plugins-jetpack-extensions-usagepanel-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-error-115-plugins-jetpack-extensions-usagepanel-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-error-115-plugins-jetpack-extensions-usagepanel-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-error-114-plugins-jetpack-extensions-usagepanel-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-error-114-plugins-jetpack-extensions-usagepanel-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-error-114-plugins-jetpack-extensions-usagepanel-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
@@ -73238,9 +72916,9 @@ defaultView.args = {
     <div class="title">
       <h2><span class="status-dot dot-err"></span> VanillaPopOut</h2>
       <div class="badges">
-        <label for="c-error-116-plugins-boost-features-speed-score-vanilla-popout-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-error-116-plugins-boost-features-speed-score-vanilla-popout-info" class="badge info as-toggle">1 info</label>
-        <label for="c-error-116-plugins-boost-features-speed-score-vanilla-popout-stories" class="badge ok as-toggle">1 story</label>
+        <label for="c-error-115-plugins-boost-features-speed-score-vanilla-popout-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-error-115-plugins-boost-features-speed-score-vanilla-popout-info" class="badge info as-toggle">1 info</label>
+        <label for="c-error-115-plugins-boost-features-speed-score-vanilla-popout-stories" class="badge ok as-toggle">1 story</label>
         
       </div>
     </div>
@@ -73251,9 +72929,9 @@ defaultView.args = {
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-error-116-plugins-boost-features-speed-score-vanilla-popout-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-error-116-plugins-boost-features-speed-score-vanilla-popout-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-error-116-plugins-boost-features-speed-score-vanilla-popout-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-error-115-plugins-boost-features-speed-score-vanilla-popout-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-error-115-plugins-boost-features-speed-score-vanilla-popout-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-error-115-plugins-boost-features-speed-score-vanilla-popout-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
@@ -73379,9 +73057,9 @@ _default.args = defaultValues;
     <div class="title">
       <h2><span class="status-dot dot-err"></span> VideoDetails</h2>
       <div class="badges">
-        <label for="c-error-117-packages-videopress-video-details-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-error-117-packages-videopress-video-details-info" class="badge info as-toggle">1 info</label>
-        <label for="c-error-117-packages-videopress-video-details-stories" class="badge err as-toggle">1/1 story errors</label>
+        <label for="c-error-116-packages-videopress-video-details-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-error-116-packages-videopress-video-details-info" class="badge info as-toggle">1 info</label>
+        <label for="c-error-116-packages-videopress-video-details-stories" class="badge err as-toggle">1/1 story errors</label>
         
       </div>
     </div>
@@ -73392,9 +73070,9 @@ _default.args = defaultValues;
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-error-117-packages-videopress-video-details-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-error-117-packages-videopress-video-details-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-error-117-packages-videopress-video-details-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-error-116-packages-videopress-video-details-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-error-116-packages-videopress-video-details-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-error-116-packages-videopress-video-details-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
@@ -73495,9 +73173,9 @@ Default.args = {
     <div class="title">
       <h2><span class="status-dot dot-err"></span> VideoFrameSelector</h2>
       <div class="badges">
-        <label for="c-error-118-packages-videopress-video-frame-selector-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-error-118-packages-videopress-video-frame-selector-info" class="badge info as-toggle">1 info</label>
-        <label for="c-error-118-packages-videopress-video-frame-selector-stories" class="badge ok as-toggle">2 stories</label>
+        <label for="c-error-117-packages-videopress-video-frame-selector-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-error-117-packages-videopress-video-frame-selector-info" class="badge info as-toggle">1 info</label>
+        <label for="c-error-117-packages-videopress-video-frame-selector-stories" class="badge ok as-toggle">2 stories</label>
         
       </div>
     </div>
@@ -73508,9 +73186,9 @@ Default.args = {
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-error-118-packages-videopress-video-frame-selector-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-error-118-packages-videopress-video-frame-selector-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-error-118-packages-videopress-video-frame-selector-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-error-117-packages-videopress-video-frame-selector-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-error-117-packages-videopress-video-frame-selector-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-error-117-packages-videopress-video-frame-selector-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
@@ -73621,9 +73299,9 @@ VideoPlayer.args = {
     <div class="title">
       <h2><span class="status-dot dot-err"></span> VideoQuickActions</h2>
       <div class="badges">
-        <label for="c-error-119-packages-videopress-video-quick-actions-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-error-119-packages-videopress-video-quick-actions-info" class="badge info as-toggle">1 info</label>
-        <label for="c-error-119-packages-videopress-video-quick-actions-stories" class="badge ok as-toggle">1 story</label>
+        <label for="c-error-118-packages-videopress-video-quick-actions-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-error-118-packages-videopress-video-quick-actions-info" class="badge info as-toggle">1 info</label>
+        <label for="c-error-118-packages-videopress-video-quick-actions-stories" class="badge ok as-toggle">1 story</label>
         
       </div>
     </div>
@@ -73634,9 +73312,9 @@ VideoPlayer.args = {
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-error-119-packages-videopress-video-quick-actions-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-error-119-packages-videopress-video-quick-actions-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-error-119-packages-videopress-video-quick-actions-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-error-118-packages-videopress-video-quick-actions-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-error-118-packages-videopress-video-quick-actions-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-error-118-packages-videopress-video-quick-actions-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
@@ -73735,10 +73413,10 @@ _default.args = {
     <div class="title">
       <h2><span class="status-dot dot-err"></span> VideoStatsGroup</h2>
       <div class="badges">
-        <label for="c-error-120-packages-videopress-video-stats-group-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-error-120-packages-videopress-video-stats-group-info" class="badge info as-toggle">1 info</label>
-        <label for="c-error-120-packages-videopress-video-stats-group-stories" class="badge ok as-toggle">1 story</label>
-        <label for="c-error-120-packages-videopress-video-stats-group-docs" class="badge ok as-toggle">1 doc</label>
+        <label for="c-error-119-packages-videopress-video-stats-group-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-error-119-packages-videopress-video-stats-group-info" class="badge info as-toggle">1 info</label>
+        <label for="c-error-119-packages-videopress-video-stats-group-stories" class="badge ok as-toggle">1 story</label>
+        <label for="c-error-119-packages-videopress-video-stats-group-docs" class="badge ok as-toggle">1 doc</label>
       </div>
     </div>
     <div class="meta" title="../../packages/videopress/src/client/admin/components/video-stats-group/stories/index.stories.tsx">packages-videopress-video-stats-group · ../../packages/videopress/src/client/admin/components/video-stats-group/stories/index.stories.tsx</div>
@@ -73748,10 +73426,10 @@ _default.args = {
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-error-120-packages-videopress-video-stats-group-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-error-120-packages-videopress-video-stats-group-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-error-120-packages-videopress-video-stats-group-stories" class="tg tg-stories" type="checkbox" hidden />
-  <input id="c-error-120-packages-videopress-video-stats-group-docs" class="tg tg-docs" type="checkbox" hidden />
+  <input id="c-error-119-packages-videopress-video-stats-group-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-error-119-packages-videopress-video-stats-group-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-error-119-packages-videopress-video-stats-group-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-error-119-packages-videopress-video-stats-group-docs" class="tg tg-docs" type="checkbox" hidden />
   
 
   <div class="panels">
@@ -73881,10 +73559,10 @@ The total number of video plays of the current day.
     <div class="title">
       <h2><span class="status-dot dot-err"></span> VideoStorageMeter</h2>
       <div class="badges">
-        <label for="c-error-121-packages-videopress-video-storage-meter-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-error-121-packages-videopress-video-storage-meter-info" class="badge info as-toggle">1 info</label>
-        <label for="c-error-121-packages-videopress-video-storage-meter-stories" class="badge ok as-toggle">1 story</label>
-        <label for="c-error-121-packages-videopress-video-storage-meter-docs" class="badge ok as-toggle">1 doc</label>
+        <label for="c-error-120-packages-videopress-video-storage-meter-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-error-120-packages-videopress-video-storage-meter-info" class="badge info as-toggle">1 info</label>
+        <label for="c-error-120-packages-videopress-video-storage-meter-stories" class="badge ok as-toggle">1 story</label>
+        <label for="c-error-120-packages-videopress-video-storage-meter-docs" class="badge ok as-toggle">1 doc</label>
       </div>
     </div>
     <div class="meta" title="../../packages/videopress/src/client/admin/components/video-storage-meter/stories/index.stories.tsx">packages-videopress-video-storage-meter · ../../packages/videopress/src/client/admin/components/video-storage-meter/stories/index.stories.tsx</div>
@@ -73894,10 +73572,10 @@ The total number of video plays of the current day.
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-error-121-packages-videopress-video-storage-meter-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-error-121-packages-videopress-video-storage-meter-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-error-121-packages-videopress-video-storage-meter-stories" class="tg tg-stories" type="checkbox" hidden />
-  <input id="c-error-121-packages-videopress-video-storage-meter-docs" class="tg tg-docs" type="checkbox" hidden />
+  <input id="c-error-120-packages-videopress-video-storage-meter-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-error-120-packages-videopress-video-storage-meter-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-error-120-packages-videopress-video-storage-meter-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-error-120-packages-videopress-video-storage-meter-docs" class="tg tg-docs" type="checkbox" hidden />
   
 
   <div class="panels">
@@ -74034,9 +73712,9 @@ Optional classname to apply to the root element.
     <div class="title">
       <h2><span class="status-dot dot-err"></span> VideoThumbnail</h2>
       <div class="badges">
-        <label for="c-error-122-packages-videopress-video-thumbnail-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-error-122-packages-videopress-video-thumbnail-info" class="badge info as-toggle">1 info</label>
-        <label for="c-error-122-packages-videopress-video-thumbnail-stories" class="badge err as-toggle">1/3 story errors</label>
+        <label for="c-error-121-packages-videopress-video-thumbnail-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-error-121-packages-videopress-video-thumbnail-info" class="badge info as-toggle">1 info</label>
+        <label for="c-error-121-packages-videopress-video-thumbnail-stories" class="badge err as-toggle">1/3 story errors</label>
         
       </div>
     </div>
@@ -74047,9 +73725,9 @@ Optional classname to apply to the root element.
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-error-122-packages-videopress-video-thumbnail-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-error-122-packages-videopress-video-thumbnail-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-error-122-packages-videopress-video-thumbnail-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-error-121-packages-videopress-video-thumbnail-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-error-121-packages-videopress-video-thumbnail-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-error-121-packages-videopress-video-thumbnail-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
@@ -74240,9 +73918,9 @@ VideoDropdown.args = {
     <div class="title">
       <h2><span class="status-dot dot-err"></span> ZendeskChat</h2>
       <div class="badges">
-        <label for="c-error-123-js-packages-components-zendesk-chat-err" class="badge err as-toggle">prop type error</label>
-        <label for="c-error-123-js-packages-components-zendesk-chat-info" class="badge info as-toggle">1 info</label>
-        <label for="c-error-123-js-packages-components-zendesk-chat-stories" class="badge ok as-toggle">1 story</label>
+        <label for="c-error-122-js-packages-components-zendesk-chat-err" class="badge err as-toggle">prop type error</label>
+        <label for="c-error-122-js-packages-components-zendesk-chat-info" class="badge info as-toggle">1 info</label>
+        <label for="c-error-122-js-packages-components-zendesk-chat-stories" class="badge ok as-toggle">1 story</label>
         
       </div>
     </div>
@@ -74253,9 +73931,9 @@ VideoDropdown.args = {
   </div>
 
   <!-- ⬇️ Hidden toggles must be siblings BEFORE .panels -->
-  <input id="c-error-123-js-packages-components-zendesk-chat-err" class="tg tg-err" type="checkbox" hidden />
-  <input id="c-error-123-js-packages-components-zendesk-chat-info" class="tg tg-info" type="checkbox" hidden />
-  <input id="c-error-123-js-packages-components-zendesk-chat-stories" class="tg tg-stories" type="checkbox" hidden />
+  <input id="c-error-122-js-packages-components-zendesk-chat-err" class="tg tg-err" type="checkbox" hidden />
+  <input id="c-error-122-js-packages-components-zendesk-chat-info" class="tg tg-info" type="checkbox" hidden />
+  <input id="c-error-122-js-packages-components-zendesk-chat-stories" class="tg tg-stories" type="checkbox" hidden />
   
   
 
