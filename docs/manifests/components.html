@@ -581,12 +581,8 @@
 </header>
 <main>
   <div class="wrap">
-    <div class="note err" style="margin-bottom: 16px;">
-              <strong>Performance warning:</strong> <code>react-docgen-typescript</code> took <strong>8.7s</strong> to generate the manifest. This delay applies every time the manifest is used by an agent. Consider switching to the faster <code>react-docgen</code> in your <code>main.ts</code>:
-              <pre><code>typescript: {
-  reactDocgen: 'react-docgen',
-}</code></pre>
-              <a href="https://storybook.js.org/docs/api/main-config/main-config-typescript#reactdocgen" target="_blank">Learn more</a>
+    <div class="note ok" style="margin-bottom: 16px;">
+              Using <code>react-docgen-typescript</code>. Generation took <strong>6.9s</strong>.
             </div>
     <h2 class="section-title">Components</h2>
     <div class="grid" role="list">
@@ -12386,9 +12382,9 @@ For rich tooltip content with HTML formatting, add `p: { html: true }` to the to
 	/&gt;` }
 /&gt;
 
-#### Security Considerations
+#### Security
 
-When using HTML tooltips via `p: { html: true }`, any HTML in the tooltip content will be rendered by the browser. If tooltip strings come from user-generated input or external data sources, you **must** sanitize them first to prevent cross-site scripting (XSS) attacks.
+HTML tooltip content is automatically sanitized to prevent cross-site scripting (XSS) attacks. Dangerous elements (e.g., `&lt;script&gt;`, `&lt;iframe&gt;`) and event-handler attributes (e.g., `onclick`) are stripped before rendering.
 
 ### Formatted Values
 
@@ -50744,9 +50740,9 @@ For rich tooltip content with HTML formatting, add `p: { html: true }` to the to
 	/&gt;` }
 /&gt;
 
-#### Security Considerations
+#### Security
 
-When using HTML tooltips via `p: { html: true }`, any HTML in the tooltip content will be rendered by the browser. If tooltip strings come from user-generated input or external data sources, you **must** sanitize them first to prevent cross-site scripting (XSS) attacks.
+HTML tooltip content is automatically sanitized to prevent cross-site scripting (XSS) attacks. Dangerous elements (e.g., `&lt;script&gt;`, `&lt;iframe&gt;`) and event-handler attributes (e.g., `onclick`) are stripped before rendering.
 
 ### Formatted Values
 
