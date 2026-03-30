@@ -581,8 +581,12 @@
 </header>
 <main>
   <div class="wrap">
-    <div class="note ok" style="margin-bottom: 16px;">
-              Using <code>react-docgen-typescript</code>. Generation took <strong>5.6s</strong>.
+    <div class="note err" style="margin-bottom: 16px;">
+              <strong>Performance warning:</strong> <code>react-docgen-typescript</code> took <strong>9.6s</strong> to generate the manifest. This delay applies every time the manifest is used by an agent. Consider switching to the faster <code>react-docgen</code> in your <code>main.ts</code>:
+              <pre><code>typescript: {
+  reactDocgen: 'react-docgen',
+}</code></pre>
+              <a href="https://storybook.js.org/docs/api/main-config/main-config-typescript#reactdocgen" target="_blank">Learn more</a>
             </div>
     <h2 class="section-title">Components</h2>
     <div class="grid" role="list">
