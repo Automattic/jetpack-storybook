@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## 1.1.3-alpha - unreleased
+## 2.0.0-alpha - unreleased
 
 This is an alpha version! The changes listed here are not final.
 
@@ -13,6 +13,7 @@ This is an alpha version! The changes listed here are not final.
 - Add @wordpress/theme 0.6.0 design tokens for charts library Storybook previews.
 
 ### Changed
+- Change from `@storybook/test-runner` to `@storybook/addon-vitest`, which also requires switching from webpack to vite for building the storybook.
 - Switch to Native TypeScript compiler based on Go.
 - Update dependencies.
 - Update legacy Node calls.
