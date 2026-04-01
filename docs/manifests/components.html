@@ -582,7 +582,7 @@
 <main>
   <div class="wrap">
     <div class="note err" style="margin-bottom: 16px;">
-              <strong>Performance warning:</strong> <code>react-docgen-typescript</code> took <strong>7.6s</strong> to generate the manifest. This delay applies every time the manifest is used by an agent. Consider switching to the faster <code>react-docgen</code> in your <code>main.ts</code>:
+              <strong>Performance warning:</strong> <code>react-docgen-typescript</code> took <strong>8.4s</strong> to generate the manifest. This delay applies every time the manifest is used by an agent. Consider switching to the faster <code>react-docgen</code> in your <code>main.ts</code>:
               <pre><code>typescript: {
   reactDocgen: 'react-docgen',
 }</code></pre>
@@ -1018,7 +1018,6 @@ const meta: Meta&lt; typeof AdminPage &gt; = {
 	title: &#39;JS Packages/Components/Admin Page&#39;,
 	component: AdminPage,
 	argTypes: {
-		moduleName: { control: &#39;text&#39;, defaultValue: &#39;Jetpack&#39; },
 		showHeader: { control: &#39;boolean&#39;, defaultValue: true },
 		showFooter: { control: &#39;boolean&#39;, defaultValue: true },
 		showBackground: { control: &#39;boolean&#39;, defaultValue: true },
@@ -16554,9 +16553,7 @@ export default meta;
 const Template: StoryFn&lt; typeof JetpackFooter &gt; = args =&gt; &lt;JetpackFooter { ...args } /&gt;;
 
 const DefaultArgs = {
-	moduleName: &#39;Jetpack&#39;,
 	className: &#39;&#39;,
-	moduleNameHref: &#39;https://jetpack.com&#39;,
 };
 
 export const _default = Template.bind( {} );
@@ -40830,7 +40827,6 @@ const meta: Meta&lt; typeof AdminPage &gt; = {
 	title: &#39;JS Packages/Components/Admin Page&#39;,
 	component: AdminPage,
 	argTypes: {
-		moduleName: { control: &#39;text&#39;, defaultValue: &#39;Jetpack&#39; },
 		showHeader: { control: &#39;boolean&#39;, defaultValue: true },
 		showFooter: { control: &#39;boolean&#39;, defaultValue: true },
 		showBackground: { control: &#39;boolean&#39;, defaultValue: true },
@@ -53228,9 +53224,7 @@ export default meta;
 const Template: StoryFn&lt; typeof JetpackFooter &gt; = args =&gt; &lt;JetpackFooter { ...args } /&gt;;
 
 const DefaultArgs = {
-	moduleName: &#39;Jetpack&#39;,
 	className: &#39;&#39;,
-	moduleNameHref: &#39;https://jetpack.com&#39;,
 };
 
 export const _default = Template.bind( {} );
