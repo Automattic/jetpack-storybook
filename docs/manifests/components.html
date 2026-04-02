@@ -576,13 +576,13 @@
 <header>
   <div class="wrap">
     <h1>Manifest Debugger</h1>
-    <div class="summary"><a class="filter-pill all" data-k="all" href="#filter-all">All</a><a class="filter-pill err" data-k="errors" href="#filter-errors">134/134 prop type errors</a><a class="filter-pill info" data-k="infos" href="#filter-infos">134/134 infos</a><a class="filter-pill err" data-k="story-errors" href="#filter-story-errors">12/425 story errors</a><a class="filter-pill ok" data-k="docs" href="#filter-docs">42 docs ok</a></div>
+    <div class="summary"><a class="filter-pill all" data-k="all" href="#filter-all">All</a><a class="filter-pill err" data-k="errors" href="#filter-errors">134/134 prop type errors</a><a class="filter-pill info" data-k="infos" href="#filter-infos">134/134 infos</a><a class="filter-pill err" data-k="story-errors" href="#filter-story-errors">12/425 story errors</a><a class="filter-pill ok" data-k="docs" href="#filter-docs">43 docs ok</a></div>
   </div>
 </header>
 <main>
   <div class="wrap">
     <div class="note err" style="margin-bottom: 16px;">
-              <strong>Performance warning:</strong> <code>react-docgen-typescript</code> took <strong>8.9s</strong> to generate the manifest. This delay applies every time the manifest is used by an agent. Consider switching to the faster <code>react-docgen</code> in your <code>main.ts</code>:
+              <strong>Performance warning:</strong> <code>react-docgen-typescript</code> took <strong>10.5s</strong> to generate the manifest. This delay applies every time the manifest is used by an agent. Consider switching to the faster <code>react-docgen</code> in your <code>main.ts</code>:
               <pre><code>typescript: {
   reactDocgen: 'react-docgen',
 }</code></pre>
@@ -13064,6 +13064,10 @@ The Global Charts Context system consists of three main parts:
 2. **GlobalChartsContext** - The underlying React context that manages shared state
 3. **Context hooks** - Utilities for accessing theme and registration functionality
 
+## API Reference
+
+For detailed information about provider props, context values, and type definitions, see the [API Reference](?path=/docs/js-packages-charts-library-global-context-api-reference--docs).
+
 ## Basic Usage
 
 ### Setting Up the Provider
@@ -13417,58 +13421,6 @@ When charts register with a `chartId`, their legend data becomes available to st
 - **Flexible Layouts** - Create complex dashboard designs with legends positioned anywhere
 - **Automatic Updates** - Legend data updates automatically when chart data changes
 - **No Prop Drilling** - No need to pass legend data through component hierarchies
-
-## API Reference
-
-### GlobalChartsProvider
-
-The main provider component that enables chart context functionality.
-
-**Props:**
-
-| Prop | Type | Default | Description |
-| ---- | ---- | ------- | ----------- |
-| `theme` | `Partial&lt;ChartTheme&gt;` | `defaultTheme` | Custom theme object that gets merged with the default theme |
-| `children` | `ReactNode` | - | **Required.** Chart components and other React elements |
-
-### GlobalChartsContextValue
-
-The context value shape provided by `useGlobalChartsContext`:
-
-```typescript
-interface GlobalChartsContextValue {
-	// Chart registry
-	charts: Map&lt;string, ChartRegistration&gt;;
-	registerChart: (id: string, data: ChartRegistration) =&gt; void;
-	unregisterChart: (id: string) =&gt; void;
-	getChartData: (id: string) =&gt; ChartRegistration | undefined;
-
-	// Theme and styling
-	theme: CompleteChartTheme;
-	getElementStyles: (params: GetElementStylesParams) =&gt; ElementStyles;
-}
-```
-
-### ChartRegistration Type
-
-```typescript
-interface ChartRegistration {
-	legendItems: BaseLegendItem[];
-	chartType: string;
-	metadata?: Record&lt;string, unknown&gt;;
-}
-```
-
-### ElementStyles Type
-
-```typescript
-interface ElementStyles {
-	color: string;
-	lineStyles: CSSProperties &amp; LineStyles;
-	glyph?: (props: GlyphProps) =&gt; ReactNode;
-	shapeStyles: CSSProperties &amp; LineStyles;
-}
-```
 
 ## Accessibility
 
@@ -75884,6 +75836,10 @@ The Global Charts Context system consists of three main parts:
 2. **GlobalChartsContext** - The underlying React context that manages shared state
 3. **Context hooks** - Utilities for accessing theme and registration functionality
 
+## API Reference
+
+For detailed information about provider props, context values, and type definitions, see the [API Reference](?path=/docs/js-packages-charts-library-global-context-api-reference--docs).
+
 ## Basic Usage
 
 ### Setting Up the Provider
@@ -76237,58 +76193,6 @@ When charts register with a `chartId`, their legend data becomes available to st
 - **Flexible Layouts** - Create complex dashboard designs with legends positioned anywhere
 - **Automatic Updates** - Legend data updates automatically when chart data changes
 - **No Prop Drilling** - No need to pass legend data through component hierarchies
-
-## API Reference
-
-### GlobalChartsProvider
-
-The main provider component that enables chart context functionality.
-
-**Props:**
-
-| Prop | Type | Default | Description |
-| ---- | ---- | ------- | ----------- |
-| `theme` | `Partial&lt;ChartTheme&gt;` | `defaultTheme` | Custom theme object that gets merged with the default theme |
-| `children` | `ReactNode` | - | **Required.** Chart components and other React elements |
-
-### GlobalChartsContextValue
-
-The context value shape provided by `useGlobalChartsContext`:
-
-```typescript
-interface GlobalChartsContextValue {
-	// Chart registry
-	charts: Map&lt;string, ChartRegistration&gt;;
-	registerChart: (id: string, data: ChartRegistration) =&gt; void;
-	unregisterChart: (id: string) =&gt; void;
-	getChartData: (id: string) =&gt; ChartRegistration | undefined;
-
-	// Theme and styling
-	theme: CompleteChartTheme;
-	getElementStyles: (params: GetElementStylesParams) =&gt; ElementStyles;
-}
-```
-
-### ChartRegistration Type
-
-```typescript
-interface ChartRegistration {
-	legendItems: BaseLegendItem[];
-	chartType: string;
-	metadata?: Record&lt;string, unknown&gt;;
-}
-```
-
-### ElementStyles Type
-
-```typescript
-interface ElementStyles {
-	color: string;
-	lineStyles: CSSProperties &amp; LineStyles;
-	glyph?: (props: GlyphProps) =&gt; ReactNode;
-	shapeStyles: CSSProperties &amp; LineStyles;
-}
-```
 
 ## Accessibility
 
@@ -81965,10 +81869,108 @@ When `showIcon={false}`, no icon is displayed regardless of direction.
   aria-label="Docs">
   <div class="head">
     <div class="title">
+      <h2><span class="status-dot dot-ok"></span> JS Packages/Charts Library/Global Context/API Reference</h2>
+      <div class="badges">
+        
+        <label for="doc-12-js-packages-charts-library-global-context-api-reference-docs-content" class="badge ok as-toggle">view content</label>
+      </div>
+    </div>
+    <div class="meta" title="../charts/src/providers/chart-context/stories/index.api.mdx">js-packages-charts-library-global-context-api-reference--docs · ../charts/src/providers/chart-context/stories/index.api.mdx</div>
+    
+  </div>
+
+  <!-- Hidden toggles must be siblings BEFORE .panels -->
+  
+  <input id="doc-12-js-packages-charts-library-global-context-api-reference-docs-content" class="tg tg-content" type="checkbox" hidden />
+
+  <div class="panels">
+    
+    
+        <div class="panel panel-content">
+          <div class="mdx-content">
+            <pre><code>import { Meta } from &#39;@storybook/addon-docs/blocks&#39;;
+
+&lt;Meta title=&quot;JS Packages/Charts Library/Global Context/API Reference&quot; /&gt;
+
+# Global Charts Context API Reference
+
+This document provides comprehensive API documentation for the Global Charts Context system.
+
+## GlobalChartsProvider
+
+The main provider component that enables chart context functionality.
+
+**Props:**
+
+| Prop | Type | Default | Description |
+| ---- | ---- | ------- | ----------- |
+| `theme` | `Partial&lt;ChartTheme&gt;` | `defaultTheme` | Custom theme object that gets merged with the default theme |
+| `children` | `ReactNode` | - | **Required.** Chart components and other React elements |
+| `portalContainer` | `React.RefObject&lt;HTMLElement \| null&gt;` | - | Optional ref to an element that chart tooltip portals should be relocated into. When provided, visx tooltip portals (normally appended to `document.body`) will be moved into this container so they participate in the same CSS stacking context. |
+
+## GlobalChartsContextValue
+
+The context value shape provided by `useGlobalChartsContext`:
+
+```typescript
+interface GlobalChartsContextValue {
+	// Chart registry
+	charts: Map&lt;string, ChartRegistration&gt;;
+	registerChart: (id: string, data: ChartRegistration) =&gt; void;
+	unregisterChart: (id: string) =&gt; void;
+	getChartData: (id: string) =&gt; ChartRegistration | undefined;
+
+	// Theme and styling
+	theme: CompleteChartTheme;
+	getElementStyles: (params: GetElementStylesParams) =&gt; ElementStyles;
+
+	// Series visibility management for interactive legends
+	toggleSeriesVisibility: (chartId: string, seriesLabel: string) =&gt; void;
+	isSeriesVisible: (chartId: string, seriesLabel: string) =&gt; boolean;
+	getHiddenSeries: (chartId: string) =&gt; Set&lt;string&gt;;
+
+	// Color palette resolution state
+	isColorPaletteResolved: boolean;
+}
+```
+
+`isColorPaletteResolved` is `false` until the provider&#39;s color cache has been resolved from the DOM and painted. Chart components can use this to defer CSS transitions or animations that would otherwise interpolate from a fallback color to the resolved theme color on initial render.
+
+## ChartRegistration Type
+
+```typescript
+interface ChartRegistration {
+	legendItems: BaseLegendItem[];
+	chartType: ChartType;
+	metadata?: Record&lt;string, unknown&gt;;
+}
+```
+
+## ElementStyles Type
+
+```typescript
+type ElementStyles = {
+	color: string;
+	lineStyles: LineStyles;
+	glyph: &lt;Datum extends object&gt;(props: GlyphProps&lt;Datum&gt;) =&gt; ReactNode;
+	shapeStyles: CSSProperties &amp; LineStyles;
+};
+```
+</code></pre>
+          </div>
+        </div>
+  </div>
+</article>
+<article
+  class="card is-doc no-doc-error"
+  role="listitem"
+  aria-label="Docs">
+  <div class="head">
+    <div class="title">
       <h2><span class="status-dot dot-ok"></span> JS Packages/Charts Library/Introduction</h2>
       <div class="badges">
         
-        <label for="doc-12-js-packages-charts-library-introduction-docs-content" class="badge ok as-toggle">view content</label>
+        <label for="doc-13-js-packages-charts-library-introduction-docs-content" class="badge ok as-toggle">view content</label>
       </div>
     </div>
     <div class="meta" title="../charts/src/stories/index.docs.mdx">js-packages-charts-library-introduction--docs · ../charts/src/stories/index.docs.mdx</div>
@@ -81977,7 +81979,7 @@ When `showIcon={false}`, no icon is displayed regardless of direction.
 
   <!-- Hidden toggles must be siblings BEFORE .panels -->
   
-  <input id="doc-12-js-packages-charts-library-introduction-docs-content" class="tg tg-content" type="checkbox" hidden />
+  <input id="doc-13-js-packages-charts-library-introduction-docs-content" class="tg tg-content" type="checkbox" hidden />
 
   <div class="panels">
     
