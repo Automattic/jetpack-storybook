@@ -1,0 +1,3 @@
+import{n as e}from"./chunk-zsgVPwQN.js";import{t}from"./jsx-runtime-GmyBfqKJ.js";import{D as n,O as r}from"./iframe-Bce-1nUr.js";var i,a,o,s,c;e((()=>{r(),i=t(),a={title:`JS Packages/Components/Indeterminate Progress Bar`,component:n},o=e=>(0,i.jsx)(n,{...e}),s=o.bind({}),s.args={},s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`args => {
+  return <IndeterminateProgressBar {...args} />;
+}`,...s.parameters?.docs?.source}}},c=[`_default`]}))();export{c as __namedExportsOrder,s as _default,a as default};
