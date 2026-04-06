@@ -1,0 +1,16 @@
+import{n as e,r as t}from"./chunk-zsgVPwQN.js";import{Bh as n,Rh as r,er as i,fi as a,fr as o,ni as s,t as c,ti as l,zh as u,zn as d}from"./iframe-uev8Eqlb.js";var f,p,m,h,g,_=e((()=>{f=`_wrapper_5f0io_1`,p=`_navigation_5f0io_5`,m=`_button_5f0io_8`,h=`_selected_5f0io_13`,g={wrapper:f,navigation:p,button:m,selected:h,"pagination-placeholder":`_pagination-placeholder_5f0io_17`}})),v,y,b,x,S=e((()=>{c(),o(),n(),_(),v=r(),y=(e,t)=>[...Array(t)].map((t,n)=>n+e),b=()=>(0,v.jsx)(i,{size:`small`,className:u(g.button),variant:`tertiary`,disabled:!0,"aria-disabled":!0,children:(0,v.jsx)(d,{children:`...`})}),x=({className:e,currentPage:t=1,perPage:n,total:r,minColumns:o=7,disabled:c,onChangePage:d})=>{if(!r||!n)return null;let f=Math.ceil(r/n);if(t>f)return d(f),null;if(t<1)return d(1),null;let p=({page:e})=>{let n=e===t;return(0,v.jsx)(i,{size:`small`,className:u(g.button,n?g.selected:null),variant:n?`primary`:`tertiary`,disabled:c,"aria-disabled":c,onClick:()=>d(e),children:e})},m=Math.max(o,7);m=m%2==0?m+1:m;let h;if(f<=m)h=y(1,f).map(e=>(0,v.jsx)(p,{page:e},e));else if(t<m-2)h=(0,v.jsxs)(v.Fragment,{children:[y(1,m-2).map(e=>(0,v.jsx)(p,{page:e},e)),(0,v.jsx)(b,{}),(0,v.jsx)(p,{page:f})]});else if(t>f-m+3)h=(0,v.jsxs)(v.Fragment,{children:[(0,v.jsx)(p,{page:1}),(0,v.jsx)(b,{}),y(f-m+3,m-2).map(e=>(0,v.jsx)(p,{page:e},e))]});else{let e=(m-5)/2;h=(0,v.jsxs)(v.Fragment,{children:[y(1,e).map(e=>(0,v.jsx)(p,{page:e},e)),(0,v.jsx)(b,{}),y(t-1,3).map(e=>(0,v.jsx)(p,{page:e},e)),(0,v.jsx)(b,{}),y(f-e+1,e).map(e=>(0,v.jsx)(p,{page:e},e))]})}return(0,v.jsxs)(`div`,{className:u(e,g.wrapper),children:[(0,v.jsx)(i,{size:`small`,className:u(g.navigation,g.button),variant:`tertiary`,disabled:c||t===1,"aria-disabled":c||t===1,onClick:()=>d(Math.max(1,t-1)),children:(0,v.jsx)(a,{icon:s})}),h,(0,v.jsx)(i,{size:`small`,className:u(g.navigation,g.button),variant:`tertiary`,disabled:c||t===f,"aria-disabled":c||t===f,onClick:()=>d(Math.min(f,t+1)),children:(0,v.jsx)(a,{icon:l})})]})}})),C=t({__namedExportsOrder:()=>A,_default:()=>k,default:()=>D}),w,T,E,D,O,k,A,j=e((()=>{S(),w=r(),{action:T}=__STORYBOOK_MODULE_ACTIONS__,{useArgs:E}=__STORYBOOK_MODULE_PREVIEW_API__,D={title:`Packages/VideoPress/Pagination`,component:x},O=e=>{let[,t]=E(),n=e=>{t({currentPage:e,disabled:!0}),T(`onPageChange`)(e),setTimeout(()=>{t({disabled:!1})},500)};return(0,w.jsx)(x,{...e,onChangePage:n})},k=O.bind({}),k.args={currentPage:1,perPage:10,total:100,minColumns:7,disabled:!1},k.parameters={...k.parameters,docs:{...k.parameters?.docs,source:{originalSource:`args => {
+  const [, updateArgs] = useArgs();
+  const onChangePage = (newPage: number) => {
+    updateArgs({
+      currentPage: newPage,
+      disabled: true
+    });
+    action('onPageChange')(newPage);
+    setTimeout(() => {
+      updateArgs({
+        disabled: false
+      });
+    }, 500);
+  };
+  return <Pagination {...args} onChangePage={onChangePage} />;
+}`,...k.parameters?.docs?.source}}},A=[`_default`]}));j();export{A as __namedExportsOrder,k as _default,D as default,j as n,S as r,C as t};

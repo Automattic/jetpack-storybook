@@ -1,0 +1,1 @@
+import{n as e}from"./chunk-zsgVPwQN.js";import{Bh as t,Oi as n,Rh as r,so as i,zh as a}from"./iframe-uev8Eqlb.js";var o=e((()=>{}));function s({state:e}){return(0,c.jsx)(`div`,{className:a(`jetpack-ai-status-indicator__icon-wrapper`,{[`is-${e}`]:!0}),children:(0,c.jsx)(i,{})})}var c,l=e((()=>{n(),t(),o(),c=r()}));export{l as n,s as t};
