@@ -582,7 +582,7 @@
 <main>
   <div class="wrap">
     <div class="note err" style="margin-bottom: 16px;">
-              <strong>Performance warning:</strong> <code>react-docgen-typescript</code> took <strong>8.1s</strong> to generate the manifest. This delay applies every time the manifest is used by an agent. Consider switching to the faster <code>react-docgen</code> in your <code>main.ts</code>:
+              <strong>Performance warning:</strong> <code>react-docgen-typescript</code> took <strong>9.0s</strong> to generate the manifest. This delay applies every time the manifest is used by an agent. Consider switching to the faster <code>react-docgen</code> in your <code>main.ts</code>:
               <pre><code>typescript: {
   reactDocgen: 'react-docgen',
 }</code></pre>
@@ -25188,20 +25188,18 @@ Callback to be invoked when the user changes the current page.
     <div class="note err">
       <div class="note-title">Prop type error</div>
       <div class="note-body"><pre><code>No component file found for the &quot;PieChart&quot; component.
-  36 | ];
-  37 |
-&gt; 38 | const meta: Meta&lt; StoryArgs &gt; = {
+  34 | ];
+  35 |
+&gt; 36 | const meta: Meta&lt; StoryArgs &gt; = {
      | ^
-  39 | 	title: &#39;JS Packages/Charts Library/Charts/Donut Chart&#39;,
-  40 | 	component: PieChart,
-  41 | 	parameters: {
+  37 | 	title: &#39;JS Packages/Charts Library/Charts/Donut Chart&#39;,
+  38 | 	component: PieChart,
+  39 | 	parameters: {
 
 ../charts/src/charts/pie-chart/stories/donut.stories.tsx:
 /* eslint-disable @wordpress/no-unsafe-wp-apis */
-import {
-	__experimentalText as WPText,
-	__experimentalHStack as HStack,
-} from &#39;@wordpress/components&#39;;
+import { __experimentalHStack as HStack } from &#39;@wordpress/components&#39;;
+import { Text } from &#39;@wordpress/ui&#39;;
 import { Fragment } from &#39;react&#39;;
 import { BaseLegendItem } from &#39;../../../components/legend/types&#39;;
 import {
@@ -25215,7 +25213,7 @@ import {
 } from &#39;../../../stories&#39;;
 import { customerRevenueData, customerRevenueLegendData } from &#39;../../../stories/sample-data&#39;;
 import { Group } from &#39;../../../visx/group&#39;;
-import { Text } from &#39;../../../visx/text&#39;;
+import { Text as SvgText } from &#39;../../../visx/text&#39;;
 import { PieChart, PieChartUnresponsive } from &#39;../../pie-chart&#39;;
 import type { Meta, StoryObj } from &#39;@storybook/react&#39;;
 
@@ -25307,12 +25305,12 @@ export const Default: Story = {
 		data,
 		children: (
 			&lt;Group&gt;
-				&lt;Text textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 24 } y={ -16 }&gt;
+				&lt;SvgText textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 24 } y={ -16 }&gt;
 					User Activity
-				&lt;/Text&gt;
-				&lt;Text textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 18 } y={ 16 }&gt;
+				&lt;/SvgText&gt;
+				&lt;SvgText textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 18 } y={ 16 }&gt;
 					Total: 100K Users
-				&lt;/Text&gt;
+				&lt;/SvgText&gt;
 			&lt;/Group&gt;
 		),
 	},
@@ -25326,12 +25324,12 @@ export const WithSize: Story = {
 		showLabels: false,
 		children: (
 			&lt;Group&gt;
-				&lt;Text textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 18 } y={ -16 }&gt;
+				&lt;SvgText textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 18 } y={ -16 }&gt;
 					User Activity
-				&lt;/Text&gt;
-				&lt;Text textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 14 } y={ 16 }&gt;
+				&lt;/SvgText&gt;
+				&lt;SvgText textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 14 } y={ 16 }&gt;
 					Total: 100K Users
-				&lt;/Text&gt;
+				&lt;/SvgText&gt;
 			&lt;/Group&gt;
 		),
 	},
@@ -25367,12 +25365,12 @@ export const Thin: Story = {
 		showLabels: false,
 		children: (
 			&lt;Group&gt;
-				&lt;Text textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 24 } y={ -16 }&gt;
+				&lt;SvgText textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 24 } y={ -16 }&gt;
 					Thin Donut
-				&lt;/Text&gt;
-				&lt;Text textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 18 } y={ 16 }&gt;
+				&lt;/SvgText&gt;
+				&lt;SvgText textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 18 } y={ 16 }&gt;
 					Thickness: 20%
-				&lt;/Text&gt;
+				&lt;/SvgText&gt;
 			&lt;/Group&gt;
 		),
 	},
@@ -25392,12 +25390,12 @@ export const WithTooltips: Story = {
 		withTooltips: true,
 		children: (
 			&lt;Group&gt;
-				&lt;Text textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 14 } y={ -10 }&gt;
+				&lt;SvgText textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 14 } y={ -10 }&gt;
 					Hover over segments
-				&lt;/Text&gt;
-				&lt;Text textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 14 } y={ 10 }&gt;
+				&lt;/SvgText&gt;
+				&lt;SvgText textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 14 } y={ 10 }&gt;
 					to see tooltips
-				&lt;/Text&gt;
+				&lt;/SvgText&gt;
 			&lt;/Group&gt;
 		),
 	},
@@ -25478,14 +25476,14 @@ const CustomPieLegend = ( {
 								backgroundColor: color,
 							} }
 						/&gt;
-						&lt;WPText size=&quot;small&quot;&gt;{ item.label }&lt;/WPText&gt;
+						&lt;Text variant=&quot;body-sm&quot;&gt;{ item.label }&lt;/Text&gt;
 					&lt;/HStack&gt;
-					&lt;WPText size=&quot;small&quot; weight={ 600 } style={ { textAlign: &#39;right&#39; } }&gt;
+					&lt;Text variant=&quot;body-sm&quot; style={ { fontWeight: 600, textAlign: &#39;right&#39; } }&gt;
 						{ item.formattedValue }
-					&lt;/WPText&gt;
-					&lt;WPText size=&quot;small&quot; style={ { textAlign: &#39;right&#39;, color: &#39;#008a20&#39; } }&gt;
+					&lt;/Text&gt;
+					&lt;Text variant=&quot;body-sm&quot; style={ { textAlign: &#39;right&#39;, color: &#39;#008a20&#39; } }&gt;
 						{ withComparison &amp;&amp; item.comparison }
-					&lt;/WPText&gt;
+					&lt;/Text&gt;
 				&lt;/Fragment&gt;
 			);
 		} ) }
@@ -25549,8 +25547,9 @@ export const CustomLegend: Story = {
                   <span class="ex-name">Imports</span>
                 </div>
                 <pre><code>import { Fragment } from "react";
-import { Group, PieChart, PieChartUnresponsive, Text } from "@automattic/charts";
-import { __experimentalHStack as HStack, __experimentalText as WPText } from "@wordpress/components";</code></pre>
+import { Group, PieChart, PieChartUnresponsive, Text as SvgText } from "@automattic/charts";
+import { __experimentalHStack as HStack } from "@wordpress/components";
+import { Text } from "@wordpress/ui";</code></pre>
               </div>
           
           
@@ -25574,10 +25573,10 @@ import { __experimentalHStack as HStack, __experimentalText as WPText } from "@w
             withTooltips
             data={data}
             legend={ legend }&gt;&lt;Group&gt;
-                &lt;Text textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 24 } y={ -16 }&gt;User Activity
-                                    &lt;/Text&gt;
-                &lt;Text textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 18 } y={ 16 }&gt;Total: 100K Users
-                                    &lt;/Text&gt;
+                &lt;SvgText textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 24 } y={ -16 }&gt;User Activity
+                                    &lt;/SvgText&gt;
+                &lt;SvgText textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 18 } y={ 16 }&gt;Total: 100K Users
+                                    &lt;/SvgText&gt;
             &lt;/Group&gt;&lt;/PieChart&gt;
     );
 };</code></pre>
@@ -25594,10 +25593,10 @@ import { __experimentalHStack as HStack, __experimentalText as WPText } from "@w
 
     return (
         &lt;PieChart size={200} thickness={0.3} showLabels={false} legend={ legend }&gt;&lt;Group&gt;
-                &lt;Text textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 18 } y={ -16 }&gt;User Activity
-                                    &lt;/Text&gt;
-                &lt;Text textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 14 } y={ 16 }&gt;Total: 100K Users
-                                    &lt;/Text&gt;
+                &lt;SvgText textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 18 } y={ -16 }&gt;User Activity
+                                    &lt;/SvgText&gt;
+                &lt;SvgText textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 14 } y={ 16 }&gt;Total: 100K Users
+                                    &lt;/SvgText&gt;
             &lt;/Group&gt;&lt;/PieChart&gt;
     );
 };</code></pre>
@@ -25646,10 +25645,10 @@ import { __experimentalHStack as HStack, __experimentalText as WPText } from "@w
 
     return (
         &lt;PieChart thickness={0.2} gapScale={0.01} showLabels={false} legend={ legend }&gt;&lt;Group&gt;
-                &lt;Text textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 24 } y={ -16 }&gt;Thin Donut
-                                    &lt;/Text&gt;
-                &lt;Text textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 18 } y={ 16 }&gt;Thickness: 20%
-                                    &lt;/Text&gt;
+                &lt;SvgText textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 24 } y={ -16 }&gt;Thin Donut
+                                    &lt;/SvgText&gt;
+                &lt;SvgText textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 18 } y={ 16 }&gt;Thickness: 20%
+                                    &lt;/SvgText&gt;
             &lt;/Group&gt;&lt;/PieChart&gt;
     );
 };</code></pre>
@@ -25678,10 +25677,10 @@ import { __experimentalHStack as HStack, __experimentalText as WPText } from "@w
 
     return (
         &lt;PieChart showLabels={false} withTooltips legend={ legend }&gt;&lt;Group&gt;
-                &lt;Text textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 14 } y={ -10 }&gt;Hover over segments
-                                    &lt;/Text&gt;
-                &lt;Text textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 14 } y={ 10 }&gt;to see tooltips
-                                    &lt;/Text&gt;
+                &lt;SvgText textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 14 } y={ -10 }&gt;Hover over segments
+                                    &lt;/SvgText&gt;
+                &lt;SvgText textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 14 } y={ 10 }&gt;to see tooltips
+                                    &lt;/SvgText&gt;
             &lt;/Group&gt;&lt;/PieChart&gt;
     );
 };</code></pre>
@@ -59604,20 +59603,18 @@ Callback to be invoked when the user changes the current page.
     <div class="note err">
       <div class="note-title">Prop type error</div>
       <div class="note-body"><pre><code>No component file found for the &quot;PieChart&quot; component.
-  36 | ];
-  37 |
-&gt; 38 | const meta: Meta&lt; StoryArgs &gt; = {
+  34 | ];
+  35 |
+&gt; 36 | const meta: Meta&lt; StoryArgs &gt; = {
      | ^
-  39 | 	title: &#39;JS Packages/Charts Library/Charts/Donut Chart&#39;,
-  40 | 	component: PieChart,
-  41 | 	parameters: {
+  37 | 	title: &#39;JS Packages/Charts Library/Charts/Donut Chart&#39;,
+  38 | 	component: PieChart,
+  39 | 	parameters: {
 
 ../charts/src/charts/pie-chart/stories/donut.stories.tsx:
 /* eslint-disable @wordpress/no-unsafe-wp-apis */
-import {
-	__experimentalText as WPText,
-	__experimentalHStack as HStack,
-} from &#39;@wordpress/components&#39;;
+import { __experimentalHStack as HStack } from &#39;@wordpress/components&#39;;
+import { Text } from &#39;@wordpress/ui&#39;;
 import { Fragment } from &#39;react&#39;;
 import { BaseLegendItem } from &#39;../../../components/legend/types&#39;;
 import {
@@ -59631,7 +59628,7 @@ import {
 } from &#39;../../../stories&#39;;
 import { customerRevenueData, customerRevenueLegendData } from &#39;../../../stories/sample-data&#39;;
 import { Group } from &#39;../../../visx/group&#39;;
-import { Text } from &#39;../../../visx/text&#39;;
+import { Text as SvgText } from &#39;../../../visx/text&#39;;
 import { PieChart, PieChartUnresponsive } from &#39;../../pie-chart&#39;;
 import type { Meta, StoryObj } from &#39;@storybook/react&#39;;
 
@@ -59723,12 +59720,12 @@ export const Default: Story = {
 		data,
 		children: (
 			&lt;Group&gt;
-				&lt;Text textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 24 } y={ -16 }&gt;
+				&lt;SvgText textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 24 } y={ -16 }&gt;
 					User Activity
-				&lt;/Text&gt;
-				&lt;Text textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 18 } y={ 16 }&gt;
+				&lt;/SvgText&gt;
+				&lt;SvgText textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 18 } y={ 16 }&gt;
 					Total: 100K Users
-				&lt;/Text&gt;
+				&lt;/SvgText&gt;
 			&lt;/Group&gt;
 		),
 	},
@@ -59742,12 +59739,12 @@ export const WithSize: Story = {
 		showLabels: false,
 		children: (
 			&lt;Group&gt;
-				&lt;Text textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 18 } y={ -16 }&gt;
+				&lt;SvgText textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 18 } y={ -16 }&gt;
 					User Activity
-				&lt;/Text&gt;
-				&lt;Text textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 14 } y={ 16 }&gt;
+				&lt;/SvgText&gt;
+				&lt;SvgText textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 14 } y={ 16 }&gt;
 					Total: 100K Users
-				&lt;/Text&gt;
+				&lt;/SvgText&gt;
 			&lt;/Group&gt;
 		),
 	},
@@ -59783,12 +59780,12 @@ export const Thin: Story = {
 		showLabels: false,
 		children: (
 			&lt;Group&gt;
-				&lt;Text textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 24 } y={ -16 }&gt;
+				&lt;SvgText textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 24 } y={ -16 }&gt;
 					Thin Donut
-				&lt;/Text&gt;
-				&lt;Text textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 18 } y={ 16 }&gt;
+				&lt;/SvgText&gt;
+				&lt;SvgText textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 18 } y={ 16 }&gt;
 					Thickness: 20%
-				&lt;/Text&gt;
+				&lt;/SvgText&gt;
 			&lt;/Group&gt;
 		),
 	},
@@ -59808,12 +59805,12 @@ export const WithTooltips: Story = {
 		withTooltips: true,
 		children: (
 			&lt;Group&gt;
-				&lt;Text textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 14 } y={ -10 }&gt;
+				&lt;SvgText textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 14 } y={ -10 }&gt;
 					Hover over segments
-				&lt;/Text&gt;
-				&lt;Text textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 14 } y={ 10 }&gt;
+				&lt;/SvgText&gt;
+				&lt;SvgText textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 14 } y={ 10 }&gt;
 					to see tooltips
-				&lt;/Text&gt;
+				&lt;/SvgText&gt;
 			&lt;/Group&gt;
 		),
 	},
@@ -59894,14 +59891,14 @@ const CustomPieLegend = ( {
 								backgroundColor: color,
 							} }
 						/&gt;
-						&lt;WPText size=&quot;small&quot;&gt;{ item.label }&lt;/WPText&gt;
+						&lt;Text variant=&quot;body-sm&quot;&gt;{ item.label }&lt;/Text&gt;
 					&lt;/HStack&gt;
-					&lt;WPText size=&quot;small&quot; weight={ 600 } style={ { textAlign: &#39;right&#39; } }&gt;
+					&lt;Text variant=&quot;body-sm&quot; style={ { fontWeight: 600, textAlign: &#39;right&#39; } }&gt;
 						{ item.formattedValue }
-					&lt;/WPText&gt;
-					&lt;WPText size=&quot;small&quot; style={ { textAlign: &#39;right&#39;, color: &#39;#008a20&#39; } }&gt;
+					&lt;/Text&gt;
+					&lt;Text variant=&quot;body-sm&quot; style={ { textAlign: &#39;right&#39;, color: &#39;#008a20&#39; } }&gt;
 						{ withComparison &amp;&amp; item.comparison }
-					&lt;/WPText&gt;
+					&lt;/Text&gt;
 				&lt;/Fragment&gt;
 			);
 		} ) }
@@ -59965,8 +59962,9 @@ export const CustomLegend: Story = {
                   <span class="ex-name">Imports</span>
                 </div>
                 <pre><code>import { Fragment } from "react";
-import { Group, PieChart, PieChartUnresponsive, Text } from "@automattic/charts";
-import { __experimentalHStack as HStack, __experimentalText as WPText } from "@wordpress/components";</code></pre>
+import { Group, PieChart, PieChartUnresponsive, Text as SvgText } from "@automattic/charts";
+import { __experimentalHStack as HStack } from "@wordpress/components";
+import { Text } from "@wordpress/ui";</code></pre>
               </div>
           
           
@@ -59990,10 +59988,10 @@ import { __experimentalHStack as HStack, __experimentalText as WPText } from "@w
             withTooltips
             data={data}
             legend={ legend }&gt;&lt;Group&gt;
-                &lt;Text textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 24 } y={ -16 }&gt;User Activity
-                                    &lt;/Text&gt;
-                &lt;Text textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 18 } y={ 16 }&gt;Total: 100K Users
-                                    &lt;/Text&gt;
+                &lt;SvgText textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 24 } y={ -16 }&gt;User Activity
+                                    &lt;/SvgText&gt;
+                &lt;SvgText textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 18 } y={ 16 }&gt;Total: 100K Users
+                                    &lt;/SvgText&gt;
             &lt;/Group&gt;&lt;/PieChart&gt;
     );
 };</code></pre>
@@ -60010,10 +60008,10 @@ import { __experimentalHStack as HStack, __experimentalText as WPText } from "@w
 
     return (
         &lt;PieChart size={200} thickness={0.3} showLabels={false} legend={ legend }&gt;&lt;Group&gt;
-                &lt;Text textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 18 } y={ -16 }&gt;User Activity
-                                    &lt;/Text&gt;
-                &lt;Text textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 14 } y={ 16 }&gt;Total: 100K Users
-                                    &lt;/Text&gt;
+                &lt;SvgText textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 18 } y={ -16 }&gt;User Activity
+                                    &lt;/SvgText&gt;
+                &lt;SvgText textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 14 } y={ 16 }&gt;Total: 100K Users
+                                    &lt;/SvgText&gt;
             &lt;/Group&gt;&lt;/PieChart&gt;
     );
 };</code></pre>
@@ -60062,10 +60060,10 @@ import { __experimentalHStack as HStack, __experimentalText as WPText } from "@w
 
     return (
         &lt;PieChart thickness={0.2} gapScale={0.01} showLabels={false} legend={ legend }&gt;&lt;Group&gt;
-                &lt;Text textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 24 } y={ -16 }&gt;Thin Donut
-                                    &lt;/Text&gt;
-                &lt;Text textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 18 } y={ 16 }&gt;Thickness: 20%
-                                    &lt;/Text&gt;
+                &lt;SvgText textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 24 } y={ -16 }&gt;Thin Donut
+                                    &lt;/SvgText&gt;
+                &lt;SvgText textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 18 } y={ 16 }&gt;Thickness: 20%
+                                    &lt;/SvgText&gt;
             &lt;/Group&gt;&lt;/PieChart&gt;
     );
 };</code></pre>
@@ -60094,10 +60092,10 @@ import { __experimentalHStack as HStack, __experimentalText as WPText } from "@w
 
     return (
         &lt;PieChart showLabels={false} withTooltips legend={ legend }&gt;&lt;Group&gt;
-                &lt;Text textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 14 } y={ -10 }&gt;Hover over segments
-                                    &lt;/Text&gt;
-                &lt;Text textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 14 } y={ 10 }&gt;to see tooltips
-                                    &lt;/Text&gt;
+                &lt;SvgText textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 14 } y={ -10 }&gt;Hover over segments
+                                    &lt;/SvgText&gt;
+                &lt;SvgText textAnchor=&quot;middle&quot; verticalAnchor=&quot;middle&quot; fontSize={ 14 } y={ 10 }&gt;to see tooltips
+                                    &lt;/SvgText&gt;
             &lt;/Group&gt;&lt;/PieChart&gt;
     );
 };</code></pre>
