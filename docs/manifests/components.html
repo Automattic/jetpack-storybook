@@ -581,8 +581,12 @@
 </header>
 <main>
   <div class="wrap">
-    <div class="note ok" style="margin-bottom: 16px;">
-              Using <code>react-docgen-typescript</code>. Generation took <strong>7.5s</strong>.
+    <div class="note err" style="margin-bottom: 16px;">
+              <strong>Performance warning:</strong> <code>react-docgen-typescript</code> took <strong>11.6s</strong> to generate the manifest. This delay applies every time the manifest is used by an agent. Consider switching to the faster <code>react-docgen</code> in your <code>main.ts</code>:
+              <pre><code>typescript: {
+  reactDocgen: 'react-docgen',
+}</code></pre>
+              <a href="https://storybook.js.org/docs/api/main-config/main-config-typescript#reactdocgen" target="_blank">Learn more</a>
             </div>
     <h2 class="section-title">Components</h2>
     <div class="grid" role="list">
@@ -10274,18 +10278,6 @@ Use the `style` prop or `className` prop to customize the chart container:
 	/&gt;` }
 /&gt;
 
-### CSS Custom Properties
-
-The component exposes CSS custom properties for font customization:
-
-&lt;Source
-	language=&quot;css&quot;
-	code={ `.my-custom-funnel {
-		--funnel-font-family: &quot;Inter&quot;, sans-serif;
-		--step-font-family: &quot;Inter&quot;, sans-serif;
-	}` }
-/&gt;
-
 ## Theming Integration
 
 Conversion Funnel Charts integrate seamlessly with the chart theming system. The default theme has neutral colors and styling, and is automatically applied to all charts unless a custom theme is provided. A custom theme can be provided by wrapping your chart in `GlobalChartsProvider` and passing a custom theme object with the properties you want to override to the `theme` prop:
@@ -17874,7 +17866,6 @@ export const OverlayLabelWithImage: Story = {
 		loading: false,
 		style: {
 			&#39;--a8c--charts--leaderboard--bar--border-radius&#39;: &#39;4px&#39;,
-			fontFamily: `&quot;SF Pro Text&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen-Sans, Ubuntu, Cantarell, &quot;Helvetica Neue&quot;, sans-serif`,
 		},
 	},
 	render: args =&gt; &lt;LeaderboardChartWithOverlayLabelImage { ...args } /&gt;,
@@ -18508,7 +18499,6 @@ import { Stack } from "@wordpress/ui";</code></pre>
     loading={false}
     style={{
         &#39;--a8c--charts--leaderboard--bar--border-radius&#39;: &#39;4px&#39;,
-        fontFamily: `&quot;SF Pro Text&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen-Sans, Ubuntu, Cantarell, &quot;Helvetica Neue&quot;, sans-serif`,
     }} /&gt;;</code></pre>
             </div>
             <div class="note ok">
@@ -19039,7 +19029,6 @@ Combine overlay labels with custom styling and transparent colors:
 		primaryColor=&quot;rgba(56, 88, 233, 0.08)&quot; // Semi-transparent
 		style={{
 			&#39;--a8c--charts--leaderboard--bar--border-radius&#39;: &#39;4px&#39;,
-			fontFamily: &#39;&quot;SF Pro Text&quot;, sans-serif&#39;,
 		}}
 	/&gt;` }
 /&gt;
@@ -19063,7 +19052,6 @@ The component supports CSS custom properties for advanced styling:
 	language=&quot;css&quot;
 	code={ `.myCustomChart {
 		--a8c--charts--leaderboard--bar--border-radius: 8px;
-		font-family: &quot;Custom Font&quot;, sans-serif;
 	}` }
 /&gt;
 
@@ -28738,8 +28726,8 @@ Segments automatically use theme colors, but you can override individual segment
 
 The chart includes built-in styling for labels and notes with appropriate typography hierarchy:
 
-- **Label**: 16px, font-weight 600, positioned above the chart
-- **Note**: 14px, positioned below the label
+- **Label**: Uses `--wpds-font-size-lg` (default 16px), `--wpds-font-weight-medium` (default 499), positioned above the chart
+- **Note**: Uses `--wpds-font-size-md` (default 13px), positioned below the label
 
 &lt;Source
 	language=&quot;jsx&quot;
@@ -48584,18 +48572,6 @@ Use the `style` prop or `className` prop to customize the chart container:
 	/&gt;` }
 /&gt;
 
-### CSS Custom Properties
-
-The component exposes CSS custom properties for font customization:
-
-&lt;Source
-	language=&quot;css&quot;
-	code={ `.my-custom-funnel {
-		--funnel-font-family: &quot;Inter&quot;, sans-serif;
-		--step-font-family: &quot;Inter&quot;, sans-serif;
-	}` }
-/&gt;
-
 ## Theming Integration
 
 Conversion Funnel Charts integrate seamlessly with the chart theming system. The default theme has neutral colors and styling, and is automatically applied to all charts unless a custom theme is provided. A custom theme can be provided by wrapping your chart in `GlobalChartsProvider` and passing a custom theme object with the properties you want to override to the `theme` prop:
@@ -54544,7 +54520,6 @@ export const OverlayLabelWithImage: Story = {
 		loading: false,
 		style: {
 			&#39;--a8c--charts--leaderboard--bar--border-radius&#39;: &#39;4px&#39;,
-			fontFamily: `&quot;SF Pro Text&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen-Sans, Ubuntu, Cantarell, &quot;Helvetica Neue&quot;, sans-serif`,
 		},
 	},
 	render: args =&gt; &lt;LeaderboardChartWithOverlayLabelImage { ...args } /&gt;,
@@ -55178,7 +55153,6 @@ import { Stack } from "@wordpress/ui";</code></pre>
     loading={false}
     style={{
         &#39;--a8c--charts--leaderboard--bar--border-radius&#39;: &#39;4px&#39;,
-        fontFamily: `&quot;SF Pro Text&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen-Sans, Ubuntu, Cantarell, &quot;Helvetica Neue&quot;, sans-serif`,
     }} /&gt;;</code></pre>
             </div>
             <div class="note ok">
@@ -55709,7 +55683,6 @@ Combine overlay labels with custom styling and transparent colors:
 		primaryColor=&quot;rgba(56, 88, 233, 0.08)&quot; // Semi-transparent
 		style={{
 			&#39;--a8c--charts--leaderboard--bar--border-radius&#39;: &#39;4px&#39;,
-			fontFamily: &#39;&quot;SF Pro Text&quot;, sans-serif&#39;,
 		}}
 	/&gt;` }
 /&gt;
@@ -55733,7 +55706,6 @@ The component supports CSS custom properties for advanced styling:
 	language=&quot;css&quot;
 	code={ `.myCustomChart {
 		--a8c--charts--leaderboard--bar--border-radius: 8px;
-		font-family: &quot;Custom Font&quot;, sans-serif;
 	}` }
 /&gt;
 
@@ -63153,8 +63125,8 @@ Segments automatically use theme colors, but you can override individual segment
 
 The chart includes built-in styling for labels and notes with appropriate typography hierarchy:
 
-- **Label**: 16px, font-weight 600, positioned above the chart
-- **Note**: 14px, positioned below the label
+- **Label**: Uses `--wpds-font-size-lg` (default 16px), `--wpds-font-weight-medium` (default 499), positioned above the chart
+- **Note**: Uses `--wpds-font-size-md` (default 13px), positioned below the label
 
 &lt;Source
 	language=&quot;jsx&quot;
