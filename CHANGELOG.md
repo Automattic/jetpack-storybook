@@ -21,6 +21,7 @@ This is an alpha version! The changes listed here are not final.
 - Update story path for publicize components.
 
 ### Fixed
+- Add missing `await` in vitest config, which may be causing intermittent CI errors.
 - Add NodePackageImporter to Vite SCSS config to support pkg: imports.
 - Fix storybook build failure caused by postcss-import not resolving package.json exports for @wordpress/theme/design-tokens.css
 
