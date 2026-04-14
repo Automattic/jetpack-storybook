@@ -582,7 +582,7 @@
 <main>
   <div class="wrap">
     <div class="note err" style="margin-bottom: 16px;">
-              <strong>Performance warning:</strong> <code>react-docgen-typescript</code> took <strong>8.3s</strong> to generate the manifest. This delay applies every time the manifest is used by an agent. Consider switching to the faster <code>react-docgen</code> in your <code>main.ts</code>:
+              <strong>Performance warning:</strong> <code>react-docgen-typescript</code> took <strong>8.1s</strong> to generate the manifest. This delay applies every time the manifest is used by an agent. Consider switching to the faster <code>react-docgen</code> in your <code>main.ts</code>:
               <pre><code>typescript: {
   reactDocgen: 'react-docgen',
 }</code></pre>
@@ -25172,18 +25172,16 @@ Callback to be invoked when the user changes the current page.
     <div class="note err">
       <div class="note-title">Prop type error</div>
       <div class="note-body"><pre><code>No component file found for the &quot;PieChart&quot; component.
-  34 | ];
-  35 |
-&gt; 36 | const meta: Meta&lt; StoryArgs &gt; = {
+  32 | ];
+  33 |
+&gt; 34 | const meta: Meta&lt; StoryArgs &gt; = {
      | ^
-  37 | 	title: &#39;JS Packages/Charts Library/Charts/Donut Chart&#39;,
-  38 | 	component: PieChart,
-  39 | 	parameters: {
+  35 | 	title: &#39;JS Packages/Charts Library/Charts/Donut Chart&#39;,
+  36 | 	component: PieChart,
+  37 | 	parameters: {
 
 ../charts/src/charts/pie-chart/stories/donut.stories.tsx:
-/* eslint-disable @wordpress/no-unsafe-wp-apis */
-import { __experimentalHStack as HStack } from &#39;@wordpress/components&#39;;
-import { Text } from &#39;@wordpress/ui&#39;;
+import { Stack, Text } from &#39;@wordpress/ui&#39;;
 import { Fragment } from &#39;react&#39;;
 import { BaseLegendItem } from &#39;../../../components/legend/types&#39;;
 import {
@@ -25450,7 +25448,7 @@ const CustomPieLegend = ( {
 
 			return (
 				&lt;Fragment key={ index }&gt;
-					&lt;HStack direction=&quot;row&quot; justify=&quot;flex-start&quot; spacing={ 2 }&gt;
+					&lt;Stack direction=&quot;row&quot; justify=&quot;flex-start&quot; align=&quot;center&quot; gap=&quot;sm&quot;&gt;
 						&lt;div
 							style={ {
 								width: &#39;8px&#39;,
@@ -25461,7 +25459,7 @@ const CustomPieLegend = ( {
 							} }
 						/&gt;
 						&lt;Text variant=&quot;body-sm&quot;&gt;{ item.label }&lt;/Text&gt;
-					&lt;/HStack&gt;
+					&lt;/Stack&gt;
 					&lt;Text variant=&quot;body-sm&quot; style={ { fontWeight: 600, textAlign: &#39;right&#39; } }&gt;
 						{ item.formattedValue }
 					&lt;/Text&gt;
@@ -25532,8 +25530,7 @@ export const CustomLegend: Story = {
                 </div>
                 <pre><code>import { Fragment } from "react";
 import { Group, PieChart, PieChartUnresponsive, Text as SvgText } from "@automattic/charts";
-import { __experimentalHStack as HStack } from "@wordpress/components";
-import { Text } from "@wordpress/ui";</code></pre>
+import { Stack, Text } from "@wordpress/ui";</code></pre>
               </div>
           
           
@@ -59571,18 +59568,16 @@ Callback to be invoked when the user changes the current page.
     <div class="note err">
       <div class="note-title">Prop type error</div>
       <div class="note-body"><pre><code>No component file found for the &quot;PieChart&quot; component.
-  34 | ];
-  35 |
-&gt; 36 | const meta: Meta&lt; StoryArgs &gt; = {
+  32 | ];
+  33 |
+&gt; 34 | const meta: Meta&lt; StoryArgs &gt; = {
      | ^
-  37 | 	title: &#39;JS Packages/Charts Library/Charts/Donut Chart&#39;,
-  38 | 	component: PieChart,
-  39 | 	parameters: {
+  35 | 	title: &#39;JS Packages/Charts Library/Charts/Donut Chart&#39;,
+  36 | 	component: PieChart,
+  37 | 	parameters: {
 
 ../charts/src/charts/pie-chart/stories/donut.stories.tsx:
-/* eslint-disable @wordpress/no-unsafe-wp-apis */
-import { __experimentalHStack as HStack } from &#39;@wordpress/components&#39;;
-import { Text } from &#39;@wordpress/ui&#39;;
+import { Stack, Text } from &#39;@wordpress/ui&#39;;
 import { Fragment } from &#39;react&#39;;
 import { BaseLegendItem } from &#39;../../../components/legend/types&#39;;
 import {
@@ -59849,7 +59844,7 @@ const CustomPieLegend = ( {
 
 			return (
 				&lt;Fragment key={ index }&gt;
-					&lt;HStack direction=&quot;row&quot; justify=&quot;flex-start&quot; spacing={ 2 }&gt;
+					&lt;Stack direction=&quot;row&quot; justify=&quot;flex-start&quot; align=&quot;center&quot; gap=&quot;sm&quot;&gt;
 						&lt;div
 							style={ {
 								width: &#39;8px&#39;,
@@ -59860,7 +59855,7 @@ const CustomPieLegend = ( {
 							} }
 						/&gt;
 						&lt;Text variant=&quot;body-sm&quot;&gt;{ item.label }&lt;/Text&gt;
-					&lt;/HStack&gt;
+					&lt;/Stack&gt;
 					&lt;Text variant=&quot;body-sm&quot; style={ { fontWeight: 600, textAlign: &#39;right&#39; } }&gt;
 						{ item.formattedValue }
 					&lt;/Text&gt;
@@ -59931,8 +59926,7 @@ export const CustomLegend: Story = {
                 </div>
                 <pre><code>import { Fragment } from "react";
 import { Group, PieChart, PieChartUnresponsive, Text as SvgText } from "@automattic/charts";
-import { __experimentalHStack as HStack } from "@wordpress/components";
-import { Text } from "@wordpress/ui";</code></pre>
+import { Stack, Text } from "@wordpress/ui";</code></pre>
               </div>
           
           
