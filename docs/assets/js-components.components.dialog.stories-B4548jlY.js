@@ -1,7 +1,0 @@
-import{n as e,r as t}from"./chunk-zsgVPwQN.js";import{H as n,Km as r,V as i}from"./iframe-DmHfi8td.js";var a,o,s=e((()=>{a=`_section_r5o46_1`,o={section:a}})),c=t({Readme:()=>f,__namedExportsOrder:()=>p,default:()=>d}),l,u,d,f,p,m=e((()=>{n(),s(),l=r(),u=({isTwoSections:e})=>(0,l.jsx)(i,{primary:(0,l.jsxs)(`div`,{className:o.section,children:[(0,l.jsx)(`div`,{children:`Primary`}),(0,l.jsx)(`strong`,{children:`4 | 5 | 7`})]}),secondary:(0,l.jsxs)(`div`,{className:o.section,children:[(0,l.jsx)(`div`,{children:`Secondary`}),(0,l.jsx)(`strong`,{children:`4 | 3 | 5`}),(0,l.jsxs)(`div`,{children:[`isTwoSections: `,(0,l.jsx)(`strong`,{children:e?`yes`:`no`})]})]}),isTwoSections:e}),d={title:`JS Packages/Components/Dialog`,component:i},f={render:u.bind({}),name:`Readme`,args:{isTwoSections:!0}},f.parameters={...f.parameters,docs:{...f.parameters?.docs,source:{originalSource:`{
-  render: Template.bind({}),
-  name: 'Readme',
-  args: {
-    isTwoSections: true
-  }
-}`,...f.parameters?.docs?.source}}},p=[`Readme`]}));m();export{f as Readme,p as __namedExportsOrder,d as default,c as n,m as t};
