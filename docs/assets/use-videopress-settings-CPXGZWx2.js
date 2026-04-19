@@ -1,1 +1,0 @@
-import{n as e}from"./chunk-zsgVPwQN.js";import{t}from"./state-Cl3QGBGz.js";var n,r=e((()=>{n=`atomic`})),i=e((()=>{t()}));export{n,r,i as t};
