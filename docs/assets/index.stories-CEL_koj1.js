@@ -1,6 +1,0 @@
-import{n as e}from"./chunk-zsgVPwQN.js";import{Ym as t}from"./iframe-BGcwgj5B.js";import{i as n,n as r,t as i}from"./development-47F47ZiK.js";var a,o,s,c=e((()=>{a=`_tabs_17hej_1`,o=`_tab_17hej_1`,s={tabs:a,tab:o,"tab--active":`_tab--active_17hej_21`}})),l,u,d,f=e((()=>{i(),c(),l=t(),u=({children:e,className:t=``})=>(0,l.jsx)(`nav`,{className:`${s.tabs} ${t}`,children:e}),d=({label:e,link:t})=>(0,l.jsx)(n,{to:t,className:({isActive:e})=>e?`${s.tab} ${s[`tab--active`]}`:s.tab,children:e}),d.__docgenInfo={description:``,methods:[],displayName:`Tab`},u.__docgenInfo={description:``,methods:[],displayName:`Tabs`,props:{className:{defaultValue:{value:`''`,computed:!1},required:!1}}}})),p,m,h,g;e((()=>{i(),f(),p=t(),m={title:`Plugins/Protect/Tabs`,component:u},h=e=>(0,p.jsx)(r,{children:(0,p.jsxs)(u,{...e,children:[(0,p.jsx)(d,{link:`/`,label:`Scan`}),(0,p.jsx)(d,{link:`/firewall`,label:`Firewall`})]})}),h.__docgenInfo={description:``,methods:[],displayName:`Default`},h.parameters={...h.parameters,docs:{...h.parameters?.docs,source:{originalSource:`args => <HashRouter>
-        <Tabs {...args}>
-            <Tab link="/" label="Scan" />
-            <Tab link="/firewall" label="Firewall" />
-        </Tabs>
-    </HashRouter>`,...h.parameters?.docs?.source}}},g=[`Default`]}))();export{h as Default,g as __namedExportsOrder,m as default};

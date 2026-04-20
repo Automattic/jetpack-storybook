@@ -1,0 +1,5 @@
+import{n as e}from"./chunk-zsgVPwQN.js";import{Sd as t,Xm as n,Ym as r,Zm as i,hs as a,of as o}from"./iframe-D5vLpdb4.js";import{a as s,n as c,o as l,r as u,t as d}from"./development-vtWmfzOv.js";var f,p,m,h=e((()=>{f=`_icon_1jdhu_1`,p=`_link_1jdhu_7`,m={icon:f,link:p}})),g,_,v=e((()=>{a(),i(),d(),h(),g=r(),_=({className:e,accessibleName:r})=>(0,g.jsx)(u,{to:`/`,className:n(m.link,e),"aria-label":r||null,children:(0,g.jsx)(o,{icon:t,className:m.icon})}),_.__docgenInfo={description:``,methods:[],displayName:`CloseLink`}})),y,b,x,S,C,w;e((()=>{d(),v(),y=r(),b={title:`Packages/My Jetpack/CloseLink`,component:_},x={},S=e=>(0,y.jsx)(c,{children:(0,y.jsx)(l,{children:(0,y.jsx)(s,{path:`/`,element:(0,y.jsx)(_,{...e})})})}),C=S.bind({}),C.parameters={},C.args=x,C.parameters={...C.parameters,docs:{...C.parameters?.docs,source:{originalSource:`args => <HashRouter>
+        <Routes>
+            <Route path="/" element={<CloseLink {...args} />} />
+        </Routes>
+    </HashRouter>`,...C.parameters?.docs?.source}}},w=[`_default`]}))();export{w as __namedExportsOrder,C as _default,b as default};
