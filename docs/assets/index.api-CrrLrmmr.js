@@ -1,0 +1,44 @@
+import{n as e}from"./chunk-zsgVPwQN.js";import{Ym as t}from"./iframe-BpzBwvWy.js";import{r as n}from"./react-8bVd8fBk.js";import{t as r}from"./mdx-react-shim-dp5rPGlC.js";import{i,n as a,r as o}from"./blocks-D7Y7-tYP.js";function s(e){let t={code:`code`,h1:`h1`,h2:`h2`,h3:`h3`,p:`p`,strong:`strong`,table:`table`,tbody:`tbody`,td:`td`,th:`th`,thead:`thead`,tr:`tr`,...n(),...e.components};return(0,l.jsxs)(l.Fragment,{children:[(0,l.jsx)(a,{title:`JS Packages/Charts Library/Components/Trend Indicator/API Reference`}),`
+`,(0,l.jsx)(t.h1,{id:`trend-indicator-api-reference`,children:`Trend Indicator API Reference`}),`
+`,(0,l.jsx)(t.p,{children:`Complete API documentation for the TrendIndicator component.`}),`
+`,(0,l.jsx)(t.h2,{id:`props`,children:`Props`}),`
+`,(0,l.jsxs)(t.table,{children:[(0,l.jsx)(t.thead,{children:(0,l.jsxs)(t.tr,{children:[(0,l.jsx)(t.th,{children:`Prop`}),(0,l.jsx)(t.th,{children:`Type`}),(0,l.jsx)(t.th,{children:`Default`}),(0,l.jsx)(t.th,{children:`Description`})]})}),(0,l.jsxs)(t.tbody,{children:[(0,l.jsxs)(t.tr,{children:[(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`direction`})}),(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`'up' | 'down' | 'neutral'`})}),(0,l.jsx)(t.td,{children:(0,l.jsx)(t.strong,{children:`Required`})}),(0,l.jsx)(t.td,{children:`The direction of the trend`})]}),(0,l.jsxs)(t.tr,{children:[(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`value`})}),(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`string | number`})}),(0,l.jsx)(t.td,{children:(0,l.jsx)(t.strong,{children:`Required`})}),(0,l.jsx)(t.td,{children:`The value to display`})]}),(0,l.jsxs)(t.tr,{children:[(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`showIcon`})}),(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`boolean`})}),(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`true`})}),(0,l.jsx)(t.td,{children:`Whether to show the directional arrow icon`})]}),(0,l.jsxs)(t.tr,{children:[(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`className`})}),(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`string`})}),(0,l.jsx)(t.td,{children:`-`}),(0,l.jsx)(t.td,{children:`Additional CSS class name`})]}),(0,l.jsxs)(t.tr,{children:[(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`style`})}),(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`CSSProperties`})}),(0,l.jsx)(t.td,{children:`-`}),(0,l.jsx)(t.td,{children:`Inline CSS styles`})]})]})]}),`
+`,(0,l.jsx)(t.h2,{id:`type-definitions`,children:`Type Definitions`}),`
+`,(0,l.jsx)(t.h3,{id:`trenddirection`,children:`TrendDirection`}),`
+`,(0,l.jsx)(o,{language:`typescript`,code:`type TrendDirection = 'up' | 'down' | 'neutral';`}),`
+`,(0,l.jsx)(t.h3,{id:`trendindicatorprops`,children:`TrendIndicatorProps`}),`
+`,(0,l.jsx)(o,{language:`typescript`,code:`interface TrendIndicatorProps {
+/** The direction of the trend (up, down, or neutral) */
+direction: TrendDirection;
+
+/** The value to display (e.g., "14%", "+$500", "2.5k") */
+value: string | number;
+
+/** Whether to show the directional icon */
+showIcon?: boolean;
+
+/** Additional CSS class name */
+className?: string;
+
+/** Inline styles */
+style?: CSSProperties;
+}`}),`
+`,(0,l.jsx)(t.h2,{id:`exports`,children:`Exports`}),`
+`,(0,l.jsx)(o,{language:`typescript`,code:`// Component export
+import { TrendIndicator } from '@automattic/charts';
+
+// Type exports
+import type { TrendIndicatorProps, TrendDirection } from '@automattic/charts';`}),`
+`,(0,l.jsx)(t.h2,{id:`css-classes`,children:`CSS Classes`}),`
+`,(0,l.jsx)(t.p,{children:`The component uses CSS Modules with the following class structure:`}),`
+`,(0,l.jsxs)(t.table,{children:[(0,l.jsx)(t.thead,{children:(0,l.jsxs)(t.tr,{children:[(0,l.jsx)(t.th,{children:`Class`}),(0,l.jsx)(t.th,{children:`Description`})]})}),(0,l.jsxs)(t.tbody,{children:[(0,l.jsxs)(t.tr,{children:[(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`.trend-indicator`})}),(0,l.jsx)(t.td,{children:`Root container element`})]}),(0,l.jsxs)(t.tr,{children:[(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`.trend-indicator--up`})}),(0,l.jsxs)(t.td,{children:[`Applied when direction is `,(0,l.jsx)(t.code,{children:`'up'`})]})]}),(0,l.jsxs)(t.tr,{children:[(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`.trend-indicator--down`})}),(0,l.jsxs)(t.td,{children:[`Applied when direction is `,(0,l.jsx)(t.code,{children:`'down'`})]})]}),(0,l.jsxs)(t.tr,{children:[(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`.trend-indicator--neutral`})}),(0,l.jsxs)(t.td,{children:[`Applied when direction is `,(0,l.jsx)(t.code,{children:`'neutral'`})]})]}),(0,l.jsxs)(t.tr,{children:[(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`.trend-indicator__icon`})}),(0,l.jsx)(t.td,{children:`The directional arrow SVG`})]}),(0,l.jsxs)(t.tr,{children:[(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`.trend-indicator__value`})}),(0,l.jsx)(t.td,{children:`The value text container`})]})]})]}),`
+`,(0,l.jsx)(t.h2,{id:`css-custom-properties`,children:`CSS Custom Properties`}),`
+`,(0,l.jsx)(t.p,{children:`The component exposes CSS custom properties for theming:`}),`
+`,(0,l.jsxs)(t.table,{children:[(0,l.jsx)(t.thead,{children:(0,l.jsxs)(t.tr,{children:[(0,l.jsx)(t.th,{children:`Property`}),(0,l.jsx)(t.th,{children:`Default`}),(0,l.jsx)(t.th,{children:`Description`})]})}),(0,l.jsxs)(t.tbody,{children:[(0,l.jsxs)(t.tr,{children:[(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`--charts-trend-up-color`})}),(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`#1a8917`})}),(0,l.jsx)(t.td,{children:`Color for upward trends (green)`})]}),(0,l.jsxs)(t.tr,{children:[(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`--charts-trend-down-color`})}),(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`#d63638`})}),(0,l.jsx)(t.td,{children:`Color for downward trends (red)`})]}),(0,l.jsxs)(t.tr,{children:[(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`--charts-trend-neutral-color`})}),(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`#646970`})}),(0,l.jsx)(t.td,{children:`Color for neutral trends (gray)`})]})]})]}),`
+`,(0,l.jsx)(t.h2,{id:`accessibility-attributes`,children:`Accessibility Attributes`}),`
+`,(0,l.jsxs)(t.table,{children:[(0,l.jsx)(t.thead,{children:(0,l.jsxs)(t.tr,{children:[(0,l.jsx)(t.th,{children:`Attribute`}),(0,l.jsx)(t.th,{children:`Value`}),(0,l.jsx)(t.th,{children:`Description`})]})}),(0,l.jsxs)(t.tbody,{children:[(0,l.jsxs)(t.tr,{children:[(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`aria-label`})}),(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`"{Direction}: {value}"`})}),(0,l.jsx)(t.td,{children:`Describes the trend for screen readers`})]}),(0,l.jsxs)(t.tr,{children:[(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`aria-hidden`})}),(0,l.jsxs)(t.td,{children:[(0,l.jsx)(t.code,{children:`true`}),` (on icon)`]}),(0,l.jsx)(t.td,{children:`Hides decorative icon from screen readers`})]})]})]}),`
+`,(0,l.jsx)(t.h3,{id:`generated-aria-label-values`,children:`Generated aria-label Values`}),`
+`,(0,l.jsxs)(t.table,{children:[(0,l.jsx)(t.thead,{children:(0,l.jsxs)(t.tr,{children:[(0,l.jsx)(t.th,{children:`Direction`}),(0,l.jsx)(t.th,{children:`Example Value`}),(0,l.jsx)(t.th,{children:`aria-label`})]})}),(0,l.jsxs)(t.tbody,{children:[(0,l.jsxs)(t.tr,{children:[(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`up`})}),(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`+14%`})}),(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`"Increase: +14%"`})})]}),(0,l.jsxs)(t.tr,{children:[(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`down`})}),(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`-5%`})}),(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`"Decrease: -5%"`})})]}),(0,l.jsxs)(t.tr,{children:[(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`neutral`})}),(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`0%`})}),(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`"No change: 0%"`})})]})]})]}),`
+`,(0,l.jsx)(t.h2,{id:`icon-behavior`,children:`Icon Behavior`}),`
+`,(0,l.jsxs)(t.table,{children:[(0,l.jsx)(t.thead,{children:(0,l.jsxs)(t.tr,{children:[(0,l.jsx)(t.th,{children:`Direction`}),(0,l.jsx)(t.th,{children:`Icon Displayed`})]})}),(0,l.jsxs)(t.tbody,{children:[(0,l.jsxs)(t.tr,{children:[(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`up`})}),(0,l.jsx)(t.td,{children:`Upward arrow (↑)`})]}),(0,l.jsxs)(t.tr,{children:[(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`down`})}),(0,l.jsx)(t.td,{children:`Downward arrow (↓)`})]}),(0,l.jsxs)(t.tr,{children:[(0,l.jsx)(t.td,{children:(0,l.jsx)(t.code,{children:`neutral`})}),(0,l.jsx)(t.td,{children:`No icon`})]})]})]}),`
+`,(0,l.jsxs)(t.p,{children:[`When `,(0,l.jsx)(t.code,{children:`showIcon={false}`}),`, no icon is displayed regardless of direction.`]})]})}function c(e={}){let{wrapper:t}={...n(),...e.components};return t?(0,l.jsx)(t,{...e,children:(0,l.jsx)(s,{...e})}):s(e)}var l;e((()=>{l=t(),r(),i()}))();export{c as default};
