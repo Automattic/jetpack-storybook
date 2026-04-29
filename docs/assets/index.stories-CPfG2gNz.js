@@ -1,0 +1,5 @@
+import{n as e}from"./chunk-zsgVPwQN.js";import{$d as t,Bd as n,Gm as r,Hm as i,Km as a,cs as o}from"./iframe-B99d6bju.js";import{a as s,n as c,o as l,r as u,t as d}from"./development-DujRt8xl.js";var f,p,m,h=e((()=>{f=`_icon_1k3eu_1`,p=`_link_1k3eu_6`,m={icon:f,link:p}}));function g({onClick:e,reload:r}){return(0,_.jsxs)(u,{to:r?`/?reload=true`:`/`,className:m.link,onClick:e,children:[(0,_.jsx)(t,{icon:n,className:m.icon}),a(`Go back`,`jetpack-my-jetpack`)]})}var _,v=e((()=>{r(),o(),d(),h(),_=i()})),y,b,x,S,C,w;e((()=>{d(),v(),y=i(),b={title:`Packages/My Jetpack/GoBackLink`,component:g},x={},S=e=>(0,y.jsx)(c,{children:(0,y.jsx)(l,{children:(0,y.jsx)(s,{path:`/`,element:(0,y.jsx)(g,{...e})})})}),C=S.bind({}),C.parameters={},C.args=x,C.parameters={...C.parameters,docs:{...C.parameters?.docs,source:{originalSource:`args => <HashRouter>
+        <Routes>
+            <Route path="/" element={<GoBackLink {...args} />} />
+        </Routes>
+    </HashRouter>`,...C.parameters?.docs?.source}}},w=[`_default`]}))();export{w as __namedExportsOrder,C as _default,b as default};
