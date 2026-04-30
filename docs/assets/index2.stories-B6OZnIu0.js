@@ -1,7 +1,0 @@
-import{n as e,o as t}from"./chunk-zsgVPwQN.js";import{Eh as n,Vm as r,_ as i,v as a}from"./iframe-Btxj1RiL.js";var o,s,c,l,u,d;e((()=>{o=t(n(),1),a(),s=r(),c={title:`JS Packages/Components/Radio Control`,component:i,parameters:{layout:`centered`},argTypes:{disabled:{control:`boolean`,defaultValue:!1,description:`Whether or not the radio control is currently disabled.`,table:{type:{summary:`boolean`},defaultValue:{summary:!1}}},help:{control:`text`,description:`Additional information to display below the radio control.`},label:{control:`text`,description:`The label for the radio control.`},hideLabelFromVision:{control:`boolean`,defaultValue:!1,description:`If true, the label will only be visible to screen readers.`,table:{type:{summary:`boolean`},defaultValue:{summary:!1}}}}},l=[{label:`One`,value:`one`},{label:`Two`,value:`two`}],u=e=>{let[t,n]=(0,o.useState)(`one`),r=(0,o.useCallback)(e=>{n(e)},[]);return(0,s.jsx)(i,{...e,selected:t,options:l,onChange:r})},u.parameters={...u.parameters,docs:{...u.parameters?.docs,source:{originalSource:`args => {
-  const [selected, setSelected] = useState('one');
-  const handleChange = useCallback(value => {
-    setSelected(value);
-  }, []);
-  return <RadioControl {...args} selected={selected} options={options} onChange={handleChange} />;
-}`,...u.parameters?.docs?.source}}},d=[`Default`]}))();export{u as Default,d as __namedExportsOrder,c as default};
