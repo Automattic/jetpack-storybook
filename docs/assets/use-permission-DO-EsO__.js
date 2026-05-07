@@ -1,0 +1,1 @@
+import{n as e}from"./chunk-zsgVPwQN.js";import{n as t}from"./use-connection-B7vDp4fO.js";import{t as n}from"./connection-BsHw0bDT.js";var r,i=e((()=>{n(),r=()=>{let{isRegistered:e,hasConnectedOwner:n,isUserConnected:r}=t();return{isRegistered:e,hasConnectedOwner:n,isUserConnected:r,canPerformAction:e&&n&&r}}}));export{r as n,i as t};
