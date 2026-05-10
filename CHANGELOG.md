@@ -11,6 +11,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Changed
 - Internal: No longer require automattic/jetpack-changelogger as a per-project dev dependency.
+- Storybook Vite plugin: resolve bare `store` and `store/` imports for search dashboard stories.
 - Update dependencies.
 - Update package dependencies.
 - vitest addon: Disable isolation per FAQ.
