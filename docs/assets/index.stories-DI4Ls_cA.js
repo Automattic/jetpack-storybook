@@ -1,3 +1,0 @@
-import{n as e}from"./chunk-zsgVPwQN.js";import{D as t,O as n,Qm as r}from"./iframe-CpuWAUZ2.js";var i,a,o,s,c;e((()=>{n(),i=r(),a={title:`JS Packages/Components/Indeterminate Progress Bar`,component:t},o=e=>(0,i.jsx)(t,{...e}),s=o.bind({}),s.args={},s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`args => {
-  return <IndeterminateProgressBar {...args} />;
-}`,...s.parameters?.docs?.source}}},c=[`_default`]}))();export{c as __namedExportsOrder,s as _default,a as default};
