@@ -1,3 +1,0 @@
-import{n as e,r as t}from"./chunk-zsgVPwQN.js";import{S as n,sx as r,x as i}from"./iframe-D3Z69Uqr.js";var a=t({__namedExportsOrder:()=>u,_default:()=>l,default:()=>s}),o,s,c,l,u,d=e((()=>{n(),o=r(),s={title:`JS Packages/Components/Progress Bar`,component:i},c=e=>(0,o.jsx)(i,{...e}),l=c.bind({}),l.args={progress:.5},l.parameters={...l.parameters,docs:{...l.parameters?.docs,source:{originalSource:`args => {
-  return <ProgressBar {...args} />;
-}`,...l.parameters?.docs?.source}}},u=[`_default`]}));d();export{u as __namedExportsOrder,l as _default,s as default,d as n,a as t};
