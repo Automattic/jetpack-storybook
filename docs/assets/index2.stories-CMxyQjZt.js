@@ -1,5 +1,0 @@
-import{n as e,r as t}from"./chunk-zsgVPwQN.js";import{Cp as n,fv as r,g as i,h as a,sx as o,th as s}from"./iframe-CX2PvLK8.js";var c=t({Horizontal:()=>m,__namedExportsOrder:()=>h,_default:()=>p,default:()=>u}),l,u,d,f,p,m,h,g=e((()=>{n(),i(),l=o(),u={title:`JS Packages/Components/Stat Card`,component:a,argTypes:{variant:{control:{type:`radio`},options:[`square`,`horizontal`]},label:{control:{type:`text`}},value:{control:{type:`number`}},icon:{table:{disable:!0}},hideValue:{control:{type:`boolean`}}}},d={icon:(0,l.jsx)(r,{icon:s,color:`green`}),label:`Posted this month`,value:1806},f=e=>(0,l.jsx)(a,{...e}),p=f.bind({}),p.args=d,m=f.bind({}),m.args={...d,variant:`horizontal`},p.parameters={...p.parameters,docs:{...p.parameters?.docs,source:{originalSource:`args => {
-  return <StatCard {...args} />;
-}`,...p.parameters?.docs?.source}}},m.parameters={...m.parameters,docs:{...m.parameters?.docs,source:{originalSource:`args => {
-  return <StatCard {...args} />;
-}`,...m.parameters?.docs?.source}}},h=[`_default`,`Horizontal`]}));g();export{m as Horizontal,h as __namedExportsOrder,p as _default,u as default,g as n,c as t};
