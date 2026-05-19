@@ -1,0 +1,1 @@
+import{n as e}from"./chunk-zsgVPwQN.js";import{r as t}from"./bar-chart-C9z5lOXe.js";var n=e((()=>{t()}));export{n as t};
