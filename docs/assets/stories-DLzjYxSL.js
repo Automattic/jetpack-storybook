@@ -1,3 +1,0 @@
-import{n as e}from"./chunk-zsgVPwQN.js";import{sS as t}from"./iframe-DoiyZpmE.js";import{r as n}from"./react-BP0fqC2N.js";import{t as r}from"./mdx-react-shim-CJP_k6mu.js";import{a as i,i as a,n as o,t as s}from"./blocks-CFzKzEz8.js";import{n as c,r as l,t as u}from"./index.stories-CwcRGSHp.js";function d(e){let t={h1:`h1`,...n(),...e.components};return(0,p.jsxs)(p.Fragment,{children:[(0,p.jsx)(o,{of:u}),`
-`,(0,p.jsx)(t.h1,{id:`posterpanel`,children:`PosterPanel`}),`
-`,(0,p.jsx)(s,{withSource:`open`,children:(0,p.jsx)(a,{id:`packages-videopress-block-editor-poster-panel--default`})})]})}function f(e={}){let{wrapper:t}={...n(),...e.components};return t?(0,p.jsx)(t,{...e,children:(0,p.jsx)(d,{...e})}):d(e)}var p;e((()=>{p=t(),r(),i(),l(),c()}))();export{f as default};
