@@ -13,6 +13,7 @@ This is an alpha version! The changes listed here are not final.
 - Add premium-analytics internal packages stories
 
 ### Changed
+- Add a Vite alias resolving `@jetpack-premium-analytics/*` internal package imports so Premium Analytics ui package stories build.
 - Internal: No longer require automattic/jetpack-changelogger as a per-project dev dependency.
 - Storybook Vite plugin: resolve bare `store` and `store/` imports for search dashboard stories.
 - Update dependencies.
