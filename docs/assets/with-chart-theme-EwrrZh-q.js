@@ -1,1 +1,0 @@
-import{n as e}from"./chunk-zsgVPwQN.js";import{b as t,t as n}from"./hooks-CIDhyPPX.js";import{px as r}from"./iframe-DtJFNbbb.js";import{_ as i}from"./providers-xBx9l1Ue.js";import{t as a}from"./src-CWDcAVnV.js";var o,s,c,l=e((()=>{a(),n(),o=r(),s=({children:e})=>(0,o.jsx)(i,{theme:t(),children:e}),c=e=>(0,o.jsx)(s,{children:(0,o.jsx)(e,{})})}));export{c as n,l as t};
