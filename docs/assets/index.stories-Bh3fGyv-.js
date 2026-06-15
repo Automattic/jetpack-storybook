@@ -1,0 +1,25 @@
+import{c as e,i as t}from"./preload-helper-usAeo7Bx.js";import{t as n}from"./react-DVCOKQW8.js";import{t as r}from"./jsx-runtime-D2pHJD-r.js";import{t as i}from"./prop-types-xhFXGAMZ.js";import{M as a,N as o,b as s,c,r as l,t as u,u as d,v as f}from"./Line-COQqe0rE.js";import{a as p,n as m,r as h}from"./esm-DnmhKn2D.js";function g(e){return`bandwidth`in e?e.bandwidth():0}var _=t((()=>{}));function v(){return v=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},v.apply(this,arguments)}function y(e,t){if(e==null)return{};var n={},r=Object.keys(e),i,a;for(a=0;a<r.length;a++)i=r[a],!(t.indexOf(i)>=0)&&(n[i]=e[i]);return n}function b(e){var t=e.top,n=t===void 0?0:t,r=e.left,i=r===void 0?0:r,a=e.scale,s=e.width,l=e.stroke,u=l===void 0?`#eaf0f6`:l,f=e.strokeWidth,p=f===void 0?1:f,m=e.strokeDasharray,_=e.className,b=e.children,x=e.numTicks,E=x===void 0?10:x,D=e.lineStyle,O=e.offset,k=e.tickValues,A=y(e,T),j=k??c(a,E),M=(O??0)+g(a)/2,N=j.map(function(e,t){var n=(d(a(e))??0)+M;return{index:t,from:new o({x:0,y:n}),to:new o({x:s,y:n})}});return S.createElement(h,{className:(0,C.default)(`visx-rows`,_),top:n,left:i},b?b({lines:N}):N.map(function(e){var t=e.from,n=e.to,r=e.index;return S.createElement(w.default,v({key:`row-line-`+r,from:t,to:n,stroke:u,strokeWidth:p,strokeDasharray:m,style:D},A))}))}var x,S,C,w,T,E=t((()=>{x=e(i()),S=e(n()),C=e(p()),w=e(u()),m(),a(),l(),_(),T=[`top`,`left`,`scale`,`width`,`stroke`,`strokeWidth`,`strokeDasharray`,`className`,`children`,`numTicks`,`lineStyle`,`offset`,`tickValues`],b.propTypes={tickValues:x.default.array,width:x.default.number.isRequired}}));function D(){return D=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},D.apply(this,arguments)}function O(e,t){if(e==null)return{};var n={},r=Object.keys(e),i,a;for(a=0;a<r.length;a++)i=r[a],!(t.indexOf(i)>=0)&&(n[i]=e[i]);return n}function k(e){var t=e.top,n=t===void 0?0:t,r=e.left,i=r===void 0?0:r,a=e.scale,s=e.height,l=e.stroke,u=l===void 0?`#eaf0f6`:l,f=e.strokeWidth,p=f===void 0?1:f,m=e.strokeDasharray,_=e.className,v=e.numTicks,y=v===void 0?10:v,b=e.lineStyle,x=e.offset,S=e.tickValues,C=e.children,w=O(e,P),T=S??c(a,y),E=(x??0)+g(a)/2,k=T.map(function(e,t){var n=(d(a(e))??0)+E;return{index:t,from:new o({x:n,y:0}),to:new o({x:n,y:s})}});return j.createElement(h,{className:(0,M.default)(`visx-columns`,_),top:n,left:i},C?C({lines:k}):k.map(function(e){var t=e.from,n=e.to,r=e.index;return j.createElement(N.default,D({key:`column-line-`+r,from:t,to:n,stroke:u,strokeWidth:p,strokeDasharray:m,style:b},w))}))}var A,j,M,N,P,F=t((()=>{A=e(i()),j=e(n()),M=e(p()),N=e(u()),m(),a(),l(),_(),P=[`top`,`left`,`scale`,`height`,`stroke`,`strokeWidth`,`strokeDasharray`,`className`,`numTicks`,`lineStyle`,`offset`,`tickValues`,`children`],k.propTypes={tickValues:A.default.array,height:A.default.number.isRequired}})),I=t((()=>{E(),F()})),L,R=t((()=>{L={"grid-control":`_grid-control_7yqr9_1`}})),z,B,V=t((()=>{I(),R(),z=r(),B=({width:e,height:t,xScale:n,yScale:r,gridVisibility:i=`x`,top:a=0})=>(0,z.jsxs)(`g`,{transform:`translate(0, ${a})`,className:L[`grid-control`],children:[i.includes(`x`)&&(0,z.jsx)(b,{scale:n,width:e,"data-testid":`x-grid`}),i.includes(`y`)&&(0,z.jsx)(k,{scale:r,height:t,"data-testid":`y-grid`})]})})),H,U,W,G,K,q;t((()=>{l(),V(),H=r(),U={title:`JS Packages/Charts Library/Components/GridControl`,component:B,argTypes:{gridVisibility:{control:{type:`select`},options:[`x`,`y`,`xy`,`none`]}}},W=e=>{let t=s({domain:[`A`,`B`,`C`],range:[0,100]}),n=f({domain:[0,100],range:[100,0]});return(0,H.jsx)(`svg`,{width:200,height:200,children:(0,H.jsx)(B,{...e,width:200,height:200,xScale:t,yScale:n,gridVisibility:e.gridVisibility})})},G=W.bind({}),G.args={gridVisibility:`x`},K=W.bind({}),K.args={gridVisibility:`xy`},G.parameters={...G.parameters,docs:{...G.parameters?.docs,source:{originalSource:`args => {
+  const xScale = scaleBand({
+    domain: ['A', 'B', 'C'],
+    range: [0, 100]
+  });
+  const yScale = scaleLinear({
+    domain: [0, 100],
+    range: [100, 0]
+  });
+  return <svg width={200} height={200}>
+            <GridControl {...args} width={200} height={200} xScale={xScale} yScale={yScale} gridVisibility={args.gridVisibility} />
+        </svg>;
+}`,...G.parameters?.docs?.source}}},K.parameters={...K.parameters,docs:{...K.parameters?.docs,source:{originalSource:`args => {
+  const xScale = scaleBand({
+    domain: ['A', 'B', 'C'],
+    range: [0, 100]
+  });
+  const yScale = scaleLinear({
+    domain: [0, 100],
+    range: [100, 0]
+  });
+  return <svg width={200} height={200}>
+            <GridControl {...args} width={200} height={200} xScale={xScale} yScale={yScale} gridVisibility={args.gridVisibility} />
+        </svg>;
+}`,...K.parameters?.docs?.source}}},q=[`Default`,`BothAxes`]}))();export{K as BothAxes,G as Default,q as __namedExportsOrder,U as default};
