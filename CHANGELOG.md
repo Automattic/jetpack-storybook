@@ -11,6 +11,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Added
 - Add a Premium Analytics Average items per order widget story.
+- Add a Premium Analytics Bookings by device widget story.
 - Add premium-analytics internal packages stories
 - Premium Analytics: Add sales by UTM channel widget story.
 - Premium Analytics: Add visitors over time widget story.
