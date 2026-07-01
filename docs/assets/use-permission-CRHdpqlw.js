@@ -1,0 +1,1 @@
+import{i as e}from"./preload-helper-usAeo7Bx.js";import{n as t}from"./use-connection-CyG3ZxYD.js";import{t as n}from"./connection-b_d6Rh1g.js";var r,i=e((()=>{n(),r=()=>{let{isRegistered:e,hasConnectedOwner:n,isUserConnected:r}=t();return{isRegistered:e,hasConnectedOwner:n,isUserConnected:r,canPerformAction:e&&n&&r}}}));export{r as n,i as t};
