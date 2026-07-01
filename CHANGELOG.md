@@ -24,6 +24,9 @@ This is an alpha version! The changes listed here are not final.
 - Update package dependencies.
 - vitest addon: Disable isolation per FAQ.
 
+### Fixed
+- Premium Analytics: Resolve Storybook internal package imports from source.
+
 ## 2.0.0 - 2026-04-13
 ### Added
 - Add @wordpress/theme 0.6.0 design tokens for charts library Storybook previews. [#46846]
