@@ -14,6 +14,7 @@ This is an alpha version! The changes listed here are not final.
 - Add a Premium Analytics Bookings by device widget story.
 - Add premium-analytics internal packages stories
 - Premium Analytics: Add sales by UTM channel widget story.
+- Premium Analytics: Add sales by UTM source widget story.
 - Premium Analytics: Add visitors over time widget story.
 
 ### Changed
