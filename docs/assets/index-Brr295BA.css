@@ -1,0 +1,1 @@
+._area-chart_uhkqb_1{position:relative}._area-chart--animated_uhkqb_4 path{transform-origin:0 95%;animation:_rise_uhkqb_1 var(--wpds-motion-duration-xl,.4s) var(--wpds-motion-easing-expressive,cubic-bezier(.25, 0, 0, 1)) forwards;transform:scaleY(0)}._area-chart_uhkqb_1 svg{overflow:visible}@keyframes _rise_uhkqb_1{to{transform:scaleY(1)}}
