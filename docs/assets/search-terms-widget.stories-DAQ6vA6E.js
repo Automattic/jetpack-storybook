@@ -1,0 +1,25 @@
+import{i as e}from"./preload-helper-usAeo7Bx.js";import{n as t,t as n}from"./build-module-DQ5lAs4a.js";import{t as r}from"./jsx-runtime-D2pHJD-r.js";import{N as i,t as a}from"./build-module-DMs68Vfd.js";import{On as o,n as s}from"./build-module-C3k6FW0l.js";import{Ct as c,R as l,d as u,f as d,s as f}from"./hooks-OI8dWRIc.js";import{M as p,t as m,w as h}from"./build-module-BaW3sO3b.js";import{D as g}from"./chart-tooltip-BRiTszV_.js";import{t as _}from"./leaderboard-chart-CokPshOX.js";import{i as v}from"./metric-tabs-chart-BPC7NrGU.js";import{n as y,t as b}from"./register-report-mocks-kxmTKJmF.js";import{i as x,n as S,r as C,t as w}from"./widget-dashboard-with-widget-C-yXialv.js";import{t as T}from"./src-A57LQDut.js";var E,D,O,k,A,j,M=e((()=>{E=`_root_ekbd1_1`,D=`_placeholder_ekbd1_9`,O=`_content_ekbd1_18`,k=`_itemLabel_ekbd1_26`,A=`_itemLabelText_ekbd1_32`,j={root:E,placeholder:D,content:O,itemLabel:k,itemLabelText:A}}));function N(e){return typeof e.label==`string`?e.label:String(e.label)}function P({reportParams:e,max:t}){let{primary:n,comparison:r,hasComparison:i}=l(e),a=n.data?.data?.[0]?.items??[],o=r.data?.data?.[0]?.items??[],s=new Map(o.map(e=>[N(e),e.views]));return{data:a.map(e=>({label:N(e),views:e.views,previousViews:i?s.get(N(e))??0:0})).slice(0,t>0?t:void 0),isLoading:n.isLoading||i&&r.isLoading,isError:n.isError||i&&r.isError,hasComparison:i}}var F=e((()=>{d()}));function I({max:e=10}){let{reportParams:n}=u(),{data:r,isLoading:a,isError:o,hasComparison:s}=P({reportParams:n,max:e}),c=(0,i.useMemo)(()=>{let e=Math.max(...r.map(e=>e.views),0),t=Math.max(...r.map(e=>e.previousViews),0);return r.map((n,r)=>({id:`${r}-${n.label}`,label:(0,R.jsx)(h,{align:`center`,className:j.itemLabel,children:(0,R.jsx)(p,{className:j.itemLabelText,children:n.label})}),currentValue:n.views,previousValue:n.previousViews,currentShare:e>0?n.views/e*100:0,previousShare:t>0?n.previousViews/t*100:0,delta:s?g(n.views,n.previousViews):0}))},[r,s]);return o?(0,R.jsx)(h,{className:j.root,children:(0,R.jsx)(`div`,{className:j.content,children:(0,R.jsx)(h,{align:`center`,justify:`center`,className:j.placeholder,children:(0,R.jsx)(p,{children:t(`Could not load search terms data.`,`jetpack-premium-analytics`)})})})}):a&&r.length===0?(0,R.jsx)(h,{className:j.root,children:(0,R.jsx)(`div`,{className:j.content,children:(0,R.jsx)(v,{})})}):(0,R.jsx)(h,{className:j.root,children:(0,R.jsx)(`div`,{className:j.content,children:(0,R.jsx)(_,{data:c,loading:a,withComparison:s,withOverlayLabel:!0,showLegend:!1,emptyStateText:t(`No search terms in this period.`,`jetpack-premium-analytics`),dataFormat:{type:`number`,options:{useMultipliers:!0,decimals:0}}})})})}function L({attributes:e={}}){return(0,R.jsx)(f,{attributes:e,children:(0,R.jsx)(I,{max:e.max})})}var R,z=e((()=>{T(),a(),n(),m(),M(),F(),R=r()})),B,V=e((()=>{n(),s(),B={name:`jpa/search-terms`,title:t(`Search Terms`,`jetpack-premium-analytics`),icon:o,attributes:[{id:`max`,label:t(`Number of results`,`jetpack-premium-analytics`),type:`integer`}],example:{attributes:{max:10}}}}));function H({withComparison:e}){return(0,G.jsx)(L,{attributes:{max:10,reportParams:c(e)}})}function U(e){return(0,G.jsx)(L,{...e})}function W({withComparison:e,...t}){return(0,G.jsx)(S,{...t,widgetType:q,renderModule:K,renderComponent:U,attributes:{max:10,reportParams:c(e)}})}var G,K,q,J,Y,X,Z,Q,$;e((()=>{d(),C(),b(),z(),V(),G=r(),y(),K=`storybook/search-terms`,q={name:B.name,title:B.title,icon:B.icon,presentation:`framed`},J=e=>(0,G.jsx)(`div`,{style:{width:`100%`,height:`300px`},children:(0,G.jsx)(e,{})}),Y={title:`Packages/Premium Analytics/Widgets/SearchTerms`,component:L,tags:[`autodocs`],argTypes:{withComparison:{control:`boolean`}},parameters:{docs:{description:{component:`The "Search Terms" widget. Displays the top search queries visitors used to reach the site, ranked by view count. Ported from the Jetpack Stats Search Terms module.`}}}},X={render:H,args:{withComparison:!1},decorators:[J]},Z={render:H,args:{withComparison:!0},decorators:[J]},Q={render:e=>(0,G.jsx)(W,{...e}),args:{...w,withComparison:!0},argTypes:{...x,withComparison:{control:`boolean`}}},X.parameters={...X.parameters,docs:{...X.parameters?.docs,source:{originalSource:`{
+  render: renderSearchTerms,
+  args: {
+    withComparison: false
+  },
+  decorators: [withWidgetCanvas]
+}`,...X.parameters?.docs?.source}}},Z.parameters={...Z.parameters,docs:{...Z.parameters?.docs,source:{originalSource:`{
+  render: renderSearchTerms,
+  args: {
+    withComparison: true
+  },
+  decorators: [withWidgetCanvas]
+}`,...Z.parameters?.docs?.source}}},Q.parameters={...Q.parameters,docs:{...Q.parameters?.docs,source:{originalSource:`{
+  render: args => <SearchTermsDashboardStory {...args} />,
+  args: {
+    ...DEFAULT_WIDGET_DASHBOARD_STORY_ARGS,
+    withComparison: true
+  },
+  argTypes: {
+    ...widgetDashboardWithWidgetArgTypes,
+    withComparison: {
+      control: 'boolean'
+    }
+  }
+}`,...Q.parameters?.docs?.source}}},$=[`Default`,`WithComparison`,`WidgetDashboardWithWidget`]}))();export{X as Default,Q as WidgetDashboardWithWidget,Z as WithComparison,$ as __namedExportsOrder,Y as default};
