@@ -1,1 +1,0 @@
-import{i as e}from"./preload-helper-usAeo7Bx.js";function t(e){return e==null||e.hasAttribute(`disabled`)||e.getAttribute(`aria-disabled`)===`true`}var n=e((()=>{}));export{t as n,n as t};
