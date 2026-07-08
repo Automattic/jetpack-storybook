@@ -1,0 +1,26 @@
+import{i as e}from"./preload-helper-usAeo7Bx.js";import{n as t,t as n,u as r}from"./build-module-DQ5lAs4a.js";import{t as i}from"./jsx-runtime-D2pHJD-r.js";import{ll as a,n as o}from"./build-module-C3k6FW0l.js";import{Ft as s,_ as c,t as l}from"./date-fns-CLKvhCVz.js";import{Ct as u,J as d,f,s as p}from"./hooks-DCOtE250.js";import{M as m,t as h,w as g}from"./build-module-BaW3sO3b.js";import{n as _,o as v,t as y}from"./src-CTTL0FAF.js";import{i as b}from"./metric-tabs-chart-fqFZT-Rs.js";import{n as x,t as S}from"./register-report-mocks-B4YzhYV1.js";import{i as C,n as w,r as T,t as E}from"./widget-dashboard-with-widget-47RPmKck.js";import{t as D}from"./src-ChzMEbhZ.js";var O,k,A,j,M=e((()=>{O=`_root_1rn69_1`,k=`_caption_1rn69_8`,A=`_placeholder_1rn69_12`,j={root:O,caption:k,placeholder:A}}));function N(e,t){let n=e?.[t],r=typeof n==`string`?Number(n):n;return typeof r==`number`&&Number.isFinite(r)?r:void 0}function P(e){let t=e?.views_best_day;if(typeof t!=`string`||t===``)return;let n=c(t);return s(n)?n:void 0}function F(){let{data:e,isLoading:t,isError:n}=d(),r=e?.stats,i=P(r),a=N(r,`views_best_day_total`),o=N(r,`views`);return(0,L.jsx)(z,{date:i,views:a,share:a!==void 0&&o?a/o:0,isLoading:t,isError:n})}function I({attributes:e={}}){return(0,L.jsx)(p,{attributes:e,children:(0,L.jsx)(F,{})})}var L,R,z,B=e((()=>{f(),y(),D(),n(),h(),l(),M(),L=i(),R=({label:e,value:t,caption:n})=>(0,L.jsxs)(g,{direction:`column`,gap:`xs`,children:[(0,L.jsx)(m,{variant:`body-md`,children:e}),(0,L.jsx)(m,{variant:`heading-2xl`,children:t}),(0,L.jsx)(m,{variant:`body-md`,className:j.caption,children:n})]}),z=({date:e,views:n,share:i=0,isLoading:a=!1,isError:o=!1})=>{let s;return s=o?(0,L.jsx)(m,{className:j.placeholder,children:t(`Unable to load stats.`,`jetpack-premium-analytics`)}):a&&(!e||n===void 0)?(0,L.jsx)(b,{}):!e||n===void 0?(0,L.jsx)(m,{className:j.placeholder,children:t(`Not enough views yet to pick a most popular day.`,`jetpack-premium-analytics`)}):(0,L.jsxs)(L.Fragment,{children:[(0,L.jsx)(R,{label:t(`Day`,`jetpack-premium-analytics`),value:v(e,`MMMM d`),caption:v(e,`year`)}),(0,L.jsx)(R,{label:t(`Views`,`jetpack-premium-analytics`),value:_(n,`number`,{useMultipliers:!0,decimals:1}),caption:r(t(`%s of views`,`jetpack-premium-analytics`),_(i,`percentage`,{decimals:2,signDisplay:`never`}))})]}),(0,L.jsx)(g,{className:j.root,direction:`column`,gap:`xl`,children:s})}})),V,H=e((()=>{n(),o(),V={name:`jpa/most-popular-day`,title:t(`Most popular day`,`jetpack-premium-analytics`),description:t(`The day your site received the most views.`,`jetpack-premium-analytics`),icon:a}}));function U({withComparison:e}){return(0,G.jsx)(I,{attributes:{reportParams:u(e)}})}function W({withComparison:e,...t}){return(0,G.jsx)(w,{...t,widgetType:V,renderModule:K,renderComponent:I,attributes:{reportParams:u(e)}})}var G,K,q,J,Y,X,Z,Q;e((()=>{f(),T(),S(),B(),H(),G=i(),x(),K=`storybook/most-popular-day`,q=e=>(0,G.jsx)(`div`,{style:{width:`100%`,height:`300px`},children:(0,G.jsx)(e,{})}),J={title:`Packages/Premium Analytics/Widgets/MostPopularDay`,component:I,tags:[`autodocs`],argTypes:{withComparison:{control:`boolean`}},parameters:{docs:{description:{component:'The "Most popular day" widget ports the Jetpack Stats all-time highlight: the single day your site drew the most views, with that day\'s view count and its share of all views. The value comes from a site-wide summary that has no comparison period and does not depend on the dashboard date range, so `WithComparison` renders identically to `Default`.'}}}},Y={render:U,args:{withComparison:!1},decorators:[q]},X={render:U,args:{withComparison:!0},decorators:[q]},Z={render:e=>(0,G.jsx)(W,{...e}),args:{...E,withComparison:!0},argTypes:{...C,withComparison:{control:`boolean`}}},Y.parameters={...Y.parameters,docs:{...Y.parameters?.docs,source:{originalSource:`{
+  render: renderMostPopularDay,
+  args: {
+    withComparison: false
+  },
+  decorators: [withWidgetCanvas]
+}`,...Y.parameters?.docs?.source},description:{story:`Default state — the best day for views and its share of all views.`,...Y.parameters?.docs?.description}}},X.parameters={...X.parameters,docs:{...X.parameters?.docs,source:{originalSource:`{
+  render: renderMostPopularDay,
+  args: {
+    withComparison: true
+  },
+  decorators: [withWidgetCanvas]
+}`,...X.parameters?.docs?.source},description:{story:`Comparison params from the date-range picker are passed through, but the
+highlight has no comparison data, so the widget renders the same single value.`,...X.parameters?.docs?.description}}},Z.parameters={...Z.parameters,docs:{...Z.parameters?.docs,source:{originalSource:`{
+  render: args => <MostPopularDayDashboardStory {...args} />,
+  args: {
+    ...DEFAULT_WIDGET_DASHBOARD_STORY_ARGS,
+    withComparison: true
+  },
+  argTypes: {
+    ...widgetDashboardWithWidgetArgTypes,
+    withComparison: {
+      control: 'boolean'
+    }
+  }
+}`,...Z.parameters?.docs?.source}}},Q=[`Default`,`WithComparison`,`WidgetDashboardWithWidget`]}))();export{Y as Default,Z as WidgetDashboardWithWidget,X as WithComparison,Q as __namedExportsOrder,J as default};
