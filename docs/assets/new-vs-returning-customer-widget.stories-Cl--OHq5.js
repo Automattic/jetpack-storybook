@@ -1,0 +1,83 @@
+import{i as e}from"./preload-helper-usAeo7Bx.js";import{n as t,t as n}from"./build-module-DQ5lAs4a.js";import{t as r}from"./jsx-runtime-D2pHJD-r.js";import{$c as i,n as a}from"./build-module-_6UNQmiR.js";import{Et as o,f as s,s as c}from"./hooks-BNS1kAO8.js";import{l,t as u}from"./src-DLhaPslb.js";import{n as d,t as f}from"./register-report-mocks-BXeKjVVl.js";import{t as p}from"./new-vs-returning-customer-widget-BrbfYGqn.js";import{i as m,n as h,r as g,t as _}from"./widget-dashboard-with-widget-CDzNDE4g.js";import{t as v}from"./src-sO3IKnq7.js";function y({attributes:e={},setError:t}){return(0,b.jsx)(c,{attributes:e,setError:t,options:{from:`/`},children:(0,b.jsx)(p,{})})}var b,x=e((()=>{v(),b=r()})),S,C=e((()=>{n(),a(),S={name:`jpa/new-vs-returning-customer`,title:t(`New vs returning customer`,`jetpack-premium-analytics`),description:t(`Unique customer counts broken down by new vs returning customers over the selected time period.`,`jetpack-premium-analytics`),icon:i}}));function w(e=!1,t=j){return{reportParams:o(e,t)}}function T({withComparison:e,preset:t}){let n=!!e,r=t??j;return!n&&r===j?`getDefaultQueryParams()`:n&&r===j?`getDefaultQueryParams( true )`:`getDefaultQueryParams( ${n?`true`:`false`}, '${r}' )`}function E(e){return`import { getDefaultQueryParams } from '@jetpack-premium-analytics/data';
+
+<NewVsReturningCustomerRender
+\tattributes={ {
+\t\treportParams: ${T(e)},
+\t} }
+/>`}function D({withComparison:e,preset:t}){return(0,k.jsx)(y,{attributes:w(e,t)})}function O({withComparison:e,preset:t,...n}){return(0,k.jsx)(h,{...n,widgetType:S,renderModule:A,renderComponent:y,attributes:w(e,t)})}var k,A,j,M,N,P,F,I,L,R;e((()=>{s(),u(),g(),f(),x(),C(),k=r(),d(),A=`storybook/new-vs-returning-customer`,j=`last-30-days`,M=l,N=e=>(0,k.jsx)(`div`,{style:{width:`100%`,height:`300px`},children:(0,k.jsx)(e,{})}),P={title:`Packages/Premium Analytics/Widgets/NewVsReturningCustomer`,component:y,tags:[`autodocs`],argTypes:{preset:{control:`select`,options:M,description:`Date-range preset used to generate the widget report params.`},withComparison:{control:`boolean`,description:`Include previous-period comparison report params.`}},parameters:{docs:{description:{component:`Dashboard widget that displays new and returning customer counts for the selected period.`}}}},F={render:D,args:{preset:j,withComparison:!1},decorators:[N],parameters:{docs:{source:{transform:(e,t)=>E(t.args)}}}},I={render:D,args:{preset:j,withComparison:!0},decorators:[N],parameters:{docs:{source:{transform:(e,t)=>E(t.args)}}}},L={render:e=>(0,k.jsx)(O,{...e}),args:{..._,preset:j,withComparison:!0},argTypes:{...m,preset:{control:`select`,options:M,description:`Date-range preset used to generate the widget report params.`},withComparison:{control:`boolean`,description:`Include previous-period comparison report params.`}},parameters:{docs:{source:{code:`import { getDefaultQueryParams } from '@jetpack-premium-analytics/data';
+
+<WidgetDashboardWithWidget
+	widgetType={ widgetDefinition }
+	renderModule="storybook/new-vs-returning-customer"
+	renderComponent={ NewVsReturningCustomerRender }
+	attributes={ {
+		reportParams: getDefaultQueryParams( true ),
+	} }
+/>`}}}},F.parameters={...F.parameters,docs:{...F.parameters?.docs,source:{originalSource:`{
+  render: renderNewVsReturningCustomer,
+  args: {
+    preset: DEFAULT_PRESET,
+    withComparison: false
+  },
+  decorators: [withWidgetCanvas],
+  parameters: {
+    docs: {
+      source: {
+        transform: (_source: string, storyContext: {
+          args: Partial<NewVsReturningCustomerStoryControls>;
+        }) => getNewVsReturningCustomerSource(storyContext.args)
+      }
+    }
+  }
+}`,...F.parameters?.docs?.source},description:{story:`Default state for the current report period.`,...F.parameters?.docs?.description}}},I.parameters={...I.parameters,docs:{...I.parameters?.docs,source:{originalSource:`{
+  render: renderNewVsReturningCustomer,
+  args: {
+    preset: DEFAULT_PRESET,
+    withComparison: true
+  },
+  decorators: [withWidgetCanvas],
+  parameters: {
+    docs: {
+      source: {
+        transform: (_source: string, storyContext: {
+          args: Partial<NewVsReturningCustomerStoryControls>;
+        }) => getNewVsReturningCustomerSource(storyContext.args)
+      }
+    }
+  }
+}`,...I.parameters?.docs?.source},description:{story:`Comparison period enabled, showing period-over-period customer deltas.`,...I.parameters?.docs?.description}}},L.parameters={...L.parameters,docs:{...L.parameters?.docs,source:{originalSource:`{
+  render: args => <NewVsReturningCustomerDashboardStory {...args} />,
+  args: {
+    ...DEFAULT_WIDGET_DASHBOARD_STORY_ARGS,
+    preset: DEFAULT_PRESET,
+    withComparison: true
+  },
+  argTypes: {
+    ...widgetDashboardWithWidgetArgTypes,
+    preset: {
+      control: 'select',
+      options: PRESET_OPTIONS,
+      description: 'Date-range preset used to generate the widget report params.'
+    },
+    withComparison: {
+      control: 'boolean',
+      description: 'Include previous-period comparison report params.'
+    }
+  },
+  parameters: {
+    docs: {
+      source: {
+        code: \`import { getDefaultQueryParams } from '@jetpack-premium-analytics/data';
+
+<WidgetDashboardWithWidget
+\\twidgetType={ widgetDefinition }
+\\trenderModule="storybook/new-vs-returning-customer"
+\\trenderComponent={ NewVsReturningCustomerRender }
+\\tattributes={ {
+\\t\\treportParams: getDefaultQueryParams( true ),
+\\t} }
+/>\`
+      }
+    }
+  }
+}`,...L.parameters?.docs?.source},description:{story:`Renders the widget through the shared dashboard harness.`,...L.parameters?.docs?.description}}},R=[`Default`,`WithComparison`,`WidgetDashboardWithWidget`]}))();export{F as Default,L as WidgetDashboardWithWidget,I as WithComparison,R as __namedExportsOrder,P as default};
