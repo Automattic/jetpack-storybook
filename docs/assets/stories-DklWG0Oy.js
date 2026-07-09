@@ -1,0 +1,3 @@
+import{i as e}from"./preload-helper-usAeo7Bx.js";import{t}from"./jsx-runtime-D2pHJD-r.js";import{bt as n}from"./esm-CubIcrGy.js";import{a as r,i,n as a,t as o}from"./blocks-CEP9oEL4.js";import{t as s}from"./mdx-react-shim-Cnxo-mGC.js";import{n as c,r as l,t as u}from"./index.stories-B9mhBr4G.js";function d(e){let t={h1:`h1`,...n(),...e.components};return(0,p.jsxs)(p.Fragment,{children:[(0,p.jsx)(a,{of:u}),`
+`,(0,p.jsx)(t.h1,{id:`posterpanel`,children:`PosterPanel`}),`
+`,(0,p.jsx)(o,{withSource:`open`,children:(0,p.jsx)(i,{id:`packages-videopress-block-editor-poster-panel--default`})})]})}function f(e={}){let{wrapper:t}={...n(),...e.components};return t?(0,p.jsx)(t,{...e,children:(0,p.jsx)(d,{...e})}):d(e)}var p;e((()=>{p=t(),s(),r(),l(),c()}))();export{f as default};
