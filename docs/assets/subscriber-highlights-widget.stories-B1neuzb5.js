@@ -1,0 +1,33 @@
+import{i as e}from"./preload-helper-usAeo7Bx.js";import{n as t,t as n}from"./build-module-DQ5lAs4a.js";import{t as r}from"./jsx-runtime-D2pHJD-r.js";import{ci as i,n as a,ni as o,vn as s,xs as c}from"./build-module-_6UNQmiR.js";import{D as l,Dt as u,p as d,s as f}from"./hooks-B-Yl5ZSO.js";import{H as ee,K as p,t as m}from"./build-module-Cc4XIcM8.js";import{t as h}from"./metric-with-comparison-CidQtPhf.js";import{n as g}from"./widget-loading-overlay-D21I_rx2.js";import{n as _,t as v}from"./register-report-mocks-Dpi3lzNi.js";import{i as y,n as te,r as b,t as x}from"./widget-dashboard-with-widget-qTTFaW62.js";import{t as S}from"./src-CXc1BBq1.js";var C,w,T,E,D,O,k,A,j,M=e((()=>{C=`_root_zlgtp_2`,w=`_grid_zlgtp_12`,T=`_tile_zlgtp_18`,E=`_tileHeader_zlgtp_29`,D=`_tileIcon_zlgtp_38`,O=`_tileLabel_zlgtp_42`,k=`_tileValue_zlgtp_49`,A=`_placeholder_zlgtp_54`,j={root:C,grid:w,tile:T,tileHeader:E,tileIcon:D,tileLabel:O,tileValue:k,placeholder:A}})),N,P,F=e((()=>{n(),a(),N=[{id:`showTotal`,label:t(`Total subscribers`,`jetpack-premium-analytics`)},{id:`showPaid`,label:t(`Paid subscribers`,`jetpack-premium-analytics`)},{id:`showFree`,label:t(`Free subscribers`,`jetpack-premium-analytics`)},{id:`showSocial`,label:t(`Social followers`,`jetpack-premium-analytics`)}],P={name:`jpa/subscriber-highlights`,title:t(`Subscriber highlights`,`jetpack-premium-analytics`),icon:o,attributes:N.map(({id:e,label:t})=>({id:e,label:t,type:`boolean`,getValue:({item:t})=>t[e]??!0})),example:{attributes:{showTotal:!0,showPaid:!0,showFree:!0,showSocial:!0}}}}));function ne(e){let{data:n,isLoading:r,isError:i}=l();if(i)return(0,L.jsx)(`div`,{className:j.root,children:(0,L.jsx)(p,{className:j.placeholder,children:t(`Unable to load subscriber highlights.`,`jetpack-premium-analytics`)})});if(r&&!n)return(0,L.jsx)(`div`,{className:j.root,children:(0,L.jsx)(g,{})});let a=N.filter(({id:t})=>e[t]).map(({id:e,label:t})=>({key:e,label:t,icon:z[e].icon,value:z[e].count(n)}));return(0,L.jsx)(`div`,{className:j.root,children:a.length===0?(0,L.jsx)(p,{className:j.placeholder,children:t(`Select at least one metric to display.`,`jetpack-premium-analytics`)}):(0,L.jsx)(`div`,{className:j.grid,children:a.map(e=>(0,L.jsxs)(`div`,{className:j.tile,children:[(0,L.jsxs)(`div`,{className:j.tileHeader,children:[(0,L.jsx)(ee,{icon:e.icon,size:24,className:j.tileIcon}),(0,L.jsx)(p,{className:j.tileLabel,children:e.label})]}),(0,L.jsx)(h,{value:e.value,dataFormat:R,fontSize:`xl`,className:j.tileValue})]},e.key))})})}function I({attributes:e={}}){return(0,L.jsx)(f,{attributes:e,children:(0,L.jsx)(ne,{showTotal:e.showTotal??!0,showPaid:e.showPaid??!0,showFree:e.showFree??!0,showSocial:e.showSocial??!0})})}var L,R,z,B=e((()=>{d(),S(),n(),a(),m(),M(),F(),L=r(),R={type:`number`,options:{useMultipliers:!0,decimals:0}},z={showTotal:{icon:o,count:e=>e?.total_subscribers??0},showPaid:{icon:i,count:e=>e?.paid_subscribers??0},showFree:{icon:c,count:e=>e?.email_subscribers??0},showSocial:{icon:s,count:e=>e?.social_followers??0}}}));function V({withComparison:e,showTotal:t,showPaid:n,showFree:r,showSocial:i}){return(0,U.jsx)(I,{attributes:{reportParams:u(e),showTotal:t,showPaid:n,showFree:r,showSocial:i}})}function H({withComparison:e,showTotal:t,showPaid:n,showFree:r,showSocial:i,...a}){return(0,U.jsx)(te,{...a,widgetType:G,renderModule:W,renderComponent:I,attributes:{reportParams:u(e),showTotal:t,showPaid:n,showFree:r,showSocial:i}})}var U,W,G,K,q,J,Y,X,Z,Q,$;e((()=>{d(),b(),v(),B(),F(),U=r(),_(),W=`storybook/subscriber-highlights`,G={name:P.name,title:P.title,icon:P.icon,attributes:P.attributes,example:P.example},K={showTotal:{control:`boolean`},showPaid:{control:`boolean`},showFree:{control:`boolean`},showSocial:{control:`boolean`}},q={showTotal:!0,showPaid:!0,showFree:!0,showSocial:!0},J=e=>(0,U.jsx)(`div`,{style:{width:`100%`,height:`300px`},children:(0,U.jsx)(e,{})}),Y={title:`Packages/Premium Analytics/Widgets/SubscriberHighlights`,component:I,tags:[`autodocs`],argTypes:{withComparison:{control:`boolean`},...K},parameters:{docs:{description:{component:'The "Subscriber highlights" widget. Shows current subscriber totals — total, paid, free, and social followers — as a grid of metric tiles. Each metric tile can be toggled off via the widget\'s checkbox settings (the `show*` controls here). Data comes from the designated `useStatsSubscribersCounts` hook; in Storybook it is served by `registerReportMocks()` (the `subscribers/counts` handler). The counts module has no comparison period, so the tiles show bare counts and the `WithComparison` story renders identically to `Default`.'}}}},X={render:V,args:{withComparison:!1,...q},decorators:[J]},Z={render:V,args:{withComparison:!0,...q},decorators:[J]},Q={render:e=>(0,U.jsx)(H,{...e}),args:{...x,widgetWidth:1,widgetHeight:1,withComparison:!0,...q},argTypes:{...y,withComparison:{control:`boolean`},...K}},X.parameters={...X.parameters,docs:{...X.parameters?.docs,source:{originalSource:`{
+  render: renderSubscriberHighlights,
+  args: {
+    withComparison: false,
+    ...ALL_METRICS_ARGS
+  },
+  decorators: [withWidgetCanvas]
+}`,...X.parameters?.docs?.source},description:{story:`The widget on its own, populated from the mocked subscribers/counts payload.`,...X.parameters?.docs?.description}}},Z.parameters={...Z.parameters,docs:{...Z.parameters?.docs,source:{originalSource:`{
+  render: renderSubscriberHighlights,
+  args: {
+    withComparison: true,
+    ...ALL_METRICS_ARGS
+  },
+  decorators: [withWidgetCanvas]
+}`,...Z.parameters?.docs?.source},description:{story:`Same close-up with comparison report params injected. The counts module has no
+comparison data, so this renders identically to \`Default\` — it only verifies
+the widget stays stable when the host provides comparison params.`,...Z.parameters?.docs?.description}}},Q.parameters={...Q.parameters,docs:{...Q.parameters?.docs,source:{originalSource:`{
+  render: args => <SubscriberHighlightsDashboardStory {...args} />,
+  args: {
+    ...DEFAULT_WIDGET_DASHBOARD_STORY_ARGS,
+    widgetWidth: 1,
+    widgetHeight: 1,
+    withComparison: true,
+    ...ALL_METRICS_ARGS
+  },
+  argTypes: {
+    ...widgetDashboardWithWidgetArgTypes,
+    withComparison: {
+      control: 'boolean'
+    },
+    ...METRIC_ARG_TYPES
+  }
+}`,...Q.parameters?.docs?.source}}},$=[`Default`,`WithComparison`,`WidgetDashboardWithWidget`]}))();export{X as Default,Q as WidgetDashboardWithWidget,Z as WithComparison,$ as __namedExportsOrder,Y as default};
