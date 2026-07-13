@@ -1,1 +1,0 @@
-import{i as e}from"./preload-helper-usAeo7Bx.js";import{Ki as t,qi as n}from"./iframe-CCDEVDAH.js";import{ct as r,dt as i,lt as a,ut as o}from"./esm-B6u-hMDq.js";var s;e((()=>{o(),a(),n(),s=(0,t(i(),1).default)(2)(async(e,t)=>e===!1?t:r(t))}))();export{s as formatter};
