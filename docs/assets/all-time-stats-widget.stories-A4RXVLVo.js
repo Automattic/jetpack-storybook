@@ -1,0 +1,29 @@
+import{c as e,i as t}from"./preload-helper-usAeo7Bx.js";import{t as n}from"./react-DVCOKQW8.js";import{n as r,t as i}from"./build-module-DQ5lAs4a.js";import{t as a}from"./jsx-runtime-D2pHJD-r.js";import{Mr as o,On as s,dc as c,du as ee,n as l,oi as u,w as d}from"./build-module-Bt8gOW8e.js";import{T as f,in as p,kt as te,s as ne}from"./hooks-B7SdK40L.js";import{K as m,t as re}from"./build-module-BAze1CUO.js";import{t as h}from"./metric-with-comparison-BN7TPNVv.js";import{n as ie}from"./widget-loading-overlay-CZo6ZUln.js";import{n as g,t as _}from"./register-report-mocks-qW9KCv_n.js";import{S as v,b as y,t as b,x as ae,y as oe}from"./src-DblJSBuJ.js";import{n as se,t as ce}from"./src-C-NsQZW7.js";var x,S,C,w,T,E,D,O,k=t((()=>{x=`_root_fg0pk_1`,S=`_list_fg0pk_6`,C=`_row_fg0pk_12`,w=`_icon_fg0pk_18`,T=`_label_fg0pk_23`,E=`_value_fg0pk_27`,D=`_state_fg0pk_31`,O={root:x,list:S,row:C,icon:w,label:T,value:E,state:D}})),A,j,M,N=t((()=>{i(),l(),ce(),A=[{id:`views`,label:r(`Views`,`jetpack-premium-analytics`)},{id:`visitors`,label:r(`Visitors`,`jetpack-premium-analytics`)},{id:`posts`,label:r(`Posts`,`jetpack-premium-analytics`)},{id:`comments`,label:r(`Comments`,`jetpack-premium-analytics`)}],j=A.map(e=>e.id),M={name:`jpa/all-time-stats`,title:r(`All-time stats`,`jetpack-premium-analytics`),icon:d,attributes:[{id:`metrics`,label:r(`Metrics`,`jetpack-premium-analytics`),type:`array`,relevance:`high`,Edit:se,elements:A.map(e=>({value:e.id,label:e.label}))}],example:{attributes:{metrics:j}}}}));function le(e,t){let n=e?.[t],r=typeof n==`string`?Number(n):n;return typeof r==`number`&&Number.isFinite(r)?r:void 0}function P({metrics:e=j}){let{data:t,isLoading:n,isError:i}=te(),a=t?.stats,o=(0,I.useMemo)(()=>{let t=new Set(e);return A.filter(e=>t.has(e.id))},[e]),s=(0,I.useMemo)(()=>o.flatMap(({id:e,label:t})=>{let n=le(a,e);return n===void 0?[]:[{key:e,label:t,icon:z[e].icon,value:n}]}),[o,a]),c;return c=i?(0,L.jsx)(`div`,{className:O.state,children:(0,L.jsx)(m,{children:r(`Unable to load all-time stats.`,`jetpack-premium-analytics`)})}):n&&s.length===0?(0,L.jsx)(ie,{}):s.length===0?(0,L.jsx)(`div`,{className:O.state,children:(0,L.jsx)(m,{children:o.length===0?r(`Select at least one metric to display.`,`jetpack-premium-analytics`):r(`No stats recorded yet.`,`jetpack-premium-analytics`)})}):(0,L.jsx)(`div`,{className:O.list,children:s.map(e=>(0,L.jsxs)(`div`,{className:O.row,children:[(0,L.jsx)(ee,{className:O.icon,icon:e.icon}),(0,L.jsx)(m,{className:O.label,children:e.label}),(0,L.jsx)(h,{className:O.value,value:e.value,dataFormat:R,fontSize:`md`})]},e.key))}),(0,L.jsx)(`div`,{className:O.root,children:c})}function F({attributes:e={}}){return(0,L.jsx)(ne,{attributes:e,children:(0,L.jsx)(P,{metrics:e.metrics})})}var I,L,R,z,B=t((()=>{f(),b(),i(),l(),re(),I=e(n(),1),k(),N(),L=a(),R={type:`number`,options:{decimals:0}},z={views:{icon:s},visitors:{icon:u},posts:{icon:o},comments:{icon:c}}}));function V({withComparison:e,metrics:t}){return(0,U.jsx)(F,{attributes:{reportParams:p(e),metrics:t}})}function H({withComparison:e,metrics:t,...n}){return(0,U.jsx)(y,{...n,widgetType:G,renderModule:W,renderComponent:F,attributes:{reportParams:p(e),metrics:t}})}var U,W,G,K,q,J,Y,X,Z,Q,$;t((()=>{f(),_(),ae(),B(),N(),U=a(),g(),W=`storybook/all-time-stats`,G={name:M.name,title:M.title,icon:M.icon,presentation:`framed`,attributes:M.attributes,example:M.example},K={metrics:{control:`check`,options:j}},q={metrics:j},J=e=>(0,U.jsx)(`div`,{style:{width:`100%`,maxWidth:`480px`},children:(0,U.jsx)(e,{})}),Y={title:`Packages/Premium Analytics/Widgets/AllTimeStats`,component:F,tags:[`autodocs`],argTypes:{withComparison:{control:`boolean`},...K},parameters:{docs:{description:{component:"The \"All-time stats\" widget. Shows lifetime totals for the site — views, visitors, posts, and comments — as a labelled list of icon rows, sourced from the Jetpack Stats site-summary endpoint. Which rows appear is controlled by the `metrics` attribute (`relevance: 'high'`), exposed inline in the widget header and in the settings drawer. This module has no comparison period, so the values render as bare numbers and the `WithComparison` story looks identical to `Default`."}}}},X={render:V,args:{withComparison:!1,...q},decorators:[J]},Z={render:V,args:{withComparison:!0,...q},decorators:[J]},Q={render:e=>(0,U.jsx)(H,{...e}),args:{...oe,withComparison:!0,...q},argTypes:{...v,withComparison:{control:`boolean`},...K}},X.parameters={...X.parameters,docs:{...X.parameters?.docs,source:{originalSource:`{
+  render: renderAllTimeStats,
+  args: {
+    withComparison: false,
+    ...ALL_METRICS_ARGS
+  },
+  decorators: [withWidgetCanvas]
+}`,...X.parameters?.docs?.source},description:{story:`Default state — lifetime totals for the current preset.`,...X.parameters?.docs?.description}}},Z.parameters={...Z.parameters,docs:{...Z.parameters?.docs,source:{originalSource:`{
+  render: renderAllTimeStats,
+  args: {
+    withComparison: true,
+    ...ALL_METRICS_ARGS
+  },
+  decorators: [withWidgetCanvas]
+}`,...Z.parameters?.docs?.source},description:{story:"Comparison params flow through `reportParams`, but the site summary has no\ncomparison data, so the widget renders identically to `Default` — no fake\ndeltas.",...Z.parameters?.docs?.description}}},Q.parameters={...Q.parameters,docs:{...Q.parameters?.docs,source:{originalSource:`{
+  render: args => <AllTimeStatsDashboardStory {...args} />,
+  args: {
+    ...DEFAULT_WIDGET_DASHBOARD_STORY_ARGS,
+    withComparison: true,
+    ...ALL_METRICS_ARGS
+  },
+  argTypes: {
+    ...widgetDashboardWithWidgetArgTypes,
+    withComparison: {
+      control: 'boolean'
+    },
+    ...METRIC_ARG_TYPES
+  }
+}`,...Q.parameters?.docs?.source}}},$=[`Default`,`WithComparison`,`WidgetDashboardWithWidget`]}))();export{X as Default,Q as WidgetDashboardWithWidget,Z as WithComparison,$ as __namedExportsOrder,Y as default};

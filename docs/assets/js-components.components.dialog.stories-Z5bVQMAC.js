@@ -1,0 +1,6 @@
+import{a as e,i as t}from"./preload-helper-usAeo7Bx.js";import{t as n}from"./jsx-runtime-D2pHJD-r.js";import{K as r,q as i}from"./iframe-C3sh6NKr.js";var a,o,s=t((()=>{a=`_section_r5o46_1`,o={section:a}})),c=e({Readme:()=>f,__namedExportsOrder:()=>p,default:()=>d}),l,u,d,f,p,m=t((()=>{i(),s(),l=n(),u=({isTwoSections:e})=>(0,l.jsx)(r,{primary:(0,l.jsxs)(`div`,{className:o.section,children:[(0,l.jsx)(`div`,{children:`Primary`}),(0,l.jsx)(`strong`,{children:`4 | 5 | 7`})]}),secondary:(0,l.jsxs)(`div`,{className:o.section,children:[(0,l.jsx)(`div`,{children:`Secondary`}),(0,l.jsx)(`strong`,{children:`4 | 3 | 5`}),(0,l.jsxs)(`div`,{children:[`isTwoSections: `,(0,l.jsx)(`strong`,{children:e?`yes`:`no`})]})]}),isTwoSections:e}),d={title:`JS Packages/Components/Dialog`,component:r},f={render:u.bind({}),args:{isTwoSections:!0}},f.parameters={...f.parameters,docs:{...f.parameters?.docs,source:{originalSource:`{
+  render: Template.bind({}),
+  args: {
+    isTwoSections: true
+  }
+}`,...f.parameters?.docs?.source}}},p=[`Readme`]}));m();export{f as Readme,p as __namedExportsOrder,d as default,c as n,m as t};
