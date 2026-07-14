@@ -1,0 +1,3 @@
+import{a as e,i as t}from"./preload-helper-usAeo7Bx.js";import{t as n}from"./jsx-runtime-D2pHJD-r.js";import{D as r,E as i}from"./iframe-ClCzRfG4.js";var a=e({__namedExportsOrder:()=>u,_default:()=>l,default:()=>s}),o,s,c,l,u,d=t((()=>{r(),o=n(),s={title:`JS Packages/Components/Progress Bar`,component:i},c=e=>(0,o.jsx)(i,{...e}),l=c.bind({}),l.args={progress:.5},l.parameters={...l.parameters,docs:{...l.parameters?.docs,source:{originalSource:`args => {
+  return <ProgressBar {...args} />;
+}`,...l.parameters?.docs?.source}}},u=[`_default`]}));d();export{u as __namedExportsOrder,l as _default,s as default,d as n,a as t};
