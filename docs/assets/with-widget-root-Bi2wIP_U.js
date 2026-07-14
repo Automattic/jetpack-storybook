@@ -1,1 +1,0 @@
-import{i as e}from"./preload-helper-usAeo7Bx.js";import{t}from"./jsx-runtime-D2pHJD-r.js";import{Bt as n,c as r,p as i,s as a,zt as o}from"./hooks-Cw-H66ea.js";import{n as s,t as c}from"./register-report-mocks-BPl_Kj4W.js";var l,u,d=e((()=>{i(),r(),c(),l=t(),s(),u=(e=n())=>t=>(0,l.jsx)(a,{attributes:{reportParams:o(e)},children:(0,l.jsx)(t,{})})}));export{u as n,d as t};
