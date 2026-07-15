@@ -1,0 +1,41 @@
+import{i as e}from"./preload-helper-usAeo7Bx.js";import{n as t,t as n}from"./build-module-DQ5lAs4a.js";import{t as r}from"./jsx-runtime-D2pHJD-r.js";import{n as i,rl as a}from"./build-module-Bt8gOW8e.js";import{K as o,R as s,t as c}from"./build-module-BAze1CUO.js";import{C as l,t as u}from"./src-CT5b53ej.js";import{Kn as d,L as f,l as ee,p,rr as m,ut as h,xt as g}from"./chart-tooltip-ClIvRUzH.js";import{t as te}from"./leaderboard-chart-D4uyqD7q.js";import{E as ne,S as _}from"./report-metric-C9QRZwAo.js";import{n as v,t as y}from"./register-report-mocks-CEOd2Lr0.js";import{t as re}from"./widget-state-CkRqQWXE.js";import{S as b,b as x,t as S,x as ie,y as ae}from"./src-DeeVzTNc.js";import{n as C,t as w}from"./register-stats-mocks-CSwgBP6A.js";var T,E,D,O,k=e((()=>{T=`_root_al0b4_1`,E=`_content_al0b4_9`,D=`_itemLabel_al0b4_17`,O={root:T,content:E,itemLabel:D}}));function A(e,t){let n=String(e.label??``);return{key:n,label:p(n,t===`browser`?j:M),views:e.value,previousViews:e.previousValue}}function oe({reportParams:e,max:t,deviceProperty:n}){let{comparisonRows:r,hasComparison:i,isLoading:a,isFetching:o,isError:s,error:c,refetch:l}=g({...e,deviceProperty:n},{maxRows:t}),u=m(c),d=(r?.rows??[]).map(e=>A(e,n));return{data:d,hasComparison:i,isLoading:a,isFetching:o,isError:d.length===0&&s,errorReason:u,refetch:l}}var j,M,N=e((()=>{n(),h(),S(),j={chrome:t(`Chrome`,`jetpack-premium-analytics`),safari:t(`Safari`,`jetpack-premium-analytics`),firefox:t(`Firefox`,`jetpack-premium-analytics`),edge:t(`Edge`,`jetpack-premium-analytics`),opera:t(`Opera`,`jetpack-premium-analytics`),samsung:t(`Samsung Internet`,`jetpack-premium-analytics`),ie:t(`IE`,`jetpack-premium-analytics`),yandex:t(`Yandex`,`jetpack-premium-analytics`),miui:t(`Mi Browser`,`jetpack-premium-analytics`),other:t(`Other`,`jetpack-premium-analytics`)},M={windows:t(`Windows`,`jetpack-premium-analytics`),mac:t(`macOS`,`jetpack-premium-analytics`),android:t(`Android`,`jetpack-premium-analytics`),linux:t(`Linux`,`jetpack-premium-analytics`),ios:t(`iOS`,`jetpack-premium-analytics`),ipad:t(`iPad`,`jetpack-premium-analytics`),iphone:t(`iPhone`,`jetpack-premium-analytics`),ipados:t(`iPadOS`,`jetpack-premium-analytics`),macos:t(`macOS`,`jetpack-premium-analytics`),chrome:t(`Chrome OS`,`jetpack-premium-analytics`),android_tablet:t(`Android Tablet`,`jetpack-premium-analytics`),other:t(`Other`,`jetpack-premium-analytics`)}}));function se({max:e,platformDimension:n}){let{reportParams:r}=ne(),{data:i,hasComparison:a,isLoading:c,isFetching:u,isError:d,errorReason:p,refetch:m}=oe({reportParams:r,max:e,deviceProperty:n}),h=Math.max(...i.map(e=>e.views),0),g=Math.max(...i.map(e=>e.previousViews??0),0),_=a,v=i.map((e,t)=>{let n=e.previousViews;return{id:`${t}-${e.key}`,label:(0,F.jsx)(s,{align:`center`,className:O.itemLabel,children:(0,F.jsx)(o,{children:e.label})}),currentValue:e.views,currentShare:h>0?e.views/h*100:0,previousValue:n,previousShare:_&&n!==void 0?ee(n,g):void 0,delta:_&&n!==void 0?f(e.views,n):void 0}}),y=p===`upgrade-required`;return(0,F.jsx)(`div`,{className:O.content,children:(0,F.jsx)(re,{isLoading:c,isFetching:u,isError:d,isEmpty:i.length===0,error:{description:t(y?`Platform stats are not included in your current plan.`:`We couldn't load platform data. Please try again in a moment.`,`jetpack-premium-analytics`),actions:y?void 0:[{label:t(`Retry`,`jetpack-premium-analytics`),onClick:m}]},empty:{icon:l,description:t(`No platform data in this period.`,`jetpack-premium-analytics`)},children:(0,F.jsx)(te,{data:v,withComparison:a,withOverlayLabel:!0,showLegend:!1,dataFormat:I})})})}function P({attributes:e}){let t=e?.max??10,n=e?.platformDimension??`browser`;return(0,F.jsx)(_,{attributes:e,children:(0,F.jsx)(`div`,{className:O.root,children:(0,F.jsx)(se,{max:t,platformDimension:n})})})}var F,I,L=e((()=>{u(),n(),c(),S(),k(),N(),F=r(),I={type:`number`,options:{useMultipliers:!0,decimals:0}}})),R,z=e((()=>{n(),i(),R={name:`jpa/top-platforms`,title:t(`Top Platforms`,`jetpack-premium-analytics`),help:{content:t(`Top browsers and operating systems your visitors use.`,`jetpack-premium-analytics`)},icon:a,attributes:[{id:`max`,label:t(`Max rows`,`jetpack-premium-analytics`),type:`number`},{id:`platformDimension`,label:t(`View by`,`jetpack-premium-analytics`),type:`text`,elements:[{label:t(`Browser`,`jetpack-premium-analytics`),value:`browser`},{label:t(`OS`,`jetpack-premium-analytics`),value:`platform`}],relevance:`high`}],example:{attributes:{max:10,platformDimension:`browser`}}}}));function B({withComparison:e,platformDimension:t}){return{max:10,platformDimension:t,reportParams:d(e)}}function V(e){return(0,W.jsx)(P,{attributes:B(e)})}function H(e){return(0,W.jsx)(P,{...e})}function U({withComparison:e,platformDimension:t,...n}){return(0,W.jsx)(x,{...n,widgetType:K,renderModule:G,renderComponent:H,attributes:B({withComparison:e,platformDimension:t})})}var W,G,K,q,J,Y,X,Z,Q,$;e((()=>{h(),ie(),y(),w(),L(),z(),W=r(),v(),C(),G=`storybook/top-platforms`,K={name:R.name,title:R.title,icon:R.icon,attributes:R.attributes,example:R.example,presentation:`framed`},q=e=>(0,W.jsx)(`div`,{style:{width:`100%`,height:`300px`},children:(0,W.jsx)(e,{})}),J={title:`Packages/Premium Analytics/Widgets/TopPlatforms`,component:P,tags:[`autodocs`],argTypes:{withComparison:{control:`boolean`,description:`Include previous-period comparison report params.`},platformDimension:{control:`radio`,options:[`browser`,`platform`],description:`The "View by" toolbar attribute rendered by the widget host.`}},parameters:{docs:{description:{component:"The \"Top Platforms\" widget. Shows browser and OS breakdown as a ranked leaderboard. The active dimension is the `platformDimension` attribute (`relevance: 'high'`), exposed as a control by the widget host."}}}},Y={render:V,args:{withComparison:!1,platformDimension:`browser`},decorators:[q]},X={render:V,args:{withComparison:!0,platformDimension:`browser`},decorators:[q]},Z={render:V,args:{withComparison:!1,platformDimension:`platform`},decorators:[q]},Q={render:e=>(0,W.jsx)(U,{...e}),args:{...ae,withComparison:!0,platformDimension:`browser`},argTypes:{...b,withComparison:{control:`boolean`,description:`Include previous-period comparison report params.`},platformDimension:{control:`radio`,options:[`browser`,`platform`],description:`The "View by" toolbar attribute rendered by the widget host.`}}},Y.parameters={...Y.parameters,docs:{...Y.parameters?.docs,source:{originalSource:`{
+  render: renderTopPlatformsWidget,
+  args: {
+    withComparison: false,
+    platformDimension: 'browser'
+  },
+  decorators: [withWidgetCanvas]
+}`,...Y.parameters?.docs?.source}}},X.parameters={...X.parameters,docs:{...X.parameters?.docs,source:{originalSource:`{
+  render: renderTopPlatformsWidget,
+  args: {
+    withComparison: true,
+    platformDimension: 'browser'
+  },
+  decorators: [withWidgetCanvas]
+}`,...X.parameters?.docs?.source}}},Z.parameters={...Z.parameters,docs:{...Z.parameters?.docs,source:{originalSource:`{
+  render: renderTopPlatformsWidget,
+  args: {
+    withComparison: false,
+    platformDimension: 'platform'
+  },
+  decorators: [withWidgetCanvas]
+}`,...Z.parameters?.docs?.source}}},Q.parameters={...Q.parameters,docs:{...Q.parameters?.docs,source:{originalSource:`{
+  render: args => <TopPlatformsDashboardStory {...args} />,
+  args: {
+    ...DEFAULT_WIDGET_DASHBOARD_STORY_ARGS,
+    withComparison: true,
+    platformDimension: 'browser'
+  },
+  argTypes: {
+    ...widgetDashboardWithWidgetArgTypes,
+    withComparison: {
+      control: 'boolean',
+      description: 'Include previous-period comparison report params.'
+    },
+    platformDimension: {
+      control: 'radio',
+      options: ['browser', 'platform'],
+      description: 'The "View by" toolbar attribute rendered by the widget host.'
+    }
+  }
+}`,...Q.parameters?.docs?.source}}},$=[`Default`,`WithComparison`,`ByOS`,`WidgetDashboardWithWidget`]}))();export{Z as ByOS,Y as Default,Q as WidgetDashboardWithWidget,X as WithComparison,$ as __namedExportsOrder,J as default};
