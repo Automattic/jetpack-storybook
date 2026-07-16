@@ -1,1 +1,0 @@
-import{i as e}from"./preload-helper-usAeo7Bx.js";import{t}from"./jsx-runtime-D2pHJD-r.js";import{Yn as n,qn as r,ut as i}from"./chart-tooltip-DrAq1LVG.js";import{A as a,C as o,S as s,k as c}from"./report-metric-Bfw2Qau8.js";var l,u,d=e((()=>{i(),a(),s(),l=t(),o(),u=(e=n())=>t=>(0,l.jsx)(c,{attributes:{reportParams:r(e)},children:(0,l.jsx)(t,{})})}));export{u as n,d as t};
