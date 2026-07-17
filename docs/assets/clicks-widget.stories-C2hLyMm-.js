@@ -1,0 +1,53 @@
+import{i as e}from"./preload-helper-usAeo7Bx.js";import{c as t,n,t as r}from"./build-module-Da_5_6n_.js";import{t as i}from"./jsx-runtime-D2pHJD-r.js";import{A as a,t as o}from"./build-module-DrryaqBL.js";import{Mt as s,n as c}from"./build-module-DmVuor49.js";import{r as l}from"./hooks-Bex_ohyb.js";import{g as u,t as d}from"./build-module-KCXl8iuk.js";import{$n as f,L as p,on as ee,ut as m}from"./chart-tooltip-DuJqgtI5.js";import{t as h}from"./leaderboard-chart-D2hEnIki.js";import{C as g,N as te,S as _,c as v,f as y,g as b,k as x,u as S}from"./report-metric-DVhfDwWK.js";import{t as C}from"./widget-state-BFfBJ3oe.js";import{C as ne,D as w,E as re,S as ie,T as ae,b as oe,t as se,w as ce,x as T}from"./src-C6k-9wqr.js";import{n as E,t as le}from"./register-stats-mocks-Cx4PL4ix.js";import{n as ue,t as D}from"./force-stats-mock-state-TUPUex95.js";var O,k,A,j,M,N,P,de=e((()=>{O=`_labelIcon_1bc0q_1`,k=`_labelLink_1bc0q_9`,A=`_labelText_1bc0q_10`,j=`_placeholder_1bc0q_31`,M=`_root_1bc0q_39`,N=`_content_1bc0q_48`,P={labelIcon:O,labelLink:k,labelText:A,placeholder:j,root:M,content:N}}));function fe(e){return typeof e.label==`string`&&e.label?e.label:e.link??``}function F(e){return{label:fe(e),value:e.views,previousValue:e.previousValue,...e.link?{href:e.link}:{},icon:e.icon,children:e.children?.map(F),...e.childrenHaveComparison?{childrenHaveComparison:!0}:{}}}function pe(e,r,i){let a=Math.max(...e.map(e=>e.value),1),o=Math.max(...e.map(e=>e.previousValue??0),1);return e.map((e,s)=>{let c=e.previousValue,l=!!e.children?.length,d=!!e.href&&!l,f=(0,R.jsx)(b,{label:e.label,imageUrl:e.icon??void 0,imageAlt:``,imageFallback:`hidden`,imageClassName:P.labelIcon});return{id:`${s}-${e.href??e.label}`,label:d?(0,R.jsx)(u,{className:P.labelLink,href:e.href,variant:`unstyled`,openInNewTab:!0,title:e.label,children:f}):(0,R.jsx)(`span`,{className:P.labelText,title:e.label,children:f}),currentValue:e.value,currentShare:e.value/a*100,previousValue:c,previousShare:r&&c!==void 0?c/o*100:void 0,delta:r&&c!==void 0?p(e.value,c):void 0,...l&&i&&{onClick:()=>i(e),ariaLabel:t(n(`View clicked links for %s`,`jetpack-premium-analytics`),e.label)}}})}function I({rows:e=[],withComparison:t=!1,onDrillDown:n}){return(0,R.jsx)(h,{data:pe(e,t,n),withComparison:t,withOverlayLabel:!0,showLegend:!1,dataFormat:z})}function me({max:e}){let{reportParams:t}=te(),{drillDownItem:r,drillDown:i,resetDrillDown:o}=l(),{comparisonRows:c,hasComparison:u,isLoading:d,isFetching:f,isError:p,refetch:m}=ee({...t,max:e},{maxRows:e}),h=(0,a.useMemo)(()=>(c?.rows??[]).map(F),[c]),g=(0,a.useMemo)(()=>h.find(e=>e.label===r)??null,[h,r]),_=!!g?.children?.length,v=_?g.children??[]:h,b=_?!!g?.childrenHaveComparison:u;(0,a.useEffect)(()=>{r&&!_&&!d&&!f&&!p&&o()},[r,_,d,f,p,o]);let x=(0,a.useCallback)(e=>{i(e.label)},[i]),S=_?(0,R.jsx)(y,{label:n(`All Clicks`,`jetpack-premium-analytics`),ariaLabel:n(`View all clicks`,`jetpack-premium-analytics`),onClick:o}):null;return(0,R.jsxs)(`div`,{className:P.content,children:[S,(0,R.jsx)(C,{isLoading:d,isFetching:f,isError:h.length===0&&p,isEmpty:v.length===0,error:{description:n(`We couldn't load clicks. Please try again in a moment.`,`jetpack-premium-analytics`),actions:[{label:n(`Retry`,`jetpack-premium-analytics`),onClick:m}]},empty:{icon:s,description:n(`No clicks in this period.`,`jetpack-premium-analytics`)},children:(0,R.jsx)(I,{rows:v,withComparison:b,onDrillDown:_?void 0:x})})]})}function L({attributes:e={}}){let t=e?.max??10;return(0,R.jsx)(x,{attributes:e,children:(0,R.jsxs)(`div`,{className:P.root,children:[(0,R.jsx)(me,{max:t}),(0,R.jsx)(S,{children:(0,R.jsx)(v,{report:`clicks`})})]})})}var R,z,he=e((()=>{m(),se(),o(),r(),c(),d(),de(),R=i(),z={type:`number`,options:{useMultipliers:!0,decimals:0}}})),B,ge=e((()=>{r(),c(),B={name:`jpa/clicks`,title:n(`Clicks`,`jetpack-premium-analytics`),help:{content:n(`The external links your visitors clicked most often, sorted by clicks.`,`jetpack-premium-analytics`),links:[{label:n(`Learn more`,`jetpack-premium-analytics`),href:`https://jetpack.com/support/jetpack-stats/`}]},icon:s,attributes:[{id:`max`,label:n(`Number of results`,`jetpack-premium-analytics`),type:`integer`}],example:{attributes:{max:10}}}}));function V({withComparison:e}){return(0,U.jsx)(L,{attributes:{max:10,reportParams:f(e)}})}function H(e){return(0,U.jsx)(L,{attributes:{max:10,reportParams:f(!1,e)}})}function _e({withComparison:e,...t}){return(0,U.jsx)(ne,{...t,widgetType:G,renderModule:W,renderComponent:L,attributes:{max:10,reportParams:f(e)}})}var U,W,G,K,q,J,Y,X,Z,Q,$;e((()=>{m(),_(),le(),ue(),ce(),re(),oe(),he(),ge(),U=i(),g(),E(),W=`storybook/clicks`,G={name:B.name,title:B.title,icon:B.icon,presentation:`framed`},K={title:`Packages/Premium Analytics/Widgets/Clicks`,component:L,tags:[`autodocs`],argTypes:{withComparison:{control:`boolean`,description:`Include previous-period comparison report params.`}},parameters:{docs:{description:{component:`The "Clicks" widget. Shows the most-clicked external domains as a ranked leaderboard, using the global dashboard date range. Top-level rows drill down into clicked destination URLs when available.`}}}},q={render:V,args:{withComparison:!1},decorators:[T,w]},J={render:V,args:{withComparison:!0},decorators:[T,w]},Y={render:()=>H(`last-90-days`),tags:[`!autodocs`],decorators:[T,w],beforeEach:()=>(D(`stats/clicks`,`loading`),()=>D(`stats/clicks`,null))},X={render:()=>H(`last-7-days`),tags:[`!autodocs`],decorators:[T,w],beforeEach:()=>(D(`stats/clicks`,`error`),()=>D(`stats/clicks`,null))},Z={render:()=>H(`last-365-days`),tags:[`!autodocs`],decorators:[T,w],beforeEach:()=>(D(`stats/clicks`,`empty`),()=>D(`stats/clicks`,null))},Q={render:e=>(0,U.jsx)(_e,{...e}),args:{...ie,withComparison:!0},argTypes:{...ae,withComparison:{control:`boolean`,description:`Include previous-period comparison report params.`}}},q.parameters={...q.parameters,docs:{...q.parameters?.docs,source:{originalSource:`{
+  render: renderClicksWidget,
+  args: {
+    withComparison: false
+  },
+  decorators: [withWidgetCanvas, withStoryRouter]
+}`,...q.parameters?.docs?.source}}},J.parameters={...J.parameters,docs:{...J.parameters?.docs,source:{originalSource:`{
+  render: renderClicksWidget,
+  args: {
+    withComparison: true
+  },
+  decorators: [withWidgetCanvas, withStoryRouter]
+}`,...J.parameters?.docs?.source}}},Y.parameters={...Y.parameters,docs:{...Y.parameters?.docs,source:{originalSource:`{
+  render: () => renderClicksOnPreset('last-90-days'),
+  // Off the shared autodocs page — path-keyed override; see forceStatsMockState.
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas, withStoryRouter],
+  beforeEach: () => {
+    forceStatsMockState('stats/clicks', 'loading');
+    return () => forceStatsMockState('stats/clicks', null);
+  }
+}`,...Y.parameters?.docs?.source},description:{story:"First load: the fetch is in flight, so the widget shows its loading state. The\nmock is forced to never resolve for the duration of this story.\n\nForced through `forceStatsMockState`: `stats/clicks` is answered by the legacy\nstats mocks before the shared `setReportMockState` override can intercept it.",...Y.parameters?.docs?.description}}},X.parameters={...X.parameters,docs:{...X.parameters?.docs,source:{originalSource:`{
+  render: () => renderClicksOnPreset('last-7-days'),
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas, withStoryRouter],
+  beforeEach: () => {
+    forceStatsMockState('stats/clicks', 'error');
+    return () => forceStatsMockState('stats/clicks', null);
+  }
+}`,...X.parameters?.docs?.source},description:{story:`The fetch failed: the widget shows its error state with a Retry action (which
+re-runs the query — still mocked as failing while this story is active).`,...X.parameters?.docs?.description}}},Z.parameters={...Z.parameters,docs:{...Z.parameters?.docs,source:{originalSource:`{
+  render: () => renderClicksOnPreset('last-365-days'),
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas, withStoryRouter],
+  beforeEach: () => {
+    forceStatsMockState('stats/clicks', 'empty');
+    return () => forceStatsMockState('stats/clicks', null);
+  }
+}`,...Z.parameters?.docs?.source},description:{story:`Resolved with no rows: the widget shows its empty state (the neutral chart
+glyph and "No clicks in this period.").`,...Z.parameters?.docs?.description}}},Q.parameters={...Q.parameters,docs:{...Q.parameters?.docs,source:{originalSource:`{
+  render: args => <ClicksDashboardStory {...args} />,
+  args: {
+    ...DEFAULT_WIDGET_DASHBOARD_STORY_ARGS,
+    withComparison: true
+  },
+  argTypes: {
+    ...widgetDashboardWithWidgetArgTypes,
+    withComparison: {
+      control: 'boolean',
+      description: 'Include previous-period comparison report params.'
+    }
+  }
+}`,...Q.parameters?.docs?.source}}},$=[`Default`,`WithComparison`,`Loading`,`Error`,`Empty`,`WidgetDashboardWithWidget`]}))();export{q as Default,Z as Empty,X as Error,Y as Loading,Q as WidgetDashboardWithWidget,J as WithComparison,$ as __namedExportsOrder,K as default};
