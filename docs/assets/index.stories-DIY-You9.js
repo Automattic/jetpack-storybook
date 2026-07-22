@@ -1,0 +1,16 @@
+import{a as e,i as t}from"./preload-helper-usAeo7Bx.js";import{t as n}from"./react-DVCOKQW8.js";import{n as r,t as i}from"./clsx-SUvPW2lx.js";import{t as a}from"./jsx-runtime-D2pHJD-r.js";import{Cn as o,Dn as s,n as c,tr as l}from"./build-module-DmVuor49.js";import{t as u}from"./button-C9zaSI7F.js";import{r as d}from"./text-DNyawDL-.js";import{t as f}from"./iframe-ZSTl3Plf.js";var p,m,h,g,_,v=t((()=>{p=`_wrapper_fbnfh_1`,m=`_navigation_fbnfh_5`,h=`_button_fbnfh_8`,g=`_selected_fbnfh_13`,_={wrapper:p,navigation:m,button:h,selected:g}})),y,b,x,S,C=t((()=>{f(),c(),r(),n(),v(),y=a(),b=(e,t)=>[...Array(t)].map((t,n)=>n+e),x=()=>(0,y.jsx)(u,{size:`small`,className:i(_.button),variant:`tertiary`,disabled:!0,"aria-disabled":!0,children:(0,y.jsx)(d,{children:`...`})}),S=({className:e,currentPage:t=1,perPage:n,total:r,minColumns:a=7,disabled:c,onChangePage:d})=>{if(!r||!n)return null;let f=Math.ceil(r/n);if(t>f)return d(f),null;if(t<1)return d(1),null;let p=({page:e})=>{let n=e===t;return(0,y.jsx)(u,{size:`small`,className:i(_.button,n?_.selected:null),variant:n?`primary`:`tertiary`,disabled:c,"aria-disabled":c,onClick:()=>d(e),children:e})},m=Math.max(a,7);m=m%2==0?m+1:m;let h;if(f<=m)h=b(1,f).map(e=>(0,y.jsx)(p,{page:e},e));else if(t<m-2)h=(0,y.jsxs)(y.Fragment,{children:[b(1,m-2).map(e=>(0,y.jsx)(p,{page:e},e)),(0,y.jsx)(x,{}),(0,y.jsx)(p,{page:f})]});else if(t>f-m+3)h=(0,y.jsxs)(y.Fragment,{children:[(0,y.jsx)(p,{page:1}),(0,y.jsx)(x,{}),b(f-m+3,m-2).map(e=>(0,y.jsx)(p,{page:e},e))]});else{let e=(m-5)/2;h=(0,y.jsxs)(y.Fragment,{children:[b(1,e).map(e=>(0,y.jsx)(p,{page:e},e)),(0,y.jsx)(x,{}),b(t-1,3).map(e=>(0,y.jsx)(p,{page:e},e)),(0,y.jsx)(x,{}),b(f-e+1,e).map(e=>(0,y.jsx)(p,{page:e},e))]})}return(0,y.jsxs)(`div`,{className:i(e,_.wrapper),children:[(0,y.jsx)(u,{size:`small`,className:i(_.navigation,_.button),variant:`tertiary`,disabled:c||t===1,"aria-disabled":c||t===1,onClick:()=>d(Math.max(1,t-1)),children:(0,y.jsx)(l,{icon:s})}),h,(0,y.jsx)(u,{size:`small`,className:i(_.navigation,_.button),variant:`tertiary`,disabled:c||t===f,"aria-disabled":c||t===f,onClick:()=>d(Math.min(f,t+1)),children:(0,y.jsx)(l,{icon:o})})]})}})),w=e({__namedExportsOrder:()=>j,_default:()=>A,default:()=>O}),T,E,D,O,k,A,j,M=t((()=>{C(),T=a(),{action:E}=__STORYBOOK_MODULE_ACTIONS__,{useArgs:D}=__STORYBOOK_MODULE_PREVIEW_API__,O={title:`Packages/VideoPress/Pagination`,component:S},k=e=>{let[,t]=D(),n=e=>{t({currentPage:e,disabled:!0}),E(`onPageChange`)(e),setTimeout(()=>{t({disabled:!1})},500)};return(0,T.jsx)(S,{...e,onChangePage:n})},A=k.bind({}),A.args={currentPage:1,perPage:10,total:100,minColumns:7,disabled:!1},A.parameters={...A.parameters,docs:{...A.parameters?.docs,source:{originalSource:`args => {
+  const [, updateArgs] = useArgs();
+  const onChangePage = (newPage: number) => {
+    updateArgs({
+      currentPage: newPage,
+      disabled: true
+    });
+    action('onPageChange')(newPage);
+    setTimeout(() => {
+      updateArgs({
+        disabled: false
+      });
+    }, 500);
+  };
+  return <Pagination {...args} onChangePage={onChangePage} />;
+}`,...A.parameters?.docs?.source}}},j=[`_default`]}));M();export{j as __namedExportsOrder,A as _default,O as default,M as n,C as r,w as t};
