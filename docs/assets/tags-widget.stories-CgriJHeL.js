@@ -1,0 +1,42 @@
+import{i as e}from"./preload-helper-usAeo7Bx.js";import{c as t,n,t as r}from"./build-module-Da_5_6n_.js";import{t as i}from"./jsx-runtime-D2pHJD-r.js";import{A as a,t as o}from"./build-module-DrryaqBL.js";import{S as s,n as c,zn as l}from"./build-module-DmVuor49.js";import{r as ee}from"./hooks-Bd2PRD6m.js";import{H as u,R as d,t as f,u as p}from"./build-module-jamXda_l.js";import{i as te,t as m}from"./src-B3le4dug.js";import{Bt as h,Ct as g,fr as _,q as v}from"./chart-tooltip-CSib7BBw.js";import{t as ne}from"./leaderboard-chart-BZiTQJ9L.js";import{I as re,L as ie,S as ae,U as oe,b as se,q as ce,w as le,z as y}from"./report-metric-wNKZjZ3h.js";import{t as b}from"./widget-state-BMEczYDX.js";import{r as ue}from"./src-C7pzsBjh.js";import{C as de,D as fe,E as pe,O as me,S as he,T as ge,b as _e,k as x,t as ve,w as ye,x as S}from"./src-DzSbZgLF.js";var C,w,T,E,D,O,k,A,be=e((()=>{C=`_root_1uma5_1`,w=`_content_1uma5_11`,T=`_itemLabel_1uma5_21`,E=`_itemIcon_1uma5_30`,D=`_itemLabelText_1uma5_34`,O=`_childList_1uma5_48`,k=`_childRow_1uma5_54`,A={root:C,content:w,itemLabel:T,itemIcon:E,itemLabelText:D,childList:O,childRow:k}}));function xe({reportParams:e,max:t}){let{data:n,isLoading:r,isFetching:i,isError:o,refetch:s}=h({...e,max:t}),c=(0,a.useMemo)(()=>(n?.data?.[0]?.items??[]).slice(0,t>0?t:void 0).map(e=>{let t=e.link??e.labelText,n=(e.children??[]).map(e=>({id:e.link??`${t}-${e.label}`,label:e.label,labelIcon:e.labelIcon,link:e.link}));return{id:t,label:e.labelText,labelIcon:e.label[0]?.labelIcon??``,value:e.value,link:e.link,children:n}}),[n,t]);return{data:c,isLoading:r,isFetching:i,isError:c.length===0&&o,refetch:s}}var Se=e((()=>{o(),g()}));function j({labelIcon:e,label:t,link:n}){let r=ue(n);return(0,N.jsxs)(N.Fragment,{children:[(0,N.jsx)(u,{icon:P(e),size:20,className:A.itemIcon}),r?(0,N.jsx)(p,{className:A.itemLabelText,href:r,variant:`unstyled`,openInNewTab:!0,title:t,children:t}):(0,N.jsx)(`span`,{className:A.itemLabelText,title:t,children:t})]})}function Ce({members:e}){return(0,N.jsx)(d,{direction:`column`,className:A.childList,children:e.map(e=>(0,N.jsx)(`div`,{className:A.childRow,children:(0,N.jsx)(j,{labelIcon:e.labelIcon,label:e.label,link:e.link})},e.id))})}function we({max:e=10}){let{reportParams:r}=ce(),{data:i,isLoading:o,isFetching:s,isError:c,refetch:l}=xe({reportParams:r,max:e}),{drillDownItem:u,drillDown:f,resetDrillDown:p}=ee(),m=(0,a.useMemo)(()=>u?i.find(e=>e.label===u)??null:null,[i,u]);(0,a.useEffect)(()=>{u&&!m&&p()},[u,m,p]);let h=(0,a.useMemo)(()=>{let e=Math.max(...i.map(e=>e.value),0);return i.map(r=>{let i=r.children.length>0;return{id:r.id,label:(0,N.jsx)(d,{align:`center`,className:A.itemLabel,children:(0,N.jsx)(j,{labelIcon:r.labelIcon,label:r.label,link:r.link})}),currentValue:r.value,currentShare:v(r.value,e),...i&&{onClick:()=>f(r.label),ariaLabel:t(n(`View the tags and categories in %s`,`jetpack-premium-analytics-pkg`),r.label)}}})},[i,f]);return(0,N.jsxs)(d,{className:A.root,children:[(0,N.jsxs)(`div`,{className:A.content,children:[m&&(0,N.jsx)(le,{label:n(`All tags & categories`,`jetpack-premium-analytics-pkg`),onClick:p}),(0,N.jsx)(b,{isLoading:o,isFetching:s,isError:c,isEmpty:i.length===0,error:{description:n(`We couldn't load tags & categories. Please try again in a moment.`,`jetpack-premium-analytics-pkg`),actions:[{label:n(`Retry`,`jetpack-premium-analytics-pkg`),onClick:l}]},empty:{icon:te,description:n(`Learn about your most visited tags & categories to track engaging topics.`,`jetpack-premium-analytics-pkg`)},children:m?(0,N.jsx)(Ce,{members:m.children}):(0,N.jsx)(ne,{data:h,withOverlayLabel:!0,showLegend:!1,dataFormat:{type:`number`,options:{useMultipliers:!0,decimals:0}}})})]}),(0,N.jsx)(ae,{children:(0,N.jsx)(se,{report:`tags`})})]})}function M({attributes:e={}}){return(0,N.jsx)(oe,{attributes:e,children:(0,N.jsx)(we,{max:e.max})})}var N,P,Te=e((()=>{ve(),m(),o(),r(),c(),f(),be(),Se(),N=i(),P=e=>e===`folder`?l:s})),F,Ee=e((()=>{r(),c(),F={icon:s,attributes:[{id:`max`,label:n(`Number of results`,`jetpack-premium-analytics-pkg`),type:`integer`}],example:{attributes:{max:10}}}})),I,L,R,z,B,V,H,De=e((()=>{I=`jpa/tags`,L=`Tags & categories`,R=`Your most visited tags and categories, ranked by views.`,z={content:`The tags and categories associated with your most-viewed content, sorted by views.`,links:[{label:`Learn more`,href:`https://jetpack.com/support/jetpack-stats/`}]},B=`stats`,V=`framed`,H={name:I,title:L,description:R,help:z,category:B,presentation:V}}));function Oe(){return(0,W.jsx)(M,{attributes:{max:10,reportParams:_()}})}function U(e){return(0,W.jsx)(M,{attributes:{max:e,reportParams:_(!1)}})}function ke(e){return(0,W.jsx)(M,{...e})}function Ae(e){return(0,W.jsx)(ge,{...e,widgetType:K,renderModule:G,renderComponent:ke,attributes:{max:10,reportParams:_(!0)}})}var W,G,K,q,J,Y,X,Z,Q,$;e((()=>{g(),pe(),me(),de(),_e(),re(),Te(),Ee(),De(),W=i(),ie(),G=`storybook/tags`,K=he(H,F),q={title:`Packages/Premium Analytics/Widgets/Tags`,component:M,tags:[`autodocs`],parameters:{docs:{description:{component:`The "Tags & categories" widget. Displays the site's most visited tags and categories for the selected period, ranked by views. Single tags/categories link to their archive; grouped rows (several tags/categories sharing posts) drill down to their members. Ported from the Jetpack Stats Tags & categories module.`}}}},J={render:Oe,decorators:[S,x]},Y={render:()=>U(9),tags:[`!autodocs`],decorators:[S,x],beforeEach:()=>(y(`stats/tags`,`loading`),()=>y(`stats/tags`,null))},X={render:()=>U(8),tags:[`!autodocs`],decorators:[S,x],beforeEach:()=>(y(`stats/tags`,`error`),()=>y(`stats/tags`,null))},Z={render:()=>U(7),tags:[`!autodocs`],decorators:[S,x],beforeEach:()=>(y(`stats/tags`,`empty`),()=>y(`stats/tags`,null))},Q={render:e=>(0,W.jsx)(Ae,{...e}),args:{...ye},argTypes:{...fe},decorators:[x]},J.parameters={...J.parameters,docs:{...J.parameters?.docs,source:{originalSource:`{
+  render: renderTags,
+  decorators: [withWidgetCanvas, withStoryRouter]
+}`,...J.parameters?.docs?.source}}},Y.parameters={...Y.parameters,docs:{...Y.parameters?.docs,source:{originalSource:`{
+  render: () => renderTagsWithMax(9),
+  // Kept off the shared autodocs page: the mock override is keyed by path, so it
+  // would otherwise force the sibling stories on that page into the same state.
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas, withStoryRouter],
+  beforeEach: () => {
+    setReportMockState('stats/tags', 'loading');
+    return () => setReportMockState('stats/tags', null);
+  }
+}`,...Y.parameters?.docs?.source},description:{story:`First load: the fetch is in flight, so the widget shows its loading state. The
+mock is forced to never resolve for the duration of this story.`,...Y.parameters?.docs?.description}}},X.parameters={...X.parameters,docs:{...X.parameters?.docs,source:{originalSource:`{
+  render: () => renderTagsWithMax(8),
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas, withStoryRouter],
+  beforeEach: () => {
+    setReportMockState('stats/tags', 'error');
+    return () => setReportMockState('stats/tags', null);
+  }
+}`,...X.parameters?.docs?.source},description:{story:`The fetch failed: the widget shows its error state with a Retry action (which
+re-runs the query — still mocked as failing while this story is active).`,...X.parameters?.docs?.description}}},Z.parameters={...Z.parameters,docs:{...Z.parameters?.docs,source:{originalSource:`{
+  render: () => renderTagsWithMax(7),
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas, withStoryRouter],
+  beforeEach: () => {
+    setReportMockState('stats/tags', 'empty');
+    return () => setReportMockState('stats/tags', null);
+  }
+}`,...Z.parameters?.docs?.source},description:{story:`Resolved with no rows: the widget shows its empty state (the neutral tag glyph
+and "Learn about your most visited tags & categories to track engaging topics.").`,...Z.parameters?.docs?.description}}},Q.parameters={...Q.parameters,docs:{...Q.parameters?.docs,source:{originalSource:`{
+  render: args => <TagsDashboardStory {...args} />,
+  args: {
+    ...DEFAULT_WIDGET_DASHBOARD_STORY_ARGS
+  },
+  argTypes: {
+    ...widgetDashboardWithWidgetArgTypes
+  },
+  decorators: [withStoryRouter]
+}`,...Q.parameters?.docs?.source}}},$=[`Default`,`Loading`,`Error`,`Empty`,`WidgetDashboardWithWidget`]}))();export{J as Default,Z as Empty,X as Error,Y as Loading,Q as WidgetDashboardWithWidget,$ as __namedExportsOrder,q as default};
