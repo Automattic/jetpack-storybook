@@ -1,0 +1,74 @@
+import{i as e}from"./preload-helper-usAeo7Bx.js";import{n as t,t as n}from"./build-module-Da_5_6n_.js";import{t as r}from"./jsx-runtime-D2pHJD-r.js";import{A as i,t as a}from"./build-module-DrryaqBL.js";import{I as o,Mt as s,Nn as c,P as l,Zt as u,ct as d,n as f,ut as ee}from"./build-module-DmVuor49.js";import{H as te,J as ne,Q as re,V as ie,W as p}from"./report-metric-IiZe2Pt3.js";import{R as m,t as h}from"./build-module-CBX4bC5r.js";import{At as ae,jt as oe,kr as se,ur as g,xt as _}from"./chart-tooltip-CDjNzS2Z.js";import{t as ce}from"./metric-tile-grid-awA3LYm5.js";import{t as le}from"./widget-state-kGSg2tB2.js";import{C as v,D as ue,E as de,S as y,T as b,b as fe,t as pe,w as me,x}from"./src-CUxuHBSk.js";import{n as S,t as he}from"./src-CGhhaeNz.js";var C,w,T,ge=e((()=>{C=`_root_cqnu4_2`,w=`_content_cqnu4_14`,T={root:C,content:w}}));function _e(e,t){let n=Number(e[t]);return Number.isFinite(n)?n:0}function ve(e,t){let n=Number(e[t]);return Number.isFinite(n)&&n!==0?n:null}function ye(e){return!!e&&A.some(t=>{let n=e[t.key];return n!=null&&Number.isFinite(Number(n))})}function be(e,t){let n=[];for(let r of A){if(!r.views.includes(t))continue;let i=r.kind===`rate`?ve(e,r.key):_e(e,r.key);r.hideWhenZero&&!i||n.push({key:r.key,icon:r.icon,label:r.label(),value:i,dataFormat:r.kind===`rate`?k:O})}return n}function xe({metric:e}){let{reportParams:t}=re(),n=se(t.post_id),r=n>0,a=oe(n,`rate`,{enabled:r}),o=ae(n,`rate`,{enabled:r&&e===`clicks`}),s=e===`clicks`?[a,o]:[a],c=a.data?.summary,l=o.data?.summary,u=s.every(e=>e.data!==void 0),d=(0,i.useMemo)(()=>{if(!u)return;let t=e===`clicks`&&c&&l?{...c,...l}:c;return ye(t)?be(t,e):void 0},[u,c,l,e]),f=(0,i.useCallback)(()=>{a.refetch(),e===`clicks`&&o.refetch()},[o,e,a]);return(0,D.jsx)(j,{metrics:d,hasSelection:r,isLoading:s.some(e=>e.isLoading),isFetching:s.some(e=>e.isFetching),isError:s.some(e=>e.isError&&e.data===void 0),onRetry:f})}function E({attributes:e={}}){return(0,D.jsx)(ne,{attributes:e,children:(0,D.jsx)(xe,{metric:e.metric===`clicks`?`clicks`:`opens`})})}var D,O,k,A,j,Se=e((()=>{_(),pe(),a(),n(),f(),h(),ge(),D=r(),O={type:`number`,options:{useMultipliers:!0,decimals:0}},k={type:`percentage`,options:{decimals:1,signDisplay:`never`}},A=[{key:`total_sends`,icon:l,label:()=>t(`Emails sent`,`jetpack-premium-analytics-pkg`),kind:`count`,views:[`opens`]},{key:`unique_opens`,icon:ee,label:()=>t(`Unique opens`,`jetpack-premium-analytics-pkg`),kind:`count`,views:[`opens`],hideWhenZero:!0},{key:`total_opens`,icon:o,label:()=>t(`Total opens`,`jetpack-premium-analytics-pkg`),kind:`count`,views:[`opens`,`clicks`]},{key:`opens_rate`,icon:d,label:()=>t(`Open rate`,`jetpack-premium-analytics-pkg`),kind:`rate`,views:[`opens`]},{key:`total_clicks`,icon:s,label:()=>t(`Total clicks`,`jetpack-premium-analytics-pkg`),kind:`count`,views:[`clicks`]},{key:`clicks_rate`,icon:c,label:()=>t(`Click rate`,`jetpack-premium-analytics-pkg`),kind:`rate`,views:[`clicks`]}],j=({metrics:e,hasSelection:n=!1,isLoading:r=!1,isFetching:i=!1,isError:a=!1,onRetry:o})=>(0,D.jsx)(m,{className:T.root,children:(0,D.jsx)(`div`,{className:T.content,children:(0,D.jsx)(le,{isLoading:r,isFetching:i,isError:a,isEmpty:!e||e.length===0,error:{description:t(`We couldn't load this email's stats. Please try again in a moment.`,`jetpack-premium-analytics-pkg`),actions:o?[{label:t(`Retry`,`jetpack-premium-analytics-pkg`),onClick:o}]:void 0},empty:{icon:u,description:t(n?`No stats are available for this email yet.`:`Select an email to see its stats.`,`jetpack-premium-analytics-pkg`)},children:(0,D.jsx)(ce,{tiles:e??[]})})})})})),M,Ce=e((()=>{n(),f(),he(),M={icon:u,attributes:[{id:`metric`,label:t(`View by`,`jetpack-premium-analytics-pkg`),type:`text`,Edit:S,elements:[{label:t(`Opens`,`jetpack-premium-analytics-pkg`),value:`opens`},{label:t(`Clicks`,`jetpack-premium-analytics-pkg`),value:`clicks`}]}],example:{attributes:{metric:`opens`}}}})),N,P,F,I,L,R,z,we=e((()=>{N=`jpa/email-top-row`,P=`Email highlights`,F=`Headline open and click totals for a single email, split into Opens and Clicks views.`,I={content:`Headline stats for a single email. The Opens view shows total sends, unique opens, total opens, and open rate; the Clicks view shows total sends, unique opens, total clicks, and click rate. Rates are measured against total sends. Figures are all-time and are not affected by the dashboard date range.`},L=`stats`,R=`framed`,z={name:N,title:P,description:F,help:I,category:L,presentation:R}}));function B({metric:e},t=U){return(0,V.jsx)(E,{attributes:{metric:e,reportParams:{...g(),post_id:t}}})}function Te({metric:e,...t}){return(0,V.jsx)(b,{...t,widgetType:y(z,M),renderModule:H,renderComponent:E,attributes:{metric:e,reportParams:{...g(!0),post_id:U}}})}var V,H,U,W,G,K,q,J,Y,X,Z,Q,$;e((()=>{_(),de(),ie(),v(),fe(),Se(),Ce(),we(),V=r(),te(),H=`storybook/email-top-row`,U=2e3,W=`stats/opens/emails`,G={title:`Packages/Premium Analytics/Widgets/EmailTopRow`,component:E,tags:[`autodocs`],argTypes:{metric:{control:`inline-radio`,options:[`opens`,`clicks`]}},parameters:{docs:{description:{component:'The "Email top row" widget. Shows a single email\'s all-time headline totals as a row of metric tiles, switching between the Opens view (total sends, unique opens, total opens, open rate) and the Clicks view (total sends, unique opens, total clicks, click rate) via the `metric` attribute. The email is selected by the host through `reportParams.post_id`. Clicks combines the per-post opens and clicks rate summaries; both endpoints are all-time and return no comparison rows, so the widget ignores the dashboard date range and never shows period-over-period deltas.'}}}},K={render:e=>B(e),args:{metric:`opens`},decorators:[x]},q={render:e=>B(e),args:{metric:`clicks`},decorators:[x]},J={render:e=>B(e,2001),tags:[`!autodocs`],args:{metric:`opens`},decorators:[x],beforeEach:()=>(p(W,`loading`),()=>p(W,null))},Y={render:e=>B(e,2002),tags:[`!autodocs`],args:{metric:`opens`},decorators:[x],beforeEach:()=>(p(W,`error`),()=>p(W,null))},X={render:e=>B(e,2003),tags:[`!autodocs`],args:{metric:`opens`},decorators:[x],beforeEach:()=>(p(W,`empty`),()=>p(W,null))},Z={render:({metric:e})=>(0,V.jsx)(E,{attributes:{metric:e,reportParams:g()}}),args:{metric:`opens`},decorators:[x]},Q={render:e=>(0,V.jsx)(Te,{...e}),args:{...me,metric:`opens`},argTypes:{...ue,metric:{control:`inline-radio`,options:[`opens`,`clicks`]}}},K.parameters={...K.parameters,docs:{...K.parameters?.docs,source:{originalSource:`{
+  render: args => renderEmailTopRow(args),
+  args: {
+    metric: 'opens'
+  },
+  decorators: [withWidgetCanvas]
+}`,...K.parameters?.docs?.source},description:{story:`Default populated state — the selected email's Opens totals.`,...K.parameters?.docs?.description}}},q.parameters={...q.parameters,docs:{...q.parameters?.docs,source:{originalSource:`{
+  render: args => renderEmailTopRow(args),
+  args: {
+    metric: 'clicks'
+  },
+  decorators: [withWidgetCanvas]
+}`,...q.parameters?.docs?.source},description:{story:`The Clicks view — total sends, unique opens, total clicks, and click rate for
+the same email.`,...q.parameters?.docs?.description}}},J.parameters={...J.parameters,docs:{...J.parameters?.docs,source:{originalSource:`{
+  render: args => renderEmailTopRow(args, 2001),
+  // Off the shared autodocs page — path-keyed override; see forceStatsMockState.
+  tags: ['!autodocs'],
+  args: {
+    metric: 'opens'
+  },
+  decorators: [withWidgetCanvas],
+  beforeEach: () => {
+    setReportMockState(OPENS_MOCK_FRAGMENT, 'loading');
+    return () => setReportMockState(OPENS_MOCK_FRAGMENT, null);
+  }
+}`,...J.parameters?.docs?.source},description:{story:`First load with no data yet: the widget shows its loading overlay.`,...J.parameters?.docs?.description}}},Y.parameters={...Y.parameters,docs:{...Y.parameters?.docs,source:{originalSource:`{
+  render: args => renderEmailTopRow(args, 2002),
+  tags: ['!autodocs'],
+  args: {
+    metric: 'opens'
+  },
+  decorators: [withWidgetCanvas],
+  beforeEach: () => {
+    setReportMockState(OPENS_MOCK_FRAGMENT, 'error');
+    return () => setReportMockState(OPENS_MOCK_FRAGMENT, null);
+  }
+}`,...Y.parameters?.docs?.source},description:{story:`The fetch failed: the widget shows its error state with a Retry action (which
+re-runs the query — still mocked as failing while this story is active).`,...Y.parameters?.docs?.description}}},X.parameters={...X.parameters,docs:{...X.parameters?.docs,source:{originalSource:`{
+  render: args => renderEmailTopRow(args, 2003),
+  tags: ['!autodocs'],
+  args: {
+    metric: 'opens'
+  },
+  decorators: [withWidgetCanvas],
+  beforeEach: () => {
+    setReportMockState(OPENS_MOCK_FRAGMENT, 'empty');
+    return () => setReportMockState(OPENS_MOCK_FRAGMENT, null);
+  }
+}`,...X.parameters?.docs?.source},description:{story:`Resolved with no stats for the email: the widget shows its empty state (the
+envelope glyph and "No stats are available for this email yet.").`,...X.parameters?.docs?.description}}},Z.parameters={...Z.parameters,docs:{...Z.parameters?.docs,source:{originalSource:`{
+  render: ({
+    metric
+  }: EmailTopRowStoryControls) => <EmailTopRowRender attributes={{
+    metric,
+    reportParams: getDefaultQueryParams()
+  }} />,
+  args: {
+    metric: 'opens'
+  },
+  decorators: [withWidgetCanvas]
+}`,...Z.parameters?.docs?.source},description:{story:"No email selected (no `post_id`): the widget prompts to pick an email instead of\nfetching. This is how the widget renders on a report page before a row is chosen.",...Z.parameters?.docs?.description}}},Q.parameters={...Q.parameters,docs:{...Q.parameters?.docs,source:{originalSource:`{
+  render: args => <EmailTopRowDashboardStory {...args} />,
+  args: {
+    ...DEFAULT_WIDGET_DASHBOARD_STORY_ARGS,
+    metric: 'opens'
+  },
+  argTypes: {
+    ...widgetDashboardWithWidgetArgTypes,
+    metric: {
+      control: 'inline-radio',
+      options: ['opens', 'clicks']
+    }
+  }
+}`,...Q.parameters?.docs?.source}}},$=[`Default`,`ClicksView`,`Loading`,`Error`,`Empty`,`NoEmailSelected`,`WidgetDashboardWithWidget`]}))();export{q as ClicksView,K as Default,X as Empty,Y as Error,J as Loading,Z as NoEmailSelected,Q as WidgetDashboardWithWidget,$ as __namedExportsOrder,G as default};
