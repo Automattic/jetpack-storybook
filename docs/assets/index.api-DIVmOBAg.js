@@ -1,0 +1,39 @@
+import{i as e}from"./preload-helper-usAeo7Bx.js";import{t}from"./jsx-runtime-D2pHJD-r.js";import{bt as n}from"./esm-5NFT7jm5.js";import{i as r,n as i}from"./blocks-ChNLYNMk.js";import{t as a}from"./mdx-react-shim-C1Bdn7fF.js";function o(e){let t={a:`a`,code:`code`,h1:`h1`,h2:`h2`,p:`p`,pre:`pre`,strong:`strong`,table:`table`,tbody:`tbody`,td:`td`,th:`th`,thead:`thead`,tr:`tr`,...n(),...e.components};return(0,c.jsxs)(c.Fragment,{children:[(0,c.jsx)(i,{title:`JS Packages/Charts Library/Charts/Pie Semi Circle Chart/API Reference`}),`
+`,(0,c.jsx)(t.h1,{id:`pie-semi-circle-chart-api-reference`,children:`Pie Semi Circle Chart API Reference`}),`
+`,(0,c.jsx)(t.h2,{id:`piesemicirclechart`,children:`PieSemiCircleChart`}),`
+`,(0,c.jsx)(t.p,{children:`Main component for rendering semi-circular pie charts.`}),`
+`,(0,c.jsx)(t.p,{children:(0,c.jsx)(t.strong,{children:`Props:`})}),`
+`,(0,c.jsxs)(t.table,{children:[(0,c.jsx)(t.thead,{children:(0,c.jsxs)(t.tr,{children:[(0,c.jsx)(t.th,{children:`Prop`}),(0,c.jsx)(t.th,{children:`Type`}),(0,c.jsx)(t.th,{children:`Default`}),(0,c.jsx)(t.th,{children:`Description`})]})}),(0,c.jsxs)(t.tbody,{children:[(0,c.jsxs)(t.tr,{children:[(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`data`})}),(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`DataPointPercentage[]`})}),(0,c.jsx)(t.td,{children:`-`}),(0,c.jsxs)(t.td,{children:[(0,c.jsx)(t.strong,{children:`Required.`}),` Array of data points to display`]})]}),(0,c.jsxs)(t.tr,{children:[(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`width`})}),(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`number`})}),(0,c.jsx)(t.td,{children:`responsive`}),(0,c.jsx)(t.td,{children:`Width constraint in pixels. By default the chart fills its parent container. When provided, constrains the chart to this width while maintaining the 2:1 aspect ratio`})]}),(0,c.jsxs)(t.tr,{children:[(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`height`})}),(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`number`})}),(0,c.jsx)(t.td,{children:`responsive`}),(0,c.jsx)(t.td,{children:`Height constraint in pixels. By default the chart fills its parent container. When provided, the chart will reduce its width if needed so that height (= width / 2) does not exceed this value`})]}),(0,c.jsxs)(t.tr,{children:[(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`thickness`})}),(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`number`})}),(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`0.4`})}),(0,c.jsx)(t.td,{children:`Thickness of the pie segments (0-1, where 1 is full thickness)`})]}),(0,c.jsxs)(t.tr,{children:[(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`clockwise`})}),(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`boolean`})}),(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`true`})}),(0,c.jsx)(t.td,{children:`Direction of segment rendering`})]}),(0,c.jsxs)(t.tr,{children:[(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`label`})}),(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`string`})}),(0,c.jsx)(t.td,{children:`-`}),(0,c.jsx)(t.td,{children:`Text displayed above the chart`})]}),(0,c.jsxs)(t.tr,{children:[(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`note`})}),(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`string`})}),(0,c.jsx)(t.td,{children:`-`}),(0,c.jsx)(t.td,{children:`Additional text displayed below the label`})]}),(0,c.jsxs)(t.tr,{children:[(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`withTooltips`})}),(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`boolean`})}),(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`false`})}),(0,c.jsx)(t.td,{children:`Enable interactive tooltips on hover`})]}),(0,c.jsxs)(t.tr,{children:[(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`renderTooltip`})}),(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`(params: PieSemiCircleChartRenderTooltipParams) => ReactNode`})}),(0,c.jsx)(t.td,{children:`-`}),(0,c.jsx)(t.td,{children:`Custom tooltip render function`})]}),(0,c.jsxs)(t.tr,{children:[(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`animation`})}),(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`boolean`})}),(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`false`})}),(0,c.jsxs)(t.td,{children:[`Enable entry animation on initial render. Creates a radial wipe reveal effect. Automatically respects user's `,(0,c.jsx)(t.code,{children:`prefers-reduced-motion`}),` system setting`]})]}),(0,c.jsxs)(t.tr,{children:[(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`showLegend`})}),(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`boolean`})}),(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`false`})}),(0,c.jsx)(t.td,{children:`Display legend below the chart`})]}),(0,c.jsxs)(t.tr,{children:[(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`legend`})}),(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`ChartLegendConfig`})}),(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`undefined`})}),(0,c.jsxs)(t.td,{children:[`Legend configuration object. See `,(0,c.jsx)(t.a,{href:`#chartlegendconfig-type`,children:`ChartLegendConfig`}),`. When `,(0,c.jsx)(t.code,{children:`interactive`}),` is enabled, requires `,(0,c.jsx)(t.code,{children:`chartId`}),` and `,(0,c.jsx)(t.code,{children:`GlobalChartsProvider`}),`. When segments are hidden, percentages recalculate so visible segments total 100%`]})]}),(0,c.jsxs)(t.tr,{children:[(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`className`})}),(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`string`})}),(0,c.jsx)(t.td,{children:`-`}),(0,c.jsx)(t.td,{children:`Additional CSS class for the container`})]}),(0,c.jsxs)(t.tr,{children:[(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`gap`})}),(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`GapSize`})}),(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`'md'`})}),(0,c.jsx)(t.td,{children:`Gap between chart elements (SVG, legend, children). Uses WordPress design system tokens`})]}),(0,c.jsxs)(t.tr,{children:[(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`chartId`})}),(0,c.jsx)(t.td,{children:(0,c.jsx)(t.code,{children:`string`})}),(0,c.jsx)(t.td,{children:`-`}),(0,c.jsx)(t.td,{children:`Optional unique identifier (auto-generated if not provided)`})]})]})]}),`
+`,(0,c.jsx)(t.h2,{id:`piesemicirclechartrendertooltipparams-type`,children:`PieSemiCircleChartRenderTooltipParams Type`}),`
+`,(0,c.jsx)(t.pre,{children:(0,c.jsx)(t.code,{className:`language-typescript`,children:`type PieSemiCircleChartRenderTooltipParams = {
+	/** The data point being hovered, including label, value, and percentage. */
+	tooltipData: DataPointPercentage;
+};
+`})}),`
+`,(0,c.jsx)(t.h2,{id:`datapointpercentage-type`,children:`DataPointPercentage Type`}),`
+`,(0,c.jsx)(t.pre,{children:(0,c.jsx)(t.code,{className:`language-typescript`,children:`type DataPointPercentage = {
+	/** Label for the data point */
+	label: string;
+	/** Numerical value */
+	value: number;
+	/** Formatted value for display in tooltips and legends */
+	valueDisplay?: string;
+	/** Percentage value (must be positive, doesn't need to sum to 100) */
+	percentage: number;
+	/** Optional custom color override */
+	color?: string;
+};
+`})}),`
+`,(0,c.jsx)(t.h2,{id:`chartlegendconfig-type`,children:`ChartLegendConfig Type`}),`
+`,(0,c.jsx)(t.pre,{children:(0,c.jsx)(t.code,{className:`language-typescript`,children:`type ChartLegendConfig = {
+	orientation?: 'horizontal' | 'vertical';
+	position?: 'top' | 'bottom';
+	alignment?: 'start' | 'center' | 'end';
+	shape?: LegendShape;
+	interactive?: boolean;
+	itemClassName?: string;
+	itemStyles?: LegendItemStyles;
+	labelStyles?: LegendLabelStyles;
+	shapeStyles?: LegendShapeStyles;
+};
+`})})]})}function s(e={}){let{wrapper:t}={...n(),...e.components};return t?(0,c.jsx)(t,{...e,children:(0,c.jsx)(o,{...e})}):o(e)}var c;e((()=>{c=t(),a(),r()}))();export{s as default};
