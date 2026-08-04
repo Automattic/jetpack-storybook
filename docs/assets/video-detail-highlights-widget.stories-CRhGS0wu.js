@@ -1,0 +1,30 @@
+import{i as e}from"./preload-helper-usAeo7Bx.js";import{n as t,t as n}from"./build-module-2QZQpBH2.js";import{t as r}from"./jsx-runtime-D2pHJD-r.js";import{B as i,I as a,n as o,o as s}from"./build-module-DoJYX5DX.js";import{G as c,W as l,Z as u,tt as d}from"./report-metric-c1D_qvJb.js";import{Et as f,ur as p,xt as m}from"./chart-tooltip-zAw7regG.js";import{t as ee}from"./metric-tile-grid-UV2_gsu5.js";import{t as te}from"./widget-state-BTUmQLxQ.js";import{C as h,D as g,E as _,S as v,T as y,b,t as x,w as ne,x as S}from"./src-C3TDM8h_.js";var C,w,T=e((()=>{C=`_root_12rzq_1`,w={root:C}}));function E(e){let t=typeof e==`number`?e:Number.parseInt(e??``,10);return Number.isInteger(t)&&t>0?t:NaN}function D(e){let t=e?.data??[];return(t.length>30?t.slice(-30):t).reduce((e,t)=>e+t.value,0)}function O(){let{reportParams:e}=d(),n=E(e.post_id),r=Number.isInteger(n),o=f(n,void 0,{enabled:r}),c=f(n,{period:`month`,statType:`impressions`},{enabled:r}),l=f(n,{period:`month`,statType:`watch_time`},{enabled:r}),u=[o,c,l],p=u.some(e=>e.isLoading),m=u.some(e=>e.isFetching),h=u.some(e=>e.isError),g=u.some(e=>e.data?.data.length),_=[{key:`views`,label:t(`Views`,`jetpack-premium-analytics-pkg`),icon:a,value:D(o.data)},{key:`impressions`,label:t(`Impressions`,`jetpack-premium-analytics-pkg`),icon:s,value:D(c.data)},{key:`watch-time`,label:t(`Hours watched`,`jetpack-premium-analytics-pkg`),icon:i,value:D(l.data),dataFormat:M}];return(0,A.jsx)(`div`,{className:w.root,children:(0,A.jsx)(te,{isLoading:r&&p,isFetching:m,isError:r&&h,isEmpty:!r||!p&&!h&&!g,error:{description:t(`We couldn't load this video's highlights. Please try again in a moment.`,`jetpack-premium-analytics-pkg`),actions:[{label:t(`Retry`,`jetpack-premium-analytics-pkg`),onClick:()=>{Promise.all(u.map(e=>e.refetch()))}}]},empty:{icon:s,description:t(r?`No highlights are available for this video.`:`Open a video report to see its highlights here.`,`jetpack-premium-analytics-pkg`)},children:(0,A.jsx)(ee,{tiles:_,dataFormat:j})})})}function k({attributes:e={}}){return(0,A.jsx)(u,{attributes:e,children:(0,A.jsx)(O,{})})}var A,j,M,N=e((()=>{m(),x(),n(),o(),T(),A=r(),j={type:`number`,options:{useMultipliers:!0,decimals:0}},M={type:`number`,options:{decimals:1}}})),P,re=e((()=>{o(),P={icon:s,attributes:[],example:{attributes:{}}}})),F,I,L,R,z,B,V,H=e((()=>{F=`jpa/video-detail-highlights`,I=`Video highlights`,L=`Views, impressions, and hours watched over the last 30 days for the video being viewed.`,R={content:`Views, impressions, and hours watched over the last 30 days for the video being viewed.`},z=`stats`,B=`framed`,V={name:F,title:I,description:L,help:R,category:z,presentation:B}}));function U({hasVideoScope:e}){return{reportParams:{...p(!1),...e?{post_id:q}:{}}}}function W(e){return(0,K.jsx)(k,{attributes:U(e)})}function G({hasVideoScope:e,...t}){return(0,K.jsx)(y,{...t,widgetType:v(V,P),renderModule:J,renderComponent:k,attributes:U({hasVideoScope:e})})}var K,q,J,Y,X,Z,Q,$;e((()=>{m(),l(),_(),h(),b(),N(),re(),H(),K=r(),c(),q=105,J=`storybook/video-detail-highlights`,Y={title:`Packages/Premium Analytics/Widgets/VideoDetailHighlights`,component:k,tags:[`autodocs`],argTypes:{hasVideoScope:{control:`boolean`,description:"Include the `post_id` report param the video detail page seeds from its URL."}},parameters:{docs:{description:{component:'The "Video highlights" widget: the selected video\'s trailing-30-day views, impressions, and hours watched as metric tiles. It uses the per-video `stats/video/{id}` endpoint, matching Calypso without downloading stats for every active video. Without a video scope the widget renders a scopeless empty state.'}}}},X={render:W,args:{hasVideoScope:!0},decorators:[S]},Z={render:W,args:{hasVideoScope:!1},decorators:[S]},Q={render:e=>(0,K.jsx)(G,{...e}),args:{...ne,widgetWidth:4,widgetHeight:1,hasVideoScope:!0},argTypes:{...g,hasVideoScope:{control:`boolean`,description:"Include the `post_id` report param the video detail page seeds from its URL."}}},X.parameters={...X.parameters,docs:{...X.parameters?.docs,source:{originalSource:`{
+  render: renderVideoDetailHighlights,
+  args: {
+    hasVideoScope: true
+  },
+  decorators: [withWidgetCanvas]
+}`,...X.parameters?.docs?.source},description:{story:`Default — the selected video's trailing-30-day highlights.`,...X.parameters?.docs?.description}}},Z.parameters={...Z.parameters,docs:{...Z.parameters?.docs,source:{originalSource:`{
+  render: renderVideoDetailHighlights,
+  args: {
+    hasVideoScope: false
+  },
+  decorators: [withWidgetCanvas]
+}`,...Z.parameters?.docs?.source},description:{story:`NoVideoScope — the widget without a \`post_id\` report param, as when no video
+is selected. Renders the scopeless empty state without firing a stats
+request.`,...Z.parameters?.docs?.description}}},Q.parameters={...Q.parameters,docs:{...Q.parameters?.docs,source:{originalSource:`{
+  render: args => <VideoDetailHighlightsDashboardStory {...args} />,
+  args: {
+    ...DEFAULT_WIDGET_DASHBOARD_STORY_ARGS,
+    widgetWidth: 4,
+    widgetHeight: 1,
+    hasVideoScope: true
+  },
+  argTypes: {
+    ...widgetDashboardWithWidgetArgTypes,
+    hasVideoScope: {
+      control: 'boolean',
+      description: 'Include the \`post_id\` report param the video detail page seeds from its URL.'
+    }
+  }
+}`,...Q.parameters?.docs?.source}}},$=[`Default`,`NoVideoScope`,`WidgetDashboardWithWidget`]}))();export{X as Default,Z as NoVideoScope,Q as WidgetDashboardWithWidget,$ as __namedExportsOrder,Y as default};
