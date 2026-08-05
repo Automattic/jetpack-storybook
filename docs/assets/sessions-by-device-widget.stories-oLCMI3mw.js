@@ -1,0 +1,13 @@
+import{i as e}from"./preload-helper-usAeo7Bx.js";import{t}from"./jsx-runtime-D2pHJD-r.js";import{nt as n,tt as r}from"./report-metric-BRuIZsuS.js";import{dr as i,xt as a}from"./chart-tooltip-DXg9f6a_.js";import{n as o,t as s}from"./with-widget-root-GYeMWAM9.js";import{n as c,t as l}from"./sessions-by-device-widget-Dk4xe1it.js";var u,d,f,p,m,h,g,_,v;e((()=>{a(),n(),s(),c(),u=t(),d={title:`Packages/Premium Analytics/Widgets Toolkit/Widgets/SessionsByDevice`,component:l,tags:[`autodocs`],parameters:{docs:{description:{component:`Displays website sessions breakdown by device type (Mobile, Desktop, Tablet) using a semi-circle chart with comparison support.`}}},decorators:[o()]},f={},p={decorators:[e=>(0,u.jsx)(r.Provider,{value:{reportParams:i(!0)},children:(0,u.jsx)(e,{})})]},m=e=>t=>(0,u.jsx)(r.Provider,{value:{reportParams:i(!0)},children:(0,u.jsx)(`div`,{style:{width:e,border:`1px dashed #ccc`,borderRadius:`8px`,padding:`16px`,background:`#fafafa`},children:(0,u.jsx)(t,{})})}),h={decorators:[m(`256px`)]},g={decorators:[m(`350px`)]},_={decorators:[m(`450px`)]},f.parameters={...f.parameters,docs:{...f.parameters?.docs,source:{originalSource:`{}`,...f.parameters?.docs?.source},description:{story:`Default state with mock data (no comparison)`,...f.parameters?.docs?.description}}},p.parameters={...p.parameters,docs:{...p.parameters?.docs,source:{originalSource:`{
+  decorators: [Story => <WidgetRootContext.Provider value={{
+    reportParams: getDefaultQueryParams(true)
+  }}>
+                <Story />
+            </WidgetRootContext.Provider>]
+}`,...p.parameters?.docs?.source},description:{story:`With comparison period enabled`,...p.parameters?.docs?.description}}},h.parameters={...h.parameters,docs:{...h.parameters?.docs,source:{originalSource:`{
+  decorators: [createSizeDecorator('256px')]
+}`,...h.parameters?.docs?.source},description:{story:`Small container (256px)`,...h.parameters?.docs?.description}}},g.parameters={...g.parameters,docs:{...g.parameters?.docs,source:{originalSource:`{
+  decorators: [createSizeDecorator('350px')]
+}`,...g.parameters?.docs?.source},description:{story:`Medium container (350px)`,...g.parameters?.docs?.description}}},_.parameters={..._.parameters,docs:{..._.parameters?.docs,source:{originalSource:`{
+  decorators: [createSizeDecorator('450px')]
+}`,..._.parameters?.docs?.source},description:{story:`Large container (450px)`,..._.parameters?.docs?.description}}},v=[`Default`,`WithComparison`,`SizeSmall`,`SizeMedium`,`SizeLarge`]}))();export{f as Default,_ as SizeLarge,g as SizeMedium,h as SizeSmall,p as WithComparison,v as __namedExportsOrder,d as default};
