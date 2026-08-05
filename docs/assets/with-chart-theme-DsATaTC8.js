@@ -1,1 +1,0 @@
-import{i as e}from"./preload-helper-usAeo7Bx.js";import{t}from"./jsx-runtime-D2pHJD-r.js";import{A as n}from"./providers-GFL4_6Fo.js";import{t as r}from"./src-9LSLqTC1.js";import{m as i,t as a}from"./hooks-Bb776u8J.js";var o,s,c,l=e((()=>{r(),a(),o=t(),s=({children:e})=>(0,o.jsx)(n,{theme:i(),children:e}),c=e=>(0,o.jsx)(s,{children:(0,o.jsx)(e,{})})}));export{c as n,l as t};
