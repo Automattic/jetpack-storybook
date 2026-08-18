@@ -1,3 +1,0 @@
-import{i as e}from"./preload-helper-usAeo7Bx.js";import{t}from"./jsx-runtime-D2pHJD-r.js";import{M as n,N as r}from"./iframe-LdX2r6WH.js";var i,a,o,s,c;e((()=>{r(),i=t(),a={title:`JS Packages/Components/Indeterminate Progress Bar`,component:n},o=e=>(0,i.jsx)(n,{...e}),s=o.bind({}),s.args={},s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`args => {
-  return <IndeterminateProgressBar {...args} />;
-}`,...s.parameters?.docs?.source}}},c=[`_default`]}))();export{c as __namedExportsOrder,s as _default,a as default};
