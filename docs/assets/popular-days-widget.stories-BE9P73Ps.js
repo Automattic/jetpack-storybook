@@ -1,0 +1,49 @@
+import{c as e,i as t}from"./preload-helper-usAeo7Bx.js";import{t as n}from"./react-DVCOKQW8.js";import{n as r,t as i}from"./build-module-DyKOxfM8.js";import{t as a}from"./jsx-runtime-D2pHJD-r.js";import{n as o,xl as s}from"./build-module-CDRs4YxF.js";import{F as c,J as l,Yt as ee,et as te,t as ne}from"./date-fns-Bm9dQUxr.js";import{J as u,U as d,Z as f,at as re,q as ie,tt as ae}from"./report-metric-DLr0Zj75.js";import{t as oe,x as se}from"./src-BKLK-O8P.js";import{j as ce,t as le}from"./src-CTZFYwrN.js";import{t as ue,u as de}from"./src-CsA_y1X9.js";import{Cr as p,Nt as m,Vr as fe,in as pe,x as me}from"./chart-tooltip-VnB-koJ-.js";import{t as he}from"./widget-state-BSddN-9H.js";import{C as h,D as g,E as _,S as ge,T as _e,b as ve,t as v,w as y,x as b}from"./src-DVqba897.js";var x,S,ye=t((()=>{x=`_root_onyev_1`,S={root:x}}));function be(e){return de((e+1)%7)}function xe(e){let t=ce(e.date_start??e.time_interval??e.period);if(!t)return;let n=c(t,w,T);return ee(n)&&te(n,w)===t?n:void 0}function Se(e){let t=e.views??e.value;return typeof t==`number`?t:Number(t??0)||0}function Ce(e){let t=Array.from({length:7},()=>({total:0,occurrences:0}));return e.forEach(e=>{let n=xe(e);if(!n)return;let r=(l(n)+6)%7;t[r].total+=Se(e),t[r].occurrences+=1}),t.map(({total:e,occurrences:t},n)=>({weekday:n,label:be(n),total:e,occurrences:t,average:t?e/t:0}))}function C(e){return e.filter(e=>e.occurrences>0).reduce((e,t)=>!e||t.average>e.average?t:e,void 0)}var w,T,E=t((()=>{le(),ue(),ne(),w=`yyyy-MM-dd`,T=new Date(2001,0,1)}));function D(){let{reportParams:e}=re(),{primary:t,isLoading:n,isFetching:r,isError:i,error:a,refetch:o}=pe((0,O.useMemo)(()=>fe({...e,stat_fields:A,period:k}),[e])),s=t.data,c=(0,O.useMemo)(()=>Ce(s?.data??[]),[s]);return{buckets:c,peak:(0,O.useMemo)(()=>C(c),[c]),isLoading:n,isFetching:r,isError:i,error:a,refetch:o}}var O,k,A,we=t((()=>{m(),v(),O=e(n(),1),E(),k=`day`,A=`views,visitors`}));function Te(){let{buckets:e,peak:t,isLoading:n,isFetching:i,isError:a,error:o,refetch:s}=D(),c=(0,M.useMemo)(()=>e.map(e=>e.average),[e]),l=a&&!t;return(0,N.jsx)(`div`,{className:S.root,children:(0,N.jsx)(he,{isLoading:n,isFetching:i,isError:l,isEmpty:!t,error:l?me(o,{retryDescription:r(`We couldn't load your popular days. Please try again in a moment.`,`jetpack-premium-analytics-pkg`),onRetry:s}):null,empty:{icon:se,description:r(`No views in this period.`,`jetpack-premium-analytics-pkg`)},children:(0,N.jsx)(d,{label:t?.label??``,value:t?.average??0,points:c})})})}function j({attributes:e={},setError:t}){return(0,N.jsx)(ae,{attributes:e,setError:t,children:(0,N.jsx)(Te,{})})}var M,N,Ee=t((()=>{oe(),v(),i(),M=e(n(),1),ye(),we(),N=a()})),P,De=t((()=>{o(),P={icon:s}})),F,I,L,R,z,B,V,Oe=t((()=>{F=`jpa/popular-days`,I=`Popular days`,L=`The day of the week that draws the most views, with the distribution across the week.`,R={content:`The days of the week when your site received the most views on average.`,links:[{label:`Learn more`,href:`https://wordpress.com/support/stats/#popular-hours`}]},z=`stats`,B=`framed`,V={name:F,title:I,description:L,help:R,category:z,presentation:B}}));function ke(){return(0,U.jsx)(j,{attributes:{reportParams:p(!1)}})}function H(e){return(0,U.jsx)(j,{attributes:{reportParams:p(!1,e)}})}function Ae(e){return(0,U.jsx)(_e,{...e,widgetType:G,renderModule:W,renderComponent:j,attributes:{reportParams:p(!0)}})}var U,W,G,K,q,J,Y,X,Z,Q,$;t((()=>{m(),ie(),_(),h(),ve(),Ee(),De(),Oe(),U=a(),u(),W=`storybook/popular-days`,G=ge(V,P),K={title:`Packages/Premium Analytics/Widgets/PopularDays`,component:j,tags:[`autodocs`],parameters:{docs:{description:{component:'The "Popular days" card: the busiest day of the week for the selected range, as the weekday name and its mean views, over an area chart of the whole week\'s distribution. Both figures are means per occurrence of that weekday, not totals — a user-selected range rarely spans a whole number of weeks, so totals would let a weekday win on having occurred one extra time. Data comes from `stats/visits` at daily granularity, folded into seven buckets client-side; `stats/insights` also reports weekday views but over a window fixed at ten weeks, so it cannot follow the date picker. There is no WithComparison story — the widget strips comparison from its request and renders no delta, so it would be identical to Default.'}}}},q={render:ke,decorators:[b]},J={render:()=>H(`last-90-days`),tags:[`!autodocs`],decorators:[b],beforeEach:()=>(f(`stats/visits`,`loading`),()=>f(`stats/visits`,null))},Y={render:()=>H(`last-7-days`),tags:[`!autodocs`],decorators:[b],beforeEach:()=>(f(`stats/visits`,`error`),()=>f(`stats/visits`,null))},X={render:()=>H(`last-12-months`),tags:[`!autodocs`],decorators:[b],beforeEach:()=>(f(`stats/visits`,`error-retryable`),()=>f(`stats/visits`,null))},Z={render:()=>H(`last-year`),tags:[`!autodocs`],decorators:[b],beforeEach:()=>(f(`stats/visits`,`empty`),()=>f(`stats/visits`,null))},Q={render:e=>(0,U.jsx)(Ae,{...e}),args:{...y},argTypes:{...g}},q.parameters={...q.parameters,docs:{...q.parameters?.docs,source:{originalSource:`{
+  render: renderPopularDays,
+  decorators: [withWidgetCanvas]
+}`,...q.parameters?.docs?.source},description:{story:`Default state — the peak weekday over the week's distribution.`,...q.parameters?.docs?.description}}},J.parameters={...J.parameters,docs:{...J.parameters?.docs,source:{originalSource:`{
+  render: () => renderPopularDaysOnPreset('last-90-days'),
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas],
+  beforeEach: () => {
+    setReportMockState('stats/visits', 'loading');
+    return () => setReportMockState('stats/visits', null);
+  }
+}`,...J.parameters?.docs?.source},description:{story:`First load: the fetch is in flight, so the widget shows its loading state. The
+mock is forced to never resolve for the duration of this story.`,...J.parameters?.docs?.description}}},Y.parameters={...Y.parameters,docs:{...Y.parameters?.docs,source:{originalSource:`{
+  render: () => renderPopularDaysOnPreset('last-7-days'),
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas],
+  beforeEach: () => {
+    setReportMockState('stats/visits', 'error');
+    return () => setReportMockState('stats/visits', null);
+  }
+}`,...Y.parameters?.docs?.source},description:{story:`The fetch failed with a permission-gated 403: neutral copy and no Retry
+action, since retrying cannot clear a permission gate.`,...Y.parameters?.docs?.description}}},X.parameters={...X.parameters,docs:{...X.parameters?.docs,source:{originalSource:`{
+  render: () => renderPopularDaysOnPreset('last-12-months'),
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas],
+  beforeEach: () => {
+    setReportMockState('stats/visits', 'error-retryable');
+    return () => setReportMockState('stats/visits', null);
+  }
+}`,...X.parameters?.docs?.source},description:{story:`The fetch failed in a way that can heal — the proxy's \`no_connection\` 403: the
+retryable copy with a Retry action, which re-runs the query (still mocked as
+failing while this story is active).`,...X.parameters?.docs?.description}}},Z.parameters={...Z.parameters,docs:{...Z.parameters?.docs,source:{originalSource:`{
+  // Avoid presenting the same date range as ErrorRetryable in most years.
+  render: () => renderPopularDaysOnPreset('last-year'),
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas],
+  beforeEach: () => {
+    setReportMockState('stats/visits', 'empty');
+    return () => setReportMockState('stats/visits', null);
+  }
+}`,...Z.parameters?.docs?.source},description:{story:`Resolved with no buckets: the widget shows its empty state.`,...Z.parameters?.docs?.description}}},Q.parameters={...Q.parameters,docs:{...Q.parameters?.docs,source:{originalSource:`{
+  render: args => <PopularDaysDashboardStory {...args} />,
+  args: {
+    ...DEFAULT_WIDGET_DASHBOARD_STORY_ARGS
+  },
+  argTypes: {
+    ...widgetDashboardWithWidgetArgTypes
+  }
+}`,...Q.parameters?.docs?.source}}},$=[`Default`,`Loading`,`Error`,`ErrorRetryable`,`Empty`,`WidgetDashboardWithWidget`]}))();export{q as Default,Z as Empty,Y as Error,X as ErrorRetryable,J as Loading,Q as WidgetDashboardWithWidget,$ as __namedExportsOrder,K as default};
