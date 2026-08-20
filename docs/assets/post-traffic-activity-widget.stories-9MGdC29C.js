@@ -1,0 +1,46 @@
+import{i as e}from"./preload-helper-usAeo7Bx.js";import{n as t,t as n}from"./build-module-DyKOxfM8.js";import{t as r}from"./jsx-runtime-D2pHJD-r.js";import{_ as i,t as a}from"./build-module-CbwHEf9N.js";import{t as o,y as s}from"./build-module-BShXUI3N.js";import{Zc as c,n as l,tl as u,xl as d}from"./build-module-CDRs4YxF.js";import{C as f,Et as p,T as m,bn as ee,et as h,hn as g,t as _,ut as te}from"./date-fns-Bm9dQUxr.js";import{ln as ne,t as v,xn as y}from"./src-wCuWrAdK.js";import{$ as b,G as x,K as S,k as re,rt as ie}from"./report-metric-CZGk3pJU.js";import{n as ae,o as oe}from"./heatmap-chart-CVYHLp34.js";import{M as se,t as C}from"./src-BKLK-O8P.js";import{Gt as ce,pn as le,t as w,ut as T}from"./src-DCbi8ow8.js";import{o as E}from"./calendar-heatmap-window-Kr853WY0.js";import{m as ue}from"./hooks-DKyvbkrh.js";import{r as de,v as D}from"./chart-tooltip-mdsQYAXX.js";import{r as fe}from"./metric-sparkline-skeleton-D0iptN6E.js";import{t as pe}from"./widget-state-CEIPGY-o.js";import{C as me,D as he,E as ge,S as _e,T as ve,b as ye,t as O,w as be,x as k}from"./src-BenUPZSz.js";var A,j,M,N,P,F,I,xe=e((()=>{A=`_root_16s1f_3`,j=`_pager_16s1f_11`,M=`_body_16s1f_23`,N=`_content_16s1f_3`,P=`_chartArea_16s1f_43`,F=`_heatmap_16s1f_50`,I={root:A,pager:j,body:M,content:N,chartArea:P,heatmap:F}}));function Se(e,t,n){let{data:r,isLoading:a,isFetching:o,isError:s,refetch:c}=T({postId:e,fields:[`data`]}),[l,u]=(0,i.useState)(0);(0,i.useEffect)(()=>{u(0)},[t.from,t.to,n]);let d=D(t.from),_=D(t.to),{days:ne,isPaged:v,canShowOlder:y}=(0,i.useMemo)(()=>{if(!d||!_||d>_)return{days:[],isPaged:!1,canShowOlder:!1};let e=r?.data??[],t=new Map(e.map(e=>[e.date,e.views])),i=g(f(d),{weekStartsOn:1}),a=te(f(_),{weekStartsOn:1}),o=i<m(a,n-1),s=m(a,l*n),c=m(s,n-1);if(o&&c<i){c=i;let e=ee(i,n-1);s=e<a?e:a}let u=f(_);return{days:p({start:c,end:u<s?u:s}).map(e=>{let n=h(e,`yyyy-MM-dd`);return{dateString:n,value:(n>=d&&n<=_?t.get(n):void 0)||null}}),isPaged:o,canShowOlder:i<c}},[r,d,_,l,n]),b=(0,i.useCallback)(()=>{u(e=>y?e+1:e)},[y]),x=(0,i.useCallback)(()=>{u(e=>Math.max(0,e-1))},[]);return{days:ne,isPaged:v,canShowOlder:y,canShowNewer:l>0,showOlder:b,showNewer:x,isLoading:a,isFetching:o,isError:s,hasData:!!r,refetch:c}}var Ce=e((()=>{w(),a(),_(),O()}));function we(e){return e?E({availWidth:e,cellWidth:z,cellGap:4,minColumns:B}):V}function Te(e){return e?Math.max(U,Math.min(H,Math.floor((e-De)/7))):H}function Ee(){let{reportParams:e}=ie(),n=le(e.post_id),[r,a]=(0,i.useState)(),o=s(e=>{let t=e[0]?.contentRect;if(t){let e=Math.round(t.width);a(t=>t===e?t:e)}}),{days:l,isPaged:d,canShowOlder:f,canShowNewer:p,showOlder:m,showNewer:ee,isLoading:h,isFetching:g,isError:_,hasData:te,refetch:v}=Se(n,e,we(r)*7),[b,x]=ue(),S=Te(x.height),{data:C,rowLabels:ce}=(0,i.useMemo)(()=>oe(l),[l]),w=D(e.from),T=D(e.to),E=(0,i.useCallback)(({value:e,cellLabel:n,row:r,column:i})=>{let a=l[i*7+r];return(0,R.jsx)(re,{value:e,cellLabel:n,emptyLabel:a&&w&&T&&a.dateString>=w&&a.dateString<=T?t(`No views`,`jetpack-premium-analytics-pkg`):t(`No data`,`jetpack-premium-analytics-pkg`),formatValue:de})},[l,w,T]);return(0,R.jsx)(`div`,{ref:o,className:I.root,children:(0,R.jsx)(`div`,{className:I.body,children:(0,R.jsx)(pe,{isLoading:h&&!te,isFetching:g,isError:_,isEmpty:n<=0||C.length===0,error:{description:t(`We couldn't load this traffic activity. Please try again in a moment.`,`jetpack-premium-analytics-pkg`),actions:[{label:t(`Retry`,`jetpack-premium-analytics-pkg`),onClick:v}]},empty:{icon:se,description:t(`Open a post or page report to see its traffic activity here.`,`jetpack-premium-analytics-pkg`)},renderLoading:(0,R.jsx)(fe,{}),children:(0,R.jsxs)(`div`,{className:I.content,children:[d&&(0,R.jsxs)(ne,{align:`center`,justify:`flex-end`,gap:`sm`,className:I.pager,children:[(0,R.jsx)(y,{type:`button`,variant:`minimal`,tone:`neutral`,size:`small`,onClick:m,disabled:!f,"aria-label":t(`Older activity`,`jetpack-premium-analytics-pkg`),children:(0,R.jsx)(y.Icon,{icon:u,size:16})}),(0,R.jsx)(y,{type:`button`,variant:`minimal`,tone:`neutral`,size:`small`,onClick:ee,disabled:!p,"aria-label":t(`Newer activity`,`jetpack-premium-analytics-pkg`),children:(0,R.jsx)(y.Icon,{icon:c,size:16})})]}),(0,R.jsx)(`div`,{ref:b,className:I.chartArea,children:(0,R.jsx)(ae,{data:C,rowLabels:ce,primaryColor:`var(--wp-admin-theme-color, #3858e9)`,withTooltips:!0,maxCellWidth:64,maxCellHeight:S,renderTooltip:E,className:I.heatmap})})]})})})})}function L({attributes:e={}}){return(0,R.jsx)(b,{attributes:e,children:(0,R.jsx)(Ee,{})})}var R,z,B,V,H,U,De,Oe=e((()=>{w(),C(),O(),o(),a(),n(),l(),v(),xe(),Ce(),R=r(),z=64,B=4,V=16,H=42,U=8,De=44})),W,ke=e((()=>{l(),W={icon:d,attributes:[],example:{attributes:{}}}})),G,K,Ae,je,Me,Ne,q,Pe=e((()=>{G=`jpa/post-traffic-activity`,K=`Traffic activity`,Ae=`Daily views for the post or page being viewed, as a calendar heatmap.`,je={content:`Daily views for the post or page being viewed, as a calendar heatmap.`},Me=`stats`,Ne=`framed`,q={name:G,title:K,description:Ae,help:je,category:Me,presentation:Ne}}));function Fe({hasPostScope:e,preset:t},n=!1){return{reportParams:{...ce(n,t),...e?{post_id:Le}:{}}}}function J(e){return(0,Y.jsx)(L,{attributes:Fe(e)})}function Ie({hasPostScope:e,preset:t,...n}){return(0,Y.jsx)(ve,{...n,widgetType:_e(q,W),renderModule:Re,renderComponent:L,attributes:Fe({hasPostScope:e,preset:t},!0)})}var Y,Le,Re,ze,X,Z,Q,$,Be;e((()=>{w(),x(),ge(),me(),ye(),Oe(),ke(),Pe(),Y=r(),S(),Le=779,Re=`storybook/post-traffic-activity`,ze={title:`Packages/Premium Analytics/Widgets/PostTrafficActivity`,component:L,tags:[`autodocs`],argTypes:{hasPostScope:{control:`boolean`,description:"Include the `post_id` report param the post detail page seeds from its URL."},preset:{control:`select`,options:[`last-30-days`,`last-365-days`],description:`Dashboard date range used to exercise single-page and paged layouts.`}},parameters:{docs:{description:{component:`The "Traffic activity" widget: the scoped post's daily views over the dashboard date range as a calendar heatmap — the post detail Traffic view's activity card, replacing the legacy months table. Days without traffic stay blank cells, per the design, while the grid stays complete. Without a post scope the widget renders a scopeless empty state.`}}}},X={render:J,args:{hasPostScope:!0,preset:`last-30-days`},decorators:[k]},Z={render:J,args:{hasPostScope:!0,preset:`last-365-days`},decorators:[k]},Q={render:J,args:{hasPostScope:!1,preset:`last-30-days`},decorators:[k]},$={render:e=>(0,Y.jsx)(Ie,{...e}),args:{...be,widgetWidth:4,widgetHeight:2,hasPostScope:!0,preset:`last-30-days`},argTypes:{...he,hasPostScope:{control:`boolean`,description:"Include the `post_id` report param the post detail page seeds from its URL."},preset:{control:`select`,options:[`last-30-days`,`last-365-days`],description:`Dashboard date range used to exercise single-page and paged layouts.`}}},X.parameters={...X.parameters,docs:{...X.parameters?.docs,source:{originalSource:`{
+  render: renderPostTrafficActivity,
+  args: {
+    hasPostScope: true,
+    preset: 'last-30-days'
+  },
+  decorators: [withWidgetCanvas]
+}`,...X.parameters?.docs?.source},description:{story:`Default — the scoped post's daily view heatmap for the dashboard range.`,...X.parameters?.docs?.description}}},Z.parameters={...Z.parameters,docs:{...Z.parameters?.docs,source:{originalSource:`{
+  render: renderPostTrafficActivity,
+  args: {
+    hasPostScope: true,
+    preset: 'last-365-days'
+  },
+  decorators: [withWidgetCanvas]
+}`,...Z.parameters?.docs?.source},description:{story:`Paged — a deterministic year-long range that always exceeds one page at
+the default story width, exposing both pager controls for direct review.`,...Z.parameters?.docs?.description}}},Q.parameters={...Q.parameters,docs:{...Q.parameters?.docs,source:{originalSource:`{
+  render: renderPostTrafficActivity,
+  args: {
+    hasPostScope: false,
+    preset: 'last-30-days'
+  },
+  decorators: [withWidgetCanvas]
+}`,...Q.parameters?.docs?.source},description:{story:`NoPostScope — the widget without a \`post_id\` report param, as when added
+outside a post detail page. Renders the scopeless empty state without
+firing a stats request.`,...Q.parameters?.docs?.description}}},$.parameters={...$.parameters,docs:{...$.parameters?.docs,source:{originalSource:`{
+  render: args => <PostTrafficActivityDashboardStory {...args} />,
+  args: {
+    ...DEFAULT_WIDGET_DASHBOARD_STORY_ARGS,
+    widgetWidth: 4,
+    widgetHeight: 2,
+    hasPostScope: true,
+    preset: 'last-30-days'
+  },
+  argTypes: {
+    ...widgetDashboardWithWidgetArgTypes,
+    hasPostScope: {
+      control: 'boolean',
+      description: 'Include the \`post_id\` report param the post detail page seeds from its URL.'
+    },
+    preset: {
+      control: 'select',
+      options: ['last-30-days', 'last-365-days'],
+      description: 'Dashboard date range used to exercise single-page and paged layouts.'
+    }
+  }
+}`,...$.parameters?.docs?.source},description:{story:`Mirrors the production placement (full width × 2 rows).`,...$.parameters?.docs?.description}}},Be=[`Default`,`Paged`,`NoPostScope`,`WidgetDashboardWithWidget`]}))();export{X as Default,Q as NoPostScope,Z as Paged,$ as WidgetDashboardWithWidget,Be as __namedExportsOrder,ze as default};
