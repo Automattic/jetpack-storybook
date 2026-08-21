@@ -1,0 +1,23 @@
+import{c as e,i as t}from"./preload-helper-usAeo7Bx.js";import{t as n}from"./react-DVCOKQW8.js";import{n as r,t as i}from"./build-module-DyKOxfM8.js";import{t as a}from"./jsx-runtime-D2pHJD-r.js";import{ll as o,n as s}from"./build-module-CDRs4YxF.js";import{$ as c,G as l,K as u,W as d,a as f,c as p,i as m,o as h}from"./report-metric-BRpjNMrs.js";import{p as g,qt as _,t as v}from"./src-Lp3ZIoIq.js";import{t as y}from"./widget-state-DNAyBTFz.js";import{C as b,D as x,E as ee,S,T as C,b as w,t as T,w as E,x as D}from"./src-Bu8E2mr6.js";function O(){let{data:e,isLoading:t,isFetching:n,isError:i,refetch:a}=g(),o=(0,A.useMemo)(()=>f(e?.sponsored),[e]),s=(0,A.useMemo)(()=>h(),[]);return(0,j.jsx)(y,{isLoading:t,isFetching:n,isError:i,isEmpty:o.length===0,error:{description:r(`We couldn't load WordAds earnings. Please try again in a moment.`,`jetpack-premium-analytics-pkg`),actions:[{label:r(`Retry`,`jetpack-premium-analytics-pkg`),onClick:a}]},empty:{description:r(`No sponsored content earnings to show yet.`,`jetpack-premium-analytics-pkg`)},children:(0,j.jsx)(p,{data:o,fields:s,getItemId:M,initialView:m})})}function k({attributes:e={}}){return(0,j.jsx)(c,{attributes:e,children:(0,j.jsx)(O,{})})}var A,j,M,N=t((()=>{v(),T(),i(),A=e(n(),1),j=a(),M=e=>e.id})),P,F=t((()=>{s(),P={icon:o,attributes:[],example:{attributes:{}}}})),I,L,R,z,B,V,H,U=t((()=>{I=`jpa/wordads-sponsored-content-history`,L=`Sponsored Content History`,R=`Your WordAds sponsored-content earnings by period, with amounts, ads served, and payment status.`,z={content:`Ads Served is the number of ads we attempted to display (page impressions × available ad slots). Not every ad served results in a paid impression.`},B=`stats`,V=`content-bleed`,H={name:I,title:L,description:R,help:z,category:B,presentation:V}}));function W(e){return(0,G.jsx)(C,{...e,widgetType:S(H,P),renderModule:K,renderComponent:k,attributes:{reportParams:_()}})}var G,K,q,J,Y,X,Z,Q,$;t((()=>{v(),l(),ee(),b(),w(),N(),F(),U(),G=a(),u(),K=`storybook/wordads-sponsored-content-history`,q={title:`Packages/Premium Analytics/Widgets/WordAdsSponsoredContentHistory`,component:k,args:{attributes:{reportParams:_()}},tags:[`autodocs`],parameters:{docs:{description:{component:`The WordAds "Sponsored Content History" widget — sponsored-content earnings by period (amount, ads served, payment status), ported from the Jetpack Stats WordAds page.`}}}},J={decorators:[D]},Y={tags:[`!autodocs`],decorators:[D],beforeEach:d(`loading`)},X={tags:[`!autodocs`],decorators:[D],beforeEach:d(`error`)},Z={tags:[`!autodocs`],decorators:[D],beforeEach:d(`empty`)},Q={render:e=>(0,G.jsx)(W,{...e}),args:{...E},argTypes:{...x}},J.parameters={...J.parameters,docs:{...J.parameters?.docs,source:{originalSource:`{
+  decorators: [withWidgetCanvas]
+}`,...J.parameters?.docs?.source},description:{story:`Default state — the sponsored-content history table.`,...J.parameters?.docs?.description}}},Y.parameters={...Y.parameters,docs:{...Y.parameters?.docs,source:{originalSource:`{
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas],
+  beforeEach: forceWordAdsEarningsState('loading')
+}`,...Y.parameters?.docs?.source},description:{story:`First load — the request is in flight.`,...Y.parameters?.docs?.description}}},X.parameters={...X.parameters,docs:{...X.parameters?.docs,source:{originalSource:`{
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas],
+  beforeEach: forceWordAdsEarningsState('error')
+}`,...X.parameters?.docs?.source},description:{story:`The fetch failed — the error state with a Retry action.`,...X.parameters?.docs?.description}}},Z.parameters={...Z.parameters,docs:{...Z.parameters?.docs,source:{originalSource:`{
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas],
+  beforeEach: forceWordAdsEarningsState('empty')
+}`,...Z.parameters?.docs?.source},description:{story:`Resolved but empty — no sponsored-content history for this breakdown.`,...Z.parameters?.docs?.description}}},Q.parameters={...Q.parameters,docs:{...Q.parameters?.docs,source:{originalSource:`{
+  render: args => <WordAdsSponsoredContentHistoryDashboardStory {...args} />,
+  args: {
+    ...DEFAULT_WIDGET_DASHBOARD_STORY_ARGS
+  },
+  argTypes: {
+    ...widgetDashboardWithWidgetArgTypes
+  }
+}`,...Q.parameters?.docs?.source},description:{story:`Mounted inside the real dashboard frame (framed card, sizing, edit mode).`,...Q.parameters?.docs?.description}}},$=[`Default`,`Loading`,`Error`,`Empty`,`WidgetDashboardWithWidget`]}))();export{J as Default,Z as Empty,X as Error,Y as Loading,Q as WidgetDashboardWithWidget,$ as __namedExportsOrder,q as default};

@@ -1,0 +1,1 @@
+import{i as e}from"./preload-helper-usAeo7Bx.js";var t,n=e((()=>{t=function(e){return e.annotation=`annotation`,e.annotationText=`annotationText`,e.certainty=`certainty`,e.emphasis=`emphasis`,e.interval=`interval`,e.scope=`scope`,e.style=`style`,e.tooltip=`tooltip`,e.domain=`domain`,e}({})}));export{n,t};
