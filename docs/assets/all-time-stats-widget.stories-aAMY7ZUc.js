@@ -1,0 +1,36 @@
+import{c as e,i as t}from"./preload-helper-usAeo7Bx.js";import{t as n}from"./react-DVCOKQW8.js";import{n as r,t as i}from"./build-module-DyKOxfM8.js";import{t as a}from"./jsx-runtime-D2pHJD-r.js";import{On as o,Pr as s,_c as c,n as l,ui as ee,w as u}from"./build-module-CDRs4YxF.js";import{$ as te,G as ne,K as re,Y as d}from"./report-metric-CfF6QW2f.js";import{dn as f,gt as ie,qt as p,t as m}from"./src-DXQx-HLd.js";import{b as h,c as g,d as ae}from"./chart-tooltip-DPvHn5um.js";import{r as oe,t as se}from"./metric-tile-grid-skeleton-CWB-Eana.js";import{t as ce}from"./widget-state-BcvJNT8Q.js";import{C as le,D as ue,E as de,S as fe,T as pe,b as _,t as v,w as y,x as b}from"./src-CS4QJABu.js";var x,S,me=t((()=>{x=`_root_15bqk_2`,S={root:x}})),C,w,T,E=t((()=>{i(),l(),g(),C=[{id:`views`,label:r(`Views`,`jetpack-premium-analytics-pkg`)},{id:`visitors`,label:r(`Visitors`,`jetpack-premium-analytics-pkg`)},{id:`posts`,label:r(`Posts`,`jetpack-premium-analytics-pkg`)},{id:`comments`,label:r(`Comments`,`jetpack-premium-analytics-pkg`)}],w=C.map(e=>e.id),T={icon:u,attributes:[{id:`metrics`,label:r(`Metrics`,`jetpack-premium-analytics-pkg`),type:`array`,relevance:`high`,Edit:ae,elements:C.map(e=>({value:e.id,label:e.label}))}],example:{attributes:{metrics:w}}}}));function he({metrics:e=w}){let{data:t,isLoading:n,isFetching:i,isError:a,refetch:o}=ie(),s=t?.stats,c=(0,O.useMemo)(()=>{let t=new Set(e);return C.filter(e=>t.has(e.id))},[e]),l=(0,O.useMemo)(()=>c.flatMap(({id:e,label:t})=>{let n=h(s,e);return n===void 0?[]:[{key:e,label:t,icon:j[e].icon,value:n}]}),[c,s]);return(0,k.jsx)(`div`,{className:S.root,children:(0,k.jsx)(ce,{isLoading:n,isFetching:i,isError:l.length===0&&a,isEmpty:l.length===0,error:{description:r(`We couldn't load all-time stats. Please try again in a moment.`,`jetpack-premium-analytics-pkg`),actions:[{label:r(`Retry`,`jetpack-premium-analytics-pkg`),onClick:o}]},empty:{icon:u,description:c.length===0?r(`Select at least one metric to display.`,`jetpack-premium-analytics-pkg`):r(`No stats recorded yet.`,`jetpack-premium-analytics-pkg`)},renderLoading:(0,k.jsx)(se,{tiles:c.length}),children:(0,k.jsx)(oe,{tiles:l,dataFormat:A})})})}function D({attributes:e={}}){return(0,k.jsx)(te,{attributes:e,children:(0,k.jsx)(he,{metrics:e.metrics})})}var O,k,A,j,ge=t((()=>{m(),v(),i(),l(),O=e(n(),1),me(),E(),k=a(),A={type:`number`,options:{decimals:0}},j={views:{icon:o},visitors:{icon:ee},posts:{icon:s},comments:{icon:c}}})),M,N,P,F,I,L,R,_e=t((()=>{M=`jpa/all-time-stats`,N=`All-time stats`,P=`Lifetime totals for your site — views, visitors, posts, and comments.`,F={content:`Lifetime totals for your site — views, visitors, posts, and comments.`},I=`stats`,L=`framed`,R={name:M,title:N,description:P,help:F,category:I,presentation:L}}));function ve({metrics:e}){return(0,H.jsx)(D,{attributes:{reportParams:p(),metrics:e}})}function z(e){return(0,H.jsx)(D,{attributes:{reportParams:p(!1,e)}})}function B(e){return d(`proxy/v1.1/stats`,e),f.removeQueries({queryKey:[`stats`,`site`]}),()=>{d(`proxy/v1.1/stats`,null),f.removeQueries({queryKey:[`stats`,`site`]})}}function V({metrics:e,...t}){return(0,H.jsx)(pe,{...t,widgetType:W,renderModule:U,renderComponent:D,attributes:{reportParams:p(!0),metrics:e}})}var H,U,W,G,K,q,J,Y,X,Z,Q,$;t((()=>{m(),ne(),de(),le(),_(),ge(),E(),_e(),H=a(),re(),U=`storybook/all-time-stats`,W=fe(R,T),G={metrics:{control:`check`,options:w}},K={metrics:w},q={title:`Packages/Premium Analytics/Widgets/AllTimeStats`,component:D,tags:[`autodocs`],argTypes:{...G},parameters:{docs:{description:{component:"The \"All-time stats\" widget. Shows lifetime totals for the site — views, visitors, posts, and comments — as a responsive grid of metric tiles, sourced from the Jetpack Stats site-summary endpoint. Which tiles appear is controlled by the `metrics` attribute (`relevance: 'high'`), exposed inline in the widget header and in the settings drawer. This module has no comparison period, so the values render as bare numbers."}}}},J={render:ve,args:{...K},decorators:[b]},Y={render:()=>z(`last-90-days`),tags:[`!autodocs`],decorators:[b],beforeEach:()=>B(`loading`)},X={render:()=>z(`last-7-days`),tags:[`!autodocs`],decorators:[b],beforeEach:()=>B(`error`)},Z={render:()=>z(`last-365-days`),tags:[`!autodocs`],decorators:[b],beforeEach:()=>B(`empty`)},Q={render:e=>(0,H.jsx)(V,{...e}),args:{...y,...K},argTypes:{...ue,...G}},J.parameters={...J.parameters,docs:{...J.parameters?.docs,source:{originalSource:`{
+  render: renderAllTimeStats,
+  args: {
+    ...ALL_METRICS_ARGS
+  },
+  decorators: [withWidgetCanvas]
+}`,...J.parameters?.docs?.source},description:{story:`Default state — lifetime totals for the current preset.`,...J.parameters?.docs?.description}}},Y.parameters={...Y.parameters,docs:{...Y.parameters?.docs,source:{originalSource:`{
+  render: () => renderAllTimeStatsOnPreset('last-90-days'),
+  // Off the shared autodocs page — path-keyed override; see forceStatsMockState.
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas],
+  beforeEach: () => forceSiteSummaryState('loading')
+}`,...Y.parameters?.docs?.source},description:{story:`First load: the fetch is in flight, so the widget shows its loading state. The
+mock is forced to never resolve for the duration of this story.`,...Y.parameters?.docs?.description}}},X.parameters={...X.parameters,docs:{...X.parameters?.docs,source:{originalSource:`{
+  render: () => renderAllTimeStatsOnPreset('last-7-days'),
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas],
+  beforeEach: () => forceSiteSummaryState('error')
+}`,...X.parameters?.docs?.source},description:{story:`The fetch failed: the widget shows its error state with a Retry action (which
+re-runs the query — still mocked as failing while this story is active).`,...X.parameters?.docs?.description}}},Z.parameters={...Z.parameters,docs:{...Z.parameters?.docs,source:{originalSource:`{
+  render: () => renderAllTimeStatsOnPreset('last-365-days'),
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas],
+  beforeEach: () => forceSiteSummaryState('empty')
+}`,...Z.parameters?.docs?.source},description:{story:`Resolved with no summary fields: the widget shows its empty state (the neutral
+trending glyph and "No stats recorded yet.").`,...Z.parameters?.docs?.description}}},Q.parameters={...Q.parameters,docs:{...Q.parameters?.docs,source:{originalSource:`{
+  render: args => <AllTimeStatsDashboardStory {...args} />,
+  args: {
+    ...DEFAULT_WIDGET_DASHBOARD_STORY_ARGS,
+    ...ALL_METRICS_ARGS
+  },
+  argTypes: {
+    ...widgetDashboardWithWidgetArgTypes,
+    ...METRIC_ARG_TYPES
+  }
+}`,...Q.parameters?.docs?.source}}},$=[`Default`,`Loading`,`Error`,`Empty`,`WidgetDashboardWithWidget`]}))();export{J as Default,Z as Empty,X as Error,Y as Loading,Q as WidgetDashboardWithWidget,$ as __namedExportsOrder,q as default};
