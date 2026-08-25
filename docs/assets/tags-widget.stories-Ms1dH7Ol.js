@@ -1,0 +1,42 @@
+import{i as e}from"./preload-helper-usAeo7Bx.js";import{S as t,n,t as r}from"./build-module-DyKOxfM8.js";import{t as i}from"./jsx-runtime-D2pHJD-r.js";import{_ as a,t as o}from"./build-module-CbwHEf9N.js";import{X as s,hl as c,n as l}from"./build-module-CDRs4YxF.js";import{Cn as u,Y as d,ln as f,t as p}from"./src-CaJyWxEs.js";import{b as ee,g as m,r as te}from"./hooks-CZXBZb9T.js";import{o as ne,t as re}from"./src-B64ifip5.js";import{qt as h,t as g,v as ie}from"./src-DGH0uIKs.js";import"./constants-B1kGztHF.js";import{_t as ae}from"./chart-tooltip-CuX67-RA.js";import{r as oe}from"./src-vpjGDLGO2.js";import{r as se,t as ce}from"./leaderboard-skeleton-Bb6n0_sW.js";import{E as le,K as ue,S as de,X as _,q as fe,w as pe}from"./report-metric-B5QafvOJ.js";import{t as me}from"./widget-state-DF4c3sae.js";import{C as he,D as ge,E as _e,O as ve,S as ye,T as be,b as xe,k as v,t as Se,w as Ce,x as y}from"./src-BAKQbBc-.js";var b,x,S,C,w,T,E,D,we=e((()=>{b=`_root_12zga_1`,x=`_content_12zga_9`,S=`_itemLabel_12zga_19`,C=`_itemIcon_12zga_28`,w=`_itemLabelText_12zga_32`,T=`_childList_12zga_46`,E=`_childRow_12zga_52`,D={root:b,content:x,itemLabel:S,itemIcon:C,itemLabelText:w,childList:T,childRow:E}}));function O({reportParams:e,max:t}){let{data:n,isLoading:r,isFetching:i,isError:o,refetch:s}=ie({...e,max:t}),c=(0,a.useMemo)(()=>(n?.data?.[0]?.items??[]).slice(0,t>0?t:void 0).map(e=>{let t=e.link??e.labelText,n=(e.children??[]).map(e=>({id:e.link??`${t}-${e.label}`,label:e.label,labelIcon:e.labelIcon,link:e.link}));return{id:t,label:e.labelText,labelIcon:e.label[0]?.labelIcon??``,value:e.value,link:e.link,children:n}}),[n,t]);return{data:c,isLoading:r,isFetching:i,isError:c.length===0&&o,refetch:s}}var k=e((()=>{o(),g()}));function A({labelIcon:e,label:t,link:n}){let r=oe(n);return(0,N.jsxs)(N.Fragment,{children:[(0,N.jsx)(u,{icon:P(e),size:20,className:D.itemIcon}),r?(0,N.jsx)(d,{className:D.itemLabelText,href:r,variant:`unstyled`,openInNewTab:!0,title:t,children:t}):(0,N.jsx)(`span`,{className:D.itemLabelText,title:t,children:t})]})}function j({members:e}){return(0,N.jsx)(f,{direction:`column`,className:D.childList,children:e.map(e=>(0,N.jsx)(`div`,{className:D.childRow,children:(0,N.jsx)(A,{labelIcon:e.labelIcon,label:e.label,link:e.link})},e.id))})}function Te(){let{reportParams:e}=ee(),{data:r,isLoading:i,isFetching:o,isError:s,refetch:c}=O({reportParams:e,max:10}),{drillDownItem:l,drillDown:u,resetDrillDown:d}=te(),p=(0,a.useMemo)(()=>l?r.find(e=>e.label===l)??null:null,[r,l]);(0,a.useEffect)(()=>{l&&!p&&d()},[l,p,d]);let m=(0,a.useMemo)(()=>{let e=Math.max(...r.map(e=>e.value),0);return r.map(r=>{let i=r.children.length>0;return{id:r.id,label:(0,N.jsx)(f,{align:`center`,className:D.itemLabel,children:(0,N.jsx)(A,{labelIcon:r.labelIcon,label:r.label,link:r.link})}),currentValue:r.value,currentShare:ae(r.value,e),...i&&{onClick:()=>u(r.label),ariaLabel:t(n(`View the tags and categories in %s`,`jetpack-premium-analytics-pkg`),r.label)}}})},[r,u]);return(0,N.jsxs)(f,{className:D.root,children:[(0,N.jsxs)(`div`,{className:D.content,children:[p&&(0,N.jsx)(le,{label:n(`All tags & categories`,`jetpack-premium-analytics-pkg`),onClick:d}),(0,N.jsx)(me,{isLoading:i,isFetching:o,isError:s,isEmpty:r.length===0,error:{description:n(`We couldn't load tags & categories. Please try again in a moment.`,`jetpack-premium-analytics-pkg`),actions:[{label:n(`Retry`,`jetpack-premium-analytics-pkg`),onClick:c}]},empty:{icon:ne,description:n(`Learn about your most visited tags & categories to track engaging topics.`,`jetpack-premium-analytics-pkg`)},renderLoading:p?void 0:(0,N.jsx)(ce,{rows:10}),children:p?(0,N.jsx)(j,{members:p.children}):(0,N.jsx)(se,{data:m,withOverlayLabel:!0,showLegend:!1,dataFormat:{type:`number`,options:{useMultipliers:!0,decimals:0}}})})]}),(0,N.jsx)(pe,{children:(0,N.jsx)(de,{report:`tags`})})]})}function M({attributes:e={}}){return(0,N.jsx)(m,{attributes:e,children:(0,N.jsx)(Te,{})})}var N,P,Ee=e((()=>{Se(),re(),o(),r(),l(),p(),we(),k(),N=i(),P=e=>e===`folder`?c:s})),F,De=e((()=>{l(),F={icon:c,attributes:[],example:{attributes:{}}}})),I,L,R,z,B,V,H,Oe=e((()=>{I=`jpa/tags`,L=`Top tags & categories`,R=`Your most visited tags and categories, ranked by views.`,z={content:`The tags and categories associated with your most-viewed content, sorted by views.`,links:[{label:`Learn more`,href:`https://jetpack.com/support/jetpack-stats/`}]},B=`stats`,V=`framed`,H={name:I,title:L,description:R,help:z,category:B,presentation:V}}));function U(){return(0,W.jsx)(M,{attributes:{reportParams:h()}})}function ke(e){return(0,W.jsx)(M,{...e})}function Ae(e){return(0,W.jsx)(be,{...e,widgetType:K,renderModule:G,renderComponent:ke,attributes:{reportParams:h(!0)}})}var W,G,K,q,J,Y,X,Z,Q,$;e((()=>{g(),_e(),ve(),he(),xe(),ue(),Ee(),De(),Oe(),W=i(),fe(),G=`storybook/tags`,K=ye(H,F),q={title:`Packages/Premium Analytics/Widgets/Tags`,component:M,tags:[`autodocs`],parameters:{docs:{description:{component:`The "Tags & categories" widget. Displays the site's most visited tags and categories for the selected period, ranked by views. Single tags/categories link to their archive; grouped rows (several tags/categories sharing posts) drill down to their members. Ported from the Jetpack Stats Tags & categories module.`}}}},J={render:U,decorators:[y,v]},Y={render:U,tags:[`!autodocs`],decorators:[y,v],beforeEach:()=>(_(`stats/tags`,`loading`),()=>_(`stats/tags`,null))},X={render:U,tags:[`!autodocs`],decorators:[y,v],beforeEach:()=>(_(`stats/tags`,`error`),()=>_(`stats/tags`,null))},Z={render:U,tags:[`!autodocs`],decorators:[y,v],beforeEach:()=>(_(`stats/tags`,`empty`),()=>_(`stats/tags`,null))},Q={render:e=>(0,W.jsx)(Ae,{...e}),args:{...Ce},argTypes:{...ge},decorators:[v]},J.parameters={...J.parameters,docs:{...J.parameters?.docs,source:{originalSource:`{
+  render: renderTags,
+  decorators: [withWidgetCanvas, withStoryRouter]
+}`,...J.parameters?.docs?.source}}},Y.parameters={...Y.parameters,docs:{...Y.parameters?.docs,source:{originalSource:`{
+  render: renderTags,
+  // Kept off the shared autodocs page: the mock override is keyed by path, so it
+  // would otherwise force the sibling stories on that page into the same state.
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas, withStoryRouter],
+  beforeEach: () => {
+    setReportMockState('stats/tags', 'loading');
+    return () => setReportMockState('stats/tags', null);
+  }
+}`,...Y.parameters?.docs?.source},description:{story:`First load: the fetch is in flight, so the widget shows its loading state. The
+mock is forced to never resolve for the duration of this story.`,...Y.parameters?.docs?.description}}},X.parameters={...X.parameters,docs:{...X.parameters?.docs,source:{originalSource:`{
+  render: renderTags,
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas, withStoryRouter],
+  beforeEach: () => {
+    setReportMockState('stats/tags', 'error');
+    return () => setReportMockState('stats/tags', null);
+  }
+}`,...X.parameters?.docs?.source},description:{story:`The fetch failed: the widget shows its error state with a Retry action (which
+re-runs the query — still mocked as failing while this story is active).`,...X.parameters?.docs?.description}}},Z.parameters={...Z.parameters,docs:{...Z.parameters?.docs,source:{originalSource:`{
+  render: renderTags,
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas, withStoryRouter],
+  beforeEach: () => {
+    setReportMockState('stats/tags', 'empty');
+    return () => setReportMockState('stats/tags', null);
+  }
+}`,...Z.parameters?.docs?.source},description:{story:`Resolved with no rows: the widget shows its empty state (the neutral tag glyph
+and "Learn about your most visited tags & categories to track engaging topics.").`,...Z.parameters?.docs?.description}}},Q.parameters={...Q.parameters,docs:{...Q.parameters?.docs,source:{originalSource:`{
+  render: args => <TagsDashboardStory {...args} />,
+  args: {
+    ...DEFAULT_WIDGET_DASHBOARD_STORY_ARGS
+  },
+  argTypes: {
+    ...widgetDashboardWithWidgetArgTypes
+  },
+  decorators: [withStoryRouter]
+}`,...Q.parameters?.docs?.source}}},$=[`Default`,`Loading`,`Error`,`Empty`,`WidgetDashboardWithWidget`]}))();export{J as Default,Z as Empty,X as Error,Y as Loading,Q as WidgetDashboardWithWidget,$ as __namedExportsOrder,q as default};
