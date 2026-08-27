@@ -1,1 +1,0 @@
-import{i as e}from"./preload-helper-usAeo7Bx.js";import{t}from"./state-BzSTc5H7.js";var n,r=e((()=>{n=`atomic`})),i=e((()=>{t()}));export{n,r,i as t};

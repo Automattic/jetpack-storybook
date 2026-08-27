@@ -1,0 +1,35 @@
+import{c as e,i as t}from"./preload-helper-usAeo7Bx.js";import{t as n}from"./react-DVCOKQW8.js";import{S as ee,n as r,t as i}from"./build-module-DyKOxfM8.js";import{t as a}from"./jsx-runtime-D2pHJD-r.js";import{On as te,n as o,w as s}from"./build-module-CDRs4YxF.js";import{nt as ne,t as c}from"./date-fns-C16LGmyW.js";import{a as re,b as l,g as u}from"./hooks-CM41gJuO.js";import{n as ie}from"./heatmap-chart-D0i8sGWs.js";import{R as d,t as f}from"./src-BpDTwEv2.js";import{j as ae,qt as p,t as m,vn as h}from"./src-BH_couPx.js";import{l as g,t as _}from"./src-CY2THOde.js";import{a as oe,i as v}from"./calendar-heatmap-window-BTpDlUYm.js";import{t as se}from"./adaptive-calendar-heatmap-BAkAAAJI.js";import{M as ce,c as y}from"./chart-tooltip-DMI6rj0A.js";import{r as le}from"./metric-sparkline-skeleton-ocfGLPga.js";import{D as b,G as x,K as S,Y as C,k as w}from"./report-metric-C_rpHLIp.js";import{t as T}from"./widget-state-BpjCIpRh.js";import{C as ue,D as de,E as fe,S as pe,T as me,b as he,t as ge,w as _e,x as E}from"./src-DAYpv19O.js";function ve({value:e,cellLabel:t}){return(0,k.jsx)(b,{value:e,cellLabel:t,emptyLabel:r(`No views`,`jetpack-premium-analytics-pkg`),formatValue:y})}function ye(){let{reportParams:e}=l(),t=oe(re()),n=ne(new Date,`yyyy-MM-dd`),i=(0,O.useMemo)(()=>v(e,{maxDays:t},n),[e,t,n]),a=(0,O.useMemo)(()=>v(e,{},n),[e,n]).startDate<i.startDate,{primary:o,isLoading:s,isFetching:c,isError:u,error:f,refetch:p}=ae((0,O.useMemo)(()=>h({...e,from:i.startDate,to:i.endDate,period:`day`,stat_fields:`views`}),[e,i])),m=o.data,_=(0,O.useMemo)(()=>new Map((m?.data??[]).map(e=>{let t=Number(e.views??0);return[String(e.time_interval),t>0?t:null]})),[m]),y=(m?.data??[]).some(e=>{let t=String(e.time_interval);return Number(e.views??0)>0&&t>=i.startDate&&t<=i.endDate}),b=d(i.startDate),x=d(i.endDate),S=a&&b&&x?ee(r(`No views between %1$s and %2$s.`,`jetpack-premium-analytics-pkg`),g(b,`compact`),g(x,`compact`)):r(`No views in this period.`,`jetpack-premium-analytics-pkg`);return(0,k.jsx)(se,{valueByDay:_,period:i,children:(e,t)=>(0,k.jsx)(T,{isLoading:s,isFetching:c,isError:u&&!y,isEmpty:!y,error:ce(f,{retryDescription:r(`We couldn't load your traffic activity. Please try again in a moment.`,`jetpack-premium-analytics-pkg`),onRetry:p}),empty:{icon:te,description:S},renderLoading:(0,k.jsx)(le,{}),children:(0,k.jsx)(w,{pager:t,children:(0,k.jsx)(ie,{...e,primaryColor:`var(--wp-admin-theme-color, #3858e9)`,withTooltips:!0,renderTooltip:ve})})})})}function D({attributes:e={}}){return(0,k.jsx)(u,{attributes:e,children:(0,k.jsx)(ye,{})})}var O,k,A=t((()=>{m(),f(),_(),ge(),i(),o(),c(),O=e(n(),1),k=a()})),j,M=t((()=>{o(),j={icon:s}})),N,P,F,I,L,R,z,be=t((()=>{N=`jpa/traffic-views-activity`,P=`Traffic views activity`,F=`Daily views across the whole site, as a calendar heatmap.`,I={content:`Your daily views, shown as a heatmap to help you spot busy days and quieter stretches.`},L=`stats`,R=`framed`,z={name:N,title:P,description:F,help:I,category:L,presentation:R}}));function B(e=G){return(0,H.jsx)(D,{attributes:{reportParams:p(!1,e)}})}function V(e){return C(U,e),()=>{C(U,null)}}function xe(e){return(0,H.jsx)(me,{...e,widgetType:pe(z,j),renderModule:W,renderComponent:D,attributes:{reportParams:p(!0,G)}})}var H,U,W,G,K,q,J,Y,X,Z,Q,$;t((()=>{m(),x(),ue(),fe(),he(),A(),M(),be(),H=a(),S(),U=`stats/visits`,W=`storybook/traffic-views-activity`,G=`last-365-days`,K={title:`Packages/Premium Analytics/Widgets/TrafficViewsActivity`,component:D,tags:[`autodocs`],parameters:{docs:{description:{component:`The "Traffic views activity" widget shows daily site views as a calendar heatmap. Days without views are blank, and older weeks are hidden when space is limited.`}}}},q={render:()=>B(),decorators:[E]},J={render:()=>B(`last-90-days`),tags:[`!autodocs`],decorators:[E],beforeEach:()=>V(`loading`)},Y={render:()=>B(`last-7-days`),tags:[`!autodocs`],decorators:[E],beforeEach:()=>V(`error`)},X={render:()=>B(`last-30-days`),tags:[`!autodocs`],decorators:[E],beforeEach:()=>V(`error-retryable`)},Z={render:()=>B(`today`),tags:[`!autodocs`],decorators:[E],beforeEach:()=>V(`empty`)},Q={render:e=>(0,H.jsx)(xe,{...e}),args:{..._e,widgetWidth:4,widgetHeight:1,rowHeight:200},argTypes:{...de}},q.parameters={...q.parameters,docs:{...q.parameters?.docs,source:{originalSource:`{
+  render: () => renderTrafficViewsActivity(),
+  decorators: [withWidgetCanvas]
+}`,...q.parameters?.docs?.source},description:{story:`A year of daily views.`,...q.parameters?.docs?.description}}},J.parameters={...J.parameters,docs:{...J.parameters?.docs,source:{originalSource:`{
+  render: () => renderTrafficViewsActivity('last-90-days'),
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas],
+  beforeEach: () => forceVisitsState('loading')
+}`,...J.parameters?.docs?.source},description:{story:`The initial loading state.`,...J.parameters?.docs?.description}}},Y.parameters={...Y.parameters,docs:{...Y.parameters?.docs,source:{originalSource:`{
+  render: () => renderTrafficViewsActivity('last-7-days'),
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas],
+  beforeEach: () => forceVisitsState('error')
+}`,...Y.parameters?.docs?.source},description:{story:`A permission error without a retry action.`,...Y.parameters?.docs?.description}}},X.parameters={...X.parameters,docs:{...X.parameters?.docs,source:{originalSource:`{
+  render: () => renderTrafficViewsActivity('last-30-days'),
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas],
+  beforeEach: () => forceVisitsState('error-retryable')
+}`,...X.parameters?.docs?.source},description:{story:`A connection error with a retry action.`,...X.parameters?.docs?.description}}},Z.parameters={...Z.parameters,docs:{...Z.parameters?.docs,source:{originalSource:`{
+  render: () => renderTrafficViewsActivity('today'),
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas],
+  beforeEach: () => forceVisitsState('empty')
+}`,...Z.parameters?.docs?.source},description:{story:`A period with no views.`,...Z.parameters?.docs?.description}}},Q.parameters={...Q.parameters,docs:{...Q.parameters?.docs,source:{originalSource:`{
+  render: args => <TrafficViewsActivityDashboardStory {...args} />,
+  args: {
+    ...DEFAULT_WIDGET_DASHBOARD_STORY_ARGS,
+    widgetWidth: 4,
+    widgetHeight: 1,
+    rowHeight: 200
+  },
+  argTypes: {
+    ...widgetDashboardWithWidgetArgTypes
+  }
+}`,...Q.parameters?.docs?.source},description:{story:"The widget at its production size: full width and one row. Raise `widgetHeight`\nto 2 to see it switch from compact squares to labelled cells.",...Q.parameters?.docs?.description}}},$=[`Default`,`Loading`,`Error`,`ErrorRetryable`,`Empty`,`WidgetDashboardWithWidget`]}))();export{q as Default,Z as Empty,Y as Error,X as ErrorRetryable,J as Loading,Q as WidgetDashboardWithWidget,$ as __namedExportsOrder,K as default};
