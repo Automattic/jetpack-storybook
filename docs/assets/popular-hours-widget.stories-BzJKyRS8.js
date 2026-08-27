@@ -1,0 +1,76 @@
+import{c as e,i as t}from"./preload-helper-usAeo7Bx.js";import{t as n}from"./react-DVCOKQW8.js";import{n as r,t as i}from"./build-module-DyKOxfM8.js";import{t as a}from"./jsx-runtime-D2pHJD-r.js";import{Mn as o,n as s}from"./build-module-CDRs4YxF.js";import{b as c,g as l}from"./hooks-Chc7IXb5.js";import{En as ee,k as u,qt as d,t as f,vn as te}from"./src-B5JGvL-s.js";import{t as ne,u as p}from"./src-CY2THOde.js";import{M as re}from"./chart-tooltip-DcOXtYLY.js";import{B as ie,G as ae,J as m,W as oe,q as h}from"./report-metric-6zfwbEAX.js";import{t as se}from"./widget-state-CBoEg3sC.js";import{C as ce,D as g,E as le,S as _,T as v,b as y,t as b,w as ue,x}from"./src-D9vNzIYU.js";var S,C,w=t((()=>{S=`_root_onyev_1`,C={root:S}}));function T(e){let t=e.reduce((e,t)=>!e||t.total>e.total?t:e,void 0);return t&&t.total>0?t:void 0}function E(){let{reportParams:e}=c(),{primary:t,isLoading:n,isFetching:r,isError:i,error:a,refetch:o}=u((0,D.useMemo)(()=>te({...e}),[e])),s=t.data,l=(0,D.useMemo)(()=>s?s.buckets.map(({hour:e,views:t})=>({hour:e,total:t,average:t/s.days})):[],[s]);return{buckets:l,peak:(0,D.useMemo)(()=>{let e=T(l);return e&&{...e,label:p(e.hour)}},[l]),isLoading:n,isFetching:r,isError:i,error:a,refetch:o}}var D,de=t((()=>{f(),ne(),b(),D=e(n(),1)}));function fe(){let{buckets:e,peak:t,isLoading:n,isFetching:i,isError:a,error:s,refetch:c}=E(),l=(0,k.useMemo)(()=>e.map(e=>e.average),[e]),u=a&&(!t||s instanceof ee),d=t&&t.average<10&&!Number.isInteger(t.average)?1:0;return(0,A.jsx)(`div`,{className:C.root,children:(0,A.jsx)(se,{isLoading:n,isFetching:i,isError:u,isEmpty:!t,error:u?re(s,{retryDescription:r(`We couldn't load your popular hours. Please try again in a moment.`,`jetpack-premium-analytics-pkg`),onRetry:c}):null,empty:{icon:o,description:r(`No views in this period.`,`jetpack-premium-analytics-pkg`)},children:(0,A.jsx)(ie,{label:t?.label??``,value:t?.average??0,points:l,valueDecimals:d,valueUnit:`views-per-day`})})})}function O({attributes:e={},setError:t}){return(0,A.jsx)(l,{attributes:e,setError:t,children:(0,A.jsx)(fe,{})})}var k,A,j=t((()=>{f(),b(),i(),s(),k=e(n(),1),w(),de(),A=a()})),M,pe=t((()=>{s(),M={icon:o}})),N,P,F,I,L,R,z,me=t((()=>{N=`jpa/popular-hours`,P=`Popular hours`,F=`The hour of the day that draws the most views, with the distribution across the day.`,I={content:`The hours of the day when your site received the most views on average. Ranges longer than a year show the most recent 12 months.`,links:[{label:`Learn more`,href:`https://wordpress.com/support/stats/learn-insights-about-your-website/`}]},L=`stats`,R=`framed`,z={name:N,title:P,description:F,help:I,category:L,presentation:R}}));function he(){return(0,V.jsx)(O,{attributes:{reportParams:d(!1)}})}function B(e){return(0,V.jsx)(O,{attributes:{reportParams:d(!1,e)}})}function ge(e){return(0,V.jsx)(v,{...e,widgetType:U,renderModule:H,renderComponent:O,attributes:{reportParams:d(!0)}})}var V,H,U,W,G,K,q,J,Y,X,Z,Q,$;t((()=>{f(),oe(),le(),ce(),y(),j(),pe(),me(),V=a(),ae(),H=`storybook/popular-hours`,U=_(z,M),W={title:`Packages/Premium Analytics/Widgets/PopularHours`,component:O,tags:[`autodocs`],parameters:{docs:{description:{component:"The \"Popular hours\" card: the busiest hour of the day for the selected range, as a site-format hour label and its mean daily views, over an area chart of the whole day's distribution. Data comes from `stats/views-by/hour-of-day`, which folds the range into 24 buckets in the site's own timezone; `stats/insights` also reports an hours map, but keyed in UTC while its `highest_hour` is offset-applied, so its chart and headline disagree. Because the endpoint rejects ranges longer than 366 days, the client limits `all time` and long custom ranges to the most recent 12 months. There is no WithComparison story — the widget strips comparison from its request and renders no delta, so it would be identical to Default."}}}},G={render:he,decorators:[x]},K={render:()=>B(`last-90-days`),tags:[`!autodocs`],decorators:[x],beforeEach:()=>(m(`stats/views-by/hour-of-day`,`loading`),()=>m(`stats/views-by/hour-of-day`,null))},q={render:()=>B(`last-7-days`),tags:[`!autodocs`],decorators:[x],beforeEach:()=>(m(`stats/views-by/hour-of-day`,`error`),()=>m(`stats/views-by/hour-of-day`,null))},J={render:()=>B(`last-12-months`),tags:[`!autodocs`],decorators:[x],beforeEach:()=>(m(`stats/views-by/hour-of-day`,`error-retryable`),()=>m(`stats/views-by/hour-of-day`,null))},Y={render:()=>B(`last-30-days`),tags:[`!autodocs`],decorators:[x],beforeEach:()=>(h(`stats/views-by/hour-of-day`,{date:`2026-01-01`,start_date:`2025-12-03`,days:30,dimension:`day-of-week`,fields:[`period`,`views`],data:[[`Mon`,100]]}),()=>h(`stats/views-by/hour-of-day`,null))},X={render:()=>B(`last-12-months`),tags:[`!autodocs`],decorators:[x],beforeEach:()=>(h(`stats/views-by/hour-of-day`,{date:`2026-01-01`,start_date:`2025-01-01`,days:366,dimension:`hour-of-day`,fields:[`period`,`views`],data:[[`7`,4],[`19`,18]]}),()=>h(`stats/views-by/hour-of-day`,null))},Z={render:()=>B(`last-year`),tags:[`!autodocs`],decorators:[x],beforeEach:()=>(m(`stats/views-by/hour-of-day`,`empty`),()=>m(`stats/views-by/hour-of-day`,null))},Q={render:e=>(0,V.jsx)(ge,{...e}),args:{...ue},argTypes:{...g}},G.parameters={...G.parameters,docs:{...G.parameters?.docs,source:{originalSource:`{
+  render: renderPopularHours,
+  decorators: [withWidgetCanvas]
+}`,...G.parameters?.docs?.source},description:{story:`The peak hour over the day's distribution.`,...G.parameters?.docs?.description}}},K.parameters={...K.parameters,docs:{...K.parameters?.docs,source:{originalSource:`{
+  render: () => renderPopularHoursOnPreset('last-90-days'),
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas],
+  beforeEach: () => {
+    setReportMockState('stats/views-by/hour-of-day', 'loading');
+    return () => setReportMockState('stats/views-by/hour-of-day', null);
+  }
+}`,...K.parameters?.docs?.source},description:{story:`The initial loading state.`,...K.parameters?.docs?.description}}},q.parameters={...q.parameters,docs:{...q.parameters?.docs,source:{originalSource:`{
+  render: () => renderPopularHoursOnPreset('last-7-days'),
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas],
+  beforeEach: () => {
+    setReportMockState('stats/views-by/hour-of-day', 'error');
+    return () => setReportMockState('stats/views-by/hour-of-day', null);
+  }
+}`,...q.parameters?.docs?.source},description:{story:`A non-retryable permission error.`,...q.parameters?.docs?.description}}},J.parameters={...J.parameters,docs:{...J.parameters?.docs,source:{originalSource:`{
+  render: () => renderPopularHoursOnPreset('last-12-months'),
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas],
+  beforeEach: () => {
+    setReportMockState('stats/views-by/hour-of-day', 'error-retryable');
+    return () => setReportMockState('stats/views-by/hour-of-day', null);
+  }
+}`,...J.parameters?.docs?.source},description:{story:`A retryable connection error.`,...J.parameters?.docs?.description}}},Y.parameters={...Y.parameters,docs:{...Y.parameters?.docs,source:{originalSource:`{
+  render: () => renderPopularHoursOnPreset('last-30-days'),
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas],
+  beforeEach: () => {
+    setReportMockResponse('stats/views-by/hour-of-day', {
+      date: '2026-01-01',
+      start_date: '2025-12-03',
+      days: 30,
+      dimension: 'day-of-week',
+      fields: ['period', 'views'],
+      data: [['Mon', 100]]
+    });
+    return () => setReportMockResponse('stats/views-by/hour-of-day', null);
+  }
+}`,...Y.parameters?.docs?.source},description:{story:`A successful response folded into a dimension other than hour-of-day.`,...Y.parameters?.docs?.description}}},X.parameters={...X.parameters,docs:{...X.parameters?.docs,source:{originalSource:`{
+  render: () => renderPopularHoursOnPreset('last-12-months'),
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas],
+  beforeEach: () => {
+    // 18 views over a year is 0.049 a day, which one decimal rounds to zero.
+    setReportMockResponse('stats/views-by/hour-of-day', {
+      date: '2026-01-01',
+      start_date: '2025-01-01',
+      days: 366,
+      dimension: 'hour-of-day',
+      fields: ['period', 'views'],
+      data: [['7', 4], ['19', 18]]
+    });
+    return () => setReportMockResponse('stats/views-by/hour-of-day', null);
+  }
+}`,...X.parameters?.docs?.source},description:{story:`A daily average too small to render at the card's precision.`,...X.parameters?.docs?.description}}},Z.parameters={...Z.parameters,docs:{...Z.parameters?.docs,source:{originalSource:`{
+  // Avoid presenting the same date range as ErrorRetryable in most years.
+  render: () => renderPopularHoursOnPreset('last-year'),
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas],
+  beforeEach: () => {
+    setReportMockState('stats/views-by/hour-of-day', 'empty');
+    return () => setReportMockState('stats/views-by/hour-of-day', null);
+  }
+}`,...Z.parameters?.docs?.source},description:{story:`A report with no views.`,...Z.parameters?.docs?.description}}},Q.parameters={...Q.parameters,docs:{...Q.parameters?.docs,source:{originalSource:`{
+  render: args => <PopularHoursDashboardStory {...args} />,
+  args: {
+    ...DEFAULT_WIDGET_DASHBOARD_STORY_ARGS
+  },
+  argTypes: {
+    ...widgetDashboardWithWidgetArgTypes
+  }
+}`,...Q.parameters?.docs?.source}}},$=[`Default`,`Loading`,`Error`,`ErrorRetryable`,`UnsupportedResponse`,`LowTraffic`,`Empty`,`WidgetDashboardWithWidget`]}))();export{G as Default,Z as Empty,q as Error,J as ErrorRetryable,K as Loading,X as LowTraffic,Y as UnsupportedResponse,Q as WidgetDashboardWithWidget,$ as __namedExportsOrder,W as default};
