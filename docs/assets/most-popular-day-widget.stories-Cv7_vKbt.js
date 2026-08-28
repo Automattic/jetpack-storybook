@@ -1,0 +1,37 @@
+import{i as e}from"./preload-helper-usAeo7Bx.js";import{S as t,n,t as r}from"./build-module-DyKOxfM8.js";import{t as i}from"./jsx-runtime-D2pHJD-r.js";import{bl as a,t as o}from"./build-module-CR6EsQjA.js";import{$t as s,kn as c,pn as l,t as u}from"./src-CI184WCY.js";import{g as d}from"./hooks-v7a5_WiS.js";import{t as f,x as ee}from"./src-CldFJNXL.js";import{L as te,t as ne}from"./src-BZhZVDhX.js";import{gt as re,qt as p,t as m,vn as h}from"./src-CA_rTku8.js";import{l as g,n as _,t as v}from"./src-C0zKumdJ.js";import{M as ie,j as y}from"./chart-tooltip-Cxn7W4pL.js";import{G as ae,K as oe,Y as b}from"./report-metric-CP3g_908.js";import{t as se}from"./widget-state-DjqzuiHQ.js";import{C as ce,D as le,E as ue,S as de,T as fe,b as pe,t as me,w as he,x}from"./src-Bwq_xgOE.js";var S,C,w,T,E,ge=e((()=>{S=`_root_948dt_3`,C=`_content_948dt_10`,w=`_highlight_948dt_27`,T=`_caption_948dt_31`,E={root:S,content:C,highlight:w,caption:T}}));function _e(e){return te(e?.views_best_day)}function ve(){let{data:e,isLoading:t,isFetching:r,isError:i,error:a,refetch:o}=re(),s=e?.stats,c=_e(s),u=y(s,`views_best_day_total`),d=y(s,`views`),f=c===void 0||!u;return(0,O.jsx)(l,{className:E.root,direction:`column`,children:(0,O.jsx)(`div`,{className:E.content,children:(0,O.jsx)(se,{isLoading:t,isFetching:r,isError:i&&f,isEmpty:f,error:ie(a,{retryDescription:n(`We couldn't load your most popular day. Please try again in a moment.`,`jetpack-premium-analytics-pkg`),onRetry:()=>void o()}),empty:{icon:ee,description:n(`Not enough views yet to pick a most popular day.`,`jetpack-premium-analytics-pkg`)},children:c!==void 0&&u!==void 0&&(0,O.jsx)(M,{date:c,views:u,share:d?u/d:void 0})})})})}function D({attributes:e={}}){return(0,O.jsx)(d,{attributes:e,children:(0,O.jsx)(ve,{})})}var O,k,A,j,M,ye=e((()=>{m(),ne(),v(),f(),me(),r(),u(),ge(),O=i(),k=({label:e,value:t,valueTitle:n,caption:r})=>(0,O.jsxs)(l,{direction:`column`,gap:`xs`,children:[(0,O.jsx)(c,{variant:`heading-md`,render:(0,O.jsx)(`h4`,{}),children:e}),(0,O.jsx)(c,{variant:`heading-2xl`,title:n,children:t}),r!==void 0&&(0,O.jsx)(c,{variant:`body-md`,className:E.caption,children:r})]}),A={useMultipliers:!0,decimals:1},j={decimals:0},M=({date:e,views:r,share:i})=>{let a=_(r,`number`,j),o=_(r,`number`,r>=1e3?A:j);return(0,O.jsxs)(l,{className:E.highlight,direction:`column`,gap:`xl`,justify:`center`,children:[(0,O.jsx)(k,{label:n(`Day`,`jetpack-premium-analytics-pkg`),value:g(e,`short`),caption:g(e,`year`)}),(0,O.jsx)(k,{label:n(`Views`,`jetpack-premium-analytics-pkg`),value:o===a?o:(0,O.jsxs)(O.Fragment,{children:[(0,O.jsx)(`span`,{"aria-hidden":`true`,children:o}),(0,O.jsx)(s,{children:a})]}),valueTitle:a,caption:i===void 0?void 0:t(n(`%s of views`,`jetpack-premium-analytics-pkg`),_(i,`percentage`,{decimals:2,signDisplay:`never`}))})]})}})),N,be=e((()=>{o(),N={icon:a}})),P,F,I,L,R,z,B,xe=e((()=>{P=`jpa/most-popular-day`,F=`Most popular day`,I=`The day your site received the most views.`,L={content:`The single day your site received the most views, and that day's share of every view your site has recorded. These figures are all-time and don't change with the period you select.`,links:[{label:`Learn more`,href:`https://wordpress.com/support/stats/learn-insights-about-your-website/`}]},R=`stats`,z=`framed`,B={name:P,title:F,description:I,help:L,category:R,presentation:z}}));function V(e){return h.removeQueries({queryKey:[`stats`,`site`]}),b(G,e),()=>{b(G,null),h.removeQueries({queryKey:[`stats`,`site`]})}}function H(){return(0,U.jsx)(D,{attributes:{reportParams:p()}})}function Se(e){return(0,U.jsx)(fe,{...e,widgetType:de(B,N),renderModule:W,renderComponent:D,attributes:{reportParams:p(!0)}})}var U,W,G,K,q,J,Y,X,Z,Q,$;e((()=>{m(),ue(),ce(),pe(),ae(),ye(),be(),xe(),U=i(),oe(),W=`storybook/most-popular-day`,G=`proxy/v1.1/stats`,K={title:`Packages/Premium Analytics/Widgets/MostPopularDay`,component:D,tags:[`autodocs`],parameters:{docs:{description:{component:`The "Most popular day" widget ports the Jetpack Stats all-time highlight: the single day your site drew the most views, with that day's view count and its share of all views. The value comes from a site-wide summary that does not depend on the dashboard date range.`}}}},q={render:H,decorators:[x]},J={render:H,tags:[`!autodocs`],decorators:[x],beforeEach:()=>V(`loading`)},Y={render:H,tags:[`!autodocs`],decorators:[x],beforeEach:()=>V(`error`)},X={render:H,tags:[`!autodocs`],decorators:[x],beforeEach:()=>V(`error-retryable`)},Z={render:H,tags:[`!autodocs`],decorators:[x],beforeEach:()=>V(`empty`)},Q={render:e=>(0,U.jsx)(Se,{...e}),args:{...he},argTypes:{...le}},q.parameters={...q.parameters,docs:{...q.parameters?.docs,source:{originalSource:`{
+  render: renderMostPopularDay,
+  decorators: [withWidgetCanvas]
+}`,...q.parameters?.docs?.source},description:{story:`Default state — the best day for views and its share of all views.`,...q.parameters?.docs?.description}}},J.parameters={...J.parameters,docs:{...J.parameters?.docs,source:{originalSource:`{
+  render: renderMostPopularDay,
+  // Off the shared autodocs page — path-keyed override; see forceStatsMockState.
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas],
+  beforeEach: () => forceSiteSummaryState('loading')
+}`,...J.parameters?.docs?.source},description:{story:`First load: the fetch is in flight, so the widget shows its loading state. The
+mock is forced to never resolve for the duration of this story.`,...J.parameters?.docs?.description}}},Y.parameters={...Y.parameters,docs:{...Y.parameters?.docs,source:{originalSource:`{
+  render: renderMostPopularDay,
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas],
+  beforeEach: () => forceSiteSummaryState('error')
+}`,...Y.parameters?.docs?.source},description:{story:`The reader cannot see this site's stats — a permission-gated 403. The widget
+states that neutrally and offers no Retry, which could not help.`,...Y.parameters?.docs?.description}}},X.parameters={...X.parameters,docs:{...X.parameters?.docs,source:{originalSource:`{
+  render: renderMostPopularDay,
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas],
+  beforeEach: () => forceSiteSummaryState('error-retryable')
+}`,...X.parameters?.docs?.source},description:{story:`The fetch failed in a way that can heal — the proxy's \`no_connection\` 403: the
+widget shows its retryable copy with a Retry action, which re-runs the query
+(still mocked as failing while this story is active).`,...X.parameters?.docs?.description}}},Z.parameters={...Z.parameters,docs:{...Z.parameters?.docs,source:{originalSource:`{
+  render: renderMostPopularDay,
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas],
+  beforeEach: () => forceSiteSummaryState('empty')
+}`,...Z.parameters?.docs?.source},description:{story:'Resolved without a usable `views_best_day`: the widget shows its empty state\n(the neutral calendar glyph and the "not enough views" message).',...Z.parameters?.docs?.description}}},Q.parameters={...Q.parameters,docs:{...Q.parameters?.docs,source:{originalSource:`{
+  render: args => <MostPopularDayDashboardStory {...args} />,
+  args: {
+    ...DEFAULT_WIDGET_DASHBOARD_STORY_ARGS
+  },
+  argTypes: {
+    ...widgetDashboardWithWidgetArgTypes
+  }
+}`,...Q.parameters?.docs?.source}}},$=[`Default`,`Loading`,`Error`,`ErrorRetryable`,`Empty`,`WidgetDashboardWithWidget`]}))();export{q as Default,Z as Empty,Y as Error,X as ErrorRetryable,J as Loading,Q as WidgetDashboardWithWidget,$ as __namedExportsOrder,K as default};
