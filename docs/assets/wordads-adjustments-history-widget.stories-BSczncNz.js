@@ -1,0 +1,23 @@
+import{c as e,i as t}from"./preload-helper-usAeo7Bx.js";import{t as n}from"./react-DVCOKQW8.js";import{n as r,t as i}from"./build-module-DyKOxfM8.js";import{t as a}from"./jsx-runtime-D2pHJD-r.js";import{cl as o,t as s}from"./build-module-CR6EsQjA.js";import{g as c}from"./hooks-CBwO7JSI.js";import{Zt as l,b as u,t as d}from"./src-CDPUPXw9.js";import{G as f,K as p,W as m,a as h,c as g,i as _,o as v}from"./report-metric-CuzndXLw.js";import{t as y}from"./widget-state-BNc4lqeb.js";import{C as b,D as x,E as S,S as C,T as w,b as T,t as E,w as D,x as O}from"./src-ByY19g9u.js";function k(){let{data:e,isLoading:t,isFetching:n,isError:i,refetch:a}=u(),o=(0,j.useMemo)(()=>h(e?.adjustment),[e]),s=(0,j.useMemo)(()=>v(),[]);return(0,M.jsx)(y,{isLoading:t,isFetching:n,isError:i,isEmpty:o.length===0,error:{description:r(`We couldn't load WordAds earnings. Please try again in a moment.`,`jetpack-premium-analytics-pkg`),actions:[{label:r(`Retry`,`jetpack-premium-analytics-pkg`),onClick:a}]},empty:{description:r(`No earnings adjustments to show yet.`,`jetpack-premium-analytics-pkg`)},children:(0,M.jsx)(g,{data:o,fields:s,getItemId:N,initialView:_})})}function A({attributes:e={}}){return(0,M.jsx)(c,{attributes:e,children:(0,M.jsx)(k,{})})}var j,M,N,ee=t((()=>{d(),E(),i(),j=e(n(),1),M=a(),N=e=>e.id})),P,F=t((()=>{s(),P={icon:o,attributes:[],example:{attributes:{}}}})),I,L,R,z,B,V,H,U=t((()=>{I=`jpa/wordads-adjustments-history`,L=`Adjustments History`,R=`WordAds earnings adjustments by period, with amounts, ads served, and payment status.`,z={content:`Ads Served is the number of ads we attempted to display (page impressions × available ad slots). Not every ad served results in a paid impression.`},B=`stats`,V=`content-bleed`,H={name:I,title:L,description:R,help:z,category:B,presentation:V}}));function W(e){return(0,G.jsx)(w,{...e,widgetType:C(H,P),renderModule:K,renderComponent:A,attributes:{reportParams:l()}})}var G,K,q,J,Y,X,Z,Q,$;t((()=>{d(),f(),S(),b(),T(),ee(),F(),U(),G=a(),p(),K=`storybook/wordads-adjustments-history`,q={title:`Packages/Premium Analytics/Widgets/WordAdsAdjustmentsHistory`,component:A,args:{attributes:{reportParams:l()}},tags:[`autodocs`],parameters:{docs:{description:{component:`The WordAds "Adjustments History" widget — earnings adjustments by period (amount, payment status), ported from the Jetpack Stats WordAds page.`}}}},J={decorators:[O]},Y={tags:[`!autodocs`],decorators:[O],beforeEach:m(`loading`)},X={tags:[`!autodocs`],decorators:[O],beforeEach:m(`error`)},Z={tags:[`!autodocs`],decorators:[O],beforeEach:m(`empty`)},Q={render:e=>(0,G.jsx)(W,{...e}),args:{...D},argTypes:{...x}},J.parameters={...J.parameters,docs:{...J.parameters?.docs,source:{originalSource:`{
+  decorators: [withWidgetCanvas]
+}`,...J.parameters?.docs?.source},description:{story:`Default state — the adjustments history table.`,...J.parameters?.docs?.description}}},Y.parameters={...Y.parameters,docs:{...Y.parameters?.docs,source:{originalSource:`{
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas],
+  beforeEach: forceWordAdsEarningsState('loading')
+}`,...Y.parameters?.docs?.source},description:{story:`First load — the request is in flight.`,...Y.parameters?.docs?.description}}},X.parameters={...X.parameters,docs:{...X.parameters?.docs,source:{originalSource:`{
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas],
+  beforeEach: forceWordAdsEarningsState('error')
+}`,...X.parameters?.docs?.source},description:{story:`The fetch failed — the error state with a Retry action.`,...X.parameters?.docs?.description}}},Z.parameters={...Z.parameters,docs:{...Z.parameters?.docs,source:{originalSource:`{
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas],
+  beforeEach: forceWordAdsEarningsState('empty')
+}`,...Z.parameters?.docs?.source},description:{story:`Resolved but empty — no adjustments history for this breakdown.`,...Z.parameters?.docs?.description}}},Q.parameters={...Q.parameters,docs:{...Q.parameters?.docs,source:{originalSource:`{
+  render: args => <WordAdsAdjustmentsHistoryDashboardStory {...args} />,
+  args: {
+    ...DEFAULT_WIDGET_DASHBOARD_STORY_ARGS
+  },
+  argTypes: {
+    ...widgetDashboardWithWidgetArgTypes
+  }
+}`,...Q.parameters?.docs?.source},description:{story:`Mounted inside the real dashboard frame (framed card, sizing, edit mode).`,...Q.parameters?.docs?.description}}},$=[`Default`,`Loading`,`Error`,`Empty`,`WidgetDashboardWithWidget`]}))();export{J as Default,Z as Empty,X as Error,Y as Loading,Q as WidgetDashboardWithWidget,$ as __namedExportsOrder,q as default};
