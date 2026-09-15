@@ -1,0 +1,1 @@
+import{i as e}from"./preload-helper-usAeo7Bx.js";import{a as t,c as n}from"./build-module-B_4WH6u1.js";var r,i,a,o=e((()=>{n(),r=t(),i=`Asia/Tokyo`,a=e=>({...r,timezone:{...r.timezone,string:e}})}));export{o as n,a as r,i as t};
