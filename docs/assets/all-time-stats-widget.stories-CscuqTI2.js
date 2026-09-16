@@ -1,0 +1,31 @@
+import{c as e,i as t}from"./preload-helper-usAeo7Bx.js";import{t as n}from"./react-DVCOKQW8.js";import{n as r,t as i}from"./build-module-yGZutq_9.js";import{t as a}from"./jsx-runtime-D2pHJD-r.js";import{C as o,Dn as s,Il as c,Nr as ee,bc as l,di as te,t as u}from"./build-module-zwSmKorH.js";import{g as ne,gt as re}from"./hooks-BZX5E4cH.js";import{$t as d,St as ie,Tn as f,r as p}from"./date-period-dropdown-B5gQ2ZJd.js";import{r as ae,t as oe}from"./metric-tile-grid-skeleton-B8rSN-f2.js";import{i as se,r as m,s as h}from"./register-report-mocks-CQAghYV8.js";import{t as g}from"./widget-state-CiovfCCp.js";import{t as _}from"./src-P7FTmKGL.js";import{a as v,c as y,i as b,l as ce,n as le,o as ue,r as x,s as S}from"./with-widget-canvas-Sci0Y6OC.js";var C,w,T=t((()=>{C=`_root_15bqk_2`,w={root:C}})),E,D,O=t((()=>{i(),u(),E=[{id:`views`,label:r(`Views`,`jetpack-premium-analytics-pkg`)},{id:`visitors`,label:r(`Visitors`,`jetpack-premium-analytics-pkg`)},{id:`posts`,label:r(`Posts`,`jetpack-premium-analytics-pkg`)},{id:`comments`,label:r(`Comments`,`jetpack-premium-analytics-pkg`)}],D={icon:c,attributes:[],example:{attributes:{}}}}));function de(){let{data:e,isLoading:t,isFetching:n,isError:i,refetch:a}=ie(),s=e?.stats,c=(0,A.useMemo)(()=>E.flatMap(({id:e,label:t})=>{let n=re(s,e);return n===void 0?[]:[{key:e,label:t,icon:N[e].icon,value:n}]}),[s]);return(0,j.jsx)(`div`,{className:w.root,children:(0,j.jsx)(g,{isLoading:t,isFetching:n,isError:c.length===0&&i,isEmpty:c.length===0,error:{description:r(`We couldn't load all-time stats. Please try again in a moment.`,`jetpack-premium-analytics-pkg`),actions:[{label:r(`Retry`,`jetpack-premium-analytics-pkg`),onClick:a}]},empty:{icon:o,description:r(`No stats recorded yet.`,`jetpack-premium-analytics-pkg`)},renderLoading:(0,j.jsx)(oe,{tiles:E.length}),children:(0,j.jsx)(ae,{tiles:c,dataFormat:M})})})}function k({attributes:e={}}){return(0,j.jsx)(ne,{attributes:e,children:(0,j.jsx)(de,{})})}var A,j,M,N,P=t((()=>{p(),_(),i(),u(),A=e(n(),1),T(),O(),j=a(),M={type:`number`,options:{useMultipliers:!0,decimals:0}},N={views:{icon:s},visitors:{icon:te},posts:{icon:ee},comments:{icon:l}}})),F,I,L,R,z,B,V,fe=t((()=>{F=`jpa/all-time-stats`,I=`All-time stats`,L=`Lifetime totals for your site — views, visitors, posts, and comments.`,R={content:`Your totals since you started tracking — views, visitors, posts, and comments.`},z=`stats`,B=`framed`,V={name:F,title:I,description:L,help:R,category:z,presentation:B}}));function pe(){return(0,W.jsx)(k,{attributes:{reportParams:d()}})}function H(e){return(0,W.jsx)(k,{attributes:{reportParams:d(!1,e)}})}function U(e){return h(`proxy/v1.1/stats`,e),f.removeQueries({queryKey:[`stats`,`site`]}),()=>{h(`proxy/v1.1/stats`,null),f.removeQueries({queryKey:[`stats`,`site`]})}}function me(e){return(0,W.jsx)(S,{...e,widgetType:K,renderModule:G,renderComponent:k,attributes:{reportParams:d(!0)}})}var W,G,K,q,J,Y,X,Z,Q,$;t((()=>{p(),m(),y(),v(),le(),P(),O(),fe(),W=a(),se(),G=`storybook/all-time-stats`,K=b(V,D),q={title:`Packages/Premium Analytics/Widgets/AllTimeStats`,component:k,tags:[`autodocs`],parameters:{docs:{description:{component:`The "All-time stats" widget. Shows lifetime totals for the site — views, visitors, posts, and comments — as a responsive grid of metric tiles, sourced from the Jetpack Stats site-summary endpoint. It has no configurable attributes and no comparison period, so each tile is a single compact figure with the exact total in a tooltip.`}}}},J={render:pe,decorators:[x]},Y={render:()=>H(`last-90-days`),tags:[`!autodocs`],decorators:[x],beforeEach:()=>U(`loading`)},X={render:()=>H(`last-7-days`),tags:[`!autodocs`],decorators:[x],beforeEach:()=>U(`error`)},Z={render:()=>H(`last-365-days`),tags:[`!autodocs`],decorators:[x],beforeEach:()=>U(`empty`)},Q={render:e=>(0,W.jsx)(me,{...e}),args:{...ue},argTypes:{...ce}},J.parameters={...J.parameters,docs:{...J.parameters?.docs,source:{originalSource:`{
+  render: renderAllTimeStats,
+  decorators: [withWidgetCanvas]
+}`,...J.parameters?.docs?.source},description:{story:`Default state — lifetime totals for the current preset.`,...J.parameters?.docs?.description}}},Y.parameters={...Y.parameters,docs:{...Y.parameters?.docs,source:{originalSource:`{
+  render: () => renderAllTimeStatsOnPreset('last-90-days'),
+  // Off the shared autodocs page — path-keyed override; see forceStatsMockState.
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas],
+  beforeEach: () => forceSiteSummaryState('loading')
+}`,...Y.parameters?.docs?.source},description:{story:`First load: the fetch is in flight, so the widget shows its loading state. The
+mock is forced to never resolve for the duration of this story.`,...Y.parameters?.docs?.description}}},X.parameters={...X.parameters,docs:{...X.parameters?.docs,source:{originalSource:`{
+  render: () => renderAllTimeStatsOnPreset('last-7-days'),
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas],
+  beforeEach: () => forceSiteSummaryState('error')
+}`,...X.parameters?.docs?.source},description:{story:`The fetch failed: the widget shows its error state with a Retry action (which
+re-runs the query — still mocked as failing while this story is active).`,...X.parameters?.docs?.description}}},Z.parameters={...Z.parameters,docs:{...Z.parameters?.docs,source:{originalSource:`{
+  render: () => renderAllTimeStatsOnPreset('last-365-days'),
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas],
+  beforeEach: () => forceSiteSummaryState('empty')
+}`,...Z.parameters?.docs?.source},description:{story:`Resolved with no summary fields: the widget shows its empty state (the neutral
+trending glyph and "No stats recorded yet.").`,...Z.parameters?.docs?.description}}},Q.parameters={...Q.parameters,docs:{...Q.parameters?.docs,source:{originalSource:`{
+  render: args => <AllTimeStatsDashboardStory {...args} />,
+  args: {
+    ...DEFAULT_WIDGET_DASHBOARD_STORY_ARGS
+  },
+  argTypes: {
+    ...widgetDashboardWithWidgetArgTypes
+  }
+}`,...Q.parameters?.docs?.source}}},$=[`Default`,`Loading`,`Error`,`Empty`,`WidgetDashboardWithWidget`]}))();export{J as Default,Z as Empty,X as Error,Y as Loading,Q as WidgetDashboardWithWidget,$ as __namedExportsOrder,q as default};
