@@ -1,0 +1,1 @@
+import{c as e,i as t}from"./preload-helper-usAeo7Bx.js";import{t as n}from"./react-DVCOKQW8.js";var r,i,a=t((()=>{r=e(n(),1),i=(0,r.createContext)(null)})),o,s,c=t((()=>{o=e(n(),1),a(),s=()=>{let e=(0,o.useContext)(i);if(!e)throw Error(`useChartInstanceContext must be used within a Chart component`);return e}})),l=t((()=>{a(),c()}));export{a,i,c as n,s as r,l as t};
