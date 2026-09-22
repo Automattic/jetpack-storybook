@@ -1,0 +1,1 @@
+import{c as e,i as t}from"./preload-helper-usAeo7Bx.js";import{t as n}from"./react-DVCOKQW8.js";var r,i,a,o=t((()=>{r=e(n()),i=(0,r.createContext)(`block`),i.Provider,a=()=>(0,r.useContext)(i)}));export{a as n,o as t};
