@@ -1,0 +1,71 @@
+import{c as e,i as t}from"./preload-helper-usAeo7Bx.js";import{t as n}from"./react-DVCOKQW8.js";import{n as r,t as i,u as a}from"./build-module-2QZQpBH2.js";import{t as o}from"./jsx-runtime-D2pHJD-r.js";import{t as s,xi as c}from"./build-module-2iv4IIRq.js";import{f as l,m as u,r as d,v as f}from"./hooks-BmueE48X.js";import{M as p,t as m}from"./src-C-E2d-Lb.js";import{$t as h,J as ee,ft as g,t as _}from"./src-m1TSlLiq.js";import{Dt as v,Et as y,Y as te,kt as ne}from"./helpers-UQLafHns.js";import"./constants-B1kGztHF.js";import{r as re,t as b}from"./leaderboard-skeleton-Dc0-iUZi.js";import{i as ie,r as ae}from"./register-report-mocks-CgxliRIY.js";import{S as x,f as oe,j as se,l as ce,v as S,w as le}from"./report-metric-DaHJhJCq.js";import{a as ue}from"./src-FmfIk_Zo.js";import{t as de}from"./widget-state-DU1neUbV.js";import{t as fe}from"./src-CjyGnNqZ.js";import{a as pe,d as me,f as he,h as C,i as ge,m as _e,n as ve,p as ye,r as w,u as be}from"./with-widget-canvas-C6LC8p6k.js";import{n as xe,t as Se}from"./register-stats-mocks-B67E1gmQ.js";import{n as Ce,t as T}from"./force-stats-mock-state-CtMWW3hY.js";var E,D,O,we=t((()=>{E=`_root_cb7tq_1`,D=`_content_cb7tq_10`,O={root:E,content:D}}));function Te(e,t,n){return e.children?.length?n?{kind:`drillDown`,onClick:()=>n(e),ariaLabel:a(r(`View %s archive pages`,`jetpack-premium-analytics-pkg`),e.label)}:{kind:`static`}:{kind:`postLink`,id:e.postId,href:e.href,search:t}}function Ee(e,t,n,r){let i=v(e.map(e=>e.value),t?e.map(e=>e.previousValue):[]);return e.map((e,a)=>{let o=e.previousValue;return{id:`${a}-${e.href??e.label}`,...se({label:e.label,media:{kind:`none`},action:Te(e,n,r)}),currentValue:e.value,currentShare:y(e.value,i),previousValue:o,previousShare:t&&o!==void 0?y(o,i):void 0,delta:t&&o!==void 0?ne(e.value,o):void 0}})}function De(e){return e.map(e=>{let t=Number(e.id),n=ue(e.link);return{label:String(e.label??``)||r(`Untitled`,`jetpack-premium-analytics-pkg`),value:e.views,...e.previousViews===void 0?{}:{previousValue:e.previousViews},...n?{href:n}:{},...Number.isFinite(t)&&t>0?{postId:t}:{},type:String(e.type??``)}})}function Oe(){let{reportParams:e}=f(),{comparisonRows:t,hasComparison:n,isLoading:i,isFetching:a,isError:o,refetch:s}=g((0,j.useMemo)(()=>({...e,max:10}),[e]),{maxRows:10}),c=(0,j.useMemo)(()=>De(t?.rows??[]),[t]),u=l({origin:{report:`posts`,section:`posts-pages`}}),d=n,m=(0,j.useMemo)(()=>te([{label:r(`Title`,`jetpack-premium-analytics-pkg`),getValue:e=>e.label},{label:r(`Views`,`jetpack-premium-analytics-pkg`),getValue:e=>e.value,getPreviousValue:e=>e.previousValue},{label:r(`Type`,`jetpack-premium-analytics-pkg`),getValue:e=>e.type},{label:r(`URL`,`jetpack-premium-analytics-pkg`),getValue:e=>e.href}],d),[d]),{canExport:h,rows:ee,filename:_}=ce({rows:c,filenamePrefix:`top-posts`,range:e,status:{isLoading:i,isFetching:a,isError:o}});return(0,M.jsxs)(M.Fragment,{children:[(0,M.jsx)(`div`,{className:O.content,children:(0,M.jsx)(de,{isLoading:i,isFetching:a,isError:c.length===0&&o,isEmpty:c.length===0,error:{description:r(`We couldn't load posts and pages. Please try again in a moment.`,`jetpack-premium-analytics-pkg`),actions:[{label:r(`Retry`,`jetpack-premium-analytics-pkg`),onClick:s}]},empty:{icon:p,description:r(`No views in this period.`,`jetpack-premium-analytics-pkg`)},renderLoading:(0,M.jsx)(b,{rows:10}),children:(0,M.jsx)(N,{rows:c,withComparison:d,detailSearch:u})})}),(0,M.jsxs)(x,{children:[(0,M.jsx)(S,{report:`posts`,section:`posts-pages`}),h&&(0,M.jsx)(oe,{columns:m,rows:ee,filename:_})]})]})}function ke(e){switch(e){case`author`:return r(`Authors`,`jetpack-premium-analytics-pkg`);case`cat`:return r(`Categories`,`jetpack-premium-analytics-pkg`);case`err`:return r(`Error`,`jetpack-premium-analytics-pkg`);case`home`:return r(`Homepage (Latest posts)`,`jetpack-premium-analytics-pkg`);case`search`:return r(`Searches`,`jetpack-premium-analytics-pkg`);case`tag`:return r(`Tags`,`jetpack-premium-analytics-pkg`);case`tax`:return r(`Taxonomies`,`jetpack-premium-analytics-pkg`);case`date`:return r(`Dates`,`jetpack-premium-analytics-pkg`);case`multiple`:return r(`Aggregated`,`jetpack-premium-analytics-pkg`);case`other`:return r(`Others`,`jetpack-premium-analytics-pkg`);case`post_type`:return r(`Post types`,`jetpack-premium-analytics-pkg`);default:return e.charAt(0).toUpperCase()+e.slice(1).toLowerCase()}}function Ae(e){let t=e.replace(/_/g,` `);return t.charAt(0).toUpperCase()+t.slice(1)}function k(e,t=!0){return e.map(e=>{let n=String(e.label??``),i=e.children?.length?k(e.children,!1):void 0,a=ue(e.link),o=n;return t?o=ke(n):i&&(o=Ae(n)),{label:o||r(`Untitled`,`jetpack-premium-analytics-pkg`),value:e.value,type:`archive`,...e.previousValue===void 0?{}:{previousValue:e.previousValue},...a?{href:a}:{},...i?{children:i}:{}}})}function je(){let{reportParams:e}=f(),{drillDownItem:t,drillDown:n,resetDrillDown:i}=d(),{comparisonRows:a,hasComparison:o,isLoading:s,isFetching:c,isError:l,refetch:u}=ee(e,{maxRows:10}),m=(0,j.useMemo)(()=>k((a?.rows??[]).filter(e=>String(e.label)!==`home`)),[a]),h=o,{activeRows:g,backLabel:_,isPathResolved:v}=(0,j.useMemo)(()=>{let e=m,n=null,i=null,a=!0;for(let o of t??[]){let t=e.find(e=>e.label===o);if(!t?.children?.length){a=!1;break}n=i??r(`All archives`,`jetpack-premium-analytics-pkg`),e=t.children,i=o}return{activeRows:e,backLabel:n,isPathResolved:a}},[m,t]);(0,j.useEffect)(()=>{t&&!v&&!s&&!c&&i()},[t,v,s,c,i]);let y=(0,j.useCallback)(e=>{n([...t??[],e.label])},[n,t]),te=(0,j.useCallback)(()=>{let e=t??[];if(e.length<=1){i();return}n(e.slice(0,-1))},[n,t,i]),ne=g===m?null:(0,M.jsx)(le,{label:_??r(`All archives`,`jetpack-premium-analytics-pkg`),ariaLabel:r(`Back to the previous archive list`,`jetpack-premium-analytics-pkg`),onClick:te});return(0,M.jsxs)(`div`,{className:O.content,children:[ne,(0,M.jsx)(de,{isLoading:s,isFetching:c,isError:m.length===0&&l,isEmpty:g.length===0,error:{description:r(`We couldn't load archives. Please try again in a moment.`,`jetpack-premium-analytics-pkg`),actions:[{label:r(`Retry`,`jetpack-premium-analytics-pkg`),onClick:u}]},empty:{icon:p,description:r(`No views in this period.`,`jetpack-premium-analytics-pkg`)},renderLoading:(0,M.jsx)(b,{rows:10}),children:(0,M.jsx)(N,{rows:g,withComparison:h,onDrillDown:y})})]})}function A({attributes:e={}}){let t=e.contentView??`posts`;return(0,M.jsx)(u,{attributes:e,children:(0,M.jsx)(`div`,{className:O.root,children:t===`archives`?(0,M.jsxs)(M.Fragment,{children:[(0,M.jsx)(je,{}),(0,M.jsx)(x,{children:(0,M.jsx)(S,{report:`posts`,section:`archives`})})]}):(0,M.jsx)(Oe,{})})})}var j,M,Me,N,Ne=t((()=>{_(),m(),fe(),i(),j=e(n(),1),we(),M=o(),Me={type:`number`,options:{useMultipliers:!0,decimals:0}},N=({rows:e=[],withComparison:t=!1,onDrillDown:n,detailSearch:r={}})=>(0,M.jsx)(re,{data:Ee(e,t,r,n),withComparison:t,withOverlayLabel:!0,showLegend:!1,dataFormat:Me})})),P,Pe=t((()=>{i(),s(),P={icon:c,attributes:[{id:`contentView`,label:r(`View`,`jetpack-premium-analytics-pkg`),type:`jpa/select`,elements:[{label:r(`Posts & pages`,`jetpack-premium-analytics-pkg`),value:`posts`},{label:r(`Archives`,`jetpack-premium-analytics-pkg`),value:`archives`}],relevance:`high`}],example:{attributes:{contentView:`posts`}}}})),F,I,L,R,z,B,V,Fe=t((()=>{F=`jpa/stats-top-posts`,I=`Top pages`,L=`Your most viewed posts, pages, and archives.`,R={content:`Your most popular posts and pages, sorted by views.`,links:[{label:`Learn more`,href:`https://jetpack.com/support/jetpack-stats/`}]},z=`stats`,B=`framed`,V={name:F,title:I,description:L,help:R,category:z,presentation:B}}));function H({withComparison:e,contentView:t}){return(0,W.jsx)(A,{attributes:{contentView:t,reportParams:h(e)}})}function Ie({withComparison:e,contentView:t,...n}){return(0,W.jsx)(me,{...n,widgetType:Re,renderModule:Le,renderComponent:A,attributes:{contentView:t,reportParams:h(e)}})}function U(e){return(0,W.jsx)(A,{attributes:{contentView:`posts`,reportParams:h(!1,e)}})}var W,Le,Re,G,ze,K,q,J,Y,X,Z,Q,$;t((()=>{_(),ae(),Se(),he(),Ce(),_e(),pe(),ve(),Ne(),Pe(),Fe(),W=o(),ie(),xe(),Le=`storybook/top-posts`,Re=ge(V,P),G=e=>(0,W.jsx)(`div`,{style:{width:`100%`,height:`340px`},children:(0,W.jsx)(e,{})}),ze={title:`Packages/Premium Analytics/Widgets/TopPosts`,component:A,tags:[`autodocs`],argTypes:{withComparison:{control:`boolean`,description:`Include previous-period comparison report params and deltas.`},contentView:{control:`inline-radio`,options:[`posts`,`archives`],description:`Which report the widget shows: posts & pages, or aggregate archive-page views. Rendered as an inline control in the widget frame header by the host.`}},parameters:{docs:{description:{component:'The "Most viewed" widget. Shows the most-viewed posts and pages as a ranked leaderboard, using the global dashboard date range; each row links to the published content, and the homepage-as-latest-posts views from the archives report are folded into the list. The `contentView` attribute switches to aggregate archive-page views (taxonomy, post-type, search, and date archives).'}}}},K={render:H,args:{withComparison:!1,contentView:`posts`},decorators:[G,C]},q={render:H,args:{withComparison:!0,contentView:`posts`},decorators:[G,C]},J={render:H,args:{withComparison:!0,contentView:`archives`},decorators:[G,C],parameters:{docs:{description:{story:`The Archives view: one aggregate row per archive type (taxonomy, post-type, and search archives), with comparison deltas when the previous period overlaps. Grouped rows drill down into their individual archive pages (taxonomies drill twice: taxonomy → terms) with a back link, following the Locations/Clicks drill-down convention. The homepage entry is surfaced in the Posts & pages view instead, matching the Stats card.`}}}},Y={render:e=>(0,W.jsx)(Ie,{...e}),args:{...be,withComparison:!0,contentView:`posts`},argTypes:{...ye,withComparison:{control:`boolean`,description:`Include previous-period comparison report params and deltas.`}}},X={render:()=>U(`last-90-days`),tags:[`!autodocs`],decorators:[w,C],beforeEach:()=>(T(`stats/top-posts`,`loading`),()=>T(`stats/top-posts`,null))},Z={render:()=>U(`last-7-days`),tags:[`!autodocs`],decorators:[w,C],beforeEach:()=>(T(`stats/top-posts`,`error`),()=>T(`stats/top-posts`,null))},Q={render:()=>U(`last-365-days`),tags:[`!autodocs`],decorators:[w,C],beforeEach:()=>(T(`stats/top-posts`,`empty`),()=>T(`stats/top-posts`,null))},K.parameters={...K.parameters,docs:{...K.parameters?.docs,source:{originalSource:`{
+  render: renderTopPostsWidget,
+  args: {
+    withComparison: false,
+    contentView: 'posts'
+  },
+  decorators: [withTopPostsCanvas, withStoryRouter]
+}`,...K.parameters?.docs?.source}}},q.parameters={...q.parameters,docs:{...q.parameters?.docs,source:{originalSource:`{
+  render: renderTopPostsWidget,
+  args: {
+    withComparison: true,
+    contentView: 'posts'
+  },
+  decorators: [withTopPostsCanvas, withStoryRouter]
+}`,...q.parameters?.docs?.source}}},J.parameters={...J.parameters,docs:{...J.parameters?.docs,source:{originalSource:`{
+  render: renderTopPostsWidget,
+  args: {
+    withComparison: true,
+    contentView: 'archives'
+  },
+  decorators: [withTopPostsCanvas, withStoryRouter],
+  parameters: {
+    docs: {
+      description: {
+        story: 'The Archives view: one aggregate row per archive type (taxonomy, post-type, and search archives), with comparison deltas when the previous period overlaps. Grouped rows drill down into their individual archive pages (taxonomies drill twice: taxonomy → terms) with a back link, following the Locations/Clicks drill-down convention. The homepage entry is surfaced in the Posts & pages view instead, matching the Stats card.'
+      }
+    }
+  }
+}`,...J.parameters?.docs?.source}}},Y.parameters={...Y.parameters,docs:{...Y.parameters?.docs,source:{originalSource:`{
+  render: args => <TopPostsDashboardStory {...args} />,
+  args: {
+    ...DEFAULT_WIDGET_DASHBOARD_STORY_ARGS,
+    withComparison: true,
+    contentView: 'posts'
+  },
+  argTypes: {
+    ...widgetDashboardWithWidgetArgTypes,
+    withComparison: {
+      control: 'boolean',
+      description: 'Include previous-period comparison report params and deltas.'
+    }
+  }
+}`,...Y.parameters?.docs?.source}}},X.parameters={...X.parameters,docs:{...X.parameters?.docs,source:{originalSource:`{
+  render: () => renderTopPostsOnPreset('last-90-days'),
+  // Off the shared autodocs page — path-keyed override; see forceStatsMockState.
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas, withStoryRouter],
+  beforeEach: () => {
+    forceStatsMockState('stats/top-posts', 'loading');
+    return () => forceStatsMockState('stats/top-posts', null);
+  }
+}`,...X.parameters?.docs?.source},description:{story:`First load: the fetch is in flight, so the widget shows its loading state. The
+mock is forced to never resolve for the duration of this story.`,...X.parameters?.docs?.description}}},Z.parameters={...Z.parameters,docs:{...Z.parameters?.docs,source:{originalSource:`{
+  render: () => renderTopPostsOnPreset('last-7-days'),
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas, withStoryRouter],
+  beforeEach: () => {
+    forceStatsMockState('stats/top-posts', 'error');
+    return () => forceStatsMockState('stats/top-posts', null);
+  }
+}`,...Z.parameters?.docs?.source},description:{story:`The fetch failed: the widget shows its error state with a Retry action (which
+re-runs the query — still mocked as failing while this story is active).`,...Z.parameters?.docs?.description}}},Q.parameters={...Q.parameters,docs:{...Q.parameters?.docs,source:{originalSource:`{
+  render: () => renderTopPostsOnPreset('last-365-days'),
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas, withStoryRouter],
+  beforeEach: () => {
+    forceStatsMockState('stats/top-posts', 'empty');
+    return () => forceStatsMockState('stats/top-posts', null);
+  }
+}`,...Q.parameters?.docs?.source},description:{story:`Resolved with no rows: the widget shows its empty state (the neutral chart
+glyph and "No views in this period.").`,...Q.parameters?.docs?.description}}},$=[`Default`,`WithComparison`,`Archives`,`WidgetDashboardWithWidget`,`Loading`,`Error`,`Empty`]}))();export{J as Archives,K as Default,Q as Empty,Z as Error,X as Loading,Y as WidgetDashboardWithWidget,q as WithComparison,$ as __namedExportsOrder,ze as default};
