@@ -28,6 +28,7 @@ This is an alpha version! The changes listed here are not final.
 ### Fixed
 - Premium Analytics: Resolve Storybook internal package imports from source.
 - Resolve @wordpress/data and @wordpress/notices to a single copy, so stores register and select against the same registry regardless of how pnpm lays out peer instantiations.
+- Use the modern WordPress admin color scheme (blueberry) as the default admin theme color in stories.
 
 ## 2.0.0 - 2026-04-13
 ### Added
