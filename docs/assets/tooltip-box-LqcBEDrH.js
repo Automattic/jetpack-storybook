@@ -1,1 +1,0 @@
-import{i as e}from"./preload-helper-usAeo7Bx.js";import{t}from"./jsx-runtime-D2pHJD-r.js";import{a as n}from"./tooltip-BsY65qkO.js";import{t as r}from"./src-BanKyDVD.js";var i,a,o,s=e((()=>{r(),i=t(),a={position:`static`,transform:`none`},o=({children:e})=>(0,i.jsx)(n,{top:0,left:0,style:a,children:e})}));export{s as n,o as t};
