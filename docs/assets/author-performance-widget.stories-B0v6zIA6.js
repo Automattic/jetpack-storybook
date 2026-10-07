@@ -1,0 +1,30 @@
+import{i as e}from"./preload-helper-usAeo7Bx.js";import{n as t,r as n,t as r}from"./build-module-2QZQpBH2.js";import{t as i}from"./jsx-runtime-D2pHJD-r.js";import{Tn as a,Vu as o,ku as s,t as c}from"./build-module-DNhkEVJn.js";import{M as l,t as u}from"./src-DzwlO62w.js";import{t as d,u as f}from"./src-ClJ6D7Xj.js";import{Dn as p,Gn as m,ft as ee,gn as te,qn as ne,r as h,t as g}from"./src-D1o2DX4R.js";import{_ as re,it as ie,mt as _,x as v}from"./charts-provider-CYoV7Npg.js";import{t as y}from"./chart-empty-state-DPTMCJ4g.js";import{n as b,r as x}from"./register-report-mocks-CMisiN93.js";import{t as S}from"./widget-state-BemlGILk.js";import{r as ae,t as oe}from"./metric-tabs-chart-skeleton-Lsq0nFzX.js";import{t as C}from"./src-BOXkWZkx.js";import{a as se,d as ce,f as le,i as ue,n as de,p as fe,r as w,u as pe}from"./with-widget-canvas-DRBUFHXV.js";import{n as me,t as he}from"./preset-for-story-interval-D8r47f-l.js";var T,E,D=e((()=>{T=`_root_10isw_1`,E={root:T}}));function O(e,t,n){let{primary:r,isLoading:i,isFetching:a,isError:s,error:c,refetch:l}=ee((0,o.useMemo)(()=>({...t,period:n,summarize:0,max:0}),[t,n]),{enabled:e>0});return{current:(0,o.useMemo)(()=>(r.data?.data??[]).flatMap(t=>{let n=f(t.time_interval);return n?[{date:n,value:m(t.items,e)?.views??0}]:[]}).sort((e,t)=>e.date.getTime()-t.date.getTime()),[r.data,e]),isLoading:i,isFetching:a,isError:s,error:c,hasData:!!r.data,refetch:l}}var k=e((()=>{g(),d(),s()}));function A({chartType:e}){let{reportParams:r}=v(),i=ne(r.author_id),{current:a,isLoading:s,isFetching:c,isError:u,error:d,hasData:f,refetch:p}=O(i,r,h(r.interval,te)),m=(0,o.useMemo)(()=>[{key:`views`,label:t(`Views`,`jetpack-premium-analytics-pkg`),countLabel:e=>n(`%s View`,`%s Views`,e,`jetpack-premium-analytics-pkg`),value:a.reduce((e,t)=>e+t.value,0),current:a}],[a]);return(0,M.jsx)(`div`,{className:E.root,children:(0,M.jsx)(S,{isLoading:s,isFetching:c,isError:!f&&u,isEmpty:i<=0,error:_(d,{retryDescription:t(`We couldn't load this author's views. Please try again in a moment.`,`jetpack-premium-analytics-pkg`),onRetry:p}),empty:{icon:l,description:t(`Open an author to see their views here.`,`jetpack-premium-analytics-pkg`)},renderLoading:(0,M.jsx)(oe,{}),children:(0,M.jsx)(ae,{metrics:m,dataFormat:N,chartType:e,empty:(0,M.jsx)(y,{})})})})}function j({attributes:e={}}){return(0,M.jsx)(re,{attributes:e,children:(0,M.jsx)(A,{chartType:e?.chartType===`line`?`line`:`bar`})})}var M,N,P=e((()=>{g(),u(),C(),s(),r(),D(),k(),M=i(),N={type:`number`,options:{useMultipliers:!0,decimals:0}}})),F,I=e((()=>{c(),C(),F={icon:a,attributes:[ie()],example:{attributes:{chartType:`bar`}}}})),L,R,z,B,V,H,U,ge=e((()=>{L=`jpa/author-performance`,R=`Author performance`,z=`How the posts of the author being viewed performed over the selected period.`,B={content:`This author’s views over the selected period. Views come from the site’s 20 most viewed authors per period, so on a site with more authors, a period where this author ranks lower counts as zero.`},V=`stats`,H=`framed`,U={name:L,title:R,description:z,help:B,category:V,presentation:H}}));function W({hasAuthorScope:e,interval:t,chartType:n}){return{chartType:n,reportParams:{...p(!1,me(t)),interval:t,...e?{author_id:q}:{}}}}function G(e){return(0,K.jsx)(j,{attributes:W(e)})}function _e({hasAuthorScope:e,interval:t,chartType:n,...r}){return(0,K.jsx)(ce,{...r,widgetType:ue(U,F),renderModule:J,renderComponent:j,attributes:W({hasAuthorScope:e,interval:t,chartType:n})})}var K,q,J,Y,X,Z,Q,$;e((()=>{g(),b(),le(),se(),he(),de(),P(),I(),ge(),K=i(),x(),q=101,J=`storybook/author-performance`,Y={title:`Packages/Premium Analytics/Widgets/AuthorPerformance`,component:j,tags:[`autodocs`],argTypes:{hasAuthorScope:{control:`boolean`,description:"Include the `author_id` report param the author detail page seeds from its URL."},interval:{control:`radio`,options:[`day`,`week`,`month`],description:`The page chart interval the endpoint buckets by. Monthly moves the story range to 90 days, the shortest preset that allows it.`},chartType:{control:`radio`,options:[`line`,`bar`],description:`The "Chart type" toolbar attribute rendered by the widget host.`}},parameters:{docs:{description:{component:'The "Author performance" widget of the author detail page: the scoped author\'s views per chart interval from `stats/top-authors`, as a bar chart by default. Without an author scope the widget renders a scopeless empty state.'}}}},X={render:G,args:{hasAuthorScope:!0,interval:`day`,chartType:`bar`},decorators:[w]},Z={render:G,args:{hasAuthorScope:!1,interval:`day`,chartType:`bar`},decorators:[w]},Q={render:e=>(0,K.jsx)(_e,{...e}),args:{...pe,widgetWidth:3,widgetHeight:2,hasAuthorScope:!0,interval:`day`,chartType:`bar`},argTypes:{...fe}},X.parameters={...X.parameters,docs:{...X.parameters?.docs,source:{originalSource:`{
+  render: renderAuthorPerformance,
+  args: {
+    hasAuthorScope: true,
+    interval: 'day',
+    chartType: 'bar'
+  },
+  decorators: [withWidgetCanvas]
+}`,...X.parameters?.docs?.source}}},Z.parameters={...Z.parameters,docs:{...Z.parameters?.docs,source:{originalSource:`{
+  render: renderAuthorPerformance,
+  args: {
+    hasAuthorScope: false,
+    interval: 'day',
+    chartType: 'bar'
+  },
+  decorators: [withWidgetCanvas]
+}`,...Z.parameters?.docs?.source}}},Q.parameters={...Q.parameters,docs:{...Q.parameters?.docs,source:{originalSource:`{
+  render: args => <AuthorPerformanceDashboardStory {...args} />,
+  args: {
+    ...DEFAULT_WIDGET_DASHBOARD_STORY_ARGS,
+    widgetWidth: 3,
+    widgetHeight: 2,
+    hasAuthorScope: true,
+    interval: 'day',
+    chartType: 'bar'
+  },
+  argTypes: {
+    ...widgetDashboardWithWidgetArgTypes
+  }
+}`,...Q.parameters?.docs?.source}}},$=[`Default`,`NoAuthorScope`,`WidgetDashboardWithWidget`]}))();export{X as Default,Z as NoAuthorScope,Q as WidgetDashboardWithWidget,$ as __namedExportsOrder,Y as default};
