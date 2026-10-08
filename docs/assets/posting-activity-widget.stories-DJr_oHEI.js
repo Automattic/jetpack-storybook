@@ -1,0 +1,33 @@
+import{c as e,i as t}from"./preload-helper-usAeo7Bx.js";import{t as n}from"./react-DVCOKQW8.js";import{n as r,r as i,t as a,u as o}from"./build-module-2QZQpBH2.js";import{t as s}from"./jsx-runtime-D2pHJD-r.js";import{kr as ee,l as c,t as l}from"./build-module-DNhkEVJn.js";import{K as u,T as d,hn as f,t as te}from"./date-fns-I6jayRk5.js";import{n as ne,t as p}from"./build-module-Dga_Ji4O.js";import{b as m,q as re,t as ie}from"./src-rrY7vAoW.js";import{In as h,t as g,tt as ae}from"./src-B_ewYU21.js";import{_ as oe,dt as se}from"./charts-provider-wi-ELrfw.js";import{r as _}from"./metric-sparkline-skeleton-BjFxLETd.js";import{n as ce,r as le}from"./register-report-mocks-CGgu1MeX.js";import{t as ue}from"./widget-state-Bk9-2o7J.js";import{t as de}from"./month-calendar-heatmap-Bvovmhx0.js";import{t as fe}from"./src-BB_F9rbl.js";import{a as v,g as y,h as b,i as pe,m as me,n as he,p as ge,r as x}from"./with-widget-canvas-DZaa16fG.js";import{n as _e,t as S}from"./force-stats-mock-state-FufTukWt.js";import{n as ve,r as ye,t as be}from"./with-site-locale-DYVUgyWe.js";function xe(){let{from:e,to:t,preset:n,interval:i}=h(!1,re),a=(0,w.useMemo)(()=>({start:m(e),end:m(t)}),[e,t]),{data:o,isLoading:s,isFetching:c,isError:l,error:u,refetch:d}=ae((0,w.useMemo)(()=>({from:e,to:t,preset:n,interval:i,max:D}),[e,t,n,i])),f=o??E;return(0,T.jsx)(ue,{isLoading:s,isFetching:c,isError:l&&!o,error:se(u,{retryDescription:r(`We couldn't load posting activity. Please try again in a moment.`,`jetpack-premium-analytics-pkg`),onRetry:d}),renderLoading:(0,T.jsx)(_,{}),children:(0,T.jsx)(de,{valueByDay:f,range:a,ariaLabel:r(`Monthly posting activity`,`jetpack-premium-analytics-pkg`),formatValue:O,emptyLabel:r(`No posts`,`jetpack-premium-analytics-pkg`),icon:ee,lessLabel:r(`Fewer posts`,`jetpack-premium-analytics-pkg`),moreLabel:r(`More posts`,`jetpack-premium-analytics-pkg`)})})}function C({attributes:e={}}){return(0,T.jsx)(oe,{attributes:e,children:(0,T.jsx)(xe,{})})}var w,T,E,D,O,k=t((()=>{g(),ie(),fe(),a(),l(),w=e(n(),1),T=s(),E={},D=3e3,O=e=>o(i(`%d post`,`%d posts`,e,`jetpack-premium-analytics-pkg`),e)})),A,j=t((()=>{l(),A={icon:c}})),M,N,P,F,I,L,R,Se=t((()=>{M=`jpa/posting-activity`,N=`Monthly posting activity`,P=`How often you publish — a calendar heatmap of posts per day.`,F={content:`The last 12 months only, one square per day — the darker the square, the more you published that day. Earlier months are not shown.`},I=`stats`,L=`framed`,R={name:M,title:N,description:P,help:F,category:I,presentation:L}}));function z(e){return S(U,e),()=>{S(U,null)}}function Ce(){let e=f(new Date),t={},n=1337,r=()=>(n=n*16807%2147483647,n/2147483647);for(let n=0;n<W;n++){let i=d(e,n);if(r()<.55)continue;let a=1+Math.floor(r()*5);t[String(u(i))]=a}return{data:t}}function B(){return(0,V.jsx)(C,{attributes:{reportParams:h()}})}function we(e){return(0,V.jsx)(me,{...e,widgetType:pe(R,A),renderModule:K,renderComponent:C,attributes:{reportParams:h(!0)}})}var V,H,U,W,G,K,q,J,Y,X,Z,Q,$;t((()=>{g(),ne(),te(),ce(),_e(),b(),v(),be(),he(),k(),j(),Se(),V=s(),le(),H=`/jetpack-premium-analytics/v1/proxy/v1.1/stats/streak`,U=`stats/streak`,W=365,G=async(e,t)=>{if(!(e.path??e.url??``).startsWith(H))return t(e);let n=Ce();return e.parse===!1?new Response(JSON.stringify(n),{status:200,headers:{"Content-Type":`application/json`}}):n},p.use(G),K=`storybook/posting-activity`,q={title:`Packages/Premium Analytics/Widgets/PostingActivity`,component:C,tags:[`autodocs`],decorators:[ye],argTypes:{...ve},parameters:{docs:{description:{component:'The "Monthly posting activity" widget: one mini calendar per month of the last 12, shaded by the posts published each day, with the month names beneath. The window is the widget\'s own; the dashboard date range does not move it. The close-up canvas is a one-column cell, so the grid scrolls sideways there; `WidgetDashboardWithWidget` below shows the full-width placement, where the months spread out.'}}}},J={render:B,decorators:[x]},Y={render:B,tags:[`!autodocs`],decorators:[x],beforeEach:()=>z(`loading`)},X={render:B,tags:[`!autodocs`],decorators:[x],beforeEach:()=>z(`error`)},Z={render:B,tags:[`!autodocs`],decorators:[x],beforeEach:()=>z(`empty`)},Q={render:e=>(0,V.jsx)(we,{...e}),args:{...ge,widgetWidth:3,widgetHeight:1},argTypes:{...y}},J.parameters={...J.parameters,docs:{...J.parameters?.docs,source:{originalSource:`{
+  render: renderPostingActivity,
+  decorators: [withWidgetCanvas]
+}`,...J.parameters?.docs?.source},description:{story:`Default populated state — the last 12 months of posting activity.`,...J.parameters?.docs?.description}}},Y.parameters={...Y.parameters,docs:{...Y.parameters?.docs,source:{originalSource:`{
+  render: renderPostingActivity,
+  // Off the shared autodocs page — path-keyed override; see forceStatsMockState.
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas],
+  beforeEach: () => forceStreakState('loading')
+}`,...Y.parameters?.docs?.source},description:{story:`First load: the fetch is in flight, so the widget shows its loading state. The
+mock is forced to never resolve for the duration of this story.`,...Y.parameters?.docs?.description}}},X.parameters={...X.parameters,docs:{...X.parameters?.docs,source:{originalSource:`{
+  render: renderPostingActivity,
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas],
+  beforeEach: () => forceStreakState('error')
+}`,...X.parameters?.docs?.source},description:{story:`The fetch failed: the widget shows its error state with a Retry action (which
+re-runs the query — still mocked as failing while this story is active).`,...X.parameters?.docs?.description}}},Z.parameters={...Z.parameters,docs:{...Z.parameters?.docs,source:{originalSource:`{
+  render: renderPostingActivity,
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas],
+  beforeEach: () => forceStreakState('empty')
+}`,...Z.parameters?.docs?.source},description:{story:`Resolved with no posts in the last 12 months: the calendar, every day empty.`,...Z.parameters?.docs?.description}}},Q.parameters={...Q.parameters,docs:{...Q.parameters?.docs,source:{originalSource:`{
+  render: args => <PostingActivityDashboardStory {...args} />,
+  args: {
+    ...DEFAULT_WIDGET_DASHBOARD_STORY_ARGS,
+    // The Insights default: full width, one row.
+    widgetWidth: 3,
+    widgetHeight: 1
+  },
+  argTypes: {
+    ...widgetDashboardWithWidgetArgTypes
+  }
+}`,...Q.parameters?.docs?.source}}},$=[`Default`,`Loading`,`Error`,`Empty`,`WidgetDashboardWithWidget`]}))();export{J as Default,Z as Empty,X as Error,Y as Loading,Q as WidgetDashboardWithWidget,$ as __namedExportsOrder,q as default};
