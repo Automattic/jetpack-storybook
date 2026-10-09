@@ -1,0 +1,1 @@
+import{i as e}from"./preload-helper-usAeo7Bx.js";import{t}from"./jsx-runtime-D2pHJD-r.js";import{La as n,Pa as r}from"./iframe-CNH1yNgy.js";var i,a,o=e((()=>{n(),i=t(),a=({data:e})=>(0,i.jsxs)(i.Fragment,{children:[e.label,`: `,e.valueDisplay||r(e.value)]})}));export{o as n,a as t};
