@@ -1,5 +1,0 @@
-import{i as e}from"./preload-helper-usAeo7Bx.js";import{n as t,t as n}from"./external-link-2i2xG3GF.js";var r,i,a,o;e((()=>{t(),r={title:`Packages/Premium Analytics/Widgets Toolkit/Components/ExternalLink`,component:n,tags:[`autodocs`],parameters:{docs:{description:{component:`Link to a page outside the dashboard. It opens in a new tab and carries the design system's outbound marker.`}}},args:{href:`https://example.com/hello-world/`,children:`Hello world`}},i={},a={args:{variant:`default`}},i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:`{}`,...i.parameters?.docs?.source},description:{story:`The house style: the link inherits the surrounding text colour.`,...i.parameters?.docs?.description}}},a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:`{
-  args: {
-    variant: 'default'
-  }
-}`,...a.parameters?.docs?.source},description:{story:`The design system's own link colours, for a link inside running text.`,...a.parameters?.docs?.description}}},o=[`Unstyled`,`Default`]}))();export{a as Default,i as Unstyled,o as __namedExportsOrder,r as default};
