@@ -1,0 +1,82 @@
+import{c as e,i as t}from"./preload-helper-usAeo7Bx.js";import{t as n}from"./react-DVCOKQW8.js";import{n as r,t as i}from"./build-module-2QZQpBH2.js";import{t as a}from"./jsx-runtime-D2pHJD-r.js";import{C as o,t as s}from"./build-module-Cm3Kd3py.js";import{q as c,t as l}from"./src-rrY7vAoW.js";import{Dt as u,E as d,Ft as f,Nt as ee,Sn as p,T as m,_n as h,_t as g,t as _,yn as v}from"./src-2a88cYSx.js";import{C as y,D as b,Tt as x,bt as te,vt as ne,y as re}from"./charts-provider-Bk38zIJq.js";import{n as ie,r as ae}from"./register-report-mocks-iviv8n0s.js";import{t as S}from"./widget-state-BlUbrcDn.js";import{n as oe,r as C}from"./with-story-router-Beljd9ki.js";import{t as se}from"./post-highlight-card-skeleton-B3OnzJeD.js";import{b as ce}from"./components-Dco1DlYi.js";import{t as le}from"./src-ZGXLokk_.js";import{a as ue,g as w,h as de,i as fe,m as pe,n as me,p as T,r as E}from"./with-widget-canvas-Agk44m9m.js";import{n as he,t as ge}from"./register-stats-mocks-BsY0KMTS.js";import{n as _e,t as D}from"./force-stats-mock-state-Djnm6Goo.js";function ve(e,t){let n=u((0,O.useMemo)(()=>({...e,max:A}),[e]),{maxRows:1,postTypes:k,enabled:t}),r=t?n.comparisonRows?.rows[0]:void 0,i=Number(r?.id??0)||0,a=f(m(i));return{topRow:r,content:a.data??null,isLoading:n.isLoading||i>0&&a.isLoading,isFetching:n.isFetching||a.isFetching,isError:n.isError,error:n.error,refetch:()=>{n.refetch(),i>0&&a.refetch()}}}function ye(e,t,n){let r=g((0,O.useMemo)(()=>({...t,max:0}),[t]),{enabled:n}),i=(0,O.useMemo)(()=>n?h(r.comparisonRows?.rows,e)?.children??[]:[],[n,r.comparisonRows,e]),a=(0,O.useMemo)(()=>i.map(e=>Number(e.id)||0).filter(Boolean),[i]),o=f(d(a)),s=(0,O.useMemo)(()=>{let e=new Set((o.data??[]).map(e=>e.id));return i.find(t=>e.has(Number(t.id)))},[i,o.data]),c=Number(s?.id??0)||0,l=a.length>0,u=l&&o.isError;return{topRow:s,content:o.data?.find(e=>e.id===c)??null,isLoading:r.isLoading||l&&o.isLoading,isFetching:r.isFetching||o.isFetching,isError:r.isError||u,error:r.error??(u?o.error:null),refetch:()=>{r.refetch(),l&&o.refetch()}}}var O,k,A,be=t((()=>{_(),O=e(n(),1),k=[`post`],A=20}));function xe(e){let t=!!e&&e.authorId>0,{preset:n,from:r,to:i,interval:a}=t?e.reportParams:p(!1,M),o=(0,j.useMemo)(()=>({preset:n,from:r,to:i,interval:a}),[n,r,i,a]),s=(0,j.useMemo)(()=>({from:r,to:i,interval:a}),[r,i,a]),c=ve(s,!t),l=ye(e?.authorId??0,s,t),u=t?l:c,{topRow:d,content:f}=u,m=Number(d?.id??0)||0,h=ee({postId:m,fields:[`views`,`like_count`,`post`]}),g=h.data,_=g?.post?.ID,v=g&&(_===void 0||_===m)?g:void 0,y=m>0&&!v&&!h.isError,b=u.isLoading||m>0&&(h.isLoading||y),x=u.isFetching||h.isFetching;return{post:d?{id:m,title:f?.title||String(d.label??``),url:f?.url||d.link||``,date:f?.date||(typeof d.date==`string`?d.date:``),imageUrl:f?.imageUrl??``,imageAlt:f?.imageAlt??``,views:v?.views,likeCount:v?.like_count,commentCount:v?.post?.comment_count}:null,range:o,isLoading:b,isFetching:x,isError:u.isError,error:u.error,refetch:()=>{u.refetch(),m>0&&h.refetch()}}}var j,M,Se=t((()=>{_(),l(),j=e(n(),1),be(),M=c}));function Ce({authorScoped:e}){let{reportParams:t}=y(),n=e?v(t.author_id):0;return e&&!n?(0,P.jsx)(S,{isLoading:!1,isError:!1,isEmpty:!0,empty:{icon:o,description:r(`Open an author to see their most viewed post here.`,`jetpack-premium-analytics-pkg`)},children:null}):(0,P.jsx)(we,{authorId:n})}function we({authorId:e}){let{reportParams:t}=y(),n=b(),{post:i,range:a,isLoading:s,isFetching:c,isError:l,error:u,refetch:d}=xe(e?{authorId:e,reportParams:t}:void 0),f=i?[{key:`views`,label:r(`Views`,`jetpack-premium-analytics-pkg`),value:i.views},{key:`likes`,label:r(`Likes`,`jetpack-premium-analytics-pkg`),value:i.likeCount},{key:`comments`,label:r(`Comments`,`jetpack-premium-analytics-pkg`),value:i.commentCount}]:[],ee={...a,...n,...x(e?`authors`:`posts`,e?void 0:`posts-pages`)};return(0,P.jsx)(S,{isLoading:s,isFetching:c,isError:l,isEmpty:!i,error:ne(u,{retryDescription:r(`We couldn't load your most popular post. Please try again in a moment.`,`jetpack-premium-analytics-pkg`),onRetry:d}),empty:e?void 0:{icon:o,description:r(`No post views in the last 12 months.`,`jetpack-premium-analytics-pkg`)},renderLoading:(0,P.jsx)(se,{}),children:i&&(0,P.jsx)(ce,{title:i.title,url:i.url,postId:i.id,detailSearch:ee,date:i.date,imageUrl:i.imageUrl,imageAlt:i.imageAlt,metrics:f})})}function N({attributes:e={}}){return(0,P.jsx)(re,{attributes:e,children:(0,P.jsx)(Ce,{authorScoped:e.authorScoped===!0})})}var P,Te=t((()=>{_(),te(),le(),i(),s(),Se(),P=a()})),Ee,De=t((()=>{Ee={attributes:[],example:{attributes:{}}}})),F,I,L,R,z,B,V,Oe,ke=t((()=>{F=`jpa/popular-post`,I=`jpa/trending-up`,L=`Most popular in the last year`,R=`Your most-viewed post of the last 12 months, with its all-time stats.`,z={content:`Your most-viewed post of the last 12 months, with its all-time views, likes, and comments.`},B=`stats`,V=`framed`,Oe={name:F,icon:I,title:L,description:R,help:z,category:B,presentation:V}}));function H(){return(0,W.jsx)(N,{attributes:{reportParams:p()}})}function U(e){return(0,W.jsx)(pe,{...e,widgetType:fe(Oe,Ee),renderModule:Ae,renderComponent:N,attributes:{reportParams:p(!0)}})}var W,Ae,je,G,K,q,J,Y,X,Z,Q,$;t((()=>{_(),ie(),ge(),ue(),_e(),de(),oe(),me(),Te(),De(),ke(),W=a(),ae(),he(),Ae=`storybook/popular-post`,je={title:`Packages/Premium Analytics/Widgets/PopularPost`,component:N,tags:[`autodocs`],parameters:{docs:{description:{component:"The \"Most popular in the last year\" widget shows the site's most-viewed post of the last 12 months, with its publish date and its all-time views, likes, and comments. The window is the widget's own — the dashboard date range does not change which post wins — and it only picks the winner: every tile comes from the all-time `stats/post` response, so the three cannot measure different periods. There is no `WithComparison` story: the card shows no period-over-period delta, so the dashboard story below carries the comparison report params instead."}}}},G={render:H,decorators:[E,C]},K={render:H,tags:[`!autodocs`],decorators:[E,C],beforeEach:()=>(D(`stats/top-posts`,`loading`),()=>D(`stats/top-posts`,null))},q={render:H,tags:[`!autodocs`],decorators:[E,C],beforeEach:()=>(D(`stats/top-posts`,`error`),()=>D(`stats/top-posts`,null))},J={render:H,tags:[`!autodocs`],decorators:[E,C],beforeEach:()=>(D(`stats/top-posts`,`error-retryable`),()=>D(`stats/top-posts`,null))},Y={render:H,tags:[`!autodocs`],decorators:[E,C],beforeEach:()=>(D(`stats/top-posts`,`empty`),()=>D(`stats/top-posts`,null))},X={render:e=>(0,W.jsx)(U,{...e}),args:{...T,widgetWidth:2,widgetHeight:2},argTypes:{...w}},Z={render:e=>(0,W.jsx)(U,{...e}),args:{...T,widgetWidth:2,widgetHeight:1},argTypes:{...w}},Q={render:e=>(0,W.jsx)(U,{...e}),args:{...T,widgetWidth:1,widgetHeight:1},argTypes:{...w}},G.parameters={...G.parameters,docs:{...G.parameters?.docs,source:{originalSource:`{
+  render: renderPopularPost,
+  decorators: [withWidgetCanvas, withStoryRouter]
+}`,...G.parameters?.docs?.source},description:{story:`Default — the last 12 months' most-viewed post with its all-time views, likes, and comments.
+
+The shared close-up canvas is the width of a width-1 dashboard cell, which is
+below the card's 520px wide breakpoint: the featured image is dropped and the
+metric row wraps. \`WidgetDashboardWithWidget\` below shows the default width-2
+placement, where the image sits in a trailing column.`,...G.parameters?.docs?.description}}},K.parameters={...K.parameters,docs:{...K.parameters?.docs,source:{originalSource:`{
+  render: renderPopularPost,
+  // Off the shared autodocs page — path-keyed override; see forceStatsMockState.
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas, withStoryRouter],
+  beforeEach: () => {
+    forceStatsMockState('stats/top-posts', 'loading');
+    return () => forceStatsMockState('stats/top-posts', null);
+  }
+}`,...K.parameters?.docs?.source},description:{story:`First load: the ranking request is in flight, so the widget shows its loading
+state. The mock is forced to never resolve for the duration of this story.`,...K.parameters?.docs?.description}}},q.parameters={...q.parameters,docs:{...q.parameters?.docs,source:{originalSource:`{
+  render: renderPopularPost,
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas, withStoryRouter],
+  beforeEach: () => {
+    forceStatsMockState('stats/top-posts', 'error');
+    return () => forceStatsMockState('stats/top-posts', null);
+  }
+}`,...q.parameters?.docs?.source},description:{story:"A permission-gated 403: `describeError` maps it to neutral copy with no Retry\naction, because the failure is deterministic.",...q.parameters?.docs?.description}}},J.parameters={...J.parameters,docs:{...J.parameters?.docs,source:{originalSource:`{
+  render: renderPopularPost,
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas, withStoryRouter],
+  beforeEach: () => {
+    forceStatsMockState('stats/top-posts', 'error-retryable');
+    return () => forceStatsMockState('stats/top-posts', null);
+  }
+}`,...J.parameters?.docs?.source},description:{story:"The proxy's `no_connection` 403: a broken Jetpack connection can heal, so\n`describeError` keeps this one retryable.",...J.parameters?.docs?.description}}},Y.parameters={...Y.parameters,docs:{...Y.parameters?.docs,source:{originalSource:`{
+  render: renderPopularPost,
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas, withStoryRouter],
+  beforeEach: () => {
+    forceStatsMockState('stats/top-posts', 'empty');
+    return () => forceStatsMockState('stats/top-posts', null);
+  }
+}`,...Y.parameters?.docs?.source},description:{story:`Resolved with no rows: the widget shows its empty state.`,...Y.parameters?.docs?.description}}},X.parameters={...X.parameters,docs:{...X.parameters?.docs,source:{originalSource:`{
+  render: args => <PopularPostDashboardStory {...args} />,
+  args: {
+    ...DEFAULT_WIDGET_DASHBOARD_STORY_ARGS,
+    // Popular post is a landscape widget: content left, featured image right.
+    widgetWidth: 2,
+    widgetHeight: 2
+  },
+  argTypes: {
+    ...widgetDashboardWithWidgetArgTypes
+  }
+}`,...X.parameters?.docs?.source}}},Z.parameters={...Z.parameters,docs:{...Z.parameters?.docs,source:{originalSource:`{
+  render: args => <PopularPostDashboardStory {...args} />,
+  args: {
+    ...DEFAULT_WIDGET_DASHBOARD_STORY_ARGS,
+    widgetWidth: 2,
+    widgetHeight: 1
+  },
+  argTypes: {
+    ...widgetDashboardWithWidgetArgTypes
+  }
+}`,...Z.parameters?.docs?.source},description:{story:`A short cell at the default width. Height, not just width, drives the card:
+below 300px of body the type scale steps down and the featured image becomes a
+centred square instead of a full-height panel.
+
+This geometry regressed once — the metric row was pushed past the card's bottom
+edge and silently clipped, leaving labels with no values — so it is covered
+here to keep a height regression visible in review.`,...Z.parameters?.docs?.description}}},Q.parameters={...Q.parameters,docs:{...Q.parameters?.docs,source:{originalSource:`{
+  render: args => <PopularPostDashboardStory {...args} />,
+  args: {
+    ...DEFAULT_WIDGET_DASHBOARD_STORY_ARGS,
+    widgetWidth: 1,
+    widgetHeight: 1
+  },
+  argTypes: {
+    ...widgetDashboardWithWidgetArgTypes
+  }
+}`,...Q.parameters?.docs?.source},description:{story:`The smallest cell the dashboard grid produces: narrow *and* short. The featured
+image drops out entirely and the headline clamps to one line, but the whole
+metric row — every label with its value — stays inside the card.`,...Q.parameters?.docs?.description}}},$=[`Default`,`Loading`,`Error`,`ErrorRetryable`,`Empty`,`WidgetDashboardWithWidget`,`ShortCell`,`ShortNarrowCell`]}))();export{G as Default,Y as Empty,q as Error,J as ErrorRetryable,K as Loading,Z as ShortCell,Q as ShortNarrowCell,X as WidgetDashboardWithWidget,$ as __namedExportsOrder,je as default};
