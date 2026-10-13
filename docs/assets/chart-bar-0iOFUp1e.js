@@ -1,0 +1,1 @@
+import{i as e}from"./preload-helper-usAeo7Bx.js";import{i as t}from"./bar-chart-skeleton-BS_EEV2J.js";var n=e((()=>{t()}));export{n as t};
