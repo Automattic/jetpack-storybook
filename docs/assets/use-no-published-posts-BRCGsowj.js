@@ -1,0 +1,1 @@
+import{i as e}from"./preload-helper-usAeo7Bx.js";import{Ft as t,t as n,w as r}from"./src-BOqYRQKC.js";function i(e){let n=t(r(),{enabled:e});return{noPublishedPosts:e&&!n.isError&&n.data===null,isChecking:e&&n.isLoading}}var a=e((()=>{n()}));export{i as n,a as t};
