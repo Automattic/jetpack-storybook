@@ -1,0 +1,41 @@
+import{i as e}from"./preload-helper-usAeo7Bx.js";import{d as t,n,t as r}from"./build-module-BXPCp--5.js";import{t as i}from"./jsx-runtime-D2pHJD-r.js";import{Gu as a,Nu as o}from"./build-module-Cm3Kd3py.js";import{It as s}from"./build-module-YF-BmBv-.js";import{t as c}from"./src-BA33U10q.js";import{U as l,cn as u,t as d}from"./src-CzxmEjhp.js";import{jt as ee,m as f,o as te,v as ne}from"./charts-provider-lFx1ATNp.js";import{a as p,r as m}from"./src-CtehOmoq.js";import"./rows-DAmD2BmE.js";import{r as h,t as re}from"./leaderboard-skeleton-CHNyJXIU.js";import{n as g,r as _,s as v}from"./register-report-mocks-BUEjg4TY.js";import{t as ie}from"./widget-state-B0LStYPn.js";import{n as ae,r as y}from"./with-story-router-TjVyBU09.js";import{i as oe,o as b,r as x}from"./build-leaderboard-chart-data-7tVufVCZ.js";import{f as se,l as ce,o as le}from"./leaderboard-DiJANHUG.js";import{b as ue,f as S,t as de}from"./src-B6ddUOlI.js";import{a as fe,g as pe,h as me,i as he,m as ge,n as _e,p as ve,r as C}from"./with-widget-canvas-C14r1Ru2.js";var w,T,E,D,ye=e((()=>{w=`_root_15if1_1`,T=`_content_15if1_9`,E=`_childList_15if1_19`,D={root:w,content:T,childList:E}}));function O({reportParams:e,max:t}){let{data:n,isLoading:r,isFetching:i,isError:o,refetch:s}=l({...e,max:t}),c=(0,a.useMemo)(()=>(n?.data?.[0]?.items??[]).slice(0,t>0?t:void 0).map(e=>{let t=e.link??e.labelText,n=(e.children??[]).map(e=>({id:e.link??`${t}-${e.label}`,label:e.label,labelIcon:e.labelIcon,link:e.link}));return{id:t,label:e.labelText,labelIcon:e.label[0]?.labelIcon??``,value:e.value,link:e.link,children:n}}),[n,t]);return{data:c,isLoading:r,isFetching:i,isError:c.length===0&&o,refetch:s}}var k=e((()=>{o(),d()}));function A({members:e}){return(0,N.jsx)(s,{direction:`column`,className:D.childList,children:e.map(e=>(0,N.jsx)(x,{label:e.label,media:{kind:`icon`,icon:m(e.labelIcon)},action:b({href:p(e.link)??void 0,hasChildren:!1})},e.id))})}function j(){let{reportParams:e}=ne(),{data:r,isLoading:i,isFetching:o,isError:c,refetch:l}=O({reportParams:e,max:10}),{drillDownItem:u,drillDown:d,resetDrillDown:f}=te(),g=(0,a.useMemo)(()=>u?r.find(e=>e.label===u)??null:null,[r,u]);(0,a.useEffect)(()=>{u&&!g&&f()},[u,g,f]);let _=(0,a.useMemo)(()=>{let e=Math.max(...r.map(e=>e.value),0);return r.map(r=>{let i=r.children.length>0;return{id:r.id,currentValue:r.value,currentShare:ee(r.value,e),...oe({label:r.label,media:{kind:`icon`,icon:m(r.labelIcon)},action:b({href:p(r.link)??void 0,hasChildren:i,drillDown:{onClick:()=>d(r.label),ariaLabel:t(n(`View the tags and categories in %s`,`jetpack-premium-analytics-pkg`),r.label)}})})}})},[r,d]);return(0,N.jsxs)(s,{className:D.root,children:[(0,N.jsxs)(`div`,{className:D.content,children:[g&&(0,N.jsx)(ce,{label:n(`All tags & categories`,`jetpack-premium-analytics-pkg`),onClick:f}),(0,N.jsx)(ie,{isLoading:i,isFetching:o,isError:c,isEmpty:r.length===0,error:{description:n(`We couldn't load tags & categories. Please try again in a moment.`,`jetpack-premium-analytics-pkg`),actions:[{label:n(`Retry`,`jetpack-premium-analytics-pkg`),onClick:l}]},empty:{description:n(`Learn about your most visited tags & categories to track engaging topics.`,`jetpack-premium-analytics-pkg`)},renderLoading:g?void 0:(0,N.jsx)(re,{rows:10}),children:g?(0,N.jsx)(A,{members:g.children}):(0,N.jsx)(h,{data:_,withOverlayLabel:!0,showLegend:!1,dataFormat:{type:`number`,options:{useMultipliers:!1,decimals:0}}})})]}),(0,N.jsxs)(le,{children:[(0,N.jsx)(se,{report:`tags`}),(0,N.jsx)(ue,{exporter:S,status:{isLoading:i,isFetching:o,isError:c},rowCount:r.length})]})]})}function M({attributes:e={}}){return(0,N.jsx)(f,{attributes:e,children:(0,N.jsx)(j,{})})}var N,be=e((()=>{de(),o(),r(),c(),ye(),k(),N=i()})),P,xe=e((()=>{P={attributes:[],example:{attributes:{}}}})),F,I,L,R,z,B,V,H,Se=e((()=>{F=`jpa/tags`,I=`jpa/category`,L=`Top tags & categories`,R=`The tags and categories of your most viewed posts in the selected period, ranked by views.`,z={content:`The tags and categories of your most viewed posts in the selected period, ranked by views. A post counts toward each of its current tags and categories, so this is a breakdown of popular posts by topic rather than a filter over all traffic.`,links:[{label:`Learn more`,href:`https://jetpack.com/support/jetpack-stats/`}]},B=`stats`,V=`framed`,H={name:F,icon:I,title:L,description:R,help:z,category:B,presentation:V}}));function U(){return(0,W.jsx)(M,{attributes:{reportParams:u()}})}function Ce(e){return(0,W.jsx)(M,{...e})}function we(e){return(0,W.jsx)(ge,{...e,widgetType:K,renderModule:G,renderComponent:Ce,attributes:{reportParams:u(!0)}})}var W,G,K,q,J,Y,X,Z,Q,$;e((()=>{d(),me(),ae(),fe(),_e(),g(),be(),xe(),Se(),W=i(),_(),G=`storybook/tags`,K=he(H,P),q={title:`Packages/Premium Analytics/Widgets/Tags`,component:M,tags:[`autodocs`],parameters:{docs:{description:{component:`The "Tags & categories" widget. Displays the tags and categories of the site's most viewed posts over the dashboard's period, ranked by views; the endpoint reports no comparison. Single tags/categories link to their archive; grouped rows (several tags/categories sharing posts) drill down to their members. Ported from the Jetpack Stats Tags & categories module.`}}}},J={render:U,decorators:[C,y]},Y={render:U,tags:[`!autodocs`],decorators:[C,y],beforeEach:()=>(v(`stats/tags`,`loading`),()=>v(`stats/tags`,null))},X={render:U,tags:[`!autodocs`],decorators:[C,y],beforeEach:()=>(v(`stats/tags`,`error`),()=>v(`stats/tags`,null))},Z={render:U,tags:[`!autodocs`],decorators:[C,y],beforeEach:()=>(v(`stats/tags`,`empty`),()=>v(`stats/tags`,null))},Q={render:e=>(0,W.jsx)(we,{...e}),args:{...ve},argTypes:{...pe},decorators:[y]},J.parameters={...J.parameters,docs:{...J.parameters?.docs,source:{originalSource:`{
+  render: renderTags,
+  decorators: [withWidgetCanvas, withStoryRouter]
+}`,...J.parameters?.docs?.source}}},Y.parameters={...Y.parameters,docs:{...Y.parameters?.docs,source:{originalSource:`{
+  render: renderTags,
+  // Kept off the shared autodocs page: the mock override is keyed by path, so it
+  // would otherwise force the sibling stories on that page into the same state.
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas, withStoryRouter],
+  beforeEach: () => {
+    setReportMockState('stats/tags', 'loading');
+    return () => setReportMockState('stats/tags', null);
+  }
+}`,...Y.parameters?.docs?.source},description:{story:`First load: the fetch is in flight, so the widget shows its loading state. The
+mock is forced to never resolve for the duration of this story.`,...Y.parameters?.docs?.description}}},X.parameters={...X.parameters,docs:{...X.parameters?.docs,source:{originalSource:`{
+  render: renderTags,
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas, withStoryRouter],
+  beforeEach: () => {
+    setReportMockState('stats/tags', 'error');
+    return () => setReportMockState('stats/tags', null);
+  }
+}`,...X.parameters?.docs?.source},description:{story:`The fetch failed: the widget shows its error state with a Retry action (which
+re-runs the query — still mocked as failing while this story is active).`,...X.parameters?.docs?.description}}},Z.parameters={...Z.parameters,docs:{...Z.parameters?.docs,source:{originalSource:`{
+  render: renderTags,
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas, withStoryRouter],
+  beforeEach: () => {
+    setReportMockState('stats/tags', 'empty');
+    return () => setReportMockState('stats/tags', null);
+  }
+}`,...Z.parameters?.docs?.source},description:{story:`Resolved with no rows: the widget shows its empty state.`,...Z.parameters?.docs?.description}}},Q.parameters={...Q.parameters,docs:{...Q.parameters?.docs,source:{originalSource:`{
+  render: args => <TagsDashboardStory {...args} />,
+  args: {
+    ...DEFAULT_WIDGET_DASHBOARD_STORY_ARGS
+  },
+  argTypes: {
+    ...widgetDashboardWithWidgetArgTypes
+  },
+  decorators: [withStoryRouter]
+}`,...Q.parameters?.docs?.source}}},$=[`Default`,`Loading`,`Error`,`Empty`,`WidgetDashboardWithWidget`]}))();export{J as Default,Z as Empty,X as Error,Y as Loading,Q as WidgetDashboardWithWidget,$ as __namedExportsOrder,q as default};
