@@ -1,0 +1,1 @@
+import{i as e}from"./preload-helper-usAeo7Bx.js";var t,n=e((()=>{t=new Set}));function r(){return globalThis.SCRIPT_DEBUG===!0}function i(e){if(r()&&!t.has(e)){console.warn(e);try{throw Error(e)}catch{}t.add(e)}}var a=e((()=>{n()}));export{i as n,a as t};
