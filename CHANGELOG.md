@@ -11,6 +11,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Changed
 - Remove the admin color override now that the WordPress packages default to the modern admin color scheme (blueberry).
+- Update package dependencies.
 
 ## 2.0.1 - 2026-10-15
 ### Added
