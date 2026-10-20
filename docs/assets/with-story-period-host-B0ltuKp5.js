@@ -1,0 +1,1 @@
+import{i as e}from"./preload-helper-usAeo7Bx.js";import{t}from"./jsx-runtime-D2pHJD-r.js";import{t as n,yn as r}from"./src-CXn3rIqQ.js";var i,a,o,s,c=e((()=>{n(),i=t(),{action:a}=__STORYBOOK_MODULE_ACTIONS__,o=a(`openPeriod`),s=e=>(0,i.jsx)(r,{openPeriod:o,children:(0,i.jsx)(e,{})})}));export{s as n,c as t};
