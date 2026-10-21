@@ -1,1 +1,0 @@
-import{n as e}from"./rolldown-runtime-DAXXjFlN.js";import{t}from"./jsx-runtime-CtMZ-PAS.js";import{t as n,yn as r}from"./src-CojPwECE.js";var i,a,o,s,c=e((()=>{n(),i=t(),{action:a}=__STORYBOOK_MODULE_ACTIONS__,o=a(`openPeriod`),s=e=>(0,i.jsx)(r,{openPeriod:o,children:(0,i.jsx)(e,{})})}));export{s as n,c as t};

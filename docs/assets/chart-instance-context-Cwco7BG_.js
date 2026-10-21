@@ -1,0 +1,1 @@
+import{n as e,o as t}from"./rolldown-runtime-DAXXjFlN.js";import{t as n}from"./react-_iuu1rfF.js";var r,i,a=e((()=>{r=t(n(),1),i=(0,r.createContext)(null)})),o,s,c=e((()=>{o=t(n(),1),a(),s=()=>{let e=(0,o.useContext)(i);if(!e)throw Error(`useChartInstanceContext must be used within a Chart component`);return e}})),l=e((()=>{a(),c()}));export{a,i,c as n,s as r,l as t};
