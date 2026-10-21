@@ -1,0 +1,54 @@
+import{n as e,o as t}from"./rolldown-runtime-DAXXjFlN.js";import{t as n}from"./react-Bb3IsNbi.js";import{t as r}from"./jsx-runtime-CtMZ-PAS.js";import{Et as i}from"./esm-B7SF74XK.js";import{h as a}from"./library-nZB4bNva.js";import{t as o}from"./src-cf-QUfLm.js";import{t as s}from"./src-CKJlz8cP.js";import{n as c,t as l}from"./widget-card-YGpz0l5_.js";import{Ct as u,Mt as d,Nt as f,p,v as m,wt as h}from"./charts-provider-CK79-TW3.js";import{t as g}from"./widget-state-Bg8KvWWA.js";import{n as _,t as v}from"./bar-chart-Ct0MaHx3.js";import{n as y,t as b}from"./bar-chart-skeleton-DNyPUdrn.js";import{r as x,t as S}from"./widget-state-Doi_hyaL.js";import{n as C,t as w}from"./with-widget-root-Bi0W4m1C.js";function T(e,t){let{hasComparison:n,labels:r}=t,i=[{label:r.primary,data:e.map(e=>({label:e.label,value:e.value}))}];return n&&e.some(e=>typeof e.previousValue==`number`)&&i.push({label:r.comparison,data:e.map(e=>({label:e.label,value:e.previousValue===null?null:e.previousValue??0}))}),i}var E=e((()=>{}));function D(e){let{getElementStyles:t}=i();return(0,O.useMemo)(()=>e.map((e,n)=>{let{color:r}=t({data:e,index:n});return{stroke:r}}),[e,t])}var O,k=e((()=>{s(),O=t(n(),1)}));function A({columns:e,status:t,error:n,empty:r,format:i=N,chartTitle:a}){let{reportParams:o}=m(),{isLoading:s,isFetching:c,isError:l,refetch:u}=t,f=!!t.hasComparison,p=(0,j.useMemo)(()=>d(o),[o]),_=(0,j.useMemo)(()=>T(e,{hasComparison:f,labels:p}),[e,f,p]),y=D(_),S=(0,j.useMemo)(()=>x(n,u),[n,u]);return(0,M.jsx)(g,{isLoading:s,isFetching:c,isError:!!l,isEmpty:h(_),error:S,empty:r,renderLoading:(0,M.jsx)(b,{columns:e.length}),children:(0,M.jsx)(v,{chartData:_,styles:y,dataFormat:i,chartTitle:a})})}var j,M,N,P=e((()=>{j=t(n(),1),u(),f(),_(),y(),p(),S(),E(),k(),M=r(),N={type:`number`,options:{useMultipliers:!0,decimals:0}}})),F,I,L,R,z,B,V,H,U,W,G,K,q;e((()=>{o(),c(),w(),P(),F=r(),I=[{label:`Returning`,value:3820,previousValue:3e3},{label:`New`,value:1210,previousValue:1400}],L={type:`currency`,options:{useMultipliers:!0}},R={isLoading:!1,isError:!1},z=e=>(0,F.jsx)(l,{height:`360px`,children:(0,F.jsx)(e,{})}),B={title:`Packages/Premium Analytics/Widgets Toolkit/Components/Columns`,component:A,tags:[`autodocs`],parameters:{docs:{description:{component:"The columns widget body: hand it the columns, as figures of the period and of the comparison period, and the request status, and it renders a vertical bar per column and per period, the periods named in the legend from the report params, and the loading, error and empty states. Renders inside `WidgetRoot`."}}},decorators:[z,C()],args:{columns:I,status:R,format:L}},V={},H={args:{status:{...R,hasComparison:!0}}},U={args:{columns:[{label:`SAVE10`,value:4200,previousValue:3900},{label:`WELCOME`,value:2650,previousValue:1800},{label:`VIP20`,value:1300,previousValue:1500},{label:`Other`,value:820,previousValue:640}],status:{...R,hasComparison:!0}}},W={args:{status:{isLoading:!0}}},G={args:{status:{isLoading:!1,isError:!0,refetch:()=>void 0}}},K={args:{columns:[],empty:{icon:a,description:`No customer revenue in this period.`}}},V.parameters={...V.parameters,docs:{...V.parameters?.docs,source:{originalSource:`{}`,...V.parameters?.docs?.source}}},H.parameters={...H.parameters,docs:{...H.parameters?.docs,source:{originalSource:`{
+  args: {
+    status: {
+      ...READY,
+      hasComparison: true
+    }
+  }
+}`,...H.parameters?.docs?.source}}},U.parameters={...U.parameters,docs:{...U.parameters?.docs,source:{originalSource:`{
+  args: {
+    columns: [{
+      label: 'SAVE10',
+      value: 4200,
+      previousValue: 3900
+    }, {
+      label: 'WELCOME',
+      value: 2650,
+      previousValue: 1800
+    }, {
+      label: 'VIP20',
+      value: 1300,
+      previousValue: 1500
+    }, {
+      label: 'Other',
+      value: 820,
+      previousValue: 640
+    }],
+    status: {
+      ...READY,
+      hasComparison: true
+    }
+  }
+}`,...U.parameters?.docs?.source}}},W.parameters={...W.parameters,docs:{...W.parameters?.docs,source:{originalSource:`{
+  args: {
+    status: {
+      isLoading: true
+    }
+  }
+}`,...W.parameters?.docs?.source}}},G.parameters={...G.parameters,docs:{...G.parameters?.docs,source:{originalSource:`{
+  args: {
+    status: {
+      isLoading: false,
+      isError: true,
+      refetch: () => undefined
+    }
+  }
+}`,...G.parameters?.docs?.source}}},K.parameters={...K.parameters,docs:{...K.parameters?.docs,source:{originalSource:`{
+  args: {
+    columns: [],
+    empty: {
+      icon: customer,
+      description: 'No customer revenue in this period.'
+    }
+  }
+}`,...K.parameters?.docs?.source}}},q=[`Default`,`WithComparison`,`FourColumns`,`Loading`,`Failed`,`Empty`]}))();export{V as Default,K as Empty,G as Failed,U as FourColumns,W as Loading,H as WithComparison,q as __namedExportsOrder,B as default};

@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-DAXXjFlN.js";import{a as t,c as n,u as r}from"./build-module-DWE1ThI72.js";var i,a,o,s=e((()=>{n(),i=t(),a=`Asia/Tokyo`,o=e=>({...i,timezone:{...i.timezone,string:e}})}));function c(){r(o(a))}var l=e((()=>{n(),s()}));export{s as i,l as n,a as r,c as t};
