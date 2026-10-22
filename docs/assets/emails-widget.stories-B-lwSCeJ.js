@@ -1,0 +1,63 @@
+import{n as e}from"./rolldown-runtime-DAXXjFlN.js";import{C as t,n,r,t as i}from"./build-module-DQe4AOzJ.js";import{t as a}from"./jsx-runtime-CFwixLRt.js";import{Mu as ee,bu as o}from"./build-module-BI3_PVVO.js";import{Zn as s}from"./build-module-DhwsekaI.js";import{t as c}from"./src-Bm2XQLam.js";import{n as te,t as ne}from"./src-BjbRKINU.js";import{V as re,pn as ie,t as l}from"./src-5g9sGwvT.js";import{n as ae}from"./abbreviated-value-oWh_x0cp.js";import{F as u,f as oe,gt as d,m as se,mt as ce,pt as le,xt as ue}from"./charts-provider-C2bmnNI1.js";import{t as de}from"./widget-state-C6PLa1kU.js";import"./rows-DoJXoHhN.js";import{t as fe}from"./leaderboard-skeleton-DDwAiv3t.js";import{a as pe,o as me,u as f}from"./widget-state-HqBH4bUi.js";import{n as he,r as p}from"./with-story-router-CyVN4A4U.js";import{c as ge}from"./build-leaderboard-chart-data-z611Ofyo.js";import{t as _e}from"./metric-list-DwUFOhYX.js";import{A as ve,H as ye,M as be,N as xe,U as Se,V as Ce,W as we,j as m,m as Te,t as h}from"./src-CIYxOsiD.js";var g,_,v,y,b,Ee=e((()=>{g=`_widget_1kmus_3`,_=`_body_1kmus_11`,v=`_list_1kmus_18`,y=`_rate_1kmus_24`,b={widget:g,body:_,list:v,rate:y}}));function x(e){return te(e,T.type,{...T.options,useMultipliers:!1})}function De(e,n,i,a){return a?t(r(`%1$s open, %2$s open rate`,`%1$s opens, %2$s open rate`,e,`jetpack-premium-analytics-pkg`),n,i):t(r(`%s open, open rate unknown`,`%s opens, open rate unknown`,e,`jetpack-premium-analytics-pkg`),n)}function Oe(e,n,i,a){return a?t(r(`%1$s click, %2$s click rate`,`%1$s clicks, %2$s click rate`,e,`jetpack-premium-analytics-pkg`),n,i):t(r(`%s click, click rate unknown`,`%s clicks, click rate unknown`,e,`jetpack-premium-analytics-pkg`),n)}function ke(e,t){if(t===`clicks`){let t={total:e.clicks,unique:e.uniqueClicks,sends:e.totalSends},n=d(e.clicksRate,t),r=x(e.clicks);return{count:e.clicks,rate:n,formatRestored:t=>le(`clicks`,e.clicks,t),description:Oe(e.clicks,r,n,ue(t))}}let n={total:e.opens,unique:e.uniqueOpens,sends:e.totalSends},r=d(e.opensRate,n),i=x(e.opens);return{count:e.opens,rate:r,formatRestored:t=>le(`opens`,e.opens,t),description:De(e.opens,i,r,ue(n))}}function Ae(e,t){return(e?.data?.[0]?.items??[]).slice(0,t>0?t:void 0).map((e,t)=>({id:e.id??t,postId:e.id,link:typeof e.link==`string`?e.link:null,label:String(e.label??``),opens:e.opens,uniqueOpens:e.unique_opens,opensRate:e.opens_rate,clicks:e.clicks,uniqueClicks:e.unique_clicks,clicksRate:e.clicks_rate,totalSends:e.total_sends}))}function je({attributes:e}){let t=e?.metric??`opens`,{data:r,isLoading:i,isFetching:a,isError:o,refetch:s}=re({quantity:10}),c=(0,ee.useMemo)(()=>Ae(r,10),[r]);return oe({report:`emails`,csv:{exporter:Te,status:{isLoading:i,isFetching:a,isError:c.length===0&&o},rowCount:c.length}}),(0,C.jsx)(`div`,{className:b.widget,children:(0,C.jsx)(`div`,{className:b.body,children:(0,C.jsx)(de,{isLoading:i,isFetching:a,isError:c.length===0&&o,isEmpty:c.length===0,error:{description:n(`We couldn't load email stats. Please try again in a moment.`,`jetpack-premium-analytics-pkg`),actions:[{label:n(`Retry`,`jetpack-premium-analytics-pkg`),onClick:s}]},empty:{description:n(`You haven’t sent any emails yet.`,`jetpack-premium-analytics-pkg`)},renderLoading:(0,C.jsx)(fe,{rows:10}),children:(0,C.jsx)(E,{rows:c,metric:t})})})})}function S({attributes:e={}}){return(0,C.jsx)(u,{attributes:e,children:(0,C.jsx)(je,{attributes:e})})}var C,w,T,E,Me=e((()=>{l(),c(),ne(),h(),o(),i(),Ee(),C=a(),w={opens:`email-opens`,clicks:`email-clicks`},T={type:`number`,options:{decimals:0,useMultipliers:!0}},E=({rows:e=[],metric:t=`opens`})=>{let r=se({section:w[t],origin:{report:`emails`}}),i=e.map(e=>{let{count:n,rate:i,formatRestored:a,description:ee}=ke(e,t);return{id:e.id,label:(0,C.jsx)(ge,{id:e.postId,label:e.label,link:e.link,search:r,title:e.label}),value:[(0,C.jsx)(`span`,{"aria-hidden":`true`,children:(0,C.jsx)(ae,{value:n,dataFormat:T,formatRestored:a})},`count`),(0,C.jsxs)(`span`,{children:[(0,C.jsx)(`span`,{className:b.rate,"aria-hidden":`true`,children:i}),(0,C.jsx)(s,{render:(0,C.jsx)(`span`,{}),children:ee})]},`rate`)]}}),a={label:n(`Emails`,`jetpack-premium-analytics-pkg`),values:[ce(t),n(t===`clicks`?`Click rate`:`Open rate`,`jetpack-premium-analytics-pkg`)]};return(0,C.jsx)(_e,{className:b.list,items:i,columns:a})}})),D,Ne=e((()=>{D={example:{attributes:{metric:`opens`}}}})),O,k,A,j,M,N,P,F,I,Pe=e((()=>{O=`jpa/stats-emails`,k=`jpa/envelope`,A=`Latest emails sent`,j=`Opens or clicks, with their rates, for your latest emails.`,M={content:`Your most recently sent emails, with their opens and open rate, or clicks and click rate.`},N=`stats`,P=`framed`,F=[{id:`metric`,type:`jpa/select`,label:`View by`,relevance:`high`,elements:[{value:`opens`,label:`Opened`},{value:`clicks`,label:`Clicked`}]}],I={name:O,icon:k,title:A,description:j,help:M,category:N,presentation:P,attributes:F}}));function L(){return(0,R.jsx)(S,{attributes:{metric:`opens`}})}function Fe(e){return(0,R.jsx)(ye,{...e,widgetType:be(I,D),renderModule:z,renderComponent:S,attributes:{metric:`opens`}})}var R,z,B,V,Ie,H,U,W,G,K,q,J,Y,X,Z,Q,$;e((()=>{l(),h(),pe(),Se(),he(),xe(),ve(),Me(),Ne(),Pe(),R=a(),me(),z=`storybook/emails`,B={title:`Packages/Premium Analytics/Widgets/Emails`,component:E,tags:[`autodocs`],parameters:{docs:{description:{component:`Lists the latest emails with their open or click count and rate. A rate shows an em dash when it has no attributable recipient or the email has no recorded sends. Close-up stories use fixtures; the dashboard story uses a mocked report.`}}}},V=[{id:1,postId:1,link:`https://example.com/stand-out/`,label:`4 Ways to Make Your Website Stand Out`,opens:402,uniqueOpens:381,opensRate:38.1,clicks:41,uniqueClicks:38,clicksRate:3.81,totalSends:1e3},{id:2,postId:2,link:`https://example.com/develop-locally/`,label:`Develop Locally on Linux with WordPress.com`,opens:1287,uniqueOpens:1236,opensRate:41.2,clicks:190,uniqueClicks:179,clicksRate:5.98,totalSends:3e3},{id:3,postId:3,link:`https://example.com/new-themes/`,label:`10 Brand-New WordPress.com Themes for 2026`,opens:18432,uniqueOpens:17850,opensRate:35.7,clicks:3702,uniqueClicks:3560,clicksRate:7.12,totalSends:5e4},{id:4,postId:4,link:`https://example.com/languages/`,label:`WordPress.com Is Now Available in More Languages`,opens:560,uniqueOpens:524,opensRate:52.4,clicks:12,uniqueClicks:0,clicksRate:0,totalSends:1e3},{id:5,postId:5,link:`https://example.com/wordcamp-europe/`,label:`WordCamp Europe 2026: What to Expect`,opens:498,uniqueOpens:479,opensRate:47.9,clicks:108,uniqueClicks:103,clicksRate:10.25,totalSends:1e3},{id:6,postId:6,link:`https://example.com/collaborate/`,label:`Click, Comment, Done: A Better Way to Collaborate`,opens:0,uniqueOpens:0,opensRate:0,clicks:0,uniqueClicks:0,clicksRate:0,totalSends:1e3},{id:7,postId:7,link:`https://example.com/archive/`,label:`From the Archive: A Send With No Delivery Data`,opens:0,uniqueOpens:0,opensRate:0,clicks:0,uniqueClicks:0,clicksRate:0,totalSends:0}],Ie=[{id:1,postId:1,link:`https://example.com/long-subject/`,label:`An exhaustively long, keyword-stuffed subject line that almost certainly needs to be truncated before it overflows the row`,opens:2250,uniqueOpens:2100,opensRate:22.5,clicks:410,uniqueClicks:395,clicksRate:4.1,totalSends:1e4},{id:2,postId:2,link:`https://example.com/monthly-digest/`,label:`Your monthly digest: billing, new features, and what is coming next`,opens:338,uniqueOpens:320,opensRate:33.8,clicks:67,uniqueClicks:60,clicksRate:6.7,totalSends:1e3}],H=e=>(0,R.jsx)(u,{attributes:{reportParams:ie()},children:(0,R.jsx)(e,{})}),U={args:{rows:V},decorators:[m,H,p]},W={args:{rows:V,metric:`clicks`},decorators:[m,H,p]},G={render:L,tags:[`!autodocs`],decorators:[m,p],beforeEach:()=>(f(`stats/emails/summary`,`loading`),()=>f(`stats/emails/summary`,null))},K={render:L,tags:[`!autodocs`],decorators:[m,p],beforeEach:()=>(f(`stats/emails/summary`,`error`),()=>f(`stats/emails/summary`,null))},q={render:L,tags:[`!autodocs`],decorators:[m,p],beforeEach:()=>(f(`stats/emails/summary`,`empty`),()=>f(`stats/emails/summary`,null))},J={args:{rows:Ie},decorators:[m,H,p]},Y=(e,t=`auto`)=>n=>(0,R.jsx)(`div`,{style:{width:e,height:t,border:`1px dashed #ccc`,borderRadius:`8px`,containerType:`inline-size`,containerName:`widget`},children:(0,R.jsx)(n,{})}),X={args:{rows:V},decorators:[Y(`448px`),H,p]},Z={args:{rows:V},decorators:[Y(`576px`),H,p]},Q={render:e=>(0,R.jsx)(Fe,{...e}),args:{...Ce},argTypes:{...we}},$=[`Default`,`ByClickRate`,`Loading`,`Error`,`Empty`,`LongLabels`,`SizeMedium`,`SizeLarge`,`WidgetDashboardWithWidget`],U.parameters={...U.parameters,docs:{...U.parameters?.docs,source:{originalSource:`{
+  args: {
+    rows: mockRows
+  },
+  decorators: [withWidgetCanvas, withEmailsWidgetRoot, withStoryRouter]
+}`,...U.parameters?.docs?.source},description:{story:`Default populated state: latest emails (newest first) with their opens and open rate.`,...U.parameters?.docs?.description}}},W.parameters={...W.parameters,docs:{...W.parameters?.docs,source:{originalSource:`{
+  args: {
+    rows: mockRows,
+    metric: 'clicks'
+  },
+  decorators: [withWidgetCanvas, withEmailsWidgetRoot, withStoryRouter]
+}`,...W.parameters?.docs?.source},description:{story:"Clicks view: the `metric` attribute set to clicks and click rate instead of opens.",...W.parameters?.docs?.description}}},G.parameters={...G.parameters,docs:{...G.parameters?.docs,source:{originalSource:`{
+  render: renderEmails,
+  // Off the shared autodocs page — path-keyed override; see forceStatsMockState.
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas, withStoryRouter],
+  beforeEach: () => {
+    setReportMockState('stats/emails/summary', 'loading');
+    return () => setReportMockState('stats/emails/summary', null);
+  }
+}`,...G.parameters?.docs?.source},description:{story:`First load: the fetch is in flight, so the widget shows its loading state. The
+mock is forced to never resolve for the duration of this story.`,...G.parameters?.docs?.description}}},K.parameters={...K.parameters,docs:{...K.parameters?.docs,source:{originalSource:`{
+  render: renderEmails,
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas, withStoryRouter],
+  beforeEach: () => {
+    setReportMockState('stats/emails/summary', 'error');
+    return () => setReportMockState('stats/emails/summary', null);
+  }
+}`,...K.parameters?.docs?.source},description:{story:`The fetch failed: the widget shows its error state with a Retry action (which
+re-runs the query — still mocked as failing while this story is active).`,...K.parameters?.docs?.description}}},q.parameters={...q.parameters,docs:{...q.parameters?.docs,source:{originalSource:`{
+  render: renderEmails,
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas, withStoryRouter],
+  beforeEach: () => {
+    setReportMockState('stats/emails/summary', 'empty');
+    return () => setReportMockState('stats/emails/summary', null);
+  }
+}`,...q.parameters?.docs?.source},description:{story:`Resolved with no rows: the widget shows its empty state ("Your latest emails
+will appear here once you send a newsletter.").`,...q.parameters?.docs?.description}}},J.parameters={...J.parameters,docs:{...J.parameters?.docs,source:{originalSource:`{
+  args: {
+    rows: mockLongLabelRows
+  },
+  decorators: [withWidgetCanvas, withEmailsWidgetRoot, withStoryRouter]
+}`,...J.parameters?.docs?.source},description:{story:`Long subject lines are truncated with an ellipsis so rows stay single-line.`,...J.parameters?.docs?.description}}},X.parameters={...X.parameters,docs:{...X.parameters?.docs,source:{originalSource:`{
+  args: {
+    rows: mockRows
+  },
+  decorators: [createSizeDecorator('448px'), withEmailsWidgetRoot, withStoryRouter]
+}`,...X.parameters?.docs?.source},description:{story:`Medium container (448px / md breakpoint).`,...X.parameters?.docs?.description}}},Z.parameters={...Z.parameters,docs:{...Z.parameters?.docs,source:{originalSource:`{
+  args: {
+    rows: mockRows
+  },
+  decorators: [createSizeDecorator('576px'), withEmailsWidgetRoot, withStoryRouter]
+}`,...Z.parameters?.docs?.source},description:{story:`Large container (576px / xl breakpoint).`,...Z.parameters?.docs?.description}}},Q.parameters={...Q.parameters,docs:{...Q.parameters?.docs,source:{originalSource:`{
+  render: args => <EmailsDashboardStory {...args} />,
+  args: {
+    ...DEFAULT_WIDGET_DASHBOARD_STORY_ARGS
+  },
+  argTypes: {
+    ...widgetDashboardWithWidgetArgTypes
+  }
+}`,...Q.parameters?.docs?.source}}}}))();export{W as ByClickRate,U as Default,q as Empty,K as Error,G as Loading,J as LongLabels,Z as SizeLarge,X as SizeMedium,Q as WidgetDashboardWithWidget,$ as __namedExportsOrder,B as default};
