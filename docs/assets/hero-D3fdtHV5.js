@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-DAXXjFlN.js";import{t}from"./jsx-runtime-CFwixLRt.js";var n,r=e((()=>{n={"section-hero":`_section-hero_rx9ai_1`}})),i,a,o=e((()=>{r(),i=t(),a=({children:e})=>(0,i.jsx)(`div`,{className:n[`section-hero`],children:e})}));export{o as n,a as t};
