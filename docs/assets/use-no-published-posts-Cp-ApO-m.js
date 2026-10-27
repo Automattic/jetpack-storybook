@@ -1,1 +1,0 @@
-import{n as e}from"./rolldown-runtime-DAXXjFlN.js";import{Ht as t,j as n,t as r}from"./src-D-fpz1RD.js";function i(e){let r=t(n(),{enabled:e});return{noPublishedPosts:e&&!r.isError&&r.data===null,isChecking:e&&r.isLoading}}var a=e((()=>{r()}));export{i as n,a as t};
