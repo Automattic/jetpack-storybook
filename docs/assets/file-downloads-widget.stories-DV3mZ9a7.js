@@ -1,0 +1,54 @@
+import{n as e}from"./rolldown-runtime-DAXXjFlN.js";import{n as t,t as n}from"./build-module-DQe4AOzJ.js";import{t as r}from"./jsx-runtime-CFwixLRt.js";import{Mu as i,bu as a}from"./build-module-BI3_PVVO.js";import{F as o,f as s,in as c,tn as l,vn as u,y as d,z as f}from"./charts-provider-CXD9czsp.js";import{Et as ee,hn as p,t as m}from"./src-BEwaewMJ.js";import{a as h}from"./src-Ojbc_lr1.js";import{t as te}from"./widget-state-BHtIizq9.js";import{i as ne,n as re,r as g}from"./with-story-router-9a5WlFpA.js";import"./constants-B9OTkkI1.js";import{r as _,t as ie}from"./leaderboard-skeleton-BSMHFXct.js";import{n as ae,r as oe}from"./register-report-mocks-D47Rougd.js";import{l as se,s as ce}from"./locations-geo-chart-BROEMqI_.js";import{a as v,g as y,h as le,i as ue,m as de,n as fe,p as pe,r as b}from"./with-widget-canvas-m8lOxuNC.js";import{n as me,t as he}from"./use-no-views-empty-state-CVxmdHWd.js";import{n as ge,t as _e}from"./register-stats-mocks-Nvcu00DF.js";import{n as ve,t as x}from"./force-stats-mock-state-BxPlbF2m.js";var S,C,w,ye=e((()=>{S=`_root_19tfr_1`,C=`_content_19tfr_9`,w={root:S,content:C}}));function be(e,t){let n=l(e.map(e=>e.value),t?e.map(e=>e.previousValue):[]);return e.map((e,r)=>{let i=e.previousValue;return{id:`${r}-${e.href??e.label}`,...ce({label:e.label,media:{kind:`none`},action:se({href:e.href,hasChildren:!1})}),currentValue:e.value,currentShare:c(e.value,n),previousValue:i,previousShare:t&&i!==void 0?c(i,n):void 0,delta:t&&i!==void 0?u(e.value,i):void 0}})}function T(e){return e.map(e=>({label:e.shortLabel??String(e.label??``),value:e.downloads,previousValue:e.previousDownloads,href:h(e.link,{allowRelative:!0})??void 0}))}function E({rows:e=[],withComparison:n=!1}){return(0,k.jsx)(_,{chartTitle:t(`Top downloaded`,`jetpack-premium-analytics-pkg`),data:be(e,n),withComparison:n,withOverlayLabel:!0,showLegend:!1,dataFormat:A,columns:{label:t(`Files`,`jetpack-premium-analytics-pkg`),metric:`downloads`}})}function D(){let{reportParams:e}=f(),{primary:n,comparisonRows:r,hasComparison:a,isLoading:o,isFetching:c,isError:l,refetch:u}=ee(e,{maxRows:10}),p=(0,i.useMemo)(()=>T(r?.rows??[]),[r]),m=a,h=me({isLoading:o,isError:l,isEmpty:p.length===0},t(`You don’t have downloads recorded yet.`,`jetpack-premium-analytics-pkg`));return s({csv:{exporter:d,status:{isLoading:o,isFetching:c,isError:n.isError},rowCount:p.length}}),(0,k.jsx)(`div`,{className:w.content,children:(0,k.jsx)(te,{isLoading:h.isLoading,isFetching:c,isError:p.length===0&&l,isEmpty:p.length===0,error:{description:t(`We couldn't load file downloads. Please try again in a moment.`,`jetpack-premium-analytics-pkg`),actions:[{label:t(`Retry`,`jetpack-premium-analytics-pkg`),onClick:u}]},empty:h.empty,renderLoading:(0,k.jsx)(ie,{rows:10}),children:(0,k.jsx)(E,{rows:p,withComparison:m})})})}function O({attributes:e={}}){return(0,k.jsx)(o,{attributes:e,children:(0,k.jsx)(`div`,{className:w.root,children:(0,k.jsx)(D,{})})})}var k,A,j=e((()=>{m(),a(),n(),ne(),he(),ye(),k=r(),A={type:`number`,options:{useMultipliers:!0,decimals:0}}})),M,N,P,F,I,L,R,z,B,xe=e((()=>{M=`jpa/file-downloads`,N=`jpa/download`,P=`Top downloaded`,F=`Most downloaded files on your site.`,I={content:`The files your visitors downloaded most often, sorted by number of downloads.`,links:[{label:`Learn more`,href:`https://jetpack.com/support/jetpack-stats/`}]},L=`stats`,R=`framed`,z=[{id:`view-all`,label:`View all`,relevance:`high`,href:`admin.php?page=jetpack-premium-analytics-wp-admin&p=%2Freports%2Fdownloads`}],B={name:M,icon:N,title:P,description:F,help:I,category:L,presentation:R,actions:z}}));function V({withComparison:e}){return(0,U.jsx)(O,{attributes:{reportParams:p(e)}})}function H(e){return(0,U.jsx)(O,{attributes:{reportParams:p(!1,e)}})}function Se({withComparison:e,...t}){return(0,U.jsx)(de,{...t,widgetType:G,renderModule:W,renderComponent:O,attributes:{reportParams:p(e)}})}var U,W,G,K,q,J,Y,X,Z,Q,$;e((()=>{m(),ae(),_e(),ve(),le(),re(),v(),fe(),j(),xe(),U=r(),oe(),ge(),W=`storybook/file-downloads`,G=ue(B),K={title:`Packages/Premium Analytics/Widgets/FileDownloads`,component:O,tags:[`autodocs`],argTypes:{withComparison:{control:`boolean`,description:`Include previous-period comparison report params and deltas.`}},parameters:{docs:{description:{component:`The "File downloads" widget. Shows the most-downloaded files as a ranked leaderboard, using the global dashboard date range. Each row links to the file URL when available.`}}}},q={render:V,args:{withComparison:!1},decorators:[b,g]},J={render:V,args:{withComparison:!0},decorators:[b,g]},Y={render:()=>H(`last-90-days`),tags:[`!autodocs`],decorators:[b,g],beforeEach:()=>(x(`stats/file-downloads`,`loading`),()=>x(`stats/file-downloads`,null))},X={render:()=>H(`last-7-days`),tags:[`!autodocs`],decorators:[b,g],beforeEach:()=>(x(`stats/file-downloads`,`error`),()=>x(`stats/file-downloads`,null))},Z={render:()=>H(`last-365-days`),tags:[`!autodocs`],decorators:[b,g],beforeEach:()=>(x(`stats/file-downloads`,`empty`),()=>x(`stats/file-downloads`,null))},Q={render:e=>(0,U.jsx)(Se,{...e}),args:{...pe,withComparison:!0},argTypes:{...y,withComparison:{control:`boolean`,description:`Include previous-period comparison report params and deltas.`}}},$=[`Default`,`WithComparison`,`Loading`,`Error`,`Empty`,`WidgetDashboardWithWidget`],q.parameters={...q.parameters,docs:{...q.parameters?.docs,source:{originalSource:`{
+  render: renderFileDownloadsWidget,
+  args: {
+    withComparison: false
+  },
+  decorators: [withWidgetCanvas, withStoryRouter]
+}`,...q.parameters?.docs?.source}}},J.parameters={...J.parameters,docs:{...J.parameters?.docs,source:{originalSource:`{
+  render: renderFileDownloadsWidget,
+  args: {
+    withComparison: true
+  },
+  decorators: [withWidgetCanvas, withStoryRouter]
+}`,...J.parameters?.docs?.source}}},Y.parameters={...Y.parameters,docs:{...Y.parameters?.docs,source:{originalSource:`{
+  render: () => renderFileDownloadsOnPreset('last-90-days'),
+  // Off the shared autodocs page — path-keyed override; see forceStatsMockState.
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas, withStoryRouter],
+  beforeEach: () => {
+    forceStatsMockState('stats/file-downloads', 'loading');
+    return () => forceStatsMockState('stats/file-downloads', null);
+  }
+}`,...Y.parameters?.docs?.source},description:{story:`First load: the fetch is in flight, so the widget shows its loading state. The
+mock is forced to never resolve for the duration of this story.`,...Y.parameters?.docs?.description}}},X.parameters={...X.parameters,docs:{...X.parameters?.docs,source:{originalSource:`{
+  render: () => renderFileDownloadsOnPreset('last-7-days'),
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas, withStoryRouter],
+  beforeEach: () => {
+    forceStatsMockState('stats/file-downloads', 'error');
+    return () => forceStatsMockState('stats/file-downloads', null);
+  }
+}`,...X.parameters?.docs?.source},description:{story:`The fetch failed: the widget shows its error state with a Retry action (which
+re-runs the query — still mocked as failing while this story is active).`,...X.parameters?.docs?.description}}},Z.parameters={...Z.parameters,docs:{...Z.parameters?.docs,source:{originalSource:`{
+  render: () => renderFileDownloadsOnPreset('last-365-days'),
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas, withStoryRouter],
+  beforeEach: () => {
+    forceStatsMockState('stats/file-downloads', 'empty');
+    return () => forceStatsMockState('stats/file-downloads', null);
+  }
+}`,...Z.parameters?.docs?.source},description:{story:`Resolved with no rows: the widget shows the generic empty state (the magnifier
+glyph and "We couldn’t find results for this time period.").`,...Z.parameters?.docs?.description}}},Q.parameters={...Q.parameters,docs:{...Q.parameters?.docs,source:{originalSource:`{
+  render: args => <FileDownloadsDashboardStory {...args} />,
+  args: {
+    ...DEFAULT_WIDGET_DASHBOARD_STORY_ARGS,
+    withComparison: true
+  },
+  argTypes: {
+    ...widgetDashboardWithWidgetArgTypes,
+    withComparison: {
+      control: 'boolean',
+      description: 'Include previous-period comparison report params and deltas.'
+    }
+  }
+}`,...Q.parameters?.docs?.source}}}}))();export{q as Default,Z as Empty,X as Error,Y as Loading,Q as WidgetDashboardWithWidget,J as WithComparison,$ as __namedExportsOrder,K as default};
