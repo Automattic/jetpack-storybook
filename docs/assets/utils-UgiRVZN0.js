@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-DAXXjFlN.js";function t(e){return{...e,options:{...e.options,useMultipliers:!1}}}var n,r=e((()=>{n=e=>typeof e==`object`&&!!e&&`datum`in e&&`index`in e&&`key`in e}));export{r as n,n as r,t};

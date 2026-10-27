@@ -1,0 +1,30 @@
+import{n as e,o as t}from"./rolldown-runtime-DAXXjFlN.js";import{t as n}from"./react-_iuu1rfF.js";import{n as r,t as i}from"./build-module-DQe4AOzJ.js";import{t as a}from"./jsx-runtime-CFwixLRt.js";import{_i as o,ai as s,mc as ee,t as te,xn as ne}from"./build-module-BI3_PVVO.js";import{F as re,jt as ie}from"./charts-provider-CXD9czsp.js";import{Mn as c,hn as l,qt as u,t as d}from"./src-BEwaewMJ.js";import{t as f}from"./widget-state-BHtIizq9.js";import{i as p}from"./with-story-router-DxdHc1hO.js";import{n as ae,r as m,s as h}from"./register-report-mocks-D47Rougd.js";import{r as g,t as _}from"./metric-tile-grid-skeleton-Dig3B5oK.js";import{a as v,g as y,h as oe,i as se,m as ce,n as le,p as b,r as x}from"./with-widget-canvas-DLx8XNU3.js";var S,C,w=e((()=>{S=`_root_15bqk_2`,C={root:S}}));function T(){let{data:e,isLoading:t,isFetching:n,isError:i,refetch:a}=u(),o=e?.stats,s=(0,D.useMemo)(()=>k.map(({id:e,label:t})=>({key:e,label:t,icon:j[e].icon,value:ie(o,e)??0})),[o]);return(0,O.jsx)(`div`,{className:C.root,children:(0,O.jsx)(f,{isLoading:t,isFetching:n,isError:!o&&i,error:{description:r(`We couldn't load all-time stats. Please try again in a moment.`,`jetpack-premium-analytics-pkg`),actions:[{label:r(`Retry`,`jetpack-premium-analytics-pkg`),onClick:a}]},renderLoading:(0,O.jsx)(_,{tiles:s.length}),children:(0,O.jsx)(g,{tiles:s,dataFormat:A})})})}function E({attributes:e={}}){return(0,O.jsx)(re,{attributes:e,children:(0,O.jsx)(T,{})})}var D,O,k,A,j,ue=e((()=>{d(),p(),i(),te(),D=t(n(),1),w(),O=a(),k=[{id:`views`,label:r(`Views`,`jetpack-premium-analytics-pkg`)},{id:`visitors`,label:r(`Visitors`,`jetpack-premium-analytics-pkg`)},{id:`posts`,label:r(`Posts`,`jetpack-premium-analytics-pkg`)},{id:`comments`,label:r(`Comments`,`jetpack-premium-analytics-pkg`)}],A={type:`number`,options:{useMultipliers:!0,decimals:0}},j={views:{icon:ne},visitors:{icon:s},posts:{icon:o},comments:{icon:ee}}})),M,N,P,F,I,L,R,z,B=e((()=>{M=`jpa/all-time-stats`,N=`jpa/backup`,P=`All-time stats`,F=`Lifetime totals for your site — views, visitors, posts, and comments.`,I={content:`Your totals since you started tracking — views, visitors, posts, and comments.`},L=`stats`,R=`framed`,z={name:M,icon:N,title:P,description:F,help:I,category:L,presentation:R}}));function V(){return(0,W.jsx)(E,{attributes:{reportParams:l()}})}function H(e){return(0,W.jsx)(E,{attributes:{reportParams:l(!1,e)}})}function U(e){return h(`proxy/v1.1/stats`,e),c.removeQueries({queryKey:[`stats`,`site`]}),()=>{h(`proxy/v1.1/stats`,null),c.removeQueries({queryKey:[`stats`,`site`]})}}function de(e){return(0,W.jsx)(ce,{...e,widgetType:K,renderModule:G,renderComponent:E,attributes:{reportParams:l(!0)}})}var W,G,K,q,J,Y,X,Z,Q,$;e((()=>{d(),ae(),oe(),v(),le(),ue(),B(),W=a(),m(),G=`storybook/all-time-stats`,K=se(z),q={title:`Packages/Premium Analytics/Widgets/AllTimeStats`,component:E,tags:[`autodocs`],parameters:{docs:{description:{component:`The "All-time stats" widget. Shows lifetime totals for the site — views, visitors, posts, and comments — as a responsive grid of metric tiles, sourced from the Jetpack Stats site-summary endpoint. It has no configurable attributes and no comparison period, so each tile is a single compact figure with the exact total in a tooltip.`}}}},J={render:V,decorators:[x]},Y={render:()=>H(`last-90-days`),tags:[`!autodocs`],decorators:[x],beforeEach:()=>U(`loading`)},X={render:()=>H(`last-7-days`),tags:[`!autodocs`],decorators:[x],beforeEach:()=>U(`error`)},Z={render:()=>H(`last-365-days`),tags:[`!autodocs`],decorators:[x],beforeEach:()=>U(`empty`)},Q={render:e=>(0,W.jsx)(de,{...e}),args:{...b},argTypes:{...y}},$=[`Default`,`Loading`,`Error`,`Empty`,`WidgetDashboardWithWidget`],J.parameters={...J.parameters,docs:{...J.parameters?.docs,source:{originalSource:`{
+  render: renderAllTimeStats,
+  decorators: [withWidgetCanvas]
+}`,...J.parameters?.docs?.source},description:{story:`Default state — lifetime totals for the current preset.`,...J.parameters?.docs?.description}}},Y.parameters={...Y.parameters,docs:{...Y.parameters?.docs,source:{originalSource:`{
+  render: () => renderAllTimeStatsOnPreset('last-90-days'),
+  // Off the shared autodocs page — path-keyed override; see forceStatsMockState.
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas],
+  beforeEach: () => forceSiteSummaryState('loading')
+}`,...Y.parameters?.docs?.source},description:{story:`First load: the fetch is in flight, so the widget shows its loading state. The
+mock is forced to never resolve for the duration of this story.`,...Y.parameters?.docs?.description}}},X.parameters={...X.parameters,docs:{...X.parameters?.docs,source:{originalSource:`{
+  render: () => renderAllTimeStatsOnPreset('last-7-days'),
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas],
+  beforeEach: () => forceSiteSummaryState('error')
+}`,...X.parameters?.docs?.source},description:{story:`The fetch failed: the widget shows its error state with a Retry action (which
+re-runs the query — still mocked as failing while this story is active).`,...X.parameters?.docs?.description}}},Z.parameters={...Z.parameters,docs:{...Z.parameters?.docs,source:{originalSource:`{
+  render: () => renderAllTimeStatsOnPreset('last-365-days'),
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas],
+  beforeEach: () => forceSiteSummaryState('empty')
+}`,...Z.parameters?.docs?.source},description:{story:`Resolved with no summary fields: every tile shows its placeholder.`,...Z.parameters?.docs?.description}}},Q.parameters={...Q.parameters,docs:{...Q.parameters?.docs,source:{originalSource:`{
+  render: args => <AllTimeStatsDashboardStory {...args} />,
+  args: {
+    ...DEFAULT_WIDGET_DASHBOARD_STORY_ARGS
+  },
+  argTypes: {
+    ...widgetDashboardWithWidgetArgTypes
+  }
+}`,...Q.parameters?.docs?.source}}}}))();export{J as Default,Z as Empty,X as Error,Y as Loading,Q as WidgetDashboardWithWidget,$ as __namedExportsOrder,q as default};
