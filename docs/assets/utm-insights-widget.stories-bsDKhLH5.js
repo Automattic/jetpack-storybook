@@ -1,0 +1,85 @@
+import{n as e,o as t}from"./rolldown-runtime-DAXXjFlN.js";import{t as n}from"./react-_iuu1rfF.js";import{C as r,n as i,t as a}from"./build-module-DQe4AOzJ.js";import{t as o}from"./jsx-runtime-CFwixLRt.js";import{Y as s,t as c}from"./build-module-CT-mI-B8.js";import{Mu as l,bu as u}from"./build-module-BI3_PVVO.js";import{F as d,Pt as ee,bn as f,f as te,o as p,on as m,rn as h,z as ne}from"./charts-provider-iqXRz-c1.js";import{$t as g,Cn as _,Ut as re,Vt as v,Yt as y,Z as b,pr as x,q as ie,qt as S,tn as C,zt as w}from"./build-module-BN2Djb9A.js";import{f as ae}from"./library-Djn3c8VE.js";import{t as T}from"./src-Dklj63E7.js";import{t as oe}from"./src-DWT5iXWM.js";import{Q as se,hn as E,t as ce}from"./src-DfQ3R5pV.js";import{t as le}from"./widget-state-B9Sszbvh.js";import{F as ue,a as de,c as fe,i as pe,k as me,n as he,o as ge,r as D}from"./with-story-router-Clrjqkey.js";import"./constants-B9OTkkI1.js";import{r as _e,t as ve}from"./leaderboard-skeleton-BB4sYTEW.js";import{n as ye,r as be}from"./register-report-mocks-xm2nLXrN.js";import{l as xe,s as Se}from"./locations-geo-chart-b2X-Mv5u.js";import{a as Ce,g as we,h as Te,i as Ee,m as De,n as Oe,p as ke,r as O}from"./with-widget-canvas-CBhI6G9G.js";import{n as Ae,t as je}from"./register-stats-mocks-Nvcu00DF.js";import{n as Me,t as k}from"./force-stats-mock-state-rsmsojFj.js";var A,j,M,N,Ne=e((()=>{A=`_root_xmjm2_1`,j=`_content_xmjm2_9`,M=`_backLink_xmjm2_16`,N={root:A,content:j,backLink:M}}));function P(e){return typeof e.label==`string`?e.label:String(e.label)}function Pe(e){return{postId:e.id,label:P(e),value:e.value,previousValue:e.previousValue,href:e.href}}function Fe(e){return{label:P(e),value:e.value,previousValue:e.previousValue,children:e.children?.map(Pe),childrenHaveComparison:e.childrenHaveComparison}}function Ie({reportParams:e,utmParam:t,max:n}){let{comparisonRows:r,hasComparison:i,isLoading:a,isFetching:o,isError:s,error:c,refetch:l}=se({...e,utmParam:t,max:n},{maxRows:n}),u=(r?.rows??[]).map(Fe),d=u.length===0&&s;return{data:u,hasComparison:i,isLoading:a,isFetching:o,isError:d,error:d?c:null,refetch:l}}var Le=e((()=>{ce()})),F,I,L,Re,R,z,ze=e((()=>{F=`_layout_10ym5_1`,I=`_form_10ym5_7`,L=`_result_10ym5_14`,Re=`_resultValue_10ym5_18`,R=`_help_10ym5_28`,z={layout:F,form:I,result:L,resultValue:Re,help:R}}));function Be(e){let t=e.trim();if(!/^https?:\/\//i.test(t))return null;try{return new URL(t)}catch{return null}}function Ve(e,{campaign:t,source:n,medium:r}){if(!e)return null;let i={utm_campaign:t.trim(),utm_source:n.trim(),utm_medium:r.trim()};if(!Object.values(i).some(Boolean))return null;for(let[t,n]of Object.entries(i))e.searchParams.delete(t),n&&e.searchParams.set(t,n);return e.toString()}function He({onClose:e}){let[t,n]=(0,B.useState)({destination:``,campaign:``,source:``,medium:``}),[r,a]=(0,B.useState)(null),o=(0,B.useRef)(void 0),c=Be(t.destination),l=t.destination.trim()!==``&&!c,u=(0,B.useMemo)(()=>l?{type:`invalid`,message:i(`Enter a full URL that starts with https:// or http://.`,`jetpack-premium-analytics-pkg`)}:void 0,[l]),d=Ve(c,t),ee=[t.campaign,t.source,t.medium].some(e=>e.trim()),f=(0,B.useCallback)((e,t)=>{n(n=>({...n,[e]:t}))},[]),te=(0,B.useCallback)(e=>f(`destination`,e),[f]),p=(0,B.useCallback)(e=>f(`campaign`,e),[f]),m=(0,B.useCallback)(e=>f(`source`,e),[f]),h=(0,B.useCallback)(e=>f(`medium`,e),[f]),ne=(0,B.useCallback)(t=>{t||e()},[e]),ae=s(d??``,()=>{a(d),clearTimeout(o.current),o.current=setTimeout(()=>a(null),Ue)});(0,B.useEffect)(()=>()=>clearTimeout(o.current),[]);let T=r!==null&&r===d;return(0,V.jsx)(v,{open:!0,onOpenChange:ne,children:(0,V.jsxs)(re,{size:`large`,children:[(0,V.jsxs)(S,{children:[(0,V.jsx)(w,{children:i(`Build URL`,`jetpack-premium-analytics-pkg`)}),(0,V.jsx)(C,{})]}),(0,V.jsx)(g,{children:(0,V.jsxs)(`div`,{className:z.layout,children:[(0,V.jsxs)(`div`,{className:z.form,children:[(0,V.jsx)(x,{render:(0,V.jsx)(`p`,{}),children:i(`Generate URLs to share and track UTM parameters.`,`jetpack-premium-analytics-pkg`)}),(0,V.jsx)(ie,{label:i(`Destination URL`,`jetpack-premium-analytics-pkg`),type:`url`,value:t.destination,onValueChange:te,customValidity:u}),(0,V.jsx)(b,{label:i(`UTM campaign`,`jetpack-premium-analytics-pkg`),value:t.campaign,onValueChange:p,placeholder:i(`e.g. promotion`,`jetpack-premium-analytics-pkg`)}),(0,V.jsx)(b,{label:i(`UTM source`,`jetpack-premium-analytics-pkg`),value:t.source,onValueChange:m,placeholder:i(`e.g. newsletter`,`jetpack-premium-analytics-pkg`)}),(0,V.jsx)(b,{label:i(`UTM medium`,`jetpack-premium-analytics-pkg`),value:t.medium,onValueChange:h,placeholder:i(`e.g. email, social`,`jetpack-premium-analytics-pkg`)}),(0,V.jsxs)(`div`,{className:z.result,children:[(0,V.jsx)(x,{variant:`heading-md`,render:(0,V.jsx)(`h3`,{}),children:i(`Your URL to share`,`jetpack-premium-analytics-pkg`)}),(0,V.jsx)(`div`,{className:z.resultValue,children:d??i(ee?`Enter a destination URL to see the URL`:`Fill out campaign parameters to see the URL`,`jetpack-premium-analytics-pkg`)})]})]}),(0,V.jsxs)(`aside`,{className:z.help,children:[(0,V.jsx)(x,{variant:`heading-md`,render:(0,V.jsx)(`h3`,{}),children:i(`Why should I use this?`,`jetpack-premium-analytics-pkg`)}),(0,V.jsx)(x,{render:(0,V.jsx)(`p`,{}),children:i(`UTM codes help track where your traffic comes from. Adding them to your URLs gives you insights into what works and where to optimize.`,`jetpack-premium-analytics-pkg`)}),(0,V.jsxs)(`dl`,{children:[(0,V.jsx)(`dt`,{children:(0,V.jsx)(`code`,{children:`utm_campaign`})}),(0,V.jsxs)(`dd`,{children:[i(`Name your campaign`,`jetpack-premium-analytics-pkg`),(0,V.jsx)(`em`,{children:i(`Example: christmas, flash-sale`,`jetpack-premium-analytics-pkg`)})]}),(0,V.jsx)(`dt`,{children:(0,V.jsx)(`code`,{children:`utm_source`})}),(0,V.jsxs)(`dd`,{children:[i(`Define where traffic originates`,`jetpack-premium-analytics-pkg`),(0,V.jsx)(`em`,{children:i(`Example: newsletter, facebook, google`,`jetpack-premium-analytics-pkg`)})]}),(0,V.jsx)(`dt`,{children:(0,V.jsx)(`code`,{children:`utm_medium`})}),(0,V.jsxs)(`dd`,{children:[i(`Define the channel type`,`jetpack-premium-analytics-pkg`),(0,V.jsx)(`em`,{children:i(`Example: email, social, cpc`,`jetpack-premium-analytics-pkg`)})]})]}),(0,V.jsx)(x,{render:(0,V.jsx)(`p`,{}),children:i(`Use your generated URLs in social posts, emails, or ads. Jetpack Stats will track UTM codes, giving you accurate insights into your traffic.`,`jetpack-premium-analytics-pkg`)})]})]})}),(0,V.jsx)(y,{children:(0,V.jsx)(_,{ref:d?ae:void 0,variant:`solid`,size:`compact`,disabled:!d,children:i(T?`Copied!`:`Copy to clipboard`,`jetpack-premium-analytics-pkg`)})})]})})}var B,V,Ue,We=e((()=>{oe(),c(),a(),B=t(n(),1),ze(),V=o(),Ue=4e3}));function Ge({utmDimension:e,showReportLink:t}){let{reportParams:n}=ne(),[a,o]=(0,l.useState)(!1),s=(0,l.useCallback)(()=>o(!1),[]),c=ge(e),{drillDownItem:u,drillDown:d,resetDrillDown:g}=p();(0,l.useEffect)(()=>{g()},[g,e]);let{data:_,hasComparison:re,isLoading:v,isFetching:y,isError:b,error:x,refetch:ie}=Ie({reportParams:n,utmParam:e,max:10}),S=(0,l.useMemo)(()=>_.find(e=>e.label===u)??null,[_,u]),C=!!S?.children?.length,w=(0,l.useMemo)(()=>C?S?.children??[]:_,[_,C,S]),T=C?!!S?.childrenHaveComparison:re;(0,l.useEffect)(()=>{u&&!C&&!v&&!y&&!b&&g()},[u,C,v,y,b,g]);let oe=(0,l.useMemo)(()=>{let e=h(w.map(e=>e.value),T?w.map(e=>e.previousValue):[]);return w.map((t,n)=>{let a=t.previousValue,o=`postId`in t?t:null,s=!C&&`children`in t&&!!t.children?.length;return{id:`${n}-${t.label}`,...o?{label:(0,U.jsx)(me,{id:o.postId,label:o.label,link:o.href,origin:{report:`utm`,section:c}})}:Se({label:t.label,media:{kind:`none`},action:xe({hasChildren:s,drillDown:{onClick:()=>d(t.label),ariaLabel:r(i(`View posts for %s`,`jetpack-premium-analytics-pkg`),t.label)}})}),currentValue:t.value,currentShare:m(t.value,e),previousValue:a,previousShare:T&&a!==void 0?m(a,e):void 0,delta:T&&a!==void 0?f(t.value,a):void 0}})},[w,C,c,d,T]),se=C?(0,U.jsx)(ue,{label:i(`All UTM insights`,`jetpack-premium-analytics-pkg`),ariaLabel:i(`View all UTM insights`,`jetpack-premium-analytics-pkg`),onClick:g,className:N.backLink}):null;return te(t?{report:`utm`,section:c,csv:{exporter:fe[c],status:{isLoading:v,isFetching:y,isError:b},rowCount:_.length}}:{}),(0,U.jsxs)(U.Fragment,{children:[se,(0,U.jsx)(`div`,{className:N.content,children:(0,U.jsx)(le,{isLoading:v,isFetching:y,isError:b,isEmpty:_.length===0,empty:{icon:ae,description:i(`You don’t have UTM visits for this period. Build a URL to start tracking a campaign.`,`jetpack-premium-analytics-pkg`),action:{label:i(`Build URL`,`jetpack-premium-analytics-pkg`),onClick:()=>o(!0)}},error:ee(x,{retryDescription:i(`We couldn't load UTM data. Please try again in a moment.`,`jetpack-premium-analytics-pkg`),onRetry:ie}),renderLoading:(0,U.jsx)(ve,{rows:10}),children:(0,U.jsx)(_e,{chartTitle:i(`Top UTM`,`jetpack-premium-analytics-pkg`),data:oe,withComparison:T,withOverlayLabel:!0,showLegend:!1,dataFormat:Ke,columns:{label:C?i(`Posts`,`jetpack-premium-analytics-pkg`):de(c),metric:`views`}})})}),a&&(0,U.jsx)(He,{onClose:s})]})}function H({attributes:e={}}){let t=e.utmDimension??qe,n=e.showReportLink??!0;return(0,U.jsx)(d,{attributes:e,children:(0,U.jsx)(`div`,{className:N.root,children:(0,U.jsx)(Ge,{utmDimension:t,showReportLink:n})})})}var U,Ke,qe,Je=e((()=>{T(),u(),a(),pe(),Ne(),Le(),We(),U=o(),Ke={type:`number`,options:{useMultipliers:!0,decimals:0}},qe=`utm_source,utm_medium`})),Ye,Xe=e((()=>{Ye={example:{attributes:{utmDimension:`utm_source,utm_medium`}}}})),Ze,Qe,$e,et,tt,nt,rt,it,at,ot=e((()=>{Ze=`jpa/utm-insights`,Qe=`jpa/megaphone`,$e=`Top UTM`,et=`Traffic breakdown by UTM parameters — source, medium, campaign, and combinations.`,tt={content:`Your top UTM campaigns, sorted by views.`,links:[{label:`Learn more`,href:`https://jetpack.com/support/jetpack-stats/`}]},nt=`traffic`,rt=`framed`,it=[{id:`utmDimension`,type:`jpa/select`,label:`UTM parameter`,relevance:`high`,elements:[{value:`utm_source,utm_medium`,label:`Source / Medium`},{value:`utm_campaign,utm_source,utm_medium`,label:`Campaign / Source / Medium`},{value:`utm_source`,label:`Source`},{value:`utm_medium`,label:`Medium`},{value:`utm_campaign`,label:`Campaign`}]}],at={name:Ze,icon:Qe,title:$e,description:et,help:tt,category:nt,presentation:rt,attributes:it}}));function W(e){return(0,G.jsx)(H,{attributes:{utmDimension:`utm_source,utm_medium`,reportParams:E(!1,e)}})}function st({withComparison:e,...t}){return(0,G.jsx)(De,{...t,widgetType:lt,renderModule:ct,renderComponent:H,attributes:{utmDimension:`utm_source,utm_medium`,reportParams:E(e)}})}var G,ct,lt,ut,K,q,J,Y,X,Z,Q,$,dt;e((()=>{ce(),Te(),he(),Ce(),Oe(),ye(),je(),Me(),Je(),Xe(),ot(),G=o(),be(),Ae(),ct=`storybook/utm-insights`,lt=Ee(at,Ye),ut={title:`Packages/Premium Analytics/Widgets/UtmInsights`,component:H,tags:[`autodocs`],argTypes:{withComparison:{control:`boolean`,description:`Include previous-period comparison report params and deltas.`}},parameters:{docs:{description:{component:`The "UTM Insights" widget. Shows traffic breakdown by UTM parameter as a ranked leaderboard. The active dimension (Source/Medium, Campaign, etc.) is switched via a dropdown in the widget header and persisted per widget instance.`}}}},K={render:({withComparison:e})=>(0,G.jsx)(H,{attributes:{utmDimension:`utm_source,utm_medium`,reportParams:E(e)}}),args:{withComparison:!1},decorators:[O,D]},q={render:({withComparison:e})=>(0,G.jsx)(H,{attributes:{utmDimension:`utm_source,utm_medium`,reportParams:E(e)}}),args:{withComparison:!0},decorators:[O,D]},J={render:()=>W(`last-90-days`),tags:[`!autodocs`],decorators:[O,D],beforeEach:()=>(k(`stats/utm`,`loading`),()=>k(`stats/utm`,null))},Y={render:()=>W(`last-7-days`),tags:[`!autodocs`],decorators:[O,D],beforeEach:()=>(k(`stats/utm`,`error`),()=>k(`stats/utm`,null))},X={render:()=>W(`last-12-months`),tags:[`!autodocs`],decorators:[O,D],beforeEach:()=>(k(`stats/utm`,`error-retryable`),()=>k(`stats/utm`,null))},Z={render:()=>W(`last-year`),tags:[`!autodocs`],decorators:[O,D],beforeEach:()=>(k(`stats/utm`,`empty`),()=>k(`stats/utm`,null))},Q={render:({withComparison:e})=>(0,G.jsx)(H,{attributes:{utmDimension:`utm_campaign`,reportParams:E(e)}}),args:{withComparison:!1},decorators:[O,D]},$={render:e=>(0,G.jsx)(st,{...e}),args:{...ke,withComparison:!1},argTypes:{...we,withComparison:{control:`boolean`,description:`Include previous-period comparison report params and deltas.`}}},dt=[`Default`,`WithComparison`,`Loading`,`Error`,`ErrorRetryable`,`Empty`,`ByCampaign`,`WidgetDashboardWithWidget`],K.parameters={...K.parameters,docs:{...K.parameters?.docs,source:{originalSource:`{
+  render: ({
+    withComparison
+  }) => <UtmInsightsRender attributes={{
+    utmDimension: 'utm_source,utm_medium',
+    reportParams: getDefaultQueryParams(withComparison)
+  }} />,
+  args: {
+    withComparison: false
+  },
+  decorators: [withWidgetCanvas, withStoryRouter]
+}`,...K.parameters?.docs?.source}}},q.parameters={...q.parameters,docs:{...q.parameters?.docs,source:{originalSource:`{
+  render: ({
+    withComparison
+  }) => <UtmInsightsRender attributes={{
+    utmDimension: 'utm_source,utm_medium',
+    reportParams: getDefaultQueryParams(withComparison)
+  }} />,
+  args: {
+    withComparison: true
+  },
+  decorators: [withWidgetCanvas, withStoryRouter]
+}`,...q.parameters?.docs?.source}}},J.parameters={...J.parameters,docs:{...J.parameters?.docs,source:{originalSource:`{
+  render: () => renderUtmInsightsOnPreset('last-90-days'),
+  // Off the shared autodocs page — path-keyed override; see forceStatsMockState.
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas, withStoryRouter],
+  beforeEach: () => {
+    forceStatsMockState('stats/utm', 'loading');
+    return () => forceStatsMockState('stats/utm', null);
+  }
+}`,...J.parameters?.docs?.source},description:{story:`First load: the fetch is in flight, so the widget shows its loading state. The
+mock is forced to never resolve for the duration of this story.`,...J.parameters?.docs?.description}}},Y.parameters={...Y.parameters,docs:{...Y.parameters?.docs,source:{originalSource:`{
+  render: () => renderUtmInsightsOnPreset('last-7-days'),
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas, withStoryRouter],
+  beforeEach: () => {
+    forceStatsMockState('stats/utm', 'error');
+    return () => forceStatsMockState('stats/utm', null);
+  }
+}`,...Y.parameters?.docs?.source},description:{story:`The fetch failed with a permission-gated 403: the widget shows the neutral
+"You don't have access to this data." copy and no Retry action, since a
+permission gate is deterministic and retrying cannot clear it.`,...Y.parameters?.docs?.description}}},X.parameters={...X.parameters,docs:{...X.parameters?.docs,source:{originalSource:`{
+  render: () => renderUtmInsightsOnPreset('last-12-months'),
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas, withStoryRouter],
+  beforeEach: () => {
+    forceStatsMockState('stats/utm', 'error-retryable');
+    return () => forceStatsMockState('stats/utm', null);
+  }
+}`,...X.parameters?.docs?.source},description:{story:`The fetch failed in a way that can heal — the proxy's \`no_connection\` 403: the
+widget shows its retryable copy with a Retry action, which re-runs the query
+(still mocked as failing while this story is active).`,...X.parameters?.docs?.description}}},Z.parameters={...Z.parameters,docs:{...Z.parameters?.docs,source:{originalSource:`{
+  render: () => renderUtmInsightsOnPreset('last-year'),
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas, withStoryRouter],
+  beforeEach: () => {
+    forceStatsMockState('stats/utm', 'empty');
+    return () => forceStatsMockState('stats/utm', null);
+  }
+}`,...Z.parameters?.docs?.source},description:{story:`Resolved with no rows: the widget offers Build URL and keeps View all available.`,...Z.parameters?.docs?.description}}},Q.parameters={...Q.parameters,docs:{...Q.parameters?.docs,source:{originalSource:`{
+  render: ({
+    withComparison
+  }) => <UtmInsightsRender attributes={{
+    utmDimension: 'utm_campaign',
+    reportParams: getDefaultQueryParams(withComparison)
+  }} />,
+  args: {
+    withComparison: false
+  },
+  decorators: [withWidgetCanvas, withStoryRouter]
+}`,...Q.parameters?.docs?.source}}},$.parameters={...$.parameters,docs:{...$.parameters?.docs,source:{originalSource:`{
+  render: args => <UtmInsightsDashboardStory {...args} />,
+  args: {
+    ...DEFAULT_WIDGET_DASHBOARD_STORY_ARGS,
+    withComparison: false
+  },
+  argTypes: {
+    ...widgetDashboardWithWidgetArgTypes,
+    withComparison: {
+      control: 'boolean',
+      description: 'Include previous-period comparison report params and deltas.'
+    }
+  }
+}`,...$.parameters?.docs?.source}}}}))();export{Q as ByCampaign,K as Default,Z as Empty,Y as Error,X as ErrorRetryable,J as Loading,$ as WidgetDashboardWithWidget,q as WithComparison,dt as __namedExportsOrder,ut as default};
