@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-DAXXjFlN.js";import{t}from"./build-module-sy00sX6O.js";var n=e((()=>{t()})),r=e((()=>{t(),n()})),i=e((()=>{t()}));function a(e,t){let n=(e+t)/2;return n>90?`A`:n>75?`B`:n>50?`C`:n>35?`D`:n>25?`E`:`F`}function o(e){return e>70?`good`:e>50?`medium`:`poor`}var s=e((()=>{t(),r(),i()}));export{o as n,s as r,a as t};
