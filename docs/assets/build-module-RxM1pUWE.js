@@ -1,1 +1,0 @@
-import{n as e,o as t}from"./rolldown-runtime-DAXXjFlN.js";import{t as n}from"./react-_iuu1rfF.js";function r(e){return a>=19?e:e?`true`:void 0}var i,a,o=e((()=>{i=t(n(),1),a=parseInt(i.version,10)}));export{o as n,r as t};
