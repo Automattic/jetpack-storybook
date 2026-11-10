@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 This is an alpha version! The changes listed here are not final.
 
 ### Changed
+- Add a "Widget sizes" toolbar control that the Premium Analytics widget stories follow.
 - Remove the admin color override now that the WordPress packages default to the modern admin color scheme (blueberry).
 - Scan the Premium Analytics routes for stories.
 - Update package dependencies.
