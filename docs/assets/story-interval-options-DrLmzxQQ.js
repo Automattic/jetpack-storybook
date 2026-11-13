@@ -1,1 +1,0 @@
-import{n as e}from"./rolldown-runtime-DAXXjFlN.js";import{V as t,t as n}from"./src-C4VFolko.js";import{Bn as r,In as i,t as a}from"./src-CU_16BOb.js";function o(e,n,a,o){let s=n.from?t(n.from,a):``,c=n.to?t(n.to,a):``;return{options:i(e,s,c),interval:r(e,s,c,o)}}var s=e((()=>{a(),n()}));export{s as n,o as t};
