@@ -1,0 +1,40 @@
+import{n as e}from"./rolldown-runtime-DAXXjFlN.js";import{n as t,t as n}from"./build-module-BXs6jvWf.js";import{t as r}from"./jsx-runtime-CFwixLRt.js";import{n as i,t as a}from"./build-module-BZUlgugB2.js";import{Bn as o,Ht as s,M as c,Wt as ee,gn as l,t as u,yn as d}from"./src-52cnEbCc.js";import{H as te,I as ne,m as re}from"./charts-provider-QtJ9qbIH.js";import{t as f}from"./widget-state-CIbtadTL.js";import{N as ie,i as ae,n as oe,r as p}from"./with-story-router-C_tyrWZj.js";import{n as m,r as se}from"./register-report-mocks-BlzsUi-e.js";import{t as ce}from"./post-highlight-card-skeleton-XDl5OWre.js";import{a as le,c as h,i as g,l as _,o as ue,r as de,s as v,u as y}from"./with-widget-canvas-FKG_6qtM.js";import{n as b,t as x}from"./force-stats-mock-state-CxetyxVt.js";function S(e=0){let t=ee(c({authorId:e})),n=t.data??null,r=n?.id??0,i=s({postId:r,fields:[`views`,`like_count`,`post`]}),a=t.isLoading||r>0&&i.isLoading,o=t.isFetching||i.isFetching,l=t.isError,u=()=>{t.refetch(),r>0&&i.refetch()};return{post:n?{...n,views:i.data?.views,likeCount:i.data?.like_count,commentCount:i.data?.post?.comment_count}:null,isLoading:a,isFetching:o,isError:l,refetch:u}}var C=e((()=>{u()}));function w({authorScoped:e}){let{reportParams:n}=te(),r=e?l(n.author_id):0;return e&&!r?(0,E.jsx)(f,{isLoading:!1,isError:!1,isEmpty:!0,empty:{description:t(`Open an author to see their latest post here.`,`jetpack-premium-analytics-pkg`)},children:null}):(0,E.jsx)(fe,{authorId:r})}function fe({authorId:e}){let{post:n,isLoading:r,isFetching:i,isError:a,refetch:o}=S(e),s=re({origin:e?{report:`authors`}:{report:`posts`,section:`posts-pages`}}),c=n?[{key:`views`,label:t(`Views`,`jetpack-premium-analytics-pkg`),value:n.views},{key:`likes`,label:t(`Likes`,`jetpack-premium-analytics-pkg`),value:n.likeCount},{key:`comments`,label:t(`Comments`,`jetpack-premium-analytics-pkg`),value:n.commentCount}]:[];return(0,E.jsx)(f,{isLoading:r,isFetching:i,isError:a,isEmpty:!n,error:{description:t(`We couldn't load your latest post. Please try again in a moment.`,`jetpack-premium-analytics-pkg`),actions:[{label:t(`Retry`,`jetpack-premium-analytics-pkg`),onClick:o}]},empty:{description:t(e?`This author has not published a post yet.`:`Your latest post will show here.`,`jetpack-premium-analytics-pkg`)},renderLoading:(0,E.jsx)(ce,{}),children:n&&(0,E.jsx)(ie,{title:n.title,url:n.url,postId:n.id,detailSearch:s,date:n.date,imageUrl:n.imageUrl,imageAlt:n.imageAlt,metrics:c})})}function T({attributes:e={}}){return(0,E.jsx)(ne,{attributes:e,children:(0,E.jsx)(w,{authorScoped:e.authorScoped===!0})})}var E,pe=e((()=>{u(),ae(),n(),C(),E=r()})),D,O,k,A,j,M,N,P,F=e((()=>{D=`jpa/latest-post`,O=`jpa/post`,k=`Latest post`,A=`Your most recently published post with its views, likes, and comments.`,j={content:`Your most recently published post, with its headline views, likes, and comments.`},M=`stats`,N=`framed`,P={name:D,icon:O,title:k,description:A,help:j,category:M,presentation:N}}));function I(){G||(G=!0,a.use((e,t)=>{let n=e.path??e.url??``;return n.startsWith(H)?Promise.resolve(W):n.startsWith(V)?Promise.resolve(U):t(e)}))}function L(){return(0,B.jsx)(T,{attributes:{reportParams:d()}})}function R(e){return(0,B.jsx)(T,{attributes:{reportParams:d(!1,e)}})}function z(e){let t=e=>{x(V,e),x(H,e)},n=()=>{o.removeQueries({queryKey:[`latest-post`]}),o.removeQueries({queryKey:[`stats`,`post`]})};return t(e),n(),()=>{t(null),n()}}function me(e){return(0,B.jsx)(h,{...e,widgetType:le(P),renderModule:K,renderComponent:T,attributes:{reportParams:d(!0)}})}var B,V,H,U,W,G,K,q,J,Y,X,Z,Q,$;e((()=>{u(),i(),m(),b(),_(),oe(),ue(),de(),pe(),F(),B=r(),se(),V=`/wp/v2/posts`,H=`/jetpack-premium-analytics/v1/proxy/v1.1/stats/post/`,U=[{id:779,title:{rendered:`Ten things I learned building my first WordPress theme`},link:`https://example.com/2026/06/22/ten-things-i-learned/`,date:`2026-06-22T10:00:00`,featured_media:42,_embedded:{"wp:featuredmedia":[{source_url:`data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23334155'/%3E%3Cstop offset='1' stop-color='%2394a3b8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='600' fill='url(%23g)'/%3E%3C/svg%3E`,alt_text:`Featured image`}]}}],W={views:3820,like_count:24,post:{comment_count:8}},G=!1,I(),K=`storybook/latest-post`,q={title:`Packages/Premium Analytics/Widgets/LatestPost`,component:T,tags:[`autodocs`],parameters:{docs:{description:{component:`The "Latest post" widget shows the site's most recently published post with its all-time views, likes, and comments.`}}}},J={render:L,decorators:[g,p]},Y={render:()=>R(`last-90-days`),tags:[`!autodocs`],decorators:[g,p],beforeEach:()=>z(`loading`)},X={render:()=>R(`last-7-days`),tags:[`!autodocs`],decorators:[g,p],beforeEach:()=>z(`error`)},Z={render:()=>R(`last-365-days`),tags:[`!autodocs`],decorators:[g,p],beforeEach:()=>z(`empty`)},Q={tags:[`widget-dashboard`],render:e=>(0,B.jsx)(me,{...e}),args:{...v,widgetWidth:2,widgetHeight:2},argTypes:{...y}},$=[`Default`,`Loading`,`Error`,`Empty`,`WidgetDashboardWithWidget`],J.parameters={...J.parameters,docs:{...J.parameters?.docs,source:{originalSource:`{
+  render: renderLatestPost,
+  decorators: [withWidgetCanvas, withStoryRouter]
+}`,...J.parameters?.docs?.source},description:{story:`Default — the latest post with its lifetime views, likes, and comments.
+
+The shared close-up canvas is the width of a width-1 dashboard cell, which is
+below the card's 520px wide breakpoint: the featured image is dropped and the
+metric row wraps. \`WidgetDashboardWithWidget\` below shows the default width-2
+placement, where the image sits in a trailing column.`,...J.parameters?.docs?.description}}},Y.parameters={...Y.parameters,docs:{...Y.parameters?.docs,source:{originalSource:`{
+  render: () => renderLatestPostOnPreset('last-90-days'),
+  // Off the shared autodocs page — path-keyed override; see forceStatsMockState.
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas, withStoryRouter],
+  beforeEach: () => forceLatestPostState('loading')
+}`,...Y.parameters?.docs?.source},description:{story:`First load: the fetch is in flight, so the widget shows its loading state. The
+mock is forced to never resolve for the duration of this story.`,...Y.parameters?.docs?.description}}},X.parameters={...X.parameters,docs:{...X.parameters?.docs,source:{originalSource:`{
+  render: () => renderLatestPostOnPreset('last-7-days'),
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas, withStoryRouter],
+  beforeEach: () => forceLatestPostState('error')
+}`,...X.parameters?.docs?.source},description:{story:`The content fetch failed: the widget shows its error state with a Retry
+action (which re-runs the query — still mocked as failing while this story is
+active).`,...X.parameters?.docs?.description}}},Z.parameters={...Z.parameters,docs:{...Z.parameters?.docs,source:{originalSource:`{
+  render: () => renderLatestPostOnPreset('last-365-days'),
+  tags: ['!autodocs'],
+  decorators: [withWidgetCanvas, withStoryRouter],
+  beforeEach: () => forceLatestPostState('empty')
+}`,...Z.parameters?.docs?.source},description:{story:`Resolved with no published posts: the widget shows its empty state.`,...Z.parameters?.docs?.description}}},Q.parameters={...Q.parameters,docs:{...Q.parameters?.docs,source:{originalSource:`{
+  tags: ['widget-dashboard'],
+  render: args => <LatestPostDashboardStory {...args} />,
+  args: {
+    ...DEFAULT_WIDGET_DASHBOARD_STORY_ARGS,
+    // Latest post is a landscape widget: content left, featured image right.
+    widgetWidth: 2,
+    widgetHeight: 2
+  },
+  argTypes: {
+    ...widgetDashboardWithWidgetArgTypes
+  }
+}`,...Q.parameters?.docs?.source}}}}))();export{J as Default,Z as Empty,X as Error,Y as Loading,Q as WidgetDashboardWithWidget,$ as __namedExportsOrder,q as default};
