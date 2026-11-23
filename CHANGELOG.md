@@ -12,6 +12,7 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Add a "Widget sizes" toolbar control that the Premium Analytics widget stories follow.
 - Remove the admin color override now that the WordPress packages default to the modern admin color scheme (blueberry).
+- Resolve the Premium Analytics SDK to its facade source so other plugins' widgets can have stories, and offer the widget sizes control on them.
 - Scan the Premium Analytics routes for stories.
 - Update package dependencies.
 
