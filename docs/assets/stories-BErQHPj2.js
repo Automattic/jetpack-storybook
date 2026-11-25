@@ -1,3 +1,0 @@
-import{n as e}from"./rolldown-runtime-DAXXjFlN.js";import{t}from"./jsx-runtime-CFwixLRt.js";import{i as n}from"./react-Cv2K7F_-.js";import{c as r,l as i,n as a,o}from"./blocks-CxtiOXmf.js";import{t as s}from"./mdx-react-shim-C2Qp68IM.js";import{n as c,r as l,t as u}from"./index.stories-YfyCz0bo.js";function d(e){let t={h1:`h1`,...n(),...e.components};return(0,p.jsxs)(p.Fragment,{children:[(0,p.jsx)(o,{of:u}),`
-`,(0,p.jsx)(t.h1,{id:`posterpanel`,children:`PosterPanel`}),`
-`,(0,p.jsx)(a,{withSource:`open`,children:(0,p.jsx)(r,{id:`packages-videopress-block-editor-poster-panel--default`})})]})}function f(e={}){let{wrapper:t}={...n(),...e.components};return t?(0,p.jsx)(t,{...e,children:(0,p.jsx)(d,{...e})}):d(e)}var p;e((()=>{p=t(),s(),i(),l(),c()}))();export{f as default};
