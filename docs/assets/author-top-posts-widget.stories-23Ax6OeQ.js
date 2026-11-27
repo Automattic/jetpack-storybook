@@ -1,0 +1,26 @@
+import{n as e}from"./rolldown-runtime-DAXXjFlN.js";import{n as t,t as n}from"./build-module-BXs6jvWf.js";import{t as r}from"./jsx-runtime-CFwixLRt.js";import{j as i,t as a}from"./build-module-Dxhc9xxH.js";import{In as o,Nn as s,Rt as c,jn as l,t as u}from"./src-BVv1R588.js";import{E as d,Jt as f,O as p,R as m,W as ee,m as te}from"./charts-provider-DVBrFPaa.js";import{t as ne}from"./widget-state-CqPm5upe.js";import{L as re,i as h,n as g,r as _}from"./with-story-router-Buc1zMFG.js";import"./constants-4LY2Ogim.js";import{r as v,t as ie}from"./leaderboard-skeleton-BRgiGhSp.js";import{n as y,r as b}from"./register-report-mocks-Dzl9RUVR.js";import{a as x,c as ae,i as S,l as C,o as w,r as T,s as E,u as D}from"./with-widget-canvas-BqMy9p20.js";var O,k,A,j=e((()=>{O=`_root_19tfr_1`,k=`_content_19tfr_9`,A={root:O,content:k}}));function oe(e,t,n){let{primary:r,comparisonRows:a,isLoading:o,isFetching:s,isError:u,error:d,refetch:f}=c((0,i.useMemo)(()=>p(t),[t]),{enabled:e>0}),m=(0,i.useMemo)(()=>l(a?.rows,e),[a,e]);return{rows:(0,i.useMemo)(()=>(m?.children??[]).slice(0,n).map((e,t)=>({id:e.id==null?e.link??`post-${t}`:String(e.id),postId:e.id??void 0,title:String(e.label??``),link:e.link??null,views:e.views})),[m,n]),authorName:String(m?.label??``),isLoading:o,isFetching:s,isError:u,error:d,hasData:!!r.data,refetch:f}}var se=e((()=>{u(),h(),a()}));function ce(){let{reportParams:e}=ee(),n=s(e.author_id),{rows:r,authorName:a,isLoading:o,isFetching:c,isError:l,error:u,hasData:p,refetch:m}=oe(n,e,10),h=(0,i.useMemo)(()=>d(n,a),[n,a]),g=(0,i.useMemo)(()=>r.map(e=>({id:e.id,label:(0,N.jsx)(re,{id:e.postId,label:e.title,link:e.link,origin:{report:`authors`}}),currentValue:e.views})),[r]);return te({csv:{exporter:h,status:{isLoading:o,isError:!p&&l},rowCount:r.length}}),(0,N.jsx)(`div`,{className:A.content,children:(0,N.jsx)(ne,{isLoading:o,isFetching:c,isError:!p&&l,isEmpty:r.length===0,error:f(u,{retryDescription:t(`We couldn't load this author's posts. Please try again in a moment.`,`jetpack-premium-analytics-pkg`),onRetry:m}),empty:n<=0?{description:t(`Open an author to see their top posts here.`,`jetpack-premium-analytics-pkg`)}:void 0,renderLoading:(0,N.jsx)(ie,{rows:10}),children:(0,N.jsx)(v,{data:g,withOverlayLabel:!0,showLegend:!1,dataFormat:P,columns:{label:t(`Posts`,`jetpack-premium-analytics-pkg`),metric:`views`}})})})}function M({attributes:e={}}){return(0,N.jsx)(m,{attributes:e,children:(0,N.jsx)(`div`,{className:A.root,children:(0,N.jsx)(ce,{})})})}var N,P,le=e((()=>{u(),h(),a(),n(),j(),se(),N=r(),P={type:`number`,options:{useMultipliers:!0,decimals:0}}})),F,I,L,R,z,B,V,H,U,ue=e((()=>{F=`jpa/author-top-posts`,I=`jpa/post-list`,L=`Top viewed posts`,R=`The most viewed posts of the author being viewed over the selected period.`,z={content:`This author’s posts, ranked by views for the selected period.`},B=`stats`,V=`framed`,H=[{id:`view-all`,label:`View all`,relevance:`high`,href:`admin.php?page=jetpack-premium-analytics-wp-admin&p=%2Freports%2Fauthors`}],U={name:F,icon:I,title:L,description:R,help:z,category:B,presentation:V,actions:H}}));function W({hasAuthorScope:e}){return{reportParams:{...o(!1),...e?{author_id:q}:{}}}}function G(e){return(0,K.jsx)(M,{attributes:W(e)})}function de({hasAuthorScope:e,...t}){return(0,K.jsx)(ae,{...t,widgetType:x(U),renderModule:J,renderComponent:M,attributes:W({hasAuthorScope:e})})}var K,q,J,Y,X,Z,Q,$;e((()=>{u(),C(),w(),g(),T(),y(),le(),ue(),K=r(),b(),q=101,J=`storybook/author-top-posts`,Y={title:`Packages/Premium Analytics/Widgets/AuthorTopPosts`,component:M,tags:[`autodocs`],argTypes:{hasAuthorScope:{control:`boolean`,description:"Include the `author_id` report param the author detail page seeds from its URL."}},parameters:{docs:{description:{component:'The "Top viewed posts" widget of the author detail page: the scoped author\'s posts ranked by views over the page range, read out of the summarized `stats/top-authors` report. Without an author scope the widget renders a scopeless empty state.'}}}},X={render:G,args:{hasAuthorScope:!0},decorators:[S,_]},Z={render:G,args:{hasAuthorScope:!1},decorators:[S,_]},Q={tags:[`widget-dashboard`],render:e=>(0,K.jsx)(de,{...e}),args:{...E,widgetWidth:3,widgetHeight:2,hasAuthorScope:!0},argTypes:{...D},decorators:[_]},$=[`Default`,`NoAuthorScope`,`WidgetDashboardWithWidget`],X.parameters={...X.parameters,docs:{...X.parameters?.docs,source:{originalSource:`{
+  render: renderAuthorTopPosts,
+  args: {
+    hasAuthorScope: true
+  },
+  decorators: [withWidgetCanvas, withStoryRouter]
+}`,...X.parameters?.docs?.source}}},Z.parameters={...Z.parameters,docs:{...Z.parameters?.docs,source:{originalSource:`{
+  render: renderAuthorTopPosts,
+  args: {
+    hasAuthorScope: false
+  },
+  decorators: [withWidgetCanvas, withStoryRouter]
+}`,...Z.parameters?.docs?.source}}},Q.parameters={...Q.parameters,docs:{...Q.parameters?.docs,source:{originalSource:`{
+  tags: ['widget-dashboard'],
+  render: args => <AuthorTopPostsDashboardStory {...args} />,
+  args: {
+    ...DEFAULT_WIDGET_DASHBOARD_STORY_ARGS,
+    widgetWidth: 3,
+    widgetHeight: 2,
+    hasAuthorScope: true
+  },
+  argTypes: {
+    ...widgetDashboardWithWidgetArgTypes
+  },
+  decorators: [withStoryRouter]
+}`,...Q.parameters?.docs?.source}}}}))();export{X as Default,Z as NoAuthorScope,Q as WidgetDashboardWithWidget,$ as __namedExportsOrder,Y as default};
